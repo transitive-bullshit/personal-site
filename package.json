@@ -24,6 +24,7 @@
     "test:unit": "vitest run"
   },
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^13.15.1",
     "@takumi-rs/core": "2.13.7",
     "@vercel/analytics": "^2.0.1",
     "class-variance-authority": "^0.7.1",
