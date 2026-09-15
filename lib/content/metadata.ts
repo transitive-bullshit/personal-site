@@ -1,5 +1,6 @@
 import type { Article, Snapshot } from './schema'
 import { site } from '../site'
+import { socialImageUrl } from '../social-image'
 
 export function articleJsonLd(article: Article, snapshot: Snapshot) {
   const image = article.cover
@@ -15,7 +16,7 @@ export function articleJsonLd(article: Article, snapshot: Snapshot) {
     dateModified: article.modified,
     mainEntityOfPage: site.origin + '/' + article.slug,
     url: site.origin + '/' + article.slug,
-    image: image ? [image] : undefined
+    image: [socialImageUrl(article, snapshot), ...(image ? [image] : [])]
   }
 }
 

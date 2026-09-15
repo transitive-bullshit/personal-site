@@ -87,3 +87,15 @@ The preceding migration hash and counts describe the initial snapshot. Current e
 - Browser checks confirmed optimized image URLs load successfully, pending lazy images retain blur placeholders, and cover/lightbox placeholders clear after loading. GIFs bypass optimization and retain original animation.
 - Formatting, lint, types, and all 46 tests pass. Production build passes without CMS/storage credentials; all 35 articles prerender successfully.
 - Snapshot SHA-256: `d37bcb423ed71964034ba5216fae6076235a7e6d5f790ed868ee47b0adeed90d`.
+
+## Takumi article social images — 2026-09-15
+
+- Added on-demand 1200 × 630 WebP cards based on the starter kit's cover-background and centered title-panel design, with description, author, date, and site identity.
+- Verified generated metadata across all 35 built article pages: Open Graph, Twitter, and JSON-LD share the canonical versioned image URL; OG dimensions are 1200 × 630.
+- All 51 tests pass, including actual Takumi renders with a cover, missing-cover fallback, allowed image paths, and metadata-based URL invalidation. Formatting, lint, and types pass.
+- Production build passes without CMS/storage credentials. The built server returned valid WebPs for sample articles and a Notion ID alias, with expected cache headers; an unknown article returned 404.
+- Visually checked representative cards including both longest current titles. Description truncation uses an ellipsis. Previews are saved under ignored `work/`; the durable template is `components/social-image.tsx`.
+
+- Final card revision removes the domain footer and explicitly centers the title with `text-wrap: balance`; template version 2 refreshes the advertised image URL.
+
+- Corrected Takumi 2.13 balanced-text positioning by measuring the narrowest box that preserves line count, then centering it. Pixel-based checks cover short and long titles. The cover uses a 6px blur, and Takumi emits WebP at quality 90.

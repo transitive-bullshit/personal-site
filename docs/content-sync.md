@@ -104,3 +104,13 @@ All synced article images, covers, icons, bookmark previews, and lightbox images
 Next.js automatically generates blur data for static imports, but remote images require a supplied `blurDataURL` ([Image documentation](https://nextjs.org/docs/app/api-reference/components/image#blurdataurl)). Sync generates an inline WebP preview no larger than 8 × 8 pixels using Sharp, and stores it in each image descriptor. Next.js handles the blur and removes the placeholder when the image loads. Animated images use a separate first-frame preview; their original bytes and animation remain unchanged.
 
 Normal sync backfills older descriptors from immutable cached R2 assets, including reused bookmark previews, and resumes completed previews from the local media cache. Dry runs skip this work. Once saved, previews need no further fetching or generation. Builds read them from the snapshot without Notion or storage credentials. Still images use Next.js responsive optimization; GIFs, animated images, and SVGs bypass re-encoding.
+
+## Generated article social images
+
+Articles advertise `/api/social-image/<canonical-slug>?v=<content-hash>` in Open Graph, Twitter cards, and JSON-LD. Takumi renders a 1200 × 630 WebP on demand from the saved article metadata and its cached R2 cover. The first-pass design follows the starter kit: subtly blurred full-bleed cover, centered white title panel, description, author, publication month/year, and site identity. Long descriptions are shortened for the card.
+
+The Node.js route uses `takumi-js/response`, with `@takumi-rs/core` externalized as required by [Takumi's Next.js integration](https://takumi.kane.tw/docs/integration/nextjs). Built-in Geist avoids remote font requests. Rendering never calls Notion or accepts arbitrary image/title query parameters. Missing or unpublished articles return 404; existing aliases resolve the canonical article.
+
+Successful images send browser caching for one hour and CDN caching for one day, with stale-while-revalidate for one week. Changes to displayed metadata, cached cover URLs, or the template version produce a fresh advertised URL. Cover failures produce a readable text card cached for five minutes at the CDN. Cover requests are limited to immutable image paths in our bucket, with a five-second timeout and 8 MiB limit.
+
+Edit `components/social-image.tsx` for the design, and bump `templateVersion` in `lib/social-image.ts` when changing the template. Builds still prerender all article HTML without CMS/storage credentials; only social-image requests invoke Takumi.
