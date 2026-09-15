@@ -11,7 +11,7 @@ export function ArticleTweet({
 }) {
   if (tweet?.status === 'available') {
     return (
-      <div data-theme='light'>
+      <div>
         <EmbeddedTweet tweet={tweet.data as unknown as Tweet} />
       </div>
     )

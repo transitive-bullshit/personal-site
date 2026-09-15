@@ -23,7 +23,10 @@ export async function CodeBlock({
   const lang = Object.hasOwn(bundledLanguages, requested)
     ? (requested as keyof typeof bundledLanguages)
     : 'text'
-  const html = await codeToHtml(text, { lang, theme: 'github-light' })
+  const html = await codeToHtml(text, {
+    lang,
+    themes: { light: 'github-light', dark: 'github-dark' }
+  })
   return (
     <figure>
       <div className='code-frame' id={block.id}>
