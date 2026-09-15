@@ -84,6 +84,7 @@ export async function syncBookmarks(options: {
   previous: Record<string, BookmarkPreview>
   force: boolean
   dryRun: boolean
+  skipImages?: boolean
   saveImage: (key: string, imageUrl: string) => Promise<Media>
   warn: (message: string) => void
   fetchPreview?: typeof fetchBookmark
@@ -97,7 +98,7 @@ export async function syncBookmarks(options: {
     while (cursor < urls.length) {
       const url = urls[cursor++]!
       const old = options.previous[url]
-      if ((old && !options.force) || options.dryRun) {
+      if ((old && !old.needsImageSync && !options.force) || options.dryRun) {
         if (old) bookmarks[url] = old
         reused += Number(Boolean(old))
         continue
@@ -105,23 +106,27 @@ export async function syncBookmarks(options: {
       fetched++
       try {
         const preview = await (options.fetchPreview ?? fetchBookmark)(url)
-        let image: Media | undefined
-        for (const candidate of preview.images.slice(0, 3)) {
-          try {
-            image = await options.saveImage(bookmarkKey(url), candidate)
-            break
-          } catch {
-            /* Try the next advertised social image. */
+        let image = options.skipImages ? old?.image : undefined
+        if (!options.skipImages) {
+          for (const candidate of preview.images.slice(0, 3)) {
+            try {
+              image = await options.saveImage(bookmarkKey(url), candidate)
+              break
+            } catch {
+              /* Try the next advertised social image. */
+            }
           }
-        }
-        if (preview.images.length && !image) {
-          options.warn('Bookmark image unavailable: ' + url)
-          // Keep an existing good image when a refresh encounters a transient failure.
-          image = old?.image
+          if (preview.images.length && !image) {
+            options.warn('Bookmark image unavailable: ' + url)
+            // Keep an existing good image when a refresh encounters a transient failure.
+            image = old?.image
+          }
         }
         bookmarks[url] = {
           title: preview.title,
           description: preview.description,
+          needsImageSync:
+            options.skipImages && preview.images.length ? true : undefined,
           image
         }
       } catch (err) {

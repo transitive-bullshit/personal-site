@@ -18,7 +18,7 @@ pnpm content:sync --dry-run
 pnpm content:sync
 ```
 
-See [Content sync](docs/content-sync.md) for environment setup and explicit pruning/rename flags, and [Implementation plan](docs/implementation-plan.md) for the agreed scope.
+See [Content sync](docs/content-sync.md) for setup, flags, caching, and exit codes.
 
 ## Checks
 

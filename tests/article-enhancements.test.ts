@@ -141,6 +141,57 @@ describe('cached bookmark previews', () => {
       (await syncBookmarks({ ...options, dryRun: false })).bookmarks
     ).toEqual(previous)
   })
+  it('refreshes bookmark text without syncing images in fast mode', async () => {
+    const image = { original: { mime: 'image/png' } } as Media
+    const saveImage = vi.fn<(key: string, url: string) => Promise<Media>>()
+    const fetchPreview = vi.fn<typeof fetchBookmark>().mockResolvedValue({
+      title: 'Refreshed',
+      description: 'New description',
+      images: ['https://example.com/new.png']
+    })
+    const result = await syncBookmarks({
+      urls: ['https://example.com'],
+      previous: {
+        'https://example.com': {
+          title: 'Saved',
+          description: 'Old description',
+          image
+        }
+      },
+      force: true,
+      dryRun: false,
+      skipImages: true,
+      fetchPreview,
+      saveImage,
+      warn: () => {}
+    })
+
+    expect(result.bookmarks['https://example.com']).toEqual({
+      title: 'Refreshed',
+      description: 'New description',
+      needsImageSync: true,
+      image
+    })
+    expect(fetchPreview).toHaveBeenCalledTimes(1)
+    expect(saveImage).not.toHaveBeenCalled()
+
+    fetchPreview.mockClear()
+    saveImage.mockResolvedValue(image)
+    const completed = await syncBookmarks({
+      urls: ['https://example.com'],
+      previous: result.bookmarks,
+      force: false,
+      dryRun: false,
+      fetchPreview,
+      saveImage,
+      warn: () => {}
+    })
+    expect(fetchPreview).toHaveBeenCalledTimes(1)
+    expect(saveImage).toHaveBeenCalledTimes(1)
+    expect(
+      completed.bookmarks['https://example.com']?.needsImageSync
+    ).toBeUndefined()
+  })
   it('excludes local network destinations including IPv4-mapped IPv6', () => {
     for (const ip of [
       '127.0.0.1',

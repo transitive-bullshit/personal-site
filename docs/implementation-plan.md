@@ -17,9 +17,9 @@ Build a simple Next.js personal site whose article content is imported explicitl
 - Preserve original media. Optimize still images only; keep GIFs, videos, and audio unchanged.
 - Use the existing `cultural-alignment` R2 bucket, `https://assets.cultural-alignment.com`, and the same credentials for development and production. Use a `personal-site/` key prefix.
 - Warn and preserve existing routes when inferred or explicit source slugs change; require a CLI flag to accept pathname changes. Retain old accepted paths as redirects.
-- Warn and retain prior snapshots for previously imported pages missing from discovery; require an explicit pruning flag.
+- Warn and retain missing articles until `--prune`.
 - A successfully observed `Public=false` immediately removes the article and its aliases from the next successful snapshot.
-- A failed required import preserves the complete previous snapshot. Unsupported blocks and inaccessible required content are errors. Unavailable external embeds use the agreed fallback behavior.
+- A failed article keeps its prior version. New failed articles stay inactive.
 - Include `sitemap.xml`, `llms.txt`, canonical metadata, article Open Graph metadata, and JSON-LD. Omit `/feed` and special `?lite=true` rendering.
 - Future Spotify activity, recent projects, social activity feeds, app-authored sections, and deployment are outside this implementation pass.
 
@@ -129,51 +129,16 @@ Canonicalize map ordering, whitespace, newline endings, and arrays whose order i
 
 ## 4. Sync command and lifecycle
 
-Expose these explicit commands:
+The current command contract is in [content-sync.md](content-sync.md).
 
-| Command | Behavior |
-| --- | --- |
-| `pnpm content:sync` | Import current source, reuse unchanged media, warn on missing pages/pathname drift |
-| `pnpm content:sync --dry-run` | Read and validate source, report changes; leave snapshot and R2 untouched |
-| `pnpm content:sync --force` | Reinspect media sources and regenerate as needed; still deduplicate by output hash |
-| `pnpm content:sync --prune` | Explicitly remove previously imported pages confirmed absent from a complete discovery |
-| `pnpm content:sync --accept-slug-changes` | Accept proposed pathname changes, preserving previous paths as aliases |
-
-Flags may compose. Force must not imply pruning or accepting path changes. Skip a separate fast mode initially; the normal path should already avoid expensive unchanged-media work.
-
-### Ordered pipeline
-
-1. Load sync-only configuration and validate required credentials. Acquire a local run lock so two processes do not publish competing local snapshots.
-2. Validate the existing snapshot, source contract, and schema versions before using cached state.
-3. Verify root/database/data-source ancestry and property types. Paginate the whole top-level collection, including Public=false rows needed for lifecycle decisions.
-4. Build the selected page set and proposed pathname registry. Report collision, removal, and pathname changes before downloads.
-5. Traverse selected article block trees with pagination and bounded concurrency. Fetch inline database properties and rows, but exclude child-page and table row-page bodies.
-6. Normalize rich text, links, blocks, inline tables, and source media identities. Resolve links among selected articles using the final route registry.
-7. Reuse or publish media through the R2 pipeline. Resolve each unique tweet once; record fallback status where necessary.
-8. Validate the complete candidate snapshot, internal links, media references, and route uniqueness. Collect all actionable errors with article/block IDs.
-9. Serialize deterministically to a temporary sibling file and atomically rename the single runtime snapshot only after success. Leave an identical existing file untouched.
-10. Print a compact summary: pages added/updated/reused/unpublished/missing/pruned, pathname changes, bytes downloaded, objects reused/uploaded, and fallback warnings. Clean temporary files and release the lock.
-
-On failure, exit nonzero and retain the prior runtime snapshot byte-for-byte. R2 uploads performed before a later failure can leave harmless immutable objects; do not delete them as part of rollback. Remote cache descriptors are optimizations, never the authority for what is published.
-
-### Lifecycle distinctions
-
-- A complete source query that no longer returns a previously imported page yields a warning and preserves its prior article until `--prune`.
-- An explicit Public=false row removes its body, route, aliases, homepage entry, metadata entries, and associated tweet snapshot entries that have no remaining published references.
-- A listed public page whose required body cannot be fetched is an import error. Preserve the previous complete snapshot instead of silently keeping a partial mix.
-- Failed collection pagination or source authorization cannot establish absence and must never trigger pruning.
-- A changed title or Slug updates content but keeps the recorded pathname until `--accept-slug-changes`.
-- Removed pages' R2 objects are retained. Bucket garbage collection and remote-object deletion are outside this pass.
-
-### Incremental correctness
-
-Copy cultural-alignment's media reuse hierarchy: compatible pipeline version, unchanged source page/block identity and edit markers, then content-hash object reuse.
-
-For full article content, do not assume a parent page's edit time captures every descendant or inline database row edit. Initially scan the article block tree each sync, and query embedded table rows independently. Reuse unchanged media descriptors to skip downloads and processing. Add broader traversal shortcuts only if their change-detection coverage is established; correctness takes priority over avoiding inexpensive API reads.
-
-A source change should update text/captions independently of media bytes. Changes to image-processing parameters invalidate the relevant pipeline version. `--force` also handles external assets that changed behind an unchanged URL.
-
-Honor Notion pagination, retry-after responses, transient failures, and bounded retries. Report timeouts and exhausted retries explicitly rather than accepting truncated content.
+- Reuse articles when `last_edited_time <= modified`; `--force` bypasses this.
+- Import articles with `p-map` concurrency `8`.
+- `--fast` skips images and defers their work to the next normal sync.
+- `--prune` removes missing pages.
+- `--accept-slug-changes` changes paths and keeps redirects.
+- Recoverable failures write a valid fallback snapshot and exit `1`.
+- Hard validation failures keep the prior snapshot.
+- Sync writes Git changes; it does not deploy.
 
 ## 5. R2 and media
 
@@ -257,7 +222,7 @@ Where tweet media is imported, use the same unchanged-original/image pipeline; e
 
 ## 8. Next.js pages and metadata
 
-- Implement the minimal shared shell and a homepage list from the published snapshot.
+- Implement the shell and homepage from the committed snapshot.
 - Use `app/[slug]/page.tsx`, snapshot-driven `generateStaticParams`, and the installed Next version's async params convention.
 - Ensure canonical pages are prerendered. Resolve recognized aliases from the local registry; unknown routes return 404. Verify dynamic parameter configuration allows intended ID aliases while keeping unknown IDs inaccessible.
 - Keep runtime requests and builds independent of Notion, R2 credentials, and tweet API availability. Browser media requests may reach the public asset origin and intentional embed providers.
@@ -271,15 +236,15 @@ Where tweet media is imported, use the same unchanged-original/image pipeline; e
 
 ### Phase 1 — Contracts and source audit
 
-Set up sync-only environment loading, Zod contracts, deterministic serialization, the official API wrapper, and the publication/route model. Read current framework/package docs before integrating libraries.
+Set up sync-only environment loading, Zod contracts, deterministic serialization, the official API wrapper, and route state. Read current framework/package docs before integrating libraries.
 
 **Done when:** a read-only run validates the selected source and produces the exact expected article/path inventory plus actual required block types, with no unsupported or inaccessible content silently dropped.
 
 ### Phase 2 — End-to-end import
 
-Implement recursive normalization, lightweight inline tables, link rewriting, media reuse/R2 upload, tweet retrieval/fallback, lifecycle flags, and atomic publication. Exercise a representative article first, then import the full selected set.
+Implement normalization, link rewriting, media reuse, tweet fallbacks, lifecycle flags, and atomic snapshot writes.
 
-**Done when:** all selected articles produce a valid committed snapshot; an unchanged repeat run leaves it byte-identical and uploads no media; injected failures preserve the previous snapshot.
+**Done when:** unchanged syncs are no-ops and recoverable failures still write a valid snapshot.
 
 ### Phase 3 — Routes and renderer
 
@@ -312,9 +277,9 @@ Use focused Vitest tests for behavior that could lose content, break URLs, or cr
 - [x] Unchanged media skips downloads/conversion/upload; changed bytes produce new immutable objects.
 - [x] Still-image conversion preserves originals; GIF/video bytes are unchanged; authenticated HEAD errors are not mistaken for absence.
 - [x] Pipeline-version changes and force refresh work; conditional upload races reuse existing objects.
-- [x] An error after partial R2 uploads leaves the prior snapshot and routing intact.
+- [x] Recoverable errors write valid fallback data and return exit code `1`.
 - [x] No-op sync leaves identical snapshot bytes; dry-run writes neither local content nor R2.
-- [x] Required Notion media URLs in the published snapshot are durable R2 URLs, with no temporary Notion signed URLs.
+- [x] Snapshot media uses durable R2 URLs, never temporary Notion URLs.
 - [x] Tweets appear in server-rendered output; transient/unavailable tweet cases produce the defined fallback.
 - [x] TOC ordering, duplicate/skipped headings, nested lists, code escaping, and JSON-LD escaping have focused coverage.
 - [x] Build succeeds with Notion and S3 credentials absent and without live content fetching.

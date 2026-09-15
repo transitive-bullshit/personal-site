@@ -128,8 +128,7 @@ const extensions = {
   'text/plain': 'txt'
 } satisfies Record<string, string>
 
-// Next.js applies the visual blur. Store only an 8px preview, including the
-// first frame of animated images; the original animation is never rewritten.
+// Store an 8px first-frame blur; keep animations intact.
 export async function createBlurDataURL(bytes: Buffer) {
   const preview = await sharp(bytes, { limitInputPixels: 100_000_000 })
     .rotate()
@@ -218,6 +217,17 @@ export class MediaImporter {
     readonly options: { force: boolean; dryRun: boolean },
     readonly cache?: MediaCache
   ) {}
+
+  reuse(key: string) {
+    const media =
+      this.media[key] ?? this.previous[key] ?? this.cache?.entries[key]
+    if (!media) return false
+    if (!this.media[key]) {
+      this.media[key] = media
+      this.stats.reusedSources++
+    }
+    return true
+  }
 
   async import(
     source: MediaSource,

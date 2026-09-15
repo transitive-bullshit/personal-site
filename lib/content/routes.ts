@@ -8,6 +8,7 @@ export const reservedSlugs = new Set([
   '_next',
   'api',
   'transitivebullshit',
+  'writing',
   'about',
   'feed',
   'top-tweet-interactions-english',

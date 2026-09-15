@@ -83,6 +83,10 @@ type ImportMedia = (
   url: string,
   refresh?: () => Promise<string>
 ) => Promise<string>
+type NormalizerOptions = {
+  skipImages?: boolean
+  reuseMedia?: (key: string) => boolean
+}
 
 export class Normalizer {
   readonly blockCounts: Record<string, number> = {}
@@ -90,7 +94,8 @@ export class Normalizer {
   constructor(
     readonly api: NotionSourceClient,
     readonly routes: Record<string, RouteRecord>,
-    readonly importMedia: ImportMedia
+    readonly importMedia: ImportMedia,
+    readonly options: NormalizerOptions = {}
   ) {}
 
   text(value: unknown) {
@@ -127,6 +132,19 @@ export class Normalizer {
     )
   }
 
+  async image(
+    value: unknown,
+    key: string,
+    edited: string,
+    refreshValue?: () => Promise<unknown>
+  ) {
+    if (!this.options.skipImages)
+      return this.file(value, key, edited, refreshValue)
+    if (this.options.reuseMedia?.(key)) return key
+    this.warnings.push('Skipped unsynced image ' + key + ' in fast mode')
+    return undefined
+  }
+
   async icon(
     value: unknown,
     key: string,
@@ -138,16 +156,15 @@ export class Normalizer {
       return { type: 'emoji', value: z.string().parse(icon.emoji) }
     if (icon.type === 'custom_emoji') {
       const custom = z.object({ url: z.url() }).parse(icon.custom_emoji)
-      return {
-        type: 'image',
-        media: await this.file(
-          { type: 'external', external: { url: custom.url } },
-          key,
-          edited
-        )
-      }
+      const media = await this.image(
+        { type: 'external', external: { url: custom.url } },
+        key,
+        edited
+      )
+      return media ? { type: 'image', media } : undefined
     }
-    return { type: 'image', media: await this.file(value, key, edited) }
+    const media = await this.image(value, key, edited)
+    return media ? { type: 'image', media } : undefined
   }
 
   async article(
@@ -183,7 +200,7 @@ export class Normalizer {
         .map(({ name }) => name),
       featured: z.boolean().parse(prop('Featured').checkbox),
       cover: page.cover
-        ? await this.file(
+        ? await this.image(
             page.cover,
             page.id + ':cover',
             page.last_edited_time,
@@ -353,17 +370,17 @@ export class Normalizer {
           return { ...withChildren, type: 'video', url: external.url, caption }
         }
       }
-      const media = await this.file(
-        data,
-        block.id,
-        block.last_edited_time,
-        async () => {
-          const fresh = z
-            .record(z.string(), z.unknown())
-            .parse(await this.api.request('blocks/' + block.id))
-          return fresh[block.type]
-        }
-      )
+      const refresh = async () => {
+        const fresh = z
+          .record(z.string(), z.unknown())
+          .parse(await this.api.request('blocks/' + block.id))
+        return fresh[block.type]
+      }
+      const media =
+        block.type === 'image'
+          ? await this.image(data, block.id, block.last_edited_time, refresh)
+          : await this.file(data, block.id, block.last_edited_time, refresh)
+      if (!media) return undefined
       if (block.type === 'file' || block.type === 'pdf')
         return {
           ...withChildren,

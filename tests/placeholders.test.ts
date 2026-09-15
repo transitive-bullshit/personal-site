@@ -62,19 +62,23 @@ it('backfills shared article and bookmark images once and reuses saved placehold
   expect(fetcher).toHaveBeenCalledTimes(1)
 })
 
-it('keeps dry runs read-only and does not publish a failed image preview', async () => {
+it('keeps dry runs read-only and warns without publishing a failed image preview', async () => {
   const snapshot = { media: { cover: fixture('cover') } }
   const fetcher = vi
     .fn<typeof fetch>()
     .mockResolvedValue(new Response('bad image'))
+  const warn = vi.fn<(message: string) => void>()
   expect(await backfillPlaceholders(snapshot, { dryRun: true, fetcher })).toBe(
     0
   )
   expect(fetcher).not.toHaveBeenCalled()
   expect(snapshot.media.cover.blurDataURL).toBeUndefined()
   await expect(
-    backfillPlaceholders(snapshot, { dryRun: false, fetcher })
-  ).rejects.toThrow()
+    backfillPlaceholders(snapshot, { dryRun: false, fetcher, warn })
+  ).resolves.toBe(0)
+  expect(warn).toHaveBeenCalledWith(
+    expect.stringContaining('Image placeholder unavailable: cover')
+  )
   expect(snapshot.media.cover.blurDataURL).toBeUndefined()
 })
 
@@ -98,7 +102,7 @@ it('resumes completed placeholders by content hash without fetching and rejects 
     changed.media.cover.original.hash = 'b'.repeat(64)
     await expect(
       backfillPlaceholders(changed, { dryRun: false, cache, fetcher })
-    ).rejects.toThrow()
+    ).resolves.toBe(0)
     expect(fetcher).toHaveBeenCalledTimes(1)
     expect(changed.media.cover.blurDataURL).toBeUndefined()
   } finally {

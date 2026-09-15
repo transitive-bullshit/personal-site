@@ -11433,9 +11433,9 @@
       ],
       "cover": "2309b27b71df42d1999be203ba9565e2:cover",
       "description": "Ten years ago, I started creating monthly playlists to help me track new music. Somewhere along the line, this monthly ritual turned into more a personal music diary.",
-      "featured": false,
+      "featured": true,
       "id": "2309b27b71df42d1999be203ba9565e2",
-      "modified": "2026-08-20T16:37:00.000Z",
+      "modified": "2026-09-15T17:16:00.000Z",
       "published": "2022-03-29",
       "slug": "my-10-year-music-diary",
       "tags": [
@@ -18711,13 +18711,13 @@
       ],
       "cover": "689a8abc1afa4699905aa2f2e585e208:cover",
       "description": "Everything I wish I'd known before starting Saasify 2 years ago.",
-      "featured": false,
+      "featured": true,
       "icon": {
         "type": "emoji",
         "value": "🤔"
       },
       "id": "689a8abc1afa4699905aa2f2e585e208",
-      "modified": "2026-08-24T07:17:00.000Z",
+      "modified": "2026-09-15T17:17:00.000Z",
       "published": "2021-01-25",
       "slug": "saasify-key-takeaways",
       "tags": [
@@ -43596,9 +43596,9 @@
       ],
       "cover": "b24073e849714172aba8d636448a69c3:cover",
       "description": "What are the basis vectors of the passion economy? 👀",
-      "featured": false,
+      "featured": true,
       "id": "b24073e849714172aba8d636448a69c3",
-      "modified": "2026-08-20T16:37:00.000Z",
+      "modified": "2026-09-15T17:17:00.000Z",
       "published": "2021-06-19",
       "slug": "mapping-the-passion-economy",
       "tags": [
@@ -57987,6 +57987,1056 @@
       ],
       "title": "Making Your Code Beautiful"
     },
+    "dc19b919f27b48ce985a3d3d40fa2847": {
+      "author": "Travis Fischer",
+      "blocks": [
+        {
+          "children": [],
+          "color": "default",
+          "id": "e6a8850f883343519ee9bc931f08de84",
+          "level": 1,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Thought Experiment",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "f8059bc9a8d444c38723465ac0824a98",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Imagine the existence of an objective, omnipotent entity ala God who associates every human being with a virtual 3D bubble.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "256aa7b9199246f39e946e9b3bed2a1b",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Now visualize one of these bubbles surrounding every person that you meet, with the size of the bubble being proportional to that person’s aggregate life experience, world understanding, and self-awareness.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "671ce1306d4a425d996226bd9041a898",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "We'll call these ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "wisdom",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "bubbles",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "b5329b13b28747aeab3be97e38cf4ecd",
+          "media": "b5329b13b28747aeab3be97e38cf4ecd",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "7787a2bceb22430e803e5c01844d5c74",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The more knowledge, life experience, and world understanding you gain, the larger your wisdom bubble becomes.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "381c762cbff54b88b566d00a915eb07b",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The more sheltered, inexperienced, and ignorant you are, the smaller your wisdom bubble becomes.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "color": "default",
+              "id": "e573b0d5c072466b999f4d8cd778353d",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "You could imagine these bubbles as high dimensional surfaces where each dimension corresponds to some concrete aspect of knowledge. This abstraction is a lot harder to visualize and reason about, however, so for the purposes of this thought experiment let’s stick with the projection of these high dimensional surfaces onto three-dimensional spheres.",
+                  "underline": false
+                }
+              ],
+              "type": "paragraph"
+            }
+          ],
+          "color": "default",
+          "id": "1febb5a716f340d39233e5e979282219",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "For the more mathematically inclined...",
+              "underline": false
+            }
+          ],
+          "type": "toggle"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "cdba9d92be4e42df9b6d03b92bf7c2ab",
+          "richText": [],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "f78f551d19c641a587907644aefdb806",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Implications",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "6a56504260f245538dc31457febf9c32",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Let's explore the implications of this thought experiment a bit.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "e27bc086a8e44ba38d2ddcb676eabb9d",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Properties that should hold true for all wisdom bubbles include:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "6eab657eb1454534837b590652507cf7",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "All babies would start with small, roughly equal-sized, non-zero volume bubbles. They would have a positive volume at birth due to built-in knowledge and behaviors that all humans start with. (eg no clean slate)",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "color": "default",
+              "id": "96753b517665484097d8a6a792395365",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Some examples of experiences that may cause your bubble to shrink would be the onset of a major depression or joining a misguided cult from which your world view is either temporarily or irrevocably damaged.",
+                  "underline": false
+                }
+              ],
+              "type": "bulleted_list_item"
+            }
+          ],
+          "color": "default",
+          "id": "3923f9dc422b4f9db9e690cb3bc985a7",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The size of your bubble wouldn’t necessarily grow monotonically over the course of your life. In other words, it’s possible for the size of your bubble to grow and shrink in response to stimuli as you grow older.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "b6f14800d86845b8aa01a1472cd07c4a",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The size of your parent’s bubbles would be a strong factor affecting the rate at which your bubble would grow during adolescence, with this factor weakening as you grow older.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "875ec89e82f24212ba6ddcc4f4a04594",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I would hypothesize that the Dunning-Kruger effect would apply whole-heartedly to one’s ability to estimate the size of their own wisdom bubble.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "35897a68f1ab4bbdba615bbe63cf8247",
+          "richText": [],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "48f55e46ae1649e4a1087578dfcae931",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Comparing Bubbles",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "8361d7c2b35347efb251beb559439ea7",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Some people’s wisdom bubbles will naturally be quite a bit larger than others.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ef39f4670f354ced81acbe492eaf1883",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "If you overlap two people’s bubbles, the resulting 3D Venn diagram would represent the subset of experiences and understanding about the world shared between two individuals. This overlap could be used as an abstract measure of the shared wisdom between any two individuals in a population.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "98e11db6de6a444fb261fe50f64b6321",
+          "richText": [],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "64328c2a57c445f0b34817c2a4e1e348",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Heuristics for Larger Bubbles",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "75c81f3924fb464682087e1a6710c550",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Some heuristics that I believe would strongly correlate with larger wisdom bubbles but not necessarily always correspond:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "e1c48b72e8ec4c398b46ee0e1134bdaa",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Being forced to confront differences in culture and ideology",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a69c6147d41d4a09b5fc41394adc0cca",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Travel and/or living in different geographical areas",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d4f2f2028d3745b0bf4f6d2c40487bd7",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Higher education",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "4f154b33fa994bb482a6947d8ee2cf9d",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Being born into wealthier families or more affluent areas",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "c2e6f17e70464fb39f9f8e24514c281f",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Adopting a scientific mindset",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "7edfcc680de3414494315b0e701f23e5",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Having an innate desire to remain open-minded",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "84b126c8030c4099a6856aca0b5f7b96",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Exploring love and sexuality",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "f55a7a066fc54456864dbecc4c902038",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Comfort level with expressing yourself",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d3af40c6e79649ec899fef925aea948c",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Major life experiences such as having children",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "77fd3722d7ca494583a1e22eb7a0fa71",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Being more independent",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "7f14ef1a6adc4998b7d0f8b248536e8b",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "It would generally take strength across all of these areas to have the largest possible wisdom bubbles, though some outliers who focus on several of these factors certainly exist. Take the Dalai Lama, for example.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "73b12964cdee4a2bb8baee68a7ca59c7",
+          "richText": [],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "2d14a24350d6448db10d0040e736913f",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Heuristics for Smaller Bubbles",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "8f95ae5400694b5393d1bf39639b2f77",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Some heuristics that would strongly correlate with smaller wisdom bubbles but not necessarily always correspond:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "110787d944c84b8b85acf41b67784863",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Homogeneous geographical experience",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a5a3f0074e404e8eb94e2c85ec90b4b1",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Religious extremism",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ee896d190b4e49039e8ee2b2d20dd3be",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Lower levels of education",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "eeac7539aa72473d99c28939b87c2b48",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "More trusting of authority",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "fed8fc7e147449f8bbab6d4f7385d29f",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Stronger tribal affiliations",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "60a24985ada74c679606c07dac0de546",
+          "richText": [],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "34fe73982e3948d8916ef08919eb5406",
+          "level": 1,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Thought-Provoking Questions",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "color": "default",
+              "id": "9472604a50584bd4a025e0d18ddecadc",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "How would, say, an average prehistoric adult’s bubble compare to that of an average modern toddler growing up in the US?",
+                  "underline": false
+                }
+              ],
+              "type": "bulleted_list_item"
+            }
+          ],
+          "color": "default",
+          "id": "87252f670ed1439fbe25f46905f5aac0",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Given a constant baseline observer, how would the average size of the world's population of wisdom bubbles change over time?",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "f0831a92b2ea4f03a006f006a476affa",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "If we adjusted for changes over time to society’s aggregate wisdom, similar to how economists adjust for inflation, how would someone like Leonardo Da Vinci compare to someone like Albert Einstein? Or Elon Musk?",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "color": "default",
+              "id": "fb977b7f1b7e49ab9b8e53db9e2bbfff",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "There’s a ",
+                  "underline": false
+                },
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "href": "https://www.imdb.com/title/tt5497778/",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Black Mirror episode",
+                  "underline": false
+                },
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": " related to this, though it focuses more on a subjective, social score of popularity as opposed to an objective measure of wisdom.",
+                  "underline": false
+                }
+              ],
+              "type": "bulleted_list_item"
+            }
+          ],
+          "color": "default",
+          "id": "b5fb8dace9f84b59be2a6b6c7c470877",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "How would society differ if this form of objective wisdom bubble was real and visible to everyone?",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "color": "default",
+              "id": "a8d517bda39d49688a89c6c4651784e4",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "What would the shape of this graph be? Possibly a parabola where ignorance is bliss and most people in the middle are somewhat happy and only the most enlightened and wise among us find true happiness?",
+                  "underline": false
+                }
+              ],
+              "type": "bulleted_list_item"
+            }
+          ],
+          "color": "default",
+          "id": "614d13ed853e4951b9da597adfad292a",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Is there any type of correlation (positive or negative) between the size of one’s wisdom bubble and their general happiness in life?",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "966179d2d3eb43879710b8ee811eeb48",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Is there any type of correlation (positive or negative) between the size of one’s wisdom bubble and the magnitude of their contributions to society?",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "528476d4dd30422e9ee94276761af04b",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Is there any type of correlation (positive or negative) between the size of one’s wisdom bubble and their eventual financial wealth?",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ce21c4ca135a431485137112b8edf87a",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "What would it look like to compare the wisdom bubbles of various figures throughout history?",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "dc9be5066ec24a14a41010a55c0020fc",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Is there any type of objective test that approximates this type of metric? Standardized testing, IQ, etc all only measure very small subsets of wisdom.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d8d7d9efd8e645c1833e18807a0b1342",
+          "richText": [],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "e483fcc64d644fa1873602d0d2dbc660",
+          "level": 1,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Conclusion",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "1edbc11be9a646f28d408e67adb3a06d",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Wisdom bubbles are an attempt to define an objective metric describing a person’s wisdom. I’ve found them to be a useful heuristic when considering different people and ideas over time.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "577c30f3c96446f480357a98e2134e80",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The main downside with wisdom bubbles is that they’re only a thought experiment. It would be impossible to objectively measure a person’s collective wisdom, life experience, and self awareness. That doesn’t mean, however, that they aren’t still useful from a conceptual standpoint.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "cover": "dc19b919f27b48ce985a3d3d40fa2847:cover",
+      "description": "Wisdom bubbles are a visual metaphor that I’ve found quite useful over the years.",
+      "featured": false,
+      "id": "dc19b919f27b48ce985a3d3d40fa2847",
+      "modified": "2026-09-15T17:20:00.000Z",
+      "published": "2020-09-16",
+      "slug": "wisdom-bubbles",
+      "tags": [
+        "Thought Experiments"
+      ],
+      "title": "Wisdom Bubbles"
+    },
     "dfc7f709ae3e42c69292f6543d5586f0": {
       "author": "Travis Fischer",
       "blocks": [
@@ -62306,9 +63356,9 @@
       ],
       "cover": "dfc7f709ae3e42c69292f6543d5586f0:cover",
       "description": "A breakdown of the most important JS dev tools in 2022, including their most relevant tradeoffs, and some opinionated advice sprinkled on top.",
-      "featured": true,
+      "featured": false,
       "id": "dfc7f709ae3e42c69292f6543d5586f0",
-      "modified": "2026-08-24T07:15:00.000Z",
+      "modified": "2026-09-15T17:15:00.000Z",
       "published": "2022-03-31",
       "slug": "javascript-dev-tools-in-2022",
       "tags": [
@@ -77447,7 +78497,7 @@
       ]
     },
     "2309b27b71df42d1999be203ba9565e2:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoIAAUAA4BaJbACdADzesxgAP2aAEQEQH4E1cspw5va2ruNIP8tZFBvJVxglr+cGF+jG0+5AAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoIAAUAA4BaJbACdAEOZ/JwAAD6DjpkaDM8rwfPvh4SIOANCmZGWPFUEFzT76FU5r3DQx0RbYakAAAA",
       "original": {
         "bytes": 191483,
         "hash": "d117d8428176f0dd4ffba4935c01df2e7f202efa9f59c5cf3c0256cf8219205d",
@@ -77459,7 +78509,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-08-20T16:37:00.000Z",
+        "edited": "2026-09-15T17:16:00.000Z",
         "key": "2309b27b71df42d1999be203ba9565e2:cover",
         "kind": "file"
       },
@@ -79034,7 +80084,7 @@
       ]
     },
     "689a8abc1afa4699905aa2f2e585e208:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAUAA4BaJZQC7ADzDGAAzjq5Bo0oARCLA9+S+5AAAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAUAA4BaJZQC/ODze7UQAM4+K9v1GlACQBVx1QgAAA==",
       "original": {
         "bytes": 140075,
         "hash": "7dfeecbab7ba3361ef836a3756a6e1c3895a326dbbb15f56d324db1a72fc352c",
@@ -79046,7 +80096,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-08-24T07:17:00.000Z",
+        "edited": "2026-09-15T17:17:00.000Z",
         "key": "689a8abc1afa4699905aa2f2e585e208:cover",
         "kind": "file"
       },
@@ -81189,7 +82239,7 @@
       ]
     },
     "b24073e849714172aba8d636448a69c3:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAQAA4BaJQBOgB6QNkwAAP26NRnAxWfrXpjJoB13OblieM1gVsDsxzdAAAAA",
+      "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoIAAUAA4BaJaACdADZkPFAAP5NlMO+e/gfbVuwOUqHnDkdm+OykwNF0wd2CVKCigdvAnSXCkAAAA==",
       "original": {
         "bytes": 322748,
         "hash": "d588d7fca05039f6d12c02eec4efe2324b8b62e11428a0c4aaa169f03a515afe",
@@ -81201,7 +82251,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-08-20T16:37:00.000Z",
+        "edited": "2026-09-15T17:17:00.000Z",
         "key": "b24073e849714172aba8d636448a69c3:cover",
         "kind": "file"
       },
@@ -81413,6 +82463,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/75bca2e6d98a74cf9f3be01b065b0b937588ad80d66cd7f2646187700aa1ea67.webp",
           "width": 1440
+        }
+      ]
+    },
+    "b5329b13b28747aeab3be97e38cf4ecd": {
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAUAA4BaJQBOgCIBWh96AADyjZix2dB0UDjY+W5NIxzSOV3iUAAA",
+      "original": {
+        "bytes": 289697,
+        "hash": "8cc28135bdd3e2bf3eeeda0cd49f377fb96e57382fa736aac4e9db8b1cd0be11",
+        "height": 1047,
+        "key": "personal-site/media/8cc28135bdd3e2bf3eeeda0cd49f377fb96e57382fa736aac4e9db8b1cd0be11.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/8cc28135bdd3e2bf3eeeda0cd49f377fb96e57382fa736aac4e9db8b1cd0be11.jpg",
+        "width": 1836
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2022-03-30T06:30:00.000Z",
+        "key": "b5329b13b28747aeab3be97e38cf4ecd",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 83424,
+          "hash": "ae72aaed6a805be7393882ae8d9ec6f3b34e4335f8e73daaed0484800d5f7d08",
+          "height": 547,
+          "key": "personal-site/media/ae72aaed6a805be7393882ae8d9ec6f3b34e4335f8e73daaed0484800d5f7d08.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/ae72aaed6a805be7393882ae8d9ec6f3b34e4335f8e73daaed0484800d5f7d08.webp",
+          "width": 960
+        },
+        {
+          "bytes": 387060,
+          "hash": "00a002565a1e97c0c85cccca7febb4f3e22697736d958de23eeac4034d36a82f",
+          "height": 1047,
+          "key": "personal-site/media/00a002565a1e97c0c85cccca7febb4f3e22697736d958de23eeac4034d36a82f.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/00a002565a1e97c0c85cccca7febb4f3e22697736d958de23eeac4034d36a82f.webp",
+          "width": 1836
         }
       ]
     },
@@ -82657,6 +83745,44 @@
         }
       ]
     },
+    "dc19b919f27b48ce985a3d3d40fa2847:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoIAAUAA4BaJYwCdH8AFbMVQwAAzh6oVEvUN2tA2xxJfWWtkoPrzucAY1TRTgAA",
+      "original": {
+        "bytes": 511866,
+        "hash": "19ab85c1a1b14876d2cd63f859ca6040506a1751ea9e8dea59d823816bcc40f6",
+        "height": 1280,
+        "key": "personal-site/media/19ab85c1a1b14876d2cd63f859ca6040506a1751ea9e8dea59d823816bcc40f6.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/19ab85c1a1b14876d2cd63f859ca6040506a1751ea9e8dea59d823816bcc40f6.jpg",
+        "width": 1920
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-15T17:20:00.000Z",
+        "key": "dc19b919f27b48ce985a3d3d40fa2847:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 136250,
+          "hash": "1522893a944e435f04ec6422d3a2d8fff837830af5928bc5a27713aa5b51a2e0",
+          "height": 640,
+          "key": "personal-site/media/1522893a944e435f04ec6422d3a2d8fff837830af5928bc5a27713aa5b51a2e0.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/1522893a944e435f04ec6422d3a2d8fff837830af5928bc5a27713aa5b51a2e0.webp",
+          "width": 960
+        },
+        {
+          "bytes": 515550,
+          "hash": "3967b03786f05eb3f9b5cd1f62e5318d1247c002f2397d99cd350b98c88f5995",
+          "height": 1280,
+          "key": "personal-site/media/3967b03786f05eb3f9b5cd1f62e5318d1247c002f2397d99cd350b98c88f5995.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/3967b03786f05eb3f9b5cd1f62e5318d1247c002f2397d99cd350b98c88f5995.webp",
+          "width": 1920
+        }
+      ]
+    },
     "dc5904298cba48d78a949782cac2d1e3": {
       "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4WAoAAAAQAAAABwAAAAAAQUxQSAkAAAAAJB8eJjAdHjYAVlA4ICYAAADQAQCdASoIAAEAA4BaJQBOj+ACuUcmSAD++cj0ECQDO0yaEqEwAA==",
       "original": {
@@ -82820,7 +83946,7 @@
       "variants": []
     },
     "dfc7f709ae3e42c69292f6543d5586f0:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAUAA4BaJQBOgCPtw/qkAAD8j/ALa7agxX9y+GkA6jOV/c51cWB89do7ptnoAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAUAA4BaJQBOgCPtxBKiAAD8j/ALa7agUq7l8KjpYni5yHdpzIEYayDTMAAA",
       "original": {
         "bytes": 139910,
         "hash": "8b86e9228b7dc03f4d7aa28ddaabeb62b0d2d5cdc4347869c1359fd1f109e513",
@@ -82832,7 +83958,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-08-24T07:15:00.000Z",
+        "edited": "2026-09-15T17:15:00.000Z",
         "key": "dfc7f709ae3e42c69292f6543d5586f0:cover",
         "kind": "file"
       },
@@ -83952,6 +85078,11 @@
       "active": true,
       "aliases": [],
       "slug": "making-your-code-beautiful"
+    },
+    "dc19b919f27b48ce985a3d3d40fa2847": {
+      "active": true,
+      "aliases": [],
+      "slug": "wisdom-bubbles"
     },
     "dfc7f709ae3e42c69292f6543d5586f0": {
       "active": true,

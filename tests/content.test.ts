@@ -71,6 +71,7 @@ describe('publication and pathname lifecycle', () => {
       'a/b',
       'about',
       'llms.txt',
+      'writing',
       'a%2fb',
       'a?b',
       'a b',

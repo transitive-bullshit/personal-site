@@ -1,11 +1,4 @@
-import {
-  readFile,
-  rename,
-  writeFile,
-  mkdir,
-  open,
-  unlink
-} from 'node:fs/promises'
+import { readFile, rename, mkdir, open, unlink } from 'node:fs/promises'
 import { dirname } from 'node:path'
 import { validateSnapshot } from '../lib/content/references'
 import { parseEnv } from 'node:util'
@@ -76,21 +69,4 @@ export async function publishSnapshot(
     await unlink(temp).catch(() => {})
   }
   return true
-}
-
-export async function lockSync() {
-  await mkdir('work', { recursive: true })
-  const path = 'work/content-sync.lock'
-  const file = await open(path, 'wx').catch((err: NodeJS.ErrnoException) => {
-    if (err.code === 'EEXIST')
-      throw new Error(
-        'A sync lock already exists at work/content-sync.lock. Check the recorded process before removing a stale lock.'
-      )
-    throw err
-  })
-  await writeFile(file, String(process.pid))
-  return async () => {
-    await file.close()
-    await unlink(path)
-  }
 }

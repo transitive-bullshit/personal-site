@@ -1,6 +1,7 @@
 import { describe, expect, it, vi } from 'vitest'
 import { NotionSourceClient, pageSchema } from '../scripts/notion/source'
 import { Normalizer } from '../scripts/notion/normalize'
+import type { MediaSource } from '../lib/content/schema'
 
 const a = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
 const b = 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'
@@ -132,6 +133,44 @@ describe('official Notion traversal', () => {
       )
     ).toBeUndefined()
     expect(children).not.toHaveBeenCalled()
+  })
+  it('reuses existing images and omits unsynced images in fast mode', async () => {
+    const api = new NotionSourceClient('fixture')
+    const importMedia = vi.fn<
+      (
+        source: MediaSource,
+        url: string,
+        refresh?: () => Promise<string>
+      ) => Promise<string>
+    >(async () => 'imported')
+    const reuseMedia = vi.fn<(key: string) => boolean>((key) => key === a)
+    const normalize = new Normalizer(api, {}, importMedia, {
+      skipImages: true,
+      reuseMedia
+    })
+    const image = (id: string) =>
+      normalize.block(
+        {
+          id,
+          type: 'image',
+          has_children: false,
+          last_edited_time: '2026-01-01T00:00:00.000Z',
+          image: {
+            type: 'external',
+            external: { url: 'https://example.com/image.png' },
+            caption: []
+          }
+        },
+        new Set()
+      )
+
+    await expect(image(a)).resolves.toMatchObject({ type: 'image', media: a })
+    await expect(image(b)).resolves.toBeUndefined()
+    expect(reuseMedia).toHaveBeenCalledTimes(2)
+    expect(importMedia).not.toHaveBeenCalled()
+    expect(normalize.warnings).toEqual([
+      'Skipped unsynced image ' + b + ' in fast mode'
+    ])
   })
   it('propagates inaccessible required content as a failure', async () => {
     const api = new NotionSourceClient('fixture')

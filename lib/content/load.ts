@@ -23,3 +23,4 @@ export const articles = Object.values(content.articles).sort(
   (a, b) =>
     b.published.localeCompare(a.published) || a.slug.localeCompare(b.slug)
 )
+export const featuredArticles = articles.filter((article) => article.featured)

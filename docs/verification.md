@@ -33,11 +33,11 @@ The broken Saasify callout icon was repaired in Notion using the identical origi
 | Internal article/block links | All 12 resolve, including legacy ID links |
 | Tweet server output | Rendered tweet markup on seven article pages; no Twitter iframe renderer |
 | Snapshot integrity | No expiring Notion signed media URLs; removed gallery GIF absent |
-| Local cleanup | Env restored; sync lock released; temporary clipboard test page removed |
+| Local cleanup | Env restored; temporary clipboard test page removed |
 
 The public asset host rejects Python's default User-Agent with HTTP 403. Browser requests and HEAD checks using a browser User-Agent succeed. No hosting or security settings were changed.
 
-The focused tests cover publication/pathname lifecycle, pagination and required-source failures, atomic snapshot publication after partial uploads, immutable media storage and conditional-write races, GIF/video preservation, media reuse and pipeline invalidation, download/stream retries, resumable media caching, dry-run behavior, heading hierarchy, JSON-LD escaping, and tweet fallback/reuse.
+The focused tests cover routes, best-effort imports, atomic snapshot writes, media reuse, retries, dry runs, rendering, and fallbacks.
 
 ## Browser checks
 
@@ -120,3 +120,10 @@ The preceding migration hash and counts describe the initial snapshot. Current e
 - Images retain native pointer/drag/context-menu behavior. Original-image links remain available, with a lower-right download button that shows progress, animated confirmation, and a retry state on failure.
 - Downloads use a same-origin streaming route restricted to originals in the committed media snapshot. Original GIF/image bytes are unchanged; unknown assets return 404 and upstream failures return 502 without success caching.
 - All 58 tests pass, including attachment headers, unchanged bytes, unknown-asset rejection, and upstream failure handling. Browser checks confirmed desktop/mobile layout, loaded preview resources, download confirmation, and Escape returning focus to the inline trigger.
+
+## Content sync update — 2026-09-16
+
+- Unchanged pages skip article traversal; `--force` bypasses the cache.
+- `--fast` skips images and schedules one later normal pass.
+- Recoverable errors write fallback data, warn, and exit `1`.
+- Formatting, lint, types, 63 tests, and production build pass.

@@ -5,6 +5,7 @@ import { site } from '@/lib/site'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: site.origin },
+    { url: site.origin + '/writing' },
     ...articles.map((article) => ({
       url: site.origin + '/' + article.slug,
       lastModified: article.modified

@@ -120,6 +120,7 @@ export const mediaSchema = z.object({
 export const bookmarkPreviewSchema = z.object({
   title: z.string(),
   description: z.string(),
+  needsImageSync: z.literal(true).optional(),
   image: mediaSchema.optional()
 })
 export type BookmarkPreview = z.infer<typeof bookmarkPreviewSchema>
@@ -137,6 +138,7 @@ export const articleSchema = z.object({
   author: z.string(),
   tags: z.array(z.string()),
   featured: z.boolean(),
+  needsImageSync: z.literal(true).optional(),
   cover: z.string().optional(),
   icon: iconSchema.optional(),
   blocks: z.array(blockSchema)

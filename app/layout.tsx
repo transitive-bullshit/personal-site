@@ -47,7 +47,7 @@ export default function RootLayout({
               </Link>
               <div className='site-header-actions'>
                 <nav aria-label='Main navigation'>
-                  <Link href='/'>Writing</Link>
+                  <Link href='/writing'>Writing</Link>
                   <Button variant='ghost' size='icon-sm' asChild>
                     <a
                       href='https://github.com/transitive-bullshit'
@@ -86,7 +86,7 @@ export default function RootLayout({
             <footer className='site-footer'>
               <span>Travis Fischer · Transitive Bullshit</span>
               <div className='site-footer-actions'>
-                <Link href='/'>All writing</Link>
+                <Link href='/writing'>All writing</Link>
                 <ThemeToggle />
               </div>
             </footer>

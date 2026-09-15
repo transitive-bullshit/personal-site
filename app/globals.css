@@ -175,6 +175,18 @@ summary {
   font-size: 17px;
   line-height: 1.5;
 }
+.all-writing-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.all-writing-link svg {
+  width: 16px;
+  height: 16px;
+}
 .article-header {
   max-width: 740px;
   padding-block: 50px 40px;

@@ -1,5 +1,7 @@
 import Link from 'next/link'
-import { articles } from '@/lib/content/load'
+import { ArrowRightIcon } from 'lucide-react'
+import { ArticleIndex } from '@/components/article-index'
+import { featuredArticles } from '@/lib/content/load'
 
 export default function HomePage() {
   return (
@@ -12,22 +14,11 @@ export default function HomePage() {
       <p className='home-intro'>
         Travis Fischer. Software, open source, and the occasional detour.
       </p>
-      <ol className='article-index' aria-label='Articles'>
-        {articles.map((article) => (
-          <li key={article.id}>
-            <time dateTime={article.published}>
-              {new Date(article.published).toLocaleDateString('en-US', {
-                month: 'short',
-                year: 'numeric',
-                timeZone: 'UTC'
-              })}
-            </time>
-            <Link href={'/' + article.slug} prefetch={false}>
-              {article.title}
-            </Link>
-          </li>
-        ))}
-      </ol>
+      <ArticleIndex articles={featuredArticles} label='Featured articles' />
+      <Link className='all-writing-link' href='/writing'>
+        View all writing
+        <ArrowRightIcon aria-hidden='true' />
+      </Link>
     </main>
   )
 }

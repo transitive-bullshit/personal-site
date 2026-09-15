@@ -4,7 +4,7 @@ import { z } from 'zod'
 import { mediaSchema, type Media } from '../../lib/content/schema'
 import { canonicalJson } from '../io'
 
-// Only completed immutable uploads are cached. The published snapshot stays authoritative.
+// Cache only completed uploads; the snapshot is authoritative.
 export class MediaCache {
   private pending = Promise.resolve()
   private constructor(
