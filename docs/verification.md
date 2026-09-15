@@ -113,3 +113,10 @@ The preceding migration hash and counts describe the initial snapshot. Current e
 - Externalized the Takumi wrapper and core, and installed core directly. The rebuilt function now traces its native binding and does not embed the original build-machine loader path. The build check runs automatically in `pnpm build`.
 - Production social URLs now use `VERCEL_PROJECT_PRODUCTION_URL`; previews prefer `VERCEL_BRANCH_URL`. This supersedes the earlier all-environments `VERCEL_URL` rule.
 - All 55 tests pass. Production build passes with the native-bundle regression check; all 35 generated article image URLs use the simulated public production alias.
+
+## Image lightbox usability — 2026-09-15
+
+- Lightboxes reuse the inline image's loaded `currentSrc` immediately, keeping it underneath the larger Next.js image until decoding finishes. A 240ms transform connects the inline and enlarged image on open and close; reduced-motion preferences skip the movement.
+- Images retain native pointer/drag/context-menu behavior. Original-image links remain available, with a lower-right download button that shows progress, animated confirmation, and a retry state on failure.
+- Downloads use a same-origin streaming route restricted to originals in the committed media snapshot. Original GIF/image bytes are unchanged; unknown assets return 404 and upstream failures return 502 without success caching.
+- All 58 tests pass, including attachment headers, unchanged bytes, unknown-asset rejection, and upstream failure handling. Browser checks confirmed desktop/mobile layout, loaded preview resources, download confirmation, and Escape returning focus to the inline trigger.
