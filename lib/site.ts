@@ -6,12 +6,15 @@ export const site = {
   twitter: 'transitive_bs'
 } as const
 
-// Deployment-local assets must come from the same build as the article HTML.
-// Canonical content URLs continue to use site.origin.
+// Match Next.js's social-image deployment selection: public production domain
+// or preview branch alias, with the unique deployment URL as a fallback.
+// Canonical article URLs continue to use site.origin.
 export function deploymentOrigin() {
-  return process.env.VERCEL_URL
-    ? 'https://' + process.env.VERCEL_URL
-    : site.origin
+  const host =
+    process.env.VERCEL_ENV === 'preview'
+      ? process.env.VERCEL_BRANCH_URL || process.env.VERCEL_URL
+      : process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL
+  return host ? 'https://' + host : site.origin
 }
 
 export const sourceContract = {

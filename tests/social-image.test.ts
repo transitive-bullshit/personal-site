@@ -144,10 +144,19 @@ it.each(['preview', 'production'])(
   (environment) => {
     vi.stubEnv('VERCEL_ENV', environment)
     vi.stubEnv('VERCEL_URL', 'personal-site-build-123.vercel.app')
-    vi.stubEnv('VERCEL_PROJECT_PRODUCTION_URL', 'transitivebullsh.it')
+    vi.stubEnv(
+      'VERCEL_PROJECT_PRODUCTION_URL',
+      'personal-site-nu-nine-53.vercel.app'
+    )
+    vi.stubEnv(
+      'VERCEL_BRANCH_URL',
+      'personal-site-git-feature-saasify.vercel.app'
+    )
     const url = socialImageUrl(article, snapshot)
     expect(new URL(url).origin).toBe(
-      'https://personal-site-build-123.vercel.app'
+      environment === 'production'
+        ? 'https://personal-site-nu-nine-53.vercel.app'
+        : 'https://personal-site-git-feature-saasify.vercel.app'
     )
     expect(new URL(url).pathname).toBe('/api/social-image/' + article.slug)
     const jsonLd = articleJsonLd(article, snapshot)
@@ -159,5 +168,20 @@ it.each(['preview', 'production'])(
 
 it('falls back to the canonical origin outside Vercel', () => {
   vi.stubEnv('VERCEL_URL', undefined)
+  vi.stubEnv('VERCEL_BRANCH_URL', undefined)
+  vi.stubEnv('VERCEL_PROJECT_PRODUCTION_URL', undefined)
   expect(new URL(socialImageUrl(article, snapshot)).origin).toBe(site.origin)
+})
+
+it('uses the deployment URL as a preview fallback when there is no branch alias', () => {
+  vi.stubEnv('VERCEL_ENV', 'preview')
+  vi.stubEnv('VERCEL_BRANCH_URL', undefined)
+  vi.stubEnv('VERCEL_URL', 'personal-site-preview.vercel.app')
+  vi.stubEnv(
+    'VERCEL_PROJECT_PRODUCTION_URL',
+    'personal-site-nu-nine-53.vercel.app'
+  )
+  expect(new URL(socialImageUrl(article, snapshot)).origin).toBe(
+    'https://personal-site-preview.vercel.app'
+  )
 })

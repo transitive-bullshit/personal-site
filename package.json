@@ -9,7 +9,7 @@
   "type": "module",
   "scripts": {
     "dev": "portless run next dev --hostname 127.0.0.1",
-    "build": "next build --webpack",
+    "build": "next build --webpack && tsx scripts/verify-social-image-bundle.ts",
     "start": "next start",
     "test": "run-s test:*",
     "test:format": "oxfmt --check",
@@ -24,6 +24,7 @@
     "test:unit": "vitest run"
   },
   "dependencies": {
+    "@takumi-rs/core": "2.13.7",
     "@vercel/analytics": "^2.0.1",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.2.5",

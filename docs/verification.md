@@ -105,3 +105,11 @@ The preceding migration hash and counts describe the initial snapshot. Current e
 - Social image URLs now use Vercel's built-in `VERCEL_URL`, prefixed with HTTPS, with `site.origin` as the non-Vercel fallback.
 - All 54 tests pass, covering preview/production deployment URLs and the fallback. A production build with simulated preview environment variables succeeds without CMS/storage credentials.
 - Inspected the generated HTML for all 35 articles: OG, Twitter, and JSON-LD images use the preview hostname, while canonical article URLs retain the production origin.
+
+## Live Vercel social image repair — 2026-09-15
+
+- Reproduced the production incident: the unique deployment image URL redirected to Vercel login, while the public production alias returned 500. Vercel runtime logs confirmed `Cannot find native binding` with a loader path under `/vercel/path0`.
+- The old local function trace omitted Takumi's native binary; local rendering succeeded only because the original installation was still accessible. A new build-artifact check reproduced this failure before the fix.
+- Externalized the Takumi wrapper and core, and installed core directly. The rebuilt function now traces its native binding and does not embed the original build-machine loader path. The build check runs automatically in `pnpm build`.
+- Production social URLs now use `VERCEL_PROJECT_PRODUCTION_URL`; previews prefer `VERCEL_BRANCH_URL`. This supersedes the earlier all-environments `VERCEL_URL` rule.
+- All 55 tests pass. Production build passes with the native-bundle regression check; all 35 generated article image URLs use the simulated public production alias.
