@@ -6,6 +6,14 @@ export const site = {
   twitter: 'transitive_bs'
 } as const
 
+// Deployment-local assets must come from the same build as the article HTML.
+// Canonical content URLs continue to use site.origin.
+export function deploymentOrigin() {
+  return process.env.VERCEL_URL
+    ? 'https://' + process.env.VERCEL_URL
+    : site.origin
+}
+
 export const sourceContract = {
   rootPageId: '78fc5a4b88d74b0e824e29407e9f1ec1',
   workspaceId: 'fde5ac74eea345278f004482710e1af3',

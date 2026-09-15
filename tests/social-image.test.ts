@@ -8,12 +8,14 @@ import {
 } from '../lib/render-social-image'
 import { articleJsonLd } from '../lib/content/metadata'
 import { snapshotSchema } from '../lib/content/schema'
+import { site } from '../lib/site'
 
 const snapshot = snapshotSchema.parse(
   JSON.parse(readFileSync('content/snapshot.json', 'utf8'))
 )
 const article = Object.values(snapshot.articles)[0]!
 afterEach(() => {
+  vi.unstubAllEnvs()
   vi.unstubAllGlobals()
   vi.restoreAllMocks()
 })
@@ -135,4 +137,27 @@ it('centers balanced short and long titles in the actual rendered pixels', async
     expect(right).toBeGreaterThan(left)
     expect(Math.abs(134 + (left + right) / 2 - 600)).toBeLessThan(3)
   }
+})
+
+it.each(['preview', 'production'])(
+  'uses the current Vercel deployment for social assets in %s while keeping article canonicals stable',
+  (environment) => {
+    vi.stubEnv('VERCEL_ENV', environment)
+    vi.stubEnv('VERCEL_URL', 'personal-site-build-123.vercel.app')
+    vi.stubEnv('VERCEL_PROJECT_PRODUCTION_URL', 'transitivebullsh.it')
+    const url = socialImageUrl(article, snapshot)
+    expect(new URL(url).origin).toBe(
+      'https://personal-site-build-123.vercel.app'
+    )
+    expect(new URL(url).pathname).toBe('/api/social-image/' + article.slug)
+    const jsonLd = articleJsonLd(article, snapshot)
+    expect(jsonLd.image[0]).toBe(url)
+    expect(jsonLd.url).toBe(site.origin + '/' + article.slug)
+    expect(jsonLd.mainEntityOfPage).toBe(jsonLd.url)
+  }
+)
+
+it('falls back to the canonical origin outside Vercel', () => {
+  vi.stubEnv('VERCEL_URL', undefined)
+  expect(new URL(socialImageUrl(article, snapshot)).origin).toBe(site.origin)
 })

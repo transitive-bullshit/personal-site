@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto'
 import type { Article, Snapshot } from './content/schema'
-import { site } from './site'
+import { deploymentOrigin, site } from './site'
 
 export const socialImageSize = { width: 1200, height: 630 } as const
 // Bump when the template changes so social crawlers discover a fresh image URL.
@@ -29,7 +29,7 @@ export function socialImageUrl(article: Article, snapshot: Snapshot) {
     .digest('hex')
     .slice(0, 16)
   return (
-    site.origin +
+    deploymentOrigin() +
     '/api/social-image/' +
     encodeURIComponent(article.slug) +
     '?v=' +

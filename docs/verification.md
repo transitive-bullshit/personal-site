@@ -99,3 +99,9 @@ The preceding migration hash and counts describe the initial snapshot. Current e
 - Final card revision removes the domain footer and explicitly centers the title with `text-wrap: balance`; template version 2 refreshes the advertised image URL.
 
 - Corrected Takumi 2.13 balanced-text positioning by measuring the narrowest box that preserves line count, then centering it. Pixel-based checks cover short and long titles. The cover uses a 6px blur, and Takumi emits WebP at quality 90.
+
+## Deployment-aware social image URLs — 2026-09-15
+
+- Social image URLs now use Vercel's built-in `VERCEL_URL`, prefixed with HTTPS, with `site.origin` as the non-Vercel fallback.
+- All 54 tests pass, covering preview/production deployment URLs and the fallback. A production build with simulated preview environment variables succeeds without CMS/storage credentials.
+- Inspected the generated HTML for all 35 articles: OG, Twitter, and JSON-LD images use the preview hostname, while canonical article URLs retain the production origin.
