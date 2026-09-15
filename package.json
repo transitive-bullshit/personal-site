@@ -1,0 +1,76 @@
+{
+  "name": "transitive-bullshit-personal-site",
+  "version": "0.0.0",
+  "private": true,
+  "description": "My own little corner of the web",
+  "license": "MIT",
+  "author": "Travis Fischer <travis@transitivebullsh.it>",
+  "repository": "https://github.com/transitive-bullshit/personal-site",
+  "type": "module",
+  "scripts": {
+    "dev": "portless run next dev --hostname 127.0.0.1",
+    "build": "next build --webpack",
+    "start": "next start",
+    "test": "run-s test:*",
+    "test:format": "oxfmt --check",
+    "test:lint": "oxlint",
+    "test:types": "next typegen && tsc --noEmit",
+    "lint": "pnpm test:lint",
+    "typecheck": "pnpm test:types",
+    "fix": "run-s fix:*",
+    "fix:format": "oxfmt",
+    "fix:lint": "oxlint --fix",
+    "content:sync": "tsx scripts/sync.ts",
+    "test:unit": "vitest run"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "class-variance-authority": "^0.7.1",
+    "cn": "^0.2.5",
+    "lucide-react": "^1.45.0",
+    "next": "^16.3.4",
+    "radix-ui": "^1.6.7",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-tweet": "^3.3.1",
+    "server-only": "^0.0.1",
+    "shiki": "^4.4.3",
+    "takumi-js": "^2.13.7",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1131.0",
+    "@fisch0920/config": "^2.1.4",
+    "@notionhq/client": "^5.26.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.4.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "cheerio": "^1.2.0",
+    "lint-staged": "^17.5.0",
+    "npm-run-all2": "^9.0.3",
+    "oxfmt": "^0.66.0",
+    "oxlint": "^1.81.0",
+    "oxlint-tsgolint": "^7.0.2001",
+    "portless": "^0.15.6",
+    "sharp": "^0.35.4",
+    "simple-git-hooks": "^2.14.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "oxfmt --no-error-on-unmatched-pattern",
+      "oxlint --fix"
+    ]
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@12.3.4"
+}
