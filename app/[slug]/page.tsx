@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { pageAlternates } from '@/lib/metadata'
 import { notFound, permanentRedirect } from 'next/navigation'
 import { ArticlePage } from '@/components/article/article'
 import { content } from '@/lib/content/load'
@@ -34,7 +35,7 @@ export async function generateMetadata({
   return {
     title: article.title,
     description: article.description,
-    alternates: { canonical: '/' + article.slug },
+    alternates: pageAlternates('/' + article.slug),
     authors: [{ name: article.author }],
     openGraph: {
       type: 'article',

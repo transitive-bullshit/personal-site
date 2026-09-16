@@ -2,7 +2,7 @@ export const site = {
   name: 'Transitive Bullshit',
   author: 'Travis Fischer',
   description: 'Personal site of Travis Fischer aka Transitive Bullshit',
-  origin: 'https://transitivebullsh.it',
+  origin: 'https://www.transitivebullsh.it',
   twitter: 'transitive_bs'
 } as const
 

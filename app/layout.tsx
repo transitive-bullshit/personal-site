@@ -4,6 +4,7 @@ import { siteJsonLd } from '@/lib/content/metadata'
 import SiGithub from '@icons-pack/react-simple-icons/icons/SiGithub'
 import SiX from '@icons-pack/react-simple-icons/icons/SiX'
 import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { LinkPreviewProvider } from '@/components/link-preview-provider'
@@ -92,6 +93,7 @@ export default function RootLayout({
           <LinkPreviewProvider internalPreviews={internalLinkPreviews} />
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )

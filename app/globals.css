@@ -1213,6 +1213,11 @@ summary {
 .article-tweet .react-tweet-theme > article > div:first-child {
   padding-bottom: 0;
 }
+.article-tweet .react-tweet-theme > article > div:first-child a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+}
 .content-back {
   margin-top: 48px;
   padding-top: 24px;

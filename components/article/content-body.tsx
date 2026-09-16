@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ArrowLeftIcon } from 'lucide-react'
 import type { Article, Project, Snapshot } from '@/lib/content/schema'
-import { getHeadings } from '@/lib/content/headings'
+import { getHeadings, normalizeHeadingLevels } from '@/lib/content/headings'
 import { Blocks } from './blocks'
 import { ContentCover } from './content-cover'
 import { TableOfContents } from './table-of-contents'
@@ -15,7 +15,8 @@ export function ContentBody({
   snapshot: Snapshot
   showCover?: boolean
 }) {
-  const headings = getHeadings(entry.blocks)
+  const blocks = normalizeHeadingLevels(entry.blocks)
+  const headings = getHeadings(blocks)
   return (
     <div className='article-grid'>
       <div className='article-body' data-link-preview-scope='article'>
@@ -26,7 +27,7 @@ export function ContentBody({
             <TableOfContents headings={headings} title={false} />
           </details>
         ) : null}
-        <Blocks blocks={entry.blocks} snapshot={snapshot} />
+        <Blocks blocks={blocks} snapshot={snapshot} />
         <nav
           className='content-back'
           aria-label='More to explore'

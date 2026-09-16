@@ -32,6 +32,8 @@ export const siteJsonLd = {
       '@type': 'Person',
       '@id': site.origin + '/#person',
       name: site.author,
+      description:
+        'Software developer and open source creator sharing projects and writing about software, AI, and entrepreneurship.',
       alternateName: site.name,
       url: site.origin,
       image: site.origin + '/icon.png',

@@ -10,6 +10,20 @@ export function GET() {
       '',
       '> ' + site.description,
       '',
+      'This is Travis Fischer’s personal portfolio and writing archive. The projects are separate products and experiments; this site is not an API platform or developer service.',
+      '',
+      '## When to use this site',
+      '',
+      'Use this site to learn about Travis, explore his software and open source projects, or read his articles on AI, software development, and entrepreneurship. Follow each project’s Website or Source link to use that project.',
+      '',
+      '## Reading content',
+      '',
+      'HTML pages are server-rendered. For clean Markdown, append .md to an article or project URL. The homepage is /index.md. Markdown uses separate URLs; Accept: text/markdown on an HTML URL does not change its representation.',
+      '',
+      '- [Home in Markdown](' + site.origin + '/index.md)',
+      '- [Project index in Markdown](' + site.origin + '/projects.md)',
+      '- [Writing index in Markdown](' + site.origin + '/writing.md)',
+      '',
       '## Main pages',
       '',
       '- [Home](' + site.origin + '/): ' + site.description,
@@ -28,7 +42,12 @@ export function GET() {
           '/projects/' +
           project.slug +
           '): ' +
-          project.description.replaceAll('\n', ' ')
+          project.description.replaceAll('\n', ' ') +
+          ' [Markdown](' +
+          site.origin +
+          '/projects/' +
+          project.slug +
+          '.md)'
       ),
       '',
       '## Articles',
@@ -42,7 +61,12 @@ export function GET() {
           '/' +
           article.slug +
           '): ' +
-          article.description.replaceAll('\n', ' ')
+          article.description.replaceAll('\n', ' ') +
+          ' [Markdown](' +
+          site.origin +
+          '/' +
+          article.slug +
+          '.md)'
       )
     ].join('\n') + '\n'
   return new Response(body, {

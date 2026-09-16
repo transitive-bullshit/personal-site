@@ -7,17 +7,19 @@ export function ProjectIndex({
   projects,
   snapshot,
   label,
-  headingLevel = 2
+  headingLevel = 2,
+  prioritizeFirstImage = false
 }: {
   projects: readonly Project[]
   snapshot: Snapshot
   label: string
   headingLevel?: 2 | 3
+  prioritizeFirstImage?: boolean
 }) {
   const Heading = headingLevel === 2 ? 'h2' : 'h3'
   return (
     <ul className='project-index' aria-label={label}>
-      {projects.map((project) => (
+      {projects.map((project, index) => (
         <li key={project.id}>
           <Link
             className='project-card'
@@ -31,6 +33,7 @@ export function ProjectIndex({
               <div className='project-card-preview'>
                 {project.cover ? (
                   <MediaImage
+                    priority={prioritizeFirstImage && index === 0}
                     media={snapshot.media[project.cover]!}
                     alt=''
                     className='project-card-image'

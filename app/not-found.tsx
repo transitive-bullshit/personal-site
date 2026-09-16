@@ -5,9 +5,11 @@ export default function NotFound() {
     <main id='main' className='home'>
       <h1>Page not found</h1>
       <p className='home-intro'>This page is no longer here.</p>
-      <p className='mt-8'>
-        <Link href='/'>Back to writing →</Link>
-      </p>
+      <nav className='mt-8 flex flex-wrap gap-6' aria-label='Find another page'>
+        <Link href='/'>Home</Link>
+        <Link href='/projects'>Projects</Link>
+        <Link href='/writing'>Writing</Link>
+      </nav>
     </main>
   )
 }

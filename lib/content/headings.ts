@@ -20,3 +20,20 @@ export function getHeadings(blocks: Block[]): Heading[] {
   })
   return headings
 }
+
+// Notion documents can start at any heading level or skip levels. Preserve
+// their relative nesting while reserving h1 for the page title.
+export function normalizeHeadingLevels(blocks: Block[]): Block[] {
+  const levels = new Map(
+    getHeadings(blocks).map((heading) => [heading.id, heading.depth + 1])
+  )
+  function normalize(items: Block[]): Block[] {
+    return items.map((block) => {
+      const normalized = { ...block, children: normalize(block.children) }
+      if (normalized.type === 'heading')
+        normalized.level = (levels.get(block.id) ?? 1) as 1 | 2 | 3
+      return normalized
+    })
+  }
+  return normalize(blocks)
+}

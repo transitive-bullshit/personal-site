@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { getHeadings } from '../lib/content/headings'
+import { getHeadings, normalizeHeadingLevels } from '../lib/content/headings'
 import { internalPageId } from '../lib/content/references'
 import {
   normalizeTitle,
@@ -72,6 +72,9 @@ describe('publication and pathname lifecycle', () => {
       'a/b',
       'about',
       'llms.txt',
+      'index',
+      'markdown',
+      'article.md',
       'search-index.json',
       'writing',
       'a%2fb',
@@ -121,6 +124,16 @@ describe('publication and pathname lifecycle', () => {
       rewriteLink('/anything-' + a, routes, sourceContract.rootPageId)
     ).toBe('/original-title')
     expect(rewriteLink('/', routes, sourceContract.rootPageId)).toBe('/')
+    expect(
+      rewriteLink(
+        'https://www.transitivebullsh.it/original-title',
+        routes,
+        sourceContract.rootPageId
+      )
+    ).toBe('/original-title')
+    const image =
+      'https://www.transitivebullsh.it/api/social-image/original-title'
+    expect(rewriteLink(image, routes, sourceContract.rootPageId)).toBe(image)
     const unknown = 'https://www.notion.so/' + b
     expect(rewriteLink(unknown, routes, sourceContract.rootPageId)).toBe(
       unknown
@@ -136,6 +149,24 @@ describe('publication and pathname lifecycle', () => {
 })
 
 describe('headings and structured metadata', () => {
+  it('normalizes a document starting at level two without changing anchors or source blocks', () => {
+    const blocks: Block[] = [2, 3, 2, 1, 3].map((level, index) => ({
+      id: String(index).repeat(32),
+      type: 'heading',
+      level: level as 1 | 2 | 3,
+      richText: [plainSpan('Section ' + index)],
+      color: 'default',
+      children: []
+    }))
+    const normalized = normalizeHeadingLevels(blocks)
+    expect(getHeadings(normalized).map(({ level }) => level)).toEqual([
+      1, 2, 1, 1, 2
+    ])
+    expect(normalized.map(({ id }) => id)).toEqual(blocks.map(({ id }) => id))
+    expect(getHeadings(blocks).map(({ level }) => level)).toEqual([
+      2, 3, 2, 1, 3
+    ])
+  })
   it('handles skipped levels, repeated text, and returning to a parent level', () => {
     const heading = (id: string, level: 1 | 2 | 3): Block => ({
       id,

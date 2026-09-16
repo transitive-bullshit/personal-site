@@ -25,6 +25,7 @@ export default function HomePage() {
       <section className='home-section' aria-labelledby='featured-projects'>
         <h2 id='featured-projects'>Featured projects</h2>
         <ProjectIndex
+          prioritizeFirstImage
           headingLevel={3}
           projects={featuredProjects}
           snapshot={content}

@@ -1,5 +1,13 @@
 import type { Metadata } from 'next'
 import { deploymentOrigin, site } from './site'
+import { markdownPath } from './content/markdown-path'
+
+export function pageAlternates(path: string): Metadata['alternates'] {
+  return {
+    canonical: path,
+    types: { 'text/markdown': markdownPath(path) }
+  }
+}
 
 export function defaultSocialImages() {
   return [
@@ -21,7 +29,7 @@ export function websiteMetadata(
   return {
     title,
     description,
-    alternates: { canonical: path },
+    alternates: pageAlternates(path),
     openGraph: {
       type: 'website',
       title,

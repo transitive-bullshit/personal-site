@@ -4,6 +4,8 @@ import { site } from '../site'
 export const reservedSlugs = new Set([
   'sitemap.xml',
   'llms.txt',
+  'markdown',
+  'index',
   'robots.txt',
   'favicon.ico',
   'search-index.json',
@@ -46,6 +48,7 @@ export function validateSlug(slug: string) {
     Array.from(slug).some((character) => character.codePointAt(0)! < 32) ||
     slug === '.' ||
     slug === '..' ||
+    slug.endsWith('.md') ||
     reservedSlugs.has(slug)
   ) {
     throw new Error(`Invalid or reserved article pathname: /${slug}`)
@@ -173,6 +176,10 @@ export function rewriteLink(
   } catch {
     return href
   }
+  const isSiteHost = [
+    'transitivebullsh.it',
+    'www.transitivebullsh.it'
+  ].includes(url.hostname)
   if (
     ![
       'app.notion.com',
@@ -180,13 +187,15 @@ export function rewriteLink(
       'notion.so',
       'notion.site',
       'www.notion.site',
-      'transitivebullsh.it'
+      'transitivebullsh.it',
+      'www.transitivebullsh.it'
     ].includes(url.hostname) &&
     !url.hostname.endsWith('.notion.site')
   )
     return href
-  if (url.hostname === new URL(site.origin).hostname && url.pathname === '/')
+  if (isSiteHost && url.pathname === '/')
     return '/' + (url.hash ? '#' + compactId(url.hash.slice(1)) : '')
+  if (isSiteHost && url.pathname.startsWith('/api/')) return href
   const segment = url.pathname.split('/').filter(Boolean).at(-1) ?? ''
   const id = pageIdFromPath(segment)
   if (id === rootId)
@@ -199,10 +208,7 @@ export function rewriteLink(
       project.slug +
       (url.hash ? '#' + compactId(url.hash.slice(1)) : '')
     )
-  if (
-    url.hostname === new URL(site.origin).hostname &&
-    url.pathname.startsWith('/projects/')
-  ) {
+  if (isSiteHost && url.pathname.startsWith('/projects/')) {
     const match = resolveRoute(segment, projectRoutes)
     return match
       ? '/projects/' +

@@ -42,7 +42,10 @@ export function internalPageId(href: string) {
   } catch {
     return undefined
   }
-  if (url.origin !== site.origin) return undefined
+  if (
+    !['transitivebullsh.it', 'www.transitivebullsh.it'].includes(url.hostname)
+  )
+    return undefined
   const segment = url.pathname.split('/').filter(Boolean).at(-1) ?? ''
   return pageIdFromPath(segment)
 }

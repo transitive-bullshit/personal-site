@@ -1,4 +1,4 @@
-import { defaultSocialImages } from '@/lib/metadata'
+import { defaultSocialImages, pageAlternates } from '@/lib/metadata'
 import type { Metadata } from 'next'
 import { notFound, permanentRedirect } from 'next/navigation'
 import { ProjectPage } from '@/components/project'
@@ -38,7 +38,7 @@ export async function generateMetadata({
   return {
     title: project.title,
     description: project.description,
-    alternates: { canonical: '/projects/' + project.slug },
+    alternates: pageAlternates('/projects/' + project.slug),
     openGraph: {
       type: 'website',
       title: project.title,
