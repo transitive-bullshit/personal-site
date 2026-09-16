@@ -79636,52 +79636,78 @@
       ]
     },
     "3c5edb27f12480db8ab5f4b6fdb72331:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoIAAUAA4BaJaQAAxaly9NAAP6CoVmG0rEnVsvAAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAQAA4BaJQBOgCPQR68tAADylfudYC2axW4Dp/XRCu1Wyzd7ryyd4gAAAA==",
       "original": {
-        "bytes": 2135,
-        "hash": "53d653b2b7cbcdfb2c53a1f719893ee426713d40f3dbc643f4056095d282bd2a",
-        "height": 100,
-        "key": "personal-site/media/53d653b2b7cbcdfb2c53a1f719893ee426713d40f3dbc643f4056095d282bd2a.gif",
-        "mime": "image/gif",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/53d653b2b7cbcdfb2c53a1f719893ee426713d40f3dbc643f4056095d282bd2a.gif",
-        "width": 160
+        "bytes": 454788,
+        "hash": "77b5e24dae8fd206c71a004717e3b85a647734cc7e29494b46f9375dc0887c7d",
+        "height": 941,
+        "key": "personal-site/media/77b5e24dae8fd206c71a004717e3b85a647734cc7e29494b46f9375dc0887c7d.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/77b5e24dae8fd206c71a004717e3b85a647734cc7e29494b46f9375dc0887c7d.jpg",
+        "width": 1672
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T09:05:00.000Z",
+        "edited": "2026-09-16T09:33:00.000Z",
         "key": "3c5edb27f12480db8ab5f4b6fdb72331:cover",
-        "kind": "external",
-        "url": "https://www.ticalc.org/archives/files/ss/463/46308.gif"
-      },
-      "variants": []
-    },
-    "3c5edb27f12480dca152d5c2e5551272:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAYAA4BaJYwC7AD0jw8rYAD+9lr7meM1bWBuHVHj+J/mhgOX4AAA",
-      "original": {
-        "bytes": 105348,
-        "hash": "93982d3bb0a5b09032256695251edab607f96bafff9a7d6ac443ab71e823cac2",
-        "height": 479,
-        "key": "personal-site/media/93982d3bb0a5b09032256695251edab607f96bafff9a7d6ac443ab71e823cac2.png",
-        "mime": "image/png",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/93982d3bb0a5b09032256695251edab607f96bafff9a7d6ac443ab71e823cac2.png",
-        "width": 600
-      },
-      "pipelineVersion": 1,
-      "source": {
-        "edited": "2026-09-16T09:05:00.000Z",
-        "key": "3c5edb27f12480dca152d5c2e5551272:cover",
-        "kind": "external",
-        "url": "http://mipscope.cs.brown.edu/screenshot-small.png"
+        "kind": "file"
       },
       "variants": [
         {
-          "bytes": 29358,
-          "hash": "c951ac1a177e73bc21c5cf0817d9d77a1af90fb02fba470dc73257faff57371e",
-          "height": 479,
-          "key": "personal-site/media/c951ac1a177e73bc21c5cf0817d9d77a1af90fb02fba470dc73257faff57371e.webp",
+          "bytes": 53200,
+          "hash": "515df95266daab414ff4aca61a3edacf901c467b4e3ced404af9b5f6190a133f",
+          "height": 540,
+          "key": "personal-site/media/515df95266daab414ff4aca61a3edacf901c467b4e3ced404af9b5f6190a133f.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/c951ac1a177e73bc21c5cf0817d9d77a1af90fb02fba470dc73257faff57371e.webp",
-          "width": 600
+          "url": "https://assets.cultural-alignment.com/personal-site/media/515df95266daab414ff4aca61a3edacf901c467b4e3ced404af9b5f6190a133f.webp",
+          "width": 960
+        },
+        {
+          "bytes": 213068,
+          "hash": "5f00415d180aad80ac4da61c90cc1aed6dec42526c0e178e14c20e52c6f0f7c8",
+          "height": 941,
+          "key": "personal-site/media/5f00415d180aad80ac4da61c90cc1aed6dec42526c0e178e14c20e52c6f0f7c8.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/5f00415d180aad80ac4da61c90cc1aed6dec42526c0e178e14c20e52c6f0f7c8.webp",
+          "width": 1672
+        }
+      ]
+    },
+    "3c5edb27f12480dca152d5c2e5551272:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAQAA4BaJYwCdAEWUNN7nAD+m2TPj17N8EeiQiZRTgBdPIxuVbPArGPAAA==",
+      "original": {
+        "bytes": 370131,
+        "hash": "3cb61caea58b58b136cf2204398e82a9e019c792ca3be577603bd1b246f258f9",
+        "height": 941,
+        "key": "personal-site/media/3cb61caea58b58b136cf2204398e82a9e019c792ca3be577603bd1b246f258f9.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/3cb61caea58b58b136cf2204398e82a9e019c792ca3be577603bd1b246f258f9.jpg",
+        "width": 1672
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-16T09:33:00.000Z",
+        "key": "3c5edb27f12480dca152d5c2e5551272:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 50930,
+          "hash": "1c8939645ea088c06cdb353221646e5fef9f75d90df9195f6b0c8c538c90287a",
+          "height": 540,
+          "key": "personal-site/media/1c8939645ea088c06cdb353221646e5fef9f75d90df9195f6b0c8c538c90287a.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/1c8939645ea088c06cdb353221646e5fef9f75d90df9195f6b0c8c538c90287a.webp",
+          "width": 960
+        },
+        {
+          "bytes": 162508,
+          "hash": "feb904473da677acb3027ae46086bbd9920c4737fa8cb054fbef512c2108e44a",
+          "height": 941,
+          "key": "personal-site/media/feb904473da677acb3027ae46086bbd9920c4737fa8cb054fbef512c2108e44a.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/feb904473da677acb3027ae46086bbd9920c4737fa8cb054fbef512c2108e44a.webp",
+          "width": 1672
         }
       ]
     },
@@ -79698,7 +79724,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T09:05:00.000Z",
+        "edited": "2026-09-16T09:33:00.000Z",
         "key": "3c5edb27f12480dca152d5c2e5551272:icon",
         "kind": "external",
         "url": "https://raw.githubusercontent.com/transitive-bullshit/mipscope/master/src/gui/images/logo.png"
@@ -86867,7 +86893,7 @@
       "description": "Games and tools for TI calculators, written in TI-Basic and C.",
       "featured": true,
       "id": "3c5edb27f12480db8ab5f4b6fdb72331",
-      "modified": "2026-09-16T09:05:00.000Z",
+      "modified": "2026-09-16T09:33:00.000Z",
       "published": "2004-09-10",
       "slug": "ticalc-games",
       "source": "https://github.com/transitive-bullshit/ticalc",
@@ -86902,7 +86928,7 @@
         "type": "image"
       },
       "id": "3c5edb27f12480dca152d5c2e5551272",
-      "modified": "2026-09-16T09:05:00.000Z",
+      "modified": "2026-09-16T09:33:00.000Z",
       "published": "2008-05-01",
       "slug": "mipscope",
       "source": "https://github.com/transitive-bullshit/mipscope",
