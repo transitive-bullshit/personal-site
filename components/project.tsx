@@ -4,6 +4,7 @@ import SiX from '@icons-pack/react-simple-icons/icons/SiX'
 import type { Project, Snapshot } from '@/lib/content/schema'
 import { ProjectTransition } from './project-transition'
 import { ContentBody } from './article/content-body'
+import { ContentCover } from './article/content-cover'
 import { Button } from './ui/button'
 
 export function ProjectPage({
@@ -21,6 +22,11 @@ export function ProjectPage({
             <ArrowLeftIcon aria-hidden='true' />
             All projects
           </Link>
+          {project.cover ? (
+            <ProjectTransition projectId={project.id} part='image'>
+              <ContentCover entry={project} snapshot={snapshot} />
+            </ProjectTransition>
+          ) : null}
           <ProjectTransition projectId={project.id} part='title'>
             <h1>{project.title}</h1>
           </ProjectTransition>
@@ -56,11 +62,7 @@ export function ProjectPage({
             ) : null}
           </div>
         </header>
-        <ContentBody
-          entry={project}
-          snapshot={snapshot}
-          projectTransitionId={project.id}
-        />
+        <ContentBody entry={project} snapshot={snapshot} showCover={false} />
       </article>
     </main>
   )
