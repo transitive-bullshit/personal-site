@@ -43,7 +43,7 @@ export function allowedSocialImageUrl(value: string) {
 
 export async function renderSocialImage(data: SocialImageData) {
   const titleWidth = await balancedTitleWidth(data.title)
-  const render = (cover: string | undefined, fallback = false) =>
+  const render = (cover: string | undefined) =>
     new ImageResponse(
       <SocialImage data={{ ...data, cover }} titleWidth={titleWidth} />,
       {
@@ -52,9 +52,10 @@ export async function renderSocialImage(data: SocialImageData) {
         format: 'webp',
         quality: 90,
         headers: {
-          'Cache-Control': fallback
-            ? 'public, max-age=60, s-maxage=300'
-            : 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800'
+          'Cache-Control': 'public, max-age=0, must-revalidate',
+          'CDN-Cache-Control':
+            'public, max-age=86400, stale-while-revalidate=604800',
+          'Vercel-CDN-Cache-Control': 'public, max-age=31536000, immutable'
         },
         images: {
           allowUrl: allowedSocialImageUrl,
@@ -74,7 +75,7 @@ export async function renderSocialImage(data: SocialImageData) {
   } catch (err) {
     if (!data.cover) throw err
     console.warn('Social image cover unavailable; rendering text fallback')
-    const fallback = render(undefined, true)
+    const fallback = render(undefined)
     await fallback.ready
     return fallback
   }

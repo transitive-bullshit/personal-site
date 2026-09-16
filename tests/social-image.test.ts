@@ -71,7 +71,15 @@ it('renders a 1200×630 WebP with the cover and CDN cache headers', async () => 
   vi.stubGlobal('fetch', fetcher)
   const response = await renderSocialImage(socialImageData(article, snapshot))
   expect(response.headers.get('content-type')).toBe('image/webp')
-  expect(response.headers.get('cache-control')).toContain('s-maxage=86400')
+  expect(response.headers.get('cache-control')).toBe(
+    'public, max-age=0, must-revalidate'
+  )
+  expect(response.headers.get('cdn-cache-control')).toBe(
+    'public, max-age=86400, stale-while-revalidate=604800'
+  )
+  expect(response.headers.get('vercel-cdn-cache-control')).toBe(
+    'public, max-age=31536000, immutable'
+  )
   const bytes = Buffer.from(await response.arrayBuffer())
   const metadata = await sharp(bytes).metadata()
   expect([metadata.width, metadata.height, metadata.format]).toEqual([
@@ -88,7 +96,7 @@ it('renders a 1200×630 WebP with the cover and CDN cache headers', async () => 
   expect(fetcher).toHaveBeenCalledTimes(1)
 })
 
-it('renders without remote requests when there is no cover, and recovers from a failed cover with a short cache', async () => {
+it('renders without remote requests and keeps CDN caching when a cover fails', async () => {
   const fetcher = vi
     .fn<typeof fetch>()
     .mockResolvedValue(new Response('Not found', { status: 404 }))
@@ -99,7 +107,15 @@ it('renders without remote requests when there is no cover, and recovers from a 
   expect((await plain.arrayBuffer()).byteLength).toBeGreaterThan(1000)
   expect(fetcher).not.toHaveBeenCalled()
   const fallback = await renderSocialImage(data)
-  expect(fallback.headers.get('cache-control')).toContain('s-maxage=300')
+  expect(fallback.headers.get('cache-control')).toBe(
+    'public, max-age=0, must-revalidate'
+  )
+  expect(fallback.headers.get('cdn-cache-control')).toBe(
+    'public, max-age=86400, stale-while-revalidate=604800'
+  )
+  expect(fallback.headers.get('vercel-cdn-cache-control')).toBe(
+    'public, max-age=31536000, immutable'
+  )
   expect((await fallback.arrayBuffer()).byteLength).toBeGreaterThan(1000)
 })
 

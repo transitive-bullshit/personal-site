@@ -3,6 +3,9 @@ import { ArrowRightIcon } from 'lucide-react'
 import { ArticleIndex } from '@/components/article-index'
 import { featuredArticles } from '@/lib/content/load'
 
+export const dynamic = 'force-static'
+export const revalidate = 86400
+
 export default function HomePage() {
   return (
     <main id='main' className='home'>

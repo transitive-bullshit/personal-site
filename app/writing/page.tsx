@@ -5,6 +5,9 @@ import { site } from '@/lib/site'
 
 const description = 'All writing by Travis Fischer.'
 
+export const dynamic = 'force-static'
+export const revalidate = 86400
+
 export const metadata: Metadata = {
   title: 'Writing',
   description,

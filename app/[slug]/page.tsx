@@ -8,6 +8,7 @@ import { socialImageSize, socialImageUrl } from '@/lib/social-image'
 
 export const dynamic = 'force-static'
 export const dynamicParams = true
+export const revalidate = 604800
 
 export function generateStaticParams() {
   return Object.values(content.articles).map(({ slug }) => ({ slug }))
