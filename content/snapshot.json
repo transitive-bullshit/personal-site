@@ -54748,7 +54748,7 @@
         "type": "image"
       },
       "id": "d1b5dcf8b9ff425b8aef5ce6f0730202",
-      "modified": "2026-08-23T19:51:00.000Z",
+      "modified": "2026-09-16T11:19:00.000Z",
       "published": "2021-01-20",
       "slug": "nextjs-notion-starter-kit",
       "tags": [
@@ -80287,7 +80287,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-16T11:19:00.000Z",
         "key": "3ddedb27f1248186b064c993b8e155c6:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/amplify_video_thumb/2096133721955209216/img/b0n8ufOa4sWSMbrt.jpg"
@@ -80314,41 +80314,40 @@
       ]
     },
     "3ddedb27f12481b7bdc4d0325b2f6171:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAQAA4BaJZwAApxXUpAA/vPw1HfQxtjpV0MUNwnENgSjGzvwAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAQAA4BaJZwAAp02MSAA/vU6VVEOORijhsH56AAAAA==",
       "original": {
-        "bytes": 352988,
-        "hash": "a1129d3058176f3556269e527c41f3a86b8c60da2461bf5eb3a30278e4052fa9",
-        "height": 1248,
-        "key": "personal-site/media/a1129d3058176f3556269e527c41f3a86b8c60da2461bf5eb3a30278e4052fa9.jpg",
+        "bytes": 74527,
+        "hash": "12d373dd1bee91734dbbce5574a746bd7784aeb0f04eee31c19cda9c8cfc60e3",
+        "height": 630,
+        "key": "personal-site/media/12d373dd1bee91734dbbce5574a746bd7784aeb0f04eee31c19cda9c8cfc60e3.jpg",
         "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/a1129d3058176f3556269e527c41f3a86b8c60da2461bf5eb3a30278e4052fa9.jpg",
-        "width": 2240
+        "url": "https://assets.cultural-alignment.com/personal-site/media/12d373dd1bee91734dbbce5574a746bd7784aeb0f04eee31c19cda9c8cfc60e3.jpg",
+        "width": 1200
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-16T12:25:00.000Z",
         "key": "3ddedb27f12481b7bdc4d0325b2f6171:cover",
-        "kind": "external",
-        "url": "https://raw.githubusercontent.com/transitive-bullshit/share-ai-passage/main/public/images/passage-before-after.jpg"
+        "kind": "file"
       },
       "variants": [
         {
-          "bytes": 50866,
-          "hash": "9cf90db29a240d80135e6777033e3b76709a68b56767afe2045213c349659932",
-          "height": 535,
-          "key": "personal-site/media/9cf90db29a240d80135e6777033e3b76709a68b56767afe2045213c349659932.webp",
+          "bytes": 30604,
+          "hash": "42e90a3a86ccb2d69c67364a0e643de3f636f9e9af7c8009e8b5e0d9681fac1e",
+          "height": 504,
+          "key": "personal-site/media/42e90a3a86ccb2d69c67364a0e643de3f636f9e9af7c8009e8b5e0d9681fac1e.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/9cf90db29a240d80135e6777033e3b76709a68b56767afe2045213c349659932.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/42e90a3a86ccb2d69c67364a0e643de3f636f9e9af7c8009e8b5e0d9681fac1e.webp",
           "width": 960
         },
         {
-          "bytes": 197206,
-          "hash": "f6cdf98f416e755fb825deed8cfdcb20f5f6321147295c907ef79d435076ae5d",
-          "height": 1070,
-          "key": "personal-site/media/f6cdf98f416e755fb825deed8cfdcb20f5f6321147295c907ef79d435076ae5d.webp",
+          "bytes": 63982,
+          "hash": "50e67e28ef97775f4a6ff266dd103e50a1ab81f79065c5bc3e1f7f04e70a03d4",
+          "height": 630,
+          "key": "personal-site/media/50e67e28ef97775f4a6ff266dd103e50a1ab81f79065c5bc3e1f7f04e70a03d4.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/f6cdf98f416e755fb825deed8cfdcb20f5f6321147295c907ef79d435076ae5d.webp",
-          "width": 1920
+          "url": "https://assets.cultural-alignment.com/personal-site/media/50e67e28ef97775f4a6ff266dd103e50a1ab81f79065c5bc3e1f7f04e70a03d4.webp",
+          "width": 1200
         }
       ]
     },
@@ -80365,7 +80364,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-16T12:25:00.000Z",
         "key": "3ddedb27f12481b7bdc4d0325b2f6171:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/b5a901a9-0530-4441-89f7-28b07e41a03a/icon.svg"
@@ -82226,7 +82225,7 @@
       ]
     },
     "8b4d8f7b37154d2399a889d2b8f5022f": {
-      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoIAAQAA4BaJbACdAEU921pWAD+65ns6PgoLCP2xQ2xhBqe5tL7zrGxwbmo2hgNdyPr8nAhYAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADQAQCdASoIAAQAA4BaJbACdAELYYOpQAD+67RgFuufst+3YM2xVPcP9HXYd24NieI5/gWjmxOU+ifMqTw0gAAA",
       "original": {
         "bytes": 60001,
         "hash": "5b79a45004452cad7794f24edcdb132f84dfada492d0c323a749461839766b6c",
@@ -82238,7 +82237,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2022-10-18T23:44:00.000Z",
+        "edited": "2026-09-16T11:19:00.000Z",
         "key": "8b4d8f7b37154d2399a889d2b8f5022f",
         "kind": "file"
       },
@@ -84655,7 +84654,7 @@
       ]
     },
     "d1b5dcf8b9ff425b8aef5ce6f0730202:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoIAAQAA4BaJZACdAD0gyLhAAD+7eDrNf18JSOWH2/RHRncxsPKZR8rPQeIwnBN8nQAAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAABwAQCdASoIAAUAA4BaJaACdAFAAAD+8Bbv9I04fSSb5oSaUbnJJTYDm1NeCbgp/hr3tdgA",
       "original": {
         "bytes": 190549,
         "hash": "59802081b7983fc8504da6736d69082a42dd6693ab85e4003902803c2ccfb240",
@@ -84667,7 +84666,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-08-23T19:51:00.000Z",
+        "edited": "2026-09-16T11:19:00.000Z",
         "key": "d1b5dcf8b9ff425b8aef5ce6f0730202:cover",
         "kind": "file"
       },
@@ -84693,7 +84692,7 @@
       ]
     },
     "d1b5dcf8b9ff425b8aef5ce6f0730202:icon": {
-      "blurDataURL": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSDQAAAABL6AmAAFGLREF9q0aERG4Q0FBJKmtojQDxwwC0hwgIEUBRPQ/zo5m8BVcoAt0BTf4Z0cDVlA4IEIAAACwAQCdASoIAAgAA4BaJaQAAp2a3j+AAP7shnN/aGXZK1dXT6ue3m9ciGX2qIvP7AnyJSvtlz1Hy9urtICtQnwAAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSEEAAAAAAC20+Pi0LQAv6//+/v/rMLH/+f//+f+w9P////////T0////////9LD/+f//+f+xMOv//v7/6y8ALbT4+LQtAABWUDggRgAAANABAJ0BKggACAADgFolpAADE8PH5OBwAP7SM5kC/aYeTdklduDWjMSiheyrDWbY7Jfm6Xk96765EKMPpz5f6UE0yC8AAAA=",
       "original": {
         "bytes": 2322,
         "hash": "18fd082f97295d0e6e76ee2b317c379be0f8bf3329adfd69a886bd80746b43bb",
@@ -84705,7 +84704,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-08-23T19:51:00.000Z",
+        "edited": "2026-09-16T11:19:00.000Z",
         "key": "d1b5dcf8b9ff425b8aef5ce6f0730202:icon",
         "kind": "file"
       },
@@ -87366,7 +87365,7 @@
         "value": "🎬"
       },
       "id": "3ddedb27f1248186b064c993b8e155c6",
-      "modified": "2026-09-16T08:55:00.000Z",
+      "modified": "2026-09-16T11:19:00.000Z",
       "published": "2026-09-05",
       "slug": "pluribus-openai-parody",
       "tags": [
@@ -87403,7 +87402,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481b7bdc4d0325b2f6171",
-      "modified": "2026-09-16T08:55:00.000Z",
+      "modified": "2026-09-16T12:25:00.000Z",
       "published": "2026-09-14",
       "slug": "passage",
       "source": "https://github.com/transitive-bullshit/share-ai-passage",
