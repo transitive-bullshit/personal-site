@@ -1,4 +1,4 @@
-import type { Article, Block, Snapshot } from './schema'
+import type { Article, Block, Project, Snapshot } from './schema'
 import { site } from '../site'
 import { pageIdFromPath, validateRoutes } from './routes'
 
@@ -9,7 +9,7 @@ export function walkBlocks(blocks: Block[], visit: (block: Block) => void) {
   }
 }
 
-export function articleReferences(article: Article) {
+export function articleReferences(article: Article | Project) {
   const media = new Set<string>()
   const tweets = new Set<string>()
   if (article.cover) media.add(article.cover)
@@ -48,32 +48,40 @@ export function internalPageId(href: string) {
 }
 
 export function validateSnapshot(snapshot: Snapshot) {
-  validateRoutes(snapshot.routes)
-  for (const [id, route] of Object.entries(snapshot.routes)) {
-    if (route.active !== Boolean(snapshot.articles[id]))
-      throw new Error('Route/article publication mismatch: ' + id)
-  }
-  for (const [id, article] of Object.entries(snapshot.articles)) {
-    if (article.id !== id || snapshot.routes[id]?.slug !== article.slug)
-      throw new Error('Article identity/path mismatch: ' + id)
-    const refs = articleReferences(article)
-    visitHrefs(article, (href) => {
-      const pageId = internalPageId(href)
-      if (pageId)
-        throw new Error(
-          'ID-shaped internal link in article ' + id + ': ' + href
-        )
-    })
-    for (const key of refs.media)
-      if (!snapshot.media[key]) throw new Error('Missing media: ' + key)
-    for (const key of refs.tweets)
-      if (!snapshot.tweets[key]) throw new Error('Missing tweet state: ' + key)
-    const ids = new Set<string>()
-    walkBlocks(article.blocks, (block) => {
-      if (ids.has(block.id))
-        throw new Error('Duplicate block ID in article ' + id + ': ' + block.id)
-      ids.add(block.id)
-    })
+  for (const [routes, entries] of [
+    [snapshot.routes, snapshot.articles],
+    [snapshot.projectRoutes ?? {}, snapshot.projects ?? {}]
+  ] as const) {
+    validateRoutes(routes)
+    for (const [id, route] of Object.entries(routes)) {
+      if (route.active !== Boolean(entries[id]))
+        throw new Error('Route/article publication mismatch: ' + id)
+    }
+    for (const [id, article] of Object.entries(entries)) {
+      if (article.id !== id || routes[id]?.slug !== article.slug)
+        throw new Error('Article identity/path mismatch: ' + id)
+      const refs = articleReferences(article)
+      visitHrefs(article, (href) => {
+        const pageId = internalPageId(href)
+        if (pageId)
+          throw new Error(
+            'ID-shaped internal link in article ' + id + ': ' + href
+          )
+      })
+      for (const key of refs.media)
+        if (!snapshot.media[key]) throw new Error('Missing media: ' + key)
+      for (const key of refs.tweets)
+        if (!snapshot.tweets[key])
+          throw new Error('Missing tweet state: ' + key)
+      const ids = new Set<string>()
+      walkBlocks(article.blocks, (block) => {
+        if (ids.has(block.id))
+          throw new Error(
+            'Duplicate block ID in article ' + id + ': ' + block.id
+          )
+        ids.add(block.id)
+      })
+    }
   }
   for (const media of [
     ...Object.values(snapshot.media),

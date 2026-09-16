@@ -1,6 +1,8 @@
 import { z } from 'zod'
+import { projectSchema } from '../../lib/content/schema'
 import type {
   Article,
+  Project,
   Block,
   MediaSource,
   RichText,
@@ -84,6 +86,7 @@ type ImportMedia = (
   refresh?: () => Promise<string>
 ) => Promise<string>
 type NormalizerOptions = {
+  linkRoutes?: Record<string, RouteRecord>
   skipImages?: boolean
   reuseMedia?: (key: string) => boolean
 }
@@ -102,7 +105,11 @@ export class Normalizer {
     return richText(value).map((span) => ({
       ...span,
       href: span.href
-        ? rewriteLink(span.href, this.routes, sourceContract.rootPageId)
+        ? rewriteLink(
+            span.href,
+            this.options.linkRoutes ?? this.routes,
+            sourceContract.rootPageId
+          )
         : undefined
     }))
   }
@@ -171,6 +178,48 @@ export class Normalizer {
     page: NotionPage,
     propertyIds: Record<string, string>
   ): Promise<Article> {
+    const property = await this.api.fullProperty(
+      page.id,
+      propertyById(page, propertyIds.Author!)
+    )
+    const common = await this.pageContent(page, propertyIds)
+    if (!common.published)
+      throw new Error('Published article has no Published date: ' + page.id)
+    return {
+      ...common,
+      published: common.published,
+      author: plainText(property.rich_text) || site.author
+    }
+  }
+
+  async project(
+    page: NotionPage,
+    propertyIds: Record<string, string>
+  ): Promise<Project> {
+    const prop = (name: string) => propertyById(page, propertyIds[name]!)
+    const author = await this.api.fullProperty(page.id, prop('Author'))
+    const tweet = await this.api.fullProperty(page.id, prop('Tweet'))
+    return projectSchema.parse({
+      ...(await this.pageContent(page, propertyIds)),
+      authors: z
+        .array(
+          z.object({
+            id: z.string().transform(compactId),
+            name: z.string().nullish()
+          })
+        )
+        .parse(author.people)
+        .map(({ id, name }) => ({ id, name: name ?? undefined })),
+      website: prop('Website').url || undefined,
+      source: prop('Source').url || undefined,
+      tweet: plainText(tweet.rich_text).trim() || undefined
+    })
+  }
+
+  async pageContent(
+    page: NotionPage,
+    propertyIds: Record<string, string>
+  ): Promise<Omit<Article, 'author' | 'published'> & { published?: string }> {
     const prop = (name: string) => propertyById(page, propertyIds[name]!)
     const rich = async (name: string) => {
       const property = await this.api.fullProperty(page.id, prop(name))
@@ -178,22 +227,18 @@ export class Normalizer {
     }
     const title = await rich('Name')
     const description = await rich('Description')
-    const author = await rich('Author')
     const date = z
       .object({ start: z.string() })
       .nullable()
       .parse(prop('Published').date)
-    if (!date)
-      throw new Error('Published article has no Published date: ' + page.id)
     const blocks = await this.blocks(page.id)
     return {
       id: page.id,
       title,
       slug: this.routes[page.id]!.slug,
       description,
-      published: date.start,
+      published: date?.start,
       modified: page.last_edited_time,
-      author: author || site.author,
       tags: z
         .array(z.object({ name: z.string() }))
         .parse(prop('Tags').multi_select)
@@ -428,7 +473,7 @@ export class Normalizer {
         .parse(data)
       const url = rewriteLink(
         'https://www.notion.so/' + compactId(link.page_id),
-        this.routes,
+        this.options.linkRoutes ?? this.routes,
         sourceContract.rootPageId
       )
       return {
@@ -522,7 +567,11 @@ export class Normalizer {
         return [
           plainSpan(
             url.replace(/^https?:\/\//, ''),
-            rewriteLink(url, this.routes, sourceContract.rootPageId)
+            rewriteLink(
+              url,
+              this.options.linkRoutes ?? this.routes,
+              sourceContract.rootPageId
+            )
           )
         ]
       }

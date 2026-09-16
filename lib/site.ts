@@ -23,3 +23,9 @@ export const sourceContract = {
   databaseId: 'f917892e0b8c4dbeb1743620de57a0ec',
   dataSourceId: 'bb51e17f99ae4f0797a84c9af77a85ec'
 } as const
+
+export const projectSourceContract = {
+  ...sourceContract,
+  databaseId: '3c5edb27f12480a69a16d7c2f8a1f078',
+  dataSourceId: '6ffedb27f12482598a40075b8e5a4993'
+} as const

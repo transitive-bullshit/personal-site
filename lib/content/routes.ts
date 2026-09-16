@@ -11,6 +11,8 @@ export const reservedSlugs = new Set([
   'api',
   'transitivebullshit',
   'writing',
+  'projects',
+  'project',
   'about',
   'feed',
   'top-tweet-interactions-english',
@@ -190,4 +192,26 @@ export function rewriteLink(
   const match = resolveRoute(segment, routes)
   if (!match) return href
   return '/' + match.slug + (url.hash ? '#' + compactId(url.hash.slice(1)) : '')
+}
+
+// Separate route namespaces allow migration without dropping either source entry.
+export function crossCollectionSlugWarnings(
+  articles: Record<string, RouteRecord>,
+  projects: Record<string, RouteRecord>
+) {
+  const warnings: string[] = []
+  for (const [projectId, project] of Object.entries(projects)) {
+    if (!project.active) continue
+    for (const [articleId, article] of Object.entries(articles)) {
+      if (!article.active) continue
+      const paths = new Set([article.slug, ...article.aliases])
+      for (const slug of [project.slug, ...project.aliases]) {
+        if (paths.has(slug))
+          warnings.push(
+            `Article/project slug conflict: ${slug} (article ${articleId}, project ${projectId}); both entries retained`
+          )
+      }
+    }
+  }
+  return warnings
 }

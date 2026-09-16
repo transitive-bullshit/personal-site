@@ -22,26 +22,38 @@ Source IDs live in `lib/site.ts`. Media is immutable under `personal-site/media/
 
 | Command | Effect |
 | --- | --- |
-| `pnpm content:sync` | Sync changed public articles and write the snapshot. |
+| `pnpm content:sync` | Sync changed public articles and projects and write the snapshot. |
+| `pnpm content:sync --only articles` | Sync only articles; retain saved projects. |
+| `pnpm content:sync --only projects` | Sync only projects; retain saved articles. |
 | `pnpm content:sync --dry-run` | Validate and report without writes. |
-| `pnpm content:sync --force` | Re-read every article and refresh remote data. |
+| `pnpm content:sync --force` | Re-read every selected page and refresh remote data. |
 | `pnpm content:sync --fast` | Skip image transfers and placeholder work. |
-| `pnpm content:sync --prune` | Remove missing articles. |
+| `pnpm content:sync --prune` | Remove missing pages in the selected collections. |
 | `pnpm content:sync --accept-slug-changes` | Accept new paths and retain redirects. |
 | `pnpm content:search` | Rebuild the search index from the local snapshot without CMS credentials. |
 
-Flags compose. `--force --fast` re-reads articles but skips images.
+Flags compose. `--only projects --force --fast` re-reads projects but skips images.
 
 ## Behavior
 
-- Only top-level `Public=true` pages become articles.
-- Unchanged pages reuse the saved article when `last_edited_time <= modified`.
+- Only top-level `Public=true` pages in each configured database are imported. Private pages never have their bodies or media fetched.
+- Unchanged pages reuse the saved entry when `last_edited_time <= modified`.
 - `--force` bypasses that page cache.
-- Article imports use `p-map` with concurrency `8`.
+- Both collections use the same importer with `p-map` with concurrency `8`.
 - Path changes require `--accept-slug-changes`.
 - Missing pages remain until `--prune`.
-- `Public=false` removes the article on the next sync.
+- `Public=false` removes the entry on the next sync.
 - Post-processing rebuilds the static search index, including unchanged-content syncs. Dry runs do not write it.
+
+## Projects
+
+The snapshot stores projects in `projects`, with independent `projectRoutes` and a pinned `projectSource` contract. Older article-only snapshots remain readable. Both sources are verified against the configured workspace, root page, database, data source, and property IDs.
+
+Projects share article block, cover, icon, tag, featured, description, modified-time, and image-cache behavior. Their separate schema stores `authors` (Notion person IDs and available names), optional `published`, `website`, `source`, and `tweet` URLs. `Source` is generic: it can link to GitHub or the conversation that created the project. No separate chat-link property currently exists in Notion.
+
+Slug reconciliation, redirects, privacy removal, and pruning run independently per collection. Cross-collection slug/alias matches warn with both page IDs and retain both records for manual migration in Notion. No Notion content is moved or deleted. Project route records are preparation for `/project/[slug]`; this step adds no public project pages or search entries. Project links to published articles resolve normally; links to projects retain their Notion destinations until project routing is implemented.
+
+`--only` skips discovery and page imports for the other collection and retains its referenced media, bookmarks, and tweets. Force refresh and placeholder work apply to the selected collection (shared assets can still change). Search continues to index only articles.
 
 ## Media
 
@@ -57,7 +69,7 @@ Flags compose. `--force --fast` re-reads articles but skips images.
 
 Authorization, discovery, route, schema, and snapshot-write failures stop the sync.
 
-Article, media, bookmark, tweet, storage-probe, and placeholder failures warn and continue. The snapshot is written, then the command exits `1`. Informational warnings do not change the exit code.
+Page, media, bookmark, tweet, storage-probe, and placeholder failures warn and continue. The snapshot is written, then the command exits `1`. Informational warnings do not change the exit code.
 
 R2 uploads may precede a later failure. They are immutable and unused until the snapshot is committed and deployed.
 
