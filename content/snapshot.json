@@ -79096,40 +79096,40 @@
       ]
     },
     "3c5edb27f124801c9faae26f7dcba5ce:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoIAAUAA4BaJaACdAEegkDD8AAA/uc2VCoNNNGQ/Ztd/q7nRVXcNUflRp5gAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAQAA4BaJYwCdAD0gbJgAP7hmulUXTakenXqdffZaRCCE3YGAAAA",
       "original": {
-        "bytes": 1159901,
-        "hash": "8dad049a10d6ebd8525636c44e7eb548eda8e57fdc6352b98f6a04c219592ddd",
-        "height": 1365,
-        "key": "personal-site/media/8dad049a10d6ebd8525636c44e7eb548eda8e57fdc6352b98f6a04c219592ddd.png",
-        "mime": "image/png",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/8dad049a10d6ebd8525636c44e7eb548eda8e57fdc6352b98f6a04c219592ddd.png",
-        "width": 2048
+        "bytes": 364670,
+        "hash": "b365e7993b6bc9c940e0578bc5e49278c0fe69a86ce5c3cf62ab2252da5cfe87",
+        "height": 941,
+        "key": "personal-site/media/b365e7993b6bc9c940e0578bc5e49278c0fe69a86ce5c3cf62ab2252da5cfe87.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/b365e7993b6bc9c940e0578bc5e49278c0fe69a86ce5c3cf62ab2252da5cfe87.jpg",
+        "width": 1672
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T09:01:00.000Z",
+        "edited": "2026-09-16T09:44:00.000Z",
         "key": "3c5edb27f124801c9faae26f7dcba5ce:cover",
         "kind": "file"
       },
       "variants": [
         {
-          "bytes": 24558,
-          "hash": "90d2ac0ba4eb234bac0ceee540564ae7cbba000ecb038eb4e29847ec693a54f0",
-          "height": 640,
-          "key": "personal-site/media/90d2ac0ba4eb234bac0ceee540564ae7cbba000ecb038eb4e29847ec693a54f0.webp",
+          "bytes": 40442,
+          "hash": "2abb64226cd10ca4421b9c6587a3c238fe7f5cc8d4ded446a442cd42dbb073cb",
+          "height": 540,
+          "key": "personal-site/media/2abb64226cd10ca4421b9c6587a3c238fe7f5cc8d4ded446a442cd42dbb073cb.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/90d2ac0ba4eb234bac0ceee540564ae7cbba000ecb038eb4e29847ec693a54f0.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/2abb64226cd10ca4421b9c6587a3c238fe7f5cc8d4ded446a442cd42dbb073cb.webp",
           "width": 960
         },
         {
-          "bytes": 91300,
-          "hash": "9c706c9488342a274281552bdac42f493d32f85fe1477854784fe2dfb022489c",
-          "height": 1280,
-          "key": "personal-site/media/9c706c9488342a274281552bdac42f493d32f85fe1477854784fe2dfb022489c.webp",
+          "bytes": 152480,
+          "hash": "4a44ca8b3380030fe8cda5c244ff6e197aa518c1badf493779aa7a10a713450e",
+          "height": 941,
+          "key": "personal-site/media/4a44ca8b3380030fe8cda5c244ff6e197aa518c1badf493779aa7a10a713450e.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/9c706c9488342a274281552bdac42f493d32f85fe1477854784fe2dfb022489c.webp",
-          "width": 1920
+          "url": "https://assets.cultural-alignment.com/personal-site/media/4a44ca8b3380030fe8cda5c244ff6e197aa518c1badf493779aa7a10a713450e.webp",
+          "width": 1672
         }
       ]
     },
@@ -79146,7 +79146,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T09:01:00.000Z",
+        "edited": "2026-09-16T09:44:00.000Z",
         "key": "3c5edb27f124801c9faae26f7dcba5ce:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/3ec7ff8a-929a-4361-8193-5ba6a2413c55/image.png"
@@ -79375,40 +79375,40 @@
       "variants": []
     },
     "3c5edb27f124809db2a5fc2da1aff6ab:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAUAA4BaJZQAAudHzywAAP71GWk6j6VeTtf4L+uyAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoIAAQAA4BaJYwCdAEfbiCVEAD+6yeYSmR5tkJs3JudYawxwOK5qK7gAAA=",
       "original": {
-        "bytes": 105411,
-        "hash": "2586da839572b3b6047e6d1bccd9b0f8990b4ded65168f78e62c65adfd9a7884",
-        "height": 720,
-        "key": "personal-site/media/2586da839572b3b6047e6d1bccd9b0f8990b4ded65168f78e62c65adfd9a7884.jpg",
+        "bytes": 305780,
+        "hash": "fe733ba07508632ae5b9c53aebc9f8cd2f7430be4dca098973daf7f75cdddb55",
+        "height": 941,
+        "key": "personal-site/media/fe733ba07508632ae5b9c53aebc9f8cd2f7430be4dca098973daf7f75cdddb55.jpg",
         "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/2586da839572b3b6047e6d1bccd9b0f8990b4ded65168f78e62c65adfd9a7884.jpg",
-        "width": 1280
+        "url": "https://assets.cultural-alignment.com/personal-site/media/fe733ba07508632ae5b9c53aebc9f8cd2f7430be4dca098973daf7f75cdddb55.jpg",
+        "width": 1672
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-16T09:42:00.000Z",
         "key": "3c5edb27f124809db2a5fc2da1aff6ab:cover",
         "kind": "file"
       },
       "variants": [
         {
-          "bytes": 28896,
-          "hash": "abb2584ce865f642e48dd352848763362521ae4d48718e094bd22db33ace0259",
+          "bytes": 31956,
+          "hash": "f1ec32cce2e7934bdc5ac4671a048f34e0d98b98ffd91a39a3b8443edbfe53d3",
           "height": 540,
-          "key": "personal-site/media/abb2584ce865f642e48dd352848763362521ae4d48718e094bd22db33ace0259.webp",
+          "key": "personal-site/media/f1ec32cce2e7934bdc5ac4671a048f34e0d98b98ffd91a39a3b8443edbfe53d3.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/abb2584ce865f642e48dd352848763362521ae4d48718e094bd22db33ace0259.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/f1ec32cce2e7934bdc5ac4671a048f34e0d98b98ffd91a39a3b8443edbfe53d3.webp",
           "width": 960
         },
         {
-          "bytes": 55800,
-          "hash": "308ed340c89ee8442884639fa723461547df2cb6325dbc59b0b161284253e309",
-          "height": 720,
-          "key": "personal-site/media/308ed340c89ee8442884639fa723461547df2cb6325dbc59b0b161284253e309.webp",
+          "bytes": 119058,
+          "hash": "0c42b9ae230f7721926476ef06ddce575e8bbf84e4b909684698f56bed5a3103",
+          "height": 941,
+          "key": "personal-site/media/0c42b9ae230f7721926476ef06ddce575e8bbf84e4b909684698f56bed5a3103.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/308ed340c89ee8442884639fa723461547df2cb6325dbc59b0b161284253e309.webp",
-          "width": 1280
+          "url": "https://assets.cultural-alignment.com/personal-site/media/0c42b9ae230f7721926476ef06ddce575e8bbf84e4b909684698f56bed5a3103.webp",
+          "width": 1672
         }
       ]
     },
@@ -79425,7 +79425,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-16T09:42:00.000Z",
         "key": "3c5edb27f124809db2a5fc2da1aff6ab:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/9da65059-c6ac-4368-9a4f-ae547ef8962c/agentic-icon-circle-light.svg"
@@ -86508,7 +86508,7 @@
         "type": "image"
       },
       "id": "3c5edb27f124801c9faae26f7dcba5ce",
-      "modified": "2026-09-16T09:01:00.000Z",
+      "modified": "2026-09-16T09:44:00.000Z",
       "published": "2021-01-20",
       "slug": "react-notion-x",
       "source": "https://github.com/NotionX/react-notion-x",
@@ -86700,7 +86700,7 @@
         "type": "image"
       },
       "id": "3c5edb27f124809db2a5fc2da1aff6ab",
-      "modified": "2026-09-16T08:55:00.000Z",
+      "modified": "2026-09-16T09:42:00.000Z",
       "published": "2025-07-03",
       "slug": "agentic",
       "source": "https://github.com/transitive-bullshit/agentic",
