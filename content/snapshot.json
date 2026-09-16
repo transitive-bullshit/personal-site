@@ -18690,7 +18690,7 @@
               "bold": false,
               "code": false,
               "color": "green_background",
-              "href": "https://a16z.com/2019/10/08/passion-economy/",
+              "href": "https://a16z.com/the-passion-economy-and-the-future-of-work/",
               "italic": false,
               "strike": false,
               "text": "Passion Economy",
@@ -18707,6 +18707,13 @@
             }
           ],
           "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3ddedb27f1248019b2acd463a3dbcd44",
+          "richText": [],
+          "type": "paragraph"
         }
       ],
       "cover": "689a8abc1afa4699905aa2f2e585e208:cover",
@@ -18717,7 +18724,8 @@
         "value": "🤔"
       },
       "id": "689a8abc1afa4699905aa2f2e585e208",
-      "modified": "2026-09-15T17:17:00.000Z",
+      "modified": "2026-09-16T15:07:00.000Z",
+      "needsImageSync": true,
       "published": "2021-01-25",
       "slug": "saasify-key-takeaways",
       "tags": [
