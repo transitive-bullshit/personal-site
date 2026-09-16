@@ -1,5 +1,6 @@
 import type { Article, Block, Snapshot } from './schema'
-import { validateRoutes } from './routes'
+import { site } from '../site'
+import { pageIdFromPath, validateRoutes } from './routes'
 
 export function walkBlocks(blocks: Block[], visit: (block: Block) => void) {
   for (const block of blocks) {
@@ -22,6 +23,30 @@ export function articleReferences(article: Article) {
   return { media, tweets }
 }
 
+function visitHrefs(value: unknown, visit: (href: string) => void) {
+  if (Array.isArray(value)) {
+    for (const item of value) visitHrefs(item, visit)
+    return
+  }
+  if (!value || typeof value !== 'object') return
+  for (const [key, item] of Object.entries(value)) {
+    if (key === 'href' && typeof item === 'string') visit(item)
+    else visitHrefs(item, visit)
+  }
+}
+
+export function internalPageId(href: string) {
+  let url: URL
+  try {
+    url = new URL(href, site.origin)
+  } catch {
+    return undefined
+  }
+  if (url.origin !== site.origin) return undefined
+  const segment = url.pathname.split('/').filter(Boolean).at(-1) ?? ''
+  return pageIdFromPath(segment)
+}
+
 export function validateSnapshot(snapshot: Snapshot) {
   validateRoutes(snapshot.routes)
   for (const [id, route] of Object.entries(snapshot.routes)) {
@@ -32,6 +57,13 @@ export function validateSnapshot(snapshot: Snapshot) {
     if (article.id !== id || snapshot.routes[id]?.slug !== article.slug)
       throw new Error('Article identity/path mismatch: ' + id)
     const refs = articleReferences(article)
+    visitHrefs(article, (href) => {
+      const pageId = internalPageId(href)
+      if (pageId)
+        throw new Error(
+          'ID-shaped internal link in article ' + id + ': ' + href
+        )
+    })
     for (const key of refs.media)
       if (!snapshot.media[key]) throw new Error('Missing media: ' + key)
     for (const key of refs.tweets)

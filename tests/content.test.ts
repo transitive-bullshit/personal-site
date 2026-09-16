@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { getHeadings } from '../lib/content/headings'
+import { internalPageId } from '../lib/content/references'
 import {
   normalizeTitle,
   reconcileRoutes,
@@ -112,10 +113,24 @@ describe('publication and pathname lifecycle', () => {
         sourceContract.rootPageId
       )
     ).toBe('/original-title#' + b)
+    expect(
+      rewriteLink('/' + a + '#' + blockId, routes, sourceContract.rootPageId)
+    ).toBe('/original-title#' + b)
+    expect(
+      rewriteLink('/anything-' + a, routes, sourceContract.rootPageId)
+    ).toBe('/original-title')
+    expect(rewriteLink('/', routes, sourceContract.rootPageId)).toBe('/')
     const unknown = 'https://www.notion.so/' + b
     expect(rewriteLink(unknown, routes, sourceContract.rootPageId)).toBe(
       unknown
     )
+  })
+  it('identifies ID-shaped internal paths without rejecting ID fragments', () => {
+    expect(internalPageId('/' + a)).toBe(a)
+    expect(internalPageId('/anything-' + a)).toBe(a)
+    expect(internalPageId('https://transitivebullsh.it/' + a)).toBe(a)
+    expect(internalPageId('/original-title#' + b)).toBeUndefined()
+    expect(internalPageId('https://www.notion.so/' + a)).toBeUndefined()
   })
 })
 

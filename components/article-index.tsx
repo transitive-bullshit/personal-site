@@ -21,9 +21,7 @@ export function ArticleIndex({
           <time dateTime={article.published}>
             {dateFormatter.format(new Date(article.published))}
           </time>
-          <Link href={'/' + article.slug} prefetch={false}>
-            {article.title}
-          </Link>
+          <Link href={'/' + article.slug}>{article.title}</Link>
         </li>
       ))}
     </ol>

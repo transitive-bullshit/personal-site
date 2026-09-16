@@ -1,4 +1,5 @@
 import type { RouteRecord } from './schema'
+import { site } from '../site'
 
 export const reservedSlugs = new Set([
   'sitemap.xml',
@@ -164,7 +165,7 @@ export function rewriteLink(
   if (href.startsWith('#')) return '#' + compactId(href.slice(1))
   let url: URL
   try {
-    url = new URL(href)
+    url = new URL(href, site.origin)
   } catch {
     return href
   }
@@ -179,6 +180,8 @@ export function rewriteLink(
     !url.hostname.endsWith('.notion.site')
   )
     return href
+  if (url.hostname === new URL(site.origin).hostname && url.pathname === '/')
+    return '/' + (url.hash ? '#' + compactId(url.hash.slice(1)) : '')
   const segment = url.pathname.split('/').filter(Boolean).at(-1) ?? ''
   const id = pageIdFromPath(segment)
   if (id === rootId)

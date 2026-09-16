@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import type { ReactNode } from 'react'
 import type { RichText as Span } from '@/lib/content/schema'
 
@@ -21,7 +22,12 @@ export function RichText({ spans }: { spans: Span[] }) {
     if (span.underline) node = <u>{node}</u>
     if (span.strike) node = <s>{node}</s>
     const href = span.href && safeHref(span.href)
-    if (href) node = <a href={href}>{node}</a>
+    if (href)
+      node = href.startsWith('/') ? (
+        <Link href={href}>{node}</Link>
+      ) : (
+        <a href={href}>{node}</a>
+      )
     return (
       <span
         key={index}
