@@ -77,6 +77,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+a[data-slot='button']:not([data-variant='link']) {
+  text-decoration: none;
+}
 :focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 4px;
@@ -546,18 +549,24 @@ summary {
 }
 @media (max-width: 600px) {
   .site-shell {
-    padding-inline: 22px;
+    padding-inline: 16px;
   }
   .site-header {
     padding-block: 24px;
     gap: 8px;
-    grid-template-columns: minmax(0, 1fr) auto auto;
+    grid-template-columns: minmax(0, 1fr) auto;
   }
   .site-header-actions {
+    grid-column: 2;
+    grid-row: 1;
     gap: 2px;
   }
   .site-header-nav {
-    gap: 12px;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: start;
+    margin-top: 12px;
+    gap: 20px;
     font-size: 13px;
   }
   .home {
@@ -589,9 +598,6 @@ summary {
   }
 }
 @media (max-width: 360px) {
-  .site-shell {
-    padding-inline: 16px;
-  }
   .site-header {
     font-size: 12px;
     gap: 4px;
@@ -1019,5 +1025,188 @@ summary {
   }
   .lightbox-download:active {
     transform: none;
+  }
+}
+
+.home-section {
+  margin-top: 64px;
+}
+.home-section h2 {
+  font-size: 20px;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+.home-section .article-index {
+  margin-top: 24px;
+}
+.project-index {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 36px 24px;
+  list-style: none;
+  padding: 0;
+  margin-top: 24px;
+}
+.projects-page .project-index {
+  margin-top: 48px;
+}
+.project-card {
+  display: block;
+  height: 100%;
+}
+.project-card,
+.project-card:hover {
+  text-decoration: none;
+}
+.project-card-preview {
+  position: relative;
+  isolation: isolate;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--muted);
+  outline: 1px solid oklch(0 0 0 / 0.1);
+  outline-offset: -1px;
+}
+.dark .project-card-preview {
+  outline-color: oklch(1 0 0 / 0.1);
+}
+.project-card-preview::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: oklch(0.76 0.045 75);
+  opacity: 0.14;
+  pointer-events: none;
+  transition: opacity 150ms ease-out;
+}
+.project-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.5) contrast(0.96);
+  transition:
+    transform 150ms ease-out,
+    filter 150ms ease-out;
+}
+.project-card:focus-visible .project-card-image {
+  transform: scale(1.025);
+  filter: saturate(0.8) contrast(1);
+}
+.project-card:focus-visible .project-card-preview::after {
+  opacity: 0.06;
+}
+@media (hover: hover) {
+  .project-card:hover .project-card-image {
+    transform: scale(1.025);
+    filter: saturate(0.8) contrast(1);
+  }
+  .project-card:hover .project-card-preview::after {
+    opacity: 0.06;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-card-image,
+  .project-card-preview::after {
+    transition: none;
+  }
+  .project-card:is(:hover, :focus-visible) .project-card-image {
+    transform: none;
+  }
+}
+.project-card-fallback {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  font-size: 48px;
+  color: var(--muted-foreground);
+}
+.project-card-fallback .notion-icon {
+  width: 64px;
+  height: 64px;
+}
+.project-card-heading {
+  margin-top: 16px;
+}
+.project-card-heading :is(h2, h3) {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+.project-card p {
+  margin-top: 6px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+.project-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+.project-back svg {
+  width: 16px;
+  height: 16px;
+}
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+.project-actions:empty {
+  display: none;
+}
+@media (max-width: 600px) {
+  .project-index {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+/* Animate only matching project elements. Keep the surrounding page and chrome
+   live instead of crossfading a frozen screenshot of the entire viewport. */
+::view-transition {
+  pointer-events: none;
+}
+::view-transition-old(root) {
+  display: none;
+}
+::view-transition-new(root) {
+  animation: none;
+}
+::view-transition-group(.project-image-morph),
+::view-transition-group(.project-text-morph) {
+  animation-duration: 280ms;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+::view-transition-old(.project-image-morph),
+::view-transition-new(.project-image-morph) {
+  height: 100%;
+  object-fit: cover;
+  overflow: clip;
+  border-radius: 8px;
+  animation-duration: 280ms;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+/* Keep text crisp as card typography becomes the larger page heading. */
+::view-transition-old(.project-text-morph) {
+  display: none;
+}
+::view-transition-new(.project-text-morph) {
+  animation: none;
+  object-fit: none;
+  object-position: left top;
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
   }
 }

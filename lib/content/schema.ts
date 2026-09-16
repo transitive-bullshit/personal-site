@@ -144,6 +144,16 @@ export const articleSchema = z.object({
   blocks: z.array(blockSchema)
 })
 export type Article = z.infer<typeof articleSchema>
+export const projectSchema = articleSchema
+  .omit({ author: true, published: true })
+  .extend({
+    published: z.string().optional(),
+    authors: z.array(z.object({ id: idSchema, name: z.string().optional() })),
+    website: httpUrlSchema.optional(),
+    source: httpUrlSchema.optional(),
+    tweet: httpUrlSchema.optional()
+  })
+export type Project = z.infer<typeof projectSchema>
 export const routeRecordSchema = z.object({
   slug: z.string().min(1),
   aliases: z.array(z.string()),
@@ -189,6 +199,18 @@ export const snapshotSchema = z.object({
     apiVersion: z.string(),
     propertyIds: z.record(z.string(), z.string())
   }),
+  projects: z.record(idSchema, projectSchema).optional(),
+  projectRoutes: z.record(idSchema, routeRecordSchema).optional(),
+  projectSource: z
+    .object({
+      rootPageId: idSchema,
+      workspaceId: idSchema,
+      databaseId: idSchema,
+      dataSourceId: idSchema,
+      apiVersion: z.string(),
+      propertyIds: z.record(z.string(), z.string())
+    })
+    .optional(),
   articles: z.record(idSchema, articleSchema),
   routes: z.record(idSchema, routeRecordSchema),
   media: z.record(z.string(), mediaSchema),

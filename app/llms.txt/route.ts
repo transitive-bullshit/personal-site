@@ -1,4 +1,4 @@
-import { articles } from '@/lib/content/load'
+import { articles, projects } from '@/lib/content/load'
 import { site } from '@/lib/site'
 
 export const dynamic = 'force-static'
@@ -9,6 +9,20 @@ export function GET() {
       '# ' + site.name,
       '',
       '> ' + site.description,
+      '',
+      '## Projects',
+      '',
+      ...projects.map(
+        (project) =>
+          '- [' +
+          project.title.replace(/[[\]\n]/g, '') +
+          '](' +
+          site.origin +
+          '/project/' +
+          project.slug +
+          '): ' +
+          project.description.replaceAll('\n', ' ')
+      ),
       '',
       '## Articles',
       '',

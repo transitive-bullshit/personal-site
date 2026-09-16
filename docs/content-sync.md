@@ -22,26 +22,38 @@ Source IDs live in `lib/site.ts`. Media is immutable under `personal-site/media/
 
 | Command | Effect |
 | --- | --- |
-| `pnpm content:sync` | Sync changed public articles and write the snapshot. |
+| `pnpm content:sync` | Sync changed public articles and projects and write the snapshot. |
+| `pnpm content:sync --only articles` | Sync only articles; retain saved projects. |
+| `pnpm content:sync --only projects` | Sync only projects; retain saved articles. |
 | `pnpm content:sync --dry-run` | Validate and report without writes. |
-| `pnpm content:sync --force` | Re-read every article and refresh remote data. |
+| `pnpm content:sync --force` | Re-read every selected page and refresh remote data. |
 | `pnpm content:sync --fast` | Skip image transfers and placeholder work. |
-| `pnpm content:sync --prune` | Remove missing articles. |
+| `pnpm content:sync --prune` | Remove missing pages in the selected collections. |
 | `pnpm content:sync --accept-slug-changes` | Accept new paths and retain redirects. |
 | `pnpm content:search` | Rebuild the search index from the local snapshot without CMS credentials. |
 
-Flags compose. `--force --fast` re-reads articles but skips images.
+Flags compose. `--only projects --force --fast` re-reads projects but skips images.
 
 ## Behavior
 
-- Only top-level `Public=true` pages become articles.
-- Unchanged pages reuse the saved article when `last_edited_time <= modified`.
+- Only top-level `Public=true` pages in each configured database are imported. Private pages never have their bodies or media fetched.
+- Unchanged pages reuse the saved entry when `last_edited_time <= modified`.
 - `--force` bypasses that page cache.
-- Article imports use `p-map` with concurrency `8`.
+- Both collections use the same importer with `p-map` with concurrency `8`.
 - Path changes require `--accept-slug-changes`.
 - Missing pages remain until `--prune`.
-- `Public=false` removes the article on the next sync.
+- `Public=false` removes the entry on the next sync.
 - Post-processing rebuilds the static search index, including unchanged-content syncs. Dry runs do not write it.
+
+## Projects
+
+The snapshot stores projects in `projects`, with independent `projectRoutes` and a pinned `projectSource` contract. Older article-only snapshots remain readable. Both sources are verified against the configured workspace, root page, database, data source, and property IDs.
+
+Projects share article block, cover, icon, tag, featured, description, modified-time, and image-cache behavior. Their separate schema stores `authors` (Notion person IDs and available names), optional `published`, `website`, `source`, and `tweet` URLs. `Source` is generic: it can link to GitHub or the conversation that created the project. No separate chat-link property currently exists in Notion.
+
+Slug reconciliation, redirects, privacy removal, and pruning run independently per collection. Cross-collection slug/alias matches warn with both page IDs and retain both records for manual migration in Notion. No Notion content is moved or deleted. Projects render at `/project/[slug]` with redirects for saved aliases and Notion IDs. At load time, saved Notion links to public articles and projects resolve to their current canonical routes. Private projects are never linked to a public route.
+
+`--only` skips discovery and page imports for the other collection and retains its referenced media, bookmarks, and tweets. Force refresh and placeholder work apply to the selected collection (shared assets can still change). Search indexes both public collections, including titles, descriptions, tags, and body text.
 
 ## Media
 
@@ -57,7 +69,7 @@ Flags compose. `--force --fast` re-reads articles but skips images.
 
 Authorization, discovery, route, schema, and snapshot-write failures stop the sync.
 
-Article, media, bookmark, tweet, storage-probe, and placeholder failures warn and continue. The snapshot is written, then the command exits `1`. Informational warnings do not change the exit code.
+Page, media, bookmark, tweet, storage-probe, and placeholder failures warn and continue. The snapshot is written, then the command exits `1`. Informational warnings do not change the exit code.
 
 R2 uploads may precede a later failure. They are immutable and unused until the snapshot is committed and deployed.
 
@@ -81,10 +93,14 @@ Keep Notion and storage clients in `scripts/`.
 
 ## Client-side search
 
-Command-K / Control-K and the header search icon open cmdk. The dialog code and index load only on first open; subsequent opens reuse the fetched index. Queries stay in the browser. Keyword matches prefer titles, then descriptions/tags, then nested article text, captions, tables, and saved bookmark/tweet text. Canonical public article routes plus Home and Writing are indexed; add future top-level pages in `lib/content/search-index.ts`.
+Command-K / Control-K and the header search icon open cmdk. The dialog code and index load only on first open; subsequent opens reuse the fetched index. Queries stay in the browser. Keyword matches prefer titles, then descriptions/tags, then nested article text, captions, tables, and saved bookmark/tweet text. Canonical public article and project routes plus Home, Projects, and Writing are indexed. Project results are labeled in the palette. Add future top-level pages in `lib/content/search-index.ts`.
 
 The top and selected results are explicitly prefetched. Results use full-row Next links with no gaps. The palette uses an adaptation of cmdk's [Vercel theme](https://github.com/dip/cmdk/blob/main/website/styles/cmdk/vercel.scss), without demo panes, item margins, or keyboard-driven motion. License attribution is in `docs/licenses/cmdk.txt`.
 
 ## Runtime images
 
 The app serves synced images through `next/image` from the configured R2 path. Social cards use the saved cover through `components/social-image.tsx`; bump `templateVersion` in `lib/social-image.ts` after design changes.
+
+## Project pages
+
+The homepage shows all projects marked Featured above featured writing. `/projects` lists every public project; both lists use publication date descending, then slug, with undated projects last. Cards use the Notion cover, falling back to the page icon or initial. `/project/[slug]` shows the title, description, available Website/Source/X actions, and the shared article body component (cover, lightbox, supported blocks, and responsive table of contents). Project cover images also provide social previews; projects without covers use a summary card. Project routes are included in the sitemap, llms.txt, and internal link previews.

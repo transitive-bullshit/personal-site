@@ -11,6 +11,8 @@ export const reservedSlugs = new Set([
   'api',
   'transitivebullshit',
   'writing',
+  'projects',
+  'project',
   'about',
   'feed',
   'top-tweet-interactions-english',
@@ -161,7 +163,8 @@ export function blockAnchor(id: string) {
 export function rewriteLink(
   href: string,
   routes: Record<string, RouteRecord>,
-  rootId: string
+  rootId: string,
+  projectRoutes: Record<string, RouteRecord> = {}
 ) {
   if (href.startsWith('#')) return '#' + compactId(href.slice(1))
   let url: URL
@@ -172,6 +175,7 @@ export function rewriteLink(
   }
   if (
     ![
+      'app.notion.com',
       'www.notion.so',
       'notion.so',
       'notion.site',
@@ -187,7 +191,48 @@ export function rewriteLink(
   const id = pageIdFromPath(segment)
   if (id === rootId)
     return '/' + (url.hash ? '#' + compactId(url.hash.slice(1)) : '')
+  const project =
+    id && projectRoutes[id]?.active ? projectRoutes[id] : undefined
+  if (project)
+    return (
+      '/project/' +
+      project.slug +
+      (url.hash ? '#' + compactId(url.hash.slice(1)) : '')
+    )
+  if (
+    url.hostname === new URL(site.origin).hostname &&
+    url.pathname.startsWith('/project/')
+  ) {
+    const match = resolveRoute(segment, projectRoutes)
+    return match
+      ? '/project/' +
+          match.slug +
+          (url.hash ? '#' + compactId(url.hash.slice(1)) : '')
+      : href
+  }
   const match = resolveRoute(segment, routes)
   if (!match) return href
   return '/' + match.slug + (url.hash ? '#' + compactId(url.hash.slice(1)) : '')
+}
+
+// Separate route namespaces allow migration without dropping either source entry.
+export function crossCollectionSlugWarnings(
+  articles: Record<string, RouteRecord>,
+  projects: Record<string, RouteRecord>
+) {
+  const warnings: string[] = []
+  for (const [projectId, project] of Object.entries(projects)) {
+    if (!project.active) continue
+    for (const [articleId, article] of Object.entries(articles)) {
+      if (!article.active) continue
+      const paths = new Set([article.slug, ...article.aliases])
+      for (const slug of [project.slug, ...project.aliases]) {
+        if (paths.has(slug))
+          warnings.push(
+            `Article/project slug conflict: ${slug} (article ${articleId}, project ${projectId}); both entries retained`
+          )
+      }
+    }
+  }
+  return warnings
 }

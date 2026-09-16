@@ -104,6 +104,7 @@ describe('static search index', () => {
     expect(index.documents.map((document) => document.href)).toEqual([
       '/canonical',
       '/',
+      '/projects',
       '/writing'
     ])
     const document = index.documents[0]!
@@ -129,11 +130,11 @@ describe('static search index', () => {
     content.routes[a]!.active = false
     expect(
       buildSearchIndex(content).documents.map((document) => document.href)
-    ).toEqual(['/', '/writing'])
+    ).toEqual(['/', '/projects', '/writing'])
     delete content.articles[a]
-    expect(buildSearchIndex(content).documents).toHaveLength(2)
+    expect(buildSearchIndex(content).documents).toHaveLength(3)
     content.articles[a] = { ...snapshot().articles[a]!, id: b, slug: 'unsafe' }
-    expect(buildSearchIndex(content).documents).toHaveLength(2)
+    expect(buildSearchIndex(content).documents).toHaveLength(3)
   })
 
   it('orders empty searches by newest article, independently of source insertion order', () => {
@@ -173,7 +174,43 @@ describe('static search index', () => {
     delete content.articles[a]
     content.routes[a]!.active = false
     expect(await publishSearchIndex(content, path)).toBe(true)
-    expect(JSON.parse(await readFile(path, 'utf8')).documents).toHaveLength(2)
+    expect(JSON.parse(await readFile(path, 'utf8')).documents).toHaveLength(3)
+  })
+
+  it('indexes projects independently of colliding article slugs, including their body and metadata', () => {
+    const content = snapshot()
+    const { author: _author, ...base } = content.articles[a]!
+    content.projects = {
+      [b]: {
+        ...base,
+        id: b,
+        title: 'Visual experiment',
+        authors: [],
+        description: 'Generative art',
+        tags: ['WebGL'],
+        blocks: [paragraph('Particle simulation')],
+        published: undefined
+      }
+    }
+    content.projectRoutes = {
+      [b]: { slug: base.slug, aliases: ['old-project'], active: true }
+    }
+    const index = buildSearchIndex(content)
+    expect(index.documents.some((entry) => entry.href === '/canonical')).toBe(
+      true
+    )
+    expect(
+      searchDocuments(index.documents, 'visual webgl particle')[0]
+    ).toMatchObject({ href: '/project/canonical', kind: 'project' })
+    expect(
+      index.documents.some((entry) => entry.href.includes('old-project'))
+    ).toBe(false)
+    content.projectRoutes[b]!.active = false
+    expect(
+      buildSearchIndex(content).documents.some(
+        (entry) => entry.kind === 'project'
+      )
+    ).toBe(false)
   })
 
   it('keeps the checked-in index in sync with the public snapshot', async () => {

@@ -1,19 +1,27 @@
 import { parseArgs } from 'node:util'
 import { canonicalJson } from './io'
 import { z } from 'zod'
-import { sourceContract } from '../lib/site'
+import { sourceContract, projectSourceContract } from '../lib/site'
 import {
   snapshotSchema,
   type Media,
   type Snapshot
 } from '../lib/content/schema'
-import { reconcileRoutes } from '../lib/content/routes'
+import {
+  reconcileRoutes,
+  crossCollectionSlugWarnings
+} from '../lib/content/routes'
 import { articleReferences, validateSnapshot } from '../lib/content/references'
 import { loadEnv, publishSnapshot, readSnapshot } from './io'
 import { publishSearchIndex } from './search-index'
-import { API_VERSION, NotionSourceClient, propertyById } from './notion/source'
+import {
+  API_VERSION,
+  NotionSourceClient,
+  propertyById,
+  projectProperties
+} from './notion/source'
 import { Normalizer, plainText } from './notion/normalize'
-import { importArticles } from './notion/import-articles'
+import { importPages } from './notion/import-pages'
 import { MediaStorage, storageConfig } from './media/storage'
 import { MediaCache } from './media/cache'
 import { MediaImporter } from './media/process'
@@ -26,6 +34,7 @@ import { syncTweets } from './tweets'
 export async function main() {
   const { values } = parseArgs({
     options: {
+      only: { type: 'string' },
       'dry-run': { type: 'boolean', default: false },
       force: { type: 'boolean', default: false },
       fast: { type: 'boolean', default: false },
@@ -36,10 +45,14 @@ export async function main() {
   })
   if (values.help) {
     console.log(
-      'pnpm content:sync [--dry-run] [--force] [--fast] [--prune] [--accept-slug-changes]\n--fast skips images; --force re-reads every page. Recovered errors write the snapshot and exit 1.'
+      'pnpm content:sync [--only articles|projects] [--dry-run] [--force] [--fast] [--prune] [--accept-slug-changes]\n--fast skips images; --force re-reads every page. Recovered errors write the snapshot and exit 1.'
     )
     return
   }
+  if (values.only && !['articles', 'projects'].includes(values.only))
+    throw new Error('--only must be articles or projects')
+  const syncArticles = values.only !== 'projects'
+  const syncProjects = values.only !== 'articles'
   let recoverableErrors = 0
   const warn = (message: string) => console.warn(message)
   const reportRecoverableError = (message: string) => {
@@ -59,23 +72,61 @@ export async function main() {
     }
   }
   const api = new NotionSourceClient(process.env.NOTION_TOKEN)
-  const { propertyIds } = await api.verify(previous?.source.propertyIds)
-  const pages = await api.rows(sourceContract.dataSourceId)
-  const sourcePages = pages.map((page) => ({
-    id: page.id,
-    title: plainText(propertyById(page, propertyIds.Name!).title),
-    slug: plainText(propertyById(page, propertyIds.Slug!).rich_text),
-    public: z.boolean().parse(propertyById(page, propertyIds.Public!).checkbox)
-  }))
-  const { routes, warnings } = reconcileRoutes(
-    sourcePages,
-    previous?.routes ?? {},
-    {
+  async function discover(
+    contract: typeof sourceContract | typeof projectSourceContract,
+    savedSource: Snapshot['source'] | undefined,
+    savedRoutes: Snapshot['routes'],
+    properties?: Record<string, string>
+  ) {
+    if (savedSource) {
+      for (const [key, value] of Object.entries(contract)) {
+        if (savedSource[key as keyof typeof contract] !== value)
+          throw new Error('Snapshot source contract changed: ' + key)
+      }
+    }
+    const { propertyIds } = await api.verify(
+      savedSource?.propertyIds,
+      contract,
+      properties
+    )
+    const pages = await api.rows(contract.dataSourceId)
+    const sourcePages = pages.map((page) => ({
+      id: page.id,
+      title: plainText(propertyById(page, propertyIds.Name!).title),
+      slug: plainText(propertyById(page, propertyIds.Slug!).rich_text),
+      public: z
+        .boolean()
+        .parse(propertyById(page, propertyIds.Public!).checkbox)
+    }))
+    const { routes, warnings } = reconcileRoutes(sourcePages, savedRoutes, {
       prune: values.prune,
       acceptSlugChanges: values['accept-slug-changes']
+    })
+    warnings.forEach(warn)
+    const publicIds = new Set(
+      sourcePages.filter((page) => page.public).map((page) => page.id)
+    )
+    return {
+      routes,
+      pages: pages.filter((page) => publicIds.has(page.id)),
+      source: { ...contract, apiVersion: API_VERSION, propertyIds }
     }
-  )
-  warnings.forEach(warn)
+  }
+  const articleInput = syncArticles
+    ? await discover(sourceContract, previous?.source, previous?.routes ?? {})
+    : undefined
+  const projectInput = syncProjects
+    ? await discover(
+        projectSourceContract,
+        previous?.projectSource,
+        previous?.projectRoutes ?? {},
+        projectProperties
+      )
+    : undefined
+  const routes = articleInput?.routes ?? previous?.routes ?? {}
+  const projectRoutes = projectInput?.routes ?? previous?.projectRoutes ?? {}
+  const slugConflicts = crossCollectionSlugWarnings(routes, projectRoutes)
+  slugConflicts.forEach(warn)
   const options = { force: values.force, dryRun: values['dry-run'] }
   const storage = new MediaStorage(config)
   // Verify R2 access without writing.
@@ -111,23 +162,58 @@ export async function main() {
       reuseMedia: (key) => importer.reuse(key)
     }
   )
-  const publicIds = new Set(
-    sourcePages.filter((page) => page.public).map((page) => page.id)
+  const projectNormalizer = new Normalizer(
+    api,
+    projectRoutes,
+    (source, url, refresh) => importer.import(source, url, refresh),
+    {
+      skipImages: values.fast,
+      reuseMedia: (key) => importer.reuse(key),
+      linkRoutes: routes
+    }
   )
-  const selected = pages.filter((page) => publicIds.has(page.id))
-  const articles = await importArticles({
-    pages: selected,
-    previous: previous?.articles ?? {},
-    routes,
+  const importOptions = {
     force: values.force,
     fast: values.fast,
-    read: (page) => normalizer.article(page, propertyIds),
-    report: (message) => console.log(message),
+    report: (message: string) => console.log(message),
     warn: reportRecoverableError
-  })
+  }
+  const articles = articleInput
+    ? await importPages({
+        ...importOptions,
+        pages: articleInput.pages,
+        previous: previous?.articles ?? {},
+        routes,
+        read: (page) =>
+          normalizer.article(page, articleInput.source.propertyIds)
+      })
+    : (previous?.articles ?? {})
+  const projects = projectInput
+    ? await importPages({
+        ...importOptions,
+        kind: 'project',
+        pages: projectInput.pages,
+        previous: previous?.projects ?? {},
+        routes: projectRoutes,
+        read: (page) =>
+          projectNormalizer.project(page, projectInput.source.propertyIds)
+      })
+    : (previous?.projects ?? {})
   normalizer.warnings.forEach(warn)
+  projectNormalizer.warnings.forEach(warn)
+  const entries = [...Object.values(articles), ...Object.values(projects)]
+  const selectedEntries = [
+    ...(syncArticles ? Object.values(articles) : []),
+    ...(syncProjects ? Object.values(projects) : [])
+  ]
+  const selectedMedia = new Set(
+    selectedEntries.flatMap((entry) => [...articleReferences(entry).media])
+  )
+  const selectedTweets = new Set(
+    selectedEntries.flatMap((entry) => [...articleReferences(entry).tweets])
+  )
   const bookmarkUrls = new Set<string>()
-  for (const article of Object.values(articles))
+  for (const article of selectedEntries)
     walkBlocks(article.blocks, (block) => {
       if (block.type === 'bookmark') bookmarkUrls.add(block.url)
     })
@@ -153,7 +239,7 @@ export async function main() {
   })
   const media: Record<string, Media> = {}
   const tweetIds = new Set<string>()
-  for (const article of Object.values(articles)) {
+  for (const article of entries) {
     const refs = articleReferences(article)
     for (const id of refs.media) {
       const item = importer.media[id] ?? previous?.media[id]
@@ -163,15 +249,31 @@ export async function main() {
     for (const id of refs.tweets) tweetIds.add(id)
   }
   const tweets = await syncTweets(
-    tweetIds,
+    selectedTweets,
     previous?.tweets ?? {},
     options,
     reportRecoverableError
   )
+  // Keep assets referenced by the unselected collection without refreshing them.
+  for (const id of tweetIds)
+    tweets[id] ??= previous?.tweets[id] ?? { status: 'unavailable' }
+  for (const entry of entries)
+    walkBlocks(entry.blocks, (block) => {
+      if (block.type === 'bookmark' && previous?.bookmarks?.[block.url])
+        bookmarkResult.bookmarks[block.url] ??= previous.bookmarks[block.url]!
+    })
   const snapshot: Snapshot = snapshotSchema.parse({
     schemaVersion: 1,
     importerVersion: 1,
-    source: { ...sourceContract, apiVersion: API_VERSION, propertyIds },
+    source: articleInput?.source ??
+      previous?.source ?? {
+        ...sourceContract,
+        apiVersion: API_VERSION,
+        propertyIds: {}
+      },
+    projectSource: projectInput?.source ?? previous?.projectSource,
+    projects,
+    projectRoutes,
     articles,
     routes,
     media,
@@ -180,11 +282,25 @@ export async function main() {
   })
   const addedPlaceholders = values.fast
     ? 0
-    : await backfillPlaceholders(snapshot, {
-        ...options,
-        cache,
-        warn: reportRecoverableError
-      })
+    : await backfillPlaceholders(
+        {
+          media: Object.fromEntries(
+            Object.entries(snapshot.media).filter(([id]) =>
+              selectedMedia.has(id)
+            )
+          ),
+          bookmarks: Object.fromEntries(
+            Object.entries(snapshot.bookmarks ?? {}).filter(([url]) =>
+              bookmarkUrls.has(url)
+            )
+          )
+        },
+        {
+          ...options,
+          cache,
+          warn: reportRecoverableError
+        }
+      )
   validateSnapshot(snapshot)
   const changed = options.dryRun ? false : await publishSnapshot(snapshot)
   const searchIndexChanged = options.dryRun
@@ -200,6 +316,22 @@ export async function main() {
         searchIndexChanged,
         addedPlaceholders,
         articles: Object.keys(articles).length,
+        projects: Object.keys(projects).length,
+        selected: values.only ?? 'both',
+        slugConflicts,
+        projectChanges: {
+          added: Object.keys(projects).filter((id) => !previous?.projects?.[id])
+            .length,
+          updated: Object.keys(projects).filter(
+            (id) =>
+              previous?.projects?.[id] &&
+              canonicalJson(projects[id]) !==
+                canonicalJson(previous.projects[id])
+          ).length,
+          removed: Object.keys(previous?.projects ?? {}).filter(
+            (id) => !projects[id]
+          ).length
+        },
         media: Object.keys(media).length,
         tweets: Object.keys(tweets).length,
         added: Object.keys(articles).filter((id) => !previous?.articles[id])
@@ -228,6 +360,7 @@ export async function main() {
         ).length,
         apiRequests: api.requests,
         blocks: normalizer.blockCounts,
+        projectBlocks: projectNormalizer.blockCounts,
         ...importer.stats,
         ...storage.stats
       },

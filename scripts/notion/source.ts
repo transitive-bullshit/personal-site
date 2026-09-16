@@ -56,7 +56,7 @@ const listSchema = z.object({
   has_more: z.boolean(),
   next_cursor: z.string().nullable()
 })
-const expectedProperties = {
+export const articleProperties = {
   Name: 'title',
   Public: 'checkbox',
   Featured: 'checkbox',
@@ -67,6 +67,13 @@ const expectedProperties = {
   Published: 'date',
   'Last Updated': 'last_edited_time',
   Tags: 'multi_select'
+} as const
+
+export const projectProperties = {
+  ...articleProperties,
+  Author: 'people',
+  Source: 'url',
+  Website: 'url'
 } as const
 
 export class NotionSourceClient {
@@ -149,18 +156,27 @@ export class NotionSourceClient {
     return rows.filter((row) => !row.archived && !row.in_trash)
   }
 
-  async verify(previousIds?: Record<string, string>) {
+  async verify(
+    previousIds?: Record<string, string>,
+    contract: {
+      workspaceId: string
+      rootPageId: string
+      databaseId: string
+      dataSourceId: string
+    } = sourceContract,
+    expectedProperties: Record<string, string> = articleProperties
+  ) {
     const identity = z
       .object({
         type: z.literal('bot'),
         bot: z.object({ workspace_id: z.string().transform(compactId) })
       })
       .parse(await this.request('users/me'))
-    if (identity.bot.workspace_id !== sourceContract.workspaceId)
+    if (identity.bot.workspace_id !== contract.workspaceId)
       throw new Error('Notion token belongs to a different workspace')
 
     const root = pageSchema.parse(
-      await this.request('pages/' + sourceContract.rootPageId)
+      await this.request('pages/' + contract.rootPageId)
     )
     if (root.archived || root.in_trash)
       throw new Error('The configured root page is archived')
@@ -170,21 +186,17 @@ export class NotionSourceClient {
         parent: parentSchema,
         data_sources: z.array(z.object({ id: z.string().transform(compactId) }))
       })
-      .parse(await this.request('databases/' + sourceContract.databaseId))
+      .parse(await this.request('databases/' + contract.databaseId))
     if (
-      compactId(database.parent.page_id ?? '') !== sourceContract.rootPageId ||
-      !database.data_sources.some(
-        ({ id }) => id === sourceContract.dataSourceId
-      )
+      compactId(database.parent.page_id ?? '') !== contract.rootPageId ||
+      !database.data_sources.some(({ id }) => id === contract.dataSourceId)
     ) {
       throw new Error(
-        'Configured Blog Posts database is no longer beneath the root or its data source changed'
+        'Configured database is no longer beneath the root or its data source changed'
       )
     }
-    const source = await this.source(sourceContract.dataSourceId)
-    if (
-      compactId(source.parent.database_id ?? '') !== sourceContract.databaseId
-    )
+    const source = await this.source(contract.dataSourceId)
+    if (compactId(source.parent.database_id ?? '') !== contract.databaseId)
       throw new Error('Unexpected source parent')
     const propertyIds: Record<string, string> = {}
     for (const [name, type] of Object.entries(expectedProperties)) {
