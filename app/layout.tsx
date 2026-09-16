@@ -1,3 +1,6 @@
+import { websiteMetadata } from '@/lib/metadata'
+import { JsonLd } from '@/components/json-ld'
+import { siteJsonLd } from '@/lib/content/metadata'
 import SiGithub from '@icons-pack/react-simple-icons/icons/SiGithub'
 import SiX from '@icons-pack/react-simple-icons/icons/SiX'
 import type { Metadata } from 'next'
@@ -13,17 +16,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.origin),
-  title: { default: site.name, template: '%s · ' + site.name },
-  description: site.description,
-  alternates: { canonical: '/' },
-  openGraph: {
-    type: 'website',
-    title: site.name,
-    description: site.description,
-    url: site.origin,
-    siteName: site.name
-  },
-  twitter: { card: 'summary_large_image', creator: '@' + site.twitter }
+  ...websiteMetadata(site.name, site.description, '/'),
+  title: { default: site.name, template: '%s · ' + site.name }
 }
 
 export default function RootLayout({
@@ -34,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang='en' data-scroll-behavior='smooth' suppressHydrationWarning>
       <body>
+        <JsonLd data={siteJsonLd} />
         <ThemeProvider
           attribute='class'
           defaultTheme='system'

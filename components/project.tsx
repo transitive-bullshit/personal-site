@@ -1,3 +1,5 @@
+import { JsonLd } from './json-ld'
+import { projectJsonLd } from '@/lib/content/metadata'
 import Link from 'next/link'
 import { ArrowLeftIcon, ArrowUpRightIcon, CodeIcon } from 'lucide-react'
 import SiX from '@icons-pack/react-simple-icons/icons/SiX'
@@ -22,6 +24,7 @@ export function ProjectPage({
 }) {
   return (
     <main id='main'>
+      <JsonLd data={projectJsonLd(project, snapshot)} />
       <article>
         <header className='article-header project-header'>
           <Link className='project-back' href='/projects' prefetch={true}>

@@ -1,3 +1,4 @@
+import { defaultSocialImages } from '@/lib/metadata'
 import type { Metadata } from 'next'
 import { notFound, permanentRedirect } from 'next/navigation'
 import { ProjectPage } from '@/components/project'
@@ -33,7 +34,7 @@ export async function generateMetadata({
           alt: project.title
         }
       ]
-    : []
+    : defaultSocialImages()
   return {
     title: project.title,
     description: project.description,
@@ -47,7 +48,7 @@ export async function generateMetadata({
       images
     },
     twitter: {
-      card: image ? 'summary_large_image' : 'summary',
+      card: 'summary_large_image',
       title: project.title,
       description: project.description,
       images,

@@ -1,3 +1,6 @@
+import { JsonLd } from '@/components/json-ld'
+import { pageJsonLd } from '@/lib/content/metadata'
+import { site } from '@/lib/site'
 import Link from 'next/link'
 import { ArrowRightIcon } from 'lucide-react'
 import { ArticleIndex } from '@/components/article-index'
@@ -10,6 +13,7 @@ export const revalidate = 86400
 export default function HomePage() {
   return (
     <main id='main' className='home'>
+      <JsonLd data={pageJsonLd(site.name, site.description, '/')} />
       <h1>
         Building things.
         <br />

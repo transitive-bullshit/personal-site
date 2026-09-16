@@ -10,6 +10,13 @@ export function GET() {
       '',
       '> ' + site.description,
       '',
+      '## Main pages',
+      '',
+      '- [Home](' + site.origin + '/): ' + site.description,
+      '- [Projects](' + site.origin + '/projects): All projects.',
+      '- [Writing](' + site.origin + '/writing): All articles.',
+      '- [Sitemap](' + site.origin + '/sitemap.xml): Canonical page URLs.',
+      '',
       '## Projects',
       '',
       ...projects.map(
