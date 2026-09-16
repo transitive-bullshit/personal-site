@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { ArrowUpRightIcon } from 'lucide-react'
 import type { Project, Snapshot } from '@/lib/content/schema'
 import { MediaImage, NotionIcon } from './article/media'
 
@@ -40,7 +39,6 @@ export function ProjectIndex({
             </div>
             <div className='project-card-heading'>
               <Heading>{project.title}</Heading>
-              <ArrowUpRightIcon aria-hidden='true' />
             </div>
             {project.description ? <p>{project.description}</p> : null}
           </Link>
