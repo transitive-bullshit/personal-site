@@ -1170,3 +1170,46 @@ summary {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* Animate only matching project elements. Keep the surrounding page and chrome
+   live instead of crossfading a frozen screenshot of the entire viewport. */
+::view-transition {
+  pointer-events: none;
+}
+::view-transition-old(root) {
+  display: none;
+}
+::view-transition-new(root) {
+  animation: none;
+}
+::view-transition-group(.project-image-morph),
+::view-transition-group(.project-text-morph) {
+  animation-duration: 280ms;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+::view-transition-old(.project-image-morph),
+::view-transition-new(.project-image-morph) {
+  height: 100%;
+  object-fit: cover;
+  overflow: clip;
+  border-radius: 8px;
+  animation-duration: 280ms;
+  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+/* Keep text crisp as card typography becomes the larger page heading. */
+::view-transition-old(.project-text-morph) {
+  display: none;
+}
+::view-transition-new(.project-text-morph) {
+  animation: none;
+  object-fit: none;
+  object-position: left top;
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
+}

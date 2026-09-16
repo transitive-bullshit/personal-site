@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { ArrowLeftIcon, ArrowUpRightIcon, CodeIcon } from 'lucide-react'
 import SiX from '@icons-pack/react-simple-icons/icons/SiX'
 import type { Project, Snapshot } from '@/lib/content/schema'
+import { ProjectTransition } from './project-transition'
 import { ContentBody } from './article/content-body'
 import { Button } from './ui/button'
 
@@ -16,13 +17,17 @@ export function ProjectPage({
     <main id='main'>
       <article>
         <header className='article-header project-header'>
-          <Link className='project-back' href='/projects'>
+          <Link className='project-back' href='/projects' prefetch={true}>
             <ArrowLeftIcon aria-hidden='true' />
             All projects
           </Link>
-          <h1>{project.title}</h1>
+          <ProjectTransition projectId={project.id} part='title'>
+            <h1>{project.title}</h1>
+          </ProjectTransition>
           {project.description ? (
-            <p className='article-description'>{project.description}</p>
+            <ProjectTransition projectId={project.id} part='description'>
+              <p className='article-description'>{project.description}</p>
+            </ProjectTransition>
           ) : null}
           <div className='project-actions'>
             {project.website ? (
@@ -51,7 +56,11 @@ export function ProjectPage({
             ) : null}
           </div>
         </header>
-        <ContentBody entry={project} snapshot={snapshot} />
+        <ContentBody
+          entry={project}
+          snapshot={snapshot}
+          projectTransitionId={project.id}
+        />
       </article>
     </main>
   )

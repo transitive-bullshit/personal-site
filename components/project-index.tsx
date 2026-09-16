@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import type { Project, Snapshot } from '@/lib/content/schema'
+import { ProjectTransition } from './project-transition'
 import { MediaImage, NotionIcon } from './article/media'
 
 export function ProjectIndex({
@@ -18,29 +19,44 @@ export function ProjectIndex({
     <ul className='project-index' aria-label={label}>
       {projects.map((project) => (
         <li key={project.id}>
-          <Link className='project-card' href={'/project/' + project.slug}>
-            <div className='project-card-preview'>
-              {project.cover ? (
-                <MediaImage
-                  media={snapshot.media[project.cover]!}
-                  alt=''
-                  className='project-card-image'
-                  sizes='(max-width: 600px) calc(100vw - 44px), (max-width: 800px) calc((100vw - 88px) / 2), 348px'
-                />
-              ) : (
-                <div className='project-card-fallback' aria-hidden='true'>
-                  {project.icon ? (
-                    <NotionIcon icon={project.icon} snapshot={snapshot} />
-                  ) : (
-                    project.title.slice(0, 1)
-                  )}
-                </div>
-              )}
-            </div>
+          <Link
+            className='project-card'
+            href={'/project/' + project.slug}
+            prefetch={true}
+          >
+            <ProjectTransition
+              projectId={project.cover ? project.id : undefined}
+              part='image'
+            >
+              <div className='project-card-preview'>
+                {project.cover ? (
+                  <MediaImage
+                    media={snapshot.media[project.cover]!}
+                    alt=''
+                    className='project-card-image'
+                    sizes='(max-width: 600px) calc(100vw - 44px), (max-width: 800px) calc((100vw - 88px) / 2), 348px'
+                  />
+                ) : (
+                  <div className='project-card-fallback' aria-hidden='true'>
+                    {project.icon ? (
+                      <NotionIcon icon={project.icon} snapshot={snapshot} />
+                    ) : (
+                      project.title.slice(0, 1)
+                    )}
+                  </div>
+                )}
+              </div>
+            </ProjectTransition>
             <div className='project-card-heading'>
-              <Heading>{project.title}</Heading>
+              <ProjectTransition projectId={project.id} part='title'>
+                <Heading>{project.title}</Heading>
+              </ProjectTransition>
             </div>
-            {project.description ? <p>{project.description}</p> : null}
+            {project.description ? (
+              <ProjectTransition projectId={project.id} part='description'>
+                <p>{project.description}</p>
+              </ProjectTransition>
+            ) : null}
           </Link>
         </li>
       ))}
