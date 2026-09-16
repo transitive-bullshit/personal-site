@@ -7,6 +7,12 @@ import { ContentBody } from './article/content-body'
 import { ContentCover } from './article/content-cover'
 import { Button } from './ui/button'
 
+const dateFormatter = new Intl.DateTimeFormat('en-US', {
+  month: 'short',
+  year: 'numeric',
+  timeZone: 'UTC'
+})
+
 export function ProjectPage({
   project,
   snapshot
@@ -34,6 +40,13 @@ export function ProjectPage({
             <ProjectTransition projectId={project.id} part='description'>
               <p className='article-description'>{project.description}</p>
             </ProjectTransition>
+          ) : null}
+          {project.published ? (
+            <div className='article-meta'>
+              <time dateTime={project.published}>
+                {dateFormatter.format(new Date(project.published))}
+              </time>
+            </div>
           ) : null}
           <div className='project-actions'>
             {project.website ? (
