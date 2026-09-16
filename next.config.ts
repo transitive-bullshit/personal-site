@@ -12,7 +12,8 @@ const config: NextConfig = {
   serverExternalPackages: ['takumi-js', '@takumi-rs/core'],
   images: {
     remotePatterns: [
-      new URL('https://assets.cultural-alignment.com/personal-site/media/**')
+      new URL('https://assets.cultural-alignment.com/personal-site/media/**'),
+      new URL('https://pbs.twimg.com/profile_images/**')
     ]
   }
 }
