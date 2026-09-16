@@ -24391,7 +24391,25 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "My best guess is that if it weren’t for Twitter API restrictions and the Cloudflare protection spikes, the @ChatGPTBot twitter usage graph would roughly match the Gartner hype cycle even closer than it already does. We’re already starting to see a “slope of enlightment” during January (though this could just boil down to experimenter’s bias on my behalf).\n\nI believe this also likely resembles the general ChatGPT usage that OpenAI has seen during the same timeframe, with a sharp drop around the US holiday season. It seems likely that ChatGPT’s adoption will be viewed going forwards as one of the fastest and most compressed instances of the Gartner hype cycle that the world’s seen thus far.",
+              "text": "My best guess is that if it weren’t for Twitter API restrictions and the Cloudflare protection spikes, the ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": true,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "@ChatGPTBot",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " twitter usage graph would roughly match the Gartner hype cycle even closer than it already does. We’re already starting to see a “slope of enlightment” during January (though this could just boil down to experimenter’s bias on my behalf).\n\nI believe this also likely resembles the general ChatGPT usage that OpenAI has seen during the same timeframe, with a sharp drop around the US holiday season. It seems likely that ChatGPT’s adoption will be viewed going forwards as one of the fastest and most compressed instances of the Gartner hype cycle that the world’s seen thus far.",
               "underline": false
             }
           ],
@@ -25101,7 +25119,7 @@
               "bold": false,
               "code": false,
               "color": "default",
-              "href": "https://twitter.com/transitive_bs",
+              "href": "https://x.com/transitive_bs",
               "italic": false,
               "strike": false,
               "text": "feel free to reach out to me and introduce yourself",
@@ -25221,7 +25239,7 @@
         "type": "image"
       },
       "id": "79f0cb8e859d43b1865a9fe18de950df",
-      "modified": "2026-09-16T12:31:00.000Z",
+      "modified": "2026-09-16T12:32:00.000Z",
       "needsImageSync": true,
       "published": "2023-02-04",
       "slug": "chatgpt-twitter-bot-lessons",
