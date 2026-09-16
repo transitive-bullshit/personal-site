@@ -1,22 +1,20 @@
 'use client'
 
-import { MonitorIcon, MoonIcon, SunIcon } from 'lucide-react'
+import { MoonIcon, SunIcon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useSyncExternalStore } from 'react'
 import { Button } from '@/components/ui/button'
 
 const themes = {
-  system: { label: 'System', icon: MonitorIcon },
-  light: { label: 'Light', icon: SunIcon },
-  dark: { label: 'Dark', icon: MoonIcon }
+  light: { label: 'Light Mode', icon: SunIcon },
+  dark: { label: 'Dark Mode', icon: MoonIcon }
 } as const
 
 type ThemeName = keyof typeof themes
 
 const nextThemes = {
-  system: 'light',
   light: 'dark',
-  dark: 'system'
+  dark: 'light'
 } as const satisfies Record<ThemeName, ThemeName>
 
 const emptySubscribe = () => () => {}
@@ -26,18 +24,21 @@ function isThemeName(theme: string | undefined): theme is ThemeName {
 }
 
 export function ThemeToggle() {
-  const { setTheme, theme } = useTheme()
+  const { setTheme, resolvedTheme } = useTheme()
   const mounted = useSyncExternalStore(
     emptySubscribe,
     () => true,
     () => false
   )
-  const currentTheme = mounted && isThemeName(theme) ? theme : 'system'
-  const current = themes[currentTheme]
-  const nextTheme = nextThemes[currentTheme]
+  const currentTheme =
+    mounted && isThemeName(resolvedTheme) ? resolvedTheme : undefined
+  const current = currentTheme ? themes[currentTheme] : undefined
+  const nextTheme = currentTheme ? nextThemes[currentTheme] : 'dark'
   const next = themes[nextTheme]
-  const Icon = current.icon
-  const label = `${current.label} theme. Switch to ${next.label.toLowerCase()} theme`
+  const Icon = current?.icon
+  const label = current
+    ? `${current.label}. Switch to ${next.label}`
+    : 'Switch color mode'
 
   return (
     <Button
@@ -46,10 +47,11 @@ export function ThemeToggle() {
       size='icon-sm'
       aria-label={label}
       title={label}
+      disabled={!currentTheme}
       data-cuelume-toggle='toggle'
       onClick={() => setTheme(nextTheme)}
     >
-      <Icon aria-hidden='true' data-icon='inline-start' />
+      {Icon ? <Icon aria-hidden='true' data-icon='inline-start' /> : null}
     </Button>
   )
 }
