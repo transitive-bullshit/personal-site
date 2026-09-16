@@ -3,6 +3,7 @@ import SiX from '@icons-pack/react-simple-icons/icons/SiX'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { LinkPreviewProvider } from '@/components/link-preview-provider'
+import { SiteSearch } from '@/components/site-search'
 import { ThemeProvider } from '@/components/theme-provider'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { Button } from '@/components/ui/button'
@@ -53,6 +54,17 @@ export default function RootLayout({
               <div className='site-header-actions'>
                 <Button variant='ghost' size='icon-sm' asChild>
                   <a
+                    href='https://x.com/transitive_bs'
+                    target='_blank'
+                    rel='noreferrer'
+                    aria-label='X (opens in a new tab)'
+                    title='X'
+                  >
+                    <SiX aria-hidden='true' data-icon='inline-start' title='' />
+                  </a>
+                </Button>
+                <Button variant='ghost' size='icon-sm' asChild>
+                  <a
                     href='https://github.com/transitive-bullshit'
                     target='_blank'
                     rel='noreferrer'
@@ -66,18 +78,8 @@ export default function RootLayout({
                     />
                   </a>
                 </Button>
-                <Button variant='ghost' size='icon-sm' asChild>
-                  <a
-                    href='https://x.com/transitive_bs'
-                    target='_blank'
-                    rel='noreferrer'
-                    aria-label='X (opens in a new tab)'
-                    title='X'
-                  >
-                    <SiX aria-hidden='true' data-icon='inline-start' title='' />
-                  </a>
-                </Button>
                 <ThemeToggle />
+                <SiteSearch />
               </div>
             </header>
             {children}

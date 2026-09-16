@@ -72,6 +72,7 @@ describe('publication and pathname lifecycle', () => {
       'a/b',
       'about',
       'llms.txt',
+      'search-index.json',
       'writing',
       'a%2fb',
       'a?b',

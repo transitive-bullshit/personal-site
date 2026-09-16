@@ -16,7 +16,7 @@ export async function loadEnv() {
   }
 }
 
-export function canonicalJson(value: unknown): string {
+export function canonicalJson(value: unknown, space = 2): string {
   function sort(input: unknown): unknown {
     if (Array.isArray(input)) return input.map(sort)
     if (input !== null && typeof input === 'object') {
@@ -28,7 +28,7 @@ export function canonicalJson(value: unknown): string {
     }
     return input
   }
-  return JSON.stringify(sort(value), null, 2) + '\n'
+  return JSON.stringify(sort(value), null, space) + '\n'
 }
 
 export async function readSnapshot(
@@ -48,7 +48,11 @@ export async function publishSnapshot(
 ) {
   const parsed = snapshotSchema.parse(snapshot)
   validateSnapshot(parsed)
-  const body = canonicalJson(parsed)
+  return publishJson(parsed, path)
+}
+
+export async function publishJson(value: unknown, path: string, space = 2) {
+  const body = canonicalJson(value, space)
   try {
     if ((await readFile(path, 'utf8')) === body) return false
   } catch (err) {

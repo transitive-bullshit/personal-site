@@ -551,6 +551,7 @@ summary {
   .site-header {
     padding-block: 24px;
     gap: 8px;
+    grid-template-columns: minmax(0, 1fr) auto auto;
   }
   .site-header-actions {
     gap: 2px;
@@ -585,6 +586,25 @@ summary {
   .site-footer {
     flex-wrap: wrap;
     margin-top: 64px;
+  }
+}
+@media (max-width: 360px) {
+  .site-shell {
+    padding-inline: 16px;
+  }
+  .site-header {
+    font-size: 12px;
+    gap: 4px;
+  }
+  .site-header-nav {
+    font-size: 12px;
+  }
+  .site-header-actions {
+    gap: 0;
+  }
+  .site-header-actions > :is(a, button) {
+    width: 28px;
+    height: 28px;
   }
 }
 @media (prefers-reduced-motion: no-preference) {

@@ -1,6 +1,6 @@
 # Content sync
 
-`pnpm content:sync` writes `content/snapshot.json` for review. It does not deploy.
+`pnpm content:sync` writes `content/snapshot.json` and `public/search-index.json` for review. It does not deploy.
 
 ## Setup
 
@@ -28,6 +28,7 @@ Source IDs live in `lib/site.ts`. Media is immutable under `personal-site/media/
 | `pnpm content:sync --fast` | Skip image transfers and placeholder work. |
 | `pnpm content:sync --prune` | Remove missing articles. |
 | `pnpm content:sync --accept-slug-changes` | Accept new paths and retain redirects. |
+| `pnpm content:search` | Rebuild the search index from the local snapshot without CMS credentials. |
 
 Flags compose. `--force --fast` re-reads articles but skips images.
 
@@ -40,6 +41,7 @@ Flags compose. `--force --fast` re-reads articles but skips images.
 - Path changes require `--accept-slug-changes`.
 - Missing pages remain until `--prune`.
 - `Public=false` removes the article on the next sync.
+- Post-processing rebuilds the static search index, including unchanged-content syncs. Dry runs do not write it.
 
 ## Media
 
@@ -64,7 +66,7 @@ R2 uploads may precede a later failure. They are immutable and unused until the 
 1. Inspect `git diff`, especially paths and removals.
 2. Run `pnpm test` and `pnpm build`.
 3. Inspect representative pages with `pnpm dev`.
-4. Commit `content/snapshot.json` with related code.
+4. Commit `content/snapshot.json` and `public/search-index.json` with related code.
 
 Restart an existing dev server after syncing.
 
@@ -76,6 +78,12 @@ Restart an existing dev server after syncing.
 4. Sync again and inspect the diff.
 
 Keep Notion and storage clients in `scripts/`.
+
+## Client-side search
+
+Command-K / Control-K and the header search icon open cmdk. The dialog code and index load only on first open; subsequent opens reuse the fetched index. Queries stay in the browser. Keyword matches prefer titles, then descriptions/tags, then nested article text, captions, tables, and saved bookmark/tweet text. Canonical public article routes plus Home and Writing are indexed; add future top-level pages in `lib/content/search-index.ts`.
+
+The top and selected results are explicitly prefetched. Results use full-row Next links with no gaps. A temporary **Preview style** control compares adaptations of cmdk's [four example themes](https://github.com/dip/cmdk/tree/main/website/styles/cmdk): Vercel (initial default), Linear, Raycast, and Framer. The choice persists locally. After choosing one, remove the other CSS variants, the preview control, and its storage key. Shared adaptations remove demo panes, item margins, and keyboard-driven motion; Framer's blue is darkened for readable white text. License attribution is in `docs/licenses/cmdk.txt`.
 
 ## Runtime images
 

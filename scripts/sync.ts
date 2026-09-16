@@ -10,6 +10,7 @@ import {
 import { reconcileRoutes } from '../lib/content/routes'
 import { articleReferences, validateSnapshot } from '../lib/content/references'
 import { loadEnv, publishSnapshot, readSnapshot } from './io'
+import { publishSearchIndex } from './search-index'
 import { API_VERSION, NotionSourceClient, propertyById } from './notion/source'
 import { Normalizer, plainText } from './notion/normalize'
 import { importArticles } from './notion/import-articles'
@@ -186,6 +187,9 @@ export async function main() {
       })
   validateSnapshot(snapshot)
   const changed = options.dryRun ? false : await publishSnapshot(snapshot)
+  const searchIndexChanged = options.dryRun
+    ? false
+    : await publishSearchIndex(snapshot)
   console.log(
     JSON.stringify(
       {
@@ -193,6 +197,7 @@ export async function main() {
         fast: values.fast,
         recoverableErrors,
         snapshotChanged: changed,
+        searchIndexChanged,
         addedPlaceholders,
         articles: Object.keys(articles).length,
         media: Object.keys(media).length,

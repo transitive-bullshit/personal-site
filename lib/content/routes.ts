@@ -6,6 +6,7 @@ export const reservedSlugs = new Set([
   'llms.txt',
   'robots.txt',
   'favicon.ico',
+  'search-index.json',
   '_next',
   'api',
   'transitivebullshit',

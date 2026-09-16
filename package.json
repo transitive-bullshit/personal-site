@@ -21,6 +21,7 @@
     "fix:format": "oxfmt",
     "fix:lint": "oxlint --fix",
     "content:sync": "tsx scripts/sync.ts",
+    "content:search": "tsx scripts/build-search-index.ts",
     "test:unit": "vitest run"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
     "@takumi-rs/core": "2.13.7",
     "@vercel/analytics": "^2.0.1",
     "class-variance-authority": "^0.7.1",
+    "cmdk": "^1.1.1",
     "cn": "^0.2.5",
     "cuelume": "^0.2.2",
     "lucide-react": "^1.45.0",
