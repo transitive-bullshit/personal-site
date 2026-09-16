@@ -203,6 +203,6 @@ it('resolves cached Notion project links when loading an existing snapshot', asy
   resolveContentLinks(snapshot)
   const block = article.blocks[0]!
   expect(block.type === 'paragraph' && block.richText[0]?.href).toBe(
-    '/project/' + target.slug
+    '/projects/' + target.slug
   )
 })

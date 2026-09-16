@@ -176,7 +176,7 @@ describe('project link namespaces', () => {
         sourceContract.rootPageId,
         projects
       )
-    ).toBe('/project/original-title#aabb')
+    ).toBe('/projects/original-title#aabb')
     expect(
       rewriteLink(
         '/original-title',
@@ -187,12 +187,12 @@ describe('project link namespaces', () => {
     ).toBe('/original-title')
     expect(
       rewriteLink(
-        '/project/previous-project',
+        '/projects/previous-project',
         routes,
         sourceContract.rootPageId,
         projects
       )
-    ).toBe('/project/original-title')
+    ).toBe('/projects/original-title')
     expect(resolveRoute(b, projects)).toMatchObject({
       slug: 'original-title',
       redirect: true

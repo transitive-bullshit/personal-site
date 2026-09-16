@@ -1,3 +1,5 @@
+import Link from 'next/link'
+import { ArrowLeftIcon } from 'lucide-react'
 import type { Article, Project, Snapshot } from '@/lib/content/schema'
 import { getHeadings } from '@/lib/content/headings'
 import { Blocks } from './blocks'
@@ -25,6 +27,16 @@ export function ContentBody({
           </details>
         ) : null}
         <Blocks blocks={entry.blocks} snapshot={snapshot} />
+        <nav
+          className='content-back'
+          aria-label='More to explore'
+          data-link-preview='false'
+        >
+          <Link href={'authors' in entry ? '/projects' : '/writing'}>
+            <ArrowLeftIcon aria-hidden='true' size={16} />
+            {'authors' in entry ? 'All projects' : 'All writing'}
+          </Link>
+        </nav>
       </div>
       {headings.length ? (
         <aside className='desktop-toc'>

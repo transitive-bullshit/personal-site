@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: site.origin + '/writing' },
     { url: site.origin + '/projects' },
     ...projects.map((project) => ({
-      url: site.origin + '/project/' + project.slug,
+      url: site.origin + '/projects/' + project.slug,
       lastModified: project.modified
     })),
     ...articles.map((article) => ({

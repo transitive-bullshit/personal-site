@@ -25,7 +25,7 @@ export const internalLinkPreviews: LinkPreviewData[] = [
   ...Object.values(content.projects ?? {}).map((project) => {
     const media = project.cover ? content.media[project.cover] : undefined
     return {
-      url: '/project/' + project.slug,
+      url: '/projects/' + project.slug,
       title: project.title,
       description: project.description,
       image: (media?.variants.at(-1) ?? media?.original)?.url,

@@ -49,6 +49,7 @@ export function ImageLightbox({
   const animation = useRef<Animation | null>(null)
   const closing = useRef(false)
   const downloading = useRef(false)
+  const dismissedWithEscape = useRef(false)
 
   const transformFrom = (target: DOMRect, source: DOMRect) =>
     `translate(${source.x - target.x}px, ${source.y - target.y}px) scale(${source.width / target.width}, ${source.height / target.height})`
@@ -77,6 +78,7 @@ export function ImageLightbox({
       setPreview(inline?.currentSrc || blurDataURL || src)
       setReady(false)
       setDownload('idle')
+      dismissedWithEscape.current = false
       closing.current = false
       setOpen(true)
     } else if (!closing.current) {
@@ -144,7 +146,18 @@ export function ImageLightbox({
           {children}
         </button>
       </DialogTrigger>
-      <DialogContent className='image-lightbox'>
+      <DialogContent
+        className='image-lightbox'
+        onEscapeKeyDown={() => {
+          dismissedWithEscape.current = true
+        }}
+        onCloseAutoFocus={(event) => {
+          if (dismissedWithEscape.current) {
+            event.preventDefault()
+            trigger.current?.blur()
+          }
+        }}
+      >
         <DialogTitle className='sr-only'>{alt || 'Image preview'}</DialogTitle>
         <div
           ref={mountFrame}

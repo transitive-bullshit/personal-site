@@ -201,7 +201,7 @@ describe('static search index', () => {
     )
     expect(
       searchDocuments(index.documents, 'visual webgl particle')[0]
-    ).toMatchObject({ href: '/project/canonical', kind: 'project' })
+    ).toMatchObject({ href: '/projects/canonical', kind: 'project' })
     expect(
       index.documents.some((entry) => entry.href.includes('old-project'))
     ).toBe(false)

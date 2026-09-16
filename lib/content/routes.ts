@@ -195,17 +195,17 @@ export function rewriteLink(
     id && projectRoutes[id]?.active ? projectRoutes[id] : undefined
   if (project)
     return (
-      '/project/' +
+      '/projects/' +
       project.slug +
       (url.hash ? '#' + compactId(url.hash.slice(1)) : '')
     )
   if (
     url.hostname === new URL(site.origin).hostname &&
-    url.pathname.startsWith('/project/')
+    url.pathname.startsWith('/projects/')
   ) {
     const match = resolveRoute(segment, projectRoutes)
     return match
-      ? '/project/' +
+      ? '/projects/' +
           match.slug +
           (url.hash ? '#' + compactId(url.hash.slice(1)) : '')
       : href

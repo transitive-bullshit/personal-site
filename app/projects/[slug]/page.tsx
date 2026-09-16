@@ -37,12 +37,12 @@ export async function generateMetadata({
   return {
     title: project.title,
     description: project.description,
-    alternates: { canonical: '/project/' + project.slug },
+    alternates: { canonical: '/projects/' + project.slug },
     openGraph: {
       type: 'website',
       title: project.title,
       description: project.description,
-      url: site.origin + '/project/' + project.slug,
+      url: site.origin + '/projects/' + project.slug,
       siteName: site.name,
       images
     },
@@ -65,6 +65,6 @@ export default async function Page({
   const route = resolveRoute(slug, content.projectRoutes ?? {})
   const project = route && content.projects?.[route.id]
   if (!route || !project) notFound()
-  if (route.redirect) permanentRedirect('/project/' + route.slug)
+  if (route.redirect) permanentRedirect('/projects/' + route.slug)
   return <ProjectPage project={project} snapshot={content} />
 }

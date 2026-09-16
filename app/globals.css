@@ -74,7 +74,7 @@ body {
 a {
   text-underline-offset: 0.2em;
 }
-a:hover {
+a:hover:not(:where(.article-tweet a)) {
   text-decoration: underline;
 }
 a[data-slot='button']:not([data-variant='link']) {
@@ -268,11 +268,11 @@ summary {
   text-decoration: none;
 }
 
-.article-body a {
+.article-body a:not(:where(.article-tweet a)) {
   text-decoration: underline;
   text-decoration-color: color-mix(in oklch, currentColor 35%, transparent);
 }
-.article-body a:hover {
+.article-body a:hover:not(:where(.article-tweet a)) {
   text-decoration-color: currentColor;
 }
 .article-body ul,
@@ -503,8 +503,6 @@ summary {
   pointer-events: none;
   background: var(--foreground);
   clip-path: inset(0 0 100% 0);
-  transition: clip-path var(--toc-transition-duration, 250ms)
-    cubic-bezier(0.77, 0, 0.175, 1);
 }
 .toc a {
   display: block;
@@ -1209,4 +1207,20 @@ summary {
     animation-duration: 0s !important;
     animation-delay: 0s !important;
   }
+}
+
+/* react-tweet's first article child is its card header. */
+.article-tweet .react-tweet-theme > article > div:first-child {
+  padding-bottom: 0;
+}
+.content-back {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.content-back a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
 }

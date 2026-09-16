@@ -21,7 +21,7 @@ export function ProjectIndex({
         <li key={project.id}>
           <Link
             className='project-card'
-            href={'/project/' + project.slug}
+            href={'/projects/' + project.slug}
             prefetch={true}
           >
             <ProjectTransition

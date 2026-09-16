@@ -131,7 +131,7 @@ The preceding migration hash and counts describe the initial snapshot. Current e
 ## Notion projects — 2026-09-16
 
 - Imported 21 public projects, with 19 featured and 20 covers, through the shared body/media pipeline. No article/project slug collisions. All 36 article records and routes remained unchanged.
-- Added homepage featured projects, the complete `/projects` grid, `/project/[slug]` detail pages, and Projects → Writing navigation in both header and footer.
+- Added homepage featured projects, the complete `/projects` grid, `/projects/[slug]` detail pages, and Projects → Writing navigation in both header and footer.
 - Article and project pages share the same content-body component, including covers, lightboxes, blocks, embeds, and responsive table of contents. Project actions follow the available Website, Source, and Tweet metadata.
 - Search indexes public projects and their body text alongside articles, labels project results, and preserves lazy loading. Sitemap, llms.txt, social metadata, cached Notion links, and internal previews include projects.
 - Production HTTP audit passed for all 21 project pages, canonical metadata, conditional CTAs, ID redirects, missing-project 404s, featured/all counts, sitemap, and search output.

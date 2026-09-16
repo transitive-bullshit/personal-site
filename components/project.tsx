@@ -41,25 +41,21 @@ export function ProjectPage({
               <p className='article-description'>{project.description}</p>
             </ProjectTransition>
           ) : null}
-          {project.published ? (
-            <div className='article-meta'>
-              <time dateTime={project.published}>
-                {dateFormatter.format(new Date(project.published))}
-              </time>
-            </div>
-          ) : null}
           <div className='project-actions'>
             {project.website ? (
               <Button asChild>
-                <a href={project.website}>
+                <a href={project.website} target='_blank' rel='noopener'>
+                  <ArrowUpRightIcon
+                    aria-hidden='true'
+                    data-icon='inline-start'
+                  />
                   View project
-                  <ArrowUpRightIcon aria-hidden='true' data-icon='inline-end' />
                 </a>
               </Button>
             ) : null}
             {project.source ? (
               <Button variant='outline' asChild>
-                <a href={project.source}>
+                <a href={project.source} target='_blank' rel='noopener'>
                   <CodeIcon aria-hidden='true' data-icon='inline-start' />
                   View source
                 </a>
@@ -67,13 +63,20 @@ export function ProjectPage({
             ) : null}
             {project.tweet ? (
               <Button variant='outline' asChild>
-                <a href={project.tweet}>
+                <a href={project.tweet} target='_blank' rel='noopener'>
                   <SiX aria-hidden='true' title='' data-icon='inline-start' />
                   View on X
                 </a>
               </Button>
             ) : null}
           </div>
+          {project.published ? (
+            <div className='article-meta'>
+              <time dateTime={project.published}>
+                {dateFormatter.format(new Date(project.published))}
+              </time>
+            </div>
+          ) : null}
         </header>
         <ContentBody entry={project} snapshot={snapshot} showCover={false} />
       </article>

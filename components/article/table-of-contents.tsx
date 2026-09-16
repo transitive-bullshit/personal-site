@@ -4,13 +4,6 @@ import { useEffect, useRef, useState } from 'react'
 import { activeHeading } from '@/lib/content/active-heading'
 import type { Heading } from '@/lib/content/headings'
 
-function transitionDuration(velocity: number, sectionDistance: number) {
-  if (sectionDistance > 1) return 125
-  if (velocity >= 2) return 125
-  if (velocity >= 0.75) return 160
-  return 250
-}
-
 export function TableOfContents({
   headings,
   title = true
@@ -28,42 +21,56 @@ export function TableOfContents({
     const elements = headings
       .map((heading) => document.getElementById(heading.id))
       .filter((item): item is HTMLElement => Boolean(item))
-    const headingIndexes = new Map(
-      elements.map((element, index) => [element.id, index])
-    )
     let frame = 0
-    let lastScrollY = window.scrollY
-    let lastUpdate = performance.now()
+    let motionFrame = 0
+    let lastTime = 0
+    let position: { top: number; bottom: number } | undefined
+    let target = { top: 0, bottom: 0 }
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
 
-    const moveIndicator = (id: string | undefined, duration: number) => {
-      const indicator = indicatorRef.current
+    const paint = () => {
+      if (indicatorRef.current && position)
+        indicatorRef.current.style.clipPath = `inset(${position.top}px 0 ${position.bottom}px 0)`
+    }
+    const animate = (now: number) => {
+      const elapsed = Math.min(now - lastTime, 64)
+      lastTime = now
+      if (!position) return
+      // Frame-rate-independent following: retarget without restarting the motion.
+      const amount = 1 - Math.exp(-elapsed / 125)
+      position.top += (target.top - position.top) * amount
+      position.bottom += (target.bottom - position.bottom) * amount
+      const settled =
+        Math.max(
+          Math.abs(target.top - position.top),
+          Math.abs(target.bottom - position.bottom)
+        ) < 0.1
+      if (settled || reducedMotion.matches) position = { ...target }
+      paint()
+      motionFrame =
+        settled || reducedMotion.matches ? 0 : requestAnimationFrame(animate)
+    }
+    const moveIndicator = (id: string | undefined) => {
       const list = listRef.current
       const link = id ? linkRefs.current.get(id) : undefined
-      if (!indicator || !list || !link) return
-
+      if (!list || !link) return
       const listRect = list.getBoundingClientRect()
       const linkRect = link.getBoundingClientRect()
       const top = linkRect.top - listRect.top
-      const bottom = list.scrollHeight - top - linkRect.height
-      const clipPath = `inset(${top}px 0 ${Math.max(0, bottom)}px 0)`
-      const ready = indicator.dataset.ready === 'true'
-
-      indicator.style.setProperty(
-        '--toc-transition-duration',
-        `${ready ? duration : 0}ms`
-      )
-      if (indicator.style.clipPath !== clipPath)
-        indicator.style.clipPath = clipPath
-      indicator.dataset.ready = 'true'
+      target = {
+        top,
+        bottom: Math.max(0, list.scrollHeight - top - linkRect.height)
+      }
+      if (!position || reducedMotion.matches) {
+        position = { ...target }
+        paint()
+      } else if (!motionFrame) {
+        lastTime = performance.now()
+        motionFrame = requestAnimationFrame(animate)
+      }
     }
 
     const update = () => {
-      const now = performance.now()
-      const elapsed = Math.min(now - lastUpdate, 50)
-      const velocity =
-        Math.abs(window.scrollY - lastScrollY) / Math.max(elapsed, 1)
-      lastScrollY = window.scrollY
-      lastUpdate = now
       const article = elements[0]
         ?.closest('article')
         ?.querySelector('.article-body')
@@ -80,15 +87,7 @@ export function TableOfContents({
           scrollY: window.scrollY
         }
       )
-      const currentIndex = activeRef.current
-        ? headingIndexes.get(activeRef.current)
-        : undefined
-      const nextIndex = next ? headingIndexes.get(next) : undefined
-      const sectionDistance =
-        currentIndex === undefined || nextIndex === undefined
-          ? 0
-          : Math.abs(nextIndex - currentIndex)
-      moveIndicator(next, transitionDuration(velocity, sectionDistance))
+      moveIndicator(next)
       if (next !== activeRef.current) {
         activeRef.current = next
         setActive(next)
@@ -114,6 +113,7 @@ export function TableOfContents({
       window.removeEventListener('resize', schedule)
       window.removeEventListener('scroll', schedule)
       cancelAnimationFrame(frame)
+      cancelAnimationFrame(motionFrame)
     }
   }, [headings])
   if (!headings.length) return null

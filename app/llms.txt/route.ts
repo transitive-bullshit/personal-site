@@ -18,7 +18,7 @@ export function GET() {
           project.title.replace(/[[\]\n]/g, '') +
           '](' +
           site.origin +
-          '/project/' +
+          '/projects/' +
           project.slug +
           '): ' +
           project.description.replaceAll('\n', ' ')

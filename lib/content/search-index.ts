@@ -74,7 +74,8 @@ export function buildSearchIndex(snapshot: Snapshot): SearchIndex {
         return {
           kind,
           href:
-            (kind === 'project' ? '/project/' : '/') + encodeURIComponent(slug),
+            (kind === 'project' ? '/projects/' : '/') +
+            encodeURIComponent(slug),
           title: entry.title,
           published: entry.published,
           titleText: normalizeSearchText(entry.title),

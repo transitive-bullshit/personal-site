@@ -80385,7 +80385,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T09:16:00.000Z",
+        "edited": "2026-09-16T10:10:00.000Z",
         "key": "3ddedb27f12481c1a145c3d546904768:cover",
         "kind": "file"
       },
@@ -81954,22 +81954,6 @@
       "source": {
         "edited": "2026-08-20T16:37:00.000Z",
         "key": "7f4d75374ea74d2db1a7a7d21672c0db",
-        "kind": "file"
-      },
-      "variants": []
-    },
-    "7f54bd5a38e343c097975e3e2d5d20c6": {
-      "original": {
-        "bytes": 72356645,
-        "hash": "97b3b7c8db20ae1bc155fbe76131fccc09fdf147f6103b7ad2e5e53344a023d5",
-        "key": "personal-site/media/97b3b7c8db20ae1bc155fbe76131fccc09fdf147f6103b7ad2e5e53344a023d5.mp4",
-        "mime": "video/mp4",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/97b3b7c8db20ae1bc155fbe76131fccc09fdf147f6103b7ad2e5e53344a023d5.mp4"
-      },
-      "pipelineVersion": 1,
-      "source": {
-        "edited": "2026-09-16T09:16:00.000Z",
-        "key": "7f54bd5a38e343c097975e3e2d5d20c6",
         "kind": "file"
       },
       "variants": []
@@ -87443,17 +87427,17 @@
         {
           "caption": [],
           "children": [],
-          "id": "7f54bd5a38e343c097975e3e2d5d20c6",
-          "media": "7f54bd5a38e343c097975e3e2d5d20c6",
-          "type": "video"
-        },
-        {
-          "caption": [],
-          "children": [],
           "id": "84f06c2c5d9140f79c3ceb00a795cbe5",
           "tweetId": "2099185744724316478",
           "type": "embed",
           "url": "https://x.com/transitive_bs/status/2099185744724316478"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3ddedb27f12480dbb05bda2f976cd7e6",
+          "richText": [],
+          "type": "paragraph"
         }
       ],
       "cover": "3ddedb27f12481c1a145c3d546904768:cover",
@@ -87464,7 +87448,7 @@
         "value": "🎬"
       },
       "id": "3ddedb27f12481c1a145c3d546904768",
-      "modified": "2026-09-16T09:16:00.000Z",
+      "modified": "2026-09-16T10:10:00.000Z",
       "published": "2026-09-13",
       "slug": "margin-call-ai-safety-parody",
       "source": "https://www.share-ai-passage.com/chatgpt/8cb96104-b9a5-4791-8c64-481517b28f0c",

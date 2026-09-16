@@ -24,7 +24,8 @@ export async function importPages<T extends Article | Project>(options: {
     options.pages,
     async (page, index) => {
       const route = options.routes[page.id]!
-      const path = (options.kind === 'project' ? '/project/' : '/') + route.slug
+      const path =
+        (options.kind === 'project' ? '/projects/' : '/') + route.slug
       const previous = options.previous[page.id]
       const sourceEdited = Date.parse(page.last_edited_time)
       const importedEdited = Date.parse(previous?.modified ?? '')
