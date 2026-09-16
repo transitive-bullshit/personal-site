@@ -34,7 +34,7 @@ export function ProjectIndex({
                     media={snapshot.media[project.cover]!}
                     alt=''
                     className='project-card-image'
-                    sizes='(max-width: 600px) calc(100vw - 44px), (max-width: 800px) calc((100vw - 88px) / 2), 348px'
+                    sizes='(max-width: 600px) calc(100vw - 32px), (max-width: 800px) calc((100vw - 88px) / 2), 348px'
                   />
                 ) : (
                   <div className='project-card-fallback' aria-hidden='true'>

@@ -549,7 +549,7 @@ summary {
 }
 @media (max-width: 600px) {
   .site-shell {
-    padding-inline: 22px;
+    padding-inline: 16px;
   }
   .site-header {
     padding-block: 24px;
@@ -598,9 +598,6 @@ summary {
   }
 }
 @media (max-width: 360px) {
-  .site-shell {
-    padding-inline: 16px;
-  }
   .site-header {
     font-size: 12px;
     gap: 4px;
