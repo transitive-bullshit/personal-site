@@ -22,10 +22,12 @@ export function ArticleIndex({
     >
       {articles.map((article) => (
         <li key={article.id}>
-          <time dateTime={article.published}>
-            {dateFormatter.format(new Date(article.published))}
-          </time>
-          <Link href={'/' + article.slug}>{article.title}</Link>
+          <Link href={'/' + article.slug}>
+            <time dateTime={article.published}>
+              {dateFormatter.format(new Date(article.published))}
+            </time>
+            <span className='article-index-title'>{article.title}</span>
+          </Link>
         </li>
       ))}
     </ol>

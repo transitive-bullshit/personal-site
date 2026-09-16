@@ -45,42 +45,38 @@ export default function RootLayout({
           <div className='site-shell'>
             <header className='site-header'>
               <Link className='site-brand' href='/'>
-                Travis Fischer
+                TransitiveBullsh.it
               </Link>
+              <nav className='site-header-nav' aria-label='Main navigation'>
+                <Link href='/writing'>Writing</Link>
+              </nav>
               <div className='site-header-actions'>
-                <nav aria-label='Main navigation'>
-                  <Link href='/writing'>Writing</Link>
-                  <Button variant='ghost' size='icon-sm' asChild>
-                    <a
-                      href='https://github.com/transitive-bullshit'
-                      target='_blank'
-                      rel='noreferrer'
-                      aria-label='GitHub (opens in a new tab)'
-                      title='GitHub'
-                    >
-                      <SiGithub
-                        aria-hidden='true'
-                        data-icon='inline-start'
-                        title=''
-                      />
-                    </a>
-                  </Button>
-                  <Button variant='ghost' size='icon-sm' asChild>
-                    <a
-                      href='https://x.com/transitive_bs'
-                      target='_blank'
-                      rel='noreferrer'
-                      aria-label='X (opens in a new tab)'
-                      title='X'
-                    >
-                      <SiX
-                        aria-hidden='true'
-                        data-icon='inline-start'
-                        title=''
-                      />
-                    </a>
-                  </Button>
-                </nav>
+                <Button variant='ghost' size='icon-sm' asChild>
+                  <a
+                    href='https://github.com/transitive-bullshit'
+                    target='_blank'
+                    rel='noreferrer'
+                    aria-label='GitHub (opens in a new tab)'
+                    title='GitHub'
+                  >
+                    <SiGithub
+                      aria-hidden='true'
+                      data-icon='inline-start'
+                      title=''
+                    />
+                  </a>
+                </Button>
+                <Button variant='ghost' size='icon-sm' asChild>
+                  <a
+                    href='https://x.com/transitive_bs'
+                    target='_blank'
+                    rel='noreferrer'
+                    aria-label='X (opens in a new tab)'
+                    title='X'
+                  >
+                    <SiX aria-hidden='true' data-icon='inline-start' title='' />
+                  </a>
+                </Button>
                 <ThemeToggle />
               </div>
             </header>
