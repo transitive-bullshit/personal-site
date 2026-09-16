@@ -1,9 +1,6 @@
 import type { Article, Snapshot } from '@/lib/content/schema'
-import { getHeadings } from '@/lib/content/headings'
 import { articleJsonLd, serializeJsonLd } from '@/lib/content/metadata'
-import { Blocks } from './blocks'
-import { ZoomableImage } from './media'
-import { TableOfContents } from './table-of-contents'
+import { ContentBody } from './content-body'
 
 export function ArticlePage({
   article,
@@ -12,7 +9,6 @@ export function ArticlePage({
   article: Article
   snapshot: Snapshot
 }) {
-  const headings = getHeadings(article.blocks)
   return (
     <main id='main'>
       <article>
@@ -33,31 +29,7 @@ export function ArticlePage({
             </time>
           </div>
         </header>
-        <div className='article-grid'>
-          <div className='article-body' data-link-preview-scope='article'>
-            {article.cover ? (
-              <figure className='article-cover'>
-                <ZoomableImage
-                  media={snapshot.media[article.cover]!}
-                  alt={article.title}
-                  priority
-                />
-              </figure>
-            ) : null}
-            {headings.length ? (
-              <details className='mobile-toc'>
-                <summary>On this page</summary>
-                <TableOfContents headings={headings} title={false} />
-              </details>
-            ) : null}
-            <Blocks blocks={article.blocks} snapshot={snapshot} />
-          </div>
-          {headings.length ? (
-            <aside className='desktop-toc'>
-              <TableOfContents headings={headings} />
-            </aside>
-          ) : null}
-        </div>
+        <ContentBody entry={article} snapshot={snapshot} />
       </article>
       <script
         type='application/ld+json'

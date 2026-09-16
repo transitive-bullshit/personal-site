@@ -1,5 +1,6 @@
 export type SearchDocument = {
   href: string
+  kind?: 'article' | 'project' | 'page'
   title: string
   published?: string
   titleText: string

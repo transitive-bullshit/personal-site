@@ -39,7 +39,7 @@ export function SiteSearch() {
           type='button'
           variant='ghost'
           size='icon-sm'
-          aria-label='Search pages and articles (Command K or Control K)'
+          aria-label='Search projects and writing (Command K or Control K)'
           aria-keyshortcuts='Meta+K Control+K'
           title='Search (⌘K / Ctrl K)'
         >

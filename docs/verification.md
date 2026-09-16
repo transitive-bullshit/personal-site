@@ -127,3 +127,14 @@ The preceding migration hash and counts describe the initial snapshot. Current e
 - `--fast` skips images and schedules one later normal pass.
 - Recoverable errors write fallback data, warn, and exit `1`.
 - Formatting, lint, types, 63 tests, and production build pass.
+
+## Notion projects — 2026-09-16
+
+- Imported 21 public projects, with 19 featured and 20 covers, through the shared body/media pipeline. No article/project slug collisions. All 36 article records and routes remained unchanged.
+- Added homepage featured projects, the complete `/projects` grid, `/project/[slug]` detail pages, and Projects → Writing navigation in both header and footer.
+- Article and project pages share the same content-body component, including covers, lightboxes, blocks, embeds, and responsive table of contents. Project actions follow the available Website, Source, and Tweet metadata.
+- Search indexes public projects and their body text alongside articles, labels project results, and preserves lazy loading. Sitemap, llms.txt, social metadata, cached Notion links, and internal previews include projects.
+- Production HTTP audit passed for all 21 project pages, canonical metadata, conditional CTAs, ID redirects, missing-project 404s, featured/all counts, sitemap, and search output.
+- Browser checks passed for desktop cards and project details, 390px and 320px mobile layouts, keyboard project search/navigation, the missing-cover project, and shared image lightboxes. Mobile navigation uses a second row to avoid overlapping the brand.
+- Formatting, lint, TypeScript, unit tests, and production build pass, including the native social-image bundle check.
+- Import warnings retained safe fallbacks: one unavailable ChatGPT Hackers bookmark image and three already-unavailable tweets in an existing article. No project imports failed.

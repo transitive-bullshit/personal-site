@@ -102,13 +102,13 @@ export default function SearchPalette({ onClose }: { onClose: () => void }) {
         inputRef.current?.focus()
       }}
     >
-      <DialogTitle className='sr-only'>Search pages and articles</DialogTitle>
+      <DialogTitle className='sr-only'>Search projects and writing</DialogTitle>
       <DialogDescription className='sr-only'>
         Search by title or keyword. Use the arrow keys to choose a result and
         Enter to open it. Escape closes search.
       </DialogDescription>
       <Command
-        label='Search pages and articles'
+        label='Search projects and writing'
         shouldFilter={false}
         value={activeHref}
         onValueChange={setSelection}
@@ -119,7 +119,7 @@ export default function SearchPalette({ onClose }: { onClose: () => void }) {
           <SearchIcon aria-hidden='true' className='size-4' />
           <Command.Input
             ref={inputRef}
-            placeholder='Search pages and articles…'
+            placeholder='Search projects and writing…'
             value={query}
             onValueChange={changeQuery}
           />
@@ -155,7 +155,7 @@ export default function SearchPalette({ onClose }: { onClose: () => void }) {
             esc
           </Button>
         </div>
-        <Command.List label='Pages and articles'>
+        <Command.List label='Projects, writing, and pages'>
           {!index && !failed && (
             <Command.Loading label='Loading search index'>
               <div className='search-message'>Loading search…</div>
@@ -183,7 +183,7 @@ export default function SearchPalette({ onClose }: { onClose: () => void }) {
               <Command.Empty>
                 No matches. Try another title or keyword.
               </Command.Empty>
-              <Command.Group value='pages-and-articles'>
+              <Command.Group value='site-content'>
                 {results.map((result, position) => (
                   <Command.Item
                     key={result.href}
@@ -201,7 +201,9 @@ export default function SearchPalette({ onClose }: { onClose: () => void }) {
                       onClick={(event) => event.stopPropagation()}
                       onNavigate={onClose}
                     >
-                      {result.published ? (
+                      {result.kind === 'project' ? (
+                        <span className='search-result-kind'>Project</span>
+                      ) : result.published ? (
                         <time dateTime={result.published}>
                           {dateFormatter.format(new Date(result.published))}
                         </time>

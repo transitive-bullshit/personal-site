@@ -49,6 +49,7 @@ export default function RootLayout({
                 TransitiveBullsh.it
               </Link>
               <nav className='site-header-nav' aria-label='Main navigation'>
+                <Link href='/projects'>Projects</Link>
                 <Link href='/writing'>Writing</Link>
               </nav>
               <div className='site-header-actions'>
@@ -86,7 +87,8 @@ export default function RootLayout({
             <footer className='site-footer'>
               <span>Travis Fischer · Transitive Bullshit</span>
               <div className='site-footer-actions'>
-                <Link href='/writing'>All writing</Link>
+                <Link href='/projects'>Projects</Link>
+                <Link href='/writing'>Writing</Link>
                 <ThemeToggle />
               </div>
             </footer>

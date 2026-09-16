@@ -163,3 +163,55 @@ describe('headings and structured metadata', () => {
     )
   })
 })
+
+describe('project link namespaces', () => {
+  const projects = {
+    [b]: { slug: 'original-title', aliases: ['previous-project'], active: true }
+  }
+  it('resolves Notion project IDs and anchors without stealing matching article slugs', () => {
+    expect(
+      rewriteLink(
+        'https://app.notion.com/p/' + b + '#aa-bb',
+        routes,
+        sourceContract.rootPageId,
+        projects
+      )
+    ).toBe('/project/original-title#aabb')
+    expect(
+      rewriteLink(
+        '/original-title',
+        routes,
+        sourceContract.rootPageId,
+        projects
+      )
+    ).toBe('/original-title')
+    expect(
+      rewriteLink(
+        '/project/previous-project',
+        routes,
+        sourceContract.rootPageId,
+        projects
+      )
+    ).toBe('/project/original-title')
+    expect(resolveRoute(b, projects)).toMatchObject({
+      slug: 'original-title',
+      redirect: true
+    })
+    expect(resolveRoute('previous-project', projects)).toMatchObject({
+      slug: 'original-title',
+      redirect: true
+    })
+  })
+  it('leaves private project links external and does not rewrite unrelated sites', () => {
+    const href = 'https://notion.so/' + b
+    expect(
+      rewriteLink(href, routes, sourceContract.rootPageId, {
+        [b]: { ...projects[b]!, active: false }
+      })
+    ).toBe(href)
+    const external = 'https://example.com/' + b
+    expect(
+      rewriteLink(external, routes, sourceContract.rootPageId, projects)
+    ).toBe(external)
+  })
+})

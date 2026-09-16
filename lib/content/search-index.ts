@@ -2,9 +2,9 @@ import { normalizeSearchText, type SearchIndex } from '../search'
 import { site } from '../site'
 import { walkBlocks } from './references'
 import { validateSlug } from './routes'
-import type { Article, Snapshot } from './schema'
+import type { Article, Project, Snapshot } from './schema'
 
-function articleBodyTerms(article: Article, snapshot: Snapshot) {
+function articleBodyTerms(article: Article | Project, snapshot: Snapshot) {
   const text: string[] = []
   walkBlocks(article.blocks, (block) => {
     if ('richText' in block)
@@ -36,34 +36,56 @@ function articleBodyTerms(article: Article, snapshot: Snapshot) {
 // Add future top-level pages here when their routes are implemented.
 const pages = [
   { href: '/', title: 'Home', summary: site.description + ' ' + site.author },
+  {
+    href: '/projects',
+    title: 'Projects',
+    summary: 'Software, open source, and creative experiments'
+  },
   { href: '/writing', title: 'Writing', summary: 'All articles and essays' }
 ]
 
 export function buildSearchIndex(snapshot: Snapshot): SearchIndex {
-  const articles = Object.values(snapshot.articles)
-    .filter((article) => snapshot.routes[article.id]?.active)
-    .sort(
-      (a, b) =>
-        b.published.localeCompare(a.published) || a.slug.localeCompare(b.slug)
-    )
+  const entries = [
+    ...Object.values(snapshot.articles)
+      .filter((entry) => snapshot.routes[entry.id]?.active)
+      .map((entry) => ({
+        entry,
+        kind: 'article' as const,
+        slug: snapshot.routes[entry.id]!.slug
+      })),
+    ...Object.values(snapshot.projects ?? {})
+      .filter((entry) => snapshot.projectRoutes?.[entry.id]?.active)
+      .map((entry) => ({
+        entry,
+        kind: 'project' as const,
+        slug: snapshot.projectRoutes![entry.id]!.slug
+      }))
+  ].sort(
+    (a, b) =>
+      (b.entry.published ?? '').localeCompare(a.entry.published ?? '') ||
+      a.kind.localeCompare(b.kind) ||
+      a.slug.localeCompare(b.slug)
+  )
   return {
     version: 1,
     documents: [
-      ...articles.map((article) => {
-        const slug = snapshot.routes[article.id]!.slug
+      ...entries.map(({ entry, kind, slug }) => {
         validateSlug(slug)
         return {
-          href: '/' + encodeURIComponent(slug),
-          title: article.title,
-          published: article.published,
-          titleText: normalizeSearchText(article.title),
+          kind,
+          href:
+            (kind === 'project' ? '/project/' : '/') + encodeURIComponent(slug),
+          title: entry.title,
+          published: entry.published,
+          titleText: normalizeSearchText(entry.title),
           summaryText: normalizeSearchText(
-            article.description + ' ' + article.tags.join(' ')
+            entry.description + ' ' + entry.tags.join(' ')
           ),
-          bodyTerms: articleBodyTerms(article, snapshot)
+          bodyTerms: articleBodyTerms(entry, snapshot)
         }
       }),
       ...pages.map((page) => ({
+        kind: 'page' as const,
         href: page.href,
         title: page.title,
         titleText: normalizeSearchText(page.title),

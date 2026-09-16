@@ -5,6 +5,7 @@ import {
   snapshotSchema,
   type Project
 } from '../lib/content/schema'
+import { resolveContentLinks } from '../lib/content/content-links'
 import { validateSnapshot } from '../lib/content/references'
 import {
   crossCollectionSlugWarnings,
@@ -171,4 +172,37 @@ it('normalizes project people and structured links through the shared body reade
     projectSchema.safeParse({ ...result, source: 'javascript:alert(1)' })
       .success
   ).toBe(false)
+})
+
+it('resolves cached Notion project links when loading an existing snapshot', async () => {
+  const snapshot = snapshotSchema.parse(
+    JSON.parse(await readFile('content/snapshot.json', 'utf8'))
+  )
+  const target = Object.values(snapshot.projects ?? {})[0]!
+  const article = Object.values(snapshot.articles)[0]!
+  article.blocks = [
+    {
+      id,
+      type: 'paragraph',
+      color: 'default',
+      children: [],
+      richText: [
+        {
+          text: 'Project',
+          href: 'https://app.notion.com/p/' + target.id,
+          bold: false,
+          italic: false,
+          underline: false,
+          strike: false,
+          code: false,
+          color: 'default'
+        }
+      ]
+    }
+  ]
+  resolveContentLinks(snapshot)
+  const block = article.blocks[0]!
+  expect(block.type === 'paragraph' && block.richText[0]?.href).toBe(
+    '/project/' + target.slug
+  )
 })

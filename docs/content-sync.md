@@ -51,9 +51,9 @@ The snapshot stores projects in `projects`, with independent `projectRoutes` and
 
 Projects share article block, cover, icon, tag, featured, description, modified-time, and image-cache behavior. Their separate schema stores `authors` (Notion person IDs and available names), optional `published`, `website`, `source`, and `tweet` URLs. `Source` is generic: it can link to GitHub or the conversation that created the project. No separate chat-link property currently exists in Notion.
 
-Slug reconciliation, redirects, privacy removal, and pruning run independently per collection. Cross-collection slug/alias matches warn with both page IDs and retain both records for manual migration in Notion. No Notion content is moved or deleted. Project route records are preparation for `/project/[slug]`; this step adds no public project pages or search entries. Project links to published articles resolve normally; links to projects retain their Notion destinations until project routing is implemented.
+Slug reconciliation, redirects, privacy removal, and pruning run independently per collection. Cross-collection slug/alias matches warn with both page IDs and retain both records for manual migration in Notion. No Notion content is moved or deleted. Projects render at `/project/[slug]` with redirects for saved aliases and Notion IDs. At load time, saved Notion links to public articles and projects resolve to their current canonical routes. Private projects are never linked to a public route.
 
-`--only` skips discovery and page imports for the other collection and retains its referenced media, bookmarks, and tweets. Force refresh and placeholder work apply to the selected collection (shared assets can still change). Search continues to index only articles.
+`--only` skips discovery and page imports for the other collection and retains its referenced media, bookmarks, and tweets. Force refresh and placeholder work apply to the selected collection (shared assets can still change). Search indexes both public collections, including titles, descriptions, tags, and body text.
 
 ## Media
 
@@ -93,10 +93,14 @@ Keep Notion and storage clients in `scripts/`.
 
 ## Client-side search
 
-Command-K / Control-K and the header search icon open cmdk. The dialog code and index load only on first open; subsequent opens reuse the fetched index. Queries stay in the browser. Keyword matches prefer titles, then descriptions/tags, then nested article text, captions, tables, and saved bookmark/tweet text. Canonical public article routes plus Home and Writing are indexed; add future top-level pages in `lib/content/search-index.ts`.
+Command-K / Control-K and the header search icon open cmdk. The dialog code and index load only on first open; subsequent opens reuse the fetched index. Queries stay in the browser. Keyword matches prefer titles, then descriptions/tags, then nested article text, captions, tables, and saved bookmark/tweet text. Canonical public article and project routes plus Home, Projects, and Writing are indexed. Project results are labeled in the palette. Add future top-level pages in `lib/content/search-index.ts`.
 
 The top and selected results are explicitly prefetched. Results use full-row Next links with no gaps. A temporary **Preview style** control compares adaptations of cmdk's [four example themes](https://github.com/dip/cmdk/tree/main/website/styles/cmdk): Vercel (initial default), Linear, Raycast, and Framer. The choice persists locally. After choosing one, remove the other CSS variants, the preview control, and its storage key. Shared adaptations remove demo panes, item margins, and keyboard-driven motion; Framer's blue is darkened for readable white text. License attribution is in `docs/licenses/cmdk.txt`.
 
 ## Runtime images
 
 The app serves synced images through `next/image` from the configured R2 path. Social cards use the saved cover through `components/social-image.tsx`; bump `templateVersion` in `lib/social-image.ts` after design changes.
+
+## Project pages
+
+The homepage shows all projects marked Featured above featured writing. `/projects` lists every public project; both lists use publication date descending, then slug, with undated projects last. Cards use the Notion cover, falling back to the page icon or initial. `/project/[slug]` shows the title, description, available Website/Source/X actions, and the shared article body component (cover, lightbox, supported blocks, and responsive table of contents). Project cover images also provide social previews; projects without covers use a summary card. Project routes are included in the sitemap, llms.txt, and internal link previews.
