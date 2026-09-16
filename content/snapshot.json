@@ -69557,10 +69557,6 @@
     }
   },
   "bookmarks": {
-    "http://mipscope.cs.brown.edu/": {
-      "description": "",
-      "title": "MipScope: A MIPS Learning Environment"
-    },
     "https://2021.stateofjs.com/en-US/libraries/": {
       "description": "The 2021 edition of the annual survey about the latest trends in the JavaScript ecosystem.",
       "title": "The State of JS 2021: Libraries"
@@ -69645,49 +69641,6 @@
         ]
       },
       "title": "The Passion Economy and the Future of Work | Andreessen Horowitz"
-    },
-    "https://agentic.so/": {
-      "description": "Agentic is the App Store for LLM tools. Publish any MCP server or OpenAPI service to Agentic's MCP gateway and instantly turn it into a paid MCP product.",
-      "image": {
-        "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAUAA4BaJZQAAudHzywAAP71GWk6j6VeTtf4L+uyAA==",
-        "original": {
-          "bytes": 105411,
-          "hash": "2586da839572b3b6047e6d1bccd9b0f8990b4ded65168f78e62c65adfd9a7884",
-          "height": 720,
-          "key": "personal-site/media/2586da839572b3b6047e6d1bccd9b0f8990b4ded65168f78e62c65adfd9a7884.jpg",
-          "mime": "image/jpeg",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/2586da839572b3b6047e6d1bccd9b0f8990b4ded65168f78e62c65adfd9a7884.jpg",
-          "width": 1280
-        },
-        "pipelineVersion": 1,
-        "source": {
-          "edited": "https://agentic.so/opengraph-image.jpg?b24fd97b99c86447",
-          "key": "bookmark:8309a33a366e85295ef294db707ce4038c1be138deb4995fdb059ea9a505b262",
-          "kind": "external",
-          "url": "https://agentic.so/opengraph-image.jpg?b24fd97b99c86447"
-        },
-        "variants": [
-          {
-            "bytes": 28896,
-            "hash": "abb2584ce865f642e48dd352848763362521ae4d48718e094bd22db33ace0259",
-            "height": 540,
-            "key": "personal-site/media/abb2584ce865f642e48dd352848763362521ae4d48718e094bd22db33ace0259.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/abb2584ce865f642e48dd352848763362521ae4d48718e094bd22db33ace0259.webp",
-            "width": 960
-          },
-          {
-            "bytes": 55800,
-            "hash": "308ed340c89ee8442884639fa723461547df2cb6325dbc59b0b161284253e309",
-            "height": 720,
-            "key": "personal-site/media/308ed340c89ee8442884639fa723461547df2cb6325dbc59b0b161284253e309.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/308ed340c89ee8442884639fa723461547df2cb6325dbc59b0b161284253e309.webp",
-            "width": 1280
-          }
-        ]
-      },
-      "title": "Agentic"
     },
     "https://armthecreators.substack.com/": {
       "description": "obsessed with how technology moves culture. Click to read Hugo Amsellem, a Substack publication with thousands of subscribers.",
@@ -69974,10 +69927,6 @@
     "https://cantino.substack.com/p/twitterspaces": {
       "description": "",
       "title": ""
-    },
-    "https://chatgpthackers.transitivebullsh.it/": {
-      "description": "Join thousands of other developers, researchers, and AI enthusiasts who are building at the cutting edge of AI!",
-      "title": "ChatGPT Hackers"
     },
     "https://creatoreconomy.so/": {
       "description": "Practical AI tutorials and interviews to help busy people become AI native fast. Click to read Behind the Craft, by Peter Yang, a Substack publication with hundreds of thousands of subscribers.",
@@ -70402,49 +70351,6 @@
       },
       "title": "GitHub - transitive-bullshit/agentic: Your API ⇒ Paid MCP. Instantly."
     },
-    "https://github.com/transitive-bullshit/chatgpt-hackers": {
-      "description": "Join thousands of other developers, researchers, and AI enthusiasts who are building at the cutting edge of AI ✨ - transitive-bullshit/chatgpt-hackers",
-      "image": {
-        "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAQAA4BaJZwAAudFrAAA/vYUE01VNUjkBDBP2AAAAA==",
-        "original": {
-          "bytes": 97186,
-          "hash": "b5833e04d2c53ae9e4f0bf423684a5d1ba01ec46d2318442ea9132c391923329",
-          "height": 600,
-          "key": "personal-site/media/b5833e04d2c53ae9e4f0bf423684a5d1ba01ec46d2318442ea9132c391923329.png",
-          "mime": "image/png",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/b5833e04d2c53ae9e4f0bf423684a5d1ba01ec46d2318442ea9132c391923329.png",
-          "width": 1200
-        },
-        "pipelineVersion": 1,
-        "source": {
-          "edited": "https://opengraph.githubassets.com/2db5bbe06fcf9d02b8ba3b6c64b777313923f5c6c3184c7738794d70d579c831/transitive-bullshit/chatgpt-hackers",
-          "key": "bookmark:ab39e6d7049f38a476a3d768f56def4f169b96079d45934071d36620560aa7e1",
-          "kind": "external",
-          "url": "https://opengraph.githubassets.com/2db5bbe06fcf9d02b8ba3b6c64b777313923f5c6c3184c7738794d70d579c831/transitive-bullshit/chatgpt-hackers"
-        },
-        "variants": [
-          {
-            "bytes": 22178,
-            "hash": "4b2cb1a9f798b4c046f19f14eb5bb41c620dcf2c1351ec2e98e196af9a3a61aa",
-            "height": 480,
-            "key": "personal-site/media/4b2cb1a9f798b4c046f19f14eb5bb41c620dcf2c1351ec2e98e196af9a3a61aa.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/4b2cb1a9f798b4c046f19f14eb5bb41c620dcf2c1351ec2e98e196af9a3a61aa.webp",
-            "width": 960
-          },
-          {
-            "bytes": 37518,
-            "hash": "32870a876bfe61e695f28ce6e8796e6eb2c9c9990ecba8feb2062040544deef3",
-            "height": 600,
-            "key": "personal-site/media/32870a876bfe61e695f28ce6e8796e6eb2c9c9990ecba8feb2062040544deef3.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/32870a876bfe61e695f28ce6e8796e6eb2c9c9990ecba8feb2062040544deef3.webp",
-            "width": 1200
-          }
-        ]
-      },
-      "title": "GitHub - transitive-bullshit/chatgpt-hackers: Join thousands of other developers, researchers, and AI enthusiasts who are building at the cutting edge of AI ✨"
-    },
     "https://github.com/transitive-bullshit/chatgpt-twitter-bot": {
       "description": "Twitter bot powered by OpenAI's ChatGPT API. It's aliveeeee 🤖 - transitive-bullshit/chatgpt-twitter-bot",
       "image": {
@@ -70492,92 +70398,6 @@
       "description": "CLI for creating reusable react libraries. Contribute to transitive-bullshit/create-react-library development by creating an account on GitHub.",
       "title": "GitHub - transitive-bullshit/create-react-library: CLI for creating reusable react libraries."
     },
-    "https://github.com/transitive-bullshit/Milton": {
-      "description": "C++ Rendering Framework w/ MLT, bidi path tracing, etc. and OpenGL Previews (undergrad thesis project from Brown '09) - transitive-bullshit/Milton",
-      "image": {
-        "blurDataURL": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAACQAQCdASoIAAQAA4BaJaQAAudFrAAA/vcmRqeSxPxVogAA",
-        "original": {
-          "bytes": 97736,
-          "hash": "ea728277c8e3019d41320eeb2b9302c45b5b9f07482041da57a95bdcc5944290",
-          "height": 600,
-          "key": "personal-site/media/ea728277c8e3019d41320eeb2b9302c45b5b9f07482041da57a95bdcc5944290.png",
-          "mime": "image/png",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/ea728277c8e3019d41320eeb2b9302c45b5b9f07482041da57a95bdcc5944290.png",
-          "width": 1200
-        },
-        "pipelineVersion": 1,
-        "source": {
-          "edited": "https://opengraph.githubassets.com/a8ca19f9813d50a27605187fd41caf229607e0bce13d3f3b3361aacf6bf19bd7/transitive-bullshit/Milton",
-          "key": "bookmark:f94f65e418c3929568897c996b7b5d29899feafbc73c35a7ca4253621fa8a6e1",
-          "kind": "external",
-          "url": "https://opengraph.githubassets.com/a8ca19f9813d50a27605187fd41caf229607e0bce13d3f3b3361aacf6bf19bd7/transitive-bullshit/Milton"
-        },
-        "variants": [
-          {
-            "bytes": 20030,
-            "hash": "eecdec0ed2efc1a8a4ec51c97177386eff2a2a4301e2973289a24fb4f8b4da6f",
-            "height": 480,
-            "key": "personal-site/media/eecdec0ed2efc1a8a4ec51c97177386eff2a2a4301e2973289a24fb4f8b4da6f.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/eecdec0ed2efc1a8a4ec51c97177386eff2a2a4301e2973289a24fb4f8b4da6f.webp",
-            "width": 960
-          },
-          {
-            "bytes": 34934,
-            "hash": "e595f0f0d2016581063a63fb7d2129e900b6a2be8be1b998e34b5c847f4353c9",
-            "height": 600,
-            "key": "personal-site/media/e595f0f0d2016581063a63fb7d2129e900b6a2be8be1b998e34b5c847f4353c9.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/e595f0f0d2016581063a63fb7d2129e900b6a2be8be1b998e34b5c847f4353c9.webp",
-            "width": 1200
-          }
-        ]
-      },
-      "title": "GitHub - transitive-bullshit/Milton: C++ Rendering Framework w/ MLT, bidi path tracing, etc. and OpenGL Previews (undergrad thesis project from Brown '09)"
-    },
-    "https://github.com/transitive-bullshit/mipscope": {
-      "description": "MipScope is a cross-platform IDE for students learning assembly on the MIPS architecture. The focus is on a convenient debugging environment, including a visual, reversible debugger. http://mipscop...",
-      "image": {
-        "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAQAA4BaJZwAAudJ3/oAAP72FBNNVTVJbiLRj9AAAA==",
-        "original": {
-          "bytes": 97007,
-          "hash": "c80e062685a7f25aa1e406e9c01fa2ecce0bea5e9cff1872c363ae72954b2740",
-          "height": 600,
-          "key": "personal-site/media/c80e062685a7f25aa1e406e9c01fa2ecce0bea5e9cff1872c363ae72954b2740.png",
-          "mime": "image/png",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/c80e062685a7f25aa1e406e9c01fa2ecce0bea5e9cff1872c363ae72954b2740.png",
-          "width": 1200
-        },
-        "pipelineVersion": 1,
-        "source": {
-          "edited": "https://opengraph.githubassets.com/286857237350101a19274e29b4464de16fce899c9746e64df6499fada47ca487/transitive-bullshit/mipscope",
-          "key": "bookmark:3f18c0d191fc1acc73b5458d59df47ee263507bf0afa56c7acd37550e69c0a3c",
-          "kind": "external",
-          "url": "https://opengraph.githubassets.com/286857237350101a19274e29b4464de16fce899c9746e64df6499fada47ca487/transitive-bullshit/mipscope"
-        },
-        "variants": [
-          {
-            "bytes": 21900,
-            "hash": "d3b84897bb004723946460fcd4eea1516e691d0a8db356f6faa918b095329980",
-            "height": 480,
-            "key": "personal-site/media/d3b84897bb004723946460fcd4eea1516e691d0a8db356f6faa918b095329980.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/d3b84897bb004723946460fcd4eea1516e691d0a8db356f6faa918b095329980.webp",
-            "width": 960
-          },
-          {
-            "bytes": 37744,
-            "hash": "096624778aee55cef0db4f91c2636f43f84ea246e4c104e281cff7e11645e514",
-            "height": 600,
-            "key": "personal-site/media/096624778aee55cef0db4f91c2636f43f84ea246e4c104e281cff7e11645e514.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/096624778aee55cef0db4f91c2636f43f84ea246e4c104e281cff7e11645e514.webp",
-            "width": 1200
-          }
-        ]
-      },
-      "title": "GitHub - transitive-bullshit/mipscope: MipScope is a cross-platform IDE for students learning assembly on the MIPS architecture. The focus is on a convenient debugging environment, including a visual, reversible debugger. http://mipscope.cs.brown.edu"
-    },
     "https://github.com/transitive-bullshit/react-fluid-gallery": {
       "description": "Fluid media gallery for React powered by WebGL. Contribute to transitive-bullshit/react-fluid-gallery development by creating an account on GitHub.",
       "image": {
@@ -70621,49 +70441,6 @@
       },
       "title": "GitHub - transitive-bullshit/react-fluid-gallery: Fluid media gallery for React powered by WebGL."
     },
-    "https://github.com/transitive-bullshit/scikit-learn-ts": {
-      "description": "Powerful machine learning library for Node.js – uses Python's scikit-learn under the hood. - transitive-bullshit/scikit-learn-ts",
-      "image": {
-        "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoIAAQAA4BaJZwAAudFtmAA/vYaIBIcIwc05/0MnT3hAAAA",
-        "original": {
-          "bytes": 94353,
-          "hash": "62018f478a5c5a7f3c4e6b2139157add745f9fb2e7c10ef769614b327216f98a",
-          "height": 600,
-          "key": "personal-site/media/62018f478a5c5a7f3c4e6b2139157add745f9fb2e7c10ef769614b327216f98a.png",
-          "mime": "image/png",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/62018f478a5c5a7f3c4e6b2139157add745f9fb2e7c10ef769614b327216f98a.png",
-          "width": 1200
-        },
-        "pipelineVersion": 1,
-        "source": {
-          "edited": "https://opengraph.githubassets.com/88f95f862f66fe0e2825c3182510416a6c0cfb8e2da7471a26d367486c0d0a0a/transitive-bullshit/scikit-learn-ts",
-          "key": "bookmark:d43ce36926b6f959be512a276f9212c56cc56957957aebcb6407273a98925c84",
-          "kind": "external",
-          "url": "https://opengraph.githubassets.com/88f95f862f66fe0e2825c3182510416a6c0cfb8e2da7471a26d367486c0d0a0a/transitive-bullshit/scikit-learn-ts"
-        },
-        "variants": [
-          {
-            "bytes": 19736,
-            "hash": "b5aedccf8fcd5e02ba4b3c06bbe111172cdc169cd5f8cb208dc5fb86c4b2a688",
-            "height": 480,
-            "key": "personal-site/media/b5aedccf8fcd5e02ba4b3c06bbe111172cdc169cd5f8cb208dc5fb86c4b2a688.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/b5aedccf8fcd5e02ba4b3c06bbe111172cdc169cd5f8cb208dc5fb86c4b2a688.webp",
-            "width": 960
-          },
-          {
-            "bytes": 33336,
-            "hash": "387b5b6d8f502f92dd4e05f1b9e6ab204e486b437e65c56e35bc1f57864d7ef7",
-            "height": 600,
-            "key": "personal-site/media/387b5b6d8f502f92dd4e05f1b9e6ab204e486b437e65c56e35bc1f57864d7ef7.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/387b5b6d8f502f92dd4e05f1b9e6ab204e486b437e65c56e35bc1f57864d7ef7.webp",
-            "width": 1200
-          }
-        ]
-      },
-      "title": "GitHub - transitive-bullshit/scikit-learn-ts: Powerful machine learning library for Node.js – uses Python's scikit-learn under the hood."
-    },
     "https://github.com/transitive-bullshit/scrape-github-trending": {
       "description": "Tutorial for web scraping / crawling with Node.js. - transitive-bullshit/scrape-github-trending",
       "image": {
@@ -70706,92 +70483,6 @@
         ]
       },
       "title": "GitHub - transitive-bullshit/scrape-github-trending: Tutorial for web scraping / crawling with Node.js."
-    },
-    "https://github.com/transitive-bullshit/ticalc": {
-      "description": "Collection of TI-Basic and C (via TIGCC) programs & games for the TI family of calculators - transitive-bullshit/ticalc",
-      "image": {
-        "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoIAAQAA4BaJZwAAudHxMAA/vYaIBIcIwc0516jFAA=",
-        "original": {
-          "bytes": 89499,
-          "hash": "e0db0c356f34b70de091619b2f0fd5a3047312c55c782d6be172159e8aa3325a",
-          "height": 600,
-          "key": "personal-site/media/e0db0c356f34b70de091619b2f0fd5a3047312c55c782d6be172159e8aa3325a.png",
-          "mime": "image/png",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/e0db0c356f34b70de091619b2f0fd5a3047312c55c782d6be172159e8aa3325a.png",
-          "width": 1200
-        },
-        "pipelineVersion": 1,
-        "source": {
-          "edited": "https://opengraph.githubassets.com/c29fb2ac0138668509f1b5d6b1e3533f8eb23eec9694a1429535884224ccd69a/transitive-bullshit/ticalc",
-          "key": "bookmark:77416260eb756a669c83cc4e5977cbc42cd85f9ed8cd2115ff794d6faebf6dbc",
-          "kind": "external",
-          "url": "https://opengraph.githubassets.com/c29fb2ac0138668509f1b5d6b1e3533f8eb23eec9694a1429535884224ccd69a/transitive-bullshit/ticalc"
-        },
-        "variants": [
-          {
-            "bytes": 17926,
-            "hash": "f6daec1fd3da5ac64ecc2bb27e12de7ec25e85ae6f8e01a8df62f6b5bf4acd8c",
-            "height": 480,
-            "key": "personal-site/media/f6daec1fd3da5ac64ecc2bb27e12de7ec25e85ae6f8e01a8df62f6b5bf4acd8c.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/f6daec1fd3da5ac64ecc2bb27e12de7ec25e85ae6f8e01a8df62f6b5bf4acd8c.webp",
-            "width": 960
-          },
-          {
-            "bytes": 30954,
-            "hash": "83f39195b3f1556ae11f70513dcaf4625294306bd9fff821cc881dd79fc1b4f8",
-            "height": 600,
-            "key": "personal-site/media/83f39195b3f1556ae11f70513dcaf4625294306bd9fff821cc881dd79fc1b4f8.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/83f39195b3f1556ae11f70513dcaf4625294306bd9fff821cc881dd79fc1b4f8.webp",
-            "width": 1200
-          }
-        ]
-      },
-      "title": "GitHub - transitive-bullshit/ticalc: Collection of TI-Basic and C (via TIGCC) programs & games for the TI family of calculators"
-    },
-    "https://github.com/webtorrent/webtorrent": {
-      "description": "⚡️ Streaming torrent client for the web. Contribute to webtorrent/webtorrent development by creating an account on GitHub.",
-      "image": {
-        "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAQAA4BaJZQC7AEOO2gAAP72GVNv7F4IyDZkDI+stCZ+8ngAAA==",
-        "original": {
-          "bytes": 56434,
-          "hash": "8ef53ade96bc257c38f114cac320c60514ea11cc1950abda0bffae2bd1d46b36",
-          "height": 600,
-          "key": "personal-site/media/8ef53ade96bc257c38f114cac320c60514ea11cc1950abda0bffae2bd1d46b36.png",
-          "mime": "image/png",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/8ef53ade96bc257c38f114cac320c60514ea11cc1950abda0bffae2bd1d46b36.png",
-          "width": 1200
-        },
-        "pipelineVersion": 1,
-        "source": {
-          "edited": "https://opengraph.githubassets.com/9fa3d57f4eca5e66f867a02200d0c9f6070a6cfd65e94bc1e7b7014c6b10b13e/webtorrent/webtorrent",
-          "key": "bookmark:db0ddf87955ea2466d74c6a2fe1c1b7c1fce61c848017bb4a9c2c20eb57334d9",
-          "kind": "external",
-          "url": "https://opengraph.githubassets.com/9fa3d57f4eca5e66f867a02200d0c9f6070a6cfd65e94bc1e7b7014c6b10b13e/webtorrent/webtorrent"
-        },
-        "variants": [
-          {
-            "bytes": 17248,
-            "hash": "99c6a2ce9096e810757fbcae98e8bce9aaa2c3909099dbdd6399498dc4e9520d",
-            "height": 480,
-            "key": "personal-site/media/99c6a2ce9096e810757fbcae98e8bce9aaa2c3909099dbdd6399498dc4e9520d.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/99c6a2ce9096e810757fbcae98e8bce9aaa2c3909099dbdd6399498dc4e9520d.webp",
-            "width": 960
-          },
-          {
-            "bytes": 28342,
-            "hash": "aa4e3b736074ccf84ba8a96684a5c43fa13ed4951d3ebb6d2adfb939f325a648",
-            "height": 600,
-            "key": "personal-site/media/aa4e3b736074ccf84ba8a96684a5c43fa13ed4951d3ebb6d2adfb939f325a648.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/aa4e3b736074ccf84ba8a96684a5c43fa13ed4951d3ebb6d2adfb939f325a648.webp",
-            "width": 1200
-          }
-        ]
-      },
-      "title": "GitHub - webtorrent/webtorrent: ⚡️ Streaming torrent client for the web"
     },
     "https://growth.design/": {
       "description": "Level up your product skills with bite-sized tips. Learn the growth & design strategies used by the top product companies in the world.",
@@ -76966,49 +76657,6 @@
       "description": "",
       "title": ""
     },
-    "https://react-notion-x-demo.transitivebullsh.it/": {
-      "description": "React Notion X Demo",
-      "image": {
-        "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoIAAQAA4BaJZACdEf/gbh54FYA/tPcDBeGPBa8hCoYbRQFfNLtU+L9c6Ep8j3CaAA=",
-        "original": {
-          "bytes": 74446,
-          "hash": "646956c7a1b688bf63f20a6f3fc7d8697a73da97fd1b3e1681035fdc8bb31238",
-          "height": 640,
-          "key": "personal-site/media/646956c7a1b688bf63f20a6f3fc7d8697a73da97fd1b3e1681035fdc8bb31238.jpg",
-          "mime": "image/jpeg",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/646956c7a1b688bf63f20a6f3fc7d8697a73da97fd1b3e1681035fdc8bb31238.jpg",
-          "width": 1280
-        },
-        "pipelineVersion": 1,
-        "source": {
-          "edited": "https://react-notion-x-demo.transitivebullsh.it/social.jpg",
-          "key": "bookmark:dd72c0b08ad3754dcd02200969e034a91f3dba46e0d6610cc3741bcf890ec7b2",
-          "kind": "external",
-          "url": "https://react-notion-x-demo.transitivebullsh.it/social.jpg"
-        },
-        "variants": [
-          {
-            "bytes": 16026,
-            "hash": "9e3da0b9809238931ca691b726dc54209bed4a41e9828e3a31a1c8c7f6292730",
-            "height": 480,
-            "key": "personal-site/media/9e3da0b9809238931ca691b726dc54209bed4a41e9828e3a31a1c8c7f6292730.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/9e3da0b9809238931ca691b726dc54209bed4a41e9828e3a31a1c8c7f6292730.webp",
-            "width": 960
-          },
-          {
-            "bytes": 32394,
-            "hash": "17b0205c1f3303fee65d96af511542f540e1315292892ef49e6a2ee48ad39dac",
-            "height": 640,
-            "key": "personal-site/media/17b0205c1f3303fee65d96af511542f540e1315292892ef49e6a2ee48ad39dac.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/17b0205c1f3303fee65d96af511542f540e1315292892ef49e6a2ee48ad39dac.webp",
-            "width": 1280
-          }
-        ]
-      },
-      "title": "Notion Kit Test Suite"
-    },
     "https://render.betaworks.com/announcing-the-next-betaworks-camp-program-ai-camp-agents-13e9a404ad47": {
       "description": "",
       "title": ""
@@ -77098,49 +76746,6 @@
         ]
       },
       "title": "50 Questions to Find a Co-Founder and a Startup Idea"
-    },
-    "https://sklearn.vercel.app/": {
-      "description": "An open source TS package which enables Node.js devs to use Python's powerful scikit-learn machine learning library – without having to know any Python. 🤯",
-      "image": {
-        "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAAAwAQCdASoIAAQAA4BaJYwAA3AA/vLVLHQw8C/6WYltY163PLuBlJlwAAA=",
-        "original": {
-          "bytes": 136697,
-          "hash": "7cab8aa3e15b16bb852e1c81fb0e91d2c08a657df6257757650d998d37e3b668",
-          "height": 1260,
-          "key": "personal-site/media/7cab8aa3e15b16bb852e1c81fb0e91d2c08a657df6257757650d998d37e3b668.png",
-          "mime": "image/png",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/7cab8aa3e15b16bb852e1c81fb0e91d2c08a657df6257757650d998d37e3b668.png",
-          "width": 2400
-        },
-        "pipelineVersion": 1,
-        "source": {
-          "edited": "https://sklearn.vercel.app/social.png",
-          "key": "bookmark:4ef1186d410551298256fb7a7e1b12e0786c9675fa60defd7b36d6ea80671df8",
-          "kind": "external",
-          "url": "https://sklearn.vercel.app/social.png"
-        },
-        "variants": [
-          {
-            "bytes": 14978,
-            "hash": "245f47aa616da7922e0323121966e09976413cb34e0b07b519af0e4470a7ea4c",
-            "height": 504,
-            "key": "personal-site/media/245f47aa616da7922e0323121966e09976413cb34e0b07b519af0e4470a7ea4c.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/245f47aa616da7922e0323121966e09976413cb34e0b07b519af0e4470a7ea4c.webp",
-            "width": 960
-          },
-          {
-            "bytes": 43986,
-            "hash": "116f8be4d49ee8650de317b156250f14b099a4dec62ca9dd7aa9bcdf4178960d",
-            "height": 1008,
-            "key": "personal-site/media/116f8be4d49ee8650de317b156250f14b099a4dec62ca9dd7aa9bcdf4178960d.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/116f8be4d49ee8650de317b156250f14b099a4dec62ca9dd7aa9bcdf4178960d.webp",
-            "width": 1920
-          }
-        ]
-      },
-      "title": "sklearn"
     },
     "https://stratechery.com/2021/clubhouses-inevitability/": {
       "description": "Clubhouse will do for audio what Twitter, Instagram Stories, and TikTok did for text, images, and video.",
@@ -77557,49 +77162,6 @@
         ]
       },
       "title": "The Future of Social Audio: Startups, Roadmap, Business Models, and a Forecast - Jeremiah Owyang"
-    },
-    "https://webtorrent.io/": {
-      "description": "WebTorrent, the streaming torrent client for the browser, Mac, Windows, and Linux",
-      "image": {
-        "blurDataURL": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSD0AAAABYBXbtpJ7K7z3gBAO5TSEWxkv5XC+XoeImAMme1ocYlEcwFnJBPf7XkhT3MCNXJPFWszuAq7RYgrXPSIGAFZQOCBGAAAA8AEAnQEqCAAIAAOAWiWwAnRtfwJ8vTbQAP7NqggMfehv7+LAh5HKAYqsHN3/ZqSizYV30f7cKeKq7D9Yp/Bv+q5/HfOwAA==",
-        "original": {
-          "bytes": 51497,
-          "hash": "41614376e7c39a7ef2e3d03983b7af68013bf66bbd746561dea34e729202848e",
-          "height": 1000,
-          "key": "personal-site/media/41614376e7c39a7ef2e3d03983b7af68013bf66bbd746561dea34e729202848e.png",
-          "mime": "image/png",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/41614376e7c39a7ef2e3d03983b7af68013bf66bbd746561dea34e729202848e.png",
-          "width": 1000
-        },
-        "pipelineVersion": 1,
-        "source": {
-          "edited": "https://webtorrent.io/img/WebTorrent.png",
-          "key": "bookmark:5e620fb24d39d3824d178521b967b8b4d85b065fcf797b1253688e865391ed9a",
-          "kind": "external",
-          "url": "https://webtorrent.io/img/WebTorrent.png"
-        },
-        "variants": [
-          {
-            "bytes": 25990,
-            "hash": "7e2fd34651616bc49d10dde12ba4bf88fe8d5f72b04488bb43d11a45a2b6ddb4",
-            "height": 960,
-            "key": "personal-site/media/7e2fd34651616bc49d10dde12ba4bf88fe8d5f72b04488bb43d11a45a2b6ddb4.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/7e2fd34651616bc49d10dde12ba4bf88fe8d5f72b04488bb43d11a45a2b6ddb4.webp",
-            "width": 960
-          },
-          {
-            "bytes": 19628,
-            "hash": "69b8edf29ea146845d285c954e20ec7472ccbf3f3981edac490dbed9b9243f1d",
-            "height": 1000,
-            "key": "personal-site/media/69b8edf29ea146845d285c954e20ec7472ccbf3f3981edac490dbed9b9243f1d.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/69b8edf29ea146845d285c954e20ec7472ccbf3f3981edac490dbed9b9243f1d.webp",
-            "width": 1000
-          }
-        ]
-      },
-      "title": "WebTorrent - Streaming browser torrent client"
     },
     "https://www.langchain.com/blog/what-is-an-agent": {
       "description": "Learn what AI agents are, how they work in an LLM loop, and where workflows fit so you can build reliable, production-ready autonomous systems.",
@@ -79478,7 +79040,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:38:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3c5edb27f1248016b5cce12e4e9386dd:cover",
         "kind": "file"
       },
@@ -79516,7 +79078,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:38:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3c5edb27f1248016b5cce12e4e9386dd:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/4705ad8f-3827-4e5b-a538-f8f1d231d790/hrg-icon.png"
@@ -79546,7 +79108,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:28:00.000Z",
+        "edited": "2026-09-16T09:01:00.000Z",
         "key": "3c5edb27f124801c9faae26f7dcba5ce:cover",
         "kind": "file"
       },
@@ -79584,7 +79146,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:28:00.000Z",
+        "edited": "2026-09-16T09:01:00.000Z",
         "key": "3c5edb27f124801c9faae26f7dcba5ce:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/3ec7ff8a-929a-4361-8193-5ba6a2413c55/image.png"
@@ -79639,80 +79201,79 @@
         }
       ]
     },
-    "3c5edb27f124803e9df1c9bb01a4e1f8": {
-      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAQAA4BaJZwAAtz5JUAA/vWDpEi9jo+hFExqnehAAA==",
+    "3c5edb27f124802aab9dc3396f5cfcbf:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAQAA4BaJYwAAveDlq4gAP7s3+e3/leqGBSHoz1OC9T5oAA=",
       "original": {
-        "bytes": 487367,
-        "hash": "c19cac9239ac2053f2acf636f8cc5e63b847db8350898206c6143598eac98fcf",
-        "height": 1024,
-        "key": "personal-site/media/c19cac9239ac2053f2acf636f8cc5e63b847db8350898206c6143598eac98fcf.png",
-        "mime": "image/png",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/c19cac9239ac2053f2acf636f8cc5e63b847db8350898206c6143598eac98fcf.png",
-        "width": 2048
+        "bytes": 366354,
+        "hash": "bb056a9eb5d450fce2167b0695e8b9836ff516fc2491835b9989c2e6fbd68fde",
+        "height": 941,
+        "key": "personal-site/media/bb056a9eb5d450fce2167b0695e8b9836ff516fc2491835b9989c2e6fbd68fde.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/bb056a9eb5d450fce2167b0695e8b9836ff516fc2491835b9989c2e6fbd68fde.jpg",
+        "width": 1672
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-08-23T15:44:00.000Z",
-        "key": "3c5edb27f124803e9df1c9bb01a4e1f8",
+        "edited": "2026-09-16T09:11:00.000Z",
+        "key": "3c5edb27f124802aab9dc3396f5cfcbf:cover",
         "kind": "file"
       },
       "variants": [
         {
-          "bytes": 11842,
-          "hash": "97c0db5841a142f1568021f45142a39451f20cf7bbafccd849e549da98e2559c",
-          "height": 480,
-          "key": "personal-site/media/97c0db5841a142f1568021f45142a39451f20cf7bbafccd849e549da98e2559c.webp",
+          "bytes": 41648,
+          "hash": "54fe1fee375c9ddb8eb8d440da601eec08684f12a0d9b2dde8da0f9fa02f76fd",
+          "height": 540,
+          "key": "personal-site/media/54fe1fee375c9ddb8eb8d440da601eec08684f12a0d9b2dde8da0f9fa02f76fd.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/97c0db5841a142f1568021f45142a39451f20cf7bbafccd849e549da98e2559c.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/54fe1fee375c9ddb8eb8d440da601eec08684f12a0d9b2dde8da0f9fa02f76fd.webp",
           "width": 960
         },
         {
-          "bytes": 45250,
-          "hash": "fc628bb07ee88d87bee6612bbef0d796435d5b00214b3a0a07da690d177edcda",
-          "height": 960,
-          "key": "personal-site/media/fc628bb07ee88d87bee6612bbef0d796435d5b00214b3a0a07da690d177edcda.webp",
+          "bytes": 153428,
+          "hash": "fb0c7893399bc754c9923ca9726305bad8ee29b2bced49263d97f38b88af3c4e",
+          "height": 941,
+          "key": "personal-site/media/fb0c7893399bc754c9923ca9726305bad8ee29b2bced49263d97f38b88af3c4e.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/fc628bb07ee88d87bee6612bbef0d796435d5b00214b3a0a07da690d177edcda.webp",
-          "width": 1920
+          "url": "https://assets.cultural-alignment.com/personal-site/media/fb0c7893399bc754c9923ca9726305bad8ee29b2bced49263d97f38b88af3c4e.webp",
+          "width": 1672
         }
       ]
     },
     "3c5edb27f1248074a45bc63ab79f87fd:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoIAAUAA4BaJbACdAEfble+DiAA/omNpv/3MklvDbiUU9nmXTEKfsU0aAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoIAAQAA4BaJZwAAu18scAAAP727a4FWcq9asFp5Exg6AAA",
       "original": {
-        "bytes": 4253467,
-        "hash": "8a5a1836053f50a26c285939cea0d5f5d7b9fb4906d19f17a6ac8d6bea047a45",
-        "height": 2880,
-        "key": "personal-site/media/8a5a1836053f50a26c285939cea0d5f5d7b9fb4906d19f17a6ac8d6bea047a45.jpg",
+        "bytes": 217312,
+        "hash": "e4a40525e8f10df5423398d07edabc4ec121c8c59a711c114cda8798916fb2e7",
+        "height": 941,
+        "key": "personal-site/media/e4a40525e8f10df5423398d07edabc4ec121c8c59a711c114cda8798916fb2e7.jpg",
         "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/8a5a1836053f50a26c285939cea0d5f5d7b9fb4906d19f17a6ac8d6bea047a45.jpg",
-        "width": 5120
+        "url": "https://assets.cultural-alignment.com/personal-site/media/e4a40525e8f10df5423398d07edabc4ec121c8c59a711c114cda8798916fb2e7.jpg",
+        "width": 1672
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:50:00.000Z",
+        "edited": "2026-09-16T09:08:00.000Z",
         "key": "3c5edb27f1248074a45bc63ab79f87fd:cover",
-        "kind": "external",
-        "url": "https://images.unsplash.com/photo-1635776062764-e025521e3df3?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb"
+        "kind": "file"
       },
       "variants": [
         {
-          "bytes": 94776,
-          "hash": "7f8cb64d8ea4e1b6214833e564073712966bd5fc454f404b5ebaec6a848063da",
+          "bytes": 20016,
+          "hash": "c521ea0062e81a34d0b857a582034ef722e4719715af7a4e9557e6dfaf511ff0",
           "height": 540,
-          "key": "personal-site/media/7f8cb64d8ea4e1b6214833e564073712966bd5fc454f404b5ebaec6a848063da.webp",
+          "key": "personal-site/media/c521ea0062e81a34d0b857a582034ef722e4719715af7a4e9557e6dfaf511ff0.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/7f8cb64d8ea4e1b6214833e564073712966bd5fc454f404b5ebaec6a848063da.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/c521ea0062e81a34d0b857a582034ef722e4719715af7a4e9557e6dfaf511ff0.webp",
           "width": 960
         },
         {
-          "bytes": 874434,
-          "hash": "d5f101c89e3fa83df657207d1c836462725b44a603368c2e2919c8d2307fec74",
-          "height": 1080,
-          "key": "personal-site/media/d5f101c89e3fa83df657207d1c836462725b44a603368c2e2919c8d2307fec74.webp",
+          "bytes": 68278,
+          "hash": "69b6883afa300a1f31fab42fcef773d159ca244cbaae98858ff053f55705be2b",
+          "height": 941,
+          "key": "personal-site/media/69b6883afa300a1f31fab42fcef773d159ca244cbaae98858ff053f55705be2b.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/d5f101c89e3fa83df657207d1c836462725b44a603368c2e2919c8d2307fec74.webp",
-          "width": 1920
+          "url": "https://assets.cultural-alignment.com/personal-site/media/69b6883afa300a1f31fab42fcef773d159ca244cbaae98858ff053f55705be2b.webp",
+          "width": 1672
         }
       ]
     },
@@ -79729,7 +79290,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:50:00.000Z",
+        "edited": "2026-09-16T09:08:00.000Z",
         "key": "3c5edb27f1248074a45bc63ab79f87fd:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/cbd55fe8-ea1e-420a-a033-a5f238ca52e8/webtorrent.png"
@@ -79756,40 +79317,40 @@
       ]
     },
     "3c5edb27f124809abdc5fc63ce0739ed:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoIAAUAA4BaJaACdAD5hLjH3AD+3bSSy0PM0Xy3r9q83annrXL3quZ5fYMAXrCq/iVoAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAQAA4BaJaQAAveIiF4AAP7v/TrNYdoICekjxN6LbY4AAAA=",
       "original": {
-        "bytes": 54836,
-        "hash": "00070b1e304513f5f9131cfd081b1b947a41e091bec70ca06f2bca8a8e60d828",
-        "height": 1152,
-        "key": "personal-site/media/00070b1e304513f5f9131cfd081b1b947a41e091bec70ca06f2bca8a8e60d828.jpg",
+        "bytes": 235634,
+        "hash": "743a2d841adbd265f5ca5ab2445b0c883c0d28a29e77f30e0c1f2069ad0877ed",
+        "height": 941,
+        "key": "personal-site/media/743a2d841adbd265f5ca5ab2445b0c883c0d28a29e77f30e0c1f2069ad0877ed.jpg",
         "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/00070b1e304513f5f9131cfd081b1b947a41e091bec70ca06f2bca8a8e60d828.jpg",
-        "width": 2048
+        "url": "https://assets.cultural-alignment.com/personal-site/media/743a2d841adbd265f5ca5ab2445b0c883c0d28a29e77f30e0c1f2069ad0877ed.jpg",
+        "width": 1672
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:18:00.000Z",
+        "edited": "2026-09-16T09:07:00.000Z",
         "key": "3c5edb27f124809abdc5fc63ce0739ed:cover",
         "kind": "file"
       },
       "variants": [
         {
-          "bytes": 6906,
-          "hash": "c77237e6e12e57e3185ec43dfd1a862bd06571d6b02a7d25d64dab4fc50d4f87",
+          "bytes": 18832,
+          "hash": "d24ea2fc98b0ea27db8503dbc6664f739640c9a91ed40c470c669e535fe9cc12",
           "height": 540,
-          "key": "personal-site/media/c77237e6e12e57e3185ec43dfd1a862bd06571d6b02a7d25d64dab4fc50d4f87.webp",
+          "key": "personal-site/media/d24ea2fc98b0ea27db8503dbc6664f739640c9a91ed40c470c669e535fe9cc12.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/c77237e6e12e57e3185ec43dfd1a862bd06571d6b02a7d25d64dab4fc50d4f87.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/d24ea2fc98b0ea27db8503dbc6664f739640c9a91ed40c470c669e535fe9cc12.webp",
           "width": 960
         },
         {
-          "bytes": 34130,
-          "hash": "5ddbd353e27e73e957700c23a1f650aa055928a49b600ddebd049ab20e9f3706",
-          "height": 1080,
-          "key": "personal-site/media/5ddbd353e27e73e957700c23a1f650aa055928a49b600ddebd049ab20e9f3706.webp",
+          "bytes": 69980,
+          "hash": "eadc38f1815edf91a0a5b08cef12be7c748ce0b8f85f4ef9651ed531397a6c36",
+          "height": 941,
+          "key": "personal-site/media/eadc38f1815edf91a0a5b08cef12be7c748ce0b8f85f4ef9651ed531397a6c36.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/5ddbd353e27e73e957700c23a1f650aa055928a49b600ddebd049ab20e9f3706.webp",
-          "width": 1920
+          "url": "https://assets.cultural-alignment.com/personal-site/media/eadc38f1815edf91a0a5b08cef12be7c748ce0b8f85f4ef9651ed531397a6c36.webp",
+          "width": 1672
         }
       ]
     },
@@ -79806,7 +79367,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:18:00.000Z",
+        "edited": "2026-09-16T09:07:00.000Z",
         "key": "3c5edb27f124809abdc5fc63ce0739ed:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/9555a6c9-8660-4e6f-b3c9-96c15f240cfd/ts-logo-512.svg"
@@ -79826,7 +79387,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:28:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3c5edb27f124809db2a5fc2da1aff6ab:cover",
         "kind": "file"
       },
@@ -79864,7 +79425,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:28:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3c5edb27f124809db2a5fc2da1aff6ab:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/9da65059-c6ac-4368-9a4f-ae547ef8962c/agentic-icon-circle-light.svg"
@@ -79884,7 +79445,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:52:00.000Z",
+        "edited": "2026-09-16T09:08:00.000Z",
         "key": "3c5edb27f124809e8eefdc0bf95f4474:cover",
         "kind": "file"
       },
@@ -79922,7 +79483,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:52:00.000Z",
+        "edited": "2026-09-16T09:08:00.000Z",
         "key": "3c5edb27f124809e8eefdc0bf95f4474:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/d2fb41df-8c10-4c6d-a402-6353d625420e/icon.svg"
@@ -79942,7 +79503,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:38:00.000Z",
+        "edited": "2026-09-16T09:10:00.000Z",
         "key": "3c5edb27f12480a59a4bd520e5721e5e:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/media/FrHr94YacAA9Dod.jpg"
@@ -79981,7 +79542,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:38:00.000Z",
+        "edited": "2026-09-16T09:10:00.000Z",
         "key": "3c5edb27f12480a59a4bd520e5721e5e:icon",
         "kind": "external",
         "url": "https://sklearn.vercel.app/favicon-32.png"
@@ -80037,70 +79598,40 @@
       ]
     },
     "3c5edb27f12480cbbf85d490b05a58f3:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAABwAQCdASoIAAgAA4BaJagCdAF1AAD+8eeUzMHy6NJX9CtNd6XVK8rUpoAAAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAQAA4BaJQBOgCLKGbioAADifsH8uk85XDsTdV02ClIbjme5sAAA",
       "original": {
-        "bytes": 103445,
-        "hash": "c59511ae003f6a2c3b34260dea43baf961784805e2cb0c67584aa3d4b25011dd",
-        "height": 480,
-        "key": "personal-site/media/c59511ae003f6a2c3b34260dea43baf961784805e2cb0c67584aa3d4b25011dd.png",
-        "mime": "image/png",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/c59511ae003f6a2c3b34260dea43baf961784805e2cb0c67584aa3d4b25011dd.png",
-        "width": 480
+        "bytes": 281576,
+        "hash": "d67aec31f6e466ca42b19e263f2d049acdbdc6db0c73fce4c84090323208b32d",
+        "height": 941,
+        "key": "personal-site/media/d67aec31f6e466ca42b19e263f2d049acdbdc6db0c73fce4c84090323208b32d.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/d67aec31f6e466ca42b19e263f2d049acdbdc6db0c73fce4c84090323208b32d.jpg",
+        "width": 1672
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:50:00.000Z",
+        "edited": "2026-09-16T09:03:00.000Z",
         "key": "3c5edb27f12480cbbf85d490b05a58f3:cover",
-        "kind": "external",
-        "url": "https://raw.githubusercontent.com/transitive-bullshit/Milton/master/mlt/docs/sceneformat/images/dof/dofCenter.png"
-      },
-      "variants": [
-        {
-          "bytes": 2070,
-          "hash": "324b7751178d2248f72ec66d752629f8406faa90b59e748061695dc6b139a7a5",
-          "height": 480,
-          "key": "personal-site/media/324b7751178d2248f72ec66d752629f8406faa90b59e748061695dc6b139a7a5.webp",
-          "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/324b7751178d2248f72ec66d752629f8406faa90b59e748061695dc6b139a7a5.webp",
-          "width": 480
-        }
-      ]
-    },
-    "3c5edb27f12480d4a9c2e9cb05d259d1": {
-      "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAAAwAQCdASoIAAQAA4BaJYwAA3AA/vLVLHQw8C/6WYltY163PLuBlJlwAAA=",
-      "original": {
-        "bytes": 431910,
-        "hash": "bf09436ee0b726e0160b2c4b60686b176b986b698346c1e1c017d6a5ad5d11eb",
-        "height": 1260,
-        "key": "personal-site/media/bf09436ee0b726e0160b2c4b60686b176b986b698346c1e1c017d6a5ad5d11eb.png",
-        "mime": "image/png",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/bf09436ee0b726e0160b2c4b60686b176b986b698346c1e1c017d6a5ad5d11eb.png",
-        "width": 2400
-      },
-      "pipelineVersion": 1,
-      "source": {
-        "edited": "2026-08-23T15:40:00.000Z",
-        "key": "3c5edb27f12480d4a9c2e9cb05d259d1",
         "kind": "file"
       },
       "variants": [
         {
-          "bytes": 14888,
-          "hash": "364e7bca9e79827e473482a2c6581b7504f89fa965a90a8ba5dda15eb8bed5a5",
-          "height": 504,
-          "key": "personal-site/media/364e7bca9e79827e473482a2c6581b7504f89fa965a90a8ba5dda15eb8bed5a5.webp",
+          "bytes": 24468,
+          "hash": "3584c8e68436e632d038f175f90252086104fa8518cf54d8227ac7dba5fc7bb6",
+          "height": 540,
+          "key": "personal-site/media/3584c8e68436e632d038f175f90252086104fa8518cf54d8227ac7dba5fc7bb6.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/364e7bca9e79827e473482a2c6581b7504f89fa965a90a8ba5dda15eb8bed5a5.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/3584c8e68436e632d038f175f90252086104fa8518cf54d8227ac7dba5fc7bb6.webp",
           "width": 960
         },
         {
-          "bytes": 44112,
-          "hash": "fb6a71eb2e36b65bc67e028450749d0c9a0f398565b0fe1555a5c4f12e35fc33",
-          "height": 1008,
-          "key": "personal-site/media/fb6a71eb2e36b65bc67e028450749d0c9a0f398565b0fe1555a5c4f12e35fc33.webp",
+          "bytes": 86212,
+          "hash": "99b89cc5246384a45146479a73ffed9a433ee1ce98ef52a14b94090aec331a3d",
+          "height": 941,
+          "key": "personal-site/media/99b89cc5246384a45146479a73ffed9a433ee1ce98ef52a14b94090aec331a3d.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/fb6a71eb2e36b65bc67e028450749d0c9a0f398565b0fe1555a5c4f12e35fc33.webp",
-          "width": 1920
+          "url": "https://assets.cultural-alignment.com/personal-site/media/99b89cc5246384a45146479a73ffed9a433ee1ce98ef52a14b94090aec331a3d.webp",
+          "width": 1672
         }
       ]
     },
@@ -80117,7 +79648,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:52:00.000Z",
+        "edited": "2026-09-16T09:05:00.000Z",
         "key": "3c5edb27f12480db8ab5f4b6fdb72331:cover",
         "kind": "external",
         "url": "https://www.ticalc.org/archives/files/ss/463/46308.gif"
@@ -80137,7 +79668,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:52:00.000Z",
+        "edited": "2026-09-16T09:05:00.000Z",
         "key": "3c5edb27f12480dca152d5c2e5551272:cover",
         "kind": "external",
         "url": "http://mipscope.cs.brown.edu/screenshot-small.png"
@@ -80167,7 +79698,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:52:00.000Z",
+        "edited": "2026-09-16T09:05:00.000Z",
         "key": "3c5edb27f12480dca152d5c2e5551272:icon",
         "kind": "external",
         "url": "https://raw.githubusercontent.com/transitive-bullshit/mipscope/master/src/gui/images/logo.png"
@@ -80197,7 +79728,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:50:00.000Z",
+        "edited": "2026-09-16T09:10:00.000Z",
         "key": "3c5edb27f12480e39f5def11519f5553:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/media/GlhmeVQaQAEqYDL.jpg"
@@ -80236,7 +79767,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:50:00.000Z",
+        "edited": "2026-09-16T09:10:00.000Z",
         "key": "3c5edb27f12480e39f5def11519f5553:icon",
         "kind": "external",
         "url": "https://severance.transitivebullsh.it/icon.svg?8b90c370817613cf"
@@ -80282,40 +79813,40 @@
       ]
     },
     "3ddedb27f124807bb39ecda2ff1548c6:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoIAAcAA4BaJQBOgCPtYfzAAP7RyRiDYy1lF+lYHwTGaN6t2XIQ70odj+dVHhG1nxeM5AAA",
+      "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoIAAQAA4BaJZwAAu19iKpQAP72QsnXGor+mTBlbRJfDyAA",
       "original": {
-        "bytes": 936431,
-        "hash": "3d247d3dd7f0fd5319ac9c183b8777a3d75f8b59e6cf2c4d85794c22f97de028",
-        "height": 1799,
-        "key": "personal-site/media/3d247d3dd7f0fd5319ac9c183b8777a3d75f8b59e6cf2c4d85794c22f97de028.jpg",
+        "bytes": 200347,
+        "hash": "41a5c872ceb141e072967db91fb80c7a091472482d8f29e089b716c1c3c45f18",
+        "height": 941,
+        "key": "personal-site/media/41a5c872ceb141e072967db91fb80c7a091472482d8f29e089b716c1c3c45f18.jpg",
         "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/3d247d3dd7f0fd5319ac9c183b8777a3d75f8b59e6cf2c4d85794c22f97de028.jpg",
-        "width": 1920
+        "url": "https://assets.cultural-alignment.com/personal-site/media/41a5c872ceb141e072967db91fb80c7a091472482d8f29e089b716c1c3c45f18.jpg",
+        "width": 1672
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:44:00.000Z",
+        "edited": "2026-09-16T09:15:00.000Z",
         "key": "3ddedb27f124807bb39ecda2ff1548c6:cover",
         "kind": "file"
       },
       "variants": [
         {
-          "bytes": 261214,
-          "hash": "fad8bd1f78ec97681bd538220f8af6d5c3c10c7daf767d3d17c4308495f3d5f7",
-          "height": 900,
-          "key": "personal-site/media/fad8bd1f78ec97681bd538220f8af6d5c3c10c7daf767d3d17c4308495f3d5f7.webp",
+          "bytes": 16324,
+          "hash": "d013b0ddd3e1d9fd29b940a434fde543ded0f274a03e31e13d4dc80118fd59cb",
+          "height": 540,
+          "key": "personal-site/media/d013b0ddd3e1d9fd29b940a434fde543ded0f274a03e31e13d4dc80118fd59cb.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/fad8bd1f78ec97681bd538220f8af6d5c3c10c7daf767d3d17c4308495f3d5f7.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/d013b0ddd3e1d9fd29b940a434fde543ded0f274a03e31e13d4dc80118fd59cb.webp",
           "width": 960
         },
         {
-          "bytes": 1089778,
-          "hash": "c95c528590cf659b02fd0abf29bf101343e7b346c023fd2f70882281df3dd387",
-          "height": 1799,
-          "key": "personal-site/media/c95c528590cf659b02fd0abf29bf101343e7b346c023fd2f70882281df3dd387.webp",
+          "bytes": 50018,
+          "hash": "ec8236e650e21e3ced480e5f24bfda1ca6c5f11fcc0925dc0d99146d83cf84de",
+          "height": 941,
+          "key": "personal-site/media/ec8236e650e21e3ced480e5f24bfda1ca6c5f11fcc0925dc0d99146d83cf84de.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/c95c528590cf659b02fd0abf29bf101343e7b346c023fd2f70882281df3dd387.webp",
-          "width": 1920
+          "url": "https://assets.cultural-alignment.com/personal-site/media/ec8236e650e21e3ced480e5f24bfda1ca6c5f11fcc0925dc0d99146d83cf84de.webp",
+          "width": 1672
         }
       ]
     },
@@ -80332,7 +79863,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:44:00.000Z",
+        "edited": "2026-09-16T09:15:00.000Z",
         "key": "3ddedb27f124807bb39ecda2ff1548c6:icon",
         "kind": "file"
       },
@@ -80351,7 +79882,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:31:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3ddedb27f12481059885e955643ddaf0:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/amplify_video_thumb/2094866745974759424/img/z7KuZN6BmUXoK3N6.jpg"
@@ -80390,7 +79921,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:31:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3ddedb27f12481059885e955643ddaf0:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/55eddaa1-688e-4a5b-9e3c-011b316d61ce/icon.svg"
@@ -80410,7 +79941,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:32:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3ddedb27f1248114a98ed3835e961d1e:cover",
         "kind": "external",
         "url": "https://raw.githubusercontent.com/transitive-bullshit/ai-safety-doom/main/docs/images/arrival.jpg"
@@ -80449,7 +79980,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:32:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3ddedb27f1248114a98ed3835e961d1e:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/423c75d7-5ab2-4b85-86c0-da3375a03bf3/icon.svg"
@@ -80469,7 +80000,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:31:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3ddedb27f12481258859d0cefc5f2da4:cover",
         "kind": "external",
         "url": "https://raw.githubusercontent.com/transitive-bullshit/reading-room/main/docs/assets/desktop-pile-0.jpg"
@@ -80508,12 +80039,50 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:31:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3ddedb27f12481258859d0cefc5f2da4:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/6c312b90-282f-4af1-ba4e-5de74782b3f6/icon.svg"
       },
       "variants": []
+    },
+    "3ddedb27f12481499a89eee57fda3967:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAQAA4BaJQBOgCLMJbYfAADeD+dVrQxgyWTk6mvn/yrIe6sQx737MYG6MgAA",
+      "original": {
+        "bytes": 651175,
+        "hash": "1e300aef6b47846df83dcc84d257ee1ee54390b274b249f73b3e60489e47e67c",
+        "height": 941,
+        "key": "personal-site/media/1e300aef6b47846df83dcc84d257ee1ee54390b274b249f73b3e60489e47e67c.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/1e300aef6b47846df83dcc84d257ee1ee54390b274b249f73b3e60489e47e67c.jpg",
+        "width": 1672
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-16T09:05:00.000Z",
+        "key": "3ddedb27f12481499a89eee57fda3967:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 88836,
+          "hash": "70d1db26d89b9ee093d217569fb2d8b6eb89ff8c50753f95ee9c0e483045cb08",
+          "height": 540,
+          "key": "personal-site/media/70d1db26d89b9ee093d217569fb2d8b6eb89ff8c50753f95ee9c0e483045cb08.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/70d1db26d89b9ee093d217569fb2d8b6eb89ff8c50753f95ee9c0e483045cb08.webp",
+          "width": 960
+        },
+        {
+          "bytes": 353340,
+          "hash": "0bf69bfba0f4504cd6c206c13572af0c0249c1108dc01212732a27b82201f835",
+          "height": 941,
+          "key": "personal-site/media/0bf69bfba0f4504cd6c206c13572af0c0249c1108dc01212732a27b82201f835.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/0bf69bfba0f4504cd6c206c13572af0c0249c1108dc01212732a27b82201f835.webp",
+          "width": 1672
+        }
+      ]
     },
     "3ddedb27f12481499a89eee57fda3967:icon": {
       "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoIAAgAA4BaJagCdG1/AnzEUOYAAPlpSG/ANHKbb0ONxeifxSncLeTuSrI4J38yZj1AstAx6wSn26gWUdwcpn5y/A32SuqZy9Yd128AAAA=",
@@ -80528,7 +80097,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:25:00.000Z",
+        "edited": "2026-09-16T09:05:00.000Z",
         "key": "3ddedb27f12481499a89eee57fda3967:icon",
         "kind": "file"
       },
@@ -80557,7 +80126,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:31:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3ddedb27f124815ba865d0f6b5b759f5:cover",
         "kind": "external",
         "url": "https://raw.githubusercontent.com/transitive-bullshit/retro-web-terminal/main/docs/demo.png"
@@ -80596,12 +80165,50 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:31:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3ddedb27f124815ba865d0f6b5b759f5:icon",
         "kind": "external",
         "url": "https://retro-web-terminal.vercel.app/favicon.svg"
       },
       "variants": []
+    },
+    "3ddedb27f12481629063e24b51da6fe6:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAQAA4BaJQBOgCHgl7WwAP7ranvZr+o38tD40Jb7SIQQm7AwAA==",
+      "original": {
+        "bytes": 266535,
+        "hash": "540c04e68274bed9c413ee43203846762184eb4fb1f3ba20b7a7109e7cc35241",
+        "height": 941,
+        "key": "personal-site/media/540c04e68274bed9c413ee43203846762184eb4fb1f3ba20b7a7109e7cc35241.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/540c04e68274bed9c413ee43203846762184eb4fb1f3ba20b7a7109e7cc35241.jpg",
+        "width": 1672
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-16T09:02:00.000Z",
+        "key": "3ddedb27f12481629063e24b51da6fe6:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 29012,
+          "hash": "3830268fb0a30fda150d4592354d5d704ae492a1e77c3b53edfdf1388da3e929",
+          "height": 540,
+          "key": "personal-site/media/3830268fb0a30fda150d4592354d5d704ae492a1e77c3b53edfdf1388da3e929.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/3830268fb0a30fda150d4592354d5d704ae492a1e77c3b53edfdf1388da3e929.webp",
+          "width": 960
+        },
+        {
+          "bytes": 89932,
+          "hash": "9f4a2e7a6d8242b825b49c26047deddc11bc593256b0ab648a3bed28f2a6ba58",
+          "height": 941,
+          "key": "personal-site/media/9f4a2e7a6d8242b825b49c26047deddc11bc593256b0ab648a3bed28f2a6ba58.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/9f4a2e7a6d8242b825b49c26047deddc11bc593256b0ab648a3bed28f2a6ba58.webp",
+          "width": 1672
+        }
+      ]
     },
     "3ddedb27f12481629063e24b51da6fe6:icon": {
       "blurDataURL": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSEEAAAAAAAABEQ0AAQoBABfpxgBaOQMAd///TkcZAA/a///YNAAAZv/8/9YvAAXP+Mh4r6sAVP9LAAB8/ywlOwMAAQ0+GwBWUDggOAAAAJABAJ0BKggACAADgFolnAACnB5FQAD+9fkpFveNDo9zwLWhpDC4xO4u60kwyajyD9aJGbBQYCAA",
@@ -80616,7 +80223,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:26:00.000Z",
+        "edited": "2026-09-16T09:02:00.000Z",
         "key": "3ddedb27f12481629063e24b51da6fe6:icon",
         "kind": "file"
       },
@@ -80654,7 +80261,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:31:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3ddedb27f1248186b064c993b8e155c6:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/amplify_video_thumb/2096133721955209216/img/b0n8ufOa4sWSMbrt.jpg"
@@ -80693,7 +80300,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:30:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3ddedb27f12481b7bdc4d0325b2f6171:cover",
         "kind": "external",
         "url": "https://raw.githubusercontent.com/transitive-bullshit/share-ai-passage/main/public/images/passage-before-after.jpg"
@@ -80732,7 +80339,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T08:30:00.000Z",
+        "edited": "2026-09-16T08:55:00.000Z",
         "key": "3ddedb27f12481b7bdc4d0325b2f6171:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/b5a901a9-0530-4441-89f7-28b07e41a03a/icon.svg"
@@ -80740,41 +80347,40 @@
       "variants": []
     },
     "3ddedb27f12481c1a145c3d546904768:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAQAA4BaJYwAAqscYB8AAP7p2+7Kqtr29tKEv2dBR7cSwluKcvAA",
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAUAA4BaJZQAAp0LKOAA/u9m7BGGzhq8NwJX91wVIYYm88htXdAA",
       "original": {
-        "bytes": 38177,
-        "hash": "5aee446fe11dc20b4d6d13a3da626a5ce9bc7e544af003d2570cfa5d845f1975",
-        "height": 675,
-        "key": "personal-site/media/5aee446fe11dc20b4d6d13a3da626a5ce9bc7e544af003d2570cfa5d845f1975.jpg",
+        "bytes": 80102,
+        "hash": "a33ad3f8db202d5e97dabe5eb80e092710fe300b598c17a4182eae1c5263d89b",
+        "height": 1080,
+        "key": "personal-site/media/a33ad3f8db202d5e97dabe5eb80e092710fe300b598c17a4182eae1c5263d89b.jpg",
         "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/5aee446fe11dc20b4d6d13a3da626a5ce9bc7e544af003d2570cfa5d845f1975.jpg",
-        "width": 1200
+        "url": "https://assets.cultural-alignment.com/personal-site/media/a33ad3f8db202d5e97dabe5eb80e092710fe300b598c17a4182eae1c5263d89b.jpg",
+        "width": 1920
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-16T07:48:00.000Z",
+        "edited": "2026-09-16T09:16:00.000Z",
         "key": "3ddedb27f12481c1a145c3d546904768:cover",
-        "kind": "external",
-        "url": "https://pbs.twimg.com/amplify_video_thumb/2099183972819619840/img/f03AZhnbeGnZ_kxH.jpg"
+        "kind": "file"
       },
       "variants": [
         {
-          "bytes": 12038,
-          "hash": "2bafd18b0a76642c6f227f3490e080eff67566608dd713075763984799fbab07",
+          "bytes": 14250,
+          "hash": "ad97cca73e8843a455542d8fc715d099a577d3e6e9127558bb476bf0787ab6f4",
           "height": 540,
-          "key": "personal-site/media/2bafd18b0a76642c6f227f3490e080eff67566608dd713075763984799fbab07.webp",
+          "key": "personal-site/media/ad97cca73e8843a455542d8fc715d099a577d3e6e9127558bb476bf0787ab6f4.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/2bafd18b0a76642c6f227f3490e080eff67566608dd713075763984799fbab07.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/ad97cca73e8843a455542d8fc715d099a577d3e6e9127558bb476bf0787ab6f4.webp",
           "width": 960
         },
         {
-          "bytes": 26584,
-          "hash": "3a4a869e5707cf03a9e7c435d405d7031d991a7bf99b9bc852433e455a7387ff",
-          "height": 675,
-          "key": "personal-site/media/3a4a869e5707cf03a9e7c435d405d7031d991a7bf99b9bc852433e455a7387ff.webp",
+          "bytes": 50710,
+          "hash": "6379a45f7768b90883d9ad7b9f0aec8a1b20dab2bd725b40bd22b0608c2ba4f8",
+          "height": 1080,
+          "key": "personal-site/media/6379a45f7768b90883d9ad7b9f0aec8a1b20dab2bd725b40bd22b0608c2ba4f8.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/3a4a869e5707cf03a9e7c435d405d7031d991a7bf99b9bc852433e455a7387ff.webp",
-          "width": 1200
+          "url": "https://assets.cultural-alignment.com/personal-site/media/6379a45f7768b90883d9ad7b9f0aec8a1b20dab2bd725b40bd22b0608c2ba4f8.webp",
+          "width": 1920
         }
       ]
     },
@@ -81149,45 +80755,6 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/2f5f87d7a70fe164622e693a8b2db8cdd39a8f909ce11291a7eda004e30e215c.webp",
           "width": 1658
-        }
-      ]
-    },
-    "4da64c5b0bb041b2a19526b9099ff6dd": {
-      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAQAA4BaJZwAAu18sg8AAP7zXD8V6zWaI0ZW1zjQbD24mmAAAA==",
-      "original": {
-        "bytes": 72633,
-        "hash": "313a800e541794e5a821c5324ee9276b30897136ebb4aec1f0db30c4ad5e771c",
-        "height": 675,
-        "key": "personal-site/media/313a800e541794e5a821c5324ee9276b30897136ebb4aec1f0db30c4ad5e771c.jpg",
-        "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/313a800e541794e5a821c5324ee9276b30897136ebb4aec1f0db30c4ad5e771c.jpg",
-        "width": 1200
-      },
-      "pipelineVersion": 1,
-      "source": {
-        "edited": "2026-09-16T07:38:00.000Z",
-        "key": "4da64c5b0bb041b2a19526b9099ff6dd",
-        "kind": "external",
-        "url": "https://pbs.twimg.com/media/Gu8jSvRbYAAP1tM.jpg"
-      },
-      "variants": [
-        {
-          "bytes": 28270,
-          "hash": "8edb7a61f1bfa1a8c4481c1da5fce3e9eb1bac0f29c8dbc7b7ec0ba0b3213300",
-          "height": 540,
-          "key": "personal-site/media/8edb7a61f1bfa1a8c4481c1da5fce3e9eb1bac0f29c8dbc7b7ec0ba0b3213300.webp",
-          "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/8edb7a61f1bfa1a8c4481c1da5fce3e9eb1bac0f29c8dbc7b7ec0ba0b3213300.webp",
-          "width": 960
-        },
-        {
-          "bytes": 53928,
-          "hash": "009cdabb4ca5af6e3d3c2d6c8a8c6a70af8e94da91473ec513f18830c7218c0e",
-          "height": 675,
-          "key": "personal-site/media/009cdabb4ca5af6e3d3c2d6c8a8c6a70af8e94da91473ec513f18830c7218c0e.webp",
-          "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/009cdabb4ca5af6e3d3c2d6c8a8c6a70af8e94da91473ec513f18830c7218c0e.webp",
-          "width": 1200
         }
       ]
     },
@@ -82365,6 +81932,22 @@
       },
       "variants": []
     },
+    "7f54bd5a38e343c097975e3e2d5d20c6": {
+      "original": {
+        "bytes": 72356645,
+        "hash": "97b3b7c8db20ae1bc155fbe76131fccc09fdf147f6103b7ad2e5e53344a023d5",
+        "key": "personal-site/media/97b3b7c8db20ae1bc155fbe76131fccc09fdf147f6103b7ad2e5e53344a023d5.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/97b3b7c8db20ae1bc155fbe76131fccc09fdf147f6103b7ad2e5e53344a023d5.mp4"
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-16T09:16:00.000Z",
+        "key": "7f54bd5a38e343c097975e3e2d5d20c6",
+        "kind": "file"
+      },
+      "variants": []
+    },
     "7f7a2098c7bf4b0fb6d191c5615ff95f": {
       "blurDataURL": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4WAoAAAAQAAAABwAAAQAAQUxQSBEAAAAAAAAFWFcFAAAAAAZaWQYAAABWUDggLgAAALABAJ0BKggAAgADgFolAE6AHpD/ecAA/uncHN0r3Ok0TecaBHiKxSqnhHcoAAA=",
       "original": {
@@ -83441,26 +83024,6 @@
           "width": 1600
         }
       ]
-    },
-    "9c354b99b2934e7e94a33fbb6b2e3a0b": {
-      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoIAAUAA4BaJaQAAxaly9NAAP6CoVmG0rEnVsvAAAA=",
-      "original": {
-        "bytes": 2135,
-        "hash": "53d653b2b7cbcdfb2c53a1f719893ee426713d40f3dbc643f4056095d282bd2a",
-        "height": 100,
-        "key": "personal-site/media/53d653b2b7cbcdfb2c53a1f719893ee426713d40f3dbc643f4056095d282bd2a.gif",
-        "mime": "image/gif",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/53d653b2b7cbcdfb2c53a1f719893ee426713d40f3dbc643f4056095d282bd2a.gif",
-        "width": 160
-      },
-      "pipelineVersion": 1,
-      "source": {
-        "edited": "2026-09-16T07:44:00.000Z",
-        "key": "9c354b99b2934e7e94a33fbb6b2e3a0b",
-        "kind": "external",
-        "url": "https://www.ticalc.org/archives/files/ss/463/46308.gif"
-      },
-      "variants": []
     },
     "9e8b394c266a43dda3658a94c4edf35d:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAUAA4BaJQBOgCHbUnGgAM4mKoJy0NCSYhfZt/ymnLclKRno7toAkAA=",
@@ -84661,36 +84224,6 @@
         }
       ]
     },
-    "bface8c089fb4e01af89ccd232a65b57": {
-      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAYAA4BaJYwC7AD0jw8rYAD+9lr7meM1bWBuHVHj+J/mhgOX4AAA",
-      "original": {
-        "bytes": 105348,
-        "hash": "93982d3bb0a5b09032256695251edab607f96bafff9a7d6ac443ab71e823cac2",
-        "height": 479,
-        "key": "personal-site/media/93982d3bb0a5b09032256695251edab607f96bafff9a7d6ac443ab71e823cac2.png",
-        "mime": "image/png",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/93982d3bb0a5b09032256695251edab607f96bafff9a7d6ac443ab71e823cac2.png",
-        "width": 600
-      },
-      "pipelineVersion": 1,
-      "source": {
-        "edited": "2026-09-16T07:43:00.000Z",
-        "key": "bface8c089fb4e01af89ccd232a65b57",
-        "kind": "external",
-        "url": "http://mipscope.cs.brown.edu/screenshot-small.png"
-      },
-      "variants": [
-        {
-          "bytes": 29358,
-          "hash": "c951ac1a177e73bc21c5cf0817d9d77a1af90fb02fba470dc73257faff57371e",
-          "height": 479,
-          "key": "personal-site/media/c951ac1a177e73bc21c5cf0817d9d77a1af90fb02fba470dc73257faff57371e.webp",
-          "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/c951ac1a177e73bc21c5cf0817d9d77a1af90fb02fba470dc73257faff57371e.webp",
-          "width": 600
-        }
-      ]
-    },
     "bff7582470034e69b6707c65aa71a234": {
       "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAABQAQCdASoIAAUAA4BaJZwABAAAAP7zI9nFWaxkp3tsBvhB1FWEL1EIAAA=",
       "original": {
@@ -85318,45 +84851,6 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/478fc66c52851a35e9a02fd97194f9454e08164fdbc3ce65bc0e128669d40770.webp",
           "width": 1920
-        }
-      ]
-    },
-    "d68b135541204e0cbff99990dc979bbc": {
-      "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoIAAYAA4BaJZwCdAFAAAD+8vmBgV3A2gwKqnigz7JxAAAA",
-      "original": {
-        "bytes": 201650,
-        "hash": "25b3ddd858038a5bae291cb14208df396c0df95c063b695a0a342dddb5a8a8a2",
-        "height": 1000,
-        "key": "personal-site/media/25b3ddd858038a5bae291cb14208df396c0df95c063b695a0a342dddb5a8a8a2.jpg",
-        "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/25b3ddd858038a5bae291cb14208df396c0df95c063b695a0a342dddb5a8a8a2.jpg",
-        "width": 1440
-      },
-      "pipelineVersion": 1,
-      "source": {
-        "edited": "2026-09-16T07:32:00.000Z",
-        "key": "d68b135541204e0cbff99990dc979bbc",
-        "kind": "external",
-        "url": "https://raw.githubusercontent.com/transitive-bullshit/ai-safety-doom/main/docs/images/arrival.jpg"
-      },
-      "variants": [
-        {
-          "bytes": 41758,
-          "hash": "405d07ae2288e72617bcdc5f7cd35152ecc32e3a51cca651717527baf0a4aca1",
-          "height": 667,
-          "key": "personal-site/media/405d07ae2288e72617bcdc5f7cd35152ecc32e3a51cca651717527baf0a4aca1.webp",
-          "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/405d07ae2288e72617bcdc5f7cd35152ecc32e3a51cca651717527baf0a4aca1.webp",
-          "width": 960
-        },
-        {
-          "bytes": 139880,
-          "hash": "f0693c689006209da834eaede85e1defbe4cc7caf0304cc3b933b4c32551e3e8",
-          "height": 1000,
-          "key": "personal-site/media/f0693c689006209da834eaede85e1defbe4cc7caf0304cc3b933b4c32551e3e8.webp",
-          "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/f0693c689006209da834eaede85e1defbe4cc7caf0304cc3b933b4c32551e3e8.webp",
-          "width": 1440
         }
       ]
     },
@@ -86278,36 +85772,6 @@
         }
       ]
     },
-    "ecd6859b9c994f3fa915b268bbdec994": {
-      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAABwAQCdASoIAAgAA4BaJagCdAF1AAD+8eeUzMHy6NJX9CtNd6XVK8rUpoAAAA==",
-      "original": {
-        "bytes": 103445,
-        "hash": "c59511ae003f6a2c3b34260dea43baf961784805e2cb0c67584aa3d4b25011dd",
-        "height": 480,
-        "key": "personal-site/media/c59511ae003f6a2c3b34260dea43baf961784805e2cb0c67584aa3d4b25011dd.png",
-        "mime": "image/png",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/c59511ae003f6a2c3b34260dea43baf961784805e2cb0c67584aa3d4b25011dd.png",
-        "width": 480
-      },
-      "pipelineVersion": 1,
-      "source": {
-        "edited": "2026-09-16T07:39:00.000Z",
-        "key": "ecd6859b9c994f3fa915b268bbdec994",
-        "kind": "external",
-        "url": "https://raw.githubusercontent.com/transitive-bullshit/Milton/master/mlt/docs/sceneformat/images/dof/dofCenter.png"
-      },
-      "variants": [
-        {
-          "bytes": 2070,
-          "hash": "324b7751178d2248f72ec66d752629f8406faa90b59e748061695dc6b139a7a5",
-          "height": 480,
-          "key": "personal-site/media/324b7751178d2248f72ec66d752629f8406faa90b59e748061695dc6b139a7a5.webp",
-          "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/324b7751178d2248f72ec66d752629f8406faa90b59e748061695dc6b139a7a5.webp",
-          "width": 480
-        }
-      ]
-    },
     "ed7e8f60c6d1449e840b5c7762505c44": {
       "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoIAAYAA4BaJZwAAl1kdmwAAP7wEfj+p/ltnNCp2P4c11Q04J3OyAAUsQH/yl4AAAA=",
       "original": {
@@ -86669,45 +86133,6 @@
         }
       ]
     },
-    "f974c46a67a84ed08652bafc910a552d": {
-      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoIAAQAA4BaJQBOiOAAQPgQkzAA/vF7nNyU0Zx713EiCj+DnLgkROhPaBGgAA==",
-      "original": {
-        "bytes": 74552,
-        "hash": "af08a1b07fed62f56a3db2b938cd450a9651f91ef19d6e396da36f58b5cd5309",
-        "height": 675,
-        "key": "personal-site/media/af08a1b07fed62f56a3db2b938cd450a9651f91ef19d6e396da36f58b5cd5309.jpg",
-        "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/af08a1b07fed62f56a3db2b938cd450a9651f91ef19d6e396da36f58b5cd5309.jpg",
-        "width": 1200
-      },
-      "pipelineVersion": 1,
-      "source": {
-        "edited": "2026-09-16T07:32:00.000Z",
-        "key": "f974c46a67a84ed08652bafc910a552d",
-        "kind": "external",
-        "url": "https://pbs.twimg.com/amplify_video_thumb/2096133721955209216/img/b0n8ufOa4sWSMbrt.jpg"
-      },
-      "variants": [
-        {
-          "bytes": 27806,
-          "hash": "4e7560a9ca92c3f2560c87e5b5e7b71815548c80a313326c67e2da7fa92e1815",
-          "height": 540,
-          "key": "personal-site/media/4e7560a9ca92c3f2560c87e5b5e7b71815548c80a313326c67e2da7fa92e1815.webp",
-          "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/4e7560a9ca92c3f2560c87e5b5e7b71815548c80a313326c67e2da7fa92e1815.webp",
-          "width": 960
-        },
-        {
-          "bytes": 56698,
-          "hash": "4c701c251f3a5075a8410d346a5ba0f367bcf9175b630316c47e8186c05831eb",
-          "height": 675,
-          "key": "personal-site/media/4c701c251f3a5075a8410d346a5ba0f367bcf9175b630316c47e8186c05831eb.webp",
-          "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/4c701c251f3a5075a8410d346a5ba0f367bcf9175b630316c47e8186c05831eb.webp",
-          "width": 1200
-        }
-      ]
-    },
     "fa40a8a4875c4f97b6c6845bc6083d83": {
       "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAUAA4BaJaQAAp1sr3oAAP7zyCAuw4fRt/T+YO8c0B1QsUA6vkyAAAA=",
       "original": {
@@ -86873,6 +86298,11 @@
       "aliases": [],
       "slug": "react-notion-x"
     },
+    "3c5edb27f124802aab9dc3396f5cfcbf": {
+      "active": true,
+      "aliases": [],
+      "slug": "kindle-ai-export"
+    },
     "3c5edb27f1248074a45bc63ab79f87fd": {
       "active": true,
       "aliases": [],
@@ -86979,79 +86409,6 @@
       ],
       "blocks": [
         {
-          "children": [],
-          "color": "default",
-          "id": "3ad026a290fb450eacdf7f993409ef1b",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "HRG was an experimental residency for ambitious indie hackers.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "67f1d387d1f74def8591cba425714d93",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://www.hackerresidencygroup.com/",
-              "italic": false,
-              "strike": false,
-              "text": "Website",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/HackerResidency/website",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/HackerResidency/status/1990435817844887586",
-              "italic": false,
-              "strike": false,
-              "text": "Launch / project post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "3c5edb27f12480128a6ed1879aa5a4e6",
@@ -87075,7 +86432,7 @@
         "type": "image"
       },
       "id": "3c5edb27f1248016b5cce12e4e9386dd",
-      "modified": "2026-09-16T07:38:00.000Z",
+      "modified": "2026-09-16T08:55:00.000Z",
       "published": "2026-01-01",
       "slug": "hrg",
       "source": "https://github.com/HackerResidency/website",
@@ -87095,79 +86452,6 @@
       ],
       "blocks": [
         {
-          "children": [],
-          "color": "default",
-          "id": "5de571db70da4ebd84809ef5b06c93ff",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "A fast, accurate React renderer for Notion, with TypeScript support.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "6f2ea2f430bc48d5874ec789d19b9339",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://react-notion-x-demo.transitivebullsh.it/",
-              "italic": false,
-              "strike": false,
-              "text": "Website",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/NotionX/react-notion-x",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/1351757627223638017",
-              "italic": false,
-              "strike": false,
-              "text": "Launch / project post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "ef3587014a6843ac94134b18cb8b7cd5",
@@ -87180,31 +86464,6 @@
           "color": "default",
           "id": "3c5edb27f1248099a303f9381c66f74b",
           "richText": [],
-          "type": "paragraph"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f12480b79bb5fcd23a7c6974",
-          "type": "bookmark",
-          "url": "https://react-notion-x-demo.transitivebullsh.it/"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "3c5edb27f124807f8a3dd73d5d012200",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://www.notion.so/067dd719a912471ea9a3ac10710e7fdf",
-              "italic": false,
-              "strike": false,
-              "text": "Linked page",
-              "underline": false
-            }
-          ],
           "type": "paragraph"
         },
         {
@@ -87223,7 +86482,7 @@
         "type": "image"
       },
       "id": "3c5edb27f124801c9faae26f7dcba5ce",
-      "modified": "2026-09-16T08:28:00.000Z",
+      "modified": "2026-09-16T09:01:00.000Z",
       "published": "2021-01-20",
       "slug": "react-notion-x",
       "source": "https://github.com/NotionX/react-notion-x",
@@ -87236,6 +86495,47 @@
       "tweet": "https://x.com/transitive_bs/status/1351757627223638017",
       "website": "https://react-notion-x-demo.transitivebullsh.it/"
     },
+    "3c5edb27f124802aab9dc3396f5cfcbf": {
+      "authors": [
+        {
+          "id": "b036f7f695a94f97b3b5c46867d0d103",
+          "name": "Travis Fischer"
+        }
+      ],
+      "blocks": [
+        {
+          "caption": [],
+          "children": [],
+          "id": "eb6eafe9e4084fb3882ade25943239e3",
+          "tweetId": "1843769535163433378",
+          "type": "embed",
+          "url": "https://x.com/transitive_bs/status/1843769535163433378"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3c5edb27f12480c897a8f08d0bf03dce",
+          "richText": [],
+          "type": "paragraph"
+        }
+      ],
+      "cover": "3c5edb27f124802aab9dc3396f5cfcbf:cover",
+      "description": "Export any Kindle book you own as text, PDF, EPUB, or as a custom, AI-narrated audiobook. ",
+      "featured": true,
+      "id": "3c5edb27f124802aab9dc3396f5cfcbf",
+      "modified": "2026-09-16T09:11:00.000Z",
+      "published": "2024-10-08",
+      "slug": "kindle-ai-export",
+      "source": "https://github.com/transitive-bullshit/kindle-ai-export",
+      "tags": [
+        "Node.js",
+        "Projects",
+        "TypeScript",
+        "OSS"
+      ],
+      "title": "Kindle AI Export",
+      "tweet": "https://x.com/transitive_bs/status/1843769535163433378"
+    },
     "3c5edb27f1248074a45bc63ab79f87fd": {
       "authors": [
         {
@@ -87247,77 +86547,9 @@
         {
           "children": [],
           "color": "default",
-          "id": "3f14a579da4f4b53a892d244d2ee8835",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "WebTorrent is a streaming torrent client for the web.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "973837b625c64d899ad0beb2dd312d33",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://webtorrent.io/",
-              "italic": false,
-              "strike": false,
-              "text": "Website",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/webtorrent/webtorrent",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
           "id": "3c5edb27f12480879891ed6a5571329e",
           "richText": [],
           "type": "paragraph"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f12480e39f86cf0693496c81",
-          "type": "bookmark",
-          "url": "https://webtorrent.io/"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f12480ef90adf79f31decc5f",
-          "type": "bookmark",
-          "url": "https://github.com/webtorrent/webtorrent"
         },
         {
           "children": [],
@@ -87349,7 +86581,7 @@
         "type": "image"
       },
       "id": "3c5edb27f1248074a45bc63ab79f87fd",
-      "modified": "2026-09-16T07:50:00.000Z",
+      "modified": "2026-09-16T09:08:00.000Z",
       "published": "2013-06-01",
       "slug": "webtorrent",
       "source": "https://github.com/webtorrent/webtorrent",
@@ -87368,23 +86600,6 @@
         }
       ],
       "blocks": [
-        {
-          "children": [],
-          "color": "default",
-          "id": "b9f5e259c540428993be4f46be50dfb1",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "TypeScript standard for rock solid serverless functions.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
         {
           "children": [],
           "color": "default",
@@ -87416,7 +86631,7 @@
         "type": "image"
       },
       "id": "3c5edb27f124809abdc5fc63ce0739ed",
-      "modified": "2026-09-16T08:18:00.000Z",
+      "modified": "2026-09-16T09:07:00.000Z",
       "published": "2019-01-24",
       "slug": "functional-typescript",
       "source": "https://github.com/transitive-bullshit/functional-typescript",
@@ -87436,96 +86651,6 @@
       ],
       "blocks": [
         {
-          "children": [],
-          "color": "default",
-          "id": "a11c312783034e1fb7d7981f15dd0b29",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "Agentic is an app store for LLM tools.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "caption": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "Agentic preview",
-              "underline": false
-            }
-          ],
-          "children": [],
-          "id": "4da64c5b0bb041b2a19526b9099ff6dd",
-          "media": "4da64c5b0bb041b2a19526b9099ff6dd",
-          "type": "image"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "d483eea198344a0eae7c6ed213a91c4c",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://agentic.so/",
-              "italic": false,
-              "strike": false,
-              "text": "Website",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/transitive-bullshit/agentic",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/1940808771821072687",
-              "italic": false,
-              "strike": false,
-              "text": "Launch / project post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "4e279a307b4f4b3ea99dbe869c73bee9",
@@ -87539,13 +86664,6 @@
           "id": "3c5edb27f124803783c7fe33807eb710",
           "richText": [],
           "type": "paragraph"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f12480f68707cf8ad76e3aca",
-          "type": "bookmark",
-          "url": "https://agentic.so/"
         }
       ],
       "cover": "3c5edb27f124809db2a5fc2da1aff6ab:cover",
@@ -87556,7 +86674,7 @@
         "type": "image"
       },
       "id": "3c5edb27f124809db2a5fc2da1aff6ab",
-      "modified": "2026-09-16T08:28:00.000Z",
+      "modified": "2026-09-16T08:55:00.000Z",
       "published": "2025-07-03",
       "slug": "agentic",
       "source": "https://github.com/transitive-bullshit/agentic",
@@ -87577,79 +86695,6 @@
         }
       ],
       "blocks": [
-        {
-          "children": [],
-          "color": "default",
-          "id": "d32847ff33174befbc4cd82bc22371eb",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "A community of developers, researchers, and enthusiasts building with AI.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "ff592b95e0f34b89a8264d8bc36820f9",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://chatgpthackers.transitivebullsh.it/",
-              "italic": false,
-              "strike": false,
-              "text": "Website",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/transitive-bullshit/chatgpt-hackers",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/1603661313493925889",
-              "italic": false,
-              "strike": false,
-              "text": "Launch / project post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
         {
           "caption": [],
           "children": [],
@@ -87674,20 +86719,6 @@
           "type": "paragraph"
         },
         {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f12480ef8ba4caa29218de1b",
-          "type": "bookmark",
-          "url": "https://chatgpthackers.transitivebullsh.it/"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f124809a9e4bf93c499bf4dc",
-          "type": "bookmark",
-          "url": "https://github.com/transitive-bullshit/chatgpt-hackers"
-        },
-        {
           "children": [],
           "color": "default",
           "id": "3c5edb27f12480358fa8c6cb4fe1da8e",
@@ -87703,7 +86734,7 @@
         "type": "image"
       },
       "id": "3c5edb27f124809e8eefdc0bf95f4474",
-      "modified": "2026-09-16T07:52:00.000Z",
+      "modified": "2026-09-16T09:08:00.000Z",
       "published": "2023-01-01",
       "slug": "chatgpt-hackers",
       "source": "https://github.com/transitive-bullshit/chatgpt-hackers",
@@ -87724,106 +86755,12 @@
       ],
       "blocks": [
         {
-          "children": [],
-          "color": "default",
-          "id": "5d187391684845798dbb036efbafd054",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "Python’s scikit-learn, with a typed Node.js API.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "94b69a8839b749c38c4e05eec61ea0d9",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://sklearn.vercel.app/",
-              "italic": false,
-              "strike": false,
-              "text": "Website",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/transitive-bullshit/scikit-learn-ts",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/1635347593256640513",
-              "italic": false,
-              "strike": false,
-              "text": "Launch / project post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "8121faee102e491ebc7618af6197f93e",
           "tweetId": "1635347593256640513",
           "type": "embed",
           "url": "https://x.com/transitive_bs/status/1635347593256640513"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f12480d4a9c2e9cb05d259d1",
-          "media": "3c5edb27f12480d4a9c2e9cb05d259d1",
-          "type": "image"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f12480cdbf53d4a45745e7c1",
-          "type": "bookmark",
-          "url": "https://github.com/transitive-bullshit/scikit-learn-ts"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f12480f9aa2afd96e5db5180",
-          "type": "bookmark",
-          "url": "https://sklearn.vercel.app/"
         }
       ],
       "cover": "3c5edb27f12480a59a4bd520e5721e5e:cover",
@@ -87834,7 +86771,7 @@
         "type": "image"
       },
       "id": "3c5edb27f12480a59a4bd520e5721e5e",
-      "modified": "2026-09-16T07:38:00.000Z",
+      "modified": "2026-09-16T09:10:00.000Z",
       "published": "2023-03-14",
       "slug": "scikit-learn-ts",
       "source": "https://github.com/transitive-bullshit/scikit-learn-ts",
@@ -87856,65 +86793,6 @@
         }
       ],
       "blocks": [
-        {
-          "children": [],
-          "color": "default",
-          "id": "050c6a21f07142c19e3e3c92205f678d",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "A C++ renderer with Metropolis light transport, bidirectional path tracing, and OpenGL previews.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "caption": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "Milton preview",
-              "underline": false
-            }
-          ],
-          "children": [],
-          "id": "ecd6859b9c994f3fa915b268bbdec994",
-          "media": "ecd6859b9c994f3fa915b268bbdec994",
-          "type": "image"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "fa57aec1315346d9b6a2df28e725b724",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/transitive-bullshit/Milton",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f1248079bc86eddb091fb5b6",
-          "type": "bookmark",
-          "url": "https://github.com/transitive-bullshit/Milton"
-        },
         {
           "children": [],
           "color": "default",
@@ -87959,7 +86837,7 @@
       "description": "A C++ renderer with Metropolis light transport, bidirectional path tracing, and OpenGL previews.",
       "featured": true,
       "id": "3c5edb27f12480cbbf85d490b05a58f3",
-      "modified": "2026-09-16T07:50:00.000Z",
+      "modified": "2026-09-16T09:03:00.000Z",
       "published": "2009-06-09",
       "slug": "milton",
       "source": "https://github.com/transitive-bullshit/Milton",
@@ -87980,84 +86858,6 @@
         {
           "children": [],
           "color": "default",
-          "id": "47eb9ff18df14df9bc4334363699a59b",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "Games and tools for TI calculators, written in TI-Basic and C.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "caption": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "TiCalc Games preview",
-              "underline": false
-            }
-          ],
-          "children": [],
-          "id": "9c354b99b2934e7e94a33fbb6b2e3a0b",
-          "media": "9c354b99b2934e7e94a33fbb6b2e3a0b",
-          "type": "image"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "bae9af4559514af79a72ae59dcde0db6",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://www.ticalc.org/archives/files/authors/78/7869.html",
-              "italic": false,
-              "strike": false,
-              "text": "Games archive",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/transitive-bullshit/ticalc",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f12480569ba0cf39941c81bf",
-          "type": "bookmark",
-          "url": "https://github.com/transitive-bullshit/ticalc"
-        },
-        {
-          "children": [],
-          "color": "default",
           "id": "3c5edb27f12480a9b091cbddec65a7bd",
           "richText": [],
           "type": "paragraph"
@@ -88067,7 +86867,7 @@
       "description": "Games and tools for TI calculators, written in TI-Basic and C.",
       "featured": true,
       "id": "3c5edb27f12480db8ab5f4b6fdb72331",
-      "modified": "2026-09-16T07:52:00.000Z",
+      "modified": "2026-09-16T09:05:00.000Z",
       "published": "2004-09-10",
       "slug": "ticalc-games",
       "source": "https://github.com/transitive-bullshit/ticalc",
@@ -88089,94 +86889,9 @@
         {
           "children": [],
           "color": "default",
-          "id": "61ae81efbeaa416982dc0f39fa1bd1e0",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "A MIPS assembly IDE with a visual, reversible debugger.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "caption": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "MipScope preview",
-              "underline": false
-            }
-          ],
-          "children": [],
-          "id": "bface8c089fb4e01af89ccd232a65b57",
-          "media": "bface8c089fb4e01af89ccd232a65b57",
-          "type": "image"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "9ab3f39fdefd4a8189df281a8f330b2f",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "http://mipscope.cs.brown.edu/",
-              "italic": false,
-              "strike": false,
-              "text": "Website",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/transitive-bullshit/mipscope",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
           "id": "3c5edb27f12480ed82cede225ece2b9c",
           "richText": [],
           "type": "paragraph"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f12480b1ad60ead4d31beed3",
-          "type": "bookmark",
-          "url": "https://github.com/transitive-bullshit/mipscope"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f1248014bc20fbb528a70893",
-          "type": "bookmark",
-          "url": "http://mipscope.cs.brown.edu/"
         }
       ],
       "cover": "3c5edb27f12480dca152d5c2e5551272:cover",
@@ -88187,7 +86902,7 @@
         "type": "image"
       },
       "id": "3c5edb27f12480dca152d5c2e5551272",
-      "modified": "2026-09-16T07:52:00.000Z",
+      "modified": "2026-09-16T09:05:00.000Z",
       "published": "2008-05-01",
       "slug": "mipscope",
       "source": "https://github.com/transitive-bullshit/mipscope",
@@ -88207,92 +86922,12 @@
       ],
       "blocks": [
         {
-          "children": [],
-          "color": "default",
-          "id": "23c6a046ab584be48f4d3dd49a9e00ce",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "Roast your Twitter profile with AI-generated Severance wellness memes.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "3f53953909bd447bb725be8d0a9430a9",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://severance.transitivebullsh.it/",
-              "italic": false,
-              "strike": false,
-              "text": "Website",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/transitive-bullshit/severance-wellness-memes",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/1898379925155156203",
-              "italic": false,
-              "strike": false,
-              "text": "Launch / project post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "1c8a52490e4248eaa428223688b05dce",
           "tweetId": "1898379925155156203",
           "type": "embed",
           "url": "https://x.com/transitive_bs/status/1898379925155156203"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3c5edb27f124803e9df1c9bb01a4e1f8",
-          "media": "3c5edb27f124803e9df1c9bb01a4e1f8",
-          "type": "image"
         }
       ],
       "cover": "3c5edb27f12480e39f5def11519f5553:cover",
@@ -88303,7 +86938,7 @@
         "type": "image"
       },
       "id": "3c5edb27f12480e39f5def11519f5553",
-      "modified": "2026-09-16T07:50:00.000Z",
+      "modified": "2026-09-16T09:10:00.000Z",
       "published": "2025-03-08",
       "slug": "severance-wellness-memes",
       "source": "https://github.com/transitive-bullshit/severance-wellness-memes",
@@ -88327,63 +86962,8 @@
         {
           "children": [],
           "color": "default",
-          "id": "e537504c44ef451f8ccdddfb981b78f4",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "Saasify was Shopify for API-first SaaS.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
           "id": "1c16022e7be2461e8f25e4cad8a753ad",
           "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/saasify-sh/saasify",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/1184357639431622656",
-              "italic": false,
-              "strike": false,
-              "text": "Launch / project post",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
             {
               "bold": false,
               "code": false,
@@ -88414,7 +86994,7 @@
         "type": "image"
       },
       "id": "3ddedb27f124807bb39ecda2ff1548c6",
-      "modified": "2026-09-16T08:44:00.000Z",
+      "modified": "2026-09-16T09:15:00.000Z",
       "published": "2019-09-01",
       "slug": "saasify",
       "source": "https://github.com/saasify-sh/saasify",
@@ -88435,79 +87015,6 @@
       ],
       "blocks": [
         {
-          "children": [],
-          "color": "default",
-          "id": "f60b257fa87f40abbb6d4c55fe3e0e37",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "Explore AI safety through familiar scenes from movies, TV, and anime.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "6aeb37f55c32458abddd66619bfc82eb",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://cultural-alignment.com/",
-              "italic": false,
-              "strike": false,
-              "text": "Live project",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/transitive-bullshit/cultural-alignment",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/2094871230868492663",
-              "italic": false,
-              "strike": false,
-              "text": "Launch post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "68a6e0c6ebe14d3fbee4cd5a5a3eb743",
@@ -88524,7 +87031,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481059885e955643ddaf0",
-      "modified": "2026-09-16T08:31:00.000Z",
+      "modified": "2026-09-16T08:55:00.000Z",
       "published": "2026-09-01",
       "slug": "cultural-alignment",
       "source": "https://github.com/transitive-bullshit/cultural-alignment",
@@ -88546,96 +87053,6 @@
       ],
       "blocks": [
         {
-          "children": [],
-          "color": "default",
-          "id": "c2da401eee8b44ecb3935314a5586535",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "A Doom 64-inspired AI safety parody: fight misaligned AIs and shut down the lab.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "caption": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "P(DOOM) preview",
-              "underline": false
-            }
-          ],
-          "children": [],
-          "id": "d68b135541204e0cbff99990dc979bbc",
-          "media": "d68b135541204e0cbff99990dc979bbc",
-          "type": "image"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "2d06fb2a5df04de3b0343407e389eb1d",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://p-doom.transitivebullsh.it/",
-              "italic": false,
-              "strike": false,
-              "text": "Live project",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/transitive-bullshit/ai-safety-doom",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/2096198032476000663",
-              "italic": false,
-              "strike": false,
-              "text": "Launch post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "740334787f2c4d539523163c3044918e",
@@ -88652,7 +87069,7 @@
         "type": "image"
       },
       "id": "3ddedb27f1248114a98ed3835e961d1e",
-      "modified": "2026-09-16T07:32:00.000Z",
+      "modified": "2026-09-16T08:55:00.000Z",
       "published": "2026-09-05",
       "slug": "p-doom",
       "source": "https://github.com/transitive-bullshit/ai-safety-doom",
@@ -88674,79 +87091,6 @@
       ],
       "blocks": [
         {
-          "children": [],
-          "color": "default",
-          "id": "cc423cca9a124ccd86994f3060673346",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "A cozy, interactive room for your favorite books from Goodreads.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "25a37a0f013f4c67b81432e898b21727",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://reading-room.transitivebullsh.it/",
-              "italic": false,
-              "strike": false,
-              "text": "Live project",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/transitive-bullshit/reading-room",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/2097328857926033415",
-              "italic": false,
-              "strike": false,
-              "text": "Launch post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "a013caf003484479b8e2f51b1bcfbf66",
@@ -88763,7 +87107,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481258859d0cefc5f2da4",
-      "modified": "2026-09-16T08:31:00.000Z",
+      "modified": "2026-09-16T08:55:00.000Z",
       "published": "2026-09-08",
       "slug": "reading-room",
       "source": "https://github.com/transitive-bullshit/reading-room",
@@ -88784,23 +87128,6 @@
         }
       ],
       "blocks": [
-        {
-          "children": [],
-          "color": "default",
-          "id": "3d062857fc60467db70791139e462875",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "A social recommendations app for places, books, movies, and music. Acquired by Yahoo in 2012.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
         {
           "caption": [],
           "children": [],
@@ -88824,6 +87151,7 @@
           "type": "paragraph"
         }
       ],
+      "cover": "3ddedb27f12481499a89eee57fda3967:cover",
       "description": "Share recommendations for your favorite things. Acquired by Yahoo.",
       "featured": true,
       "icon": {
@@ -88831,7 +87159,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481499a89eee57fda3967",
-      "modified": "2026-09-16T08:25:00.000Z",
+      "modified": "2026-09-16T09:05:00.000Z",
       "published": "2011-11-21",
       "slug": "stamped",
       "tags": [
@@ -88850,79 +87178,6 @@
       ],
       "blocks": [
         {
-          "children": [],
-          "color": "default",
-          "id": "9da38943655944c1b6488f70d01eaa48",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "An embeddable React terminal with CRT glow, scanlines, and a sandboxed browser shell.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "7e9685468a8a4f86be52ba5cc547296a",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://retro-web-terminal.vercel.app/",
-              "italic": false,
-              "strike": false,
-              "text": "Live project",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/transitive-bullshit/retro-web-terminal",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/2098728156291342678",
-              "italic": false,
-              "strike": false,
-              "text": "Launch post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "ce5aae6b69d041399a18188d2970576e",
@@ -88939,7 +87194,7 @@
         "type": "image"
       },
       "id": "3ddedb27f124815ba865d0f6b5b759f5",
-      "modified": "2026-09-16T08:31:00.000Z",
+      "modified": "2026-09-16T08:55:00.000Z",
       "published": "2026-09-12",
       "slug": "retro-web-terminal",
       "source": "https://github.com/transitive-bullshit/retro-web-terminal",
@@ -88960,23 +87215,6 @@
         }
       ],
       "blocks": [
-        {
-          "children": [],
-          "color": "default",
-          "id": "151a80c49fcf4db7adf4b1ca58c6cb39",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "Turn blog posts into marketing videos with AI. Acquired by Verblio in 2018.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
         {
           "caption": [],
           "children": [],
@@ -89049,6 +87287,7 @@
           "url": "https://x.com/transitive_bs/status/905377082217287680"
         }
       ],
+      "cover": "3ddedb27f12481629063e24b51da6fe6:cover",
       "description": "Turn blog posts into marketing videos with AI. Acquired by Verblio.",
       "featured": true,
       "icon": {
@@ -89056,7 +87295,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481629063e24b51da6fe6",
-      "modified": "2026-09-16T08:26:00.000Z",
+      "modified": "2026-09-16T09:02:00.000Z",
       "published": "2017-09-06",
       "slug": "automagical",
       "tags": [
@@ -89076,77 +87315,6 @@
         }
       ],
       "blocks": [
-        {
-          "children": [],
-          "color": "default",
-          "id": "d7fc678b5f484daa9571129f83d01b23",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "The Pluribus hive explains OpenAI’s swarm problem in an AI-made parody.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "caption": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "Pluribus — OpenAI Parody preview",
-              "underline": false
-            }
-          ],
-          "children": [],
-          "id": "f974c46a67a84ed08652bafc910a552d",
-          "media": "f974c46a67a84ed08652bafc910a552d",
-          "type": "image"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "06b9defde1ef49beac022b5b168b463f",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/2096134662246855089",
-              "italic": false,
-              "strike": false,
-              "text": "Watch",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/2096134662246855089",
-              "italic": false,
-              "strike": false,
-              "text": "Launch post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
         {
           "caption": [],
           "children": [],
@@ -89188,7 +87356,7 @@
         "value": "🎬"
       },
       "id": "3ddedb27f1248186b064c993b8e155c6",
-      "modified": "2026-09-16T08:31:00.000Z",
+      "modified": "2026-09-16T08:55:00.000Z",
       "published": "2026-09-05",
       "slug": "pluribus-openai-parody",
       "tags": [
@@ -89209,79 +87377,6 @@
       ],
       "blocks": [
         {
-          "children": [],
-          "color": "default",
-          "id": "88fff83a42cd40deab1f09f8610f95ae",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "Turn public AI chats into shareable pages with highlights and beautiful preview cards.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "0d531aa371ef440e8a8e50daafe29861",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://www.share-ai-passage.com/",
-              "italic": false,
-              "strike": false,
-              "text": "Live project",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/transitive-bullshit/share-ai-passage",
-              "italic": false,
-              "strike": false,
-              "text": "GitHub",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/2099405937480290574",
-              "italic": false,
-              "strike": false,
-              "text": "Launch post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "c295d1be6374443ca5fda46850ae16fa",
@@ -89298,7 +87393,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481b7bdc4d0325b2f6171",
-      "modified": "2026-09-16T08:30:00.000Z",
+      "modified": "2026-09-16T08:55:00.000Z",
       "published": "2026-09-14",
       "slug": "passage",
       "source": "https://github.com/transitive-bullshit/share-ai-passage",
@@ -89320,84 +87415,11 @@
       ],
       "blocks": [
         {
-          "children": [],
-          "color": "default",
-          "id": "29e8d97ddcf94ef2aa5b89e2866645be",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "OpenAI’s board finally realizes what Ilya saw in an AI-made Margin Call parody.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "7f54bd5a38e343c097975e3e2d5d20c6",
-          "type": "video",
-          "url": "https://www.youtube.com/watch?v=FT-zgDcfLmc"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "3b810549c1e4460b9773dcca063b4d3f",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://www.youtube.com/watch?v=FT-zgDcfLmc",
-              "italic": false,
-              "strike": false,
-              "text": "Watch",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://www.share-ai-passage.com/chatgpt/8cb96104-b9a5-4791-8c64-481517b28f0c",
-              "italic": false,
-              "strike": false,
-              "text": "How I made it",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/transitive_bs/status/2099185744724316478",
-              "italic": false,
-              "strike": false,
-              "text": "Launch post",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
+          "media": "7f54bd5a38e343c097975e3e2d5d20c6",
+          "type": "video"
         },
         {
           "caption": [],
@@ -89416,7 +87438,7 @@
         "value": "🎬"
       },
       "id": "3ddedb27f12481c1a145c3d546904768",
-      "modified": "2026-09-16T07:48:00.000Z",
+      "modified": "2026-09-16T09:16:00.000Z",
       "published": "2026-09-13",
       "slug": "margin-call-ai-safety-parody",
       "source": "https://www.share-ai-passage.com/chatgpt/8cb96104-b9a5-4791-8c64-481517b28f0c",
@@ -92459,6 +90481,158 @@
           "profile_image_url_https": "https://pbs.twimg.com/profile_images/2097646716094984192/PRQWyl10_normal.jpg",
           "screen_name": "transitive_bs",
           "verified": false
+        }
+      },
+      "status": "available"
+    },
+    "1843769535163433378": {
+      "data": {
+        "__typename": "Tweet",
+        "conversation_count": 5,
+        "created_at": "2024-10-08T21:44:47.000Z",
+        "display_text_range": [
+          0,
+          259
+        ],
+        "edit_control": {
+          "edit_tweet_ids": [
+            "1843769535163433378"
+          ],
+          "editable_until_msecs": "1728427487000",
+          "edits_remaining": "5",
+          "is_edit_eligible": false
+        },
+        "entities": {
+          "media": [
+            {
+              "display_url": "pic.x.com/7gAQ3rvITg",
+              "expanded_url": "https://x.com/transitive_bs/status/1843769535163433378/video/1",
+              "indices": [
+                259,
+                282
+              ],
+              "url": "https://t.co/7gAQ3rvITg"
+            }
+          ]
+        },
+        "favorite_count": 30,
+        "id_str": "1843769535163433378",
+        "isEdited": false,
+        "isStaleEdit": false,
+        "lang": "en",
+        "mediaDetails": [
+          {
+            "additional_media_info": {},
+            "display_url": "pic.x.com/7gAQ3rvITg",
+            "expanded_url": "https://x.com/transitive_bs/status/1843769535163433378/video/1",
+            "ext_media_availability": {
+              "status": "Available"
+            },
+            "indices": [
+              259,
+              282
+            ],
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1843764849290969088/pu/img/y8dpbhTBL3EZMTro.jpg",
+            "original_info": {
+              "focus_rects": [],
+              "height": 408,
+              "width": 728
+            },
+            "sizes": {
+              "large": {
+                "h": 408,
+                "resize": "fit",
+                "w": 728
+              },
+              "medium": {
+                "h": 408,
+                "resize": "fit",
+                "w": 728
+              },
+              "small": {
+                "h": 381,
+                "resize": "fit",
+                "w": 680
+              },
+              "thumb": {
+                "h": 150,
+                "resize": "crop",
+                "w": 150
+              }
+            },
+            "type": "video",
+            "url": "https://t.co/7gAQ3rvITg",
+            "video_info": {
+              "aspect_ratio": [
+                91,
+                51
+              ],
+              "duration_millis": 153000,
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/ext_tw_video/1843764849290969088/pu/pl/_wq1Sp1nLdybK_ci.m3u8?tag=12&v=a39"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/ext_tw_video/1843764849290969088/pu/vid/avc1/480x270/lcVFNE7V0ix_W2zo.mp4?tag=12"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/ext_tw_video/1843764849290969088/pu/vid/avc1/728x408/_c70qC6HgDFEydM7.mp4?tag=12"
+                }
+              ]
+            }
+          }
+        ],
+        "news_action_type": "conversation",
+        "note_tweet": {
+          "id": "Tm90ZVR3ZWV0UmVzdWx0czoxODQzNzY5NTM1MDg3OTg4NzM2"
+        },
+        "photos": [],
+        "possibly_sensitive": false,
+        "text": "Export any Kindle ebook you own using AI\n\n• uses playwright to export screenshots of each page\n• OpenAI vLLM (gpt-4o) to convert image ⇒ text\n• export as PDF, EPUB, or markdown\n• supports TTS to generate a custom AI-narrated audiobook 🔥\n• 100% open source TS https://t.co/7gAQ3rvITg",
+        "user": {
+          "id_str": "327034465",
+          "is_blue_verified": true,
+          "name": "Travis Fischer",
+          "profile_image_shape": "Circle",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/2097646716094984192/PRQWyl10_normal.jpg",
+          "screen_name": "transitive_bs",
+          "verified": false
+        },
+        "video": {
+          "aspectRatio": [
+            91,
+            51
+          ],
+          "contentType": "media_entity",
+          "durationMs": 153000,
+          "mediaAvailability": {
+            "status": "available"
+          },
+          "poster": "https://pbs.twimg.com/ext_tw_video_thumb/1843764849290969088/pu/img/y8dpbhTBL3EZMTro.jpg",
+          "variants": [
+            {
+              "src": "https://video.twimg.com/ext_tw_video/1843764849290969088/pu/pl/_wq1Sp1nLdybK_ci.m3u8?tag=12&v=a39",
+              "type": "application/x-mpegURL"
+            },
+            {
+              "src": "https://video.twimg.com/ext_tw_video/1843764849290969088/pu/vid/avc1/480x270/lcVFNE7V0ix_W2zo.mp4?tag=12",
+              "type": "video/mp4"
+            },
+            {
+              "src": "https://video.twimg.com/ext_tw_video/1843764849290969088/pu/vid/avc1/728x408/_c70qC6HgDFEydM7.mp4?tag=12",
+              "type": "video/mp4"
+            }
+          ],
+          "videoId": {
+            "id": "1843769535163433378",
+            "type": "tweet"
+          },
+          "viewCount": 0
         }
       },
       "status": "available"
