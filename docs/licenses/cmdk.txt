@@ -1,4 +1,4 @@
-Theme styles adapted from https://github.com/dip/cmdk/tree/main/website/styles/cmdk
+Theme styles adapted from https://github.com/dip/cmdk/blob/main/website/styles/cmdk/vercel.scss
 
 MIT License
 

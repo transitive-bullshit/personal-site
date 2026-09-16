@@ -1,4 +1,4 @@
-/* Adapted from dip/cmdk's Vercel, Linear, Raycast, and Framer examples.
+/* Adapted from dip/cmdk's Vercel example.
  * Copyright (c) 2022 Paco Coursey. MIT license: docs/licenses/cmdk.txt.
  * Demo-only panes, item margins, and keyboard-driven animations are omitted.
  */
@@ -14,8 +14,6 @@
   --search-secondary: var(--muted-foreground);
   --search-active: rgb(0 0 0 / 4.7%);
   --search-pressed: rgb(0 0 0 / 7.1%);
-  --search-blue: oklch(0.52 0.19 250);
-  --search-purple: #5f6ad2;
   --search-radius: 12px;
   --search-shadow: 0 16px 70px rgb(0 0 0 / 20%);
   --search-top: min(14dvh, 100px);
@@ -39,6 +37,7 @@
   animation: none;
 }
 .dark .search-dialog {
+  --search-surface: rgb(22 22 22 / 94%);
   --search-active: rgb(255 255 255 / 5.6%);
   --search-pressed: rgb(255 255 255 / 7.1%);
 }
@@ -97,7 +96,7 @@
 }
 .search-dialog [cmdk-list] {
   height: min(360px, var(--cmdk-list-height, 360px));
-  max-height: min(400px, calc(100dvh - var(--search-top) - 210px));
+  max-height: min(400px, calc(100dvh - var(--search-top) - 160px));
   min-height: 80px;
   overflow: auto;
   overscroll-behavior: contain;
@@ -105,7 +104,6 @@
 }
 .search-dialog [cmdk-item] {
   display: block;
-  position: relative;
   margin: 0;
   padding: 0;
   border-radius: 8px;
@@ -162,15 +160,13 @@
   color: var(--search-secondary);
 }
 .search-keyboard-hint,
-.search-keyboard-hint > span,
-.search-style-preview {
+.search-keyboard-hint > span {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 .search-keyboard-hint {
   gap: 16px;
-  margin-bottom: 10px;
   font-size: 11px;
 }
 .search-keyboard-hint > span {
@@ -188,135 +184,13 @@
   font-family: inherit;
   font-size: 12px;
 }
-.search-style-preview {
-  gap: 4px;
-  font-size: 11px;
-}
-.search-style-label {
-  margin-right: 4px;
-}
-.search-style-preview button {
-  color: var(--search-secondary);
-  font-size: 11px;
-}
-.search-style-preview button[aria-pressed='true'] {
-  background: var(--search-subtle);
-  color: var(--search-text);
-}
-
-/* Vercel: neutral inset rows and a softly translucent dark surface. */
-.dark .search-dialog[data-search-style='vercel'] {
-  --search-surface: rgb(22 22 22 / 94%);
-}
-
-/* Linear: edge-to-edge rows, a purple selection rail, and gradient dark chrome. */
-.search-dialog[data-search-style='linear'] {
-  --search-radius: 8px;
-  --search-active: var(--search-subtle);
-}
-.dark .search-dialog[data-search-style='linear'] {
-  --search-surface: linear-gradient(136.61deg, #27282b 13.72%, #2d2e31 74.3%);
-}
-.search-dialog[data-search-style='linear'] [cmdk-root] {
-  padding: 0;
-}
-.search-dialog[data-search-style='linear'] .search-input-row {
-  padding: 20px;
-  margin: 0;
-}
-.search-dialog[data-search-style='linear'] [cmdk-input] {
-  font-size: 18px;
-  caret-color: var(--search-purple);
-}
-.search-dialog[data-search-style='linear'] [cmdk-item] {
-  border-radius: 0;
-}
-.search-dialog[data-search-style='linear']
-  [cmdk-item][data-selected='true']::after {
-  content: '';
-  position: absolute;
-  inset-block: 0;
-  left: 0;
-  width: 3px;
-  background: var(--search-purple);
-  pointer-events: none;
-}
-
-/* Raycast: compact input, inset rows, stronger selection and a dark top shine. */
-.search-dialog[data-search-style='raycast'] {
-  --search-active: var(--search-subtle);
-}
-.search-dialog[data-search-style='raycast'] [cmdk-root] {
-  padding: 8px 0;
-}
-.search-dialog[data-search-style='raycast'] .search-input-row {
-  padding: 8px 16px;
-  margin-bottom: 8px;
-}
-.search-dialog[data-search-style='raycast'] [cmdk-input] {
-  font-size: 16px;
-}
-.search-dialog[data-search-style='raycast'] [cmdk-list] {
-  padding-inline: 8px;
-}
-.search-dialog[data-search-style='raycast'] .search-result-link {
-  padding-inline: 8px;
-}
-.dark .search-dialog[data-search-style='raycast'] {
-  --search-surface: var(--muted);
-  --search-active: rgb(255 255 255 / 7.1%);
-}
-.dark .search-dialog[data-search-style='raycast']::before {
-  content: '';
-  position: absolute;
-  inset: 0 12px auto;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--search-border) 20%,
-    var(--search-secondary) 67%,
-    transparent
-  );
-}
-
-/* Framer: rounder chrome, a compact header, and a blue selected row. */
-.search-dialog[data-search-style='framer'] {
-  --search-radius: 16px;
-}
-.search-dialog[data-search-style='framer'] .search-input-row {
-  min-height: 48px;
-  padding: 0 8px 8px;
-  margin-bottom: 12px;
-}
-.search-dialog[data-search-style='framer'] [cmdk-input] {
-  font-size: 16px;
-}
-.search-dialog[data-search-style='framer'] [cmdk-item] {
-  border-radius: 12px;
-  font-weight: 500;
-}
-.search-dialog[data-search-style='framer'] .search-result-link {
-  padding-inline: 8px;
-}
-.search-dialog[data-search-style='framer'] [cmdk-item][data-selected='true'] {
-  background: var(--search-blue);
-  color: white;
-}
-.search-dialog[data-search-style='framer'] [data-selected='true'] time,
-.search-dialog[data-search-style='framer']
-  [data-selected='true']
-  .search-result-kind {
-  color: inherit;
-}
 @media (max-width: 480px) {
   .search-result-link {
     grid-template-columns: 1fr;
     gap: 3px;
     padding-block: 12px;
   }
-  .search-input-row,
-  .search-dialog[data-search-style='linear'] .search-input-row {
+  .search-input-row {
     gap: 6px;
     padding-inline: 8px;
   }
@@ -325,9 +199,5 @@
   }
   .search-shortcut {
     display: none;
-  }
-  .search-style-label {
-    width: 100%;
-    margin-bottom: 2px;
   }
 }

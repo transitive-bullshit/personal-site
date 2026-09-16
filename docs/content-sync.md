@@ -95,7 +95,7 @@ Keep Notion and storage clients in `scripts/`.
 
 Command-K / Control-K and the header search icon open cmdk. The dialog code and index load only on first open; subsequent opens reuse the fetched index. Queries stay in the browser. Keyword matches prefer titles, then descriptions/tags, then nested article text, captions, tables, and saved bookmark/tweet text. Canonical public article and project routes plus Home, Projects, and Writing are indexed. Project results are labeled in the palette. Add future top-level pages in `lib/content/search-index.ts`.
 
-The top and selected results are explicitly prefetched. Results use full-row Next links with no gaps. A temporary **Preview style** control compares adaptations of cmdk's [four example themes](https://github.com/dip/cmdk/tree/main/website/styles/cmdk): Vercel (initial default), Linear, Raycast, and Framer. The choice persists locally. After choosing one, remove the other CSS variants, the preview control, and its storage key. Shared adaptations remove demo panes, item margins, and keyboard-driven motion; Framer's blue is darkened for readable white text. License attribution is in `docs/licenses/cmdk.txt`.
+The top and selected results are explicitly prefetched. Results use full-row Next links with no gaps. The palette uses an adaptation of cmdk's [Vercel theme](https://github.com/dip/cmdk/blob/main/website/styles/cmdk/vercel.scss), without demo panes, item margins, or keyboard-driven motion. License attribution is in `docs/licenses/cmdk.txt`.
 
 ## Runtime images
 

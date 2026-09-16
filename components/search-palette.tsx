@@ -15,23 +15,11 @@ import { loadSearchIndex } from '@/lib/load-search-index'
 import { searchDocuments, type SearchIndex } from '@/lib/search'
 import './search-palette.css'
 
-const styles = ['Vercel', 'Linear', 'Raycast', 'Framer'] as const
-type SearchStyle = (typeof styles)[number]
-const styleKey = 'cmdk-preview-style'
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
   month: 'short',
   year: 'numeric',
   timeZone: 'UTC'
 })
-
-function savedStyle(): SearchStyle {
-  try {
-    const saved = localStorage.getItem(styleKey)
-    return styles.find((style) => style === saved) ?? 'Vercel'
-  } catch {
-    return 'Vercel'
-  }
-}
 
 export default function SearchPalette({ onClose }: { onClose: () => void }) {
   const router = useRouter()
@@ -42,7 +30,6 @@ export default function SearchPalette({ onClose }: { onClose: () => void }) {
   const [attempt, setAttempt] = useState(0)
   const [query, setQuery] = useState('')
   const [selection, setSelection] = useState('')
-  const [style, setStyle] = useState(savedStyle)
   const results = useMemo(
     () => searchDocuments(index?.documents ?? [], query),
     [index, query]
@@ -81,21 +68,10 @@ export default function SearchPalette({ onClose }: { onClose: () => void }) {
     setSelection('')
   }
 
-  function changeStyle(value: SearchStyle) {
-    setStyle(value)
-    try {
-      localStorage.setItem(styleKey, value)
-    } catch {
-      // Previewing still works if browser storage is unavailable.
-    }
-    inputRef.current?.focus()
-  }
-
   return (
     <DialogContent
       className='search-dialog'
       overlayClassName='search-overlay'
-      data-search-style={style.toLowerCase()}
       showCloseButton={false}
       onOpenAutoFocus={(event) => {
         event.preventDefault()
@@ -230,25 +206,6 @@ export default function SearchPalette({ onClose }: { onClose: () => void }) {
           <span>
             <kbd>↵</kbd> open
           </span>
-        </div>
-        <div
-          className='search-style-preview'
-          role='group'
-          aria-label='Debug: cmdk style preview'
-        >
-          <span className='search-style-label'>Preview style</span>
-          {styles.map((option) => (
-            <Button
-              key={option}
-              type='button'
-              variant='ghost'
-              size='xs'
-              aria-pressed={style === option}
-              onClick={() => changeStyle(option)}
-            >
-              {option}
-            </Button>
-          ))}
         </div>
       </footer>
     </DialogContent>
