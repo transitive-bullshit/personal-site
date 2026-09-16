@@ -16,6 +16,7 @@ export function ContentCover({
         media={snapshot.media[entry.cover]!}
         alt={entry.title}
         priority
+        reuseLoadedImage={'authors' in entry}
       />
     </figure>
   )

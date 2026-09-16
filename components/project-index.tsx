@@ -33,6 +33,7 @@ export function ProjectIndex({
               <div className='project-card-preview'>
                 {project.cover ? (
                   <MediaImage
+                    reuseLoadedImage
                     priority={prioritizeFirstImage && index === 0}
                     media={snapshot.media[project.cover]!}
                     alt=''

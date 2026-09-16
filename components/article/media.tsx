@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { ProjectCoverImage } from './project-cover-image'
 import { ImageLightbox } from './image-lightbox'
 import type { Media, Snapshot, Article } from '@/lib/content/schema'
 
@@ -6,18 +7,22 @@ export function MediaImage({
   media,
   alt,
   priority = false,
+  reuseLoadedImage = false,
   sizes = '(max-width: 800px) calc(100vw - 44px), 740px',
   className = 'article-image'
 }: {
   media: Media
   alt: string
   priority?: boolean
+  reuseLoadedImage?: boolean
   sizes?: string
   className?: string
 }) {
   const display = media.variants.at(-1) ?? media.original
+  const Component = reuseLoadedImage ? ProjectCoverImage : Image
   return (
-    <Image
+    <Component
+      key={display.url}
       src={display.url}
       sizes={sizes}
       placeholder={media.blurDataURL ? 'blur' : 'empty'}
@@ -62,12 +67,14 @@ export function ZoomableImage({
   media,
   alt,
   caption,
-  priority = false
+  priority = false,
+  reuseLoadedImage = false
 }: {
   media: Media
   alt: string
   caption?: string
   priority?: boolean
+  reuseLoadedImage?: boolean
 }) {
   return (
     <ImageLightbox
@@ -80,7 +87,12 @@ export function ZoomableImage({
       alt={alt}
       caption={caption}
     >
-      <MediaImage media={media} alt={alt} priority={priority} />
+      <MediaImage
+        media={media}
+        alt={alt}
+        priority={priority}
+        reuseLoadedImage={reuseLoadedImage}
+      />
     </ImageLightbox>
   )
 }
