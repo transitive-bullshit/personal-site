@@ -45,7 +45,7 @@ export function parseBookmark(html: string, pageUrl: string) {
   return { title, description, images }
 }
 
-export async function fetchBookmark(url: string) {
+export async function fetchBookmarkPage(url: string) {
   const response = await publicFetch(url, {
     signal: AbortSignal.timeout(20_000)
   })
@@ -73,7 +73,13 @@ export async function fetchBookmark(url: string) {
   } finally {
     await reader.cancel().catch(() => {})
   }
-  return parseBookmark(html, response.url || url)
+  const finalUrl = response.url || url
+  return { url: finalUrl, ...parseBookmark(html, finalUrl) }
+}
+
+export async function fetchBookmark(url: string) {
+  const { url: _url, ...preview } = await fetchBookmarkPage(url)
+  return preview
 }
 
 export const bookmarkKey = (url: string) =>

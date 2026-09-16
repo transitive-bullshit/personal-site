@@ -21,7 +21,7 @@ export function socialImageData(article: Article, snapshot: Snapshot) {
 
 export type SocialImageData = ReturnType<typeof socialImageData>
 
-export function socialImageUrl(article: Article, snapshot: Snapshot) {
+export function socialImagePath(article: Article, snapshot: Snapshot) {
   const version = createHash('sha256')
     .update(
       JSON.stringify([templateVersion, socialImageData(article, snapshot)])
@@ -29,10 +29,10 @@ export function socialImageUrl(article: Article, snapshot: Snapshot) {
     .digest('hex')
     .slice(0, 16)
   return (
-    deploymentOrigin() +
-    '/api/social-image/' +
-    encodeURIComponent(article.slug) +
-    '?v=' +
-    version
+    '/api/social-image/' + encodeURIComponent(article.slug) + '?v=' + version
   )
+}
+
+export function socialImageUrl(article: Article, snapshot: Snapshot) {
+  return deploymentOrigin() + socialImagePath(article, snapshot)
 }

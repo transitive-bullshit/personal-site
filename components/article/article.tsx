@@ -34,7 +34,7 @@ export function ArticlePage({
           </div>
         </header>
         <div className='article-grid'>
-          <div className='article-body'>
+          <div className='article-body' data-link-preview-scope='article'>
             {article.cover ? (
               <figure className='article-cover'>
                 <ZoomableImage

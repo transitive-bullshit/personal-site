@@ -2,9 +2,11 @@ import SiGithub from '@icons-pack/react-simple-icons/icons/SiGithub'
 import SiX from '@icons-pack/react-simple-icons/icons/SiX'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { LinkPreviewProvider } from '@/components/link-preview-provider'
 import { ThemeProvider } from '@/components/theme-provider'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { Button } from '@/components/ui/button'
+import { internalLinkPreviews } from '@/lib/content/link-previews'
 import { site } from '@/lib/site'
 import './globals.css'
 
@@ -91,6 +93,7 @@ export default function RootLayout({
               </div>
             </footer>
           </div>
+          <LinkPreviewProvider internalPreviews={internalLinkPreviews} />
         </ThemeProvider>
       </body>
     </html>

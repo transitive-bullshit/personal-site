@@ -12,7 +12,7 @@ export function Bookmark({
   const preview = snapshot.bookmarks?.[block.url]
   return (
     <figure id={block.id} className='bookmark'>
-      <a className='bookmark-card' href={block.url}>
+      <a className='bookmark-card' href={block.url} data-link-preview='false'>
         <span className='bookmark-copy'>
           <span className='bookmark-title'>
             {preview?.title || block.url.replace(/^https?:\/\//, '')}

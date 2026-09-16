@@ -15,7 +15,11 @@ export function ArticleIndex({
   label: string
 }) {
   return (
-    <ol className='article-index' aria-label={label}>
+    <ol
+      className='article-index'
+      aria-label={label}
+      data-link-preview-scope='internal'
+    >
       {articles.map((article) => (
         <li key={article.id}>
           <time dateTime={article.published}>
