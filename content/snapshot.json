@@ -22375,14 +22375,6 @@
           "type": "paragraph"
         },
         {
-          "caption": [],
-          "children": [],
-          "id": "9b517730634743278aa0404031f31a46",
-          "tweetId": "1600079396215349249",
-          "type": "embed",
-          "url": "https://twitter.com/ChatGPTBot/status/1600079396215349249"
-        },
-        {
           "children": [],
           "color": "default",
           "id": "b0b5b1a35c274e9b9f47d508546fbaa9",
@@ -22567,14 +22559,6 @@
             }
           ],
           "type": "paragraph"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "405b2cc2ff6543eebce46df4c7a33d74",
-          "tweetId": "1600405537287417857",
-          "type": "embed",
-          "url": "https://twitter.com/ChatGPTBot/status/1600405537287417857"
         },
         {
           "children": [],
@@ -23168,12 +23152,9 @@
           "type": "paragraph"
         },
         {
-          "caption": [],
           "children": [],
-          "id": "a197e7b3bfc9426096f20eff58d5de05",
-          "tweetId": "1602073979543760897",
-          "type": "embed",
-          "url": "https://twitter.com/ChatGPTBot/status/1602073979543760897"
+          "id": "3ddedb27f12480d7a766f0e696ee85ed",
+          "type": "divider"
         },
         {
           "children": [],
@@ -25240,7 +25221,8 @@
         "type": "image"
       },
       "id": "79f0cb8e859d43b1865a9fe18de950df",
-      "modified": "2026-09-15T06:49:00.000Z",
+      "modified": "2026-09-16T12:31:00.000Z",
+      "needsImageSync": true,
       "published": "2023-02-04",
       "slug": "chatgpt-twitter-bot-lessons",
       "tags": [
@@ -89966,15 +89948,6 @@
         }
       },
       "status": "available"
-    },
-    "1600079396215349249": {
-      "status": "unavailable"
-    },
-    "1600405537287417857": {
-      "status": "unavailable"
-    },
-    "1602073979543760897": {
-      "status": "unavailable"
     },
     "1603661313493925889": {
       "data": {
