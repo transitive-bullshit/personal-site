@@ -44,7 +44,7 @@ export function ImageLightbox({
     'idle' | 'loading' | 'done' | 'error'
   >('idle')
   const trigger = useRef<HTMLButtonElement>(null)
-  const frame = useRef<HTMLDivElement | null>(null)
+  const frame = useRef<HTMLButtonElement | null>(null)
   const origin = useRef<DOMRect | null>(null)
   const animation = useRef<Animation | null>(null)
   const closing = useRef(false)
@@ -54,7 +54,7 @@ export function ImageLightbox({
   const transformFrom = (target: DOMRect, source: DOMRect) =>
     `translate(${source.x - target.x}px, ${source.y - target.y}px) scale(${source.width / target.width}, ${source.height / target.height})`
 
-  const mountFrame = useCallback((node: HTMLDivElement | null) => {
+  const mountFrame = useCallback((node: HTMLButtonElement | null) => {
     frame.current = node
     if (!node || !origin.current || reducedMotion()) return
     animation.current = node.animate(
@@ -148,6 +148,10 @@ export function ImageLightbox({
       </DialogTrigger>
       <DialogContent
         className='image-lightbox'
+        overlayClassName='image-lightbox-overlay'
+        onClick={(event) => {
+          if (event.target === event.currentTarget) changeOpen(false)
+        }}
         onEscapeKeyDown={() => {
           dismissedWithEscape.current = true
         }}
@@ -159,9 +163,12 @@ export function ImageLightbox({
         }}
       >
         <DialogTitle className='sr-only'>{alt || 'Image preview'}</DialogTitle>
-        <div
+        <button
           ref={mountFrame}
+          type='button'
           className='lightbox-frame'
+          aria-label={alt ? 'Zoom out image: ' + alt : 'Zoom out image'}
+          onClick={() => changeOpen(false)}
           style={
             { '--image-ratio': (width || 1) / (height || 1) } as CSSProperties
           }
@@ -178,7 +185,7 @@ export function ImageLightbox({
             src={src}
             alt={alt}
             fill
-            sizes='(max-width: 1472px) calc(100vw - 80px), 1392px'
+            sizes='(max-width: 600px) calc(100vw - 24px), (max-width: 1488px) calc(100vw - 48px), 1440px'
             loading='eager'
             unoptimized={unoptimized}
             onLoad={() => setReady(true)}
@@ -188,19 +195,11 @@ export function ImageLightbox({
               pointerEvents: ready ? 'auto' : 'none'
             }}
           />
-        </div>
+        </button>
         <DialogDescription className={caption ? 'lightbox-caption' : 'sr-only'}>
           {caption || 'Enlarged article image'}
         </DialogDescription>
         <div className='lightbox-actions'>
-          <a
-            href={original}
-            target='_blank'
-            rel='noreferrer'
-            className='lightbox-original'
-          >
-            Open original image
-          </a>
           <button
             type='button'
             className='lightbox-download'
@@ -230,7 +229,7 @@ export function ImageLightbox({
         </div>
         {download === 'error' && (
           <p className='lightbox-download-error' role='alert'>
-            Download failed. Try again or open the original image to save it.
+            Download failed. Please try again.
           </p>
         )}
       </DialogContent>

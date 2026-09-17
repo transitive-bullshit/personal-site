@@ -716,19 +716,62 @@ summary {
   outline-width: 1px;
 }
 .image-lightbox {
-  width: calc(100vw - 32px);
-  max-width: 1440px;
-  max-height: calc(100dvh - 32px);
+  --background: transparent;
+  --foreground: oklch(0.98 0 0);
+  --muted-foreground: oklch(1 0 0 / 0.7);
+  --muted: oklch(1 0 0 / 0.1);
+  --border: oklch(1 0 0 / 0.2);
+  --ring: oklch(1 0 0 / 0.7);
+  --lightbox-caption-space: 0px;
+  --lightbox-error-space: 0px;
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   overflow: visible;
   animation: none;
-  padding: 44px 24px 20px;
+  padding: 64px 24px 24px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--foreground);
+  box-shadow: none;
+}
+.image-lightbox:has(.lightbox-caption) {
+  --lightbox-caption-space: calc(min(80px, 10dvh) + 16px);
+}
+.image-lightbox:has(.lightbox-download-error) {
+  --lightbox-error-space: 56px;
+}
+.image-lightbox-overlay {
+  background: oklch(0 0 0 / 0.88);
 }
 .lightbox-frame {
   position: relative;
-  width: min(100%, calc((100dvh - 240px) * var(--image-ratio)));
+  width: min(
+    100%,
+    1440px,
+    calc(
+      (100dvh - 168px - var(--lightbox-caption-space) -
+          var(--lightbox-error-space)) *
+        var(--image-ratio)
+    )
+  );
   aspect-ratio: var(--image-ratio);
+  flex: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
   margin-inline: auto;
   transform-origin: top left;
+}
+.lightbox-frame:not(:disabled) {
+  cursor: zoom-out;
 }
 .lightbox-image {
   display: block;
@@ -743,7 +786,7 @@ summary {
 .lightbox-actions {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
 }
@@ -754,15 +797,23 @@ summary {
   gap: 8px;
   min-height: 44px;
   padding: 8px 12px;
-  margin-left: auto;
-  border: 1px solid var(--border);
+  border: 0;
+  background: transparent;
+  color: var(--muted-foreground);
   border-radius: 7px;
   font-size: 13px;
   cursor: pointer;
-  transition: transform 160ms ease-out;
+  transition:
+    transform 150ms ease-out,
+    background-color 150ms ease-out,
+    color 150ms ease-out;
+}
+.lightbox-download:hover:not(:disabled) {
+  background: var(--muted);
+  color: var(--foreground);
 }
 .lightbox-download:active {
-  transform: scale(0.97);
+  transform: scale(0.96);
 }
 .lightbox-download:disabled {
   cursor: progress;
@@ -775,7 +826,8 @@ summary {
 }
 .lightbox-download-error {
   font-size: 13px;
-  text-align: right;
+  margin: 0;
+  text-align: center;
 }
 @keyframes lightbox-feedback {
   from {
@@ -795,21 +847,19 @@ summary {
 .lightbox-caption {
   text-align: center;
   white-space: pre-wrap;
-  max-height: 5em;
+  margin: 0;
+  max-height: min(80px, 10dvh);
   overflow-y: auto;
 }
-.lightbox-original {
-  text-align: center;
-  font-size: 13px;
-  text-decoration: underline;
-}
 .image-lightbox [data-slot='dialog-close'] {
-  width: 36px;
-  height: 36px;
+  width: 44px;
+  height: 44px;
   display: grid;
   place-items: center;
-  top: 4px;
-  right: 4px;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  color: var(--foreground);
 }
 .article-body figure.bookmark {
   margin-block: 20px;

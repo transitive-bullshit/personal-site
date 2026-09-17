@@ -138,3 +138,10 @@ The preceding migration hash and counts describe the initial snapshot. Current e
 - Browser checks passed for desktop cards and project details, 390px and 320px mobile layouts, keyboard project search/navigation, the missing-cover project, and shared image lightboxes. Mobile navigation uses a second row to avoid overlapping the brand.
 - Formatting, lint, TypeScript, unit tests, and production build pass, including the native social-image bundle check.
 - Import warnings retained safe fallbacks: one unavailable ChatGPT Hackers bookmark image and three already-unavailable tweets in an existing article. No project imports failed.
+
+## Lightweight image lightbox — 2026-09-17
+
+- Removed the panel background, border, shadow, and original-image link. Both themes use the same dark overlay, with Download centered below the image and a small close icon at the viewport corner.
+- Clicking the enlarged image (or pressing Enter on it) reverses the existing zoom animation and closes the overlay. Escape, X, backdrop dismissal, focus trapping, loaded previews, and the reduced-motion branch remain intact.
+- Browser checks passed for desktop light/dark themes, download confirmation without dismissal, all dismissal methods, keyboard focus cycling, and landscape/tall captioned images at 390px and 320px mobile widths. Temporary viewport overrides were reset.
+- Formatting, lint, TypeScript, and all 94 existing tests pass. Not verified in the browser: forced download-failure retry, live reduced-motion preference, and 10%-speed animation replay.
