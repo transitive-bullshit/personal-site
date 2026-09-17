@@ -1,3 +1,7 @@
+<a href="https://transitivebullsh.it">
+  <img src="public/social-image.jpg" alt="Travis Fischer's personal website" width="600" />
+</a>
+
 # TransitiveBullsh.it
 
 Travis Fischer's personal website. Next.js renders versioned article snapshots imported through the official Notion API, with durable media in Cloudflare R2.
