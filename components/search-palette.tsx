@@ -95,7 +95,7 @@ export default function SearchPalette({ onClose }: { onClose: () => void }) {
           <SearchIcon aria-hidden='true' className='size-4' />
           <Command.Input
             ref={inputRef}
-            placeholder='Search projects and writing…'
+            placeholder='Search…'
             value={query}
             onValueChange={changeQuery}
           />
@@ -122,13 +122,13 @@ export default function SearchPalette({ onClose }: { onClose: () => void }) {
           <Button
             type='button'
             variant='ghost'
-            size='xs'
+            size='icon-sm'
             className='search-escape'
             aria-label='Close search'
             onKeyDown={(event) => event.stopPropagation()}
             onClick={onClose}
           >
-            esc
+            <XIcon aria-hidden='true' data-icon='inline-start' />
           </Button>
         </div>
         <Command.List label='Projects, writing, and pages'>

@@ -120,6 +120,17 @@ summary {
   gap: 24px;
   justify-self: center;
 }
+.site-header-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.site-header-nav a[aria-current] {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
 .site-header-actions {
   gap: 4px;
   justify-self: end;
@@ -134,6 +145,20 @@ summary {
 }
 .site-footer-actions {
   gap: 18px;
+}
+.site-footer-actions nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}
+.not-found-actions a {
+  min-height: 44px;
 }
 .skip-link {
   position: absolute;
@@ -476,11 +501,11 @@ summary {
   top: 36px;
   max-height: calc(100vh - 72px);
   overflow-y: auto;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
 }
 .toc-title {
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.09em;
   font-weight: 600;
@@ -555,17 +580,26 @@ summary {
     grid-template-columns: minmax(0, 1fr) auto;
   }
   .site-header-actions {
-    grid-column: 2;
-    grid-row: 1;
-    gap: 2px;
-  }
-  .site-header-nav {
     grid-column: 1 / -1;
     grid-row: 2;
-    justify-self: start;
-    margin-top: 12px;
-    gap: 20px;
-    font-size: 13px;
+    gap: 4px;
+  }
+  .site-header-actions > :is(a, button),
+  .site-footer-actions > button {
+    width: 44px;
+    height: 44px;
+  }
+  .site-footer-actions nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .site-header-nav {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    gap: 16px;
+    font-size: 14px;
   }
   .home {
     padding-top: 40px;
@@ -597,18 +631,7 @@ summary {
 }
 @media (max-width: 360px) {
   .site-header {
-    font-size: 12px;
-    gap: 4px;
-  }
-  .site-header-nav {
-    font-size: 12px;
-  }
-  .site-header-actions {
-    gap: 0;
-  }
-  .site-header-actions > :is(a, button) {
-    width: 28px;
-    height: 28px;
+    gap: 8px;
   }
 }
 @media (prefers-reduced-motion: no-preference) {

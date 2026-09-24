@@ -59,6 +59,9 @@
 .search-input-row > svg {
   flex: none;
 }
+.search-input-row:focus-within {
+  border-bottom-color: var(--search-text);
+}
 .search-dialog [cmdk-input] {
   width: 100%;
   min-width: 0;
@@ -82,12 +85,7 @@
   color: var(--search-secondary);
 }
 .search-dialog .search-escape {
-  height: 24px;
-  padding-inline: 5px;
-  border: 1px solid var(--search-border);
   border-radius: 4px;
-  font-size: 11px;
-  font-weight: 400;
 }
 .search-shortcut {
   flex: none;
@@ -167,7 +165,7 @@
 }
 .search-keyboard-hint {
   gap: 16px;
-  font-size: 11px;
+  font-size: 12px;
 }
 .search-keyboard-hint > span {
   gap: 4px;
@@ -185,6 +183,11 @@
   font-size: 12px;
 }
 @media (max-width: 480px) {
+  .search-dialog .search-clear,
+  .search-dialog .search-escape {
+    width: 44px;
+    height: 44px;
+  }
   .search-result-link {
     grid-template-columns: 1fr;
     gap: 3px;
