@@ -77563,6 +77563,49 @@
       },
       "title": "The Future of Social Audio: Startups, Roadmap, Business Models, and a Forecast - Jeremiah Owyang"
     },
+    "https://www.doom-or-bloom.com/": {
+      "description": "Map your AI worldview, and compare it with others. Explore how public figures think AI could change our future, then discover where you land.",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoIAAQAA4BaJQBOj+ACuU01oYAA/vEFNrwaDd4qntbP+YUUGm3xlDd8AAA=",
+        "original": {
+          "bytes": 219449,
+          "hash": "ba4efd879bb0253b54f6d10e6ab86f70bd8eedb2a45f617bda26b95566c15ec1",
+          "height": 630,
+          "key": "personal-site/media/ba4efd879bb0253b54f6d10e6ab86f70bd8eedb2a45f617bda26b95566c15ec1.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/ba4efd879bb0253b54f6d10e6ab86f70bd8eedb2a45f617bda26b95566c15ec1.jpg",
+          "width": 1200
+        },
+        "pipelineVersion": 1,
+        "source": {
+          "edited": "https://www.doom-or-bloom.com/_next/static/media/opengraph-image.e9a0e417.jpg",
+          "key": "bookmark:cf09ad74dbfcc3f953ea62acfff053706aab681c69c1b79a7210112e8d91f4e9",
+          "kind": "external",
+          "url": "https://www.doom-or-bloom.com/_next/static/media/opengraph-image.e9a0e417.jpg"
+        },
+        "variants": [
+          {
+            "bytes": 82742,
+            "hash": "c32d2efd8406ec02f84513b90d9c38a26bf50f9216c0d38a11d2ad18aaa11166",
+            "height": 504,
+            "key": "personal-site/media/c32d2efd8406ec02f84513b90d9c38a26bf50f9216c0d38a11d2ad18aaa11166.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/c32d2efd8406ec02f84513b90d9c38a26bf50f9216c0d38a11d2ad18aaa11166.webp",
+            "width": 960
+          },
+          {
+            "bytes": 158520,
+            "hash": "ca7416bd96344a5c28403dc92e4f16e1fc1e97835ac2e2bfec7b21921c2a38ea",
+            "height": 630,
+            "key": "personal-site/media/ca7416bd96344a5c28403dc92e4f16e1fc1e97835ac2e2bfec7b21921c2a38ea.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/ca7416bd96344a5c28403dc92e4f16e1fc1e97835ac2e2bfec7b21921c2a38ea.webp",
+            "width": 1200
+          }
+        ]
+      },
+      "title": "Doom or Bloom"
+    },
     "https://www.langchain.com/blog/what-is-an-agent": {
       "description": "Learn what AI agents are, how they work in an LLM loop, and where workflows fit so you can build reliable, production-ready autonomous systems.",
       "image": {
@@ -80823,6 +80866,196 @@
           "key": "personal-site/media/6379a45f7768b90883d9ad7b9f0aec8a1b20dab2bd725b40bd22b0608c2ba4f8.webp",
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/6379a45f7768b90883d9ad7b9f0aec8a1b20dab2bd725b40bd22b0608c2ba4f8.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3e5edb27f124800884cddefb16b57151:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoIAAQAA4BaJQBOj+ACuU01oYAA/vEFNrwaDd4qntbP+YUUGm3xlDd8AAA=",
+      "original": {
+        "bytes": 219449,
+        "hash": "ba4efd879bb0253b54f6d10e6ab86f70bd8eedb2a45f617bda26b95566c15ec1",
+        "height": 630,
+        "key": "personal-site/media/ba4efd879bb0253b54f6d10e6ab86f70bd8eedb2a45f617bda26b95566c15ec1.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/ba4efd879bb0253b54f6d10e6ab86f70bd8eedb2a45f617bda26b95566c15ec1.jpg",
+        "width": 1200
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-24T15:52:00.000Z",
+        "key": "3e5edb27f124800884cddefb16b57151:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 82742,
+          "hash": "c32d2efd8406ec02f84513b90d9c38a26bf50f9216c0d38a11d2ad18aaa11166",
+          "height": 504,
+          "key": "personal-site/media/c32d2efd8406ec02f84513b90d9c38a26bf50f9216c0d38a11d2ad18aaa11166.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/c32d2efd8406ec02f84513b90d9c38a26bf50f9216c0d38a11d2ad18aaa11166.webp",
+          "width": 960
+        },
+        {
+          "bytes": 158520,
+          "hash": "ca7416bd96344a5c28403dc92e4f16e1fc1e97835ac2e2bfec7b21921c2a38ea",
+          "height": 630,
+          "key": "personal-site/media/ca7416bd96344a5c28403dc92e4f16e1fc1e97835ac2e2bfec7b21921c2a38ea.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/ca7416bd96344a5c28403dc92e4f16e1fc1e97835ac2e2bfec7b21921c2a38ea.webp",
+          "width": 1200
+        }
+      ]
+    },
+    "3e5edb27f124803986dcf43e3f0e5e22": {
+      "blurDataURL": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4WAoAAAAQAAAABwAAAwAAQUxQSCEAAAAA9vz7+/v6/+b7//////7/6vv//////v/q8/n4+Pj3/eMAVlA4ICYAAACQAQCdASoIAAQAA4BaJaQAAltMeAAA/vYZS3zov86hBZL/AAAAAA==",
+      "original": {
+        "bytes": 365523,
+        "hash": "f5dd6119a00fae643ba776ce173a683f334166b9a5abe6f109fa88e051e02238",
+        "height": 1008,
+        "key": "personal-site/media/f5dd6119a00fae643ba776ce173a683f334166b9a5abe6f109fa88e051e02238.png",
+        "mime": "image/png",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/f5dd6119a00fae643ba776ce173a683f334166b9a5abe6f109fa88e051e02238.png",
+        "width": 2044
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-24T15:47:00.000Z",
+        "key": "3e5edb27f124803986dcf43e3f0e5e22",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 28508,
+          "hash": "9ef2f320452333c7e2f390cfcb0df8cef08f1a8d5da0570768f2fd980f475329",
+          "height": 473,
+          "key": "personal-site/media/9ef2f320452333c7e2f390cfcb0df8cef08f1a8d5da0570768f2fd980f475329.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/9ef2f320452333c7e2f390cfcb0df8cef08f1a8d5da0570768f2fd980f475329.webp",
+          "width": 960
+        },
+        {
+          "bytes": 104264,
+          "hash": "6d722b19bbea1a879fc39d558f8eacb8502b38124b77e79b9272533fc55e2b72",
+          "height": 947,
+          "key": "personal-site/media/6d722b19bbea1a879fc39d558f8eacb8502b38124b77e79b9272533fc55e2b72.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/6d722b19bbea1a879fc39d558f8eacb8502b38124b77e79b9272533fc55e2b72.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3e5edb27f1248085b67ed7f0b8e750da": {
+      "blurDataURL": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4WAoAAAAQAAAABwAABAAAQUxQSCkAAAAA+Pv7+/v6/+j8//////7/7Pr9/f39/P/r/P/////+/+zT1tbW1tXaxgBWUDggLgAAALABAJ0BKggABQADgFollAJ0APH4cQAA/vCL5c+QzsLbWGYybOg+uLGOgg0AAAA=",
+      "original": {
+        "bytes": 417898,
+        "hash": "40ba32f7a7beff313a5a1207890436e68d4a749b6b008eb30b11de45261b6780",
+        "height": 1624,
+        "key": "personal-site/media/40ba32f7a7beff313a5a1207890436e68d4a749b6b008eb30b11de45261b6780.png",
+        "mime": "image/png",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/40ba32f7a7beff313a5a1207890436e68d4a749b6b008eb30b11de45261b6780.png",
+        "width": 2732
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-24T15:47:00.000Z",
+        "key": "3e5edb27f1248085b67ed7f0b8e750da",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 17958,
+          "hash": "777a26195f96f1e9760da1e6fc9f70d81a5423a675b729994613bd156a7eaa6e",
+          "height": 571,
+          "key": "personal-site/media/777a26195f96f1e9760da1e6fc9f70d81a5423a675b729994613bd156a7eaa6e.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/777a26195f96f1e9760da1e6fc9f70d81a5423a675b729994613bd156a7eaa6e.webp",
+          "width": 960
+        },
+        {
+          "bytes": 64392,
+          "hash": "d484c9ed54194e1f94477664c3f5331b0e033fbce084aafe6fa766645abde4a2",
+          "height": 1141,
+          "key": "personal-site/media/d484c9ed54194e1f94477664c3f5331b0e033fbce084aafe6fa766645abde4a2.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/d484c9ed54194e1f94477664c3f5331b0e033fbce084aafe6fa766645abde4a2.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3e5edb27f12480a48852c00970dfc23e": {
+      "blurDataURL": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4WAoAAAAQAAAABgAABwAAQUxQSCoAAAABYBRJkiL/nlYBe+DdJxxTfU9CRMTy3PeJPIEX9/Pg+x7sCbw432rNXQBWUDggLAAAAJABAJ0BKgcACAADgFolpAAC6lbvOAD+9OBNYpqilxn5YKT2GTvR7a5tgAAA",
+      "original": {
+        "bytes": 429653,
+        "hash": "d5f2986576047b0af15f52d3bad2b5a16ed4930367cbaa6b0f1385009529df44",
+        "height": 1855,
+        "key": "personal-site/media/d5f2986576047b0af15f52d3bad2b5a16ed4930367cbaa6b0f1385009529df44.png",
+        "mime": "image/png",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/d5f2986576047b0af15f52d3bad2b5a16ed4930367cbaa6b0f1385009529df44.png",
+        "width": 1556
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-24T15:47:00.000Z",
+        "key": "3e5edb27f12480a48852c00970dfc23e",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 64258,
+          "hash": "8c1163bdf6047db115e64a56f25e02cb7d0c8b4488035070cd1ed2933a399f80",
+          "height": 1144,
+          "key": "personal-site/media/8c1163bdf6047db115e64a56f25e02cb7d0c8b4488035070cd1ed2933a399f80.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/8c1163bdf6047db115e64a56f25e02cb7d0c8b4488035070cd1ed2933a399f80.webp",
+          "width": 960
+        },
+        {
+          "bytes": 145306,
+          "hash": "7cda7e7e2178b73a99acac44f92a000850de490a1dfe56768c0fd14f3115af8b",
+          "height": 1855,
+          "key": "personal-site/media/7cda7e7e2178b73a99acac44f92a000850de490a1dfe56768c0fd14f3115af8b.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/7cda7e7e2178b73a99acac44f92a000850de490a1dfe56768c0fd14f3115af8b.webp",
+          "width": 1556
+        }
+      ]
+    },
+    "3e5edb27f12480bcaeaddc7ff5430b47": {
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAABwAQCdASoIAAUAA4BaJZQCdAFAAAD+8uK+yqardg0ekZsg5cHQjIjljAFHQAAA",
+      "original": {
+        "bytes": 203008,
+        "hash": "70682cbe2669e90ba4322b7fbf7c5e9d0d33d24860924f3f9cc6c251af38c6fa",
+        "height": 1333,
+        "key": "personal-site/media/70682cbe2669e90ba4322b7fbf7c5e9d0d33d24860924f3f9cc6c251af38c6fa.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/70682cbe2669e90ba4322b7fbf7c5e9d0d33d24860924f3f9cc6c251af38c6fa.jpg",
+        "width": 2266
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-24T15:47:00.000Z",
+        "key": "3e5edb27f12480bcaeaddc7ff5430b47",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 30256,
+          "hash": "a63721cecca784f3eb068d79a8b44395ac4100acd3c300851e72e603a9084044",
+          "height": 565,
+          "key": "personal-site/media/a63721cecca784f3eb068d79a8b44395ac4100acd3c300851e72e603a9084044.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/a63721cecca784f3eb068d79a8b44395ac4100acd3c300851e72e603a9084044.webp",
+          "width": 960
+        },
+        {
+          "bytes": 99308,
+          "hash": "e4157ec4dc205f4f7d5fe2499f9ce8d35a2d2641c01d9926fd4f1c37e77b2089",
+          "height": 1129,
+          "key": "personal-site/media/e4157ec4dc205f4f7d5fe2499f9ce8d35a2d2641c01d9926fd4f1c37e77b2089.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/e4157ec4dc205f4f7d5fe2499f9ce8d35a2d2641c01d9926fd4f1c37e77b2089.webp",
           "width": 1920
         }
       ]
@@ -86957,6 +87190,11 @@
       "active": true,
       "aliases": [],
       "slug": "margin-call-ai-safety-parody"
+    },
+    "3e5edb27f124800884cddefb16b57151": {
+      "active": true,
+      "aliases": [],
+      "slug": "doom-or-bloom"
     }
   },
   "projects": {
@@ -88138,6 +88376,1028 @@
       "title": "Margin Call — AI Safety Parody",
       "tweet": "https://x.com/transitive_bs/status/2099185744724316478",
       "website": "https://www.youtube.com/watch?v=FT-zgDcfLmc"
+    },
+    "3e5edb27f124800884cddefb16b57151": {
+      "authors": [
+        {
+          "id": "b036f7f695a94f97b3b5c46867d0d103",
+          "name": "Travis Fischer"
+        }
+      ],
+      "blocks": [
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f12480bcaeaddc7ff5430b47",
+          "media": "3e5edb27f12480bcaeaddc7ff5430b47",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f1248094965cca3a94a42fba",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "How will AI change our future?",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480fd983bcb9344410cd2",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Some see AI ushering in an era of ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "unprecedented abundance",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". They believe AI will help us ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://darioamodei.com/essay/machines-of-loving-grace#1-biology-and-health",
+              "italic": false,
+              "strike": false,
+              "text": "live longer & healthier lives",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://darioamodei.com/essay/machines-of-loving-grace#:~:text=should%20help%20with.-,Economic%20growth,-.%20Can%20the%20developing",
+              "italic": false,
+              "strike": false,
+              "text": "drive massive economic growth",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://openai.com/index/navier-stokes-solution/",
+              "italic": false,
+              "strike": false,
+              "text": "make major breakthroughs in math & physics",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", and even ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/elonmusk/status/2101601873115681037",
+              "italic": false,
+              "strike": false,
+              "text": "conquer the stars",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480769e25def81585bbe2",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Others see an era of ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "unprecedented dangers",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". They worry about ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://cultural-alignment.com/risk-families/malicious-use",
+              "italic": false,
+              "strike": false,
+              "text": "malicious actors",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " using AI for ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://cultural-alignment.com/concepts/cyberattacks",
+              "italic": false,
+              "strike": false,
+              "text": "cyberattacks",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " and ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.noahpinion.blog/p/heres-how-were-all-going-to-die",
+              "italic": false,
+              "strike": false,
+              "text": "biological weapons",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", or ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://cultural-alignment.com/risk-families/systemic",
+              "italic": false,
+              "strike": false,
+              "text": "systemic issues",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " like ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://cultural-alignment.com/concepts/power-concentration",
+              "italic": false,
+              "strike": false,
+              "text": "concentration of power",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". And many are even more worried about ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://en.wikipedia.org/wiki/Existential_risk_from_artificial_intelligence",
+              "italic": false,
+              "strike": false,
+              "text": "losing control over powerful misaligned AIs",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " in the ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://ai-2027.com/",
+              "italic": false,
+              "strike": false,
+              "text": "near future",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", which could pose an existential risk to humanity.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480f4a572d41a18140b3a",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Many of us see both: ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "the upsides and the risks",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480f69a91fa4071f666f9",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "To be clear, I build with AI every single day, and I couldn’t be more bullish on its possibilities. At the same time, the rapid pace of capabilities and incidents like the ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+              "italic": false,
+              "strike": false,
+              "text": "OpenAI / Hugging Face hack",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " have forced me to start taking AI risks much more seriously.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480938677c40374b36a38",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I’ll admit that sometimes it’s easy to feel lost in the sauce with how rapidly everything seems to be progressing in AI these days. There is just so much noise. Every day there’s another breakthrough or another impactful product launch. Years happen in weeks. It can all end up feeling so exhausting and out of reach.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f124801a8458ca9aa94d8ab7",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "But one thing we can do to try and elevate the discourse around AI futures is to actively work at sharpening our own understanding of this space. We can challenge our assumptions and clarify our opinions. We can audit our information diet and question the viewpoints behind the most vocal voices in AI. We can try to get a little closer to the truth in an increasingly post-truth world.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f124803fa903cc77a7c0a590",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Introducing Doom or Bloom",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f1248042810efb4f0acaac67",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "So over the past week, I spent way too many tokens building ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.doom-or-bloom.com/",
+              "italic": false,
+              "strike": false,
+              "text": "Doom or Bloom",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f124809d946ff411543dac69",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "My goal was to make it really easy for you to ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "href": "https://www.doom-or-bloom.com/assessments?start=1",
+              "italic": false,
+              "strike": false,
+              "text": "map your own AI worldview",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ": explain what you think in your own words, answer a few follow-up questions, and see how it all fits together. Along the way, you’ll put your assumptions into words, find questions worth thinking about next, learn more about key topics, and compare your views with others.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f1248031b4b3cd5bf4a647c1",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Early testers have already reported that this interview process has been extremely helpful in clarifying their own views. It’s my hope that this project will help improve communication across a wide range of views and policy positions, many of which currently seem to be speaking different languages.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480af8603c1cab5db3d38",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Here’s what the interview process looks like:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.doom-or-bloom.com/assessments?start=1",
+              "italic": false,
+              "strike": false,
+              "text": "doom-or-bloom.com/assessments",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "3e5edb27f12480a48852c00970dfc23e",
+          "media": "3e5edb27f12480a48852c00970dfc23e",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f1248023b5c7c2d9b92e9344",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "And here’s an example of what ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.doom-or-bloom.com/public/assessments/1bf4abcd-dc66-4d43-a1c9-0b3f42069ce0",
+              "italic": false,
+              "strike": false,
+              "text": "my published results",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " look like after answering just 2 questions:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f1248085b67ed7f0b8e750da",
+          "media": "3e5edb27f1248085b67ed7f0b8e750da",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480179ba4e780e6c216f7",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "There’s a lot of nuance captured in these results: I expect huge upsides from AI, but I’m also seriously worried about the risks. Being able to model both of those views at the same time was a key goal of this project.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f124806a939af353b892da4d",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The map’s horizontal axis represents how positive or negative you expect AI’s impact to be. Doom represents existentially bad outcomes for humanity (extinction, loss of free will, dystopian outcomes, etc), and Bloom represents unprecedented flourishing for humanity (technologically advanced utopia, immortality, etc).",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f1248054a921d6092ea9ce53",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The vertical axis represents how radically you expect AI to change society: incremental change like any other technology or civizilational change that is so great we can’t fathom all of the effects.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480848ba3cc5875301ef0",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The shaded range reflects uncertainty in how the app interprets your answers.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480c1a5c8cc616164727e",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Under the hood",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480d7b43fcde8c2e98f26",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Okay, okay. I also wanted an excuse to play with ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://typesafe.ai/",
+              "italic": false,
+              "strike": false,
+              "text": "Jev by TypeSafe AI",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f124801c818ee88e46794586",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Doom or Bloom is powered by new type of adaptive interview engine. It uses natural language Q&A to elicit a simplified model views on a topic, in this case your AI worldview. The idea is to learn as much as possible about your worldview while taking as little of your time as possible. At each step, the app chooses a question from a curated set of pre-built questions based on what you’ve explained, what’s still unclear, and how much effort we think it’ll take to answer.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480909533dad4676ca70d",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Our model maps your answers onto eight dimensions, covering things like your views on capabilities, transition speed, benefits, harms, controllability, institutions, human agency, and policy actions. Separately from your position on the map, we also consider how well you explain your views, including causal clarity, uncertainty, and willingness to update.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f1248049b3bcdef0b210014a",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "It’s pretty cool tech under the hood, and ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://typesafe.ai/",
+              "italic": false,
+              "strike": false,
+              "text": "Jev",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " makes this inexpensive enough to offer ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "for free at scale",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", without using any LLMs at runtime. Jev makes small, structured judgments about your answers, and the app combines them into a profile that is used to either choose the “optimal” next question or stop if we’re confident enough in the results.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f124807a8b2aef048d298bea",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Comparing worldviews",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f1248011a7edf9278a120b35",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "These are the thought leaders whose simulated views ended up closest to mine. These simulated personas are grounded on their writing and interviews, and I think they do a pretty good job in practice of closely matching their stated worldviews:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f124803986dcf43e3f0e5e22",
+          "media": "3e5edb27f124803986dcf43e3f0e5e22",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480459293fd1f87847c03",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "One thing I learned from early testers is that people really like knowing that they aren’t alone in their views on AI. Being able to say “my views closely align with famous person X who I have a lot of respect for” was a really interesting and unexpected outcome from this project.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f124804a8e05d65e2361169e",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "My hope is that it also gives people a reason to look more closely at what they believe, and why.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480829bc5e209a7a6abf9",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Final thoughts",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480c7a8bef05a0d0213b4",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I believe AI will come to be viewed as the most impactful technology in human history, and we desperately need better tools to understand how it’ll affect our shared future. Tools which will help bring people together and elevate the public discourse away from petty tribal disputes. Tools which take optimistic, pessimistic, and mixed views seriously. And given the importance of the topic and the relative ease of vibe coding slop these days, tools which are crafted with care.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480e6b3b7db9ff47c91a1",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "This project’s 100% free, ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://github.com/transitive-bullshit/doom-or-bloom",
+              "italic": false,
+              "strike": false,
+              "text": "open source",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", and your results are private by default.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f1248095a9e5c54b40e5f96c",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.doom-or-bloom.com/assessments?start=1",
+              "italic": false,
+              "strike": false,
+              "text": "Map your own AI worldview today",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " && I’d love to know where you land!",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f1248053a467cad19e5da30b",
+          "richText": [],
+          "type": "paragraph"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f124802ca551dab6b480798b",
+          "type": "bookmark",
+          "url": "https://www.doom-or-bloom.com/"
+        }
+      ],
+      "cover": "3e5edb27f124800884cddefb16b57151:cover",
+      "description": "Map your AI worldview, and see how it compares with others.",
+      "featured": true,
+      "icon": {
+        "type": "emoji",
+        "value": "⛸️"
+      },
+      "id": "3e5edb27f124800884cddefb16b57151",
+      "modified": "2026-09-24T15:52:00.000Z",
+      "published": "2026-09-24",
+      "slug": "doom-or-bloom",
+      "source": "https://github.com/transitive-bullshit/doom-or-bloom",
+      "tags": [
+        "AI",
+        "Thought Experiments",
+        "OSS",
+        "Projects"
+      ],
+      "title": "Doom or Bloom",
+      "website": "https://www.doom-or-bloom.com"
     }
   },
   "projectSource": {
