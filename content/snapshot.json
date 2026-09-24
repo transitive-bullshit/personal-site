@@ -9859,7 +9859,7 @@
               "color": "default",
               "italic": true,
               "strike": false,
-              "text": "Last updated: December 2025",
+              "text": "Last updated: September 2026",
               "underline": false
             }
           ],
@@ -9963,7 +9963,95 @@
         {
           "children": [],
           "color": "default",
-          "id": "211edb27f1248057a674c5ae4147489a",
+          "id": "0eba3739987e44feb1b42f4454763baf",
+          "richText": [],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a6703dcb0ccb43e6b7f0f15869f6b1c4",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "2026",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f12480c29596dd81ccbfda12",
+          "type": "bookmark",
+          "url": "https://open.spotify.com/playlist/6pqn47sjL9qbjJ2EbzTZBa"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f124803080b5dc17c14462c0",
+          "type": "bookmark",
+          "url": "https://open.spotify.com/playlist/2qmUAnjXrrmdMoqThqPbJ7"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f12480129dffdcfb16056069",
+          "type": "bookmark",
+          "url": "https://open.spotify.com/playlist/5qh495w9lkYqygOigUtSQE"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f12480268388dbce5df41249",
+          "type": "bookmark",
+          "url": "https://open.spotify.com/playlist/29Y8X2NF1lKhU4V6hAfgRE"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f1248048a740d25b84c435ad",
+          "type": "bookmark",
+          "url": "https://open.spotify.com/playlist/7yXDbAaSO5ar97ecPgSl5a"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f1248074b093f05ccd344f9f",
+          "type": "bookmark",
+          "url": "https://open.spotify.com/playlist/7sj9kxlJsG364gyhmw0MLS"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f12480c1b7e6e89de42aec39",
+          "type": "bookmark",
+          "url": "https://open.spotify.com/playlist/1HeR31Fr3JwApOIJ4vjklI"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f1248039a007fdc967505b5a",
+          "type": "bookmark",
+          "url": "https://open.spotify.com/playlist/1LkKwjYw30HELFn37ECCGl"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3e5edb27f1248030bd2edc9b935a4af2",
+          "type": "bookmark",
+          "url": "https://open.spotify.com/playlist/3Ihz1rcLEsD9Ip7Suo5Na1"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "451a39b6c3914ebb9a47ffc7dcd0dedd",
           "richText": [],
           "type": "paragraph"
         },
@@ -11432,16 +11520,16 @@
         }
       ],
       "cover": "2309b27b71df42d1999be203ba9565e2:cover",
-      "description": "Ten years ago, I started creating monthly playlists to help me track new music. Somewhere along the line, this monthly ritual turned into more a personal music diary.",
+      "description": "Fourteen years ago, I started creating monthly playlists to help me track new music. Somewhere along the line, this monthly ritual turned into more a personal music diary.",
       "featured": true,
       "id": "2309b27b71df42d1999be203ba9565e2",
-      "modified": "2026-09-15T17:16:00.000Z",
+      "modified": "2026-09-24T09:16:00.000Z",
       "published": "2022-03-29",
-      "slug": "my-10-year-music-diary",
+      "slug": "music-diary",
       "tags": [
         "Lifestyle"
       ],
-      "title": "My 10 Year Music Diary"
+      "title": "My 14 Year Music Diary"
     },
     "266ce1a8316f44ecbd36e3908ebdba78": {
       "author": "Travis Fischer",
@@ -71963,6 +72051,40 @@
       },
       "title": "December 2016"
     },
+    "https://open.spotify.com/playlist/1HeR31Fr3JwApOIJ4vjklI": {
+      "description": "Playlist · Travis Fischer · 69 items",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADwAQCdASoIAAgAA4BaJaACdEf/gbabOQAA8qI+JbTEMVFERuQ2FaWp3GcHLUjr3lnauV3h8/QCa9DHSEcUcda/X8uwIw3msByRlAAA",
+        "original": {
+          "bytes": 59720,
+          "hash": "c33bf8dfb69aab4f5962a61c7da2a1a037df6303289eb48ed2a91af62b2aaf5c",
+          "height": 640,
+          "key": "personal-site/media/c33bf8dfb69aab4f5962a61c7da2a1a037df6303289eb48ed2a91af62b2aaf5c.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/c33bf8dfb69aab4f5962a61c7da2a1a037df6303289eb48ed2a91af62b2aaf5c.jpg",
+          "width": 640
+        },
+        "pipelineVersion": 1,
+        "source": {
+          "edited": "https://mosaic.scdn.co/640/ab67616d00001e02409562ee693c0694b5b0f29eab67616d00001e025c15d15bae08f42750392ec7ab67616d00001e025d88185b3c2451bc56e07cefab67616d00001e026bc6fdac17f80ce16b1cc377",
+          "key": "bookmark:6a4a29acb2b63c2133eea3700167fe6c036e287ced9319f842ff0acf234ce431",
+          "kind": "external",
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02409562ee693c0694b5b0f29eab67616d00001e025c15d15bae08f42750392ec7ab67616d00001e025d88185b3c2451bc56e07cefab67616d00001e026bc6fdac17f80ce16b1cc377"
+        },
+        "variants": [
+          {
+            "bytes": 53884,
+            "hash": "11f83a7c185a093b35c4e261d95b3dc62db984ef278f7541bf4bfdbb6164e333",
+            "height": 640,
+            "key": "personal-site/media/11f83a7c185a093b35c4e261d95b3dc62db984ef278f7541bf4bfdbb6164e333.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/11f83a7c185a093b35c4e261d95b3dc62db984ef278f7541bf4bfdbb6164e333.webp",
+            "width": 640
+          }
+        ]
+      },
+      "title": "March 2026"
+    },
     "https://open.spotify.com/playlist/1hhFVuumuTQfpuoz3F1H8Y?si=b163ae1a74364786": {
       "description": "",
       "image": {
@@ -72064,6 +72186,40 @@
         ]
       },
       "title": "December 2014"
+    },
+    "https://open.spotify.com/playlist/1LkKwjYw30HELFn37ECCGl": {
+      "description": "Playlist · Travis Fischer · 61 items",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoIAAgAA4BaJZACdH8AFcQPZuAAAP5BPfLwBj7BSU6a585IujLp/qVy0fGMwAr6sRus+u8ruVaPwuyEGAXSSlIg5pwAAA==",
+        "original": {
+          "bytes": 82114,
+          "hash": "263d8e57bc92bba9367f449d3e214c11503cbd4074eb1525d56b970dfc8140e3",
+          "height": 640,
+          "key": "personal-site/media/263d8e57bc92bba9367f449d3e214c11503cbd4074eb1525d56b970dfc8140e3.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/263d8e57bc92bba9367f449d3e214c11503cbd4074eb1525d56b970dfc8140e3.jpg",
+          "width": 640
+        },
+        "pipelineVersion": 1,
+        "source": {
+          "edited": "https://mosaic.scdn.co/640/ab67616d00001e024d868c7c92fff30f2051b0efab67616d00001e026d6116f16048ca1a16605327ab67616d00001e028dde27c1f06b1beab53296deab67616d00001e02b6713ac18964229a20db9bbf",
+          "key": "bookmark:b003ae0ddd7418bfc84b76b47f3b36d574ab1504e52fae7ef5969824c67224da",
+          "kind": "external",
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e024d868c7c92fff30f2051b0efab67616d00001e026d6116f16048ca1a16605327ab67616d00001e028dde27c1f06b1beab53296deab67616d00001e02b6713ac18964229a20db9bbf"
+        },
+        "variants": [
+          {
+            "bytes": 83602,
+            "hash": "69c6558b22ebbdd0fe03f8e7c2db7baa4b1b04a1b1821366b12996322b2adbca",
+            "height": 640,
+            "key": "personal-site/media/69c6558b22ebbdd0fe03f8e7c2db7baa4b1b04a1b1821366b12996322b2adbca.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/69c6558b22ebbdd0fe03f8e7c2db7baa4b1b04a1b1821366b12996322b2adbca.webp",
+            "width": 640
+          }
+        ]
+      },
+      "title": "February 2026"
     },
     "https://open.spotify.com/playlist/1mfapMiC6t52pIigO4MEhg?si=22d23f9b9efb4d58": {
       "description": "",
@@ -72472,6 +72628,40 @@
         ]
       },
       "title": "November 2019"
+    },
+    "https://open.spotify.com/playlist/29Y8X2NF1lKhU4V6hAfgRE": {
+      "description": "Playlist · Travis Fischer · 3 items",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoIAAgAA4BaJZACdADdYs8/BcAA8AIxkA+WpXq6wf/F00VyjDatJWY1UyygnOiL4GGWoAAA",
+        "original": {
+          "bytes": 38332,
+          "hash": "a012d7973de7bc898bd14d52ba12546832574bf04ee16520a452ac8f31656bd5",
+          "height": 300,
+          "key": "personal-site/media/a012d7973de7bc898bd14d52ba12546832574bf04ee16520a452ac8f31656bd5.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/a012d7973de7bc898bd14d52ba12546832574bf04ee16520a452ac8f31656bd5.jpg",
+          "width": 300
+        },
+        "pipelineVersion": 1,
+        "source": {
+          "edited": "https://i.scdn.co/image/ab67616d00001e0283b953402c5db02844eb6544",
+          "key": "bookmark:b2f021750e6a46cdb62f196a6fecdc4e9b0153a53c26a44a02f35dedcc8065dd",
+          "kind": "external",
+          "url": "https://i.scdn.co/image/ab67616d00001e0283b953402c5db02844eb6544"
+        },
+        "variants": [
+          {
+            "bytes": 20708,
+            "hash": "b946d5295d85dca012892dceb9c81001214cfd5df75cbf051f83ce11b10011fb",
+            "height": 300,
+            "key": "personal-site/media/b946d5295d85dca012892dceb9c81001214cfd5df75cbf051f83ce11b10011fb.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/b946d5295d85dca012892dceb9c81001214cfd5df75cbf051f83ce11b10011fb.webp",
+            "width": 300
+          }
+        ]
+      },
+      "title": "June 2026"
     },
     "https://open.spotify.com/playlist/2bq6H8N4MNrlVzCj42Sa0c?si=a83fd4b6bdaa40ce": {
       "description": "",
@@ -72948,6 +73138,40 @@
         ]
       },
       "title": "October 2023"
+    },
+    "https://open.spotify.com/playlist/2qmUAnjXrrmdMoqThqPbJ7": {
+      "description": "Playlist · Travis Fischer · 76 items",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoIAAgAA4BaJYgCdAD0owRLegAAzKDETT++fNkKe6IK8hRyadG10GAMqNR+tEw3gefL612Ikz8dXikiAAA=",
+        "original": {
+          "bytes": 79337,
+          "hash": "eabbfc140451ec38c7a98e99f8005005b6d33e2a2a964102f9122f37c63eb0b0",
+          "height": 640,
+          "key": "personal-site/media/eabbfc140451ec38c7a98e99f8005005b6d33e2a2a964102f9122f37c63eb0b0.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/eabbfc140451ec38c7a98e99f8005005b6d33e2a2a964102f9122f37c63eb0b0.jpg",
+          "width": 640
+        },
+        "pipelineVersion": 1,
+        "source": {
+          "edited": "https://mosaic.scdn.co/640/ab67616d00001e02a91a5b301baac1f46e6f30ebab67616d00001e02d2aa02e64d4b41a2787219dfab67616d00001e02f701561268195fb25360daccab67616d00001e02f8103e11492d89299551c52d",
+          "key": "bookmark:3446496617bb06a896f5b0e2ae2352d6367e94a42014b2492a24c092872f0b28",
+          "kind": "external",
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02a91a5b301baac1f46e6f30ebab67616d00001e02d2aa02e64d4b41a2787219dfab67616d00001e02f701561268195fb25360daccab67616d00001e02f8103e11492d89299551c52d"
+        },
+        "variants": [
+          {
+            "bytes": 71390,
+            "hash": "4d593ecdde794b625737fc210c913c4b58b331d74078ab27b2c0479b55b1e9be",
+            "height": 640,
+            "key": "personal-site/media/4d593ecdde794b625737fc210c913c4b58b331d74078ab27b2c0479b55b1e9be.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/4d593ecdde794b625737fc210c913c4b58b331d74078ab27b2c0479b55b1e9be.webp",
+            "width": 640
+          }
+        ]
+      },
+      "title": "August 2026"
     },
     "https://open.spotify.com/playlist/2shVgPJhejLJVC2DjjTY6L?si=79ff3e3d8187421c": {
       "description": "",
@@ -73458,6 +73682,40 @@
         ]
       },
       "title": "August 2021"
+    },
+    "https://open.spotify.com/playlist/3Ihz1rcLEsD9Ip7Suo5Na1": {
+      "description": "Playlist · Travis Fischer · 67 items",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoIAAgAA4BaJYgCdAEXepSY4AD+6QeEz3hgTVIJ+feX0Gx6mCZ+2fFoAisVrLHWn5EwAAAA",
+        "original": {
+          "bytes": 55511,
+          "hash": "763e0d720b2d5434d7409ea63014efe95b091164029b6eb9c3ee79109ad06fc9",
+          "height": 640,
+          "key": "personal-site/media/763e0d720b2d5434d7409ea63014efe95b091164029b6eb9c3ee79109ad06fc9.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/763e0d720b2d5434d7409ea63014efe95b091164029b6eb9c3ee79109ad06fc9.jpg",
+          "width": 640
+        },
+        "pipelineVersion": 1,
+        "source": {
+          "edited": "https://mosaic.scdn.co/640/ab67616d00001e0208195c701e3a90ff9528862eab67616d00001e0276db5d2dbca454569592e6f2ab67616d00001e02d6c8c9777276e7d61e93436bab67616d00001e02ec6ee0b26e19fd6dc21b3f5e",
+          "key": "bookmark:b5ad0eff2032670ef49faedadcd8f8b3d2888e1723af9119fb0726da8e90fe92",
+          "kind": "external",
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0208195c701e3a90ff9528862eab67616d00001e0276db5d2dbca454569592e6f2ab67616d00001e02d6c8c9777276e7d61e93436bab67616d00001e02ec6ee0b26e19fd6dc21b3f5e"
+        },
+        "variants": [
+          {
+            "bytes": 52518,
+            "hash": "f9df092e9d8d14b5ff82e8307fbcb3f5dc4ce4dec45bc65454430628a64c71d1",
+            "height": 640,
+            "key": "personal-site/media/f9df092e9d8d14b5ff82e8307fbcb3f5dc4ce4dec45bc65454430628a64c71d1.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/f9df092e9d8d14b5ff82e8307fbcb3f5dc4ce4dec45bc65454430628a64c71d1.webp",
+            "width": 640
+          }
+        ]
+      },
+      "title": "January 2026"
     },
     "https://open.spotify.com/playlist/3kc7eH59G3iW7N8ZEg6J76?si=019cf3713dc44330": {
       "description": "",
@@ -75057,6 +75315,40 @@
       },
       "title": "October 2012"
     },
+    "https://open.spotify.com/playlist/5qh495w9lkYqygOigUtSQE": {
+      "description": "Playlist · Travis Fischer · 52 items",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoIAAgAA4BaJYwCdADze7hYAPZCqYDFs9ngT+ljD8VbX1yl1sZk8MzOn8H2bn/jG4TYUMYEKHQ9Wbb4u9AAAA==",
+        "original": {
+          "bytes": 86678,
+          "hash": "626ecbd49785b7483b1a4af8dfeada411dfbed8bed0a3bcda18b10b1f81098d3",
+          "height": 640,
+          "key": "personal-site/media/626ecbd49785b7483b1a4af8dfeada411dfbed8bed0a3bcda18b10b1f81098d3.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/626ecbd49785b7483b1a4af8dfeada411dfbed8bed0a3bcda18b10b1f81098d3.jpg",
+          "width": 640
+        },
+        "pipelineVersion": 1,
+        "source": {
+          "edited": "https://mosaic.scdn.co/640/ab67616d00001e02066f42690da87dea0e37ba99ab67616d00001e021093b1a9528d6ac67479228bab67616d00001e02942b4029fa54f0b44591a133ab67616d00001e02f631e275b1f65ce108977e4e",
+          "key": "bookmark:834984d46d9462ee60c7ce228a35ccb4188a448952ad420c3d4472390987cd1a",
+          "kind": "external",
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02066f42690da87dea0e37ba99ab67616d00001e021093b1a9528d6ac67479228bab67616d00001e02942b4029fa54f0b44591a133ab67616d00001e02f631e275b1f65ce108977e4e"
+        },
+        "variants": [
+          {
+            "bytes": 87912,
+            "hash": "3d352dae87a164ca9a568cc6aa3055cf31ec11919322aa95ef38d3219acdff37",
+            "height": 640,
+            "key": "personal-site/media/3d352dae87a164ca9a568cc6aa3055cf31ec11919322aa95ef38d3219acdff37.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/3d352dae87a164ca9a568cc6aa3055cf31ec11919322aa95ef38d3219acdff37.webp",
+            "width": 640
+          }
+        ]
+      },
+      "title": "July 2026"
+    },
     "https://open.spotify.com/playlist/5QP0mTz7xQLWfbrpyvPQtP?si=035cd7fec92148e1": {
       "description": "",
       "image": {
@@ -75839,6 +76131,40 @@
       },
       "title": "March 2023"
     },
+    "https://open.spotify.com/playlist/6pqn47sjL9qbjJ2EbzTZBa": {
+      "description": "Playlist · Travis Fischer · 92 items",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoIAAgAA4BaJQBOgB5u9/gAAMtLSX4Tq3TCWkzEdKdOPTPOBps64PBpoGkZihJAAAA=",
+        "original": {
+          "bytes": 54092,
+          "hash": "66e27cdf56672af0fc8eeff5c3eee0689cbbfb53b96dacaf488eb876efdc3f92",
+          "height": 640,
+          "key": "personal-site/media/66e27cdf56672af0fc8eeff5c3eee0689cbbfb53b96dacaf488eb876efdc3f92.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/66e27cdf56672af0fc8eeff5c3eee0689cbbfb53b96dacaf488eb876efdc3f92.jpg",
+          "width": 640
+        },
+        "pipelineVersion": 1,
+        "source": {
+          "edited": "https://mosaic.scdn.co/640/ab67616d00001e020e2bc6b01c3102b2178c746fab67616d00001e022f013557257c7ead39c57f14ab67616d00001e025b3d5e43b6c8ad36cb234572ab67616d00001e02eadfb38979c87eea8209b7d4",
+          "key": "bookmark:844c85f92fd3b2e8260d2c095598ab93f815c707a4dbb72205d97381ea6cb697",
+          "kind": "external",
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e020e2bc6b01c3102b2178c746fab67616d00001e022f013557257c7ead39c57f14ab67616d00001e025b3d5e43b6c8ad36cb234572ab67616d00001e02eadfb38979c87eea8209b7d4"
+        },
+        "variants": [
+          {
+            "bytes": 53948,
+            "hash": "2fda0dbba07225fc8cfd2e3cc1bdecb53282af365e7e541098f921d9649b4a7e",
+            "height": 640,
+            "key": "personal-site/media/2fda0dbba07225fc8cfd2e3cc1bdecb53282af365e7e541098f921d9649b4a7e.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/2fda0dbba07225fc8cfd2e3cc1bdecb53282af365e7e541098f921d9649b4a7e.webp",
+            "width": 640
+          }
+        ]
+      },
+      "title": "September 2026"
+    },
     "https://open.spotify.com/playlist/6QuiEIjniUHcud5nGKDnnn?si=4e68fed63d304f97": {
       "description": "",
       "image": {
@@ -76553,6 +76879,40 @@
       },
       "title": "June 2019"
     },
+    "https://open.spotify.com/playlist/7sj9kxlJsG364gyhmw0MLS": {
+      "description": "Playlist · Travis Fischer · 53 items",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoIAAgAA4BaJaACdADzbDvQAP59bXZu6n/7fPCiCUDknr0yUDIzGPVfG1WHkO02z+ED39AA",
+        "original": {
+          "bytes": 41962,
+          "hash": "8c22c590ba9d7725425b426baf8955f465f296f595bd01857b6a53988f0ddfc3",
+          "height": 640,
+          "key": "personal-site/media/8c22c590ba9d7725425b426baf8955f465f296f595bd01857b6a53988f0ddfc3.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/8c22c590ba9d7725425b426baf8955f465f296f595bd01857b6a53988f0ddfc3.jpg",
+          "width": 640
+        },
+        "pipelineVersion": 1,
+        "source": {
+          "edited": "https://mosaic.scdn.co/640/ab67616d00001e02522dc34ef58f4034db8abb8bab67616d00001e026c96e7be6d4939d169695ef9ab67616d00001e02995cae4cd8fab3099923b911ab67616d00001e02dd27c2d48f82d3ce71d458ef",
+          "key": "bookmark:9b528705a8a59e609853daae3dd4f522fb68464035291a74e32e0f85241c4251",
+          "kind": "external",
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e02522dc34ef58f4034db8abb8bab67616d00001e026c96e7be6d4939d169695ef9ab67616d00001e02995cae4cd8fab3099923b911ab67616d00001e02dd27c2d48f82d3ce71d458ef"
+        },
+        "variants": [
+          {
+            "bytes": 35266,
+            "hash": "9b2e6b2dbae28debc2508b08da5c2ead4424d3a201f93548cc587bb9d941ff4b",
+            "height": 640,
+            "key": "personal-site/media/9b2e6b2dbae28debc2508b08da5c2ead4424d3a201f93548cc587bb9d941ff4b.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/9b2e6b2dbae28debc2508b08da5c2ead4424d3a201f93548cc587bb9d941ff4b.webp",
+            "width": 640
+          }
+        ]
+      },
+      "title": "April 2026"
+    },
     "https://open.spotify.com/playlist/7td4TxVp6oh9Tke2axCGED": {
       "description": "",
       "image": {
@@ -76654,6 +77014,40 @@
         ]
       },
       "title": "September 2015"
+    },
+    "https://open.spotify.com/playlist/7yXDbAaSO5ar97ecPgSl5a": {
+      "description": "Playlist · Travis Fischer · 8 items",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoIAAgAA4BaJQBOkCYicDM6FAD30YvKXMOoqPZ0qu9hYj31JDmT73wiD0/pAWSW0knoJTGIPec+8HpI3L5oAA==",
+        "original": {
+          "bytes": 72753,
+          "hash": "ca6cac267c7b903320c0e45fc5e26e9e49ac0b3e89435509065dd7e0b7f53b1c",
+          "height": 640,
+          "key": "personal-site/media/ca6cac267c7b903320c0e45fc5e26e9e49ac0b3e89435509065dd7e0b7f53b1c.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/ca6cac267c7b903320c0e45fc5e26e9e49ac0b3e89435509065dd7e0b7f53b1c.jpg",
+          "width": 640
+        },
+        "pipelineVersion": 1,
+        "source": {
+          "edited": "https://mosaic.scdn.co/640/ab67616d00001e0210c4ee6d692d102f0ce4769cab67616d00001e028c86e4a1f37c0775128adfd3ab67616d00001e02b32962c50d77fffae076a1ebab67616d00001e02d87ad4e40be073e86f0f3b55",
+          "key": "bookmark:547c22af2653c3c7329aed966878cd1640c50a7d508c5da753046302341e1be4",
+          "kind": "external",
+          "url": "https://mosaic.scdn.co/640/ab67616d00001e0210c4ee6d692d102f0ce4769cab67616d00001e028c86e4a1f37c0775128adfd3ab67616d00001e02b32962c50d77fffae076a1ebab67616d00001e02d87ad4e40be073e86f0f3b55"
+        },
+        "variants": [
+          {
+            "bytes": 63882,
+            "hash": "8082de86aa8b17da0923b335b87d02166104e4e470e671d823aabb5e1f372628",
+            "height": 640,
+            "key": "personal-site/media/8082de86aa8b17da0923b335b87d02166104e4e470e671d823aabb5e1f372628.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/8082de86aa8b17da0923b335b87d02166104e4e470e671d823aabb5e1f372628.webp",
+            "width": 640
+          }
+        ]
+      },
+      "title": "May 2026"
     },
     "https://openai.com/research/practices-for-governing-agentic-ai-systems": {
       "description": "",
@@ -78052,7 +78446,7 @@
       ]
     },
     "12467265d73e4f9a8cd7e71b80809e68": {
-      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoIAAUAA4BaJaQAAxanD9eAAP7vaW1TTprbw6AAAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoIAAUAA4BaJaQAAxacrYAA/u9pbVNOmXy61wAAAAA=",
       "original": {
         "bytes": 151672,
         "hash": "35161b4fe76e589fb0bd0ec3e1644eddfd64a4ae622f963053a3cea68be4b356",
@@ -78064,7 +78458,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2022-03-29T09:17:00.000Z",
+        "edited": "2026-09-24T09:03:00.000Z",
         "key": "12467265d73e4f9a8cd7e71b80809e68",
         "kind": "external",
         "url": "https://cdn-images-1.medium.com/max/2400/1*KhHNfgZajL22VulMdfJjjw.jpeg"
@@ -78561,7 +78955,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-15T17:16:00.000Z",
+        "edited": "2026-09-24T09:16:00.000Z",
         "key": "2309b27b71df42d1999be203ba9565e2:cover",
         "kind": "file"
       },
@@ -87795,8 +88189,10 @@
     },
     "2309b27b71df42d1999be203ba9565e2": {
       "active": true,
-      "aliases": [],
-      "slug": "my-10-year-music-diary"
+      "aliases": [
+        "my-10-year-music-diary"
+      ],
+      "slug": "music-diary"
     },
     "266ce1a8316f44ecbd36e3908ebdba78": {
       "active": true,
