@@ -30,7 +30,7 @@ export function ContentBody({
         <Blocks blocks={blocks} snapshot={snapshot} />
         <nav
           className='content-back'
-          aria-label='More to explore'
+          aria-label={'authors' in entry ? 'More projects' : 'More writing'}
           data-link-preview='false'
         >
           <Link href={'authors' in entry ? '/projects' : '/writing'}>

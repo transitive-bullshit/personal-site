@@ -101,7 +101,7 @@ function BlockView({ block, snapshot }: { block: Block; snapshot: Snapshot }) {
             <a
               className='heading-anchor'
               href={'#' + block.id}
-              aria-label='Link to this section'
+              aria-label={`Link to section: ${block.richText.map((span) => span.text).join('')}`}
             >
               #
             </a>

@@ -9,11 +9,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { LinkPreviewProvider } from '@/components/link-preview-provider'
 import { SiteSearch } from '@/components/site-search'
+import { SiteNavigation } from '@/components/site-navigation'
 import { ThemeProvider } from '@/components/theme-provider'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { Button } from '@/components/ui/button'
 import { internalLinkPreviews } from '@/lib/content/link-previews'
 import { site } from '@/lib/site'
+import { articles } from '@/lib/content/load'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -45,10 +47,9 @@ export default function RootLayout({
               <Link className='site-brand' href='/'>
                 TransitiveBullsh.it
               </Link>
-              <nav className='site-header-nav' aria-label='Main navigation'>
-                <Link href='/projects'>Projects</Link>
-                <Link href='/writing'>Writing</Link>
-              </nav>
+              <SiteNavigation
+                writingPaths={articles.map((article) => '/' + article.slug)}
+              />
               <div className='site-header-actions'>
                 <Button variant='ghost' size='icon-sm' asChild>
                   <a
@@ -84,8 +85,10 @@ export default function RootLayout({
             <footer className='site-footer'>
               <span>Travis Fischer · Transitive Bullshit</span>
               <div className='site-footer-actions'>
-                <Link href='/projects'>Projects</Link>
-                <Link href='/writing'>Writing</Link>
+                <nav aria-label='Footer navigation'>
+                  <Link href='/projects'>Projects</Link>
+                  <Link href='/writing'>Writing</Link>
+                </nav>
                 <ThemeToggle />
               </div>
             </footer>
