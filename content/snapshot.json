@@ -80871,39 +80871,39 @@
       ]
     },
     "3e5edb27f124800884cddefb16b57151:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAADQAQCdASoIAAMAA4BaJZQCdAEUo5ocIAD+9enPpo6LAny6xNwF+7AA",
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAUAA4BaJYwCdADyfvaAAP7zWyYy5jZrW3LvlD78pYNFxev3wzAA",
       "original": {
-        "bytes": 303288,
-        "hash": "858da3007d0e3b6369b8544c03616e9d0e8b4a91a7b44a96a495ef76af52828d",
-        "height": 786,
-        "key": "personal-site/media/858da3007d0e3b6369b8544c03616e9d0e8b4a91a7b44a96a495ef76af52828d.jpg",
+        "bytes": 434996,
+        "hash": "d7e67cff67a010808f84040c259a105a7928851f6e97e0b2204b6df78b7e6087",
+        "height": 1205,
+        "key": "personal-site/media/d7e67cff67a010808f84040c259a105a7928851f6e97e0b2204b6df78b7e6087.jpg",
         "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/858da3007d0e3b6369b8544c03616e9d0e8b4a91a7b44a96a495ef76af52828d.jpg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/d7e67cff67a010808f84040c259a105a7928851f6e97e0b2204b6df78b7e6087.jpg",
         "width": 2048
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-24T16:11:00.000Z",
+        "edited": "2026-09-24T16:13:00.000Z",
         "key": "3e5edb27f124800884cddefb16b57151:cover",
         "kind": "file"
       },
       "variants": [
         {
-          "bytes": 43884,
-          "hash": "70698363e4a187075caba6fa15f551a7d1401e682b02d6482eabe061702420a5",
-          "height": 368,
-          "key": "personal-site/media/70698363e4a187075caba6fa15f551a7d1401e682b02d6482eabe061702420a5.webp",
+          "bytes": 85890,
+          "hash": "d0f4319acddbbab721a7fcfca8384d575ab4dd434fc7c8b9aff76a5011c6d1b5",
+          "height": 565,
+          "key": "personal-site/media/d0f4319acddbbab721a7fcfca8384d575ab4dd434fc7c8b9aff76a5011c6d1b5.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/70698363e4a187075caba6fa15f551a7d1401e682b02d6482eabe061702420a5.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/d0f4319acddbbab721a7fcfca8384d575ab4dd434fc7c8b9aff76a5011c6d1b5.webp",
           "width": 960
         },
         {
-          "bytes": 187014,
-          "hash": "ed78733afdcbe2fd8b298e1202ec88bb5d32632ca7eb8157f9e90b09ac11f532",
-          "height": 737,
-          "key": "personal-site/media/ed78733afdcbe2fd8b298e1202ec88bb5d32632ca7eb8157f9e90b09ac11f532.webp",
+          "bytes": 302578,
+          "hash": "38a2ab220edad873e0af8ecd53f3b29635a0817f9b58e9dd1b2ea7c58f873012",
+          "height": 1130,
+          "key": "personal-site/media/38a2ab220edad873e0af8ecd53f3b29635a0817f9b58e9dd1b2ea7c58f873012.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/ed78733afdcbe2fd8b298e1202ec88bb5d32632ca7eb8157f9e90b09ac11f532.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/38a2ab220edad873e0af8ecd53f3b29635a0817f9b58e9dd1b2ea7c58f873012.webp",
           "width": 1920
         }
       ]
@@ -80921,7 +80921,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-24T16:11:00.000Z",
+        "edited": "2026-09-24T16:13:00.000Z",
         "key": "3e5edb27f124800884cddefb16b57151:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/c54f086c-e568-46a3-b826-d5169e0a5459/icon.svg"
@@ -89424,7 +89424,7 @@
         "type": "image"
       },
       "id": "3e5edb27f124800884cddefb16b57151",
-      "modified": "2026-09-24T16:11:00.000Z",
+      "modified": "2026-09-24T16:13:00.000Z",
       "published": "2026-09-24",
       "slug": "doom-or-bloom",
       "source": "https://github.com/transitive-bullshit/doom-or-bloom",
