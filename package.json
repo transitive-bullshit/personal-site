@@ -56,6 +56,7 @@
     "@types/react-dom": "^19.3.0",
     "cheerio": "^1.2.0",
     "lint-staged": "^17.5.1",
+    "notion-client": "^8.0.8",
     "npm-run-all2": "^9.0.3",
     "oxfmt": "^0.68.0",
     "oxlint": "^1.83.0",

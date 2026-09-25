@@ -48,7 +48,12 @@ const bodySchema = z.discriminatedUnion('type', [
     ...text,
     ...caption
   }),
-  z.object({ type: z.literal('image'), media: z.string(), ...caption }),
+  z.object({
+    type: z.literal('image'),
+    media: z.string(),
+    width: z.number().positive().optional(),
+    ...caption
+  }),
   z.object({
     type: z.literal('file'),
     media: z.string(),

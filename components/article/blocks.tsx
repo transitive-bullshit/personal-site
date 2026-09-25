@@ -171,11 +171,27 @@ function BlockView({ block, snapshot }: { block: Block; snapshot: Snapshot }) {
     case 'image': {
       const alt = block.caption.map((span) => span.text).join('')
       return (
-        <figure id={block.id}>
+        <figure
+          id={block.id}
+          style={
+            block.width
+              ? {
+                  width: block.width,
+                  maxWidth: '100%',
+                  marginInline: 'auto'
+                }
+              : undefined
+          }
+        >
           <ZoomableImage
             media={snapshot.media[block.media]!}
             alt={alt}
             caption={alt}
+            sizes={
+              block.width
+                ? `(max-width: ${block.width + 44}px) calc(100vw - 44px), ${block.width}px`
+                : undefined
+            }
           />
           {block.caption.length ? (
             <figcaption>

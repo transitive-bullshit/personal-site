@@ -67,12 +67,14 @@ export function ZoomableImage({
   media,
   alt,
   caption,
+  sizes,
   priority = false,
   reuseLoadedImage = false
 }: {
   media: Media
   alt: string
   caption?: string
+  sizes?: string
   priority?: boolean
   reuseLoadedImage?: boolean
 }) {
@@ -92,6 +94,7 @@ export function ZoomableImage({
         alt={alt}
         priority={priority}
         reuseLoadedImage={reuseLoadedImage}
+        sizes={sizes}
       />
     </ImageLightbox>
   )

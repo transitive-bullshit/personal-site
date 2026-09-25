@@ -65,6 +65,14 @@ Slug reconciliation, redirects, privacy removal, and pruning run independently p
 - Bookmark and tweet failures reuse saved data or a link fallback.
 - `work/media-cache.json` resumes completed uploads.
 
+### Image display widths
+
+The official Notion API omits image layout. After importing content, sync uses `notion-client` against `app.notion.com/api/v3/syncRecordValues` to read layout for the selected public entries' image IDs in batches of 100. It does not discover pages or fetch image bytes through that API. These requests are unauthenticated; the corresponding Notion blocks must be publicly readable.
+
+This refresh runs for cached entries and in `--fast` mode too. Notion stores resized image widths in pixels (`format.block_width`), not percentages. The snapshot's optional image `width` preserves that value; page-width/full-width flags clear it. The shared article renderer centers resized figures and caps them at the available width. Image dimensions and lightbox sizing stay independent.
+
+Unavailable or invalid layout records retain previous widths, warn, and make sync exit `1` after writing its snapshot. New images without layout data keep the default full width. A later successful sync can repair sizing without `--force`.
+
 ## Errors
 
 Authorization, discovery, route, schema, and snapshot-write failures stop the sync.

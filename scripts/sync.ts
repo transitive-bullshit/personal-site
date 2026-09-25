@@ -22,6 +22,7 @@ import {
 } from './notion/source'
 import { Normalizer, plainText } from './notion/normalize'
 import { importPages } from './notion/import-pages'
+import { syncImageWidths } from './notion/image-widths'
 import { MediaStorage, storageConfig } from './media/storage'
 import { MediaCache } from './media/cache'
 import { MediaImporter } from './media/process'
@@ -206,6 +207,16 @@ export async function main() {
     ...(syncArticles ? Object.values(articles) : []),
     ...(syncProjects ? Object.values(projects) : [])
   ]
+  await syncImageWidths(
+    selectedEntries.flatMap((entry) => entry.blocks),
+    {
+      previousBlocks: [
+        ...Object.values(previous?.articles ?? {}),
+        ...Object.values(previous?.projects ?? {})
+      ].flatMap((entry) => entry.blocks),
+      warn: reportRecoverableError
+    }
+  )
   const selectedMedia = new Set(
     selectedEntries.flatMap((entry) => [...articleReferences(entry).media])
   )
