@@ -1302,3 +1302,31 @@ summary {
   gap: 8px;
   font-size: 14px;
 }
+.link {
+  padding-bottom: 0.15em;
+
+  transition: unset;
+  text-decoration: none !important;
+  border-color: var(--color-muted-foreground);
+  border-bottom-width: 0.1rem;
+  background: transparent;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: 0 0.1rem;
+
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.link:focus,
+.link:hover {
+  border-bottom-color: transparent;
+
+  background-image: linear-gradient(90.68deg, #b439df 0.26%, #e5337e 102.37%);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 0.1rem;
+
+  transition-property: background-position, background-size;
+  transition-duration: 300ms;
+}

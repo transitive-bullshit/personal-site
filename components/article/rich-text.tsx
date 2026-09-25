@@ -24,9 +24,13 @@ export function RichText({ spans }: { spans: Span[] }) {
     const href = span.href && safeHref(span.href)
     if (href)
       node = href.startsWith('/') ? (
-        <Link href={href}>{node}</Link>
+        <Link className='link' href={href}>
+          {node}
+        </Link>
       ) : (
-        <a href={href}>{node}</a>
+        <a className='link' href={href}>
+          {node}
+        </a>
       )
     return (
       <span
