@@ -80956,7 +80956,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-24T16:13:00.000Z",
+        "edited": "2026-09-24T22:33:00.000Z",
         "key": "3e5edb27f124800884cddefb16b57151:cover",
         "kind": "file"
       },
@@ -80994,7 +80994,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-24T16:13:00.000Z",
+        "edited": "2026-09-24T22:33:00.000Z",
         "key": "3e5edb27f124800884cddefb16b57151:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/c54f086c-e568-46a3-b826-d5169e0a5459/icon.svg"
@@ -88899,7 +88899,7 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": " all do is aim to elevate the discourse around AI by actively sharpening our own understanding of the space. We can challenge our assumptions and clarify our views. We can try to get a little closer to the truth in an increasingly post-truth world.",
+              "text": " all do is aim to elevate the discourse around AI futures by actively sharpening our own understanding of the space. We can challenge our assumptions and clarify our views. We can try to get a little closer to the truth in an increasingly post-truth world.",
               "underline": false
             }
           ],
@@ -89120,7 +89120,26 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "The map’s horizontal axis represents how positive or negative you expect AI’s impact to be. Doom represents existentially bad outcomes for humanity (extinction, loss of free will, dystopian outcomes, etc), and Bloom represents unprecedented flourishing for humanity (technologically advanced utopia, immortality, etc).",
+              "text": "The map’s horizontal axis represents how positive or negative you expect AI’s impact to be. Doom represents existentially bad outcomes for humanity (extinction, loss of free will, dystopian outcomes, etc), and Bloom represents unprecedented flourishing for humanity (technologically advanced ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://institute.deepmind.com/essays/principles-for-a-new-utopianism/",
+              "italic": false,
+              "strike": false,
+              "text": "utopia",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", immortality, etc).",
               "underline": false
             }
           ],
@@ -89490,6 +89509,13 @@
           "id": "3e5edb27f124802ca551dab6b480798b",
           "type": "bookmark",
           "url": "https://www.doom-or-bloom.com/"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e5edb27f12480f48c70ccd0abfb3fbc",
+          "richText": [],
+          "type": "paragraph"
         }
       ],
       "cover": "3e5edb27f124800884cddefb16b57151:cover",
@@ -89500,7 +89526,7 @@
         "type": "image"
       },
       "id": "3e5edb27f124800884cddefb16b57151",
-      "modified": "2026-09-24T16:13:00.000Z",
+      "modified": "2026-09-24T22:33:00.000Z",
       "published": "2026-09-24",
       "slug": "doom-or-bloom",
       "source": "https://github.com/transitive-bullshit/doom-or-bloom",
