@@ -70455,6 +70455,49 @@
       },
       "title": "Software 3.0"
     },
+    "https://doom-or-bloom.com/": {
+      "description": "Map your AI worldview, and compare it with others. Explore how public figures think AI could change our future, then discover where you land.",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAQAA4BaJZwAAlvrjgAA/vNiHWGjYsbO1cX5n+/xE74guAgAAA==",
+        "original": {
+          "bytes": 93579,
+          "hash": "187463997b36c8166a7faa36a7f1d902c161fbc85ac891b640c1719bda24aa7a",
+          "height": 630,
+          "key": "personal-site/media/187463997b36c8166a7faa36a7f1d902c161fbc85ac891b640c1719bda24aa7a.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/187463997b36c8166a7faa36a7f1d902c161fbc85ac891b640c1719bda24aa7a.jpg",
+          "width": 1200
+        },
+        "pipelineVersion": 1,
+        "source": {
+          "edited": "https://www.doom-or-bloom.com/_next/static/media/opengraph-image.72f9470d.jpg",
+          "key": "bookmark:bc416201cfee9126293979a074f667625ad0a89a5116261b6db7d89fc530e009",
+          "kind": "external",
+          "url": "https://www.doom-or-bloom.com/_next/static/media/opengraph-image.72f9470d.jpg"
+        },
+        "variants": [
+          {
+            "bytes": 16018,
+            "hash": "04943c6a93245e609da1297db9bdae628cdc525cc7e9039c40a42a2472e7bb80",
+            "height": 504,
+            "key": "personal-site/media/04943c6a93245e609da1297db9bdae628cdc525cc7e9039c40a42a2472e7bb80.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/04943c6a93245e609da1297db9bdae628cdc525cc7e9039c40a42a2472e7bb80.webp",
+            "width": 960
+          },
+          {
+            "bytes": 39588,
+            "hash": "4f7174d8ee63a32498dc0fed8d75bfd376cb2af9bf87200e811818198464fabc",
+            "height": 630,
+            "key": "personal-site/media/4f7174d8ee63a32498dc0fed8d75bfd376cb2af9bf87200e811818198464fabc.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/4f7174d8ee63a32498dc0fed8d75bfd376cb2af9bf87200e811818198464fabc.webp",
+            "width": 1200
+          }
+        ]
+      },
+      "title": "Doom or Bloom"
+    },
     "https://encharge.io/validating-saas-ideas/": {
       "description": "",
       "title": ""
@@ -77636,49 +77679,6 @@
       },
       "title": "The Future of Social Audio: Startups, Roadmap, Business Models, and a Forecast - Jeremiah Owyang"
     },
-    "https://www.doom-or-bloom.com/": {
-      "description": "Map your AI worldview, and compare it with others. Explore how public figures think AI could change our future, then discover where you land.",
-      "image": {
-        "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoIAAQAA4BaJQBOj+ACuU01oYAA/vEFNrwaDd4qntbP+YUUGm3xlDd8AAA=",
-        "original": {
-          "bytes": 219449,
-          "hash": "ba4efd879bb0253b54f6d10e6ab86f70bd8eedb2a45f617bda26b95566c15ec1",
-          "height": 630,
-          "key": "personal-site/media/ba4efd879bb0253b54f6d10e6ab86f70bd8eedb2a45f617bda26b95566c15ec1.jpg",
-          "mime": "image/jpeg",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/ba4efd879bb0253b54f6d10e6ab86f70bd8eedb2a45f617bda26b95566c15ec1.jpg",
-          "width": 1200
-        },
-        "pipelineVersion": 1,
-        "source": {
-          "edited": "https://www.doom-or-bloom.com/_next/static/media/opengraph-image.e9a0e417.jpg",
-          "key": "bookmark:cf09ad74dbfcc3f953ea62acfff053706aab681c69c1b79a7210112e8d91f4e9",
-          "kind": "external",
-          "url": "https://www.doom-or-bloom.com/_next/static/media/opengraph-image.e9a0e417.jpg"
-        },
-        "variants": [
-          {
-            "bytes": 82742,
-            "hash": "c32d2efd8406ec02f84513b90d9c38a26bf50f9216c0d38a11d2ad18aaa11166",
-            "height": 504,
-            "key": "personal-site/media/c32d2efd8406ec02f84513b90d9c38a26bf50f9216c0d38a11d2ad18aaa11166.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/c32d2efd8406ec02f84513b90d9c38a26bf50f9216c0d38a11d2ad18aaa11166.webp",
-            "width": 960
-          },
-          {
-            "bytes": 158520,
-            "hash": "ca7416bd96344a5c28403dc92e4f16e1fc1e97835ac2e2bfec7b21921c2a38ea",
-            "height": 630,
-            "key": "personal-site/media/ca7416bd96344a5c28403dc92e4f16e1fc1e97835ac2e2bfec7b21921c2a38ea.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/ca7416bd96344a5c28403dc92e4f16e1fc1e97835ac2e2bfec7b21921c2a38ea.webp",
-            "width": 1200
-          }
-        ]
-      },
-      "title": "Doom or Bloom"
-    },
     "https://www.langchain.com/blog/what-is-an-agent": {
       "description": "Learn what AI agents are, how they work in an LLM loop, and where workflows fit so you can build reliable, production-ready autonomous systems.",
       "image": {
@@ -80956,7 +80956,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-24T22:33:00.000Z",
+        "edited": "2026-09-26T14:24:00.000Z",
         "key": "3e5edb27f124800884cddefb16b57151:cover",
         "kind": "file"
       },
@@ -80994,7 +80994,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-24T22:33:00.000Z",
+        "edited": "2026-09-26T14:24:00.000Z",
         "key": "3e5edb27f124800884cddefb16b57151:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/c54f086c-e568-46a3-b826-d5169e0a5459/icon.svg"
@@ -81128,7 +81128,7 @@
       },
       "pipelineVersion": 1,
       "source": {
-        "edited": "2026-09-24T15:47:00.000Z",
+        "edited": "2026-09-26T14:03:00.000Z",
         "key": "3e5edb27f12480bcaeaddc7ff5430b47",
         "kind": "file"
       },
@@ -81152,6 +81152,22 @@
           "width": 1920
         }
       ]
+    },
+    "3e7edb27f124805b9cc8dd7b923e3849": {
+      "original": {
+        "bytes": 30218500,
+        "hash": "aef37f7470b02fc71bb78cdd9a6189c41ead92c94147230a7bd33fc968acdac0",
+        "key": "personal-site/media/aef37f7470b02fc71bb78cdd9a6189c41ead92c94147230a7bd33fc968acdac0.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/aef37f7470b02fc71bb78cdd9a6189c41ead92c94147230a7bd33fc968acdac0.mp4"
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-26T14:19:00.000Z",
+        "key": "3e7edb27f124805b9cc8dd7b923e3849",
+        "kind": "file"
+      },
+      "variants": []
     },
     "3ef4a57ca2944e5087ff9e54829c977f": {
       "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAYAA4BaJQBdgCHiBWfKUAD+8lcq0VZb9ONqyoIE1Yvaot2z5xEc5U2ywXIAAAA=",
@@ -88479,6 +88495,52 @@
       ],
       "blocks": [
         {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "video created by claude opus 5.5; song is ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://open.spotify.com/track/4kdjHU5lzooUP7kkzQqX0Q?si=54e133784d364d55",
+              "italic": false,
+              "strike": false,
+              "text": "zonnestraal by de hofnar",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "3e7edb27f124805b9cc8dd7b923e3849",
+          "media": "3e7edb27f124805b9cc8dd7b923e3849",
+          "type": "video"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e7edb27f12480a6b51ac7d44584fbd4",
+          "richText": [],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "id": "3e7edb27f124802eb5bfdc03e6a05967",
+          "type": "divider"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e7edb27f12480bdb2e1db33977a4f88",
+          "richText": [],
+          "type": "paragraph"
+        },
+        {
           "caption": [],
           "children": [],
           "id": "3e5edb27f12480bcaeaddc7ff5430b47",
@@ -88502,6 +88564,23 @@
             }
           ],
           "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e7edb27f124801b8cb5dfb48f3ec8da",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "This is such an incredibly important question to ask yourself right now.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
         },
         {
           "children": [],
@@ -88793,7 +88872,7 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "Many of us see both: ",
+              "text": "And many of us see both: ",
               "underline": false
             },
             {
@@ -88828,7 +88907,7 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "I wanna be clear: I build with AI every single day, and I couldn’t be more bullish on upsides both now and in the future. At the same time, the rapid pace of improvement and recent incidents like the ",
+              "text": "Now, I wanna be clear: I build with AI every single day, and I couldn’t be more bullish on upsides both now and in the future. At the same time, the rapid pace of improvement and recent incidents like the ",
               "underline": false
             },
             {
@@ -89499,23 +89578,16 @@
         {
           "children": [],
           "color": "default",
-          "id": "3e5edb27f1248053a467cad19e5da30b",
+          "id": "3e7edb27f124804cb925f4a7e37320ac",
           "richText": [],
           "type": "paragraph"
         },
         {
           "caption": [],
           "children": [],
-          "id": "3e5edb27f124802ca551dab6b480798b",
+          "id": "3e7edb27f1248004a995cb5e4624ac1d",
           "type": "bookmark",
-          "url": "https://www.doom-or-bloom.com/"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "3e5edb27f12480f48c70ccd0abfb3fbc",
-          "richText": [],
-          "type": "paragraph"
+          "url": "https://doom-or-bloom.com/"
         }
       ],
       "cover": "3e5edb27f124800884cddefb16b57151:cover",
@@ -89526,7 +89598,7 @@
         "type": "image"
       },
       "id": "3e5edb27f124800884cddefb16b57151",
-      "modified": "2026-09-24T22:33:00.000Z",
+      "modified": "2026-09-26T14:24:00.000Z",
       "published": "2026-09-24",
       "slug": "doom-or-bloom",
       "source": "https://github.com/transitive-bullshit/doom-or-bloom",
@@ -89537,6 +89609,7 @@
         "Projects"
       ],
       "title": "Doom or Bloom",
+      "tweet": "https://x.com/transitive_bs/status/2103846496542343453",
       "website": "https://www.doom-or-bloom.com"
     }
   },
