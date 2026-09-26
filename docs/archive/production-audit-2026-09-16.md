@@ -1,5 +1,7 @@
 # Production audit — September 16, 2026
 
+> Historical record. See [the archive index](README.md) for status and current guidance. Counts, validation results, and proposals below describe the original work.
+
 The site is in good shape. Fix the canonical-host mismatch and the homepage’s lazy-loaded LCP image first. Most metadata is already present and working; the remaining issues are small accessibility, content, and observability improvements.
 
 Audit target: https://www.transitivebullsh.it. Production commit `1b44bb7`, deployment `2CuUjfxqcrYh7sUxEtG6CaYJy8Sw`; local installed Next.js 16.3.5. Measurements taken around 11:01–11:10 UTC. This audit changed no application code or production configuration.

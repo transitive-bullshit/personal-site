@@ -1,5 +1,7 @@
 # Production audit improvements
 
+> Historical record. See [the archive index](README.md) for status and current guidance. Counts, validation results, and proposals below describe the original work.
+
 Implemented all seven recommendations from [the production audit](production-audit-2026-09-16.md). These changes have been validated locally; deployment and incoming production Speed Insights events have not been verified.
 
 1. Standardized canonical URLs, sitemap, social metadata, and structured data on `https://www.transitivebullsh.it`. Content links still recognize both historical hostnames.

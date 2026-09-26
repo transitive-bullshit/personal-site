@@ -1,5 +1,7 @@
 # Production re-audit — September 16, 2026
 
+> Historical record. See [the archive index](README.md) for status and current guidance. Counts, validation results, and proposals below describe the original work.
+
 The homepage is substantially faster and the previous accessibility/metadata fixes are live. The remaining performance priority is **cold-load mobile detail-page LCP**, which is slower in both runs of this audit. No broken advertised links, console errors, or 5xx responses were found in the measured coverage.
 
 Production: https://www.transitivebullsh.it. Vercel confirms commit **b9432f1**, deployment [6MaJAwhK8hWG5S7RFidPde6DLK9o](https://vercel.com/saasify/personal-site/6MaJAwhK8hWG5S7RFidPde6DLK9o), Ready. Lighthouse measurements: 11:53–11:58 UTC. Compared with the [first audit](production-audit-2026-09-16.md). This audit changes no application code or configuration.

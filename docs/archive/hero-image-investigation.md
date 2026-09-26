@@ -1,5 +1,7 @@
 # Hero timing investigation and tweet avatar optimization
 
+> Historical record. See [the archive index](README.md) for status and current guidance. Counts, validation results, and proposals below describe the original work.
+
 ## Result
 
 Tweet avatars now use Next Image with the existing 48px display dimensions, selecting a 96px optimized rendition on the tested high-density displays. Passage avatar transfer fell from 22,352 to 1,684 bytes (92.5%). The remote allowlist is restricted to HTTPS pbs.twimg.com/profile_images, with no query strings. Unrecognized source shapes retain their original rendering, and optimizer/upstream failures fall back to the original avatar. A forced local 503 verified that fallback loads successfully.

@@ -1,12 +1,10 @@
 # Content sync
 
-`pnpm content:sync` writes `content/snapshot.json` and `public/search-index.json` for review. It does not deploy.
+Notion owns article and project content. `pnpm content:sync` imports selected public entries into `content/snapshot.json` and rebuilds `public/search-index.json`. Review and commit both generated files; deployment is separate. Routine UI development uses the committed files without CMS or storage credentials.
 
 ## Setup
 
-Use the Node and pnpm versions in `package.json`, then run `pnpm install`.
-
-Set these values in the shell or ignored `.env.local`:
+Use the Node and pnpm versions in `package.json`. Supply these variables in the shell or ignored `.env.local` (`scripts/io.ts` also supports `.env`; existing shell values win):
 
 - `NOTION_TOKEN`
 - `S3_ACCESS_KEY_ID`
@@ -16,99 +14,60 @@ Set these values in the shell or ignored `.env.local`:
 - `S3_PUBLIC_URL=https://assets.cultural-alignment.com`
 - `S3_REGION=auto` (optional)
 
-Source IDs live in `lib/site.ts`. Media is immutable under `personal-site/media/` in R2.
+Every sync mode, including `--dry-run` and `--fast`, requires this configuration. Source contracts live in `lib/site.ts`; `scripts/notion/source.ts` pins the official API version and expected properties. Sync verifies workspace, root-page ancestry, database/data-source IDs, and saved property IDs before importing. A source-contract mismatch requires an intentional migration, not editing the snapshot to suppress the check.
 
 ## Commands
 
 | Command | Effect |
 | --- | --- |
-| `pnpm content:sync` | Sync changed public articles and projects and write the snapshot. |
-| `pnpm content:sync --only articles` | Sync only articles; retain saved projects. |
-| `pnpm content:sync --only projects` | Sync only projects; retain saved articles. |
-| `pnpm content:sync --dry-run` | Validate and report without writes. |
-| `pnpm content:sync --force` | Re-read every selected page and refresh remote data. |
-| `pnpm content:sync --fast` | Skip image transfers and placeholder work. |
-| `pnpm content:sync --prune` | Remove missing pages in the selected collections. |
-| `pnpm content:sync --accept-slug-changes` | Accept new paths and retain redirects. |
-| `pnpm content:search` | Rebuild the search index from the local snapshot without CMS credentials. |
+| `pnpm content:sync` | Import changed articles and projects, then refresh derived data. |
+| `pnpm content:sync --only articles` | Select articles; retain saved projects and their referenced assets. |
+| `pnpm content:sync --only projects` | Select projects; retain saved articles and their referenced assets. |
+| `pnpm content:sync --dry-run` | Read and validate source data without local or R2 writes. |
+| `pnpm content:sync --force` | Re-read every selected page and refresh its media, bookmarks, and tweets. |
+| `pnpm content:sync --fast` | Reuse saved images, omit new images, and defer image work to a normal sync. |
+| `pnpm content:sync --prune` | Deactivate missing entries in the selected collections. |
+| `pnpm content:sync --accept-slug-changes` | Accept proposed paths and retain old paths as redirects. |
+| `pnpm content:search` | Rebuild search from the committed snapshot without CMS credentials. |
 
-Flags compose. `--only projects --force --fast` re-reads projects but skips images.
+Flags compose. `--only projects --force --fast` re-reads projects while skipping image transfers. Fast mode still imports non-image media and refreshes bookmark text and tweet data when needed.
 
-## Behavior
+Dry runs still perform Notion discovery, selected page reads, public image-layout reads, and an R2 access probe. They skip media downloads/uploads, placeholder generation, and bookmark/tweet fetches. A successful dry run therefore does not prove those remote assets are available.
 
-- Only top-level `Public=true` pages in each configured database are imported. Private pages never have their bodies or media fetched.
-- Unchanged pages reuse the saved entry when `last_edited_time <= modified`.
-- `--force` bypasses that page cache.
-- Both collections use the same importer with `p-map` with concurrency `8`.
-- Path changes require `--accept-slug-changes`.
-- Missing pages remain until `--prune`.
-- `Public=false` removes the entry on the next sync.
-- Post-processing rebuilds the static search index, including unchanged-content syncs. Dry runs do not write it.
+## Publication and caching
 
-## Projects
+- Discovery reads top-level database rows, including private-row metadata so deliberate unpublishing can be detected. Only `Public=true` entries have their bodies and media imported. Child pages are excluded; embedded databases become property tables without fetching row-page bodies.
+- Unchanged entries reuse saved bodies when `last_edited_time <= modified`, unless forced or marked `needsImageSync` by an earlier fast import. Image-layout refresh still runs for cached entries.
+- Articles and projects share the importer but have independent route registries. `--only` skips discovery and body imports for the other collection. Shared assets can still change; search always includes both collections.
+- Proposed slug changes warn and retain the saved path until explicitly accepted. Accepted old paths and Notion ID forms redirect to the current path. Inactive route records retain pathname ownership as tombstones.
+- Missing or trashed entries remain published until `--prune`. An observed `Public=false` deactivates the entry immediately in the next published snapshot. Neither operation deletes content in Notion or objects in R2.
+- Cross-collection slug/alias matches warn and retain both records: articles use `/[slug]`, projects `/projects/[slug]`.
 
-The snapshot stores projects in `projects`, with independent `projectRoutes` and a pinned `projectSource` contract. Older article-only snapshots remain readable. Both sources are verified against the configured workspace, root page, database, data source, and property IDs.
+Publication validates the complete snapshot and writes deterministic JSON through an atomic rename. Unchanged bytes are not rewritten. Search is published afterward in a separate atomic write; the two files are not one transaction.
 
-Projects share article block, cover, icon, tag, featured, description, modified-time, and image-cache behavior. Their separate schema stores `authors` (Notion person IDs and available names), optional `published`, `website`, `source`, and `tweet` URLs. `Source` is generic: it can link to GitHub or the conversation that created the project. No separate chat-link property currently exists in Notion.
+## Media and image widths
 
-Slug reconciliation, redirects, privacy removal, and pruning run independently per collection. Cross-collection slug/alias matches warn with both page IDs and retain both records for manual migration in Notion. No Notion content is moved or deleted. Projects render at `/projects/[slug]` with redirects for saved aliases and Notion IDs. At load time, saved Notion links to public articles and projects resolve to their current canonical routes. Private projects are never linked to a public route.
+Media is immutable under `personal-site/media/<hash>.<extension>` in the shared R2 bucket. Reuse depends on stable source identity, edit marker, and media pipeline version. Original bytes are preserved; still raster images receive non-upscaled WebP variants. GIFs (including single-frame GIFs), other animated images, SVGs, video, audio, and files keep their original formats. Image placeholders are at most 8px on either side.
 
-`--only` skips discovery and page imports for the other collection and retains its referenced media, bookmarks, and tweets. Force refresh and placeholder work apply to the selected collection (shared assets can still change). Search indexes both public collections, including titles, descriptions, tags, and body text.
+`work/media-cache.json` resumes completed uploads and placeholder work after interrupted or unpublished runs. It is disposable local state; the committed snapshot is authoritative. Bump `MEDIA_PIPELINE_VERSION` in `scripts/media/process.ts` when changing generated media semantics, then use `--force` to apply the change to unchanged entries; the page cache otherwise bypasses media processing.
 
-## Media
+The official Notion API omits image layout. `scripts/notion/image-widths.ts` narrowly supplements it with unauthenticated `notion-client` requests to `app.notion.com/api/v3/syncRecordValues`, in batches of 100 already-selected image IDs. This API is used only for image layout, not page discovery or media bytes; these blocks must also be publicly readable in Notion.
 
-- Unchanged sources reuse saved descriptors.
-- Still images get WebP variants and an 8 × 8 blur preview.
-- GIFs, SVGs, video, audio, and files keep their original bytes.
-- `--fast` reuses saved images and omits new ones.
-- Fast changes are marked for image work on the next normal sync.
-- Bookmark and tweet failures reuse saved data or a link fallback.
-- `work/media-cache.json` resumes completed uploads.
+Layout refresh runs for cached entries and in fast/dry-run modes. `format.block_width` is a pixel display width; page/full-width flags clear it. Saved widths survive unavailable or invalid records. Such failures warn and make sync exit `1`; a later normal sync can repair them without `--force`. Display width is independent of source image dimensions and lightbox sizing.
 
-### Image display widths
+## Failures and recovery
 
-The official Notion API omits image layout. After importing content, sync uses `notion-client` against `app.notion.com/api/v3/syncRecordValues` to read layout for the selected public entries' image IDs in batches of 100. It does not discover pages or fetch image bytes through that API. These requests are unauthenticated; the corresponding Notion blocks must be publicly readable.
+| Failure | Outcome and next step |
+| --- | --- |
+| Source authorization/discovery, route collision, or whole-snapshot validation | Stops publication. Fix the source or contract issue before retrying. |
+| One page cannot be imported, including an unsupported block | Keeps its previous version, or leaves a new entry inactive; successful entries can still publish. Add support or repair the source, then retry. |
+| Media, bookmark, tweet, storage-probe, layout, or placeholder failure | Keeps available saved data or a fallback, writes the valid snapshot, then exits `1`. Inspect warnings and the diff before retrying. |
+| Snapshot/search write failure | Stops at that write. Inspect both files; search failure can occur after the snapshot was published. `pnpm content:search` repairs the derived index. |
 
-This refresh runs for cached entries and in `--fast` mode too. Notion stores resized image widths in pixels (`format.block_width`), not percentages. The snapshot's optional image `width` preserves that value; page-width/full-width flags clear it. The shared article renderer centers resized figures and caps them at the available width. Image dimensions and lightbox sizing stay independent.
+Informational warnings, such as a retained proposed slug or cross-collection slug match, do not change the exit code. R2 uploads can precede a later failure; their immutable objects do not affect the published site until a deployed snapshot references them.
 
-Unavailable or invalid layout records retain previous widths, warn, and make sync exit `1` after writing its snapshot. New images without layout data keep the default full width. A later successful sync can repair sizing without `--force`.
+## Review and extend
 
-## Errors
+After a sync, inspect `git diff` for paths, removals, fallback content, and image changes, including when the command exits `1`. Run the checks in [verification.md](verification.md), inspect representative changed pages, and commit the snapshot and search index together. Restart an existing dev server after syncing because the content loader reads the snapshot at module initialization.
 
-Authorization, discovery, route, schema, and snapshot-write failures stop the sync.
-
-Page, media, bookmark, tweet, storage-probe, and placeholder failures warn and continue. The snapshot is written, then the command exits `1`. Informational warnings do not change the exit code.
-
-R2 uploads may precede a later failure. They are immutable and unused until the snapshot is committed and deployed.
-
-## Review
-
-1. Inspect `git diff`, especially paths and removals.
-2. Run `pnpm test` and `pnpm build`.
-3. Inspect representative pages with `pnpm dev`.
-4. Commit `content/snapshot.json` and `public/search-index.json` with related code.
-
-Restart an existing dev server after syncing.
-
-## Extending the importer
-
-1. Run `pnpm content:sync --dry-run --force`.
-2. Update the schema and Notion normalizer.
-3. Add rendering and behavior tests.
-4. Sync again and inspect the diff.
-
-Keep Notion and storage clients in `scripts/`.
-
-## Client-side search
-
-Command-K / Control-K and the header search icon open cmdk. The dialog code and index load only on first open; subsequent opens reuse the fetched index. Queries stay in the browser. Keyword matches prefer titles, then descriptions/tags, then nested article text, captions, tables, and saved bookmark/tweet text. Canonical public article and project routes plus Home, Projects, and Writing are indexed. Project results are labeled in the palette. Add future top-level pages in `lib/content/search-index.ts`.
-
-The top and selected results are explicitly prefetched. Results use full-row Next links with no gaps. The palette uses an adaptation of cmdk's [Vercel theme](https://github.com/dip/cmdk/blob/main/website/styles/cmdk/vercel.scss), without demo panes, item margins, or keyboard-driven motion. License attribution is in `docs/licenses/cmdk.txt`.
-
-## Runtime images
-
-The app serves synced images through `next/image` from the configured R2 path. Social cards use the saved cover through `components/social-image.tsx`; bump `templateVersion` in `lib/social-image.ts` after design changes.
-
-## Project pages
-
-The homepage shows all projects marked Featured above featured writing. `/projects` lists every public project; both lists use publication date descending, then slug, with undated projects last. Cards use the Notion cover, falling back to the page icon or initial. `/projects/[slug]` shows the title, description, available Website/Source/X actions, and the shared article body component (cover, lightbox, supported blocks, and responsive table of contents). Project cover images also provide social previews; projects without covers use a summary card. Project routes are included in the sitemap, llms.txt, and internal link previews.
+When adding a property or block type, follow the path from `scripts/notion/source.ts` and `scripts/notion/normalize.ts` through `lib/content/schema.ts`, reference validation, and the shared HTML/Markdown renderers. Add focused tests for the new behavior and its failure case. Use a forced dry run to verify traversal, then a real sync to verify asset processing and the generated diff. Keep Notion and storage clients in `scripts/`; [architecture.md](architecture.md) maps the runtime consumers.

@@ -1,6 +1,8 @@
 # Personal site implementation plan
 
-Status: implemented and verified on 2026-09-15. See [verification.md](verification.md) for the completed checks and [content-sync.md](content-sync.md) for current operating guidance.
+> Historical record. See [the archive index](README.md) for status and current guidance. Counts, validation results, and proposals below describe the original work.
+
+Status: implemented and verified on 2026-09-15. See [verification.md](implementation-verification.md) for the completed checks and [content-sync.md](../content-sync.md) for current operating guidance.
 
 ## 1. Outcome and scope
 
@@ -129,7 +131,7 @@ Canonicalize map ordering, whitespace, newline endings, and arrays whose order i
 
 ## 4. Sync command and lifecycle
 
-The current command contract is in [content-sync.md](content-sync.md).
+The current command contract is in [content-sync.md](../content-sync.md).
 
 - Reuse articles when `last_edited_time <= modified`; `--force` bypasses this.
 - Import articles with `p-map` concurrency `8`.

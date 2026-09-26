@@ -1,147 +1,54 @@
-# Initial implementation verification
+# Development and verification
 
-Verified 2026-09-15. The implementation and generated snapshot are ready for review.
+## Local workflow
 
-## Imported content
+Use the Node engine and pnpm version in `package.json`. CI's clean-install command is:
 
-- Official Notion API `2026-03-11`; token workspace and source ancestry verified.
-- 35 public top-level articles; all canonical paths match the migration baseline.
-- Four unpublished rows, About, child pages, and nested database row bodies excluded.
-- Five embedded comparison databases rendered as property tables.
-- 213 media references, resolving to 549 unique immutable public asset files.
-- 174 body image blocks, including 27 GIFs retained unchanged.
-- 24 tweet records: 21 available and three confirmed unavailable with original-post links.
-- Snapshot SHA-256: `8c575a8b7804889bfcf8846b5e65ba442a9fdcaf1b60a983a91b13279c49199f`.
+```sh
+pnpm install --frozen-lockfile --strict-peer-dependencies
+pnpm dev
+```
 
-The broken Saasify callout icon was repaired in Notion using the identical original logo from its archived source repository. The user removed the 22 MB gallery GIF; its block is absent from the snapshot.
+`pnpm dev` uses Portless. Open the URL it prints rather than assuming port 3000. The committed snapshot supports normal development without CMS/storage credentials; use [Content sync](content-sync.md) only when importing content. If the snapshot is missing from a checkout, restore the committed artifact first.
 
-## Checks and evidence
+Use the installed Next.js guides under `node_modules/next/dist/docs/` for the APIs being changed. `work/` is ignored scratch space for probes and screenshots, not a required checkout dependency. Keep durable commands in `scripts/`, behavior checks in `tests/`, and useful conclusions in the relevant guide.
 
-| Check | Result |
+## Checks by change
+
+| Change | Verification |
 | --- | --- |
-| Strict frozen-lockfile dependency installation | Passed |
-| `pnpm fix:format`, `pnpm fix:lint`, `pnpm test` | Passed; 35 tests across eight files |
-| Production build with Notion/S3 environment variables removed and local env file temporarily absent | Passed; all 35 articles prerendered |
-| Repeat normal sync | Identical snapshot bytes; 35 unchanged articles; zero downloads, conversions, or uploads |
-| `--dry-run --force` | Zero downloads/uploads; snapshot and media-cache bytes and modification times unchanged |
-| Public asset HEAD audit | All 549 files returned matching size, MIME, and immutable cache headers |
-| Production canonical route and metadata audit | All 35 returned 200 with canonical URL, article Open Graph, and matching BlogPosting JSON-LD |
-| Compact, hyphenated, and title-plus-ID route forms | All 105 returned direct 308 redirects to canonical paths |
-| Root alias | Direct 308 redirect to homepage |
-| About, feed, removed child routes, arbitrary slug, and unknown page ID | 404 |
-| Discovery endpoints | Sitemap contains 36 canonical URLs; llms includes all 35 articles |
-| Internal article/block links | All 12 resolve, including legacy ID links |
-| Tweet server output | Rendered tweet markup on seven article pages; no Twitter iframe renderer |
-| Snapshot integrity | No expiring Notion signed media URLs; removed gallery GIF absent |
-| Local cleanup | Env restored; temporary clipboard test page removed |
+| Documentation only | `pnpm fix:format`, review the diff and local links; check described commands/behavior against source. |
+| Application or importer code | Run relevant Vitest tests while iterating, then `pnpm fix:format`, `pnpm fix:lint`, `pnpm test`, and `pnpm build`. |
+| Content sync | Review snapshot/index diffs and warnings, then the code checks above and representative rendered pages. A nonzero sync exit can still leave changed artifacts. |
+| UI, media, or navigation | Add focused browser checks on top of the code checks. See the representative cases below. |
 
-The public asset host rejects Python's default User-Agent with HTTP 403. Browser requests and HEAD checks using a browser User-Agent succeed. No hosting or security settings were changed.
+`pnpm test` covers format, lint, generated Next types plus TypeScript, and unit tests. `pnpm build` uses webpack and then checks the native social-image bundle. CI runs both on pushes. Script definitions in `package.json` are authoritative.
 
-The focused tests cover routes, best-effort imports, atomic snapshot writes, media reuse, retries, dry runs, rendering, and fallbacks.
+Run an individual test file with, for example:
 
-## Browser checks
+```sh
+pnpm exec vitest run tests/projects.test.ts
+```
 
-Checked the production build and the final development preview:
+| Behavior | Useful tests |
+| --- | --- |
+| Publication, aliases, references, project source contracts | `publication.test.ts`, `content.test.ts`, `projects.test.ts`, `import.test.ts`, `notion.test.ts` |
+| Media, retries, dry runs, widths, downloads | `media.test.ts`, `cache.test.ts`, `download.test.ts`, `placeholders.test.ts`, `image-widths.test.tsx`, `media-download.test.ts` |
+| Search, Markdown, embeds, previews, TOC | `search.test.ts`, `markdown.test.ts`, `tweets.test.ts`, `link-preview.test.ts`, `article-enhancements.test.ts` |
+| Social rendering and metadata | `social-image.test.ts`, plus the mandatory build bundle check |
 
-- **Agentic Spectrum:** prose, rich text, hierarchy, desktop sticky TOC and active section changes.
-- **JavaScript tools:** all five tables, header wrapping, mobile horizontal scrolling by keyboard, expandable mobile TOC, no horizontal page overflow.
-- **ChatGPT Twitter Bot:** saved tweet content, readable mobile embeds, source images and captions.
-- **Making Your Code Beautiful:** highlighted code, independently scrolling code blocks, focusable code regions, copy control verified by pasting the 428-character snippet into a temporary local textarea; original GIF animation and caption.
-- **Homepage:** 35 article links, desktop and narrow mobile layout.
+## Browser and production-mode checks
 
-Responsive checks used 390px and 320px viewport overrides; overrides were reset afterward. Representative browser console checks showed no application errors or warnings.
+There is no committed browser-test runner. Check the changed behavior in a browser and report what was actually exercised. Use `pnpm build` followed by `pnpm start` when validating production rendering, image timing, HTTP responses, or metadata; dev mode is not a performance baseline.
 
-## Expected external fallbacks
+- For layout changes, inspect an affected page at desktop and 390px/320px widths, both themes where relevant, keyboard focus, and horizontal overflow.
+- For shared content, choose cases that exercise the change: `/agentic-spectrum` for prose/TOC, `/javascript-dev-tools-in-2022` for tables, `/chatgpt-twitter-bot-lessons` for tweets, `/making-your-code-beautiful` for code/GIFs, and `/projects/passage` for project details. Check homepage → project navigation separately from direct visits.
+- For interactions, verify the relevant keyboard path, dismissal, focus behavior, and reduced-motion branch. The [September design review](archive/design-review-2026-09-24.md) records an explicitly rejected lightbox focus proposal; older logs are not the current interaction specification.
+- For routes/discovery, check canonical 200s, direct alias 308s, unknown/private 404s, Markdown MIME/canonical headers, sitemap/llms inclusion, and metadata in the initial HTML. Derive expected counts from the current snapshot rather than old audit totals.
+- For images/social cards, cover direct load, client navigation, slow/failed image requests, and the no-cover fallback as applicable. A successful local Takumi render alone does not validate the deployed native bundle; see [Metadata](metadata.md).
 
-These tweets were confirmed unavailable by the provider and retain original-post links:
+Local standalone Next does not serve Vercel analytics/Speed Insights collector endpoints. Separate those local telemetry failures from application failures. For performance claims, record the build, environment, throttling, and repeated measurements; the [hero investigation](archive/hero-image-investigation.md) explains why an earlier placeholder hypothesis was reverted.
 
-- [1600079396215349249](https://twitter.com/i/status/1600079396215349249)
-- [1600405537287417857](https://twitter.com/i/status/1600405537287417857)
-- [1602073979543760897](https://twitter.com/i/status/1602073979543760897)
+## Historical evidence
 
-The 104-entry legacy Redis inventory yielded no additional noncanonical aliases for the selected articles. Known ID URL forms and the explicit root mapping are preserved.
-
-## Operating the site
-
-See [content-sync.md](content-sync.md) for environment setup, source ownership, sync flags, failure recovery, and snapshot review. Use `pnpm dev` for local work. Branding and deployment remain separate passes.
-
-## Article enhancements — 2026-09-15
-
-Added cached bookmark cards, image lightboxes, and end-of-article TOC selection.
-
-- Synced 245 unique bookmark URLs: 221 cached images, 24 text-only fallbacks for unavailable pages or unusable/missing social images. All 35 article bodies remained unchanged.
-- Verified all 477 unique bookmark image files/variants publicly return their expected sizes and MIME types.
-- Repeated bookmark sync and forced dry-run both reused all 245 previews, with zero remote fetches or image uploads and identical serialized preview data.
-- Formatting, lint, type checking, and all 43 tests pass. New tests cover metadata parsing, relative social-image URLs, deduplication, cache reuse, force/dry-run fallbacks, public network destinations, and final-heading selection across viewport sizes.
-- Production build succeeds with Notion and S3 credentials absent; bookmark sites are not contacted while building or serving pages.
-- Browser checks cover desktop/mobile bookmark cards; lightbox opening, Escape/backdrop dismissal, original-image links, focus return/trapping, stable image dimensions and unchanged GIFs; and the final TOC item at article bottom at 720px and 1000px desktop heights, followed by correct selection when scrolling upward.
-- Added Next.js's documented scroll-behavior attribute so route transitions can reset scrolling without a long smooth scroll.
-
-The preceding migration hash and counts describe the initial snapshot. Current enhanced snapshot SHA-256: `9cc859a373ae0c07e70a6307d1c2ec91cb3cbf3e58b81d99e6cbf732ce38f417`.
-
-## Next.js image checkpoint — 2026-09-15
-
-- Switched cached article images, covers, icons, bookmarks, and lightboxes to `next/image`, with a strict remote pattern for the shared bucket's `personal-site/media/` path.
-- Backfilled all 434 image descriptors with Sharp-generated previews (8px maximum dimension; 279 characters maximum per data URL). Repeating the backfill performed zero fetches. Original assets and variants were unchanged.
-- Checked generated HTML across all 35 articles: 436 image instances carry inline blur placeholders, and all 35 covers have eager loading and high fetch priority.
-- Browser checks confirmed optimized image URLs load successfully, pending lazy images retain blur placeholders, and cover/lightbox placeholders clear after loading. GIFs bypass optimization and retain original animation.
-- Formatting, lint, types, and all 46 tests pass. Production build passes without CMS/storage credentials; all 35 articles prerender successfully.
-- Snapshot SHA-256: `d37bcb423ed71964034ba5216fae6076235a7e6d5f790ed868ee47b0adeed90d`.
-
-## Takumi article social images — 2026-09-15
-
-- Added on-demand 1200 × 630 WebP cards based on the starter kit's cover-background and centered title-panel design, with description, author, date, and site identity.
-- Verified generated metadata across all 35 built article pages: Open Graph, Twitter, and JSON-LD share the canonical versioned image URL; OG dimensions are 1200 × 630.
-- All 51 tests pass, including actual Takumi renders with a cover, missing-cover fallback, allowed image paths, and metadata-based URL invalidation. Formatting, lint, and types pass.
-- Production build passes without CMS/storage credentials. The built server returned valid WebPs for sample articles and a Notion ID alias, with expected cache headers; an unknown article returned 404.
-- Visually checked representative cards including both longest current titles. Description truncation uses an ellipsis. Previews are saved under ignored `work/`; the durable template is `components/social-image.tsx`.
-
-- Final card revision removes the domain footer and explicitly centers the title with `text-wrap: balance`; template version 2 refreshes the advertised image URL.
-
-- Corrected Takumi 2.13 balanced-text positioning by measuring the narrowest box that preserves line count, then centering it. Pixel-based checks cover short and long titles. The cover uses a 6px blur, and Takumi emits WebP at quality 90.
-
-## Deployment-aware social image URLs — 2026-09-15
-
-- Social image URLs now use Vercel's built-in `VERCEL_URL`, prefixed with HTTPS, with `site.origin` as the non-Vercel fallback.
-- All 54 tests pass, covering preview/production deployment URLs and the fallback. A production build with simulated preview environment variables succeeds without CMS/storage credentials.
-- Inspected the generated HTML for all 35 articles: OG, Twitter, and JSON-LD images use the preview hostname, while canonical article URLs retain the production origin.
-
-## Live Vercel social image repair — 2026-09-15
-
-- Reproduced the production incident: the unique deployment image URL redirected to Vercel login, while the public production alias returned 500. Vercel runtime logs confirmed `Cannot find native binding` with a loader path under `/vercel/path0`.
-- The old local function trace omitted Takumi's native binary; local rendering succeeded only because the original installation was still accessible. A new build-artifact check reproduced this failure before the fix.
-- Externalized the Takumi wrapper and core, and installed core directly. The rebuilt function now traces its native binding and does not embed the original build-machine loader path. The build check runs automatically in `pnpm build`.
-- Production social URLs now use `VERCEL_PROJECT_PRODUCTION_URL`; previews prefer `VERCEL_BRANCH_URL`. This supersedes the earlier all-environments `VERCEL_URL` rule.
-- All 55 tests pass. Production build passes with the native-bundle regression check; all 35 generated article image URLs use the simulated public production alias.
-
-## Image lightbox usability — 2026-09-15
-
-- Lightboxes reuse the inline image's loaded `currentSrc` immediately, keeping it underneath the larger Next.js image until decoding finishes. A 240ms transform connects the inline and enlarged image on open and close; reduced-motion preferences skip the movement.
-- Images retain native pointer/drag/context-menu behavior. Original-image links remain available, with a lower-right download button that shows progress, animated confirmation, and a retry state on failure.
-- Downloads use a same-origin streaming route restricted to originals in the committed media snapshot. Original GIF/image bytes are unchanged; unknown assets return 404 and upstream failures return 502 without success caching.
-- All 58 tests pass, including attachment headers, unchanged bytes, unknown-asset rejection, and upstream failure handling. Browser checks confirmed desktop/mobile layout, loaded preview resources, download confirmation, and Escape returning focus to the inline trigger.
-
-## Content sync update — 2026-09-16
-
-- Unchanged pages skip article traversal; `--force` bypasses the cache.
-- `--fast` skips images and schedules one later normal pass.
-- Recoverable errors write fallback data, warn, and exit `1`.
-- Formatting, lint, types, 63 tests, and production build pass.
-
-## Notion projects — 2026-09-16
-
-- Imported 21 public projects, with 19 featured and 20 covers, through the shared body/media pipeline. No article/project slug collisions. All 36 article records and routes remained unchanged.
-- Added homepage featured projects, the complete `/projects` grid, `/projects/[slug]` detail pages, and Projects → Writing navigation in both header and footer.
-- Article and project pages share the same content-body component, including covers, lightboxes, blocks, embeds, and responsive table of contents. Project actions follow the available Website, Source, and Tweet metadata.
-- Search indexes public projects and their body text alongside articles, labels project results, and preserves lazy loading. Sitemap, llms.txt, social metadata, cached Notion links, and internal previews include projects.
-- Production HTTP audit passed for all 21 project pages, canonical metadata, conditional CTAs, ID redirects, missing-project 404s, featured/all counts, sitemap, and search output.
-- Browser checks passed for desktop cards and project details, 390px and 320px mobile layouts, keyboard project search/navigation, the missing-cover project, and shared image lightboxes. Mobile navigation uses a second row to avoid overlapping the brand.
-- Formatting, lint, TypeScript, unit tests, and production build pass, including the native social-image bundle check.
-- Import warnings retained safe fallbacks: one unavailable ChatGPT Hackers bookmark image and three already-unavailable tweets in an existing article. No project imports failed.
-
-## Lightweight image lightbox — 2026-09-17
-
-- Removed the panel background, border, shadow, and original-image link. Both themes use the same dark overlay, with Download centered below the image and a small close icon at the viewport corner.
-- Clicking the enlarged image (or pressing Enter on it) reverses the existing zoom animation and closes the overlay. Escape, X, backdrop dismissal, focus trapping, loaded previews, and the reduced-motion branch remain intact.
-- Browser checks passed for desktop light/dark themes, download confirmation without dismissal, all dismissal methods, keyboard focus cycling, and landscape/tall captioned images at 390px and 320px mobile widths. Temporary viewport overrides were reset.
-- Formatting, lint, TypeScript, and all 94 existing tests pass. Not verified in the browser: forced download-failure retry, live reduced-motion preference, and 10%-speed animation replay.
+[Implementation verification](archive/implementation-verification.md) preserves the original migration and feature checks. [Metadata verification](archive/metadata-verification-2026-09-16.md) and the [archive index](archive/README.md) retain past audits and their limits. They establish what was tested then, not the health of the current checkout or deployment.

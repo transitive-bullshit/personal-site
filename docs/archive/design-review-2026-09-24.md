@@ -1,5 +1,7 @@
 # Accepted design review — 24 September 2026
 
+> Historical record. See [the archive index](README.md) for status and current guidance. Counts, validation results, and proposals below describe the original work.
+
 Reviewed the home, writing index, projects index, article, project detail, and missing-page templates at 320, 390, 768, and 1440px. The audit combined better-ui, Impeccable, improve-ui, shadcn guidance, and the previous Rams report. No fresh Rams call was available.
 
 ## Accepted changes
