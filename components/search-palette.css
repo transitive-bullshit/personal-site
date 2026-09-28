@@ -4,7 +4,7 @@
  */
 .search-overlay[data-slot='dialog-overlay'] {
   animation: none;
-  background: rgb(0 0 0 / 35%);
+  background: rgb(0 0 0 / 45%);
 }
 .search-dialog[data-slot='dialog-content'] {
   --search-surface: var(--background);
@@ -37,7 +37,7 @@
   animation: none;
 }
 .dark .search-dialog {
-  --search-surface: rgb(22 22 22 / 94%);
+  --search-surface: rgb(22 22 22 / 98%);
   --search-active: rgb(255 255 255 / 5.6%);
   --search-pressed: rgb(255 255 255 / 7.1%);
 }
