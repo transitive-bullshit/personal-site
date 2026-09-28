@@ -14,6 +14,8 @@ Use the Node and pnpm versions in `package.json`. Supply these variables in the 
 - `S3_PUBLIC_URL=https://assets.cultural-alignment.com`
 - `S3_REGION=auto` (optional)
 
+Video imports require `ffmpeg` on PATH (`brew install ffmpeg` on macOS). Rendering and builds do not run FFmpeg.
+
 Every sync mode, including `--dry-run` and `--fast`, requires this configuration. Source contracts live in `lib/site.ts`; `scripts/notion/source.ts` pins the official API version and expected properties. Sync verifies workspace, root-page ancestry, database/data-source IDs, and saved property IDs before importing. A source-contract mismatch requires an intentional migration, not editing the snapshot to suppress the check.
 
 ## Commands
@@ -28,6 +30,7 @@ Every sync mode, including `--dry-run` and `--fast`, requires this configuration
 | `pnpm content:sync --fast` | Reuse saved images, omit new images, and defer image work to a normal sync. |
 | `pnpm content:sync --prune` | Deactivate missing entries in the selected collections. |
 | `pnpm content:sync --accept-slug-changes` | Accept proposed paths and retain old paths as redirects. |
+| `pnpm content:videos` | Backfill saved video dimensions and posters from verified R2 originals, without fetching Notion. Requires storage configuration and FFmpeg; resumes by skipping completed videos. |
 | `pnpm content:search` | Rebuild search from the committed snapshot without CMS credentials. |
 
 Flags compose. `--only projects --force --fast` re-reads projects while skipping image transfers. Fast mode still imports non-image media and refreshes bookmark text and tweet data when needed.
@@ -47,7 +50,7 @@ Publication validates the complete snapshot and writes deterministic JSON throug
 
 ## Media and image widths
 
-Media is immutable under `personal-site/media/<hash>.<extension>` in the shared R2 bucket. Reuse depends on stable source identity, edit marker, and media pipeline version. Original bytes are preserved; still raster images receive non-upscaled WebP variants. GIFs (including single-frame GIFs), other animated images, SVGs, video, audio, and files keep their original formats. Image placeholders are at most 8px on either side.
+Media is immutable under `personal-site/media/<hash>.<extension>` in the shared R2 bucket. Reuse depends on stable source identity, edit marker, and media pipeline version. Original bytes are preserved; still raster images receive non-upscaled WebP variants. GIFs (including single-frame GIFs), other animated images, SVGs, video, audio, and files keep their original formats. Image placeholders are at most 8px on either side. Videos also store display dimensions (including rotation and pixel aspect ratio) on the original asset and a separate first-frame WebP `poster` asset, capped at 1280px on either side. The renderer uses these dimensions to reserve space before metadata loads and displays the poster before playback. MIME type remains on the original asset; videos are never transcoded. Failed video inspection follows the existing media fallback/error path. Native audio players are centered with their captions, fill available space on narrow screens, and cap at 500px wide.
 
 `work/media-cache.json` resumes completed uploads and placeholder work after interrupted or unpublished runs. It is disposable local state; the committed snapshot is authoritative. Bump `MEDIA_PIPELINE_VERSION` in `scripts/media/process.ts` when changing generated media semantics, then use `--force` to apply the change to unchanged entries; the page cache otherwise bypasses media processing.
 

@@ -2,6 +2,8 @@
 
 ## Local workflow
 
+Install FFmpeg on PATH for the video import tests (`brew install ffmpeg` on macOS; `apt-get install ffmpeg` on Debian/Ubuntu).
+
 Use the Node engine and pnpm version in `package.json`. CI's clean-install command is:
 
 ```sh

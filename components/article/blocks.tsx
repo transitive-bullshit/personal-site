@@ -204,14 +204,24 @@ function BlockView({ block, snapshot }: { block: Block; snapshot: Snapshot }) {
     }
     case 'video': {
       const url = block.url ? embedUrl(block.url) : undefined
+      const media = block.media ? snapshot.media[block.media] : undefined
       return (
         <figure id={block.id}>
           {block.media ? (
             <video
               controls
               preload='metadata'
-              className='embed-frame'
-              src={snapshot.media[block.media]!.original.url}
+              className='embed-frame article-video'
+              width={media?.original.width}
+              height={media?.original.height}
+              style={{
+                aspectRatio:
+                  media?.original.width && media.original.height
+                    ? `${media.original.width} / ${media.original.height}`
+                    : undefined
+              }}
+              poster={media?.poster?.url}
+              src={media!.original.url}
             >
               <a href={snapshot.media[block.media]!.original.url}>
                 Download video
@@ -232,7 +242,7 @@ function BlockView({ block, snapshot }: { block: Block; snapshot: Snapshot }) {
               {block.url ? <a href={block.url}>Watch original video</a> : null}
               {block.caption.length ? (
                 <>
-                  <br />
+                  {block.url ? <br /> : null}
                   <RichText spans={block.caption} />
                 </>
               ) : null}

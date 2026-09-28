@@ -92,7 +92,11 @@ export function validateSnapshot(snapshot: Snapshot) {
       preview.image ? [preview.image] : []
     )
   ]) {
-    for (const asset of [media.original, ...media.variants]) {
+    for (const asset of [
+      media.original,
+      ...media.variants,
+      ...(media.poster ? [media.poster] : [])
+    ]) {
       if (
         !asset.key.includes(asset.hash) ||
         !new URL(asset.url).pathname.endsWith('/' + asset.key)

@@ -116,6 +116,7 @@ export const mediaSchema = z.object({
   pipelineVersion: z.number().int().positive(),
   original: assetSchema,
   variants: z.array(assetSchema),
+  poster: assetSchema.optional(),
   blurDataURL: z
     .string()
     .max(2048)

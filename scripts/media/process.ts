@@ -1,10 +1,11 @@
 import sharp from 'sharp'
+import { inspectVideo } from './video'
 import type { MediaCache } from './cache'
 import { setTimeout as delay } from 'node:timers/promises'
 import type { Media, MediaSource } from '../../lib/content/schema'
 import { MediaStorage, hashBytes } from './storage'
 
-export const MEDIA_PIPELINE_VERSION = 1
+export const MEDIA_PIPELINE_VERSION = 2
 const MAX_BYTES = 256 * 1024 * 1024
 
 export function canReuseMedia(
@@ -143,6 +144,22 @@ export async function processMedia(
   reportedMime: string,
   storage: MediaStorage
 ) {
+  if (reportedMime.startsWith('video/')) {
+    const video = await inspectVideo(bytes)
+    const original = await storage.publish(
+      bytes,
+      reportedMime,
+      extensions[reportedMime as keyof typeof extensions] ?? 'bin',
+      { width: video.width, height: video.height }
+    )
+    const poster = await storage.publish(
+      video.poster.data,
+      'image/webp',
+      'webp',
+      { width: video.poster.info.width, height: video.poster.info.height }
+    )
+    return { original, variants: [], poster }
+  }
   const metadata = await sharp(bytes, { limitInputPixels: 100_000_000 })
     .metadata()
     .catch(() => undefined)

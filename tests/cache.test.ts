@@ -27,9 +27,14 @@ it('resumes completed uploads after an unpublished run and keeps dry runs read-o
   )
   const source = { key: 'file', kind: 'file' as const, edited: '2026-09-15' }
   const fetchMock = vi.fn<typeof fetch>().mockResolvedValue(
-    new Response('original bytes', {
-      headers: { 'content-type': 'video/mp4' }
-    })
+    new Response(
+      new Uint8Array(
+        await readFile(new URL('./fixtures/video.mp4', import.meta.url))
+      ),
+      {
+        headers: { 'content-type': 'video/mp4' }
+      }
+    )
   )
   vi.stubGlobal('fetch', fetchMock)
   try {

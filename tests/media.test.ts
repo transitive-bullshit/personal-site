@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { HeadObjectCommand } from '@aws-sdk/client-s3'
 import sharp from 'sharp'
+import { readFile } from 'node:fs/promises'
 import type { Media, MediaSource } from '../lib/content/schema'
 import {
   MediaStorage,
@@ -139,7 +140,9 @@ describe('immutable media publication', () => {
     expect(Buffer.from(mock.objects.get(result.original.key)!)).toEqual(source)
   })
   it('keeps direct video bytes unchanged', async () => {
-    const source = Buffer.from('fixture video bytes')
+    const source = await readFile(
+      new URL('./fixtures/video.mp4', import.meta.url)
+    )
     const mock = transport()
     const result = await processMedia(
       source,
@@ -147,8 +150,44 @@ describe('immutable media publication', () => {
       new MediaStorage(config, mock.api)
     )
     expect(result.variants).toEqual([])
+    expect(result.original).toMatchObject({
+      width: 160,
+      height: 90,
+      mime: 'video/mp4'
+    })
+    expect(result.poster).toMatchObject({
+      width: 160,
+      height: 90,
+      mime: 'image/webp'
+    })
+    const poster = await sharp(mock.objects.get(result.poster!.key)!).metadata()
+    expect(poster).toMatchObject({ width: 160, height: 90, format: 'webp' })
     expect(result.blurDataURL).toBeUndefined()
     expect(Buffer.from(mock.objects.get(result.original.key)!)).toEqual(source)
+  })
+  it.each([
+    ['video-rotated.mp4', 90, 160],
+    ['video-anamorphic.mp4', 320, 90]
+  ])('uses display dimensions for %s', async (file, width, height) => {
+    const bytes = await readFile(new URL('./fixtures/' + file, import.meta.url))
+    const result = await processMedia(
+      bytes,
+      'video/mp4',
+      new MediaStorage(config, transport().api)
+    )
+    expect(result.original).toMatchObject({ width, height })
+    expect(result.poster).toMatchObject({ width, height })
+  })
+  it('rejects invalid video without publishing incomplete assets', async () => {
+    const mock = transport()
+    await expect(
+      processMedia(
+        Buffer.from('invalid'),
+        'video/mp4',
+        new MediaStorage(config, mock.api)
+      )
+    ).rejects.toThrow('Unable to inspect video')
+    expect(mock.objects.size).toBe(0)
   })
   it('invalidates reuse for source changes, pipeline changes, and force', () => {
     const source: MediaSource = {

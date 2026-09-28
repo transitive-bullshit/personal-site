@@ -342,6 +342,12 @@ summary {
   color: var(--muted-foreground);
   margin-top: 12px;
 }
+.article-body audio {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin-inline: auto;
+}
 .article-image {
   display: block;
   width: 100%;
@@ -448,6 +454,10 @@ summary {
   border: 1px solid var(--border);
   border-radius: 10px;
   background: var(--muted);
+}
+.article-video {
+  display: block;
+  height: auto;
 }
 .video-embed {
   aspect-ratio: 16 / 9;
