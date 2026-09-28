@@ -1,3 +1,4 @@
+import { taskBatch, silentProgress, type TaskProgress } from './task-progress'
 import { load } from 'cheerio'
 import { createHash } from 'node:crypto'
 import type { BookmarkPreview, Media } from '../lib/content/schema'
@@ -86,6 +87,7 @@ export const bookmarkKey = (url: string) =>
   'bookmark:' + createHash('sha256').update(url).digest('hex')
 
 export async function syncBookmarks(options: {
+  progress?: TaskProgress
   urls: Iterable<string>
   previous: Record<string, BookmarkPreview>
   force: boolean
@@ -97,54 +99,60 @@ export async function syncBookmarks(options: {
 }) {
   const urls = [...new Set(options.urls)].sort()
   const bookmarks: Record<string, BookmarkPreview> = {}
+  const run = taskBatch(options.progress ?? silentProgress, urls.length)
   let cursor = 0
   let fetched = 0
   let reused = 0
   async function worker() {
     while (cursor < urls.length) {
       const url = urls[cursor++]!
-      const old = options.previous[url]
-      if ((old && !old.needsImageSync && !options.force) || options.dryRun) {
-        if (old) bookmarks[url] = old
-        reused += Number(Boolean(old))
-        continue
-      }
-      fetched++
-      try {
-        const preview = await (options.fetchPreview ?? fetchBookmark)(url)
-        let image = options.skipImages ? old?.image : undefined
-        if (!options.skipImages) {
-          for (const candidate of preview.images.slice(0, 3)) {
-            try {
-              image = await options.saveImage(bookmarkKey(url), candidate)
-              break
-            } catch {
-              /* Try the next advertised social image. */
+      await run(url, async (task) => {
+        const old = options.previous[url]
+        if ((old && !old.needsImageSync && !options.force) || options.dryRun) {
+          if (old) bookmarks[url] = old
+          reused += Number(Boolean(old))
+          task.status(options.dryRun ? 'dry run' : 'cached')
+          return
+        }
+        fetched++
+        task.status('fetching metadata')
+        try {
+          const preview = await (options.fetchPreview ?? fetchBookmark)(url)
+          let image = options.skipImages ? old?.image : undefined
+          if (!options.skipImages) {
+            for (const candidate of preview.images.slice(0, 3)) {
+              try {
+                task.status('saving social image')
+                image = await options.saveImage(bookmarkKey(url), candidate)
+                break
+              } catch {
+                /* Try the next advertised social image. */
+              }
+            }
+            if (preview.images.length && !image) {
+              options.warn('Bookmark image unavailable: ' + url)
+              // Keep an existing good image when a refresh encounters a transient failure.
+              image = old?.image
             }
           }
-          if (preview.images.length && !image) {
-            options.warn('Bookmark image unavailable: ' + url)
-            // Keep an existing good image when a refresh encounters a transient failure.
-            image = old?.image
+          bookmarks[url] = {
+            title: preview.title,
+            description: preview.description,
+            needsImageSync:
+              options.skipImages && preview.images.length ? true : undefined,
+            image
           }
+        } catch (err) {
+          bookmarks[url] = old ?? { title: '', description: '' }
+          options.warn(
+            'Bookmark preview unavailable: ' +
+              url +
+              ' (' +
+              (err instanceof Error ? err.message : String(err)) +
+              ')'
+          )
         }
-        bookmarks[url] = {
-          title: preview.title,
-          description: preview.description,
-          needsImageSync:
-            options.skipImages && preview.images.length ? true : undefined,
-          image
-        }
-      } catch (err) {
-        bookmarks[url] = old ?? { title: '', description: '' }
-        options.warn(
-          'Bookmark preview unavailable: ' +
-            url +
-            ' (' +
-            (err instanceof Error ? err.message : String(err)) +
-            ')'
-        )
-      }
+      })
     }
   }
   await Promise.all(Array.from({ length: Math.min(6, urls.length) }, worker))

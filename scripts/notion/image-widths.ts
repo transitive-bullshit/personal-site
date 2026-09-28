@@ -1,3 +1,4 @@
+import { taskBatch, silentProgress, type TaskProgress } from '../task-progress'
 import { NotionAPI } from 'notion-client'
 import { z } from 'zod'
 import type { Block } from '../../lib/content/schema'
@@ -34,8 +35,10 @@ export async function syncImageWidths(
   {
     fetch = (request) => api.fetch(request),
     previousBlocks = [],
-    warn
+    warn,
+    progress = silentProgress
   }: {
+    progress?: TaskProgress
     fetch?: (request: Request) => Promise<unknown>
     previousBlocks?: Block[]
     warn: (message: string) => void
@@ -58,61 +61,67 @@ export async function syncImageWidths(
     }
   })
   const ids = [...images.keys()]
+  const run = taskBatch(progress, Math.ceil(ids.length / 100))
   for (let offset = 0; offset < ids.length; offset += 100) {
     const batch = ids.slice(offset, offset + 100)
-    let records: Record<string, unknown>
-    try {
-      const response = responseSchema.parse(
-        await fetch({
-          endpoint: 'syncRecordValues',
-          body: {
-            requests: batch.map((id) => ({
-              pointer: {
-                table: 'block',
-                id: id.replace(
-                  /(.{8})(.{4})(.{4})(.{4})(.{12})/,
-                  '$1-$2-$3-$4-$5'
-                )
-              },
-              version: -1
-            }))
+    await run(
+      `Images ${offset + 1}–${offset + batch.length} of ${ids.length}`,
+      async () => {
+        let records: Record<string, unknown>
+        try {
+          const response = responseSchema.parse(
+            await fetch({
+              endpoint: 'syncRecordValues',
+              body: {
+                requests: batch.map((id) => ({
+                  pointer: {
+                    table: 'block',
+                    id: id.replace(
+                      /(.{8})(.{4})(.{4})(.{4})(.{12})/,
+                      '$1-$2-$3-$4-$5'
+                    )
+                  },
+                  version: -1
+                }))
+              }
+            })
+          )
+          records = Object.fromEntries(
+            Object.entries(response.recordMap.block).map(([id, value]) => [
+              compactId(id),
+              value
+            ])
+          )
+        } catch {
+          warn(
+            `Image sizing unavailable for ${batch.length} images; keeping saved widths`
+          )
+          return
+        }
+        for (const id of batch) {
+          // Notion record-map v3 adds an envelope around the legacy value/role pair.
+          let value = records[id]
+          for (let depth = 0; depth < 2; depth++) {
+            const envelope = envelopeSchema.safeParse(value)
+            if (!envelope.success) break
+            value = envelope.data.value
           }
-        })
-      )
-      records = Object.fromEntries(
-        Object.entries(response.recordMap.block).map(([id, value]) => [
-          compactId(id),
-          value
-        ])
-      )
-    } catch {
-      warn(
-        `Image sizing unavailable for ${batch.length} images; keeping saved widths`
-      )
-      continue
-    }
-    for (const id of batch) {
-      // Notion record-map v3 adds an envelope around the legacy value/role pair.
-      let value = records[id]
-      for (let depth = 0; depth < 2; depth++) {
-        const envelope = envelopeSchema.safeParse(value)
-        if (!envelope.success) break
-        value = envelope.data.value
+          const parsed = imageSchema.safeParse(value)
+          if (!parsed.success || parsed.data.id !== id) {
+            warn(`Image sizing unavailable for ${id}; keeping saved width`)
+            continue
+          }
+          const format = parsed.data.format
+          const width =
+            format?.block_page_width || format?.block_full_width
+              ? undefined
+              : format?.block_width
+          for (const block of images.get(id)!) {
+            if (width === undefined) delete block.width
+            else block.width = width
+          }
+        }
       }
-      const parsed = imageSchema.safeParse(value)
-      if (!parsed.success || parsed.data.id !== id) {
-        warn(`Image sizing unavailable for ${id}; keeping saved width`)
-        continue
-      }
-      const format = parsed.data.format
-      const width =
-        format?.block_page_width || format?.block_full_width
-          ? undefined
-          : format?.block_width
-      for (const block of images.get(id)!) {
-        if (width === undefined) delete block.width
-        else block.width = width
-      }
-    }
+    )
   }
 }

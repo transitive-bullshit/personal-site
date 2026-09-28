@@ -33,6 +33,8 @@ Every sync mode, including `--dry-run` and `--fast`, requires this configuration
 | `pnpm content:videos` | Backfill saved video dimensions and posters from verified R2 originals, without fetching Notion. Requires storage configuration and FFmpeg; resumes by skipping completed videos. |
 | `pnpm content:search` | Rebuild search from the committed snapshot without CMS credentials. |
 
+Interactive terminals show a Tasuku task list with spinners, elapsed time, and completed/active counts for page imports, image-width batches, bookmarks, tweets, and placeholders. Finished children collapse into their phase counts so active work stays visible. Warnings mark the phase and print in full before the final JSON summary. Redirected output, CI, and dumb terminals use plain start/completion logs.
+
 Flags compose. `--only projects --force --fast` re-reads projects while skipping image transfers. Fast mode still imports non-image media and refreshes bookmark text and tweet data when needed.
 
 Dry runs still perform Notion discovery, selected page reads, public image-layout reads, and an R2 access probe. They skip media downloads/uploads, placeholder generation, and bookmark/tweet fetches. A successful dry run therefore does not prove those remote assets are available.
