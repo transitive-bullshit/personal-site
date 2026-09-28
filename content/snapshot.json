@@ -81699,7 +81699,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T21:35:00.000Z",
+        "edited": "2026-09-28T22:07:00.000Z",
         "key": "3e9edb27f12481b5a69ec67030d06b06:cover",
         "kind": "file"
       },
@@ -82040,7 +82040,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T17:12:00.000Z",
+        "edited": "2026-09-28T22:08:00.000Z",
         "key": "3e9edb27f12481fe84acd73fae342ccb:cover",
         "kind": "file"
       },
@@ -93036,13 +93036,13 @@
       ],
       "cover": "3e9edb27f12481b5a69ec67030d06b06:cover",
       "description": "System 1 and System 2 trade verses in this AI hip-hop music video.",
-      "featured": false,
+      "featured": true,
       "icon": {
         "type": "emoji",
         "value": "🎬"
       },
       "id": "3e9edb27f12481b5a69ec67030d06b06",
-      "modified": "2026-09-28T21:35:00.000Z",
+      "modified": "2026-09-28T22:07:00.000Z",
       "published": "2026-09-29",
       "slug": "sometimes-i-think-slow-ai-music-video",
       "source": "https://github.com/transitive-bullshit/sometimes-i-think-slow",
@@ -93052,7 +93052,8 @@
         "Projects"
       ],
       "title": "Sometimes I Think Slow – AI Music Video",
-      "type": "Video"
+      "type": "Video",
+      "website": "https://www.youtube.com/watch?v=dZjYGcjS3iQ"
     },
     "3e9edb27f12481fe84acd73fae342ccb": {
       "authors": [
@@ -95682,7 +95683,7 @@
         "value": "🎬"
       },
       "id": "3e9edb27f12481fe84acd73fae342ccb",
-      "modified": "2026-09-28T17:12:00.000Z",
+      "modified": "2026-09-28T22:08:00.000Z",
       "published": "2026-09-28",
       "slug": "slow-it-down-ai-music-video",
       "source": "https://github.com/transitive-bullshit/slow-it-down",
@@ -95692,6 +95693,7 @@
         "Projects"
       ],
       "title": "Slow It Down – AI Music Video",
+      "tweet": "https://x.com/transitive_bs/status/2104605687154376844",
       "type": "Video",
       "website": "https://www.youtube.com/watch?v=Tz6gQDN9qG0"
     }
