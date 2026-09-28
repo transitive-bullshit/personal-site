@@ -6,7 +6,7 @@ import type { Media, MediaSource } from '../../lib/content/schema'
 import { MediaStorage, hashBytes } from './storage'
 
 export const MEDIA_PIPELINE_VERSION = 2
-const MAX_BYTES = 256 * 1024 * 1024
+const MAX_BYTES = 512 * 1024 * 1024
 
 export function canReuseMedia(
   previous: Media | undefined,
@@ -70,7 +70,7 @@ export async function download(
       const declared = Number(response.headers.get('content-length') ?? 0)
       if (declared > MAX_BYTES) {
         await response.body?.cancel()
-        throw new Error('Media exceeds 256 MiB limit')
+        throw new Error('Media exceeds 512 MiB limit')
       }
       if (!response.body) throw new Error('Empty media response')
       const reader = response.body.getReader()
@@ -81,7 +81,7 @@ export async function download(
           const item = await reader.read()
           if (item.done) break
           size += item.value.byteLength
-          if (size > MAX_BYTES) throw new Error('Media exceeds 256 MiB limit')
+          if (size > MAX_BYTES) throw new Error('Media exceeds 512 MiB limit')
           chunks.push(item.value)
         }
       } finally {

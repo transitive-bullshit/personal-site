@@ -52,6 +52,8 @@ Projects also import the optional `Type` select value and track its property ID.
 
 ## Media and image widths
 
+Each media download is limited to 512 MiB, enforced against both the declared content length and the bytes received.
+
 Media is immutable under `personal-site/media/<hash>.<extension>` in the shared R2 bucket. Reuse depends on stable source identity, edit marker, and media pipeline version. Original bytes are preserved; still raster images receive non-upscaled WebP variants. GIFs (including single-frame GIFs), other animated images, SVGs, video, audio, and files keep their original formats. Image placeholders are at most 8px on either side. Videos also store display dimensions (including rotation and pixel aspect ratio) on the original asset and a separate first-frame WebP `poster` asset, capped at 1280px on either side. The renderer uses these dimensions to reserve space before metadata loads and displays the poster before playback. MIME type remains on the original asset; videos are never transcoded. Failed video inspection follows the existing media fallback/error path. Native audio players are centered with their captions, fill available space on narrow screens, and cap at 500px wide.
 
 `work/media-cache.json` resumes completed uploads and placeholder work after interrupted or unpublished runs. It is disposable local state; the committed snapshot is authoritative. Bump `MEDIA_PIPELINE_VERSION` in `scripts/media/process.ts` when changing generated media semantics, then use `--force` to apply the change to unchanged entries; the page cache otherwise bypasses media processing.
