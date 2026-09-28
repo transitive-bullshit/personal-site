@@ -193,6 +193,8 @@ export async function main() {
     ? await importPages({
         ...importOptions,
         kind: 'project',
+        // Re-read cached projects once when adopting the Type property.
+        force: values.force || !previous?.projectSource?.propertyIds.Type,
         pages: projectInput.pages,
         previous: previous?.projects ?? {},
         routes: projectRoutes,

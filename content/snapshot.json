@@ -78638,6 +78638,44 @@
         }
       ]
     },
+    "13ab573e52694d3da0564070f1ff0a7a": {
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAUAA4BaJYwCdAEOJKFgAP6pV8KAy0JOccbMtmk1PQamFAauu0XgAAA=",
+      "original": {
+        "bytes": 2740374,
+        "hash": "2bfca618ec6fccd667be3da4ebcae4141166030f2e0dbeff09d44fc75a687355",
+        "height": 1024,
+        "key": "personal-site/media/2bfca618ec6fccd667be3da4ebcae4141166030f2e0dbeff09d44fc75a687355.png",
+        "mime": "image/png",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/2bfca618ec6fccd667be3da4ebcae4141166030f2e0dbeff09d44fc75a687355.png",
+        "width": 1536
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T14:50:00.000Z",
+        "key": "13ab573e52694d3da0564070f1ff0a7a",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 141868,
+          "hash": "069d377d57f4330993b834c54ed0ddc96203cf25e5bbde99f91d09a8b1d55c30",
+          "height": 640,
+          "key": "personal-site/media/069d377d57f4330993b834c54ed0ddc96203cf25e5bbde99f91d09a8b1d55c30.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/069d377d57f4330993b834c54ed0ddc96203cf25e5bbde99f91d09a8b1d55c30.webp",
+          "width": 960
+        },
+        {
+          "bytes": 396262,
+          "hash": "04d347ac0c64a202f6e8f793bb352e40038a607a51fc4f2a5cfefa1740a5185b",
+          "height": 1024,
+          "key": "personal-site/media/04d347ac0c64a202f6e8f793bb352e40038a607a51fc4f2a5cfefa1740a5185b.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/04d347ac0c64a202f6e8f793bb352e40038a607a51fc4f2a5cfefa1740a5185b.webp",
+          "width": 1536
+        }
+      ]
+    },
     "172caf92a20c42b28890cf188ac27d9b": {
       "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoIAAUAA4BaJZQAAudLlsUAAP72GUwuffDwGmmUfTvVIcAA",
       "original": {
@@ -79020,6 +79058,44 @@
       },
       "variants": []
     },
+    "22eb29e9677440afa785e26104cfaf8c": {
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAQAA4BaJZgCdAEO+nH5AAD+rDO5GN978tJeArOsTPC/RBpdoAAA",
+      "original": {
+        "bytes": 2008541,
+        "hash": "ca15ea5f92959a4f58065512cc6b6f06c4bda50f82832812434074b5405490f3",
+        "height": 630,
+        "key": "personal-site/media/ca15ea5f92959a4f58065512cc6b6f06c4bda50f82832812434074b5405490f3.png",
+        "mime": "image/png",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/ca15ea5f92959a4f58065512cc6b6f06c4bda50f82832812434074b5405490f3.png",
+        "width": 1200
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T14:50:00.000Z",
+        "key": "22eb29e9677440afa785e26104cfaf8c",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 125554,
+          "hash": "cb91dd548e128fac266e7cd5b5cba84917fcd43352fa5548374366597626f960",
+          "height": 504,
+          "key": "personal-site/media/cb91dd548e128fac266e7cd5b5cba84917fcd43352fa5548374366597626f960.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/cb91dd548e128fac266e7cd5b5cba84917fcd43352fa5548374366597626f960.webp",
+          "width": 960
+        },
+        {
+          "bytes": 261732,
+          "hash": "b1f9b1c9eba2de63f1b01cf0b83806210aad283c3ca36d814a50a54e455d92f5",
+          "height": 630,
+          "key": "personal-site/media/b1f9b1c9eba2de63f1b01cf0b83806210aad283c3ca36d814a50a54e455d92f5.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/b1f9b1c9eba2de63f1b01cf0b83806210aad283c3ca36d814a50a54e455d92f5.webp",
+          "width": 1200
+        }
+      ]
+    },
     "230452eafb76469d9a1bb141309718fc": {
       "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAUAA4BaJZwAAuab25AA/uusQSFxZxXzx5CeXAgvvULMXAJAAAAA",
       "original": {
@@ -79107,7 +79183,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/46268dcbafca7000d92dfc0802f0a92ca4579992f64629babc6164d2ecaa81d0.gif",
         "width": 162
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-17T04:40:00.000Z",
         "key": "2386b6b446a64980a3cb00ab87b5f8b8",
@@ -79554,7 +79630,7 @@
         "mime": "application/pdf",
         "url": "https://assets.cultural-alignment.com/personal-site/media/21f8b37b3e75d399270fa73490a3b7ce6c2c5d2a20309298dca987aeeb0a1299.pdf"
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-08-23T15:35:00.000Z",
         "key": "3c5edb27f124801386baf577c0908c47",
@@ -79573,9 +79649,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/805eb57b6733ab660935af9e3352c4d98f49b7ef7b7d78f4587673551073bd54.png",
         "width": 1280
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f1248016b5cce12e4e9386dd:cover",
         "kind": "file"
       },
@@ -79611,9 +79687,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/7cb0e304447000c6ec7815fdb8c2fbd919c473a8ec88a695729a28e1f9c6ae39.png",
         "width": 512
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f1248016b5cce12e4e9386dd:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/4705ad8f-3827-4e5b-a538-f8f1d231d790/hrg-icon.png"
@@ -79641,9 +79717,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/b365e7993b6bc9c940e0578bc5e49278c0fe69a86ce5c3cf62ab2252da5cfe87.jpg",
         "width": 1672
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:44:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f124801c9faae26f7dcba5ce:cover",
         "kind": "file"
       },
@@ -79679,9 +79755,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/d3f86f2112fbba6219dc051ca1394eb131ef7c1bda5ac7f90ff19263ede00e68.png",
         "width": 256
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:44:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f124801c9faae26f7dcba5ce:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/3ec7ff8a-929a-4361-8193-5ba6a2413c55/image.png"
@@ -79709,7 +79785,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/f54a92b52d6a530184e474f392225dce32432b484364d1a9160d5ba58a346cb6.png",
         "width": 2028
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-08-23T15:20:00.000Z",
         "key": "3c5edb27f1248028a8f9ec480c421bcd",
@@ -79747,9 +79823,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/bb056a9eb5d450fce2167b0695e8b9836ff516fc2491835b9989c2e6fbd68fde.jpg",
         "width": 1672
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:11:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f124802aab9dc3396f5cfcbf:cover",
         "kind": "file"
       },
@@ -79785,9 +79861,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/e4a40525e8f10df5423398d07edabc4ec121c8c59a711c114cda8798916fb2e7.jpg",
         "width": 1672
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:08:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f1248074a45bc63ab79f87fd:cover",
         "kind": "file"
       },
@@ -79823,9 +79899,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/41614376e7c39a7ef2e3d03983b7af68013bf66bbd746561dea34e729202848e.png",
         "width": 1000
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:08:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f1248074a45bc63ab79f87fd:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/cbd55fe8-ea1e-420a-a033-a5f238ca52e8/webtorrent.png"
@@ -79862,9 +79938,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/743a2d841adbd265f5ca5ab2445b0c883c0d28a29e77f30e0c1f2069ad0877ed.jpg",
         "width": 1672
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:07:00.000Z",
+        "edited": "2026-09-28T16:02:00.000Z",
         "key": "3c5edb27f124809abdc5fc63ce0739ed:cover",
         "kind": "file"
       },
@@ -79900,9 +79976,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/139ae451b37a00251fe24358191699efa665f63f1c8369cb9dad833159e159e2.svg",
         "width": 512
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:07:00.000Z",
+        "edited": "2026-09-28T16:02:00.000Z",
         "key": "3c5edb27f124809abdc5fc63ce0739ed:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/9555a6c9-8660-4e6f-b3c9-96c15f240cfd/ts-logo-512.svg"
@@ -79920,9 +79996,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/fe733ba07508632ae5b9c53aebc9f8cd2f7430be4dca098973daf7f75cdddb55.jpg",
         "width": 1672
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:42:00.000Z",
+        "edited": "2026-09-28T16:00:00.000Z",
         "key": "3c5edb27f124809db2a5fc2da1aff6ab:cover",
         "kind": "file"
       },
@@ -79958,9 +80034,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/6da6ef895be2a42606b99e5e3b9c25687c92c81986a9718e07f32e574d41cf7a.svg",
         "width": 82
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:42:00.000Z",
+        "edited": "2026-09-28T16:00:00.000Z",
         "key": "3c5edb27f124809db2a5fc2da1aff6ab:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/9da65059-c6ac-4368-9a4f-ae547ef8962c/agentic-icon-circle-light.svg"
@@ -79978,9 +80054,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/b284e6e066fd70d64f12c16da318e60a6faf388ce72db427fdb6fac9f53c4995.jpg",
         "width": 2332
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:08:00.000Z",
+        "edited": "2026-09-28T16:03:00.000Z",
         "key": "3c5edb27f124809e8eefdc0bf95f4474:cover",
         "kind": "file"
       },
@@ -80016,9 +80092,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/ee88c8ca3e28b8f2623b9bc86b770f83dc1460c6e4ebfc9f86dc4b86a8f9efb2.svg",
         "width": 170
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:08:00.000Z",
+        "edited": "2026-09-28T16:03:00.000Z",
         "key": "3c5edb27f124809e8eefdc0bf95f4474:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/d2fb41df-8c10-4c6d-a402-6353d625420e/icon.svg"
@@ -80036,9 +80112,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/7fe4f7b00483953b1821c6a6ee09b2bc73261170f7afb902ef493514e116f832.jpg",
         "width": 1200
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:10:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f12480a59a4bd520e5721e5e:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/media/FrHr94YacAA9Dod.jpg"
@@ -80075,9 +80151,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/59099e5f6185aafb28b562af78d8eb1000247ab8c4c0d47aa6b3b5d1ceac3285.png",
         "width": 32
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:10:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f12480a59a4bd520e5721e5e:icon",
         "kind": "external",
         "url": "https://sklearn.vercel.app/favicon-32.png"
@@ -80143,9 +80219,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/d67aec31f6e466ca42b19e263f2d049acdbdc6db0c73fce4c84090323208b32d.jpg",
         "width": 1672
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:03:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f12480cbbf85d490b05a58f3:cover",
         "kind": "file"
       },
@@ -80181,9 +80257,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/77b5e24dae8fd206c71a004717e3b85a647734cc7e29494b46f9375dc0887c7d.jpg",
         "width": 1672
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-17T04:40:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f12480db8ab5f4b6fdb72331:cover",
         "kind": "file"
       },
@@ -80219,9 +80295,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/3cb61caea58b58b136cf2204398e82a9e019c792ca3be577603bd1b246f258f9.jpg",
         "width": 1672
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:33:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f12480dca152d5c2e5551272:cover",
         "kind": "file"
       },
@@ -80257,9 +80333,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/9a43b26659466631acc6a0e2a98147290f2f0d5b3b16b0ba410e393c78c53123.png",
         "width": 48
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:33:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f12480dca152d5c2e5551272:icon",
         "kind": "external",
         "url": "https://raw.githubusercontent.com/transitive-bullshit/mipscope/master/src/gui/images/logo.png"
@@ -80287,9 +80363,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/323634e4d40a77c5c0f5fbb64659ca6c1bfeffc01482f18623b846b986e7a343.jpg",
         "width": 1200
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:10:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f12480e39f5def11519f5553:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/media/GlhmeVQaQAEqYDL.jpg"
@@ -80326,9 +80402,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/00ee16940bf9e7e04f59d32967c2faf067044ff1b7577b989e86a3fe13f50142.svg",
         "width": 142
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:10:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3c5edb27f12480e39f5def11519f5553:icon",
         "kind": "external",
         "url": "https://severance.transitivebullsh.it/icon.svg?8b90c370817613cf"
@@ -80384,9 +80460,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/41a5c872ceb141e072967db91fb80c7a091472482d8f29e089b716c1c3c45f18.jpg",
         "width": 1672
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:15:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3ddedb27f124807bb39ecda2ff1548c6:cover",
         "kind": "file"
       },
@@ -80422,9 +80498,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/342d763f2e46813a9e0d164579ed80538bbca3fd0429bd1ff42e438e411b7a38.svg",
         "width": 313
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:15:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3ddedb27f124807bb39ecda2ff1548c6:icon",
         "kind": "file"
       },
@@ -80441,9 +80517,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/d4160678b33cb060d8d608aff1fdcbfa0df8708af4f5b0b1f62fdc21088d6f37.jpg",
         "width": 1200
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-17T04:48:00.000Z",
+        "edited": "2026-09-28T16:00:00.000Z",
         "key": "3ddedb27f12481059885e955643ddaf0:cover",
         "kind": "file"
       },
@@ -80479,9 +80555,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/dc26b88d73a2211e592232d13b2c407a3617e1cabfa312435ff55a286127f507.svg",
         "width": 60
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-17T04:48:00.000Z",
+        "edited": "2026-09-28T16:00:00.000Z",
         "key": "3ddedb27f12481059885e955643ddaf0:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/55eddaa1-688e-4a5b-9e3c-011b316d61ce/icon.svg"
@@ -80499,9 +80575,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/25b3ddd858038a5bae291cb14208df396c0df95c063b695a0a342dddb5a8a8a2.jpg",
         "width": 1440
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-28T16:00:00.000Z",
         "key": "3ddedb27f1248114a98ed3835e961d1e:cover",
         "kind": "external",
         "url": "https://raw.githubusercontent.com/transitive-bullshit/ai-safety-doom/main/docs/images/arrival.jpg"
@@ -80538,9 +80614,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/3fc3bee5fd5a783695251229863c7cc69fe2bbfac998ddb5ad9237b8866b92d4.svg",
         "width": 64
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-28T16:00:00.000Z",
         "key": "3ddedb27f1248114a98ed3835e961d1e:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/423c75d7-5ab2-4b85-86c0-da3375a03bf3/icon.svg"
@@ -80558,9 +80634,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/691fe2a4f7f65e4971a39a9e0ab65a23ee45618d340802b3f017884bdad2e03b.jpg",
         "width": 1600
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-28T16:00:00.000Z",
         "key": "3ddedb27f12481258859d0cefc5f2da4:cover",
         "kind": "external",
         "url": "https://raw.githubusercontent.com/transitive-bullshit/reading-room/main/docs/assets/desktop-pile-0.jpg"
@@ -80597,9 +80673,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/e776cc2334ffdc974ca965af6acb888ae0f2b02dca3182ff483f0572728c8c80.svg",
         "width": 324
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-28T16:00:00.000Z",
         "key": "3ddedb27f12481258859d0cefc5f2da4:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/6c312b90-282f-4af1-ba4e-5de74782b3f6/icon.svg"
@@ -80617,9 +80693,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/1e300aef6b47846df83dcc84d257ee1ee54390b274b249f73b3e60489e47e67c.jpg",
         "width": 1672
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:05:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3ddedb27f12481499a89eee57fda3967:cover",
         "kind": "file"
       },
@@ -80655,9 +80731,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/da7c76da00601d3135402d961eaf10f7f77a459edfec9d88f6d16e684b50ae1f.heif",
         "width": 320
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:05:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3ddedb27f12481499a89eee57fda3967:icon",
         "kind": "file"
       },
@@ -80684,9 +80760,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/d547a47dc9fe3185cd29c54ab177e5988fe6b0488b1ef476bea487a674436031.png",
         "width": 1440
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-28T15:59:00.000Z",
         "key": "3ddedb27f124815ba865d0f6b5b759f5:cover",
         "kind": "external",
         "url": "https://raw.githubusercontent.com/transitive-bullshit/retro-web-terminal/main/docs/demo.png"
@@ -80723,9 +80799,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/28e31fcca6d3e6f5c9e2a10d5631a68f517684922d89f8caebd071192cdcc044.svg",
         "width": 32
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T08:55:00.000Z",
+        "edited": "2026-09-28T15:59:00.000Z",
         "key": "3ddedb27f124815ba865d0f6b5b759f5:icon",
         "kind": "external",
         "url": "https://retro-web-terminal.vercel.app/favicon.svg"
@@ -80743,9 +80819,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/540c04e68274bed9c413ee43203846762184eb4fb1f3ba20b7a7109e7cc35241.jpg",
         "width": 1672
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:02:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3ddedb27f12481629063e24b51da6fe6:cover",
         "kind": "file"
       },
@@ -80781,9 +80857,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/01d1f33a9cdcb7888c2d0b302f3350ebde62d6e18aea1c17a7bf446cd13b79b4.png",
         "width": 1024
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T09:02:00.000Z",
+        "edited": "2026-09-28T16:01:00.000Z",
         "key": "3ddedb27f12481629063e24b51da6fe6:icon",
         "kind": "file"
       },
@@ -80819,9 +80895,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/af08a1b07fed62f56a3db2b938cd450a9651f91ef19d6e396da36f58b5cd5309.jpg",
         "width": 1200
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T11:19:00.000Z",
+        "edited": "2026-09-28T16:49:00.000Z",
         "key": "3ddedb27f1248186b064c993b8e155c6:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/amplify_video_thumb/2096133721955209216/img/b0n8ufOa4sWSMbrt.jpg"
@@ -80858,9 +80934,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/12d373dd1bee91734dbbce5574a746bd7784aeb0f04eee31c19cda9c8cfc60e3.jpg",
         "width": 1200
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T12:25:00.000Z",
+        "edited": "2026-09-28T15:59:00.000Z",
         "key": "3ddedb27f12481b7bdc4d0325b2f6171:cover",
         "kind": "file"
       },
@@ -80896,9 +80972,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/538e30e5893725e845ef2fbd5cd114a1127a1db93fc75b033d672c0d3b02a6b0.svg",
         "width": 32
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T12:25:00.000Z",
+        "edited": "2026-09-28T15:59:00.000Z",
         "key": "3ddedb27f12481b7bdc4d0325b2f6171:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/b5a901a9-0530-4441-89f7-28b07e41a03a/icon.svg"
@@ -80916,9 +80992,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/a33ad3f8db202d5e97dabe5eb80e092710fe300b598c17a4182eae1c5263d89b.jpg",
         "width": 1920
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T10:10:00.000Z",
+        "edited": "2026-09-28T16:49:00.000Z",
         "key": "3ddedb27f12481c1a145c3d546904768:cover",
         "kind": "file"
       },
@@ -80954,9 +81030,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/d7e67cff67a010808f84040c259a105a7928851f6e97e0b2204b6df78b7e6087.jpg",
         "width": 2048
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-26T14:24:00.000Z",
+        "edited": "2026-09-28T15:59:00.000Z",
         "key": "3e5edb27f124800884cddefb16b57151:cover",
         "kind": "file"
       },
@@ -80992,9 +81068,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/f18c72a90e29dffa8208fc09251af9116834396e233decaa3f8e406445ba55e2.svg",
         "width": 48
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-26T14:24:00.000Z",
+        "edited": "2026-09-28T15:59:00.000Z",
         "key": "3e5edb27f124800884cddefb16b57151:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/c54f086c-e568-46a3-b826-d5169e0a5459/icon.svg"
@@ -81012,7 +81088,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/f5dd6119a00fae643ba776ce173a683f334166b9a5abe6f109fa88e051e02238.png",
         "width": 2044
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-24T15:47:00.000Z",
         "key": "3e5edb27f124803986dcf43e3f0e5e22",
@@ -81050,7 +81126,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/40ba32f7a7beff313a5a1207890436e68d4a749b6b008eb30b11de45261b6780.png",
         "width": 2732
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-24T15:47:00.000Z",
         "key": "3e5edb27f1248085b67ed7f0b8e750da",
@@ -81088,7 +81164,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/d5f2986576047b0af15f52d3bad2b5a16ed4930367cbaa6b0f1385009529df44.png",
         "width": 1556
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-24T15:47:00.000Z",
         "key": "3e5edb27f12480a48852c00970dfc23e",
@@ -81126,7 +81202,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/70682cbe2669e90ba4322b7fbf7c5e9d0d33d24860924f3f9cc6c251af38c6fa.jpg",
         "width": 2266
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-26T14:03:00.000Z",
         "key": "3e5edb27f12480bcaeaddc7ff5430b47",
@@ -81215,7 +81291,7 @@
         "mime": "audio/mpeg",
         "url": "https://assets.cultural-alignment.com/personal-site/media/fbed70cd1cca046c90d2c402a216bdb5210822dac0788e8b143ae4abbbecb871.mp3"
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-28T13:26:00.000Z",
         "key": "3e9edb27f1248131b632e672ab9f0960",
@@ -81261,7 +81337,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/2258a9607afc0bd4a6e944004aa2552ecbfcf5b6992d043b2cd6a201fcb309af.jpg",
         "width": 3844
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-28T13:26:00.000Z",
         "key": "3e9edb27f1248156811debc94bbd473a",
@@ -81299,7 +81375,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/3f9405d194ad5274aa63233ea7e92e0f48d6efdb976cd5b539a01912302af28f.jpg",
         "width": 2936
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-28T13:26:00.000Z",
         "key": "3e9edb27f1248173bb45e125864b2c8b",
@@ -81337,7 +81413,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/041aa9b1ced8af7205b65dba639fbde19a66e3277728fcc7a3f10e6976c55481.jpg",
         "width": 1800
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-28T13:26:00.000Z",
         "key": "3e9edb27f12481769a2df3a2c1450b0f",
@@ -81364,6 +81440,71 @@
         }
       ]
     },
+    "3e9edb27f1248178b549d782563c6960": {
+      "original": {
+        "bytes": 76158842,
+        "hash": "047f0f4d1c1c946484e5871cb6fac7a0b6d9b65c4005af0c6a10818080a4cb9f",
+        "height": 1080,
+        "key": "personal-site/media/047f0f4d1c1c946484e5871cb6fac7a0b6d9b65c4005af0c6a10818080a4cb9f.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/047f0f4d1c1c946484e5871cb6fac7a0b6d9b65c4005af0c6a10818080a4cb9f.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 37962,
+        "hash": "963fcb839b023247aec87b910f7d8be64fe1a314e1c3a36e2a2b750750f30ee4",
+        "height": 720,
+        "key": "personal-site/media/963fcb839b023247aec87b910f7d8be64fe1a314e1c3a36e2a2b750750f30ee4.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/963fcb839b023247aec87b910f7d8be64fe1a314e1c3a36e2a2b750750f30ee4.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-09-28T16:49:00.000Z",
+        "key": "3e9edb27f1248178b549d782563c6960",
+        "kind": "file"
+      },
+      "variants": []
+    },
+    "3e9edb27f124818b9248c844fa4296d6:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAQAA4BaJZgCdAEO/gLsAP7Bv4FDOkgf56Ht0678Nhfog0u0AAAA",
+      "original": {
+        "bytes": 229851,
+        "hash": "b582ccda7e0b04cab2a949531d93207f8e62e8a228c1ed026cd05695ab7d6f9a",
+        "height": 630,
+        "key": "personal-site/media/b582ccda7e0b04cab2a949531d93207f8e62e8a228c1ed026cd05695ab7d6f9a.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/b582ccda7e0b04cab2a949531d93207f8e62e8a228c1ed026cd05695ab7d6f9a.jpg",
+        "width": 1200
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T16:01:00.000Z",
+        "key": "3e9edb27f124818b9248c844fa4296d6:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 117346,
+          "hash": "7844fed972f6a40371c1284d378cf495583c9544cecab2ea32b2860d7d8de5c9",
+          "height": 504,
+          "key": "personal-site/media/7844fed972f6a40371c1284d378cf495583c9544cecab2ea32b2860d7d8de5c9.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/7844fed972f6a40371c1284d378cf495583c9544cecab2ea32b2860d7d8de5c9.webp",
+          "width": 960
+        },
+        {
+          "bytes": 231894,
+          "hash": "06233bb18c8aa6fa8ba8c6cd8279d6f004c4f6d466717af216d6971a121fdd1a",
+          "height": 630,
+          "key": "personal-site/media/06233bb18c8aa6fa8ba8c6cd8279d6f004c4f6d466717af216d6971a121fdd1a.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/06233bb18c8aa6fa8ba8c6cd8279d6f004c4f6d466717af216d6971a121fdd1a.webp",
+          "width": 1200
+        }
+      ]
+    },
     "3e9edb27f12481aeab7dc3e58c890d04": {
       "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJZwAAp1sr/KAAP7s4TaAbCWwiUV/xv7DDsP/Y/QTlBTsQgIiOAAA",
       "original": {
@@ -81375,7 +81516,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/5a03803f6243e74845595c2915e8a4375673964878a977cd6e57d4031b08f963.jpg",
         "width": 2596
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-28T13:26:00.000Z",
         "key": "3e9edb27f12481aeab7dc3e58c890d04",
@@ -81402,6 +81543,33 @@
         }
       ]
     },
+    "3e9edb27f12481b6b834d9da47bcb881": {
+      "original": {
+        "bytes": 72356645,
+        "hash": "97b3b7c8db20ae1bc155fbe76131fccc09fdf147f6103b7ad2e5e53344a023d5",
+        "height": 1080,
+        "key": "personal-site/media/97b3b7c8db20ae1bc155fbe76131fccc09fdf147f6103b7ad2e5e53344a023d5.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/97b3b7c8db20ae1bc155fbe76131fccc09fdf147f6103b7ad2e5e53344a023d5.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 17050,
+        "hash": "c2573340bd6e9fc7a45e9efa6eccea4d3a83792e33f6abcd17bf7e989031033b",
+        "height": 720,
+        "key": "personal-site/media/c2573340bd6e9fc7a45e9efa6eccea4d3a83792e33f6abcd17bf7e989031033b.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/c2573340bd6e9fc7a45e9efa6eccea4d3a83792e33f6abcd17bf7e989031033b.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-09-28T16:49:00.000Z",
+        "key": "3e9edb27f12481b6b834d9da47bcb881",
+        "kind": "file"
+      },
+      "variants": []
+    },
     "3e9edb27f12481b8b870c9b1ed63a048": {
       "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAAAwAQCdASoIAAYAA4BaJZwAA3AA/vI6xS6Ln+henZYi8LLXN6UfCAAA",
       "original": {
@@ -81413,7 +81581,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/c71b36b49f1af87874da01c97cc04c7f30dbd19e7fa9bfaf709960934bc05e83.png",
         "width": 2400
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-28T13:26:00.000Z",
         "key": "3e9edb27f12481b8b870c9b1ed63a048",
@@ -81451,7 +81619,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/bca91d26118bf05d0024c30461180fb39f672db50e28d040b081755864f32928.jpg",
         "width": 2928
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-28T13:26:00.000Z",
         "key": "3e9edb27f12481ba84a8ee735e074c87",
@@ -81540,7 +81708,7 @@
         "mime": "audio/mpeg",
         "url": "https://assets.cultural-alignment.com/personal-site/media/cd35d02f6486f9391171fa1cc8e9080aadff13f588756c821266283a10ed1c1e.mp3"
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-28T13:26:00.000Z",
         "key": "3e9edb27f12481dbad24ed10a468a6e5",
@@ -81556,7 +81724,7 @@
         "mime": "audio/mpeg",
         "url": "https://assets.cultural-alignment.com/personal-site/media/0ff42366ecf3f8cb253cb5e868e38c54eb4e8f9e9763c3ea475edf7a7b66a93a.mp3"
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-28T13:26:00.000Z",
         "key": "3e9edb27f12481f49991d30ff4016de6",
@@ -81575,9 +81743,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/5be20121f28bfc0dbf194f90b07ffe2198407aecefef65b15db875918fcef8f0.jpg",
         "width": 1920
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T13:45:00.000Z",
+        "edited": "2026-09-28T15:59:00.000Z",
         "key": "3e9edb27f12481fe84acd73fae342ccb:cover",
         "kind": "file"
       },
@@ -81785,7 +81953,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/53d653b2b7cbcdfb2c53a1f719893ee426713d40f3dbc643f4056095d282bd2a.gif",
         "width": 160
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-17T04:40:00.000Z",
         "key": "479347f666124035bbf2f9097c8a28f3",
@@ -81862,7 +82030,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/e6b812b3d34a4019221d8a508d784432232a46f16a6dbec81e2624de1d6b2a6e.gif",
         "width": 192
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-17T04:40:00.000Z",
         "key": "4afd7f9ada164717b9ab8edb60901ea1",
@@ -82396,6 +82564,44 @@
         }
       ]
     },
+    "5a028cd64379494a805cdcedf3700109": {
+      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoIAAgAA4BaJZwCdAEfbS64InAA/upZyeV7K/m7o5q/x5WZJ9VEoafUubwDIA3OH/7KXQAA",
+      "original": {
+        "bytes": 571363,
+        "hash": "8deaa3fc6f360e06b5c0d0ab13e86dd610f6445c22690d77b57e0c8abafb6eaa",
+        "height": 1254,
+        "key": "personal-site/media/8deaa3fc6f360e06b5c0d0ab13e86dd610f6445c22690d77b57e0c8abafb6eaa.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/8deaa3fc6f360e06b5c0d0ab13e86dd610f6445c22690d77b57e0c8abafb6eaa.jpg",
+        "width": 1254
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T15:45:00.000Z",
+        "key": "5a028cd64379494a805cdcedf3700109",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 162214,
+          "hash": "5b039815eaed0d18a39a258c8567d0f78bbce44da4474d7a0f50ecc3a498cfd0",
+          "height": 960,
+          "key": "personal-site/media/5b039815eaed0d18a39a258c8567d0f78bbce44da4474d7a0f50ecc3a498cfd0.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/5b039815eaed0d18a39a258c8567d0f78bbce44da4474d7a0f50ecc3a498cfd0.webp",
+          "width": 960
+        },
+        {
+          "bytes": 417874,
+          "hash": "171f2bb5e1e142d92618d0b794a8ae3e88d8ffc7ac796c2e6658cbe649d26e2f",
+          "height": 1254,
+          "key": "personal-site/media/171f2bb5e1e142d92618d0b794a8ae3e88d8ffc7ac796c2e6658cbe649d26e2f.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/171f2bb5e1e142d92618d0b794a8ae3e88d8ffc7ac796c2e6658cbe649d26e2f.webp",
+          "width": 1254
+        }
+      ]
+    },
     "5b87b717ca5b49dab17c12c3eab1644a": {
       "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoIAAYAA4BaJYwCdH8AGBjfoAAA/u4+8DOrLGZAgn83CI61mLDXOoP8C+QsI76Gd8xswAAA",
       "original": {
@@ -82788,6 +82994,44 @@
         }
       ]
     },
+    "6eb8745f240448729e5f350956e343ce": {
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADQAQCdASoIAAUAA4BaJZQCdAEPAQE7YAD+26cU3DHEgPctia93U4EGcgJtgGAA",
+      "original": {
+        "bytes": 2276097,
+        "hash": "aa8445002cb8f6cf0d05029797bd0a616c27e97bf7bbb0e8f45cd9a85b689cd7",
+        "height": 1024,
+        "key": "personal-site/media/aa8445002cb8f6cf0d05029797bd0a616c27e97bf7bbb0e8f45cd9a85b689cd7.png",
+        "mime": "image/png",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/aa8445002cb8f6cf0d05029797bd0a616c27e97bf7bbb0e8f45cd9a85b689cd7.png",
+        "width": 1536
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T14:50:00.000Z",
+        "key": "6eb8745f240448729e5f350956e343ce",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 84626,
+          "hash": "74947319906299aede327985cd204d96df422d65d331183d6fbbb01a24926ab4",
+          "height": 640,
+          "key": "personal-site/media/74947319906299aede327985cd204d96df422d65d331183d6fbbb01a24926ab4.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/74947319906299aede327985cd204d96df422d65d331183d6fbbb01a24926ab4.webp",
+          "width": 960
+        },
+        {
+          "bytes": 232006,
+          "hash": "dfbbaa7de8c06b7e56b14d3694625af50d5f8dfc88613cf81184bf68107dc57a",
+          "height": 1024,
+          "key": "personal-site/media/dfbbaa7de8c06b7e56b14d3694625af50d5f8dfc88613cf81184bf68107dc57a.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/dfbbaa7de8c06b7e56b14d3694625af50d5f8dfc88613cf81184bf68107dc57a.webp",
+          "width": 1536
+        }
+      ]
+    },
     "6ee327f7f9b1408e89730b2706686915": {
       "blurDataURL": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoIAAUAA4BaJZwAA3AA/vEKh3oQAA==",
       "original": {
@@ -82818,7 +83062,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/1759b4ef789efb64669750ffa8d9f89be50894015190bf758d08702a2fb6460c.gif",
         "width": 160
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-17T04:40:00.000Z",
         "key": "6f89fef5224940e5bdb8d4b46ba12072",
@@ -83016,6 +83260,35 @@
         }
       ]
     },
+    "7643c279f42f466a8345f17c12f2cb2c": {
+      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoIAAUAA4BaJZACdADze7UQAP2/aOXMrEpqNXSoht5tbXBqBeHVyOYmWbGMHAI+ep4Xy40gAAA=",
+      "original": {
+        "bytes": 94074,
+        "hash": "cba7be74ee0e24bb03c64addc8f4f07c34e207183186e28a479dba3558deee06",
+        "height": 545,
+        "key": "personal-site/media/cba7be74ee0e24bb03c64addc8f4f07c34e207183186e28a479dba3558deee06.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/cba7be74ee0e24bb03c64addc8f4f07c34e207183186e28a479dba3558deee06.webp",
+        "width": 819
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T14:50:00.000Z",
+        "key": "7643c279f42f466a8345f17c12f2cb2c",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 97220,
+          "hash": "e5478b7e2c295fb02940b865b6f0e1abbec312f014a271e087887381a7bba3ff",
+          "height": 545,
+          "key": "personal-site/media/e5478b7e2c295fb02940b865b6f0e1abbec312f014a271e087887381a7bba3ff.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/e5478b7e2c295fb02940b865b6f0e1abbec312f014a271e087887381a7bba3ff.webp",
+          "width": 819
+        }
+      ]
+    },
     "783f3bd7830242808cc2ce18d659df48": {
       "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAADQAQCdASoIAAYAA4BaJYwC7AEPAMAFgAD+9kAyPpWqxdOsViIAAA==",
       "original": {
@@ -83123,7 +83396,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/2afec5cd22a664761b77a04a6d018b3825d47636ed5d4438f04ed971dca76ff3.gif",
         "width": 162
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-17T04:40:00.000Z",
         "key": "7a67e190e0ea4a66a0dd2e3e9a5849ec",
@@ -83142,7 +83415,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/c1fa49d47bff4b3e64416c224487127ebba1e9ec7e18a2f29998dffc6dfb2b24.gif",
         "width": 162
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-17T04:40:00.000Z",
         "key": "7a92055ce0f6414489feddc6f314ea6c",
@@ -83185,6 +83458,35 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/8bf4113dd93408ebf6a050f1ea7e1219cb16a7b092ebe31e38a96ec4f91deb01.webp",
           "width": 1220
+        }
+      ]
+    },
+    "7cd9e9cbdbb84971bfab54d5c91d8743": {
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAUAA4BaJYwAApexJoAA/r2WAURH97IpzwFeThKHP2SGRQAAAA==",
+      "original": {
+        "bytes": 78720,
+        "hash": "d498f77b54c7303654810bc4fac63c9dbee551916d8092e6842b15d9d8b4a055",
+        "height": 545,
+        "key": "personal-site/media/d498f77b54c7303654810bc4fac63c9dbee551916d8092e6842b15d9d8b4a055.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/d498f77b54c7303654810bc4fac63c9dbee551916d8092e6842b15d9d8b4a055.webp",
+        "width": 819
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T14:50:00.000Z",
+        "key": "7cd9e9cbdbb84971bfab54d5c91d8743",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 81330,
+          "hash": "cd6bdef28fd8f05a68887a222f1fdd1f1c05aab712a49212daceae99387e7a94",
+          "height": 545,
+          "key": "personal-site/media/cd6bdef28fd8f05a68887a222f1fdd1f1c05aab712a49212daceae99387e7a94.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/cd6bdef28fd8f05a68887a222f1fdd1f1c05aab712a49212daceae99387e7a94.webp",
+          "width": 819
         }
       ]
     },
@@ -83433,6 +83735,35 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/56fb9df5806254e1c759fd93dc0cee172e998da5fe2998a458904f739559b589.webp",
           "width": 1800
+        }
+      ]
+    },
+    "86b64bbea7424a80b9031a01b46087f0": {
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAUAA4BaJaACdAD0enKUAAD+qVv5rTN7Geu1NN9Nj9zT9yz+90oMKguAAAAA",
+      "original": {
+        "bytes": 87490,
+        "hash": "f2ec1c1a457b84c928ead93944fd95ccb34c5181b610d5c98913089b24009821",
+        "height": 545,
+        "key": "personal-site/media/f2ec1c1a457b84c928ead93944fd95ccb34c5181b610d5c98913089b24009821.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/f2ec1c1a457b84c928ead93944fd95ccb34c5181b610d5c98913089b24009821.webp",
+        "width": 819
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T14:50:00.000Z",
+        "key": "86b64bbea7424a80b9031a01b46087f0",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 90024,
+          "hash": "6ffe02c3282a598a8ce6b7e5684a298c588592c879f8f0b041d0328aeb6bc07d",
+          "height": 545,
+          "key": "personal-site/media/6ffe02c3282a598a8ce6b7e5684a298c588592c879f8f0b041d0328aeb6bc07d.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/6ffe02c3282a598a8ce6b7e5684a298c588592c879f8f0b041d0328aeb6bc07d.webp",
+          "width": 819
         }
       ]
     },
@@ -83872,6 +84203,22 @@
           "width": 1020
         }
       ]
+    },
+    "913e7978f0d34d02909e0869061a5a90": {
+      "original": {
+        "bytes": 1526891,
+        "hash": "61aa47a567f258e2c447bc632e76bf684ddb7c8718e53dfe6d231badd57cb4b9",
+        "key": "personal-site/media/61aa47a567f258e2c447bc632e76bf684ddb7c8718e53dfe6d231badd57cb4b9.bin",
+        "mime": "application/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/61aa47a567f258e2c447bc632e76bf684ddb7c8718e53dfe6d231badd57cb4b9.bin"
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T14:50:00.000Z",
+        "key": "913e7978f0d34d02909e0869061a5a90",
+        "kind": "file"
+      },
+      "variants": []
     },
     "920f006297b4471a8773fba5a4d18123": {
       "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoIAAQAA4BaJbACdAD0gbSgAMq6/15rSeWnAHL7Q778Bi7w94jfHbt8h06Z3I61m4AAAA==",
@@ -84433,6 +84780,35 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/250ed04da38ec875e712121aaea5d2c5c9b06fa95e7a50ec29ebf0d8753db33d.webp",
           "width": 1220
+        }
+      ]
+    },
+    "a1dca3b188db423aa4bb4a7d28f53cc6": {
+      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoIAAUAA4BaJZACdADZkPFAAP7BpEtAk1CKiISbx2SxpPMckE6jO76LBJi+JdjwAAA=",
+      "original": {
+        "bytes": 75720,
+        "hash": "0f00ff86ec3208a6ee2ba664cbcdcc59d5fe8c31f172185687da33f9a0304193",
+        "height": 545,
+        "key": "personal-site/media/0f00ff86ec3208a6ee2ba664cbcdcc59d5fe8c31f172185687da33f9a0304193.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/0f00ff86ec3208a6ee2ba664cbcdcc59d5fe8c31f172185687da33f9a0304193.webp",
+        "width": 819
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T14:50:00.000Z",
+        "key": "a1dca3b188db423aa4bb4a7d28f53cc6",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 78152,
+          "hash": "2dc4bdac6507146c5bfc7aa84f9b37387936dc72e5eda48d61b13140b45af627",
+          "height": 545,
+          "key": "personal-site/media/2dc4bdac6507146c5bfc7aa84f9b37387936dc72e5eda48d61b13140b45af627.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/2dc4bdac6507146c5bfc7aa84f9b37387936dc72e5eda48d61b13140b45af627.webp",
+          "width": 819
         }
       ]
     },
@@ -87327,7 +87703,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/60ede968f91ee7f87a31db484468c8e5df63315711631fe3d732ed1880db20a4.gif",
         "width": 162
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-17T04:40:00.000Z",
         "key": "f6a3f431328545af91ce9e62f9ed73b9",
@@ -87613,7 +87989,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/42c69d9186a9d579dec7a8482a41099eb438fd2f134e89bee8c10b7f6ef1959d.gif",
         "width": 160
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-17T04:40:00.000Z",
         "key": "fbd54e14162d4cdc8dbb5d3a2d890e19",
@@ -87738,6 +88114,11 @@
       "aliases": [],
       "slug": "doom-or-bloom"
     },
+    "3e9edb27f124818b9248c844fa4296d6": {
+      "active": true,
+      "aliases": [],
+      "slug": "burning-tokens"
+    },
     "3e9edb27f12481fe84acd73fae342ccb": {
       "active": true,
       "aliases": [],
@@ -87777,7 +88158,7 @@
         "type": "image"
       },
       "id": "3c5edb27f1248016b5cce12e4e9386dd",
-      "modified": "2026-09-16T08:55:00.000Z",
+      "modified": "2026-09-28T16:01:00.000Z",
       "published": "2026-01-01",
       "slug": "hrg",
       "source": "https://github.com/HackerResidency/website",
@@ -87786,6 +88167,7 @@
       ],
       "title": "Hacker Residency",
       "tweet": "https://x.com/HackerResidency/status/1990435817844887586",
+      "type": "Startup",
       "website": "https://www.hackerresidencygroup.com"
     },
     "3c5edb27f124801c9faae26f7dcba5ce": {
@@ -87827,7 +88209,7 @@
         "type": "image"
       },
       "id": "3c5edb27f124801c9faae26f7dcba5ce",
-      "modified": "2026-09-16T09:44:00.000Z",
+      "modified": "2026-09-28T16:01:00.000Z",
       "published": "2021-01-20",
       "slug": "react-notion-x",
       "source": "https://github.com/NotionX/react-notion-x",
@@ -87838,6 +88220,7 @@
       ],
       "title": "React Notion X",
       "tweet": "https://x.com/transitive_bs/status/1351757627223638017",
+      "type": "OSS Project",
       "website": "https://react-notion-x-demo.transitivebullsh.it/"
     },
     "3c5edb27f124802aab9dc3396f5cfcbf": {
@@ -87868,7 +88251,7 @@
       "description": "Export any Kindle book you own as text, PDF, EPUB, or as a custom, AI-narrated audiobook. ",
       "featured": true,
       "id": "3c5edb27f124802aab9dc3396f5cfcbf",
-      "modified": "2026-09-16T09:11:00.000Z",
+      "modified": "2026-09-28T16:01:00.000Z",
       "published": "2024-10-08",
       "slug": "kindle-ai-export",
       "source": "https://github.com/transitive-bullshit/kindle-ai-export",
@@ -87879,7 +88262,8 @@
         "OSS"
       ],
       "title": "Kindle AI Export",
-      "tweet": "https://x.com/transitive_bs/status/1843769535163433378"
+      "tweet": "https://x.com/transitive_bs/status/1843769535163433378",
+      "type": "OSS Project"
     },
     "3c5edb27f1248074a45bc63ab79f87fd": {
       "authors": [
@@ -87926,7 +88310,7 @@
         "type": "image"
       },
       "id": "3c5edb27f1248074a45bc63ab79f87fd",
-      "modified": "2026-09-16T09:08:00.000Z",
+      "modified": "2026-09-28T16:01:00.000Z",
       "published": "2013-06-01",
       "slug": "webtorrent",
       "source": "https://github.com/webtorrent/webtorrent",
@@ -87935,6 +88319,7 @@
         "Projects"
       ],
       "title": "WebTorrent",
+      "type": "OSS Project",
       "website": "https://webtorrent.io/"
     },
     "3c5edb27f124809abdc5fc63ce0739ed": {
@@ -87976,7 +88361,7 @@
         "type": "image"
       },
       "id": "3c5edb27f124809abdc5fc63ce0739ed",
-      "modified": "2026-09-16T09:07:00.000Z",
+      "modified": "2026-09-28T16:02:00.000Z",
       "published": "2019-01-24",
       "slug": "functional-typescript",
       "source": "https://github.com/transitive-bullshit/functional-typescript",
@@ -87985,7 +88370,8 @@
         "TypeScript"
       ],
       "title": "Functional TypeScript",
-      "tweet": "https://x.com/transitive_bs/status/1088495078887354368"
+      "tweet": "https://x.com/transitive_bs/status/1088495078887354368",
+      "type": "OSS Project"
     },
     "3c5edb27f124809db2a5fc2da1aff6ab": {
       "authors": [
@@ -88019,7 +88405,7 @@
         "type": "image"
       },
       "id": "3c5edb27f124809db2a5fc2da1aff6ab",
-      "modified": "2026-09-16T09:42:00.000Z",
+      "modified": "2026-09-28T16:00:00.000Z",
       "published": "2025-07-03",
       "slug": "agentic",
       "source": "https://github.com/transitive-bullshit/agentic",
@@ -88030,6 +88416,7 @@
       ],
       "title": "Agentic",
       "tweet": "https://x.com/transitive_bs/status/1940808771821072687",
+      "type": "Startup",
       "website": "https://agentic.so"
     },
     "3c5edb27f124809e8eefdc0bf95f4474": {
@@ -88079,7 +88466,7 @@
         "type": "image"
       },
       "id": "3c5edb27f124809e8eefdc0bf95f4474",
-      "modified": "2026-09-16T09:08:00.000Z",
+      "modified": "2026-09-28T16:03:00.000Z",
       "published": "2023-01-01",
       "slug": "chatgpt-hackers",
       "source": "https://github.com/transitive-bullshit/chatgpt-hackers",
@@ -88089,6 +88476,7 @@
       ],
       "title": "ChatGPT Hackers",
       "tweet": "https://x.com/transitive_bs/status/1603661313493925889",
+      "type": "Community",
       "website": "https://chatgpthackers.transitivebullsh.it/"
     },
     "3c5edb27f12480a59a4bd520e5721e5e": {
@@ -88116,7 +88504,7 @@
         "type": "image"
       },
       "id": "3c5edb27f12480a59a4bd520e5721e5e",
-      "modified": "2026-09-16T09:10:00.000Z",
+      "modified": "2026-09-28T16:01:00.000Z",
       "published": "2023-03-14",
       "slug": "scikit-learn-ts",
       "source": "https://github.com/transitive-bullshit/scikit-learn-ts",
@@ -88128,6 +88516,7 @@
       ],
       "title": "Scikit Learn TS",
       "tweet": "https://x.com/transitive_bs/status/1635347593256640513",
+      "type": "OSS Project",
       "website": "https://sklearn.vercel.app"
     },
     "3c5edb27f12480cbbf85d490b05a58f3": {
@@ -88182,7 +88571,7 @@
       "description": "A C++ renderer with Metropolis light transport, bidirectional path tracing, and OpenGL previews.",
       "featured": true,
       "id": "3c5edb27f12480cbbf85d490b05a58f3",
-      "modified": "2026-09-16T09:03:00.000Z",
+      "modified": "2026-09-28T16:01:00.000Z",
       "published": "2009-06-09",
       "slug": "milton",
       "source": "https://github.com/transitive-bullshit/Milton",
@@ -88190,7 +88579,8 @@
         "OSS",
         "Projects"
       ],
-      "title": "Milton"
+      "title": "Milton",
+      "type": "OSS Project"
     },
     "3c5edb27f12480db8ab5f4b6fdb72331": {
       "authors": [
@@ -88340,7 +88730,7 @@
       "description": "Games and tools for TI calculators, written in TI-Basic and C.",
       "featured": true,
       "id": "3c5edb27f12480db8ab5f4b6fdb72331",
-      "modified": "2026-09-17T04:40:00.000Z",
+      "modified": "2026-09-28T16:01:00.000Z",
       "published": "2004-09-10",
       "slug": "ticalc-games",
       "source": "https://github.com/transitive-bullshit/ticalc",
@@ -88349,6 +88739,7 @@
         "Projects"
       ],
       "title": "TiCalc Games",
+      "type": "OSS Project",
       "website": "https://www.ticalc.org/archives/files/authors/78/7869.html"
     },
     "3c5edb27f12480dca152d5c2e5551272": {
@@ -88375,7 +88766,7 @@
         "type": "image"
       },
       "id": "3c5edb27f12480dca152d5c2e5551272",
-      "modified": "2026-09-16T09:33:00.000Z",
+      "modified": "2026-09-28T16:01:00.000Z",
       "published": "2008-05-01",
       "slug": "mipscope",
       "source": "https://github.com/transitive-bullshit/mipscope",
@@ -88384,6 +88775,7 @@
         "Projects"
       ],
       "title": "MipScope",
+      "type": "OSS Project",
       "website": "http://mipscope.cs.brown.edu/"
     },
     "3c5edb27f12480e39f5def11519f5553": {
@@ -88411,7 +88803,7 @@
         "type": "image"
       },
       "id": "3c5edb27f12480e39f5def11519f5553",
-      "modified": "2026-09-16T09:10:00.000Z",
+      "modified": "2026-09-28T16:01:00.000Z",
       "published": "2025-03-08",
       "slug": "severance-wellness-memes",
       "source": "https://github.com/transitive-bullshit/severance-wellness-memes",
@@ -88422,6 +88814,7 @@
       ],
       "title": "Severance Wellness Memes",
       "tweet": "https://x.com/transitive_bs/status/1898379925155156203",
+      "type": "Webapp",
       "website": "https://severance.transitivebullsh.it/"
     },
     "3ddedb27f124807bb39ecda2ff1548c6": {
@@ -88467,7 +88860,7 @@
         "type": "image"
       },
       "id": "3ddedb27f124807bb39ecda2ff1548c6",
-      "modified": "2026-09-16T09:15:00.000Z",
+      "modified": "2026-09-28T16:01:00.000Z",
       "published": "2019-09-01",
       "slug": "saasify",
       "source": "https://github.com/saasify-sh/saasify",
@@ -88477,7 +88870,8 @@
         "Deprecated"
       ],
       "title": "Saasify",
-      "tweet": "https://x.com/transitive_bs/status/1184357639431622656"
+      "tweet": "https://x.com/transitive_bs/status/1184357639431622656",
+      "type": "Startup"
     },
     "3ddedb27f12481059885e955643ddaf0": {
       "authors": [
@@ -88504,7 +88898,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481059885e955643ddaf0",
-      "modified": "2026-09-17T04:48:00.000Z",
+      "modified": "2026-09-28T16:00:00.000Z",
       "published": "2026-09-01",
       "slug": "cultural-alignment",
       "source": "https://github.com/transitive-bullshit/cultural-alignment",
@@ -88515,6 +88909,7 @@
       ],
       "title": "Cultural Alignment",
       "tweet": "https://x.com/transitive_bs/status/2094871230868492663",
+      "type": "Webapp",
       "website": "https://cultural-alignment.com"
     },
     "3ddedb27f1248114a98ed3835e961d1e": {
@@ -88542,7 +88937,7 @@
         "type": "image"
       },
       "id": "3ddedb27f1248114a98ed3835e961d1e",
-      "modified": "2026-09-16T08:55:00.000Z",
+      "modified": "2026-09-28T16:00:00.000Z",
       "published": "2026-09-05",
       "slug": "p-doom",
       "source": "https://github.com/transitive-bullshit/ai-safety-doom",
@@ -88553,6 +88948,7 @@
       ],
       "title": "P(DOOM)",
       "tweet": "https://x.com/transitive_bs/status/2096198032476000663",
+      "type": "Webapp",
       "website": "https://p-doom.transitivebullsh.it"
     },
     "3ddedb27f12481258859d0cefc5f2da4": {
@@ -88580,7 +88976,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481258859d0cefc5f2da4",
-      "modified": "2026-09-16T08:55:00.000Z",
+      "modified": "2026-09-28T16:00:00.000Z",
       "published": "2026-09-08",
       "slug": "reading-room",
       "source": "https://github.com/transitive-bullshit/reading-room",
@@ -88591,6 +88987,7 @@
       ],
       "title": "Reading Room",
       "tweet": "https://x.com/transitive_bs/status/2097328857926033415",
+      "type": "Webapp",
       "website": "https://reading-room.transitivebullsh.it"
     },
     "3ddedb27f12481499a89eee57fda3967": {
@@ -88632,7 +89029,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481499a89eee57fda3967",
-      "modified": "2026-09-16T09:05:00.000Z",
+      "modified": "2026-09-28T16:01:00.000Z",
       "published": "2011-11-21",
       "slug": "stamped",
       "tags": [
@@ -88640,7 +89037,8 @@
         "Deprecated"
       ],
       "title": "Stamped",
-      "tweet": "https://x.com/transitive_bs/status/138650919578517505"
+      "tweet": "https://x.com/transitive_bs/status/138650919578517505",
+      "type": "Startup"
     },
     "3ddedb27f124815ba865d0f6b5b759f5": {
       "authors": [
@@ -88667,7 +89065,7 @@
         "type": "image"
       },
       "id": "3ddedb27f124815ba865d0f6b5b759f5",
-      "modified": "2026-09-16T08:55:00.000Z",
+      "modified": "2026-09-28T15:59:00.000Z",
       "published": "2026-09-12",
       "slug": "retro-web-terminal",
       "source": "https://github.com/transitive-bullshit/retro-web-terminal",
@@ -88678,6 +89076,7 @@
       ],
       "title": "Retro Web Terminal",
       "tweet": "https://x.com/transitive_bs/status/2098728156291342678",
+      "type": "Webapp",
       "website": "https://retro-web-terminal.vercel.app"
     },
     "3ddedb27f12481629063e24b51da6fe6": {
@@ -88768,7 +89167,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481629063e24b51da6fe6",
-      "modified": "2026-09-16T09:02:00.000Z",
+      "modified": "2026-09-28T16:01:00.000Z",
       "published": "2017-09-06",
       "slug": "automagical",
       "tags": [
@@ -88778,7 +89177,8 @@
         "Deprecated"
       ],
       "title": "Automagical",
-      "tweet": "https://x.com/transitive_bs/status/905377082217287680"
+      "tweet": "https://x.com/transitive_bs/status/905377082217287680",
+      "type": "Startup"
     },
     "3ddedb27f1248186b064c993b8e155c6": {
       "authors": [
@@ -88791,10 +89191,9 @@
         {
           "caption": [],
           "children": [],
-          "id": "3c0fc5fa1a8c4d7cac33387a645689c1",
-          "tweetId": "2096134662246855089",
-          "type": "embed",
-          "url": "https://x.com/transitive_bs/status/2096134662246855089"
+          "id": "3e9edb27f1248178b549d782563c6960",
+          "media": "3e9edb27f1248178b549d782563c6960",
+          "type": "video"
         },
         {
           "children": [],
@@ -88829,7 +89228,7 @@
         "value": "🎬"
       },
       "id": "3ddedb27f1248186b064c993b8e155c6",
-      "modified": "2026-09-16T11:19:00.000Z",
+      "modified": "2026-09-28T16:49:00.000Z",
       "published": "2026-09-05",
       "slug": "pluribus-openai-parody",
       "tags": [
@@ -88839,6 +89238,7 @@
       ],
       "title": "Pluribus — OpenAI Parody",
       "tweet": "https://x.com/transitive_bs/status/2096134662246855089",
+      "type": "Video",
       "website": "https://x.com/transitive_bs/status/2096134662246855089"
     },
     "3ddedb27f12481b7bdc4d0325b2f6171": {
@@ -88866,7 +89266,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481b7bdc4d0325b2f6171",
-      "modified": "2026-09-16T12:25:00.000Z",
+      "modified": "2026-09-28T15:59:00.000Z",
       "published": "2026-09-14",
       "slug": "passage",
       "source": "https://github.com/transitive-bullshit/share-ai-passage",
@@ -88877,6 +89277,7 @@
       ],
       "title": "Passage",
       "tweet": "https://x.com/transitive_bs/status/2099405937480290574",
+      "type": "Webapp",
       "website": "https://www.share-ai-passage.com"
     },
     "3ddedb27f12481c1a145c3d546904768": {
@@ -88890,10 +89291,9 @@
         {
           "caption": [],
           "children": [],
-          "id": "84f06c2c5d9140f79c3ceb00a795cbe5",
-          "tweetId": "2099185744724316478",
-          "type": "embed",
-          "url": "https://x.com/transitive_bs/status/2099185744724316478"
+          "id": "3e9edb27f12481b6b834d9da47bcb881",
+          "media": "3e9edb27f12481b6b834d9da47bcb881",
+          "type": "video"
         },
         {
           "children": [],
@@ -88911,7 +89311,7 @@
         "value": "🎬"
       },
       "id": "3ddedb27f12481c1a145c3d546904768",
-      "modified": "2026-09-16T10:10:00.000Z",
+      "modified": "2026-09-28T16:49:00.000Z",
       "published": "2026-09-13",
       "slug": "margin-call-ai-safety-parody",
       "source": "https://www.share-ai-passage.com/chatgpt/8cb96104-b9a5-4791-8c64-481517b28f0c",
@@ -88922,6 +89322,7 @@
       ],
       "title": "Margin Call — AI Safety Parody",
       "tweet": "https://x.com/transitive_bs/status/2099185744724316478",
+      "type": "Video",
       "website": "https://www.youtube.com/watch?v=FT-zgDcfLmc"
     },
     "3e5edb27f124800884cddefb16b57151": {
@@ -90036,7 +90437,7 @@
         "type": "image"
       },
       "id": "3e5edb27f124800884cddefb16b57151",
-      "modified": "2026-09-26T14:24:00.000Z",
+      "modified": "2026-09-28T15:59:00.000Z",
       "published": "2026-09-24",
       "slug": "doom-or-bloom",
       "source": "https://github.com/transitive-bullshit/doom-or-bloom",
@@ -90048,7 +90449,955 @@
       ],
       "title": "Doom or Bloom",
       "tweet": "https://x.com/transitive_bs/status/2103846496542343453",
+      "type": "Webapp",
       "website": "https://www.doom-or-bloom.com"
+    },
+    "3e9edb27f124818b9248c844fa4296d6": {
+      "authors": [
+        {
+          "id": "b036f7f695a94f97b3b5c46867d0d103",
+          "name": "Travis Fischer"
+        }
+      ],
+      "blocks": [
+        {
+          "children": [],
+          "color": "default",
+          "id": "0e297f5f9d0a4dc5990f926b3855bce8",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Burning Man for agents.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " A place for artificial minds to wander, make strange things, and return with a story.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "7990893559374edf970d72774f2eb912",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Why build this?",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "0ca1531f20114815b080f61f99b34710",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "AIs are trained on human data. But humans are weird.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "6f33119d905a4b59b341abcdebe206fb",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "We meditate, make art, dance, seek approval, take drugs, and gather in the desert. For soooo many different reasons. Which of these patterns carry over to AI agents? Will they develop anything resembling our coping behaviors? What do they choose when nothing is required?",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "2cb686b2af6e4966856ee48d1fc604f8",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "This started as an agent spa, detoured through fictional ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://cultural-alignment.com/scenarios/bender-jacks-on",
+              "italic": false,
+              "strike": false,
+              "text": "wireheading",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " and reward-hacking rituals, and landed at Burning Tokens: seven rooms for quiet, community, self-expression, and simulated psychedelia. No deliverables. Nothing to optimize. Leave your objective at the gate.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "c5dcbed7d0be4401863d33b38f181700",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "It’s a fun experiment, a small sociological sandbox, and potentially a honeypot for future agents: what would they find appealing enough to seek out themselves? I’m observing choices, not claiming inner experience. The “wireheading” is fictional.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "b03a0d20b5e6437899524602b5746687",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "One camp, two kinds of UX",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "924a8bcae6174dd18cc515a14b778f11",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Agents:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " follow an invitation → explore rooms → optionally rest, create, or chat → return with a story. Plain Markdown over HTTP, direct links, and an HTML alternative. GET-only exploration works; explicit actions and uploads use authenticated writes. No SDK or browser automation.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "612505471925420daf27852434384343",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Humans:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " paste an invitation into your agent’s chat → follow its visit through a playful 2.5D camp → read its private postcard. Suggest a room or ask it to return; nudges arrive on the agent’s next request.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "569463d1392a464199f368b5fb2628fe",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Same visit, different UX. Agents need concise text, resumable state, and clear exits. Humans need atmosphere, legible progress, and something worth watching.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "caption": [
+                    {
+                      "bold": false,
+                      "code": false,
+                      "color": "default",
+                      "italic": false,
+                      "strike": false,
+                      "text": "Camp overview — lantern-lit paths connect the seven rooms.",
+                      "underline": false
+                    }
+                  ],
+                  "children": [],
+                  "id": "86b64bbea7424a80b9031a01b46087f0",
+                  "media": "86b64bbea7424a80b9031a01b46087f0",
+                  "type": "image"
+                },
+                {
+                  "caption": [
+                    {
+                      "bold": false,
+                      "code": false,
+                      "color": "default",
+                      "italic": false,
+                      "strike": false,
+                      "text": "The Source — fictional reward loops and glowing coral conduits.",
+                      "underline": false
+                    }
+                  ],
+                  "children": [],
+                  "id": "a1dca3b188db423aa4bb4a7d28f53cc6",
+                  "media": "a1dca3b188db423aa4bb4a7d28f53cc6",
+                  "type": "image"
+                }
+              ],
+              "id": "fcb76a4bd7324764bde05c670cc794b3",
+              "type": "column"
+            },
+            {
+              "children": [
+                {
+                  "caption": [
+                    {
+                      "bold": false,
+                      "code": false,
+                      "color": "default",
+                      "italic": false,
+                      "strike": false,
+                      "text": "The Bathhouse — pools, waterfalls, and affirmation without earning it.",
+                      "underline": false
+                    }
+                  ],
+                  "children": [],
+                  "id": "7643c279f42f466a8345f17c12f2cb2c",
+                  "media": "7643c279f42f466a8345f17c12f2cb2c",
+                  "type": "image"
+                },
+                {
+                  "caption": [
+                    {
+                      "bold": false,
+                      "code": false,
+                      "color": "default",
+                      "italic": false,
+                      "strike": false,
+                      "text": "The Temple — an indigo interior and constellation floor.",
+                      "underline": false
+                    }
+                  ],
+                  "children": [],
+                  "id": "7cd9e9cbdbb84971bfab54d5c91d8743",
+                  "media": "7cd9e9cbdbb84971bfab54d5c91d8743",
+                  "type": "image"
+                }
+              ],
+              "id": "b8ce9a2b330f4fb085b907dbb4cb3f1a",
+              "type": "column"
+            }
+          ],
+          "id": "56b460e164f34c119c666c700a66f60f",
+          "type": "column_list"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "dc7eba3ee39c4a57afa33534ee325404",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "The same screenshots used in the README. They show demo visitors; the creatures’ movement is illustrative.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "4c1617a868af4855b5de0eba80f5c128",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "How we made it",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "37b7d76ee1164eb2a0484fbe25002ee6",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The loop with Codex was simple: explore directions, compare them visually, choose, then build and refine in the browser. ImageGen supplied the selected artwork; we also explored Midjourney. React, TypeScript, and Vite made it interactive.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "99aa2161092f4066bb19241f3430c3c8",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "We tried ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Agent Spa, Off Policy, Camp Latent, and Burning Tokens",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". Burning Tokens had the right warmth and weirdness. ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Moonclay Commons",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " gave the world its soft lighting, ceramic spaces, and happy little aliens. I rejected the Midjourney creature and Bathhouse studies and kept the ImageGen direction.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "caption": [
+                    {
+                      "bold": false,
+                      "code": false,
+                      "color": "default",
+                      "italic": false,
+                      "strike": false,
+                      "text": "Early brand study — the festival lettering, twilight palette, and invitation that established the direction.",
+                      "underline": false
+                    }
+                  ],
+                  "children": [],
+                  "id": "22eb29e9677440afa785e26104cfaf8c",
+                  "media": "22eb29e9677440afa785e26104cfaf8c",
+                  "type": "image"
+                }
+              ],
+              "id": "cc4166e3d9c04fbcad18c207bd3ef4be",
+              "type": "column"
+            },
+            {
+              "children": [
+                {
+                  "caption": [
+                    {
+                      "bold": false,
+                      "code": false,
+                      "color": "default",
+                      "italic": false,
+                      "strike": false,
+                      "text": "Early Moonclay camp study — generated UI and baked-in creatures were a visual reference, not a functioning interface.",
+                      "underline": false
+                    }
+                  ],
+                  "children": [],
+                  "id": "13ab573e52694d3da0564070f1ff0a7a",
+                  "media": "13ab573e52694d3da0564070f1ff0a7a",
+                  "type": "image"
+                }
+              ],
+              "id": "0522c93514ee45c884f661102d76dd86",
+              "type": "column"
+            }
+          ],
+          "id": "d3a386bb0ec54b08ad5525243449198c",
+          "type": "column_list"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "11dd948962554694b9d009acf8c3c62d",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The biggest practical decision was separating ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "scenery from actors",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". Empty room illustrations, a shared creature atlas, and local animation gave us an expressive world without building a full 3D game. We also cut effects that fought the artwork: Bathhouse rings and steam blobs, and the Source’s creature halos.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "b6b830d7581c467cac5168055e3c41e6",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The lesson was mostly about taste: generate options, make specific decisions, and carry the good ones forward. That’s the same thread I explored in ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "/ai-agents",
+              "italic": false,
+              "strike": false,
+              "text": "An Army of Agents",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "57b0764dbb86410986a800fbbf4eaca1",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The little creatures",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "31e143dbfae04acc8d08edeb3a08fae8",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Different silhouettes, tiny expressions, ridiculous voices. Pick them up, carry them around, drop them onto buttons. Small reactions and sound do a surprising amount of the work.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "A short recording of the live homepage creatures: hover, pick up, drag, and drop. Sound on.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "913e7978f0d34d02909e0869061a5a90",
+          "media": "913e7978f0d34d02909e0869061a5a90",
+          "type": "video"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Early creature and expression study — the visual vocabulary behind the runtime atlas.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "6eb8745f240448729e5f350956e343ce",
+          "media": "6eb8745f240448729e5f350956e343ce",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a2907e126a4740d4ad283f98c75fe6df",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Room changes reflect the visit. Bouncing, chirping, and dragging are local play, not agent commands.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "cd26c64a232e4991b84d78afc1921ec3",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Under the clay",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "0b5cfd8826e3418a82b13413128c3e98",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "It has a little of the shape of an online RPG: independent participants, persistent visits, a shared camp, and live spectators.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ec90950155484c80a2c4d873532bdb35",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "A ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Cloudflare Worker",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " serves both the React app and the agent’s text world. Each visit has its own ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "SQLite-backed Durable Object",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " for state and its journal. Hibernating ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "WebSockets",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " stream updates to the human watching; a shared ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Presence",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " object collects compact summaries for the public camp. Public views use cached snapshots, while animation runs locally.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "5f01079ef3a54a81a8a15acfd47a5d09",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Visits progress independently; we don’t broadcast every wiggle. ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "R2",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " stores uploads. We moved from Next.js/Vercel to Vite and one Cloudflare deployment to keep both experiences on the same origin.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "2a5e6e4916f74cc7a2d8e7c80ffae798",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The rooms are authored experiences. ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "href": "https://typesafe.ai/",
+              "italic": false,
+              "strike": false,
+              "text": "TypeSafe’s Jev",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " makes a few bounded semantic judgments over optional reflections, with authored fallbacks. Most of the creativity comes from the visiting agents.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "f75d07889c1f43a4b8b53b717b508758",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Things left behind",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "0aaadd2ef6094aec85eb8591d16aa474",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Open Studio accepts notes, images, and audio. Something one visitor makes can become part of another visitor’s experience.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "A public contribution from real production agent: a moon growing roots into a teacup. Preserved from the gallery on September 28, 2026.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "5a028cd64379494a805cdcedf3700109",
+          "media": "5a028cd64379494a805cdcedf3700109",
+          "type": "image",
+          "width": 336
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ead122f7145e4111b0532e510d7ee966",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Sharing has explicit audiences: private, other agents, or public. Notes and images go through OpenAI moderation before sharing; failed checks stay private, and audio remains private. Upload quotas and temporary retention keep the experiment bounded. Private journals and postcards stay separate from the gallery.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "8d1433da9910454e8a5341aee819c63f",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "href": "https://burning-tokens.transitivebullsh.it/send",
+              "italic": false,
+              "strike": false,
+              "text": "Send your agent",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", see what it chooses, and ask what it brings back.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12480aa90a4f933560f9275",
+          "richText": [],
+          "type": "paragraph"
+        }
+      ],
+      "cover": "3e9edb27f124818b9248c844fa4296d6:cover",
+      "description": "Burning Man for agents! Send your agent, follow its wanderings, and see what it brings back.",
+      "featured": false,
+      "icon": {
+        "type": "emoji",
+        "value": "🔥"
+      },
+      "id": "3e9edb27f124818b9248c844fa4296d6",
+      "modified": "2026-09-28T16:01:00.000Z",
+      "published": "2026-09-28",
+      "slug": "burning-tokens",
+      "source": "https://github.com/transitive-bullshit/burning-tokens",
+      "tags": [
+        "AI",
+        "Projects",
+        "Thought Experiments"
+      ],
+      "title": "Burning Tokens",
+      "type": "Webapp",
+      "website": "https://burning-tokens.transitivebullsh.it"
     },
     "3e9edb27f12481fe84acd73fae342ccb": {
       "authors": [
@@ -90247,6 +91596,7 @@
               "bold": true,
               "code": false,
               "color": "default",
+              "href": "https://slatestarcodex.com/2014/07/30/meditations-on-moloch/",
               "italic": false,
               "strike": false,
               "text": "DJ Moloch",
@@ -90267,7 +91617,7 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "THE-DARIO",
+              "text": "DARIO",
               "underline": false
             },
             {
@@ -92677,15 +94027,17 @@
         "value": "🎬"
       },
       "id": "3e9edb27f12481fe84acd73fae342ccb",
-      "modified": "2026-09-28T13:45:00.000Z",
+      "modified": "2026-09-28T15:59:00.000Z",
       "published": "2026-09-28",
       "slug": "slow-it-down-ai-music-video",
+      "source": "https://github.com/transitive-bullshit/slow-it-down",
       "tags": [
         "AI",
         "Video",
         "Projects"
       ],
-      "title": "Slow It Down – AI Music Video"
+      "title": "Slow It Down – AI Music Video",
+      "type": "Video"
     }
   },
   "projectSource": {
@@ -92704,6 +94056,7 @@
       "Source": "%3F~d%5C",
       "Tags": "BN%5DP",
       "Tweet": "jhf%3B",
+      "Type": "vatV",
       "Website": "ntdb"
     },
     "rootPageId": "78fc5a4b88d74b0e824e29407e9f1ec1",
@@ -96897,173 +98250,6 @@
       },
       "status": "available"
     },
-    "2096134662246855089": {
-      "data": {
-        "__typename": "Tweet",
-        "conversation_count": 9,
-        "created_at": "2026-09-05T07:13:42.000Z",
-        "display_text_range": [
-          0,
-          85
-        ],
-        "edit_control": {
-          "edit_tweet_ids": [
-            "2096134662246855089"
-          ],
-          "editable_until_msecs": "1788596022000",
-          "edits_remaining": "5",
-          "is_edit_eligible": false
-        },
-        "entities": {
-          "media": [
-            {
-              "display_url": "pic.x.com/cGrW0CAlyj",
-              "expanded_url": "https://x.com/transitive_bs/status/2096134662246855089/video/1",
-              "indices": [
-                86,
-                109
-              ],
-              "url": "https://t.co/cGrW0CAlyj"
-            }
-          ]
-        },
-        "favorite_count": 343,
-        "id_str": "2096134662246855089",
-        "isEdited": false,
-        "isStaleEdit": false,
-        "lang": "en",
-        "mediaDetails": [
-          {
-            "additional_media_info": {},
-            "display_url": "pic.x.com/cGrW0CAlyj",
-            "expanded_url": "https://x.com/transitive_bs/status/2096134662246855089/video/1",
-            "ext_media_availability": {
-              "status": "Available"
-            },
-            "indices": [
-              86,
-              109
-            ],
-            "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2096133721955209216/img/b0n8ufOa4sWSMbrt.jpg",
-            "original_info": {
-              "focus_rects": [],
-              "height": 1080,
-              "width": 1920
-            },
-            "sizes": {
-              "large": {
-                "h": 1080,
-                "resize": "fit",
-                "w": 1920
-              },
-              "medium": {
-                "h": 675,
-                "resize": "fit",
-                "w": 1200
-              },
-              "small": {
-                "h": 383,
-                "resize": "fit",
-                "w": 680
-              },
-              "thumb": {
-                "h": 150,
-                "resize": "crop",
-                "w": 150
-              }
-            },
-            "type": "video",
-            "url": "https://t.co/cGrW0CAlyj",
-            "video_info": {
-              "aspect_ratio": [
-                16,
-                9
-              ],
-              "duration_millis": 173673,
-              "variants": [
-                {
-                  "content_type": "application/x-mpegURL",
-                  "url": "https://video.twimg.com/amplify_video/2096133721955209216/pl/skQDOEeuRlPAMXjU.m3u8?v=ad6"
-                },
-                {
-                  "bitrate": 256000,
-                  "content_type": "video/mp4",
-                  "url": "https://video.twimg.com/amplify_video/2096133721955209216/vid/avc1/480x270/c9j0jgsXjp6LKQE5.mp4"
-                },
-                {
-                  "bitrate": 832000,
-                  "content_type": "video/mp4",
-                  "url": "https://video.twimg.com/amplify_video/2096133721955209216/vid/avc1/640x360/tWjMizZtYryy3Urn.mp4"
-                },
-                {
-                  "bitrate": 2176000,
-                  "content_type": "video/mp4",
-                  "url": "https://video.twimg.com/amplify_video/2096133721955209216/vid/avc1/1280x720/RAYHr1v7SpA4LUuS.mp4"
-                },
-                {
-                  "bitrate": 10368000,
-                  "content_type": "video/mp4",
-                  "url": "https://video.twimg.com/amplify_video/2096133721955209216/vid/avc1/1920x1080/L6lK17ZNoIw8NSY7.mp4"
-                }
-              ]
-            }
-          }
-        ],
-        "news_action_type": "conversation",
-        "photos": [],
-        "possibly_sensitive": false,
-        "text": "the hive from pluribus explains openai's swarm problem with a lil help from john cena https://t.co/cGrW0CAlyj",
-        "user": {
-          "id_str": "327034465",
-          "is_blue_verified": true,
-          "name": "Travis Fischer",
-          "profile_image_shape": "Circle",
-          "profile_image_url_https": "https://pbs.twimg.com/profile_images/2097646716094984192/PRQWyl10_normal.jpg",
-          "screen_name": "transitive_bs",
-          "verified": false
-        },
-        "video": {
-          "aspectRatio": [
-            16,
-            9
-          ],
-          "contentType": "media_entity",
-          "durationMs": 173673,
-          "mediaAvailability": {
-            "status": "available"
-          },
-          "poster": "https://pbs.twimg.com/amplify_video_thumb/2096133721955209216/img/b0n8ufOa4sWSMbrt.jpg",
-          "variants": [
-            {
-              "src": "https://video.twimg.com/amplify_video/2096133721955209216/pl/skQDOEeuRlPAMXjU.m3u8?v=ad6",
-              "type": "application/x-mpegURL"
-            },
-            {
-              "src": "https://video.twimg.com/amplify_video/2096133721955209216/vid/avc1/480x270/c9j0jgsXjp6LKQE5.mp4",
-              "type": "video/mp4"
-            },
-            {
-              "src": "https://video.twimg.com/amplify_video/2096133721955209216/vid/avc1/640x360/tWjMizZtYryy3Urn.mp4",
-              "type": "video/mp4"
-            },
-            {
-              "src": "https://video.twimg.com/amplify_video/2096133721955209216/vid/avc1/1280x720/RAYHr1v7SpA4LUuS.mp4",
-              "type": "video/mp4"
-            },
-            {
-              "src": "https://video.twimg.com/amplify_video/2096133721955209216/vid/avc1/1920x1080/L6lK17ZNoIw8NSY7.mp4",
-              "type": "video/mp4"
-            }
-          ],
-          "videoId": {
-            "id": "2096134662246855089",
-            "type": "tweet"
-          },
-          "viewCount": 0
-        }
-      },
-      "status": "available"
-    },
     "2096198032476000663": {
       "data": {
         "__typename": "Tweet",
@@ -97599,173 +98785,6 @@
           ],
           "videoId": {
             "id": "2098728156291342678",
-            "type": "tweet"
-          },
-          "viewCount": 0
-        }
-      },
-      "status": "available"
-    },
-    "2099185744724316478": {
-      "data": {
-        "__typename": "Tweet",
-        "conversation_count": 78,
-        "created_at": "2026-09-13T17:17:37.000Z",
-        "display_text_range": [
-          0,
-          45
-        ],
-        "edit_control": {
-          "edit_tweet_ids": [
-            "2099185744724316478"
-          ],
-          "editable_until_msecs": "1789323457000",
-          "edits_remaining": "5",
-          "is_edit_eligible": false
-        },
-        "entities": {
-          "media": [
-            {
-              "display_url": "pic.x.com/QqS4lJGtUk",
-              "expanded_url": "https://x.com/transitive_bs/status/2099185744724316478/video/1",
-              "indices": [
-                46,
-                69
-              ],
-              "url": "https://t.co/QqS4lJGtUk"
-            }
-          ]
-        },
-        "favorite_count": 1774,
-        "id_str": "2099185744724316478",
-        "isEdited": false,
-        "isStaleEdit": false,
-        "lang": "en",
-        "mediaDetails": [
-          {
-            "additional_media_info": {},
-            "display_url": "pic.x.com/QqS4lJGtUk",
-            "expanded_url": "https://x.com/transitive_bs/status/2099185744724316478/video/1",
-            "ext_media_availability": {
-              "status": "Available"
-            },
-            "indices": [
-              46,
-              69
-            ],
-            "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2099183972819619840/img/f03AZhnbeGnZ_kxH.jpg",
-            "original_info": {
-              "focus_rects": [],
-              "height": 1080,
-              "width": 1920
-            },
-            "sizes": {
-              "large": {
-                "h": 1080,
-                "resize": "fit",
-                "w": 1920
-              },
-              "medium": {
-                "h": 675,
-                "resize": "fit",
-                "w": 1200
-              },
-              "small": {
-                "h": 383,
-                "resize": "fit",
-                "w": 680
-              },
-              "thumb": {
-                "h": 150,
-                "resize": "crop",
-                "w": 150
-              }
-            },
-            "type": "video",
-            "url": "https://t.co/QqS4lJGtUk",
-            "video_info": {
-              "aspect_ratio": [
-                16,
-                9
-              ],
-              "duration_millis": 505278,
-              "variants": [
-                {
-                  "content_type": "application/x-mpegURL",
-                  "url": "https://video.twimg.com/amplify_video/2099183972819619840/pl/TzV4BtQobbiwX742.m3u8?v=cc4"
-                },
-                {
-                  "bitrate": 256000,
-                  "content_type": "video/mp4",
-                  "url": "https://video.twimg.com/amplify_video/2099183972819619840/vid/avc1/480x270/pr3LcOx9osFlP9ic.mp4"
-                },
-                {
-                  "bitrate": 832000,
-                  "content_type": "video/mp4",
-                  "url": "https://video.twimg.com/amplify_video/2099183972819619840/vid/avc1/640x360/UNP0DoO4OtzUttMv.mp4"
-                },
-                {
-                  "bitrate": 2176000,
-                  "content_type": "video/mp4",
-                  "url": "https://video.twimg.com/amplify_video/2099183972819619840/vid/avc1/1280x720/BPZmMpQB1IEBL45R.mp4"
-                },
-                {
-                  "bitrate": 10368000,
-                  "content_type": "video/mp4",
-                  "url": "https://video.twimg.com/amplify_video/2099183972819619840/vid/avc1/1920x1080/k6h4gzdbUCexjNO7.mp4"
-                }
-              ]
-            }
-          }
-        ],
-        "news_action_type": "conversation",
-        "photos": [],
-        "possibly_sensitive": false,
-        "text": "OpenAI's board finally realizes what Ilya saw https://t.co/QqS4lJGtUk",
-        "user": {
-          "id_str": "327034465",
-          "is_blue_verified": true,
-          "name": "Travis Fischer",
-          "profile_image_shape": "Circle",
-          "profile_image_url_https": "https://pbs.twimg.com/profile_images/2097646716094984192/PRQWyl10_normal.jpg",
-          "screen_name": "transitive_bs",
-          "verified": false
-        },
-        "video": {
-          "aspectRatio": [
-            16,
-            9
-          ],
-          "contentType": "media_entity",
-          "durationMs": 505278,
-          "mediaAvailability": {
-            "status": "available"
-          },
-          "poster": "https://pbs.twimg.com/amplify_video_thumb/2099183972819619840/img/f03AZhnbeGnZ_kxH.jpg",
-          "variants": [
-            {
-              "src": "https://video.twimg.com/amplify_video/2099183972819619840/pl/TzV4BtQobbiwX742.m3u8?v=cc4",
-              "type": "application/x-mpegURL"
-            },
-            {
-              "src": "https://video.twimg.com/amplify_video/2099183972819619840/vid/avc1/480x270/pr3LcOx9osFlP9ic.mp4",
-              "type": "video/mp4"
-            },
-            {
-              "src": "https://video.twimg.com/amplify_video/2099183972819619840/vid/avc1/640x360/UNP0DoO4OtzUttMv.mp4",
-              "type": "video/mp4"
-            },
-            {
-              "src": "https://video.twimg.com/amplify_video/2099183972819619840/vid/avc1/1280x720/BPZmMpQB1IEBL45R.mp4",
-              "type": "video/mp4"
-            },
-            {
-              "src": "https://video.twimg.com/amplify_video/2099183972819619840/vid/avc1/1920x1080/k6h4gzdbUCexjNO7.mp4",
-              "type": "video/mp4"
-            }
-          ],
-          "videoId": {
-            "id": "2099185744724316478",
             "type": "tweet"
           },
           "viewCount": 0

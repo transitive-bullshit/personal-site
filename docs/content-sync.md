@@ -48,6 +48,8 @@ Dry runs still perform Notion discovery, selected page reads, public image-layou
 
 Publication validates the complete snapshot and writes deterministic JSON through an atomic rename. Unchanged bytes are not rewritten. Search is published afterward in a separate atomic write; the two files are not one transaction.
 
+Projects also import the optional `Type` select value and track its property ID. Adopting this property re-reads cached projects once; an empty select remains unset. Only the exact value `Video` changes the detail-page presentation.
+
 ## Media and image widths
 
 Media is immutable under `personal-site/media/<hash>.<extension>` in the shared R2 bucket. Reuse depends on stable source identity, edit marker, and media pipeline version. Original bytes are preserved; still raster images receive non-upscaled WebP variants. GIFs (including single-frame GIFs), other animated images, SVGs, video, audio, and files keep their original formats. Image placeholders are at most 8px on either side. Videos also store display dimensions (including rotation and pixel aspect ratio) on the original asset and a separate first-frame WebP `poster` asset, capped at 1280px on either side. The renderer uses these dimensions to reserve space before metadata loads and displays the poster before playback. MIME type remains on the original asset; videos are never transcoded. Failed video inspection follows the existing media fallback/error path. Native audio players are centered with their captions, fill available space on narrow screens, and cap at 500px wide.

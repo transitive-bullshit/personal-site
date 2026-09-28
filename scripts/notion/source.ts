@@ -72,6 +72,7 @@ export const articleProperties = {
 export const projectProperties = {
   ...articleProperties,
   Author: 'people',
+  Type: 'select',
   Source: 'url',
   Website: 'url'
 } as const

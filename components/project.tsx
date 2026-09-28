@@ -1,3 +1,7 @@
+import { getProjectHeroVideo } from '@/lib/content/project-hero'
+import { ProjectHeroVideo } from './project-hero-video'
+import { RichText } from './article/rich-text'
+import { Blocks } from './article/blocks'
 import { JsonLd } from './json-ld'
 import { projectJsonLd } from '@/lib/content/metadata'
 import Link from 'next/link'
@@ -22,6 +26,14 @@ export function ProjectPage({
   project: Project
   snapshot: Snapshot
 }) {
+  const hero = getProjectHeroVideo(project, snapshot)
+  const body = hero
+    ? {
+        ...project,
+        blocks: project.blocks.filter((block) => block.id !== hero.id)
+      }
+    : project
+
   return (
     <main id='main'>
       <JsonLd data={projectJsonLd(project, snapshot)} />
@@ -31,7 +43,25 @@ export function ProjectPage({
             <ArrowLeftIcon aria-hidden='true' />
             All projects
           </Link>
-          {project.cover ? (
+          {hero ? (
+            <figure id={hero.id} className='article-cover'>
+              <ProjectTransition projectId={project.id} part='image'>
+                <ProjectHeroVideo
+                  media={snapshot.media[hero.media!]!}
+                  cover={
+                    project.cover ? snapshot.media[project.cover] : undefined
+                  }
+                  title={project.title}
+                />
+              </ProjectTransition>
+              {hero.caption.length ? (
+                <figcaption>
+                  <RichText spans={hero.caption} />
+                </figcaption>
+              ) : null}
+              <Blocks blocks={hero.children} snapshot={snapshot} />
+            </figure>
+          ) : project.cover ? (
             <ProjectTransition projectId={project.id} part='image'>
               <ContentCover entry={project} snapshot={snapshot} />
             </ProjectTransition>
@@ -81,7 +111,7 @@ export function ProjectPage({
             </div>
           ) : null}
         </header>
-        <ContentBody entry={project} snapshot={snapshot} showCover={false} />
+        <ContentBody entry={body} snapshot={snapshot} showCover={false} />
       </article>
     </main>
   )

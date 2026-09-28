@@ -335,7 +335,8 @@ summary {
 .article-body figure {
   margin-block: 32px;
 }
-.article-body figcaption {
+.article-body figcaption,
+.article-cover > figcaption {
   text-align: center;
   font-size: 13px;
   line-height: 1.6;
@@ -1339,4 +1340,52 @@ summary {
 
   transition-property: background-position, background-size;
   transition-duration: 300ms;
+}
+
+.project-hero-video {
+  position: relative;
+  overflow: hidden;
+  border-radius: 7px;
+  background: var(--muted);
+}
+.project-hero-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.project-hero-play {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  display: grid;
+  place-items: center;
+}
+.project-hero-poster {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-hero-play-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  color: white;
+  background: rgb(0 0 0 / 65%);
+}
+.project-hero-play:focus-visible {
+  outline: 3px solid var(--foreground);
+  outline-offset: -5px;
+}
+.project-hero-play:hover .project-hero-play-icon {
+  background: rgb(0 0 0 / 85%);
 }

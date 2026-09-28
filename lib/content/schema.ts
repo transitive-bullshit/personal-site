@@ -154,6 +154,7 @@ export const projectSchema = articleSchema
   .omit({ author: true, published: true })
   .extend({
     published: z.string().optional(),
+    type: z.string().optional(),
     authors: z.array(z.object({ id: idSchema, name: z.string().optional() })),
     website: httpUrlSchema.optional(),
     source: httpUrlSchema.optional(),

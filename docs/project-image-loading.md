@@ -12,6 +12,10 @@ Keep responsive `sizes` accurate and load the rendition needed for the current l
 
 `components/project-transition.tsx` wraps project images, titles, and descriptions in React ViewTransition participants. Names use stable project IDs so card/detail transitions survive slug changes. Keep the participant outside the image lightbox: a portal must not mount another participant with the same name. Motion styles and the reduced-motion branch live in `app/globals.css`.
 
+## Video projects
+
+Projects whose Notion `Type` is `Video` promote their first top-level video into the hero when it has an imported media asset. The project cover becomes the poster, using the same responsive image and loaded-rendition reuse as cards until playback starts. The player retains the image transition identity, starts only on user interaction, and then exposes native controls. The promoted block is omitted from the rendered body; its anchor, caption, and children move with it. The saved content and Markdown retain their original order. External embeds, missing videos, and other project types retain the normal cover and body.
+
 ## Lessons and verification
 
 - The September 16 navigation check delayed large image responses by 20 seconds: the loaded 750px card remained sharp while the 1920px hero was pending, then cleared after the hero decoded. Recheck both direct visits and client navigation when changing this behavior.

@@ -1,3 +1,4 @@
+import { getProjectHeroVideo } from '../lib/content/project-hero'
 import { expect, it, vi } from 'vitest'
 import { readFile } from 'node:fs/promises'
 import {
@@ -140,6 +141,11 @@ it('normalizes project people and structured links through the shared body reade
     }
   })
   const properties = {
+    Type: {
+      id: 'type',
+      type: 'select',
+      select: { name: 'Video' } as { name: string } | null
+    },
     Author: {
       id: 'author',
       type: 'people',
@@ -167,7 +173,22 @@ it('normalizes project people and structured links through the shared body reade
     )
   )
   expect(body).toHaveBeenCalledOnce()
-  expect(result).toEqual({ ...project, tweet: 'https://x.com/user/status/123' })
+  expect(result).toEqual({
+    ...project,
+    type: 'Video',
+    tweet: 'https://x.com/user/status/123'
+  })
+  properties.Type.select = null
+  expect(
+    (
+      await normalizer.project(
+        { ...page, properties },
+        Object.fromEntries(
+          Object.entries(properties).map(([name, prop]) => [name, prop.id])
+        )
+      )
+    ).type
+  ).toBeUndefined()
   expect(
     projectSchema.safeParse({ ...result, source: 'javascript:alert(1)' })
       .success
@@ -205,4 +226,45 @@ it('resolves cached Notion project links when loading an existing snapshot', asy
   expect(block.type === 'paragraph' && block.richText[0]?.href).toBe(
     '/projects/' + target.slug
   )
+})
+
+it('promotes only the primary uploaded video for Video projects', async () => {
+  const snapshot = snapshotSchema.parse(
+    JSON.parse(await readFile('content/snapshot.json', 'utf8'))
+  )
+  const saved = Object.values(snapshot.projects ?? {}).find(
+    (entry) => entry.slug === 'slow-it-down-ai-music-video'
+  )!
+  const videoProject = { ...saved, type: 'Video' }
+  const hero = getProjectHeroVideo(videoProject, snapshot)!
+  expect(hero.type).toBe('video')
+  expect(hero.id).toBe(saved.blocks[0]!.id)
+  expect(
+    getProjectHeroVideo({ ...saved, type: undefined }, snapshot)
+  ).toBeUndefined()
+  expect(
+    getProjectHeroVideo({ ...saved, type: 'Web app' }, snapshot)
+  ).toBeUndefined()
+  expect(
+    getProjectHeroVideo({ ...videoProject, blocks: [] }, snapshot)
+  ).toBeUndefined()
+  expect(
+    getProjectHeroVideo(videoProject, { ...snapshot, media: {} })
+  ).toBeUndefined()
+  expect(
+    getProjectHeroVideo(
+      {
+        ...videoProject,
+        blocks: [
+          {
+            ...hero,
+            media: undefined,
+            url: 'https://youtube.com/watch?v=demo'
+          },
+          hero
+        ]
+      },
+      snapshot
+    )
+  ).toBeUndefined()
 })

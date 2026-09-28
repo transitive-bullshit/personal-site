@@ -210,6 +210,8 @@ export class Normalizer {
         )
         .parse(author.people)
         .map(({ id, name }) => ({ id, name: name ?? undefined })),
+      type: z.object({ name: z.string() }).nullable().parse(prop('Type').select)
+        ?.name,
       website: prop('Website').url || undefined,
       source: prop('Source').url || undefined,
       tweet: plainText(tweet.rich_text).trim() || undefined
