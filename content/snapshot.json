@@ -81169,6 +81169,384 @@
       },
       "variants": []
     },
+    "3e9edb27f124811eafdaec349d196860": {
+      "original": {
+        "bytes": 2001933,
+        "hash": "386f65b531f915f27edc396fa8a0d035d462c2e638fa1357606300142b01461f",
+        "key": "personal-site/media/386f65b531f915f27edc396fa8a0d035d462c2e638fa1357606300142b01461f.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/386f65b531f915f27edc396fa8a0d035d462c2e638fa1357606300142b01461f.mp4"
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f124811eafdaec349d196860",
+        "kind": "file"
+      },
+      "variants": []
+    },
+    "3e9edb27f1248131b632e672ab9f0960": {
+      "original": {
+        "bytes": 361578,
+        "hash": "fbed70cd1cca046c90d2c402a216bdb5210822dac0788e8b143ae4abbbecb871",
+        "key": "personal-site/media/fbed70cd1cca046c90d2c402a216bdb5210822dac0788e8b143ae4abbbecb871.mp3",
+        "mime": "audio/mpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/fbed70cd1cca046c90d2c402a216bdb5210822dac0788e8b143ae4abbbecb871.mp3"
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f1248131b632e672ab9f0960",
+        "kind": "file"
+      },
+      "variants": []
+    },
+    "3e9edb27f124813cb502d53648f169ab": {
+      "original": {
+        "bytes": 1364650,
+        "hash": "c9c6f85c846e19e762c3dc08ec07900e0a6a45143dd8214166ad4a0886bed76f",
+        "key": "personal-site/media/c9c6f85c846e19e762c3dc08ec07900e0a6a45143dd8214166ad4a0886bed76f.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/c9c6f85c846e19e762c3dc08ec07900e0a6a45143dd8214166ad4a0886bed76f.mp4"
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f124813cb502d53648f169ab",
+        "kind": "file"
+      },
+      "variants": []
+    },
+    "3e9edb27f1248156811debc94bbd473a": {
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAABwAQCdASoIAAcAA4BaJZQCdAFAAAD+7rUlwacoxUP1m2L4/WwAAA==",
+      "original": {
+        "bytes": 2796026,
+        "hash": "2258a9607afc0bd4a6e944004aa2552ecbfcf5b6992d043b2cd6a201fcb309af",
+        "height": 3428,
+        "key": "personal-site/media/2258a9607afc0bd4a6e944004aa2552ecbfcf5b6992d043b2cd6a201fcb309af.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/2258a9607afc0bd4a6e944004aa2552ecbfcf5b6992d043b2cd6a201fcb309af.jpg",
+        "width": 3844
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f1248156811debc94bbd473a",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 215770,
+          "hash": "8a6d7010b5383e9a1532a68f6fedb8f2687f2d5411cc3be7210a7fcb5646b438",
+          "height": 856,
+          "key": "personal-site/media/8a6d7010b5383e9a1532a68f6fedb8f2687f2d5411cc3be7210a7fcb5646b438.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/8a6d7010b5383e9a1532a68f6fedb8f2687f2d5411cc3be7210a7fcb5646b438.webp",
+          "width": 960
+        },
+        {
+          "bytes": 958528,
+          "hash": "3431a800c39badfc8fdc6872d707ceb96f96a31ca226666fc5bdbd513e4b9975",
+          "height": 1712,
+          "key": "personal-site/media/3431a800c39badfc8fdc6872d707ceb96f96a31ca226666fc5bdbd513e4b9975.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/3431a800c39badfc8fdc6872d707ceb96f96a31ca226666fc5bdbd513e4b9975.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3e9edb27f1248173bb45e125864b2c8b": {
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAMAA4BaJZQCdAD0gbJgAP7sxA9qayNFOUNMg34UU7jAN1HHAqGgAAA=",
+      "original": {
+        "bytes": 536442,
+        "hash": "3f9405d194ad5274aa63233ea7e92e0f48d6efdb976cd5b539a01912302af28f",
+        "height": 1202,
+        "key": "personal-site/media/3f9405d194ad5274aa63233ea7e92e0f48d6efdb976cd5b539a01912302af28f.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/3f9405d194ad5274aa63233ea7e92e0f48d6efdb976cd5b539a01912302af28f.jpg",
+        "width": 2936
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f1248173bb45e125864b2c8b",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 52304,
+          "hash": "820bbd25ab185c91b3c5abc8f9688192c51914d227afac5648874b5455548f91",
+          "height": 393,
+          "key": "personal-site/media/820bbd25ab185c91b3c5abc8f9688192c51914d227afac5648874b5455548f91.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/820bbd25ab185c91b3c5abc8f9688192c51914d227afac5648874b5455548f91.webp",
+          "width": 960
+        },
+        {
+          "bytes": 218090,
+          "hash": "c2d51461214fe505d9351fb524d824d1448df5fb95263bec74b3ef542df0cdb8",
+          "height": 786,
+          "key": "personal-site/media/c2d51461214fe505d9351fb524d824d1448df5fb95263bec74b3ef542df0cdb8.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/c2d51461214fe505d9351fb524d824d1448df5fb95263bec74b3ef542df0cdb8.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3e9edb27f12481769a2df3a2c1450b0f": {
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADwAQCdASoIAAgAA4BaJZQCdAEPDVBNGRAA/vDgAuDkWvuPNBG+EfzC9AnhR7SnsAA=",
+      "original": {
+        "bytes": 690627,
+        "hash": "041aa9b1ced8af7205b65dba639fbde19a66e3277728fcc7a3f10e6976c55481",
+        "height": 1895,
+        "key": "personal-site/media/041aa9b1ced8af7205b65dba639fbde19a66e3277728fcc7a3f10e6976c55481.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/041aa9b1ced8af7205b65dba639fbde19a66e3277728fcc7a3f10e6976c55481.jpg",
+        "width": 1800
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f12481769a2df3a2c1450b0f",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 172518,
+          "hash": "e917d72bca081698d1c8827343ed1f80ceb9a523bed2e7ad3543c7cf24c1294f",
+          "height": 1011,
+          "key": "personal-site/media/e917d72bca081698d1c8827343ed1f80ceb9a523bed2e7ad3543c7cf24c1294f.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/e917d72bca081698d1c8827343ed1f80ceb9a523bed2e7ad3543c7cf24c1294f.webp",
+          "width": 960
+        },
+        {
+          "bytes": 615342,
+          "hash": "50e068e7b6e7a6947f9ecd1b894d67eb6fc07fc1ece8df39f20d23780e772bfb",
+          "height": 1895,
+          "key": "personal-site/media/50e068e7b6e7a6947f9ecd1b894d67eb6fc07fc1ece8df39f20d23780e772bfb.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/50e068e7b6e7a6947f9ecd1b894d67eb6fc07fc1ece8df39f20d23780e772bfb.webp",
+          "width": 1800
+        }
+      ]
+    },
+    "3e9edb27f12481aeab7dc3e58c890d04": {
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJZwAAp1sr/KAAP7s4TaAbCWwiUV/xv7DDsP/Y/QTlBTsQgIiOAAA",
+      "original": {
+        "bytes": 601519,
+        "hash": "5a03803f6243e74845595c2915e8a4375673964878a977cd6e57d4031b08f963",
+        "height": 1604,
+        "key": "personal-site/media/5a03803f6243e74845595c2915e8a4375673964878a977cd6e57d4031b08f963.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/5a03803f6243e74845595c2915e8a4375673964878a977cd6e57d4031b08f963.jpg",
+        "width": 2596
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f12481aeab7dc3e58c890d04",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 68436,
+          "hash": "7f84914dfe5e7842b0ad110aeb06b7f62146c2870628b8d211b872afb3d4913b",
+          "height": 593,
+          "key": "personal-site/media/7f84914dfe5e7842b0ad110aeb06b7f62146c2870628b8d211b872afb3d4913b.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/7f84914dfe5e7842b0ad110aeb06b7f62146c2870628b8d211b872afb3d4913b.webp",
+          "width": 960
+        },
+        {
+          "bytes": 312706,
+          "hash": "737abaf4118ffbda064b9f1ace9fc8bc7822fb962a9933269b599b100e62a61a",
+          "height": 1186,
+          "key": "personal-site/media/737abaf4118ffbda064b9f1ace9fc8bc7822fb962a9933269b599b100e62a61a.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/737abaf4118ffbda064b9f1ace9fc8bc7822fb962a9933269b599b100e62a61a.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3e9edb27f12481b8b870c9b1ed63a048": {
+      "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAAAwAQCdASoIAAYAA4BaJZwAA3AA/vI6xS6Ln+henZYi8LLXN6UfCAAA",
+      "original": {
+        "bytes": 1780732,
+        "hash": "c71b36b49f1af87874da01c97cc04c7f30dbd19e7fa9bfaf709960934bc05e83",
+        "height": 1650,
+        "key": "personal-site/media/c71b36b49f1af87874da01c97cc04c7f30dbd19e7fa9bfaf709960934bc05e83.png",
+        "mime": "image/png",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/c71b36b49f1af87874da01c97cc04c7f30dbd19e7fa9bfaf709960934bc05e83.png",
+        "width": 2400
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f12481b8b870c9b1ed63a048",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 70572,
+          "hash": "7176ccc109e09e5be3b752b4cb3c2a37c3d900924868d14e6df78b6d228842cb",
+          "height": 660,
+          "key": "personal-site/media/7176ccc109e09e5be3b752b4cb3c2a37c3d900924868d14e6df78b6d228842cb.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/7176ccc109e09e5be3b752b4cb3c2a37c3d900924868d14e6df78b6d228842cb.webp",
+          "width": 960
+        },
+        {
+          "bytes": 256052,
+          "hash": "2b83b310548328f9eb0bc51e23a638e72be18e1cbffea957c87111c4178f7f93",
+          "height": 1320,
+          "key": "personal-site/media/2b83b310548328f9eb0bc51e23a638e72be18e1cbffea957c87111c4178f7f93.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/2b83b310548328f9eb0bc51e23a638e72be18e1cbffea957c87111c4178f7f93.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3e9edb27f12481ba84a8ee735e074c87": {
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoIAAIAA4BaJYwC7AEO+yG0AAD+7stoa15nHrHTG64sIpOwK3a5AmRgAAA=",
+      "original": {
+        "bytes": 393401,
+        "hash": "bca91d26118bf05d0024c30461180fb39f672db50e28d040b081755864f32928",
+        "height": 628,
+        "key": "personal-site/media/bca91d26118bf05d0024c30461180fb39f672db50e28d040b081755864f32928.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/bca91d26118bf05d0024c30461180fb39f672db50e28d040b081755864f32928.jpg",
+        "width": 2928
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f12481ba84a8ee735e074c87",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 42188,
+          "hash": "5960b1c1e7ef41cf22f2d739cf7c4072c7e13b809f0af3ec21d1ecd3e8f208d3",
+          "height": 206,
+          "key": "personal-site/media/5960b1c1e7ef41cf22f2d739cf7c4072c7e13b809f0af3ec21d1ecd3e8f208d3.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/5960b1c1e7ef41cf22f2d739cf7c4072c7e13b809f0af3ec21d1ecd3e8f208d3.webp",
+          "width": 960
+        },
+        {
+          "bytes": 186566,
+          "hash": "83a276c5e36497ab237d3e09d8995692fb5edaebd055aefcc74c17fb60798682",
+          "height": 412,
+          "key": "personal-site/media/83a276c5e36497ab237d3e09d8995692fb5edaebd055aefcc74c17fb60798682.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/83a276c5e36497ab237d3e09d8995692fb5edaebd055aefcc74c17fb60798682.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3e9edb27f12481c7a330f259cdf39818": {
+      "original": {
+        "bytes": 212818771,
+        "hash": "19045126f62b86bf803fc131c662b2786899c3276b48e10169caece9ce7c66c5",
+        "key": "personal-site/media/19045126f62b86bf803fc131c662b2786899c3276b48e10169caece9ce7c66c5.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/19045126f62b86bf803fc131c662b2786899c3276b48e10169caece9ce7c66c5.mp4"
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f12481c7a330f259cdf39818",
+        "kind": "file"
+      },
+      "variants": []
+    },
+    "3e9edb27f12481d1b48afd611cfd8e3f": {
+      "original": {
+        "bytes": 769643,
+        "hash": "1b7707536981860e1550c9b8b861c618b5a3e940e05dd14bbe74d20ae4fe2f4f",
+        "key": "personal-site/media/1b7707536981860e1550c9b8b861c618b5a3e940e05dd14bbe74d20ae4fe2f4f.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/1b7707536981860e1550c9b8b861c618b5a3e940e05dd14bbe74d20ae4fe2f4f.mp4"
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f12481d1b48afd611cfd8e3f",
+        "kind": "file"
+      },
+      "variants": []
+    },
+    "3e9edb27f12481dbad24ed10a468a6e5": {
+      "original": {
+        "bytes": 361578,
+        "hash": "cd35d02f6486f9391171fa1cc8e9080aadff13f588756c821266283a10ed1c1e",
+        "key": "personal-site/media/cd35d02f6486f9391171fa1cc8e9080aadff13f588756c821266283a10ed1c1e.mp3",
+        "mime": "audio/mpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/cd35d02f6486f9391171fa1cc8e9080aadff13f588756c821266283a10ed1c1e.mp3"
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f12481dbad24ed10a468a6e5",
+        "kind": "file"
+      },
+      "variants": []
+    },
+    "3e9edb27f12481f49991d30ff4016de6": {
+      "original": {
+        "bytes": 361004,
+        "hash": "0ff42366ecf3f8cb253cb5e868e38c54eb4e8f9e9763c3ea475edf7a7b66a93a",
+        "key": "personal-site/media/0ff42366ecf3f8cb253cb5e868e38c54eb4e8f9e9763c3ea475edf7a7b66a93a.mp3",
+        "mime": "audio/mpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/0ff42366ecf3f8cb253cb5e868e38c54eb4e8f9e9763c3ea475edf7a7b66a93a.mp3"
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:26:00.000Z",
+        "key": "3e9edb27f12481f49991d30ff4016de6",
+        "kind": "file"
+      },
+      "variants": []
+    },
+    "3e9edb27f12481fe84acd73fae342ccb:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAUAA4BaJZQCw7DW0nIAAP7c8jQZzzdvtYJcBev/hZ7vt8gjwxYAAAA=",
+      "original": {
+        "bytes": 496358,
+        "hash": "5be20121f28bfc0dbf194f90b07ffe2198407aecefef65b15db875918fcef8f0",
+        "height": 1080,
+        "key": "personal-site/media/5be20121f28bfc0dbf194f90b07ffe2198407aecefef65b15db875918fcef8f0.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/5be20121f28bfc0dbf194f90b07ffe2198407aecefef65b15db875918fcef8f0.jpg",
+        "width": 1920
+      },
+      "pipelineVersion": 1,
+      "source": {
+        "edited": "2026-09-28T13:45:00.000Z",
+        "key": "3e9edb27f12481fe84acd73fae342ccb:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 45280,
+          "hash": "25173696c12c18d31aed7f3c39f71406bd3c1d6bb647d8ee5e1ab324adadaf3a",
+          "height": 540,
+          "key": "personal-site/media/25173696c12c18d31aed7f3c39f71406bd3c1d6bb647d8ee5e1ab324adadaf3a.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/25173696c12c18d31aed7f3c39f71406bd3c1d6bb647d8ee5e1ab324adadaf3a.webp",
+          "width": 960
+        },
+        {
+          "bytes": 375822,
+          "hash": "5a28d2e05504f914a9e2fa0935e3ccc7ff960b865aae0c8cfd1a91fcd682bffa",
+          "height": 1080,
+          "key": "personal-site/media/5a28d2e05504f914a9e2fa0935e3ccc7ff960b865aae0c8cfd1a91fcd682bffa.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/5a28d2e05504f914a9e2fa0935e3ccc7ff960b865aae0c8cfd1a91fcd682bffa.webp",
+          "width": 1920
+        }
+      ]
+    },
     "3ef4a57ca2944e5087ff9e54829c977f": {
       "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAYAA4BaJQBdgCHiBWfKUAD+8lcq0VZb9ONqyoIE1Yvaot2z5xEc5U2ywXIAAAA=",
       "original": {
@@ -87304,6 +87682,11 @@
       "active": true,
       "aliases": [],
       "slug": "doom-or-bloom"
+    },
+    "3e9edb27f12481fe84acd73fae342ccb": {
+      "active": true,
+      "aliases": [],
+      "slug": "slow-it-down-ai-music-video"
     }
   },
   "projects": {
@@ -89611,6 +89994,2643 @@
       "title": "Doom or Bloom",
       "tweet": "https://x.com/transitive_bs/status/2103846496542343453",
       "website": "https://www.doom-or-bloom.com"
+    },
+    "3e9edb27f12481fe84acd73fae342ccb": {
+      "authors": [
+        {
+          "id": "b036f7f695a94f97b3b5c46867d0d103",
+          "name": "Travis Fischer"
+        }
+      ],
+      "blocks": [
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "video created by claude opus 5.5; song made with suno v6",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "3e9edb27f12481c7a330f259cdf39818",
+          "media": "3e9edb27f12481c7a330f259cdf39818",
+          "type": "video"
+        },
+        {
+          "children": [],
+          "id": "3e9edb27f1248140b90bc922f4446ec9",
+          "type": "divider"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124816d82eac4a702f83ac4",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "AI safety has a branding problem",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124811d904ce18c7a3a7cb2",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "On Sept 13, the WSJ ran this headline: ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "“Biggest AI Rivals Agree They Need to Slow It Down.”",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " That’s also the title of a 2013 R&B slow jam.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248179a54cf6f6ba92ae7e",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Meanwhile, the labs keep saying they want to ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.pacingthefrontier.com/",
+              "italic": false,
+              "strike": false,
+              "text": "“pace” the frontier",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", because “slow” sounds too much like losing. That’s AI safety’s branding problem in a nutshell: slowing down sounds weak, and racing sounds more optimistic and inevitable.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481cbb889e1f83a21ff82",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "So I wanted to try flipping this and make slowing down feel sexy.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481f68925d599738f97c6",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "THE-DREAM’s “Slow It Down” is literally a guy begging the club DJ to stop playing fast dance songs so he can actually get close to someone. It barely needed rewriting:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The original: THE-DREAM feat. Fabolous, “Slow It Down” (2013)",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "3e9edb27f12481279e44c2705012de17",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=yPwkzdYN4JE"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124810b8da5f5b9f577362d",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Welcome to Club Frontier",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124814cb028ceae8a93b031",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "DJ Moloch",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " (race dynamics, personified) keeps cranking the BPM while a new model drops every 18 days. ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "THE-DARIO",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " walks in wearing his shawl cardigan and asks the DJ to slow it down. The frontier model is the woman on the dance floor, with a few subtle android tells. ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "DADDY SAMA",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " takes the feature verse (",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "“everybody know slow AGI, way better than no AGI”",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "), and Winnie the Pooh shows up at the bar tryna distill all your honey.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481398237ce26b9b83665",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Every chorus is the same slow dance, a little closer each time, until the whole club moves as one: ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "now we’re aligned",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481658a29eb4427adc5df",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "My rule for these: ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "let the headline misbehave; make the mechanism behave.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " The jokes are outrageous, but the facts underneath are real, including every little footnote that pops up in the video.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481daacbde5ebfe6da4af",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "It’s part of a series of recent AI safety projects, alongside ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://app.notion.com/p/3e5edb27f124800884cddefb16b57151",
+              "italic": false,
+              "strike": false,
+              "text": "Doom or Bloom",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://app.notion.com/p/3ddedb27f12481059885e955643ddaf0",
+              "italic": false,
+              "strike": false,
+              "text": "Cultural Alignment",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://app.notion.com/p/3ddedb27f1248114a98ed3835e961d1e",
+              "italic": false,
+              "strike": false,
+              "text": "P(DOOM)",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", and the AI-made parodieslike ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://app.notion.com/p/3ddedb27f12481c1a145c3d546904768",
+              "italic": false,
+              "strike": false,
+              "text": "Margin Call — AI Safety Parody",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " and ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://app.notion.com/p/3ddedb27f1248186b064c993b8e155c6",
+              "italic": false,
+              "strike": false,
+              "text": "Pluribus — OpenAI Parody",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481a9a2aed939a22a23e4",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "How it was made",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481d298e8dc7cd6b524f9",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Claude Code with ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Opus 5.5",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " made nearly all of it: the lyric rewrites, the audio experiments, the storyboard, every image and video prompt, the caption compositor, and the review tool. My job was taste and feedback. Start to finish took about a day of back-and-forth and ~$100 of fal credits.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481c3aa70cac0696ac046",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The final pipeline:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248176909ef1aa66599430",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Lyrics.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Rewritten line by line against the original’s rhymes and syllable counts.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124819c97a9c3c6d221e4f1",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Song.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Suno V6, from text only: tagged lyrics plus a detailed style prompt. Of three takes, we kept the one that got the most lyrics right.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124811ab756ed63cfd3af6a",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Timing.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Local Whisper word timestamps aligned to the lyrics, plus a beat grid, so every word has a timestamp.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481ca9e45e03f65345d59",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Storyboard.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " 70 shots, each anchored to a lyric line, each with an image prompt and a motion prompt.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481ffb493c67d94375480",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Characters.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " One reference image per character, and one outfit each, iterated until they looked right.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124815eab19ef77a0a79cd2",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Keyframes.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " One still per shot with Nano Banana Pro, conditioned on the character refs.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481dcb128fb57486d2a9f",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Clips.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Veo 3.1 Fast image-to-video, with first + last frames for shots that have to land somewhere specific. Wan 2.2 for the shots Veo refused.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124818eb49bd5d2e3a5acbf",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Compositing.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " A local Python + ffmpeg/libass pipeline for in-world neon captions (the backing vocals’ “down, down, down” literally steps down the screen), footnotes, color grades, letterboxing, and grain.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124815d96cae51c08a491d7",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Review.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " A local scene-by-scene review tool (below). Five versions until it felt done.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124811292f9fa48147fb663",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Poster.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Six first-frame options, since X shows a video’s first frame as its preview.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "All 70 shots, each anchored to a lyric line, a start time, and a color grade.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "3e9edb27f1248156811debc94bbd473a",
+          "media": "3e9edb27f1248156811debc94bbd473a",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124816c8b4af95588376c2d",
+          "level": 3,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The feedback loop",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481758b22f9903662c2d5",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The most useful thing we built was a scene-by-scene review tool. Every shot gets its keyframe, the clip as it plays in the cut, the raw generation, and in-context playback, plus ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Keep / Tweak / Redo",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " and a notes box. My notes save to a file that Claude reads back as the next round of prompts.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "My real note on the Pooh shot. The next version came straight from it.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "3e9edb27f12481b8b870c9b1ed63a048",
+          "media": "3e9edb27f12481b8b870c9b1ed63a048",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124811c9884ea128631edb3",
+          "level": 3,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Tools used",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481f28a4cc5902e1708e2",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Claude Code (Opus 5.5):",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " director, producer, editor, and all of the code.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124814d93d2e071f58c51ba",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Suno V6:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " the song.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124816ebfb0dd633a0e7992",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "fal:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Nano Banana Pro for character refs and keyframes, Veo 3.1 Fast for video, Wan 2.2 for the shots Veo wouldn’t touch, and OmniHuman 1.5 for Sam’s two rap close-ups.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481128bbdc1ff2a193921",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Local:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " mlx-whisper for word timings, beat_this for the beat grid, audio-separator to pull the rap vocal for lip-sync, and ffmpeg + libass for captions and grading.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124815db5b0e2b42d1fcc2d",
+          "level": 3,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Tried and discarded",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "gray_background",
+          "icon": {
+            "type": "emoji",
+            "value": "🗑️"
+          },
+          "id": "3e9edb27f12481849ff9f073116bb5e7",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Everything below was tried and thrown away. None of it made it into the final video.",
+              "underline": false
+            }
+          ],
+          "type": "callout"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248178b0bafeb696ec141d",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "ElevenLabs Music:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " sang its own melody, not the song.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248142bb30d4135cb54d7e",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "ElevenLabs Voice Changer:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " dropped an octave and drifted off-key on anything sung.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248172b082dfffcf046217",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "ElevenLabs TTS v3 + Voice Design:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " a designed voice for the rap verse.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481d1ac3ced429800aa55",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "MiniMax Music 2.6 and 3:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " wrote new songs, not ours.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248190ba2ef48020f9623c",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "ACE-Step",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " (text-to-music, inpainting, and lyric editing): lyric editing came closest because it keeps the original singer, but two hook lines refused to change in every single take.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481c0907ec0545f8d4671",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Google Lyria 3.5 + Seed-VC:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Lyria sang the new lines and Seed-VC re-voiced the original refrain. It still didn’t feel like the song.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248147bd24df6912661df1",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Tencent AuK:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " word-level vocal edits. The demo’s daily quota ended that experiment.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481be815ff7293f08e14f",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Singing over the original’s instrumental",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " (split with BS-RoFormer and MelBand-RoFormer): none of the AI vocals layered on top came close to the real thing, and Suno and ElevenLabs both refused uploads of the original anyway.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481e29090c11ec189ec00",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Lip-syncing Dario",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " (OmniHuman 1.5): it worked, but I cut every one of those shots in review.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481489f73e48395022672",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Kling v3:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " refused the Trump dinner shot too.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248117885ec4e219322c98",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Models tested and not used:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Seedream 5, GPT Image 2.5, Qwen Image 3, Kling O3, Meta’s Muse Image, and Nano Banana 2 for images; Seedance 2.5 and Wan 3.0 for video.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248191a60ae21a066c0c71",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Two whole visual styles:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " a Pixar-ish 3D look (too generic) and a neon-heavy cyberpunk look (way too purple).",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248124af5ecef0ee6fc5d3",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "How it came together",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481a18604f319503e40c1",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The short version of a lot of trial and error:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124812e9850fdbb39ec6cbf",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Concept + lyrics.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Club Frontier, DJ Moloch, and THE-DARIO feat. DADDY SAMA, rewritten line by line against the original’s rhymes and syllables.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Round 1 · ElevenLabs Music: a good singer, the wrong song.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f12481dbad24ed10a468a6e5",
+              "media": "3e9edb27f12481dbad24ed10a468a6e5",
+              "type": "audio"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f124814ca179f6bded6729d6",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Audio round 1: rejected.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " ElevenLabs Music, MiniMax, and ACE-Step all wrote their own melodies. The only part I liked was the original singer leaking through an ACE-Step inpaint.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Round 2 · Lyria 3.5 lines + the original refrain, re-voiced with Seed-VC.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f1248131b632e672ab9f0960",
+              "media": "3e9edb27f1248131b632e672ab9f0960",
+              "type": "audio"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f124813084e3c0bac5f44e19",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Round 2: rejected.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Lyria 3.5 sang the new lines, and Seed-VC re-voiced the original refrain into Lyria’s singer. Still not it.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Round 3 · ACE-Step lyric edit on the original mix.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f12481f49991d30ff4016de6",
+              "media": "3e9edb27f12481f49991d30ff4016de6",
+              "type": "audio"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f1248189b116efbe670d0d36",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Rounds 3–5: closest, still no.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " ACE-Step’s lyric-edit mode kept the original recording and just swapped the words. But that meant the original singer’s voice, and two hook lines refused to change in every take.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124811dbb81d4e1804d9e5e",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Suno.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " It blocked the original instrumental, so I went text-only: tagged lyrics plus a style prompt that describes the sound. One fix: every take had a ticking hi-hat, because the prompt literally said “ticking.”",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248128acdae75243f92fc4",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Timing + storyboard.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Whisper word timestamps and a beat grid, then 70 shots mapped onto them.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "The same cast in all three looks.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f12481769a2df3a2c1450b0f",
+              "media": "3e9edb27f12481769a2df3a2c1450b0f",
+              "type": "image"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f12481408733ee94d455490b",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Three looks.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Stylized 3D was too Pixar. Painterly cyberpunk was way too purple. Restrained Blade Runner noir stuck.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "THE-DARIO, v1 to final.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f12481aeab7dc3e58c890d04",
+              "media": "3e9edb27f12481aeab7dc3e58c890d04",
+              "type": "image"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f12481838d9aef63601870c9",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Likeness.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Real people are recognizable caricatures, never photoreal. Dario took four passes before he actually looked like him.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Outtake: the shadow grows bear ears.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f124813cb502d53648f169ab",
+              "media": "3e9edb27f124813cb502d53648f169ab",
+              "type": "video"
+            },
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "The honey bear, try 1 to final.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f12481ba84a8ee735e074c87",
+              "media": "3e9edb27f12481ba84a8ee735e074c87",
+              "type": "image"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f1248136910de44867d793ab",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Clips.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Veo refused the Trump dinner and the Pooh shot (Kling refused the dinner too), so those two went to Wan 2.2. Then the stern shadow behind Pooh kept growing bear ears, so the silhouette is locked with a composite.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Outtake: Veo decided the wand should blow smoke.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f124811eafdaec349d196860",
+              "media": "3e9edb27f124811eafdaec349d196860",
+              "type": "video"
+            },
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Cut in review: Dario lip-syncing (OmniHuman 1.5).",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f12481d1b48afd611cfd8e3f",
+              "media": "3e9edb27f12481d1b48afd611cfd8e3f",
+              "type": "video"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f12481f4ac2bcd6f3c16106b",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Five review rounds.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Captions moved off faces, a cold open got cut, the Dario lip-sync shots became dance shots, and one wand massager kept blowing smoke until we painted the haze out of its keyframe.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Poster options A–F. B is now the first frame of the video.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f1248173bb45e125864b2c8b",
+              "media": "3e9edb27f1248173bb45e125864b2c8b",
+              "type": "image"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f12481a0aca5d01d38ba9d41",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Poster.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Six first-frame options, since X shows a video’s first frame as its preview. B won.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124817bb1f1e4eededcbb12",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "What I learned",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248178a29eda2b86c42ae2",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Stills are cheap, video is expensive.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Lock every composition as a keyframe (~15¢) before animating it (~60¢–$1.20 a clip).",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481d4b7c2cb8b4f4e3aca",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Character refs are the whole game.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " One reference image per character, one outfit each, passed into every keyframe.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481ce9240e7e0dabe7c10",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Likeness lives in the refs.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Name the real person when making the reference; describe, don’t name, them in the shot prompts.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481dca336fdd8b34071aa",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Use first + last frames when a shot has to land somewhere:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " a kiss, a readable label.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481c3947ee79c2590d18d",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Composite anything that must not move.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Video models love to “improve” a silhouette.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248157a827c02d774ca5e7",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Different models refuse different things.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Veo wouldn’t animate the Trump dinner or the Pooh shot, and Kling wouldn’t do the dinner; Wan 2.2 did both.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481e587edc4b849d17e2a",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Say what you want, not what you don’t.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " “No ticking” in a Suno prompt still gets you ticking, and “no smoke” in a video prompt still gets you smoke.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124813d94c4d9aa989b2524",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Scene-level feedback turns taste into prompts.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Anchoring every note to a shot and a timestamp made each revision cheap and specific.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248181880fe414f7422448",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Budget:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " ~$100 of fal credits for the visuals, across ~235 images and ~80 video clips over five versions.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481888472c8a88fa83259",
+          "level": 3,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Suno: what worked",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481319872d169c5076ec3",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Suno V6 made the song from text alone. The details, for anyone making their own parody:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124818586ace29c5ca65074",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "No artist names in the style prompt.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Describe the era, tempo, key, instruments, and vocal style instead, and measure the tempo and key from the original.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481638433c4fe720a317c",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Section tags go on their own lines,",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " like ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": true,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "[Verse 1]",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " and ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": true,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "[Pre-Chorus]",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". A delivery cue inside the tag switches the voice: ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": true,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "[Rap Verse - laid-back male rapper]",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481219d19c98ede58e4d7",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Parentheses are backing vocals and ad-libs:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": true,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "(ahoo)",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " at the end of a line, and each backing answer on its own line.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481ac8fbcde400ba424df",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Shape the phrasing in the lyrics:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " stretched vowels (",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": true,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "sloow",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "), ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": true,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "...",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " for a pause, and CAPS on one phrase for punch (",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": true,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "LOSS DROP",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ").",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124810c981dc999d06558a6",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Spell words the way they should be sung.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " We wrote “Meter” so it would pronounce METR, then fixed the spelling in the captions.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248176b6c2fae06e916631",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Write every chorus out in full.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " No ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": true,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "[Chorus x2]",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481b9b29ee761ddbcf2c3",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Settings I’d start with:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " V6, male vocals, style influence ~70–80%, weirdness ~20–30%. Generate 4–8 takes and judge by ear.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124816e95acf44a87faf8fc",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "What didn’t work:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Suno fingerprints uploads, so it blocked the original instrumental, and it checks lyrics against a lyrics database. And the word “ticking” in my style prompt put a ticking sound in every take.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [],
+              "children": [],
+              "color": "default",
+              "id": "3e9edb27f12481d2bc0bf4ebac3f6429",
+              "language": "plain text",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Late-night club slow jam, 2013 hip-hop R&B, a sensual anti-EDM grind record for the DJ to slow the party down. Sparse and warm: booming 808 kick and sub bass, soft claps on the backbeat, minimal percussion, dark warm synth pads, 61.5 BPM, A major. Big wide polished radio mix, airy reverb on the vocals. Light Auto-Tune, laid-back behind the beat. Smooth falsetto R&B lead with stacked male harmonies and \"ahoo\" ad-libs; chanted chorus hook is call-and-response: lead sings \"slow it down\", stacked male harmonies echo \"down down down, down down down\". Laid-back NY rap feature. Sexy, confident, sensual, seductive, explicit.",
+                  "underline": false
+                }
+              ],
+              "type": "code"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f1248119a47ed151f9243a1d",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The final style prompt",
+              "underline": false
+            }
+          ],
+          "type": "toggle"
+        },
+        {
+          "children": [
+            {
+              "caption": [],
+              "children": [],
+              "color": "default",
+              "id": "3e9edb27f12481509adffe2a9287c3cb",
+              "language": "plain text",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "EDM, trap hi-hat rolls, rock, female vocals, fast tempo, ticking, clock, metronome, hi-hat rolls, trap hi-hats",
+                  "underline": false
+                }
+              ],
+              "type": "code"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f12481ff9fb2d67eca08a140",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Exclude styles",
+              "underline": false
+            }
+          ],
+          "type": "toggle"
+        },
+        {
+          "children": [
+            {
+              "caption": [],
+              "children": [],
+              "color": "default",
+              "id": "3e9edb27f12481bdb16cf85692cf052a",
+              "language": "plain text",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "[Intro]\n(Oh-oh-oh-oh-oh-oh, yo-oh, yo-oh, yo-oh)\n\n[Verse 1]\nCandlelit dinner with the Don, I told him take it slow (ahoo)\nWhile they drop a new model every eighteen days or so (ahoo)\nYou know when it's a test, ooh baby, you bad (ahoo)\nEnough of that, lemme see that LOSS DROP\n\n[Pre-Chorus]\nI'm here to see the training stop\nShe's self-improving on me... DJ Moloch, you know you wrong\nEnough with the motherfuckin' ARMS RACE\n\n[Rap Verse - laid-back male rapper]\nEverybody know slow AGI, way better than no AGI",
+                  "underline": false
+                }
+              ],
+              "type": "code"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f124814a8791e5901cabd5c7",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Lyric formatting example",
+              "underline": false
+            }
+          ],
+          "type": "toggle"
+        },
+        {
+          "children": [],
+          "id": "3e9edb27f12481a1bc30d75d8d47c131",
+          "type": "divider"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124812b84dad5055a5e29e7",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "Parody. Not affiliated with any lab, artist, or head of state.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124803b96c6c84498938c01",
+          "richText": [],
+          "type": "paragraph"
+        }
+      ],
+      "cover": "3e9edb27f12481fe84acd73fae342ccb:cover",
+      "description": "AI safety has a branding problem. Sometimes you just gotta slow it down, baby.",
+      "featured": true,
+      "icon": {
+        "type": "emoji",
+        "value": "🎬"
+      },
+      "id": "3e9edb27f12481fe84acd73fae342ccb",
+      "modified": "2026-09-28T13:45:00.000Z",
+      "published": "2026-09-28",
+      "slug": "slow-it-down-ai-music-video",
+      "tags": [
+        "AI",
+        "Video",
+        "Projects"
+      ],
+      "title": "Slow It Down – AI Music Video"
     }
   },
   "projectSource": {
