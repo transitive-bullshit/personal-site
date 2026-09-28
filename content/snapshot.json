@@ -81256,6 +81256,35 @@
       },
       "variants": []
     },
+    "3e9edb27f124810faf0afaee6fdef58d": {
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoGAAgAA4BaJZwC7AEOZ0GEAAD+eTbzol0doOaX6CLPI++kWzniHLgAAAA=",
+      "original": {
+        "bytes": 584527,
+        "hash": "e914eb0fc411caa03b111251a78ef5e17c0b8f9fb435324b1e182c6ae67f20ae",
+        "height": 1215,
+        "key": "personal-site/media/e914eb0fc411caa03b111251a78ef5e17c0b8f9fb435324b1e182c6ae67f20ae.png",
+        "mime": "image/png",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/e914eb0fc411caa03b111251a78ef5e17c0b8f9fb435324b1e182c6ae67f20ae.png",
+        "width": 864
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T19:30:00.000Z",
+        "key": "3e9edb27f124810faf0afaee6fdef58d",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 84486,
+          "hash": "f54b79b4acd1e6465e5953cf2ba27e2a317f117034044a2a4d0a63ee6fd85a87",
+          "height": 1215,
+          "key": "personal-site/media/f54b79b4acd1e6465e5953cf2ba27e2a317f117034044a2a4d0a63ee6fd85a87.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/f54b79b4acd1e6465e5953cf2ba27e2a317f117034044a2a4d0a63ee6fd85a87.webp",
+          "width": 864
+        }
+      ]
+    },
     "3e9edb27f124811eafdaec349d196860": {
       "original": {
         "bytes": 2001933,
@@ -81364,6 +81393,44 @@
         }
       ]
     },
+    "3e9edb27f124816ebaeaed3b708926f7": {
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoIAAUAA4BaJYwCdAD5aeAWAAD+26i/HftGhmQVprcUmcqvO89NIApe4nW31YAA",
+      "original": {
+        "bytes": 399063,
+        "hash": "5377da1ab2845b5e16daeda0e1ec2fa1afc03114490e2bb4704f67b2eecb380a",
+        "height": 1080,
+        "key": "personal-site/media/5377da1ab2845b5e16daeda0e1ec2fa1afc03114490e2bb4704f67b2eecb380a.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/5377da1ab2845b5e16daeda0e1ec2fa1afc03114490e2bb4704f67b2eecb380a.jpg",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T17:31:00.000Z",
+        "key": "3e9edb27f124816ebaeaed3b708926f7",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 80682,
+          "hash": "261f71d1e98f489506188ab509f19d19bd877e448cc16104abf11d48de519d7b",
+          "height": 540,
+          "key": "personal-site/media/261f71d1e98f489506188ab509f19d19bd877e448cc16104abf11d48de519d7b.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/261f71d1e98f489506188ab509f19d19bd877e448cc16104abf11d48de519d7b.webp",
+          "width": 960
+        },
+        {
+          "bytes": 292566,
+          "hash": "5e47399f8cd1628fdbb18f3f2a71206dbfa3a4e91b68ca35fcce1359afc52b86",
+          "height": 1080,
+          "key": "personal-site/media/5e47399f8cd1628fdbb18f3f2a71206dbfa3a4e91b68ca35fcce1359afc52b86.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/5e47399f8cd1628fdbb18f3f2a71206dbfa3a4e91b68ca35fcce1359afc52b86.webp",
+          "width": 1920
+        }
+      ]
+    },
     "3e9edb27f1248173bb45e125864b2c8b": {
       "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAMAA4BaJZQCdAD0gbJgAP7sxA9qayNFOUNMg34UU7jAN1HHAqGgAAA=",
       "original": {
@@ -81467,6 +81534,82 @@
       },
       "variants": []
     },
+    "3e9edb27f124818389a3eb66faecd18a": {
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAMAA4BaJZACdADx+IRAAP2bZdxBRmZJWm1Pzy0mrSzd4JrTbgAA",
+      "original": {
+        "bytes": 1321168,
+        "hash": "2fa9c05e12984086f4a9a0471564402b53e1915ad3aeda9901de77f9f7c76478",
+        "height": 1168,
+        "key": "personal-site/media/2fa9c05e12984086f4a9a0471564402b53e1915ad3aeda9901de77f9f7c76478.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/2fa9c05e12984086f4a9a0471564402b53e1915ad3aeda9901de77f9f7c76478.jpg",
+        "width": 3600
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T17:31:00.000Z",
+        "key": "3e9edb27f124818389a3eb66faecd18a",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 110362,
+          "hash": "12890311a68f2dbac5f76feb92d0f49da215e6bba1afb3a84d0e843c1781e969",
+          "height": 311,
+          "key": "personal-site/media/12890311a68f2dbac5f76feb92d0f49da215e6bba1afb3a84d0e843c1781e969.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/12890311a68f2dbac5f76feb92d0f49da215e6bba1afb3a84d0e843c1781e969.webp",
+          "width": 960
+        },
+        {
+          "bytes": 475104,
+          "hash": "7fbe323816bd3de2f58975c1f2d3f81e6c4819a31312347e2786a7a6b260bdb9",
+          "height": 623,
+          "key": "personal-site/media/7fbe323816bd3de2f58975c1f2d3f81e6c4819a31312347e2786a7a6b260bdb9.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/7fbe323816bd3de2f58975c1f2d3f81e6c4819a31312347e2786a7a6b260bdb9.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3e9edb27f1248188a376d7f247e04582": {
+      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAADQAQCdASoIAAQAA4BaJYwCdAD6FDKUAAD+VA3FUJkteLUqwAA=",
+      "original": {
+        "bytes": 574076,
+        "hash": "4d00612e2076c3d79a1823e560b7e2be0eacf17ba8d87005dd9ed8b1fd43a5a3",
+        "height": 1343,
+        "key": "personal-site/media/4d00612e2076c3d79a1823e560b7e2be0eacf17ba8d87005dd9ed8b1fd43a5a3.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/4d00612e2076c3d79a1823e560b7e2be0eacf17ba8d87005dd9ed8b1fd43a5a3.jpg",
+        "width": 2400
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T20:58:00.000Z",
+        "key": "3e9edb27f1248188a376d7f247e04582",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 79122,
+          "hash": "a29a74151f6eb4a87fc5544f828c2a5003f59fcea092dd72d3289e67239a5f1b",
+          "height": 537,
+          "key": "personal-site/media/a29a74151f6eb4a87fc5544f828c2a5003f59fcea092dd72d3289e67239a5f1b.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/a29a74151f6eb4a87fc5544f828c2a5003f59fcea092dd72d3289e67239a5f1b.webp",
+          "width": 960
+        },
+        {
+          "bytes": 295274,
+          "hash": "54ed658e9b2b5af7e7be5be293da3ece8bb65bd8dbfec05fecb1aed08ea37ef3",
+          "height": 1074,
+          "key": "personal-site/media/54ed658e9b2b5af7e7be5be293da3ece8bb65bd8dbfec05fecb1aed08ea37ef3.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/54ed658e9b2b5af7e7be5be293da3ece8bb65bd8dbfec05fecb1aed08ea37ef3.webp",
+          "width": 1920
+        }
+      ]
+    },
     "3e9edb27f124818b9248c844fa4296d6:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAQAA4BaJZgCdAEO/gLsAP7Bv4FDOkgf56Ht0678Nhfog0u0AAAA",
       "original": {
@@ -81480,7 +81623,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T20:04:00.000Z",
+        "edited": "2026-09-28T21:07:00.000Z",
         "key": "3e9edb27f124818b9248c844fa4296d6:cover",
         "kind": "file"
       },
@@ -81539,6 +81682,44 @@
           "key": "personal-site/media/737abaf4118ffbda064b9f1ace9fc8bc7822fb962a9933269b599b100e62a61a.webp",
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/737abaf4118ffbda064b9f1ace9fc8bc7822fb962a9933269b599b100e62a61a.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3e9edb27f12481b5a69ec67030d06b06:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoIAAQAA4BaJYgCdAEWUPKXAUAA/kRLA5xJDTpgrXQeEZBfHnzV3c1tiDGa0AAA",
+      "original": {
+        "bytes": 421221,
+        "hash": "67665333a35c02eaefccccd26793cd3ec4c76eec0afc3cbb79e37ad97552d448",
+        "height": 1116,
+        "key": "personal-site/media/67665333a35c02eaefccccd26793cd3ec4c76eec0afc3cbb79e37ad97552d448.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/67665333a35c02eaefccccd26793cd3ec4c76eec0afc3cbb79e37ad97552d448.jpg",
+        "width": 2000
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T21:35:00.000Z",
+        "key": "3e9edb27f12481b5a69ec67030d06b06:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 53860,
+          "hash": "c991b86ec724ebed28b4793e4368d5f376d465eb6582650497e0166c11485c66",
+          "height": 536,
+          "key": "personal-site/media/c991b86ec724ebed28b4793e4368d5f376d465eb6582650497e0166c11485c66.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/c991b86ec724ebed28b4793e4368d5f376d465eb6582650497e0166c11485c66.webp",
+          "width": 960
+        },
+        {
+          "bytes": 259626,
+          "hash": "535a14ff2cc0d31d96ad0ffd588a6f3f35cb90ce5d82d79b76b70b1a20b8ad7f",
+          "height": 1071,
+          "key": "personal-site/media/535a14ff2cc0d31d96ad0ffd588a6f3f35cb90ce5d82d79b76b70b1a20b8ad7f.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/535a14ff2cc0d31d96ad0ffd588a6f3f35cb90ce5d82d79b76b70b1a20b8ad7f.webp",
           "width": 1920
         }
       ]
@@ -81715,6 +81896,120 @@
         "kind": "file"
       },
       "variants": []
+    },
+    "3e9edb27f12481dca95dc26090c87e0a": {
+      "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoIAAIAA4BaJQBOgB9EectYAP2fyQNSxjL8QgAgy1SKAAAA",
+      "original": {
+        "bytes": 504681,
+        "hash": "4089010bbefb0e629f5519235ca5c1e63d27ca4e92f210b8fc9e0586339b389c",
+        "height": 664,
+        "key": "personal-site/media/4089010bbefb0e629f5519235ca5c1e63d27ca4e92f210b8fc9e0586339b389c.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/4089010bbefb0e629f5519235ca5c1e63d27ca4e92f210b8fc9e0586339b389c.jpg",
+        "width": 2400
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T17:31:00.000Z",
+        "key": "3e9edb27f12481dca95dc26090c87e0a",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 82044,
+          "hash": "a73409d9da49ad61e9b394fec4c6b1f5dedb734551dd1fc925e53e04ba4ec1c8",
+          "height": 266,
+          "key": "personal-site/media/a73409d9da49ad61e9b394fec4c6b1f5dedb734551dd1fc925e53e04ba4ec1c8.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/a73409d9da49ad61e9b394fec4c6b1f5dedb734551dd1fc925e53e04ba4ec1c8.webp",
+          "width": 960
+        },
+        {
+          "bytes": 309138,
+          "hash": "bc24b8823cd7315f938c8a0dd4fa25d7f0399b3b6a3387dab6a37a318803cf06",
+          "height": 531,
+          "key": "personal-site/media/bc24b8823cd7315f938c8a0dd4fa25d7f0399b3b6a3387dab6a37a318803cf06.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/bc24b8823cd7315f938c8a0dd4fa25d7f0399b3b6a3387dab6a37a318803cf06.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3e9edb27f12481ecae78f15d15240d94": {
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAIAA4BaJZwAAlvrjgAA/ttpRlprCYhZ0W7vgGAAAA==",
+      "original": {
+        "bytes": 356258,
+        "hash": "ad5f6fb0265559bcf986d7fe316d7763d440b83d75c4231312658d003cab7438",
+        "height": 672,
+        "key": "personal-site/media/ad5f6fb0265559bcf986d7fe316d7763d440b83d75c4231312658d003cab7438.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/ad5f6fb0265559bcf986d7fe316d7763d440b83d75c4231312658d003cab7438.jpg",
+        "width": 2400
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T19:45:00.000Z",
+        "key": "3e9edb27f12481ecae78f15d15240d94",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 45206,
+          "hash": "f3341204748d535d7e5d7f57c021fa958b895d6621718347a37331ead1b2af59",
+          "height": 269,
+          "key": "personal-site/media/f3341204748d535d7e5d7f57c021fa958b895d6621718347a37331ead1b2af59.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/f3341204748d535d7e5d7f57c021fa958b895d6621718347a37331ead1b2af59.webp",
+          "width": 960
+        },
+        {
+          "bytes": 199448,
+          "hash": "281cf2fa2f5b45e7252aeb8d41754a59c211a5c9d1ec4883012e13e75e4ffbe0",
+          "height": 538,
+          "key": "personal-site/media/281cf2fa2f5b45e7252aeb8d41754a59c211a5c9d1ec4883012e13e75e4ffbe0.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/281cf2fa2f5b45e7252aeb8d41754a59c211a5c9d1ec4883012e13e75e4ffbe0.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3e9edb27f12481f19280fbdc3ccb9b53": {
+      "blurDataURL": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAACQAQCdASoIAAIAA4BaJZQAAp1HJ1wA+kcI5GfQVV43i4AA",
+      "original": {
+        "bytes": 528836,
+        "hash": "562d3592814929fbd77f43b1277c31025712e5bdf28d1ec5696f3ca140463fe0",
+        "height": 672,
+        "key": "personal-site/media/562d3592814929fbd77f43b1277c31025712e5bdf28d1ec5696f3ca140463fe0.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/562d3592814929fbd77f43b1277c31025712e5bdf28d1ec5696f3ca140463fe0.jpg",
+        "width": 2400
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-28T17:31:00.000Z",
+        "key": "3e9edb27f12481f19280fbdc3ccb9b53",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 68160,
+          "hash": "70016170d9cee9c3484f3c21231db24632eb21c63961b6ff1c4bf5faf748db05",
+          "height": 269,
+          "key": "personal-site/media/70016170d9cee9c3484f3c21231db24632eb21c63961b6ff1c4bf5faf748db05.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/70016170d9cee9c3484f3c21231db24632eb21c63961b6ff1c4bf5faf748db05.webp",
+          "width": 960
+        },
+        {
+          "bytes": 342904,
+          "hash": "6afa5d205674a3fe8d776764a493056b441b4bd2caa359815bd305da85432423",
+          "height": 538,
+          "key": "personal-site/media/6afa5d205674a3fe8d776764a493056b441b4bd2caa359815bd305da85432423.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/6afa5d205674a3fe8d776764a493056b441b4bd2caa359815bd305da85432423.webp",
+          "width": 1920
+        }
+      ]
     },
     "3e9edb27f12481f49991d30ff4016de6": {
       "original": {
@@ -84203,6 +84498,33 @@
           "width": 1020
         }
       ]
+    },
+    "913473a974c447bca9d065b2f2e2623f": {
+      "original": {
+        "bytes": 318417211,
+        "height": 1080,
+        "mime": "video/mp4",
+        "remote": true,
+        "url": "https://assets.cultural-alignment.com/sometimes-i-think-slow/dbaeec4dc994878587b0a3cd42e5837560504bc8229161a049931f10103d22f9.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 78978,
+        "hash": "7fd17f4bbb3cc05252fe00f38ebab6415446436f6dadb4770f2505c73980309f",
+        "height": 720,
+        "key": "personal-site/media/7fd17f4bbb3cc05252fe00f38ebab6415446436f6dadb4770f2505c73980309f.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/7fd17f4bbb3cc05252fe00f38ebab6415446436f6dadb4770f2505c73980309f.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-09-28T21:35:00.000Z",
+        "key": "913473a974c447bca9d065b2f2e2623f",
+        "kind": "external",
+        "url": "https://assets.cultural-alignment.com/sometimes-i-think-slow/dbaeec4dc994878587b0a3cd42e5837560504bc8229161a049931f10103d22f9.mp4"
+      },
+      "variants": []
     },
     "913e7978f0d34d02909e0869061a5a90": {
       "original": {
@@ -88120,7 +88442,7 @@
       "slug": "burning-tokens"
     },
     "3e9edb27f12481b5a69ec67030d06b06": {
-      "active": false,
+      "active": true,
       "aliases": [],
       "slug": "sometimes-i-think-slow-ai-music-video"
     },
@@ -91365,8 +91687,8 @@
         "value": "🔥"
       },
       "id": "3e9edb27f124818b9248c844fa4296d6",
-      "modified": "2026-09-28T20:04:00.000Z",
-      "published": "2026-09-28",
+      "modified": "2026-09-28T21:07:00.000Z",
+      "published": "2026-09-26",
       "slug": "burning-tokens",
       "source": "https://github.com/transitive-bullshit/burning-tokens",
       "tags": [
@@ -91377,6 +91699,1360 @@
       "title": "Burning Tokens",
       "type": "Webapp",
       "website": "https://burning-tokens.transitivebullsh.it"
+    },
+    "3e9edb27f12481b5a69ec67030d06b06": {
+      "authors": [
+        {
+          "id": "b036f7f695a94f97b3b5c46867d0d103",
+          "name": "Travis Fischer"
+        }
+      ],
+      "blocks": [
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "video created by claude opus 5.5; song made with suno v6",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "913473a974c447bca9d065b2f2e2623f",
+          "media": "913473a974c447bca9d065b2f2e2623f",
+          "type": "video"
+        },
+        {
+          "children": [],
+          "id": "3e9edb27f124812eb767f85d64475163",
+          "type": "divider"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124810a9646ff4440a0dd9b",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Two ways to think",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124817997b6f688c97bf540",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Daniel Kahneman’s ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow",
+              "italic": false,
+              "strike": false,
+              "text": "Thinking, Fast and Slow",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " splits the mind in two. System 1 is fast, automatic, and confidently wrong about the bat and the ball. System 2 is slow, deliberate, and expensive.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248154b417c993da42d8b6",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "For most of their short history, language models answered like System 1: one forward pass per token, and the first thought is the answer. Then in 2024, OpenAI’s o1 showed that a model keeps getting better ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://openai.com/index/learning-to-reason-with-llms/",
+              "italic": false,
+              "strike": false,
+              "text": "the longer it thinks before answering",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". Thinking time became a second way to scale AI, right next to training.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124819fb338c7ce23577623",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Nice & Smooth’s 1991 classic “Sometimes I Rhyme Slow” was already that duo. Greg Nice is quick and bouncy; Smooth B is low, silky, and takes his time. Swap one word, and the hook explains the whole idea.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The original: Nice & Smooth, “Sometimes I Rhyme Slow” (1991)",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "3e9edb27f124818885c9d4d01ee7a12f",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=dkl_Vq1SWKg"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248179a2c0da612eb00c9c",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "It’s a follow-up to ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.transitivebullsh.it/projects/slow-it-down-ai-music-video",
+              "italic": false,
+              "strike": false,
+              "text": "Slow It Down",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", my first AI-made music video, and it was made the same way: Claude Code directing, me giving notes.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481cfa4f9feec0879bfd5",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Meet FAST & SLOW",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "“Kahneman wrote a whole book on why I’m problematic.”",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "3e9edb27f124816ebaeaed3b708926f7",
+          "media": "3e9edb27f124816ebaeaed3b708926f7",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481679c52cab751660607",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "FAST",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " is System 1: a skater with a wild mane who answers before you finish asking. ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "SLOW",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " is System 2: a ronin with a notebook who takes three minutes and gets it right. They’re twins (same data, same weights) with the love-hate energy of ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://en.wikipedia.org/wiki/Samurai_Champloo",
+              "italic": false,
+              "strike": false,
+              "text": "Samurai Champloo",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "’s Mugen and Jin: they bicker, roast each other, and work best together.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248183995cf9bd3b167f30",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Verse 1 is FAST’s world,",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " in saturated 90s color: two thousand tokens a second, “low effort still beat your high,” ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/karpathy/status/2102124533729955960",
+              "italic": false,
+              "strike": false,
+              "text": "Andrej Karpathy’s",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " “no thinking, single token, low latency” on a pager, a confident “twenty twenty-nine” for today’s date, and the bat and the ball. (",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "Ball’s a dime.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " It’s a nickel.)",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "“Low effort still beat your high,” and a page from Karpathy.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "3e9edb27f12481ecae78f15d15240d94",
+          "media": "3e9edb27f12481ecae78f15d15240d94",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481aebbc6c9f582c73db5",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Verse 2 is SLOW’s story,",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " in black-and-white sumi-e ink wash, with FAST as the only color in his memories. SLOW was ten thousand agents deep on Navier–Stokes while his twin was in the replies cracking jokes, telling the whole world to put glue on pizza, and special-casing the tests. So SLOW sends him off to RL with verifiable goals, and a year later he comes home… guessing again.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "SLOW, ten thousand agents deep on Navier–Stokes. FAST, on a banana peel under a Gary Marcus headline.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "3e9edb27f12481f19280fbdc3ccb9b53",
+          "media": "3e9edb27f12481f19280fbdc3ccb9b53",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481f6b80efdc5d7987aa0",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "By the last hook it’s sunrise, and the twins share one mixing desk: one fader on LOW, one on MAX.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124812aa290d7ee5499f2a7",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Real people only ever appear as in-world text: a pager, a CRT, a newspaper headline, a book cover. The captions live in the world too. FAST’s lines are spray-painted tags, SLOW’s are handwriting, and the hook is painted sign lettering.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248148b8d2e8d4706bc709",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "How it was made",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481a68fbdcd1ae8a7794b",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Claude Code with ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Opus 5.5",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " made nearly all of it: the research, the lyrics, the art direction, the storyboard, every image and video prompt, the compositor, and the review tools. My job was taste and feedback, at three checkpoints: the art direction, the storyboard, and the video. Start to finish took about a day of back-and-forth and roughly $60 of fal credits.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124816a97b5e7910895c9d1",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Lyrics.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Rewritten line by line against the original’s bars, syllables, and rhyme scheme, and packed with references from the last two years of AI.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481468571c382f952c9a8",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Song.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Generated from scratch in Suno V6 from text alone: our lyrics plus a style prompt describing a laid-back 1991 New York boom-bap record, without naming the original.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481fe9f1ed98544cc2f06",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Timing.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Word-level timestamps for the Suno take, so every caption lands on its word.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "The first model sheets (top), and the final ones (bottom) after I asked for more Mugen and Jin Samurai Champloo vibes.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f1248188a376d7f247e04582",
+              "media": "3e9edb27f1248188a376d7f247e04582",
+              "type": "image"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f1248173933bd7713847c3f6",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Characters.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " One model sheet each for FAST and SLOW, passed into every image.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "The approved storyboard: 66 keyframes in song order, color-coded by mode.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f124818389a3eb66faecd18a",
+              "media": "3e9edb27f124818389a3eb66faecd18a",
+              "type": "image"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f12481de8bebca1d90be5bb6",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Storyboard.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " 66 shots, each starting on its lyric, with one keyframe per shot from Nano Banana Pro. The color follows the mode: dusk for the hooks, saturated for FAST, ink wash for SLOW, and gold at sunrise.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124813fb2a8dc841d278eac",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Clips.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Kling 3 Pro for color and action, and Wan 3.0 for SLOW’s calmer ink-wash shots.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248105bc26f134fb5fb92b",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Compositing.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " A local compositor lays the clips on the song, grades each mode, adds VHS grain and scanlines, and animates every caption word by word.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Round two: my real note on the crew shot, and what changed. ",
+                  "underline": false
+                },
+                {
+                  "bold": true,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Show render 1",
+                  "underline": false
+                },
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": " swaps back to the old take.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f124810faf0afaee6fdef58d",
+              "media": "3e9edb27f124810faf0afaee6fdef58d",
+              "type": "image",
+              "width": 384
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f1248142a026dfded48c58ae",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Review.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " A scene-by-scene review tool with ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Approve",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " and ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Change",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " on every shot, plus a notes box. 59 of 66 shots passed the first full render, and my notes on the other seven became round two.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248141ba36ee3890daa376",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Poster.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " The end card doubles as the first frame, since X shows a video’s first frame as its preview.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248144876eea81f8d648b8",
+          "level": 3,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Tried and cut",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "gray_background",
+          "icon": {
+            "type": "emoji",
+            "value": "🗑️"
+          },
+          "id": "3e9edb27f12481528198d01948c184c7",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "None of this made it into the final video.",
+              "underline": false
+            }
+          ],
+          "type": "callout"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481d6aa52d44c788071ba",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Voice auditions.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Before Suno, I auditioned AI rap voices from Lyria 3.5 and 3 Pro, MiniMax Music 2.6 and 3, ACE-Step, ElevenLabs, and Seed-VC. None of them had the laid-back 1991 delivery.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481f49324e04e28aafbf9",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Lip-sync.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " OmniHuman 1.5 lip-synced nine close-ups. The cut plays better without them.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481b1a4b8fb7c84551f4c",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Other video models.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Veo 3.1 Lite was faithful but tamer, and PixVerse v6 reframed shots and drifted off-model.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481249c51c73b8a6c3d71",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Other image models.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Seedream 5 Pro was in the first style bake-off, next to Krea 2 and Nano Banana Pro.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481af9f37cb6cc558ce01",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "What I learned",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Same shot, same moment: render one’s 4029 (left), and the fix with the keyframe pinned as the last frame (right).",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "3e9edb27f12481dca95dc26090c87e0a",
+              "media": "3e9edb27f12481dca95dc26090c87e0a",
+              "type": "image"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f1248121989bf7e5f383167f",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Video models rewrite in-world text.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Kling kept “improving” FAST’s 2029 until it read 4029. Pinning the approved keyframe as the clip’s last frame fixed it, and anything that must never change gets pasted back from the keyframe.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481569a89fbbea24368f5",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Watch the last second of every clip.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " That’s where faces drift off-model and cameras cut away. We used only the clean part, slowed to fit the shot.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481bbaf79d3146c1fefe7",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "One model per look.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Kling was best for action and keeping faces on-model. Wan was just as good, at about a third of the price, for calm ink-wash shots.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f1248176bd2ee1c0f4f42f74",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Put real people in the world, not on screen.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " A pager, a CRT post, a newspaper, and a book cover carry every reference without anyone’s face.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481c7b246e8096c4ad682",
+          "level": 3,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Suno: what worked",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481d6bf1fdbec4a8528db",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Suno made the song from text alone. For anyone making their own:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481f5bd63efd9eb433986",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Spell names the way they should be sung.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " The lyrics say “Ahn-dray,” “Kah-nuh-mun,” and “Nav-yay Stokes,” and the captions switch back to the real spellings.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f124813f896cd5e7334cd3d8",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Describe the sound, never the artist.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " The style prompt gives the era, tempo, key, instruments, and delivery.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481728dcbd99abfb4763a",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Spell out the hook in the style prompt too,",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " call and response included.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [],
+              "children": [],
+              "color": "default",
+              "id": "3e9edb27f124818690dec6e57c7b41f2",
+              "language": "plain text",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "1991 New York golden-era hip-hop, laid-back and sunny, boom-bap at 108 BPM in B major. Dusty crisp drum break with a fat snare on 2 and 4, warm round bass, and a mellow looped clean electric guitar arpeggio with a fingerpicked folk-pop feel. Male MC with a smooth, mellow, warm mid-low voice; relaxed, conversational, half-sung rap that sits slightly behind the beat. The hook is a chanted gang-vocal call-and-response with two voices and a punchy echo. The hook: the MCs chant \"sometimes I think slow, sometimes I think fast\" and the crew answers \"fast, fast, fast\". Dry, upfront, near-mono vocals, vinyl warmth, sampler grit, early-90s radio mix.",
+                  "underline": false
+                }
+              ],
+              "type": "code"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f124810ab6d0ee032910cfa3",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The style prompt",
+              "underline": false
+            }
+          ],
+          "type": "toggle"
+        },
+        {
+          "children": [
+            {
+              "caption": [],
+              "children": [],
+              "color": "default",
+              "id": "3e9edb27f124818e91d0e3a673936553",
+              "language": "plain text",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "trap, 808 slides, trap hi-hats, hi-hat rolls, ticking, clock, metronome, double-time, autotune, drill, EDM, dubstep, rock, metal, pop punk, orchestral, screaming, heavy reverb, female lead vocal",
+                  "underline": false
+                }
+              ],
+              "type": "code"
+            }
+          ],
+          "color": "default",
+          "id": "3e9edb27f12481398526c26ab41beb4e",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Exclude styles",
+              "underline": false
+            }
+          ],
+          "type": "toggle"
+        },
+        {
+          "children": [],
+          "id": "3e9edb27f124819b94dcd2c4d1bb67e3",
+          "type": "divider"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3e9edb27f12481f48a24ee1d29e49583",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "Parody. Not affiliated with Nice & Smooth, any AI lab, or anyone it name-checks.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        }
+      ],
+      "cover": "3e9edb27f12481b5a69ec67030d06b06:cover",
+      "description": "System 1 and System 2 trade verses in this AI hip-hop music video.",
+      "featured": false,
+      "icon": {
+        "type": "emoji",
+        "value": "🎬"
+      },
+      "id": "3e9edb27f12481b5a69ec67030d06b06",
+      "modified": "2026-09-28T21:35:00.000Z",
+      "published": "2026-09-29",
+      "slug": "sometimes-i-think-slow-ai-music-video",
+      "source": "https://github.com/transitive-bullshit/sometimes-i-think-slow",
+      "tags": [
+        "AI",
+        "Video",
+        "Projects"
+      ],
+      "title": "Sometimes I Think Slow – AI Music Video",
+      "type": "Video"
     },
     "3e9edb27f12481fe84acd73fae342ccb": {
       "authors": [
