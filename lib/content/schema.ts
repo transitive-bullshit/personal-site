@@ -114,7 +114,17 @@ export const mediaSourceSchema = z.object({
 export const mediaSchema = z.object({
   source: mediaSourceSchema,
   pipelineVersion: z.number().int().positive(),
-  original: assetSchema,
+  original: z.union([
+    assetSchema,
+    z.object({
+      remote: z.literal(true),
+      url: httpUrlSchema,
+      mime: z.string().startsWith('video/'),
+      bytes: z.number().int().positive(),
+      width: z.number().int().positive(),
+      height: z.number().int().positive()
+    })
+  ]),
   variants: z.array(assetSchema),
   poster: assetSchema.optional(),
   blurDataURL: z

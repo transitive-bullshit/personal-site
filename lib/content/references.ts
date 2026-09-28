@@ -97,6 +97,11 @@ export function validateSnapshot(snapshot: Snapshot) {
       ...media.variants,
       ...(media.poster ? [media.poster] : [])
     ]) {
+      if ('remote' in asset) {
+        if (media.source.kind !== 'external' || media.source.url !== asset.url)
+          throw new Error('Invalid remote video source')
+        continue
+      }
       if (
         !asset.key.includes(asset.hash) ||
         !new URL(asset.url).pathname.endsWith('/' + asset.key)

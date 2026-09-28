@@ -8,6 +8,7 @@ const snapshot = await readSnapshot()
 if (!snapshot) throw new Error('No content snapshot found')
 const storage = new MediaStorage(storageConfig())
 for (const media of Object.values(snapshot.media)) {
+  if ('remote' in media.original) continue
   if (!media.original.mime.startsWith('video/')) continue
   if (
     media.pipelineVersion === MEDIA_PIPELINE_VERSION &&

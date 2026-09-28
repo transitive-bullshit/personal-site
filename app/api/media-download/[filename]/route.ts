@@ -2,10 +2,11 @@ import { content } from '@/lib/content/load'
 
 // Only synced originals are downloadable; this is not an arbitrary URL proxy.
 const originals = new Map(
-  Object.values(content.media).map(({ original }) => [
-    original.key.split('/').at(-1),
-    original
-  ])
+  Object.values(content.media).flatMap(({ original }) =>
+    'remote' in original
+      ? []
+      : [[original.key.split('/').at(-1), original] as const]
+  )
 )
 
 export async function GET(

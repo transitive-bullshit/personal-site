@@ -65,6 +65,24 @@ function render(value: unknown) {
 }
 
 describe('article videos', () => {
+  it('renders hotlinked originals with dimensions and a stored poster', () => {
+    const url = 'https://assets.cultural-alignment.com/example/video.mp4'
+    const html = render({
+      ...media,
+      source: { ...media.source, kind: 'external', url },
+      original: {
+        remote: true,
+        url,
+        mime: 'video/mp4',
+        bytes: 318417211,
+        width: 1920,
+        height: 1080
+      }
+    })
+    expect(html).toContain(`src="${url}"`)
+    expect(html).toContain('aspect-ratio:1920 / 1080')
+    expect(html).toContain(`poster="${poster.url}"`)
+  })
   it('includes the native ratio and poster in initial server HTML', () => {
     const html = render(media)
     expect(html).toContain('width="900" height="1600"')

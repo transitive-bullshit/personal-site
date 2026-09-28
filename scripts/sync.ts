@@ -116,21 +116,29 @@ export async function main() {
         source: { ...contract, apiVersion: API_VERSION, propertyIds }
       }
     }
-    const articleInput = syncArticles
-      ? await progress.run('Discover articles', () =>
-          discover(sourceContract, previous?.source, previous?.routes ?? {})
-        )
-      : undefined
-    const projectInput = syncProjects
-      ? await progress.run('Discover projects', () =>
-          discover(
-            projectSourceContract,
-            previous?.projectSource,
-            previous?.projectRoutes ?? {},
-            projectProperties
+    // Settle both tasks before propagating failures so progress cleanup cannot
+    // run while the other discovery task is still active.
+    const [articleDiscovery, projectDiscovery] = await Promise.allSettled([
+      syncArticles
+        ? progress.run('Discover articles', () =>
+            discover(sourceContract, previous?.source, previous?.routes ?? {})
           )
-        )
-      : undefined
+        : undefined,
+      syncProjects
+        ? progress.run('Discover projects', () =>
+            discover(
+              projectSourceContract,
+              previous?.projectSource,
+              previous?.projectRoutes ?? {},
+              projectProperties
+            )
+          )
+        : undefined
+    ])
+    if (articleDiscovery.status === 'rejected') throw articleDiscovery.reason
+    if (projectDiscovery.status === 'rejected') throw projectDiscovery.reason
+    const articleInput = articleDiscovery.value
+    const projectInput = projectDiscovery.value
     const routes = articleInput?.routes ?? previous?.routes ?? {}
     const projectRoutes = projectInput?.routes ?? previous?.projectRoutes ?? {}
     const slugConflicts = crossCollectionSlugWarnings(routes, projectRoutes)

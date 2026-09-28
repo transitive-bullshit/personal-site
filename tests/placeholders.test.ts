@@ -99,6 +99,8 @@ it('resumes completed placeholders by content hash without fetching and rejects 
     expect(snapshot.media.cover.blurDataURL).toBe(saved.blurDataURL)
     expect(fetcher).not.toHaveBeenCalled()
     const changed = { media: { cover: fixture('cover') } }
+    if ('remote' in changed.media.cover.original)
+      throw new Error('Expected stored image')
     changed.media.cover.original.hash = 'b'.repeat(64)
     await expect(
       backfillPlaceholders(changed, { dryRun: false, cache, fetcher })

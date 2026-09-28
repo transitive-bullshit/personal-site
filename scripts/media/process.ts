@@ -1,5 +1,6 @@
 import sharp from 'sharp'
 import { inspectVideo } from './video'
+import { inspectRemoteVideo, isHotlinkedVideo } from './remote-video'
 import type { MediaCache } from './cache'
 import { setTimeout as delay } from 'node:timers/promises'
 import type { Media, MediaSource } from '../../lib/content/schema'
@@ -227,6 +228,8 @@ export class MediaImporter {
     reusedSources: 0,
     downloaded: 0,
     downloadedBytes: 0,
+    hotlinked: 0,
+    inspectedBytes: 0,
     planned: 0
   }
   constructor(
@@ -257,7 +260,11 @@ export class MediaImporter {
     const old = canReuseMedia(published, source, this.options.force)
       ? published
       : this.cache?.entries[source.key]
-    if (canReuseMedia(old, source, this.options.force)) {
+    const hotlinked = source.kind === 'external' && isHotlinkedVideo(url)
+    if (
+      canReuseMedia(old, source, this.options.force) &&
+      hotlinked === Boolean(old && 'remote' in old.original)
+    ) {
       this.media[source.key] = old!
       this.stats.reusedSources++
       return source.key
@@ -280,6 +287,36 @@ export class MediaImporter {
         variants: []
       }
       this.stats.planned++
+      return source.key
+    }
+    if (hotlinked) {
+      const video = await inspectRemoteVideo(url, fetcher)
+      const poster = await this.storage.publish(
+        video.poster.data,
+        'image/webp',
+        'webp',
+        {
+          width: video.poster.info.width,
+          height: video.poster.info.height
+        }
+      )
+      this.media[source.key] = {
+        source,
+        pipelineVersion: MEDIA_PIPELINE_VERSION,
+        original: {
+          remote: true,
+          url,
+          mime: video.mime,
+          bytes: video.bytes,
+          width: video.width,
+          height: video.height
+        },
+        variants: [],
+        poster
+      }
+      this.stats.hotlinked++
+      this.stats.inspectedBytes += video.inspectedBytes
+      await this.cache?.save(this.media[source.key]!)
       return source.key
     }
     const { bytes, mime } = await download(url, refresh, fetcher)

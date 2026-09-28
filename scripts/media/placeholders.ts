@@ -36,9 +36,12 @@ export async function backfillPlaceholders(
       const media = images[cursor++]!
       await run(media.source.key, async () => {
         try {
+          if ('remote' in media.original) return
           const cached = options.cache?.entries[media.source.key]
           if (
-            cached?.original.hash === media.original.hash &&
+            cached &&
+            !('remote' in cached.original) &&
+            cached.original.hash === media.original.hash &&
             cached.blurDataURL
           ) {
             media.blurDataURL = cached.blurDataURL

@@ -9,11 +9,11 @@ const exec = promisify(execFile)
 
 // Decode only the first frame. FFmpeg applies rotation before the filter;
 // square pixels make the saved dimensions match the browser's display ratio.
-export async function inspectVideo(bytes: Buffer) {
+export async function inspectVideo(bytes: Buffer | URL) {
   const directory = await mkdtemp(join(tmpdir(), 'personal-site-video-'))
   try {
-    const input = join(directory, 'input')
-    await writeFile(input, bytes)
+    const input = bytes instanceof URL ? bytes.href : join(directory, 'input')
+    if (Buffer.isBuffer(bytes)) await writeFile(input, bytes)
     const { stdout } = await exec(
       'ffmpeg',
       [
@@ -21,7 +21,7 @@ export async function inspectVideo(bytes: Buffer) {
         '-v',
         'error',
         '-protocol_whitelist',
-        'file,pipe',
+        bytes instanceof URL ? 'http,tcp,pipe' : 'file,pipe',
         '-i',
         input,
         '-map',
