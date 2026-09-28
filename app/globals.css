@@ -338,6 +338,7 @@ summary {
 .article-body figcaption,
 .article-cover > figcaption {
   text-align: center;
+  text-wrap: pretty;
   font-size: 13px;
   line-height: 1.6;
   color: var(--muted-foreground);
