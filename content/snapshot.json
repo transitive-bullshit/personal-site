@@ -81528,7 +81528,7 @@
         "width": 1280
       },
       "source": {
-        "edited": "2026-09-28T16:49:00.000Z",
+        "edited": "2026-09-28T23:42:00.000Z",
         "key": "3e9edb27f1248178b549d782563c6960",
         "kind": "file"
       },
@@ -88825,13 +88825,14 @@
       ],
       "cover": "3c5edb27f12480a59a4bd520e5721e5e:cover",
       "description": "Python’s scikit-learn, with a typed Node.js API.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "media": "3c5edb27f12480a59a4bd520e5721e5e:icon",
         "type": "image"
       },
       "id": "3c5edb27f12480a59a4bd520e5721e5e",
-      "modified": "2026-09-28T16:01:00.000Z",
+      "modified": "2026-09-28T23:44:00.000Z",
+      "needsImageSync": true,
       "published": "2023-03-14",
       "slug": "scikit-learn-ts",
       "source": "https://github.com/transitive-bullshit/scikit-learn-ts",
@@ -89124,13 +89125,14 @@
       ],
       "cover": "3c5edb27f12480e39f5def11519f5553:cover",
       "description": "Roast your Twitter profile with AI-generated Severance wellness memes.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "media": "3c5edb27f12480e39f5def11519f5553:icon",
         "type": "image"
       },
       "id": "3c5edb27f12480e39f5def11519f5553",
-      "modified": "2026-09-28T16:01:00.000Z",
+      "modified": "2026-09-28T23:44:00.000Z",
+      "needsImageSync": true,
       "published": "2025-03-08",
       "slug": "severance-wellness-memes",
       "source": "https://github.com/transitive-bullshit/severance-wellness-memes",
@@ -89386,13 +89388,14 @@
       ],
       "cover": "3ddedb27f124815ba865d0f6b5b759f5:cover",
       "description": "An embeddable React terminal with CRT glow, scanlines, and a sandboxed browser shell.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "media": "3ddedb27f124815ba865d0f6b5b759f5:icon",
         "type": "image"
       },
       "id": "3ddedb27f124815ba865d0f6b5b759f5",
-      "modified": "2026-09-28T15:59:00.000Z",
+      "modified": "2026-09-28T23:44:00.000Z",
+      "needsImageSync": true,
       "published": "2026-09-12",
       "slug": "retro-web-terminal",
       "source": "https://github.com/transitive-bullshit/retro-web-terminal",
@@ -89516,17 +89519,7 @@
       ],
       "blocks": [
         {
-          "caption": [],
-          "children": [],
-          "id": "3e9edb27f1248178b549d782563c6960",
-          "media": "3e9edb27f1248178b549d782563c6960",
-          "type": "video"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "ef439f360893405eab7b5c7b8197efcf",
-          "richText": [
+          "caption": [
             {
               "bold": false,
               "code": false,
@@ -89537,7 +89530,10 @@
               "underline": false
             }
           ],
-          "type": "paragraph"
+          "children": [],
+          "id": "3e9edb27f1248178b549d782563c6960",
+          "media": "3e9edb27f1248178b549d782563c6960",
+          "type": "video"
         },
         {
           "children": [],
@@ -89555,7 +89551,8 @@
         "value": "🎬"
       },
       "id": "3ddedb27f1248186b064c993b8e155c6",
-      "modified": "2026-09-28T16:49:00.000Z",
+      "modified": "2026-09-28T23:42:00.000Z",
+      "needsImageSync": true,
       "published": "2026-09-05",
       "slug": "pluribus-openai-parody",
       "tags": [
@@ -91727,11 +91724,6 @@
         },
         {
           "children": [],
-          "id": "3e9edb27f124812eb767f85d64475163",
-          "type": "divider"
-        },
-        {
-          "children": [],
           "color": "default",
           "id": "3e9edb27f124810a9646ff4440a0dd9b",
           "level": 2,
@@ -93042,7 +93034,8 @@
         "value": "🎬"
       },
       "id": "3e9edb27f12481b5a69ec67030d06b06",
-      "modified": "2026-09-28T22:07:00.000Z",
+      "modified": "2026-09-28T23:41:00.000Z",
+      "needsImageSync": true,
       "published": "2026-09-29",
       "slug": "sometimes-i-think-slow-ai-music-video",
       "source": "https://github.com/transitive-bullshit/sometimes-i-think-slow",
@@ -93079,11 +93072,6 @@
           "id": "3e9edb27f12481c7a330f259cdf39818",
           "media": "3e9edb27f12481c7a330f259cdf39818",
           "type": "video"
-        },
-        {
-          "children": [],
-          "id": "3e9edb27f1248140b90bc922f4446ec9",
-          "type": "divider"
         },
         {
           "children": [],
@@ -95683,7 +95671,8 @@
         "value": "🎬"
       },
       "id": "3e9edb27f12481fe84acd73fae342ccb",
-      "modified": "2026-09-28T22:08:00.000Z",
+      "modified": "2026-09-28T23:42:00.000Z",
+      "needsImageSync": true,
       "published": "2026-09-28",
       "slug": "slow-it-down-ai-music-video",
       "source": "https://github.com/transitive-bullshit/slow-it-down",

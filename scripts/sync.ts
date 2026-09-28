@@ -47,7 +47,7 @@ export async function main() {
   })
   if (values.help) {
     console.log(
-      'pnpm content:sync [--only articles|projects] [--dry-run] [--force] [--fast] [--prune] [--accept-slug-changes]\n--fast skips images; --force re-reads every page. Recovered errors write the snapshot and exit 1.'
+      'pnpm content:sync [--only articles|projects] [--dry-run] [--force] [--fast] [--prune] [--accept-slug-changes]\n--fast skips image, video, audio, and file processing; --force re-reads every page. Recovered errors write the snapshot and exit 1.'
     )
     return
   }
@@ -176,7 +176,7 @@ export async function main() {
       routes,
       (source, url, refresh) => importer.import(source, url, refresh),
       {
-        skipImages: values.fast,
+        skipMedia: values.fast,
         reuseMedia: (key) => importer.reuse(key)
       }
     )
@@ -185,7 +185,7 @@ export async function main() {
       projectRoutes,
       (source, url, refresh) => importer.import(source, url, refresh),
       {
-        skipImages: values.fast,
+        skipMedia: values.fast,
         reuseMedia: (key) => importer.reuse(key),
         linkRoutes: routes
       }

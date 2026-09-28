@@ -87,7 +87,7 @@ type ImportMedia = (
 ) => Promise<string>
 type NormalizerOptions = {
   linkRoutes?: Record<string, RouteRecord>
-  skipImages?: boolean
+  skipMedia?: boolean
   reuseMedia?: (key: string) => boolean
 }
 
@@ -120,6 +120,11 @@ export class Normalizer {
     edited: string,
     refreshValue?: () => Promise<unknown>
   ) {
+    if (this.options.skipMedia) {
+      if (this.options.reuseMedia?.(key)) return key
+      this.warnings.push('Skipped unsynced media ' + key + ' in fast mode')
+      return undefined
+    }
     const file = fileSchema.parse(value)
     const url = file.type === 'file' ? file.file.url : file.external.url
     return this.importMedia(
@@ -139,19 +144,6 @@ export class Normalizer {
     )
   }
 
-  async image(
-    value: unknown,
-    key: string,
-    edited: string,
-    refreshValue?: () => Promise<unknown>
-  ) {
-    if (!this.options.skipImages)
-      return this.file(value, key, edited, refreshValue)
-    if (this.options.reuseMedia?.(key)) return key
-    this.warnings.push('Skipped unsynced image ' + key + ' in fast mode')
-    return undefined
-  }
-
   async icon(
     value: unknown,
     key: string,
@@ -163,14 +155,14 @@ export class Normalizer {
       return { type: 'emoji', value: z.string().parse(icon.emoji) }
     if (icon.type === 'custom_emoji') {
       const custom = z.object({ url: z.url() }).parse(icon.custom_emoji)
-      const media = await this.image(
+      const media = await this.file(
         { type: 'external', external: { url: custom.url } },
         key,
         edited
       )
       return media ? { type: 'image', media } : undefined
     }
-    const media = await this.image(value, key, edited)
+    const media = await this.file(value, key, edited)
     return media ? { type: 'image', media } : undefined
   }
 
@@ -247,7 +239,7 @@ export class Normalizer {
         .map(({ name }) => name),
       featured: z.boolean().parse(prop('Featured').checkbox),
       cover: page.cover
-        ? await this.image(
+        ? await this.file(
             page.cover,
             page.id + ':cover',
             page.last_edited_time,
@@ -423,10 +415,12 @@ export class Normalizer {
           .parse(await this.api.request('blocks/' + block.id))
         return fresh[block.type]
       }
-      const media =
-        block.type === 'image'
-          ? await this.image(data, block.id, block.last_edited_time, refresh)
-          : await this.file(data, block.id, block.last_edited_time, refresh)
+      const media = await this.file(
+        data,
+        block.id,
+        block.last_edited_time,
+        refresh
+      )
       if (!media) return undefined
       if (block.type === 'file' || block.type === 'pdf')
         return {

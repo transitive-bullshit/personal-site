@@ -27,7 +27,7 @@ Every sync mode, including `--dry-run` and `--fast`, requires this configuration
 | `pnpm content:sync --only projects` | Select projects; retain saved articles and their referenced assets. |
 | `pnpm content:sync --dry-run` | Read and validate source data without local or R2 writes. |
 | `pnpm content:sync --force` | Re-read every selected page and refresh its media, bookmarks, and tweets. |
-| `pnpm content:sync --fast` | Reuse saved images, omit new images, and defer image work to a normal sync. |
+| `pnpm content:sync --fast` | Reuse saved media, omit new images/videos/audio/files, and defer all media processing to a normal sync. |
 | `pnpm content:sync --prune` | Deactivate missing entries in the selected collections. |
 | `pnpm content:sync --accept-slug-changes` | Accept proposed paths and retain old paths as redirects. |
 | `pnpm content:videos` | Backfill saved video dimensions and posters from verified R2 originals, without fetching Notion. Requires storage configuration and FFmpeg; resumes by skipping completed videos. |
@@ -37,7 +37,7 @@ Interactive terminals show a Tasuku task list with spinners, elapsed time, and c
 
 Article and project discovery run concurrently as separate progress tasks, sharing the paced Notion request queue. Both finish before imports begin; a discovery failure stops publication. `--only` runs discovery only for the selected collection.
 
-Flags compose. `--only projects --force --fast` re-reads projects while skipping image transfers. Fast mode still imports non-image media and refreshes bookmark text and tweet data when needed.
+Flags compose. `--only projects --force --fast` re-reads projects while skipping all media transfers and video inspection. Fast mode retains saved media even when its source has changed, omits media without a saved asset, and refreshes bookmark text and tweet data when needed. YouTube/Vimeo embeds remain available because they require no media import. The existing `needsImageSync` marker also tracks deferred video, audio, and file work so a later normal sync revisits these entries.
 
 Dry runs still perform Notion discovery, selected page reads, public image-layout reads, and an R2 access probe. They skip media downloads/uploads, placeholder generation, and bookmark/tweet fetches. A successful dry run therefore does not prove those remote assets are available.
 

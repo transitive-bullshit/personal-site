@@ -134,43 +134,94 @@ describe('official Notion traversal', () => {
     ).toBeUndefined()
     expect(children).not.toHaveBeenCalled()
   })
-  it('reuses existing images and omits unsynced images in fast mode', async () => {
-    const api = new NotionSourceClient('fixture')
-    const importMedia = vi.fn<
-      (
-        source: MediaSource,
-        url: string,
-        refresh?: () => Promise<string>
-      ) => Promise<string>
-    >(async () => 'imported')
-    const reuseMedia = vi.fn<(key: string) => boolean>((key) => key === a)
-    const normalize = new Normalizer(api, {}, importMedia, {
-      skipImages: true,
-      reuseMedia
-    })
-    const image = (id: string) =>
+  it.each(
+    ['image', 'video', 'audio', 'file', 'pdf'].flatMap((type) =>
+      ['file', 'external'].map((kind) => ({ type, kind }))
+    )
+  )(
+    'reuses saved $type ($kind) and defers unsynced media until normal sync',
+    async ({ type, kind }) => {
+      const api = new NotionSourceClient('fixture')
+      const importMedia = vi.fn<
+        (
+          source: MediaSource,
+          url: string,
+          refresh?: () => Promise<string>
+        ) => Promise<string>
+      >(async () => 'imported')
+      const reuseMedia = vi.fn<(key: string) => boolean>((key) => key === a)
+      const normalize = new Normalizer(api, {}, importMedia, {
+        skipMedia: true,
+        reuseMedia
+      })
+      const mediaBlock = (id: string, normalizer = normalize) =>
+        normalizer.block(
+          {
+            id,
+            type,
+            has_children: false,
+            last_edited_time: '2026-01-01T00:00:00.000Z',
+            [type]: {
+              type: kind,
+              [kind]: { url: 'https://example.com/media' },
+              caption: []
+            }
+          },
+          new Set()
+        )
+
+      await expect(mediaBlock(a)).resolves.toMatchObject({
+        type: type === 'pdf' ? 'file' : type,
+        media: a
+      })
+      await expect(mediaBlock(b)).resolves.toBeUndefined()
+      expect(reuseMedia).toHaveBeenCalledTimes(2)
+      expect(importMedia).not.toHaveBeenCalled()
+      expect(normalize.warnings).toEqual([
+        'Skipped unsynced media ' + b + ' in fast mode'
+      ])
+
+      const normal = new Normalizer(api, {}, importMedia)
+      await expect(mediaBlock(b, normal)).resolves.toMatchObject({
+        type: type === 'pdf' ? 'file' : type,
+        media: 'imported'
+      })
+      expect(importMedia).toHaveBeenCalledExactlyOnceWith(
+        expect.objectContaining({ key: b, kind }),
+        'https://example.com/media',
+        expect.any(Function)
+      )
+    }
+  )
+  it('keeps external video embeds in fast mode without importing media', async () => {
+    const importMedia = vi.fn<() => Promise<string>>(async () => 'imported')
+    const normalize = new Normalizer(
+      new NotionSourceClient('fixture'),
+      {},
+      importMedia,
+      { skipMedia: true }
+    )
+    await expect(
       normalize.block(
         {
-          id,
-          type: 'image',
+          id: a,
+          type: 'video',
           has_children: false,
-          last_edited_time: '2026-01-01T00:00:00.000Z',
-          image: {
+          last_edited_time: '',
+          video: {
             type: 'external',
-            external: { url: 'https://example.com/image.png' },
+            external: { url: 'https://www.youtube.com/watch?v=example' },
             caption: []
           }
         },
         new Set()
       )
-
-    await expect(image(a)).resolves.toMatchObject({ type: 'image', media: a })
-    await expect(image(b)).resolves.toBeUndefined()
-    expect(reuseMedia).toHaveBeenCalledTimes(2)
+    ).resolves.toMatchObject({
+      type: 'video',
+      url: 'https://www.youtube.com/watch?v=example'
+    })
     expect(importMedia).not.toHaveBeenCalled()
-    expect(normalize.warnings).toEqual([
-      'Skipped unsynced image ' + b + ' in fast mode'
-    ])
+    expect(normalize.warnings).toEqual([])
   })
   it('propagates inaccessible required content as a failure', async () => {
     const api = new NotionSourceClient('fixture')
