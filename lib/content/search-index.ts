@@ -4,31 +4,18 @@ import { walkBlocks } from './references'
 import { validateSlug } from './routes'
 import type { Article, Project, Snapshot } from './schema'
 
-function articleBodyTerms(article: Article | Project, snapshot: Snapshot) {
+function articleBodyTerms(article: Article | Project, metadata: string) {
   const text: string[] = []
   walkBlocks(article.blocks, (block) => {
-    if ('richText' in block)
+    if (block.type === 'heading')
       text.push(block.richText.map((part) => part.text).join(''))
     if ('caption' in block)
       text.push(block.caption.map((part) => part.text).join(''))
-    if (block.type === 'table')
-      for (const row of block.rows)
-        for (const cell of row)
-          text.push(cell.map((part) => part.text).join(''))
-    if (block.type === 'equation') text.push(block.expression)
-    if (block.type === 'file') text.push(block.name)
-    if (block.type === 'bookmark') {
-      const preview = snapshot.bookmarks?.[block.url]
-      if (preview) text.push(preview.title, preview.description)
-    }
-    if (block.type === 'embed' && block.tweetId) {
-      const tweet = snapshot.tweets[block.tweetId]
-      if (tweet?.status === 'available') text.push(tweet.data.text)
-    }
   })
-  // Deduplication keeps the lazy-loaded asset small; we don't need word counts.
+  const metadataTerms = new Set(metadata.split(' '))
+  // Headings and authored captions provide a small, predictable fallback.
   return [...new Set(normalizeSearchText(text.join(' ')).split(' '))]
-    .filter(Boolean)
+    .filter((term) => term && !metadataTerms.has(term))
     .sort()
     .join(' ')
 }
@@ -60,17 +47,21 @@ export function buildSearchIndex(snapshot: Snapshot): SearchIndex {
         kind: 'project' as const,
         slug: snapshot.projectRoutes![entry.id]!.slug
       }))
-  ].sort(
-    (a, b) =>
-      (b.entry.published ?? '').localeCompare(a.entry.published ?? '') ||
-      a.kind.localeCompare(b.kind) ||
-      a.slug.localeCompare(b.slug)
-  )
+  ]
   return {
     version: 1,
     documents: [
       ...entries.map(({ entry, kind, slug }) => {
         validateSlug(slug)
+        const titleText = normalizeSearchText(entry.title)
+        const summaryText = normalizeSearchText(
+          [
+            entry.description,
+            ...entry.tags,
+            kind,
+            'type' in entry ? entry.type : ''
+          ].join(' ')
+        )
         return {
           kind,
           href:
@@ -78,11 +69,9 @@ export function buildSearchIndex(snapshot: Snapshot): SearchIndex {
             encodeURIComponent(slug),
           title: entry.title,
           published: entry.published,
-          titleText: normalizeSearchText(entry.title),
-          summaryText: normalizeSearchText(
-            entry.description + ' ' + entry.tags.join(' ')
-          ),
-          bodyTerms: articleBodyTerms(entry, snapshot)
+          titleText,
+          summaryText,
+          bodyTerms: articleBodyTerms(entry, titleText + ' ' + summaryText)
         }
       }),
       ...pages.map((page) => ({
@@ -90,9 +79,9 @@ export function buildSearchIndex(snapshot: Snapshot): SearchIndex {
         href: page.href,
         title: page.title,
         titleText: normalizeSearchText(page.title),
-        summaryText: normalizeSearchText(page.summary),
+        summaryText: normalizeSearchText(page.summary + ' page'),
         bodyTerms: ''
       }))
-    ]
+    ].sort((a, b) => a.href.localeCompare(b.href, 'en'))
   }
 }

@@ -6,5 +6,5 @@ export function publishSearchIndex(
   snapshot: Snapshot,
   path = 'public/search-index.json'
 ) {
-  return publishJson(buildSearchIndex(snapshot), path, 0)
+  return publishJson(buildSearchIndex(snapshot), path)
 }

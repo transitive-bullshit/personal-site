@@ -50,7 +50,16 @@ function snapshot(): Snapshot {
     author: 'Travis Fischer',
     featured: false,
     blocks: [
-      paragraph('Nested keyword keyword', [paragraph('Interruption')]),
+      paragraph('Nested prose', [
+        {
+          id: '55555555555555555555555555555555',
+          type: 'heading',
+          level: 2,
+          richText: [plainSpan('Interruption keyword keyword TypeScript Café')],
+          color: 'default',
+          children: []
+        }
+      ]),
       {
         id: '22222222222222222222222222222222',
         type: 'code',
@@ -99,29 +108,20 @@ function snapshot(): Snapshot {
 }
 
 describe('static search index', () => {
-  it('indexes canonical public paths, nested text, captions, tables, tags and previews', () => {
+  it('indexes metadata, nested headings and captions, excluding prose, code, tables and previews', () => {
     const index = buildSearchIndex(snapshot())
     expect(index.documents.map((document) => document.href)).toEqual([
-      '/canonical',
       '/',
+      '/canonical',
       '/projects',
       '/writing'
     ])
-    const document = index.documents[0]!
+    const document = index.documents.find(
+      (entry) => entry.href === '/canonical'
+    )!
     expect(document.titleText).toBe('cafe navigation')
     expect(document.summaryText).toContain('typescript')
-    for (const keyword of [
-      'interruption',
-      'abortcontroller',
-      'cancellation',
-      'combobox',
-      'accessible',
-      'keyboard'
-    ])
-      expect(document.bodyTerms).toContain(keyword)
-    expect(
-      document.bodyTerms.split(' ').filter((term) => term === 'keyword')
-    ).toHaveLength(1)
+    expect(document.bodyTerms).toBe('cancellation interruption keyword')
     expect(JSON.stringify(index)).not.toContain('https://example.com')
   })
 
@@ -137,7 +137,38 @@ describe('static search index', () => {
     expect(buildSearchIndex(content).documents).toHaveLength(3)
   })
 
-  it('orders empty searches by newest article, independently of source insertion order', () => {
+  it('ignores prose and remote preview edits while keeping authored heading changes local', async () => {
+    const directory = await mkdtemp(
+      join(tmpdir(), 'personal-site-search-test-')
+    )
+    directories.push(directory)
+    const path = join(directory, 'search-index.json')
+    const content = snapshot()
+    await publishSearchIndex(content, path)
+    const before = await readFile(path, 'utf8')
+    content.articles[a]!.blocks.push(paragraph('Entirely new prose'))
+    content.bookmarks!['https://example.com']!.description =
+      'Changed remote preview'
+    expect(await publishSearchIndex(content, path)).toBe(false)
+    content.articles[a]!.blocks.push({
+      id: '77777777777777777777777777777777',
+      type: 'heading',
+      level: 2,
+      richText: [plainSpan('Zebra')],
+      color: 'default',
+      children: []
+    })
+    expect(await publishSearchIndex(content, path)).toBe(true)
+    const after = await readFile(path, 'utf8')
+    expect(after).toBe(
+      before.replace(
+        'cancellation interruption keyword',
+        'cancellation interruption keyword zebra'
+      )
+    )
+  })
+
+  it('stores URL order independently of insertion order and publication dates', () => {
     const content = snapshot()
     content.articles[b] = {
       ...content.articles[a]!,
@@ -151,7 +182,23 @@ describe('static search index', () => {
       Object.entries(content.articles).reverse()
     )
     expect(buildSearchIndex(content)).toEqual(original)
-    expect(original.documents[0]!.href).toBe('/newer')
+    expect(original.documents.map((entry) => entry.href)).toEqual([
+      '/',
+      '/canonical',
+      '/newer',
+      '/projects',
+      '/writing'
+    ])
+    expect(searchDocuments(original.documents, '')[0]!.href).toBe('/newer')
+    content.articles[a]!.published = '2026-09-03'
+    const updated = buildSearchIndex(content)
+    expect(updated.documents.map((entry) => entry.href)).toEqual(
+      original.documents.map((entry) => entry.href)
+    )
+    expect(searchDocuments(updated.documents, '')[0]!.href).toBe('/canonical')
+    expect(searchDocuments(updated.documents, 'cafe')[0]!.href).toBe(
+      '/canonical'
+    )
   })
 
   it('rejects unsafe paths before producing navigation targets', () => {
@@ -160,7 +207,7 @@ describe('static search index', () => {
     expect(() => buildSearchIndex(content)).toThrow('Invalid')
   })
 
-  it('publishes stable compact bytes, skips no-op writes, and refreshes removals', async () => {
+  it('publishes readable stable bytes, skips no-op writes, and refreshes removals', async () => {
     const directory = await mkdtemp(
       join(tmpdir(), 'personal-site-search-test-')
     )
@@ -169,7 +216,7 @@ describe('static search index', () => {
     const content = snapshot()
     expect(await publishSearchIndex(content, path)).toBe(true)
     const before = await readFile(path, 'utf8')
-    expect(before.split('\n')).toHaveLength(2)
+    expect(before).toContain('\n      "bodyTerms":')
     expect(await publishSearchIndex(content, path)).toBe(false)
     delete content.articles[a]
     content.routes[a]!.active = false
@@ -188,7 +235,17 @@ describe('static search index', () => {
         authors: [],
         description: 'Generative art',
         tags: ['WebGL'],
-        blocks: [paragraph('Particle simulation')],
+        type: 'Video',
+        blocks: [
+          {
+            id: '66666666666666666666666666666666',
+            type: 'heading',
+            level: 2,
+            richText: [plainSpan('Particle simulation')],
+            color: 'default',
+            children: []
+          }
+        ],
         published: undefined
       }
     }
@@ -202,6 +259,23 @@ describe('static search index', () => {
     expect(
       searchDocuments(index.documents, 'visual webgl particle')[0]
     ).toMatchObject({ href: '/projects/canonical', kind: 'project' })
+    expect(
+      searchDocuments(index.documents, 'video project').map(
+        (entry) => entry.href
+      )
+    ).toEqual(['/projects/canonical'])
+    expect(searchDocuments(index.documents, 'article')[0]!.href).toBe(
+      '/canonical'
+    )
+    expect(
+      searchDocuments(index.documents, '').map((entry) => entry.href)
+    ).toEqual([
+      '/canonical',
+      '/projects/canonical',
+      '/',
+      '/projects',
+      '/writing'
+    ])
     expect(
       index.documents.some((entry) => entry.href.includes('old-project'))
     ).toBe(false)
@@ -263,7 +337,7 @@ describe('keyword ranking', () => {
       document('/two', 'Search two')
     ]
     expect(searchDocuments(documents, 'search')).toEqual(documents)
-    expect(searchDocuments(documents, ' ')).toBe(documents)
+    expect(searchDocuments(documents, ' ')).toEqual(documents)
     expect(searchDocuments(documents, 'two')[0]!.href).toBe('/two')
     expect(documents[0]!.href).toBe('/one')
   })

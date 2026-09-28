@@ -25,10 +25,18 @@ export function normalizeSearchText(text: string) {
 // The corpus is small: a linear keyword scan is cheaper and simpler than a trie.
 // All query terms must match, with titles strongly preferred over summary/body.
 export function searchDocuments(documents: SearchDocument[], search: string) {
+  // Storage order is URL-based for Git; display order remains newest first.
+  const ordered = [...documents].sort(
+    (a, b) =>
+      Number(a.kind === 'page') - Number(b.kind === 'page') ||
+      (b.published ?? '').localeCompare(a.published ?? '') ||
+      (a.kind ?? '').localeCompare(b.kind ?? '', 'en') ||
+      a.href.localeCompare(b.href, 'en')
+  )
   const query = normalizeSearchText(search)
-  if (!query) return documents
+  if (!query) return ordered
   const terms = [...new Set(query.split(' '))]
-  return documents
+  return ordered
     .map((document, position) => {
       let score = 0
       for (const term of terms) {
