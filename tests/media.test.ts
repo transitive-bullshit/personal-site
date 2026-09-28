@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { HeadObjectCommand } from '@aws-sdk/client-s3'
+import { HeadObjectCommand, PutObjectCommand } from '@aws-sdk/client-s3'
 import sharp from 'sharp'
 import { readFile } from 'node:fs/promises'
 import type { Media, MediaSource } from '../lib/content/schema'
@@ -37,6 +37,8 @@ function transport() {
         if (!objects.has(command.input.Key!)) throw missing()
         return {}
       }
+      if (!(command instanceof PutObjectCommand))
+        throw new Error('Unexpected command')
       calls.push('PUT')
       objects.set(command.input.Key!, command.input.Body as Uint8Array)
       return {}
@@ -88,6 +90,8 @@ describe('immutable media publication', () => {
     const api: StorageTransport = {
       async send(command) {
         if (command instanceof HeadObjectCommand) throw missing()
+        if (!(command instanceof PutObjectCommand))
+          throw new Error('Unexpected command')
         expect(command.input.IfNoneMatch).toBe('*')
         throw Object.assign(new Error('Exists'), {
           $metadata: { httpStatusCode: 412 }

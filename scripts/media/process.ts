@@ -6,6 +6,7 @@ import type { Media, MediaSource } from '../../lib/content/schema'
 import { MediaStorage, hashBytes } from './storage'
 
 export const MEDIA_PIPELINE_VERSION = 2
+export const MEDIA_DOWNLOAD_TIMEOUT_MS = 30 * 60 * 1000
 const MAX_BYTES = 512 * 1024 * 1024
 
 export function canReuseMedia(
@@ -39,7 +40,7 @@ export async function download(
       throw new Error('Unsupported media URL')
     try {
       const response = await fetcher(current, {
-        signal: AbortSignal.timeout(300_000)
+        signal: AbortSignal.timeout(MEDIA_DOWNLOAD_TIMEOUT_MS)
       })
       if (
         (response.status === 403 || response.status === 401) &&

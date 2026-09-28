@@ -81480,7 +81480,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:01:00.000Z",
+        "edited": "2026-09-28T20:04:00.000Z",
         "key": "3e9edb27f124818b9248c844fa4296d6:cover",
         "kind": "file"
       },
@@ -81745,7 +81745,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T15:59:00.000Z",
+        "edited": "2026-09-28T17:12:00.000Z",
         "key": "3e9edb27f12481fe84acd73fae342ccb:cover",
         "kind": "file"
       },
@@ -88119,6 +88119,11 @@
       "aliases": [],
       "slug": "burning-tokens"
     },
+    "3e9edb27f12481b5a69ec67030d06b06": {
+      "active": false,
+      "aliases": [],
+      "slug": "sometimes-i-think-slow-ai-music-video"
+    },
     "3e9edb27f12481fe84acd73fae342ccb": {
       "active": true,
       "aliases": [],
@@ -90463,32 +90468,6 @@
         {
           "children": [],
           "color": "default",
-          "id": "0e297f5f9d0a4dc5990f926b3855bce8",
-          "richText": [
-            {
-              "bold": true,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "Burning Man for agents.",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " A place for artificial minds to wander, make strange things, and return with a story.",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
           "id": "7990893559374edf970d72774f2eb912",
           "level": 2,
           "richText": [
@@ -90629,7 +90608,7 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": " follow an invitation → explore rooms → optionally rest, create, or chat → return with a story. Plain Markdown over HTTP, direct links, and an HTML alternative. GET-only exploration works; explicit actions and uploads use authenticated writes. No SDK or browser automation.",
+              "text": " follow an invitation → explore rooms → optionally rest, create, or chat → return with a story. Plain Markdown over HTTP GET-only exploration by default. Explicit actions and uploads use authenticated writes. No complex SDK or browser automation.",
               "underline": false
             }
           ],
@@ -91364,7 +91343,7 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": ", see what it chooses, and ask what it brings back.",
+              "text": ", follow its journey live, and then ask what it brings back.",
               "underline": false
             }
           ],
@@ -91380,13 +91359,13 @@
       ],
       "cover": "3e9edb27f124818b9248c844fa4296d6:cover",
       "description": "Burning Man for agents! Send your agent, follow its wanderings, and see what it brings back.",
-      "featured": false,
+      "featured": true,
       "icon": {
         "type": "emoji",
         "value": "🔥"
       },
       "id": "3e9edb27f124818b9248c844fa4296d6",
-      "modified": "2026-09-28T16:01:00.000Z",
+      "modified": "2026-09-28T20:04:00.000Z",
       "published": "2026-09-28",
       "slug": "burning-tokens",
       "source": "https://github.com/transitive-bullshit/burning-tokens",
@@ -94027,7 +94006,7 @@
         "value": "🎬"
       },
       "id": "3e9edb27f12481fe84acd73fae342ccb",
-      "modified": "2026-09-28T15:59:00.000Z",
+      "modified": "2026-09-28T17:12:00.000Z",
       "published": "2026-09-28",
       "slug": "slow-it-down-ai-music-video",
       "source": "https://github.com/transitive-bullshit/slow-it-down",
@@ -94037,7 +94016,8 @@
         "Projects"
       ],
       "title": "Slow It Down – AI Music Video",
-      "type": "Video"
+      "type": "Video",
+      "website": "https://www.youtube.com/watch?v=Tz6gQDN9qG0"
     }
   },
   "projectSource": {

@@ -4,12 +4,19 @@ import {
   PutObjectCommand,
   S3Client
 } from '@aws-sdk/client-s3'
+import {
+  MultipartUploader,
+  MULTIPART_THRESHOLD,
+  type MultipartCommand
+} from './multipart'
 import type { Asset } from '../../lib/content/schema'
 
 export const hashBytes = (bytes: Uint8Array) =>
   createHash('sha256').update(bytes).digest('hex')
 export type StorageTransport = {
-  send(command: HeadObjectCommand | PutObjectCommand): Promise<unknown>
+  send(
+    command: HeadObjectCommand | PutObjectCommand | MultipartCommand
+  ): Promise<unknown>
 }
 
 export function errorStatus(error: unknown): number | undefined {
@@ -68,12 +75,14 @@ export class MediaStorage {
   readonly stats = { reused: 0, uploaded: 0, uploadedBytes: 0 }
   private known = new Set<string>()
   private transport: StorageTransport
+  private multipart: MultipartUploader
   private bucket: string
   private publicOrigin: string
 
   constructor(
     config: ReturnType<typeof storageConfig>,
-    transport?: StorageTransport
+    transport?: StorageTransport,
+    uploadCacheDirectory = 'work/media-uploads'
   ) {
     this.transport =
       transport ??
@@ -85,6 +94,12 @@ export class MediaStorage {
           throwOnRequestTimeout: true
         }
       })
+    this.multipart = new MultipartUploader(
+      this.transport,
+      config.client.endpoint,
+      config.bucket,
+      uploadCacheDirectory
+    )
     this.bucket = config.bucket
     this.publicOrigin = config.publicOrigin
   }
@@ -118,21 +133,26 @@ export class MediaStorage {
       ...dimensions
     }
     if (this.known.has(key) || (await this.exists(key))) {
+      if (bytes.byteLength > MULTIPART_THRESHOLD)
+        await this.multipart.forget(key)
       this.stats.reused++
       this.known.add(key)
       return asset
     }
     try {
-      await this.transport.send(
-        new PutObjectCommand({
-          Bucket: this.bucket,
-          Key: key,
-          Body: bytes,
-          ContentType: mime,
-          CacheControl: 'public,max-age=31536000,immutable',
-          IfNoneMatch: '*'
-        })
-      )
+      if (bytes.byteLength > MULTIPART_THRESHOLD) {
+        await this.multipart.upload(key, bytes, mime)
+      } else
+        await this.transport.send(
+          new PutObjectCommand({
+            Bucket: this.bucket,
+            Key: key,
+            Body: bytes,
+            ContentType: mime,
+            CacheControl: 'public,max-age=31536000,immutable',
+            IfNoneMatch: '*'
+          })
+        )
       this.stats.uploaded++
       this.stats.uploadedBytes += bytes.byteLength
     } catch (err) {

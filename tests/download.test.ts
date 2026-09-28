@@ -2,7 +2,10 @@ import { afterEach, expect, it, vi } from 'vitest'
 import { download, processMedia } from '../scripts/media/process'
 import { MediaStorage, type StorageTransport } from '../scripts/media/storage'
 
-afterEach(() => vi.unstubAllGlobals())
+afterEach(() => {
+  vi.unstubAllGlobals()
+  vi.restoreAllMocks()
+})
 
 it('retries a transient network error while downloading required media', async () => {
   const fetchMock = vi
@@ -60,4 +63,14 @@ it('rejects a stale media URL that returns a webpage without uploading it', asyn
     )
   ).rejects.toThrow('document instead of a media file')
   expect(send).not.toHaveBeenCalled()
+})
+
+it('allows 30 minutes for a media download attempt', async () => {
+  const timeout = vi.spyOn(AbortSignal, 'timeout')
+  await download(
+    'https://example.com/video.mp4',
+    undefined,
+    vi.fn<typeof fetch>().mockResolvedValue(new Response('video'))
+  )
+  expect(timeout).toHaveBeenCalledWith(30 * 60 * 1000)
 })
