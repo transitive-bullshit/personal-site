@@ -277,6 +277,10 @@ summary {
   margin-block: 2em 0.7em;
   text-wrap: pretty;
 }
+.article-body > :is(h2, h3, h4):first-child,
+.article-body > .mobile-toc:first-child + :is(h2, h3, h4) {
+  margin-block-start: 0;
+}
 .article-body h2 {
   font-size: 28px;
 }
