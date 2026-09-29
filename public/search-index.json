@@ -269,7 +269,7 @@
       "titleText": "projects"
     },
     {
-      "bodyTerms": "a addicting an artifact artist beneath branding brings can cloud compare composition concrete different discuss example exercise explore facing featured for generated hero i identity image in into introduces is it kind language like logo lone material messaging midjourney not now of one otherworldly paint palette positioning poster readme refine repaint roller s same second spiral story storytelling structure the this translucent use vast view visual warm within workshop you",
+      "bodyTerms": "a artist beneath branding cloud example exercise explore facing identity like lone midjourney poster repaint s second spiral storytelling structure the translucent vast",
       "href": "/projects/agent-skills",
       "kind": "project",
       "published": "2026-09-07",
@@ -296,7 +296,7 @@
       "titleText": "automagical"
     },
     {
-      "bodyTerms": "2026 28 a affirmation an atlas baked bathhouse behind brand build camp clay conduits connect constellation contribution coral creature creatures direction drag drop early earning established expression festival fictional floor from functioning gallery generated glowing growing homepage hover how in indigo interface interior into invitation kinds lantern left lettering lit little live loops made moon moonclay not of on one overview palette paths pick pools preserved production public real recording reference reward rooms roots runtime september seven short sound source study teacup temple that the things this twilight two ui under up ux visual vocabulary waterfalls we were why without",
+      "bodyTerms": "a affirmation an atlas baked bathhouse behind brand build camp clay conduits connect constellation contribution coral creature creatures direction drag drop early earning established expression festival fictional floor from functioning generated glowing growing homepage hover how in indigo interface interior into invitation kinds lantern left lettering lit little live loops made moon moonclay not of on one overview palette paths pick pools production public real recording reference reward rooms roots runtime seven short sound source study teacup temple that the things this twilight two ui under up ux visual vocabulary waterfalls we were why without",
       "href": "/projects/burning-tokens",
       "kind": "project",
       "published": "2026-09-26",
@@ -373,8 +373,8 @@
       "kind": "project",
       "published": "2009-06-09",
       "summaryText": "a c renderer with metropolis light transport bidirectional path tracing and opengl previews oss projects project oss project",
-      "title": "Milton",
-      "titleText": "milton"
+      "title": "Milton Renderer",
+      "titleText": "milton renderer"
     },
     {
       "bodyTerms": "",
@@ -390,7 +390,7 @@
       "href": "/projects/p-doom",
       "kind": "project",
       "published": "2026-09-05",
-      "summaryText": "a doom 64 inspired ai safety parody fight misaligned ais and shut down the lab ai oss projects project webapp",
+      "summaryText": "a doom 64 inspired ai safety game fight misaligned ais and shut down the lab ai oss projects project webapp",
       "title": "P(DOOM)",
       "titleText": "p doom"
     },
@@ -499,8 +499,8 @@
       "kind": "project",
       "published": "2004-09-10",
       "summaryText": "games and tools for ti calculators written in ti basic and c oss projects project oss project",
-      "title": "TiCalc Games",
-      "titleText": "ticalc games"
+      "title": "TI Calculator Games",
+      "titleText": "ti calculator games"
     },
     {
       "bodyTerms": "",
