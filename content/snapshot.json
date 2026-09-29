@@ -80114,7 +80114,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:01:00.000Z",
+        "edited": "2026-09-28T23:44:00.000Z",
         "key": "3c5edb27f12480a59a4bd520e5721e5e:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/media/FrHr94YacAA9Dod.jpg"
@@ -80153,7 +80153,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:01:00.000Z",
+        "edited": "2026-09-28T23:44:00.000Z",
         "key": "3c5edb27f12480a59a4bd520e5721e5e:icon",
         "kind": "external",
         "url": "https://sklearn.vercel.app/favicon-32.png"
@@ -80365,7 +80365,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:01:00.000Z",
+        "edited": "2026-09-28T23:44:00.000Z",
         "key": "3c5edb27f12480e39f5def11519f5553:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/media/GlhmeVQaQAEqYDL.jpg"
@@ -80404,7 +80404,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:01:00.000Z",
+        "edited": "2026-09-28T23:44:00.000Z",
         "key": "3c5edb27f12480e39f5def11519f5553:icon",
         "kind": "external",
         "url": "https://severance.transitivebullsh.it/icon.svg?8b90c370817613cf"
@@ -80762,7 +80762,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T15:59:00.000Z",
+        "edited": "2026-09-28T23:44:00.000Z",
         "key": "3ddedb27f124815ba865d0f6b5b759f5:cover",
         "kind": "external",
         "url": "https://raw.githubusercontent.com/transitive-bullshit/retro-web-terminal/main/docs/demo.png"
@@ -80801,7 +80801,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T15:59:00.000Z",
+        "edited": "2026-09-28T23:44:00.000Z",
         "key": "3ddedb27f124815ba865d0f6b5b759f5:icon",
         "kind": "external",
         "url": "https://retro-web-terminal.vercel.app/favicon.svg"
@@ -80897,7 +80897,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:49:00.000Z",
+        "edited": "2026-09-28T23:42:00.000Z",
         "key": "3ddedb27f1248186b064c993b8e155c6:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/amplify_video_thumb/2096133721955209216/img/b0n8ufOa4sWSMbrt.jpg"
@@ -81699,7 +81699,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T22:07:00.000Z",
+        "edited": "2026-09-28T23:41:00.000Z",
         "key": "3e9edb27f12481b5a69ec67030d06b06:cover",
         "kind": "file"
       },
@@ -82040,7 +82040,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T22:08:00.000Z",
+        "edited": "2026-09-28T23:42:00.000Z",
         "key": "3e9edb27f12481fe84acd73fae342ccb:cover",
         "kind": "file"
       },
@@ -82061,6 +82061,44 @@
           "key": "personal-site/media/5a28d2e05504f914a9e2fa0935e3ccc7ff960b865aae0c8cfd1a91fcd682bffa.webp",
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/5a28d2e05504f914a9e2fa0935e3ccc7ff960b865aae0c8cfd1a91fcd682bffa.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "3eaedb27f124819d9d34c4f0eda4e5cc:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAQAA4BaJZACdADcyyoAAP6UR+ivgk3qecs90l04X9wJK1X4AAAA",
+      "original": {
+        "bytes": 881454,
+        "hash": "dd4061f525f2d9b1715f9805b79ed907e755dc5bc4e92c8290d697b104886077",
+        "height": 1632,
+        "key": "personal-site/media/dd4061f525f2d9b1715f9805b79ed907e755dc5bc4e92c8290d697b104886077.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/dd4061f525f2d9b1715f9805b79ed907e755dc5bc4e92c8290d697b104886077.jpg",
+        "width": 2912
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-29T12:21:00.000Z",
+        "key": "3eaedb27f124819d9d34c4f0eda4e5cc:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 50760,
+          "hash": "bd5912110b19fff086ec3a2fcd912b7e794b31ac41c38dcffe3848c0af1b0077",
+          "height": 538,
+          "key": "personal-site/media/bd5912110b19fff086ec3a2fcd912b7e794b31ac41c38dcffe3848c0af1b0077.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/bd5912110b19fff086ec3a2fcd912b7e794b31ac41c38dcffe3848c0af1b0077.webp",
+          "width": 960
+        },
+        {
+          "bytes": 379274,
+          "hash": "7b7184c0a484c0b8f755c611cec3e134bc8a0b04846949676cc769fa496fac52",
+          "height": 1076,
+          "key": "personal-site/media/7b7184c0a484c0b8f755c611cec3e134bc8a0b04846949676cc769fa496fac52.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/7b7184c0a484c0b8f755c611cec3e134bc8a0b04846949676cc769fa496fac52.webp",
           "width": 1920
         }
       ]
@@ -82138,6 +82176,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/178bafa3c50bc276cf28b2c2e119de86cde09ebe4fc2418945f36a398f3d2ae0.webp",
           "width": 1462
+        }
+      ]
+    },
+    "42ebc678efa747a28ba2c5f2af199c47": {
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAQAA4BaJQBOgB4/DiAA/Zvzz3pLucb1S+miS3N4OViiifgAAA==",
+      "original": {
+        "bytes": 856197,
+        "hash": "89274204f2803f8aab05bcf7ac3a926fe6915cccfc7eac1f46f24ecf28a542cd",
+        "height": 1632,
+        "key": "personal-site/media/89274204f2803f8aab05bcf7ac3a926fe6915cccfc7eac1f46f24ecf28a542cd.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/89274204f2803f8aab05bcf7ac3a926fe6915cccfc7eac1f46f24ecf28a542cd.jpg",
+        "width": 2912
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-29T12:19:00.000Z",
+        "key": "42ebc678efa747a28ba2c5f2af199c47",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 53004,
+          "hash": "891ba176e7c36886fbd072bc3835f163f61a53f38d8806ee29522801ad1a4aa3",
+          "height": 538,
+          "key": "personal-site/media/891ba176e7c36886fbd072bc3835f163f61a53f38d8806ee29522801ad1a4aa3.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/891ba176e7c36886fbd072bc3835f163f61a53f38d8806ee29522801ad1a4aa3.webp",
+          "width": 960
+        },
+        {
+          "bytes": 379550,
+          "hash": "b836dade10be4ac3ba2e7efd2f019ec7e8da8f447bbb6f7bb8439abca94265be",
+          "height": 1076,
+          "key": "personal-site/media/b836dade10be4ac3ba2e7efd2f019ec7e8da8f447bbb6f7bb8439abca94265be.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/b836dade10be4ac3ba2e7efd2f019ec7e8da8f447bbb6f7bb8439abca94265be.webp",
+          "width": 1920
         }
       ]
     },
@@ -82359,6 +82435,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/3f0ad3c64efc823858bc6c307eb591644b4b2af08db2553e749c2904b0a91fe8.webp",
           "width": 485
+        }
+      ]
+    },
+    "4bebf3fc57134320aac7185f643511f4": {
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAQAA4BaJZACdADcyyoAAP6UR+ivgk3qecs90l04X9wJK1X4AAAA",
+      "original": {
+        "bytes": 881454,
+        "hash": "dd4061f525f2d9b1715f9805b79ed907e755dc5bc4e92c8290d697b104886077",
+        "height": 1632,
+        "key": "personal-site/media/dd4061f525f2d9b1715f9805b79ed907e755dc5bc4e92c8290d697b104886077.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/dd4061f525f2d9b1715f9805b79ed907e755dc5bc4e92c8290d697b104886077.jpg",
+        "width": 2912
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-29T12:19:00.000Z",
+        "key": "4bebf3fc57134320aac7185f643511f4",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 50760,
+          "hash": "bd5912110b19fff086ec3a2fcd912b7e794b31ac41c38dcffe3848c0af1b0077",
+          "height": 538,
+          "key": "personal-site/media/bd5912110b19fff086ec3a2fcd912b7e794b31ac41c38dcffe3848c0af1b0077.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/bd5912110b19fff086ec3a2fcd912b7e794b31ac41c38dcffe3848c0af1b0077.webp",
+          "width": 960
+        },
+        {
+          "bytes": 379274,
+          "hash": "7b7184c0a484c0b8f755c611cec3e134bc8a0b04846949676cc769fa496fac52",
+          "height": 1076,
+          "key": "personal-site/media/7b7184c0a484c0b8f755c611cec3e134bc8a0b04846949676cc769fa496fac52.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/7b7184c0a484c0b8f755c611cec3e134bc8a0b04846949676cc769fa496fac52.webp",
+          "width": 1920
         }
       ]
     },
@@ -82894,6 +83008,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/171f2bb5e1e142d92618d0b794a8ae3e88d8ffc7ac796c2e6658cbe649d26e2f.webp",
           "width": 1254
+        }
+      ]
+    },
+    "5aee1d72beac4472b3214e555e909d01": {
+      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoGAAgAA4BaJZQCdAEO9WIkQAD+7YkbcEWYNvC27gOEUZbl8+d5Dp8Uewn4OxWuMAA=",
+      "original": {
+        "bytes": 431648,
+        "hash": "b0d195de13fb76fc51439f324634a7e961f8fd8eb4141a5113e14d6a1eb167a2",
+        "height": 2040,
+        "key": "personal-site/media/b0d195de13fb76fc51439f324634a7e961f8fd8eb4141a5113e14d6a1eb167a2.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/b0d195de13fb76fc51439f324634a7e961f8fd8eb4141a5113e14d6a1eb167a2.jpg",
+        "width": 1600
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-29T12:19:00.000Z",
+        "key": "5aee1d72beac4472b3214e555e909d01",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 91170,
+          "hash": "00e62350476306bc2e5c3eb9f6d7a4f59e82e71e660fea3c32515c1b4b698984",
+          "height": 1224,
+          "key": "personal-site/media/00e62350476306bc2e5c3eb9f6d7a4f59e82e71e660fea3c32515c1b4b698984.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/00e62350476306bc2e5c3eb9f6d7a4f59e82e71e660fea3c32515c1b4b698984.webp",
+          "width": 960
+        },
+        {
+          "bytes": 294306,
+          "hash": "ea920c714e587ee88093a8917aaeaba9f434a796e6e602a37e4f9a000c62afd8",
+          "height": 2040,
+          "key": "personal-site/media/ea920c714e587ee88093a8917aaeaba9f434a796e6e602a37e4f9a000c62afd8.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/ea920c714e587ee88093a8917aaeaba9f434a796e6e602a37e4f9a000c62afd8.webp",
+          "width": 1600
         }
       ]
     },
@@ -85665,6 +85817,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/2448e56261a7b06f6e379e05a6e8851d3a3bbbef1ced7c65e332c72e35dc2f1f.webp",
           "width": 1625
+        }
+      ]
+    },
+    "b28850f54e3e4848851079ed625f6455": {
+      "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoIAAUAA4BaJagCdLoAArMaFgAA/Y/pzrG1D/3No8grlYB3/loD58t/ec1NTnmz3HgEAA==",
+      "original": {
+        "bytes": 313760,
+        "hash": "13899199fb212268ff05d521685832262cc7ddc8a900727684c799b85aeebb39",
+        "height": 1704,
+        "key": "personal-site/media/13899199fb212268ff05d521685832262cc7ddc8a900727684c799b85aeebb39.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/13899199fb212268ff05d521685832262cc7ddc8a900727684c799b85aeebb39.jpg",
+        "width": 3011
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-09-29T12:19:00.000Z",
+        "key": "b28850f54e3e4848851079ed625f6455",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 26966,
+          "hash": "8378ab046ffa3a731f0e442420244186a875885b8a11cdf2f5d18373e1100702",
+          "height": 543,
+          "key": "personal-site/media/8378ab046ffa3a731f0e442420244186a875885b8a11cdf2f5d18373e1100702.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/8378ab046ffa3a731f0e442420244186a875885b8a11cdf2f5d18373e1100702.webp",
+          "width": 960
+        },
+        {
+          "bytes": 81830,
+          "hash": "b137ddc990a9188d02b319fa4e0abca7ace026cb48215017cff298eb96de1c56",
+          "height": 1087,
+          "key": "personal-site/media/b137ddc990a9188d02b319fa4e0abca7ace026cb48215017cff298eb96de1c56.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/b137ddc990a9188d02b319fa4e0abca7ace026cb48215017cff298eb96de1c56.webp",
+          "width": 1920
         }
       ]
     },
@@ -88450,6 +88640,11 @@
       "active": true,
       "aliases": [],
       "slug": "slow-it-down-ai-music-video"
+    },
+    "3eaedb27f124819d9d34c4f0eda4e5cc": {
+      "active": true,
+      "aliases": [],
+      "slug": "agent-skills"
     }
   },
   "projects": {
@@ -88832,7 +89027,6 @@
       },
       "id": "3c5edb27f12480a59a4bd520e5721e5e",
       "modified": "2026-09-28T23:44:00.000Z",
-      "needsImageSync": true,
       "published": "2023-03-14",
       "slug": "scikit-learn-ts",
       "source": "https://github.com/transitive-bullshit/scikit-learn-ts",
@@ -89132,7 +89326,6 @@
       },
       "id": "3c5edb27f12480e39f5def11519f5553",
       "modified": "2026-09-28T23:44:00.000Z",
-      "needsImageSync": true,
       "published": "2025-03-08",
       "slug": "severance-wellness-memes",
       "source": "https://github.com/transitive-bullshit/severance-wellness-memes",
@@ -89395,7 +89588,6 @@
       },
       "id": "3ddedb27f124815ba865d0f6b5b759f5",
       "modified": "2026-09-28T23:44:00.000Z",
-      "needsImageSync": true,
       "published": "2026-09-12",
       "slug": "retro-web-terminal",
       "source": "https://github.com/transitive-bullshit/retro-web-terminal",
@@ -89552,7 +89744,6 @@
       },
       "id": "3ddedb27f1248186b064c993b8e155c6",
       "modified": "2026-09-28T23:42:00.000Z",
-      "needsImageSync": true,
       "published": "2026-09-05",
       "slug": "pluribus-openai-parody",
       "tags": [
@@ -93035,7 +93226,6 @@
       },
       "id": "3e9edb27f12481b5a69ec67030d06b06",
       "modified": "2026-09-28T23:41:00.000Z",
-      "needsImageSync": true,
       "published": "2026-09-29",
       "slug": "sometimes-i-think-slow-ai-music-video",
       "source": "https://github.com/transitive-bullshit/sometimes-i-think-slow",
@@ -95672,7 +95862,6 @@
       },
       "id": "3e9edb27f12481fe84acd73fae342ccb",
       "modified": "2026-09-28T23:42:00.000Z",
-      "needsImageSync": true,
       "published": "2026-09-28",
       "slug": "slow-it-down-ai-music-video",
       "source": "https://github.com/transitive-bullshit/slow-it-down",
@@ -95685,6 +95874,616 @@
       "tweet": "https://x.com/transitive_bs/status/2104605687154376844",
       "type": "Video",
       "website": "https://www.youtube.com/watch?v=Tz6gQDN9qG0"
+    },
+    "3eaedb27f124819d9d34c4f0eda4e5cc": {
+      "authors": [
+        {
+          "id": "b036f7f695a94f97b3b5c46867d0d103",
+          "name": "Travis Fischer"
+        }
+      ],
+      "blocks": [
+        {
+          "children": [],
+          "color": "default",
+          "id": "92967a5f5d6944408924c5569e73fb97",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "This is my open-source collection of ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://agentskills.io/home",
+              "italic": false,
+              "strike": false,
+              "text": "agent skills",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " for that I use with coding agents like Codex and Claude Code.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "1a8c00bea61b4b4d82261581b051a254",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Midjourney Images",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "32b782fba9994321b6ed5f5959d50b34",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Midjourney Images",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " writes focused prompts and can create images in the Midjourney web app. I use it to explore a visual style, build a brand world, or develop concept art.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "df4986296783429ea302ecb2282fa5c3",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "It supports two ways of working:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "fea15345bd7745738c40139623f9942b",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Prompt only:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Write or improve a prompt without opening Midjourney.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ad64e56e662d46769601a9c3d7fc1940",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Create on web:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Submit one standard image batch and report the result.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "caption": [
+                    {
+                      "bold": false,
+                      "code": false,
+                      "color": "default",
+                      "italic": false,
+                      "strike": false,
+                      "text": "A lone artist beneath a vast, translucent structure. This is the Midjourney image I now use for my personal brand.",
+                      "underline": false
+                    }
+                  ],
+                  "children": [],
+                  "id": "4bebf3fc57134320aac7185f643511f4",
+                  "media": "4bebf3fc57134320aac7185f643511f4",
+                  "type": "image"
+                }
+              ],
+              "id": "3eaedb27f12480578bbfff8520ce0a51",
+              "type": "column"
+            },
+            {
+              "children": [
+                {
+                  "caption": [
+                    {
+                      "bold": false,
+                      "code": false,
+                      "color": "default",
+                      "italic": false,
+                      "strike": false,
+                      "text": "A second Midjourney example: a lone artist facing a vast, cloud-like spiral. A different composition within the same warm, otherworldly visual language.",
+                      "underline": false
+                    }
+                  ],
+                  "children": [],
+                  "id": "42ebc678efa747a28ba2c5f2af199c47",
+                  "media": "42ebc678efa747a28ba2c5f2af199c47",
+                  "type": "image"
+                }
+              ],
+              "id": "3eaedb27f124808dbc5df1322b5bf289",
+              "type": "column"
+            }
+          ],
+          "id": "3eaedb27f12480cba982fdf5faeb7ade",
+          "type": "column_list"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "1b26a5901c5f411094b9636fe7182e41",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Branding Exercise",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "af9caa0df356491b9df4811944617514",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Branding Exercise",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " develops a project brand through a short context interview, distinct visual identity directions, and iteration. It can help create a new identity or intentionally rebrand an existing project.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "38cd8cb7afed4f3194564329e3018c42",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The process produces:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "180e47b5c3224834becc2877fd639f62",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Visual directions:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " At least three distinct brand concepts, with one-page posters to compare and refine.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ff7e438be03a4aa28cc5bf465fe77383",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Accepted identity:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " A brand guide, reusable logo and imagery assets, favicons, a social image, and a reproducible one-page poster.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "aeef70bdd06549499de4aa1e89a178db",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Project guidance:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Instructions that help future work follow the accepted identity.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Repaint’s brand identity poster brings the positioning, messaging, logo, palette, and paint-roller hero into one view—the kind of concrete artifact you can compare, discuss, and refine.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "5aee1d72beac4472b3214e555e909d01",
+          "media": "5aee1d72beac4472b3214e555e909d01",
+          "type": "image",
+          "width": 336
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "4891043754ff4135a0366100520d0e5f",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Storytelling",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "c7bbcd7625f24d3dbef95746ba98507c",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Storytelling",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " creates and critiques marketing narratives, project pitches, and personal stories. It helps sharpen a hook, clarify emotional stakes, connect story beats, or make an ending land.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "5806a156e793434791cad9e0f096978e",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The skill is based on work by ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.instagram.com/edmund.tian",
+              "italic": false,
+              "strike": false,
+              "text": "Edmund Tian",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The “Addicting Storytelling” workshop visual featured in the README. This introduces the storytelling material; it is not an example of a generated story.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "b28850f54e3e4848851079ed625f6455",
+          "media": "b28850f54e3e4848851079ed625f6455",
+          "type": "image",
+          "width": 528
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ed4ab019c55f461499694022ee452abc",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "It supports two tasks:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "e5ced4922bf543f69a2b12c7bed98f0c",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Create:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Draft a narrative around a clear message, connected story beats, and a memorable payoff, while preserving your voice and grounding claims in supplied facts.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "e158c5799a2a4421b124744b8d1746b7",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Critique:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Identify the changes that most improve clarity, stakes, credibility, or payoff, with concrete revisions to weak passages.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a297ed35a48e404da30266b73ef15441",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Explore the skills",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ee28cef9090542ebaaa4d792d11cd00c",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The collection is ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://github.com/transitive-bullshit/skills",
+              "italic": false,
+              "strike": false,
+              "text": "open source on GitHub",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " under the MIT license. Each skill includes its own instructions and references; the README has installation commands for using them with your agent.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3eaedb27f12480fe8b10e7a11951d717",
+          "richText": [],
+          "type": "paragraph"
+        }
+      ],
+      "cover": "3eaedb27f124819d9d34c4f0eda4e5cc:cover",
+      "description": "My personal reusable agent skills, including creating images, developing brand identities, and telling better stories.",
+      "featured": true,
+      "id": "3eaedb27f124819d9d34c4f0eda4e5cc",
+      "modified": "2026-09-29T12:21:00.000Z",
+      "published": "2026-09-07",
+      "slug": "agent-skills",
+      "source": "https://github.com/transitive-bullshit/skills",
+      "tags": [
+        "AI",
+        "OSS"
+      ],
+      "title": "Agent Skills",
+      "type": "OSS Project"
     }
   },
   "projectSource": {
