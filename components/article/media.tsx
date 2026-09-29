@@ -66,14 +66,12 @@ export function NotionIcon({
 export function ZoomableImage({
   media,
   alt,
-  caption,
   sizes,
   priority = false,
   reuseLoadedImage = false
 }: {
   media: Media
   alt: string
-  caption?: string
   sizes?: string
   priority?: boolean
   reuseLoadedImage?: boolean
@@ -87,7 +85,6 @@ export function ZoomableImage({
       width={(media.variants.at(-1) ?? media.original).width}
       height={(media.variants.at(-1) ?? media.original).height}
       alt={alt}
-      caption={caption}
     >
       <MediaImage
         media={media}

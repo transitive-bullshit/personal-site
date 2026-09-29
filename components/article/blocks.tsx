@@ -186,7 +186,6 @@ function BlockView({ block, snapshot }: { block: Block; snapshot: Snapshot }) {
           <ZoomableImage
             media={snapshot.media[block.media]!}
             alt={alt}
-            caption={alt}
             sizes={
               block.width
                 ? `(max-width: ${block.width + 44}px) calc(100vw - 44px), ${block.width}px`

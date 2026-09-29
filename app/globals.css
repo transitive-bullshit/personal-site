@@ -761,7 +761,6 @@ summary {
   --muted: oklch(1 0 0 / 0.1);
   --border: oklch(1 0 0 / 0.2);
   --ring: oklch(1 0 0 / 0.7);
-  --lightbox-caption-space: 0px;
   --lightbox-error-space: 0px;
   width: 100%;
   max-width: none;
@@ -781,9 +780,6 @@ summary {
   color: var(--foreground);
   box-shadow: none;
 }
-.image-lightbox:has(.lightbox-caption) {
-  --lightbox-caption-space: calc(min(80px, 10dvh) + 16px);
-}
 .image-lightbox:has(.lightbox-download-error) {
   --lightbox-error-space: 56px;
 }
@@ -795,11 +791,7 @@ summary {
   width: min(
     100%,
     1440px,
-    calc(
-      (100dvh - 168px - var(--lightbox-caption-space) -
-          var(--lightbox-error-space)) *
-        var(--image-ratio)
-    )
+    calc((100dvh - 168px - var(--lightbox-error-space)) * var(--image-ratio))
   );
   aspect-ratio: var(--image-ratio);
   flex: none;
@@ -829,6 +821,7 @@ summary {
   gap: 12px;
   flex-wrap: wrap;
 }
+.lightbox-navigation,
 .lightbox-download {
   display: inline-flex;
   align-items: center;
@@ -847,6 +840,7 @@ summary {
     background-color 150ms ease-out,
     color 150ms ease-out;
 }
+.lightbox-navigation:hover:not(:disabled),
 .lightbox-download:hover:not(:disabled) {
   background: var(--muted);
   color: var(--foreground);
@@ -856,6 +850,18 @@ summary {
 }
 .lightbox-download:disabled {
   cursor: progress;
+}
+.lightbox-navigation {
+  min-width: 44px;
+}
+.lightbox-navigation:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.lightbox-position {
+  color: var(--muted-foreground);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
 }
 .lightbox-download-icon {
   animation: lightbox-feedback 200ms ease-out;
@@ -882,13 +888,6 @@ summary {
   to {
     transform: rotate(360deg);
   }
-}
-.lightbox-caption {
-  text-align: center;
-  white-space: pre-wrap;
-  margin: 0;
-  max-height: min(80px, 10dvh);
-  overflow-y: auto;
 }
 .image-lightbox [data-slot='dialog-close'] {
   width: 44px;
