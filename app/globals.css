@@ -804,6 +804,9 @@ summary {
 .lightbox-frame:not(:disabled) {
   cursor: zoom-out;
 }
+.lightbox-frame:focus-visible {
+  outline: none;
+}
 .lightbox-image {
   display: block;
   width: 100%;
