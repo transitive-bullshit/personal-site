@@ -71,7 +71,9 @@ export function ProjectPage({
           </ProjectTransition>
           {project.description ? (
             <ProjectTransition projectId={project.id} part='description'>
-              <p className='article-description'>{project.description}</p>
+              <p className='article-description text-pretty'>
+                {project.description}
+              </p>
             </ProjectTransition>
           ) : null}
           <div className='project-actions'>

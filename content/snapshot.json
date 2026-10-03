@@ -82158,40 +82158,40 @@
       "variants": []
     },
     "3eeedb27f12481a5b6c7f1d752e10389:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAUAA4BaJQAAYssLfa4A/vXbIdlMDq99G4upR+7i9c2my2ESAAAA",
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAQAA4BaJQAAXOn8RAAA/vGDSo8W5XDZMGa6zfqH9HyXk/R1fgAA",
       "original": {
-        "bytes": 219343,
-        "hash": "f568af946292564c9b06e0313e6e28a9ff20879e945ae881de7405320aa6f108",
-        "height": 1080,
-        "key": "personal-site/media/f568af946292564c9b06e0313e6e28a9ff20879e945ae881de7405320aa6f108.jpg",
+        "bytes": 135263,
+        "hash": "055521cc4db02087726492a639670d3f665d41a330939ad996c7de8362932bc7",
+        "height": 630,
+        "key": "personal-site/media/055521cc4db02087726492a639670d3f665d41a330939ad996c7de8362932bc7.jpg",
         "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/f568af946292564c9b06e0313e6e28a9ff20879e945ae881de7405320aa6f108.jpg",
-        "width": 1920
+        "url": "https://assets.cultural-alignment.com/personal-site/media/055521cc4db02087726492a639670d3f665d41a330939ad996c7de8362932bc7.jpg",
+        "width": 1200
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-03T02:55:00.000Z",
+        "edited": "2026-10-03T03:52:00.000Z",
         "key": "3eeedb27f12481a5b6c7f1d752e10389:cover",
         "kind": "file"
       },
       "variants": [
         {
-          "bytes": 34704,
-          "hash": "a2c159da8f15e195dea89e903c32879c5e90994adae8f6b2c95b498f7fe307a0",
-          "height": 540,
-          "key": "personal-site/media/a2c159da8f15e195dea89e903c32879c5e90994adae8f6b2c95b498f7fe307a0.webp",
+          "bytes": 34500,
+          "hash": "cd39918b1571337fe8269852d6f7fe27bb45834ddeaf6294feecc6e1aedbab4d",
+          "height": 504,
+          "key": "personal-site/media/cd39918b1571337fe8269852d6f7fe27bb45834ddeaf6294feecc6e1aedbab4d.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/a2c159da8f15e195dea89e903c32879c5e90994adae8f6b2c95b498f7fe307a0.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/cd39918b1571337fe8269852d6f7fe27bb45834ddeaf6294feecc6e1aedbab4d.webp",
           "width": 960
         },
         {
-          "bytes": 144324,
-          "hash": "2af011d22b2220d7d6045ebe4cd528d8b6588399a1cb12a2784e9847599a24d6",
-          "height": 1080,
-          "key": "personal-site/media/2af011d22b2220d7d6045ebe4cd528d8b6588399a1cb12a2784e9847599a24d6.webp",
+          "bytes": 71270,
+          "hash": "345d8a725369ca2cd2d1823040be24809144483a903f4dac959b8aaeac972813",
+          "height": 630,
+          "key": "personal-site/media/345d8a725369ca2cd2d1823040be24809144483a903f4dac959b8aaeac972813.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/2af011d22b2220d7d6045ebe4cd528d8b6588399a1cb12a2784e9847599a24d6.webp",
-          "width": 1920
+          "url": "https://assets.cultural-alignment.com/personal-site/media/345d8a725369ca2cd2d1823040be24809144483a903f4dac959b8aaeac972813.webp",
+          "width": 1200
         }
       ]
     },
@@ -97869,13 +97869,13 @@
       ],
       "cover": "3eeedb27f12481a5b6c7f1d752e10389:cover",
       "description": "A piano cover of Post Malone’s Candy Paint, performed note by note by little sprites of light.",
-      "featured": false,
+      "featured": true,
       "icon": {
         "type": "emoji",
         "value": "🎬"
       },
       "id": "3eeedb27f12481a5b6c7f1d752e10389",
-      "modified": "2026-10-03T02:55:00.000Z",
+      "modified": "2026-10-03T03:52:00.000Z",
       "published": "2026-10-03",
       "slug": "candy-paint-music-video",
       "source": "https://github.com/transitive-bullshit/candy-paint",
