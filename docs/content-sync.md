@@ -54,6 +54,17 @@ Publication validates the complete snapshot and writes deterministic JSON throug
 
 Projects import the optional `Type` select value and separate `Website` and `YouTube` URL properties, tracking their property IDs. Website identifies the hosted project; YouTube imports only for the exact type `Video`. Empty URLs remain unset. Adopting Type or YouTube re-reads cached projects once. Video projects show a YouTube action when populated and can also have a Website action. GitHub Source URLs use the GitHub icon; other Source URLs use the generic code icon. These links also appear in project Markdown, and Website/YouTube are included in structured metadata.
 
+## Media implementation map
+
+| Concern | Start here |
+| --- | --- |
+| Downloads, limits, retries, processing, and asset reuse | [`scripts/media/process.ts`](../scripts/media/process.ts): `download`, `processMedia`, and `MediaImporter`. |
+| Uploaded-video dimensions and posters | [`scripts/media/video.ts`](../scripts/media/video.ts) |
+| Trusted remote-video eligibility and range inspection | [`scripts/media/remote-video.ts`](../scripts/media/remote-video.ts) |
+| R2 storage and resumable uploads | [`scripts/media/storage.ts`](../scripts/media/storage.ts), [`scripts/media/multipart.ts`](../scripts/media/multipart.ts) |
+| Completed-media cache and placeholder backfill | [`scripts/media/cache.ts`](../scripts/media/cache.ts), [`scripts/media/placeholders.ts`](../scripts/media/placeholders.ts) |
+| Page reuse and fast-mode decisions | [`scripts/notion/import-pages.ts`](../scripts/notion/import-pages.ts), [`scripts/notion/normalize.ts`](../scripts/notion/normalize.ts), [`scripts/sync.ts`](../scripts/sync.ts) |
+
 ## Media and image widths
 
 Each media download has a 30-minute timeout per attempt and is limited to 512 MiB, enforced against both the declared content length and the bytes received. Transient download failures retry up to three attempts.
