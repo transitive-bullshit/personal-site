@@ -13,7 +13,18 @@ pnpm dev
 
 `pnpm dev` uses Portless. Open the URL it prints rather than assuming port 3000. The committed snapshot supports normal development without CMS/storage credentials; use [Content sync](content-sync.md) only when importing content. If the snapshot is missing from a checkout, restore the committed artifact first.
 
-Use the installed Next.js guides under `node_modules/next/dist/docs/` for the APIs being changed. `work/` is ignored scratch space for probes and screenshots, not a required checkout dependency. Keep durable commands in `scripts/`, behavior checks in `tests/`, and useful conclusions in the relevant guide.
+Use the installed Next.js guides for the APIs being changed. Locate the relevant topic first, then read the returned path; numbered directories and extensions can change:
+
+```sh
+rg --files node_modules/next/dist/docs | rg 'css|use-client|server-and-client|image'
+```
+
+`work/` is ignored scratch space for probes and screenshots, not a required checkout dependency. Keep durable commands in `scripts/`, behavior checks in `tests/`, and useful conclusions in the relevant guide.
+
+## Agent execution troubleshooting
+
+- If pnpm starts silently, check the active runner against `package.json`. Once the required version is active, `npm_config_manage_package_manager_versions=false pnpm --version` can diagnose a version-manager stall; this recovered earlier sessions.
+- `listen EPERM` on loopback or tsx IPC indicates sandbox permissions. Rerun the affected command through the tool's approval path, then finish the normal checks.
 
 ## Checks by change
 

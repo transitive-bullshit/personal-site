@@ -24,6 +24,10 @@ When adding a page, account for all applicable discovery surfaces:
 - `deploymentOrigin()` selects the public production hostname or preview branch alias, with the unique Vercel URL and then `site.origin` as fallbacks. This is separate from canonical page origin: a unique deployment URL previously sent social crawlers to a Vercel login page.
 - Historical `/api/social-image?id=…` URLs permanently redirect recognized active article IDs to current cards; unknown IDs return 404.
 
+## External hover previews
+
+The preview API uses `scripts/bookmarks.ts` for fetching/parsing metadata and `scripts/public-fetch.ts` for destination and redirect validation. When local parsing succeeds but production previews fail, compare the deployed `/api/link-preview?url=…` response and upstream HTTP status, then inspect the target site's security events before changing the parser. A bot challenge can block the server fetch despite correct page metadata; the [Cloudflare incident](archive/link-preview-cloudflare-2026-09-29.md) records one confirmed case.
+
 ## Deployment lessons
 
 Takumi needs a native platform binding. Keep its wrapper/core externalized in `next.config.ts`, core installed directly, and the post-build check in `scripts/verify-social-image-bundle.ts`. A past deployment failed because local rendering found a native binary on the build machine that was absent from the deployed trace. `pnpm build` checks the artifact, not just whether compilation succeeds.
