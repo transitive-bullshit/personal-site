@@ -52,7 +52,7 @@ Dry runs still perform Notion discovery, selected page reads, public image-layou
 
 Publication validates the complete snapshot and writes deterministic JSON through an atomic rename. Unchanged bytes are not rewritten. Search is published afterward in a separate atomic write; the two files are not one transaction.
 
-Projects also import the optional `Type` select value and track its property ID. Adopting this property re-reads cached projects once; an empty select remains unset. Only the exact value `Video` changes the detail-page presentation.
+Projects import the optional `Type` select value and separate `Website` and `YouTube` URL properties, tracking their property IDs. Website identifies the hosted project; YouTube imports only for the exact type `Video`. Empty URLs remain unset. Adopting Type or YouTube re-reads cached projects once. Video projects show a YouTube action when populated and can also have a Website action. GitHub Source URLs use the GitHub icon; other Source URLs use the generic code icon. These links also appear in project Markdown, and Website/YouTube are included in structured metadata.
 
 ## Media and image widths
 

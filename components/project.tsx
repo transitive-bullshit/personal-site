@@ -5,8 +5,10 @@ import { Blocks } from './article/blocks'
 import { JsonLd } from './json-ld'
 import { projectJsonLd } from '@/lib/content/metadata'
 import Link from 'next/link'
-import { ArrowLeftIcon, ArrowUpRightIcon, CodeIcon } from 'lucide-react'
+import { ArrowLeftIcon, CodeIcon, GlobeIcon } from 'lucide-react'
 import SiX from '@icons-pack/react-simple-icons/icons/SiX'
+import SiGithub from '@icons-pack/react-simple-icons/icons/SiGithub'
+import SiYoutube from '@icons-pack/react-simple-icons/icons/SiYoutube'
 import type { Project, Snapshot } from '@/lib/content/schema'
 import { ProjectTransition } from './project-transition'
 import { ContentBody } from './article/content-body'
@@ -27,6 +29,11 @@ export function ProjectPage({
   snapshot: Snapshot
 }) {
   const hero = getProjectHeroVideo(project, snapshot)
+  const SourceIcon =
+    project.source &&
+    ['github.com', 'www.github.com'].includes(new URL(project.source).hostname)
+      ? SiGithub
+      : CodeIcon
   const body = hero
     ? {
         ...project,
@@ -80,18 +87,31 @@ export function ProjectPage({
             {project.website ? (
               <Button asChild>
                 <a href={project.website} target='_blank' rel='noopener'>
-                  <ArrowUpRightIcon
+                  <GlobeIcon aria-hidden='true' data-icon='inline-start' />
+                  View project
+                </a>
+              </Button>
+            ) : null}
+            {project.type === 'Video' && project.youtube ? (
+              <Button variant={project.website ? 'outline' : 'default'} asChild>
+                <a href={project.youtube} target='_blank' rel='noopener'>
+                  <SiYoutube
                     aria-hidden='true'
+                    title=''
                     data-icon='inline-start'
                   />
-                  View project
+                  View on YouTube
                 </a>
               </Button>
             ) : null}
             {project.source ? (
               <Button variant='outline' asChild>
                 <a href={project.source} target='_blank' rel='noopener'>
-                  <CodeIcon aria-hidden='true' data-icon='inline-start' />
+                  <SourceIcon
+                    aria-hidden='true'
+                    title=''
+                    data-icon='inline-start'
+                  />
                   View source
                 </a>
               </Button>

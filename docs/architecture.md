@@ -29,7 +29,7 @@ The executable contract is `lib/content/schema.ts`; these distinctions explain h
 | Object | Meaning and important distinction |
 | --- | --- |
 | Article | A public writing entry keyed by stable Notion page ID, rendered at `/<slug>`. Has one author string and a publication date. |
-| Project | A public portfolio entry at `/projects/<slug>`, sharing article bodies/media. Has people-based authors, an optional publication date, and optional Website, Source, and Tweet actions. Source may be a repository or a creation conversation. |
+| Project | A public portfolio entry at `/projects/<slug>`, sharing article bodies/media. Has people-based authors, an optional publication date, and optional Website, YouTube, Source, and Tweet actions. Website is the hosted project; YouTube is available for Video projects. Source may be a repository or a creation conversation, with a GitHub icon for GitHub URLs. |
 | Public / Featured | Public controls inclusion in the snapshot; Featured controls homepage selection. Featured is not a publication state. |
 | Block / RichText | Application-owned content tree and text annotations. Stable block IDs support anchors, TOC entries, and rewritten Notion links. Image block `width` is an optional display width in pixels, separate from asset dimensions. |
 | RouteRecord | Stable slug assignment, old aliases, and active status, stored separately from content. Inactive records reserve paths; they do not publish pages. Articles and projects have separate registries. |

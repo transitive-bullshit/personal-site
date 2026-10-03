@@ -167,6 +167,7 @@ export const projectSchema = articleSchema
     type: z.string().optional(),
     authors: z.array(z.object({ id: idSchema, name: z.string().optional() })),
     website: httpUrlSchema.optional(),
+    youtube: httpUrlSchema.optional(),
     source: httpUrlSchema.optional(),
     tweet: httpUrlSchema.optional()
   })

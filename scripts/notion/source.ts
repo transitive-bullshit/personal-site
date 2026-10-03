@@ -74,7 +74,8 @@ export const projectProperties = {
   Author: 'people',
   Type: 'select',
   Source: 'url',
-  Website: 'url'
+  Website: 'url',
+  YouTube: 'url'
 } as const
 
 export class NotionSourceClient {

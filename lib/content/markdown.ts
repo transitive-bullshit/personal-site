@@ -276,6 +276,7 @@ export function entryMarkdown(entry: Article | Project, snapshot: Snapshot) {
   if (project) {
     for (const [label, href] of [
       ['Website', entry.website],
+      ['YouTube', entry.type === 'Video' ? entry.youtube : undefined],
       ['Source', entry.source],
       ['Original post', entry.tweet]
     ]) {

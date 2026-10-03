@@ -191,6 +191,10 @@ export class Normalizer {
     const prop = (name: string) => propertyById(page, propertyIds[name]!)
     const author = await this.api.fullProperty(page.id, prop('Author'))
     const tweet = await this.api.fullProperty(page.id, prop('Tweet'))
+    const type = z
+      .object({ name: z.string() })
+      .nullable()
+      .parse(prop('Type').select)?.name
     return projectSchema.parse({
       ...(await this.pageContent(page, propertyIds)),
       authors: z
@@ -202,9 +206,9 @@ export class Normalizer {
         )
         .parse(author.people)
         .map(({ id, name }) => ({ id, name: name ?? undefined })),
-      type: z.object({ name: z.string() }).nullable().parse(prop('Type').select)
-        ?.name,
+      type,
       website: prop('Website').url || undefined,
+      youtube: type === 'Video' ? prop('YouTube').url || undefined : undefined,
       source: prop('Source').url || undefined,
       tweet: plainText(tweet.rich_text).trim() || undefined
     })

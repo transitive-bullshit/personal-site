@@ -103,6 +103,9 @@ export function projectJsonLd(project: Project, snapshot: Snapshot) {
     keywords: project.tags,
     image: image?.url ?? defaultSocialImages()[0]!.url,
     author: authors.length ? authors : undefined,
-    sameAs: project.website
+    sameAs: [
+      project.website,
+      project.type === 'Video' ? project.youtube : undefined
+    ].filter(Boolean)
   }
 }

@@ -215,8 +215,11 @@ export async function main() {
             progress,
             ...importOptions,
             kind: 'project',
-            // Re-read cached projects once when adopting the Type property.
-            force: values.force || !previous?.projectSource?.propertyIds.Type,
+            // Re-read cached projects once when adopting new project properties.
+            force:
+              values.force ||
+              !previous?.projectSource?.propertyIds.Type ||
+              !previous?.projectSource?.propertyIds.YouTube,
             pages: projectInput.pages,
             previous: previous?.projects ?? {},
             routes: projectRoutes,

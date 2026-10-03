@@ -153,6 +153,11 @@ it('normalizes project people and structured links through the shared body reade
     },
     Source: { id: 'source', type: 'url', url: project.source },
     Website: { id: 'website', type: 'url', url: project.website },
+    YouTube: {
+      id: 'youtube',
+      type: 'url',
+      url: 'https://youtu.be/demo' as string | null
+    },
     Tweet: {
       id: 'tweet',
       type: 'rich_text',
@@ -176,8 +181,21 @@ it('normalizes project people and structured links through the shared body reade
   expect(result).toEqual({
     ...project,
     type: 'Video',
+    youtube: 'https://youtu.be/demo',
     tweet: 'https://x.com/user/status/123'
   })
+  properties.YouTube.url = null
+  expect(
+    (
+      await normalizer.project(
+        { ...page, properties },
+        Object.fromEntries(
+          Object.entries(properties).map(([name, prop]) => [name, prop.id])
+        )
+      )
+    ).youtube
+  ).toBeUndefined()
+  properties.YouTube.url = 'https://youtu.be/demo'
   properties.Type.select = null
   expect(
     (
@@ -190,7 +208,21 @@ it('normalizes project people and structured links through the shared body reade
     ).type
   ).toBeUndefined()
   expect(
+    (
+      await normalizer.project(
+        { ...page, properties },
+        Object.fromEntries(
+          Object.entries(properties).map(([name, prop]) => [name, prop.id])
+        )
+      )
+    ).youtube
+  ).toBeUndefined()
+  expect(
     projectSchema.safeParse({ ...result, source: 'javascript:alert(1)' })
+      .success
+  ).toBe(false)
+  expect(
+    projectSchema.safeParse({ ...result, youtube: 'javascript:alert(1)' })
       .success
   ).toBe(false)
 })

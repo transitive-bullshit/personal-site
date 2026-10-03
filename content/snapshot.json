@@ -80924,7 +80924,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T23:42:00.000Z",
+        "edited": "2026-10-03T06:14:00.000Z",
         "key": "3ddedb27f1248186b064c993b8e155c6:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/amplify_video_thumb/2096133721955209216/img/b0n8ufOa4sWSMbrt.jpg"
@@ -81021,7 +81021,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:49:00.000Z",
+        "edited": "2026-10-03T06:13:00.000Z",
         "key": "3ddedb27f12481c1a145c3d546904768:cover",
         "kind": "file"
       },
@@ -81726,7 +81726,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-29T12:34:00.000Z",
+        "edited": "2026-10-03T06:14:00.000Z",
         "key": "3e9edb27f12481b5a69ec67030d06b06:cover",
         "kind": "file"
       },
@@ -82067,7 +82067,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-29T12:36:00.000Z",
+        "edited": "2026-10-03T06:14:00.000Z",
         "key": "3e9edb27f12481fe84acd73fae342ccb:cover",
         "kind": "file"
       },
@@ -82170,7 +82170,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-03T03:52:00.000Z",
+        "edited": "2026-10-03T06:15:00.000Z",
         "key": "3eeedb27f12481a5b6c7f1d752e10389:cover",
         "kind": "file"
       },
@@ -90046,7 +90046,7 @@
         "value": "🎬"
       },
       "id": "3ddedb27f1248186b064c993b8e155c6",
-      "modified": "2026-09-28T23:42:00.000Z",
+      "modified": "2026-10-03T06:14:00.000Z",
       "published": "2026-09-05",
       "slug": "pluribus-openai-parody",
       "tags": [
@@ -90056,8 +90056,7 @@
       ],
       "title": "Pluribus — OpenAI Parody",
       "tweet": "https://x.com/transitive_bs/status/2096134662246855089",
-      "type": "Video",
-      "website": "https://x.com/transitive_bs/status/2096134662246855089"
+      "type": "Video"
     },
     "3ddedb27f12481b7bdc4d0325b2f6171": {
       "authors": [
@@ -90129,7 +90128,7 @@
         "value": "🎬"
       },
       "id": "3ddedb27f12481c1a145c3d546904768",
-      "modified": "2026-09-28T16:49:00.000Z",
+      "modified": "2026-10-03T06:13:00.000Z",
       "published": "2026-09-13",
       "slug": "margin-call-ai-safety-parody",
       "source": "https://www.share-ai-passage.com/chatgpt/8cb96104-b9a5-4791-8c64-481517b28f0c",
@@ -90141,7 +90140,7 @@
       "title": "Margin Call — AI Safety Parody",
       "tweet": "https://x.com/transitive_bs/status/2099185744724316478",
       "type": "Video",
-      "website": "https://www.youtube.com/watch?v=FT-zgDcfLmc"
+      "youtube": "https://www.youtube.com/watch?v=FT-zgDcfLmc"
     },
     "3e5edb27f124800884cddefb16b57151": {
       "authors": [
@@ -93531,7 +93530,7 @@
         "value": "🎬"
       },
       "id": "3e9edb27f12481b5a69ec67030d06b06",
-      "modified": "2026-09-29T12:34:00.000Z",
+      "modified": "2026-10-03T06:14:00.000Z",
       "published": "2026-09-29",
       "slug": "sometimes-i-think-slow-ai-music-video",
       "source": "https://github.com/transitive-bullshit/sometimes-i-think-slow",
@@ -93542,7 +93541,7 @@
       ],
       "title": "Sometimes I Think Slow – AI Music Video",
       "type": "Video",
-      "website": "https://www.youtube.com/watch?v=dZjYGcjS3iQ"
+      "youtube": "https://www.youtube.com/watch?v=dZjYGcjS3iQ"
     },
     "3e9edb27f12481fe84acd73fae342ccb": {
       "authors": [
@@ -96173,7 +96172,7 @@
         "value": "🎬"
       },
       "id": "3e9edb27f12481fe84acd73fae342ccb",
-      "modified": "2026-09-29T12:36:00.000Z",
+      "modified": "2026-10-03T06:14:00.000Z",
       "published": "2026-09-28",
       "slug": "slow-it-down-ai-music-video",
       "source": "https://github.com/transitive-bullshit/slow-it-down",
@@ -96185,7 +96184,7 @@
       "title": "Slow It Down – AI Music Video",
       "tweet": "https://x.com/transitive_bs/status/2104605687154376844",
       "type": "Video",
-      "website": "https://www.youtube.com/watch?v=Tz6gQDN9qG0"
+      "youtube": "https://www.youtube.com/watch?v=Tz6gQDN9qG0"
     },
     "3eaedb27f124819d9d34c4f0eda4e5cc": {
       "authors": [
@@ -97875,7 +97874,7 @@
         "value": "🎬"
       },
       "id": "3eeedb27f12481a5b6c7f1d752e10389",
-      "modified": "2026-10-03T03:52:00.000Z",
+      "modified": "2026-10-03T06:15:00.000Z",
       "published": "2026-10-03",
       "slug": "candy-paint-music-video",
       "source": "https://github.com/transitive-bullshit/candy-paint",
@@ -97886,7 +97885,8 @@
       ],
       "title": "Candy Paint – Music Video",
       "type": "Video",
-      "website": "https://youtu.be/e-R5cXF3bzE"
+      "website": "https://candy-paint.vercel.app",
+      "youtube": "https://youtu.be/e-R5cXF3bzE"
     }
   },
   "projectSource": {
@@ -97906,7 +97906,8 @@
       "Tags": "BN%5DP",
       "Tweet": "jhf%3B",
       "Type": "vatV",
-      "Website": "ntdb"
+      "Website": "ntdb",
+      "YouTube": "%5BLPu"
     },
     "rootPageId": "78fc5a4b88d74b0e824e29407e9f1ec1",
     "workspaceId": "fde5ac74eea345278f004482710e1af3"
