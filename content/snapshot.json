@@ -79229,6 +79229,33 @@
         }
       ]
     },
+    "23b95655f9db4bacae04a8227871da41": {
+      "original": {
+        "bytes": 7195670,
+        "hash": "35ce5050e36b881cdfe094c3b71f7f85dd8cbb520918a0feb5a58b96abd94ecb",
+        "height": 1080,
+        "key": "personal-site/media/35ce5050e36b881cdfe094c3b71f7f85dd8cbb520918a0feb5a58b96abd94ecb.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/35ce5050e36b881cdfe094c3b71f7f85dd8cbb520918a0feb5a58b96abd94ecb.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 52264,
+        "hash": "30fd7299d3a7ec6f00452368cf5f9b640585f70217a324b80cef2add36105f9a",
+        "height": 720,
+        "key": "personal-site/media/30fd7299d3a7ec6f00452368cf5f9b640585f70217a324b80cef2add36105f9a.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/30fd7299d3a7ec6f00452368cf5f9b640585f70217a324b80cef2add36105f9a.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-03T00:17:00.000Z",
+        "key": "23b95655f9db4bacae04a8227871da41",
+        "kind": "file"
+      },
+      "variants": []
+    },
     "266ce1a8316f44ecbd36e3908ebdba78:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoIAAUAA4BaJQBOgCPg+vRRIAD+2FLJMwAO+TUuzZSnd3Elfn3/6/28SQ8uoRx0Xbzu6FYo+mUvAH8AAAA=",
       "original": {
@@ -82103,6 +82130,71 @@
         }
       ]
     },
+    "3eeedb27f124802a9387d58b21f39faf": {
+      "original": {
+        "bytes": 237593768,
+        "height": 1080,
+        "mime": "video/mp4",
+        "remote": true,
+        "url": "https://assets.cultural-alignment.com/media/videos/candy-paint-1080p60-e450a1e6c67a9345.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 39518,
+        "hash": "3693263263195d3694bd7484698bdbfb97d9d4c8a5e10f2208a5e95cb7a6b125",
+        "height": 720,
+        "key": "personal-site/media/3693263263195d3694bd7484698bdbfb97d9d4c8a5e10f2208a5e95cb7a6b125.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/3693263263195d3694bd7484698bdbfb97d9d4c8a5e10f2208a5e95cb7a6b125.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-03T02:53:00.000Z",
+        "key": "3eeedb27f124802a9387d58b21f39faf",
+        "kind": "external",
+        "url": "https://assets.cultural-alignment.com/media/videos/candy-paint-1080p60-e450a1e6c67a9345.mp4"
+      },
+      "variants": []
+    },
+    "3eeedb27f12481a5b6c7f1d752e10389:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAUAA4BaJQAAYssLfa4A/vXbIdlMDq99G4upR+7i9c2my2ESAAAA",
+      "original": {
+        "bytes": 219343,
+        "hash": "f568af946292564c9b06e0313e6e28a9ff20879e945ae881de7405320aa6f108",
+        "height": 1080,
+        "key": "personal-site/media/f568af946292564c9b06e0313e6e28a9ff20879e945ae881de7405320aa6f108.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/f568af946292564c9b06e0313e6e28a9ff20879e945ae881de7405320aa6f108.jpg",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-03T02:55:00.000Z",
+        "key": "3eeedb27f12481a5b6c7f1d752e10389:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 34704,
+          "hash": "a2c159da8f15e195dea89e903c32879c5e90994adae8f6b2c95b498f7fe307a0",
+          "height": 540,
+          "key": "personal-site/media/a2c159da8f15e195dea89e903c32879c5e90994adae8f6b2c95b498f7fe307a0.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/a2c159da8f15e195dea89e903c32879c5e90994adae8f6b2c95b498f7fe307a0.webp",
+          "width": 960
+        },
+        {
+          "bytes": 144324,
+          "hash": "2af011d22b2220d7d6045ebe4cd528d8b6588399a1cb12a2784e9847599a24d6",
+          "height": 1080,
+          "key": "personal-site/media/2af011d22b2220d7d6045ebe4cd528d8b6588399a1cb12a2784e9847599a24d6.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/2af011d22b2220d7d6045ebe4cd528d8b6588399a1cb12a2784e9847599a24d6.webp",
+          "width": 1920
+        }
+      ]
+    },
     "3ef4a57ca2944e5087ff9e54829c977f": {
       "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAYAA4BaJQBdgCHiBWfKUAD+8lcq0VZb9ONqyoIE1Yvaot2z5xEc5U2ywXIAAAA=",
       "original": {
@@ -82820,6 +82912,44 @@
         }
       ]
     },
+    "53fec491d2c842dea1b1feeb94ef9bf8": {
+      "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoIAAUAA4BaJZgCdH8AGZLo9r6AAP7vIb7ea69pME9DSxObqUfNoPU5TXlJSngnwIIAAA==",
+      "original": {
+        "bytes": 220375,
+        "hash": "cbf21a06837032fc05733a298d81c5fbb98f360f71d128830d246f11992c5d21",
+        "height": 1080,
+        "key": "personal-site/media/cbf21a06837032fc05733a298d81c5fbb98f360f71d128830d246f11992c5d21.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/cbf21a06837032fc05733a298d81c5fbb98f360f71d128830d246f11992c5d21.jpg",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-03T00:17:00.000Z",
+        "key": "53fec491d2c842dea1b1feeb94ef9bf8",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 40540,
+          "hash": "48005fc9f00a6cafb4a1428a3906fa4314fabf76568aec45daa5616119d7b642",
+          "height": 540,
+          "key": "personal-site/media/48005fc9f00a6cafb4a1428a3906fa4314fabf76568aec45daa5616119d7b642.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/48005fc9f00a6cafb4a1428a3906fa4314fabf76568aec45daa5616119d7b642.webp",
+          "width": 960
+        },
+        {
+          "bytes": 154802,
+          "hash": "aa381266e1b8c003cfe7dd6ad126a03d2571e52c9e34beb89f6a1e56cf7eca92",
+          "height": 1080,
+          "key": "personal-site/media/aa381266e1b8c003cfe7dd6ad126a03d2571e52c9e34beb89f6a1e56cf7eca92.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/aa381266e1b8c003cfe7dd6ad126a03d2571e52c9e34beb89f6a1e56cf7eca92.webp",
+          "width": 1920
+        }
+      ]
+    },
     "54236f2425eb414c9a02000dfe5c78d6": {
       "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAQAA4BaJQBOgCB/jVfcAAD++Urz9NiJNYr6kz0g9mg70WFYFYGijkaQ4yddgAA=",
       "original": {
@@ -83151,6 +83281,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/9b45b6a381698a2f44d734a9541cb1f6f3ec31f813b0599858389f363bc83dc2.webp",
           "width": 1584
+        }
+      ]
+    },
+    "5d084be915c04b349af18148dcfe1ef8": {
+      "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoIAAQAA4BaJQBOgCHgJVhIAAD+6AD55xh5twpOUBWacTdgYAA=",
+      "original": {
+        "bytes": 299993,
+        "hash": "3891bd246b075369697245d3be32fbe94fd6a6984e39dc67a785afc7d5aac738",
+        "height": 840,
+        "key": "personal-site/media/3891bd246b075369697245d3be32fbe94fd6a6984e39dc67a785afc7d5aac738.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/3891bd246b075369697245d3be32fbe94fd6a6984e39dc67a785afc7d5aac738.jpg",
+        "width": 1560
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-03T00:25:00.000Z",
+        "key": "5d084be915c04b349af18148dcfe1ef8",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 66910,
+          "hash": "a85308d402f290855cebce252f4e46485abd4d175240701a8c2f1acd9fb61fca",
+          "height": 517,
+          "key": "personal-site/media/a85308d402f290855cebce252f4e46485abd4d175240701a8c2f1acd9fb61fca.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/a85308d402f290855cebce252f4e46485abd4d175240701a8c2f1acd9fb61fca.webp",
+          "width": 960
+        },
+        {
+          "bytes": 167622,
+          "hash": "59e12ab1988d3887a8c12509a3be5ad029d7a4d72e1ab51a392590ab34f1d460",
+          "height": 840,
+          "key": "personal-site/media/59e12ab1988d3887a8c12509a3be5ad029d7a4d72e1ab51a392590ab34f1d460.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/59e12ab1988d3887a8c12509a3be5ad029d7a4d72e1ab51a392590ab34f1d460.webp",
+          "width": 1560
         }
       ]
     },
@@ -85305,6 +85473,33 @@
       },
       "variants": []
     },
+    "a2f428a6a724403caf1f178190669472": {
+      "original": {
+        "bytes": 6016528,
+        "hash": "730716486c0988799564c84ca6bfbb556b24816fc2f869497aa03c272d6e7b77",
+        "height": 1080,
+        "key": "personal-site/media/730716486c0988799564c84ca6bfbb556b24816fc2f869497aa03c272d6e7b77.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/730716486c0988799564c84ca6bfbb556b24816fc2f869497aa03c272d6e7b77.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 37962,
+        "hash": "9c1635eb94e21e5198608230a5aa46ead00003373a9beaaee5c27e491cd9266d",
+        "height": 720,
+        "key": "personal-site/media/9c1635eb94e21e5198608230a5aa46ead00003373a9beaaee5c27e491cd9266d.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/9c1635eb94e21e5198608230a5aa46ead00003373a9beaaee5c27e491cd9266d.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-03T00:17:00.000Z",
+        "key": "a2f428a6a724403caf1f178190669472",
+        "kind": "file"
+      },
+      "variants": []
+    },
     "a3b0a61d438c46a595c55d021f601a8f": {
       "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAgAA4BaJQBOgBmS0J4gAPfOq3tHQqudwbToN45Rsfdrf6BIIDkCtQc1CgAA",
       "original": {
@@ -86086,6 +86281,44 @@
         }
       ]
     },
+    "b93cbb790119428ca3279bb4dd502d6c": {
+      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoIAAcAA4BaJZQAAupb1ZBwAP7xhXQw0at+f0LmUcdm5r2A9gf0jucQDpJ4/Lwfh8BOZsPIAAA=",
+      "original": {
+        "bytes": 292184,
+        "hash": "8c79723ea354518ab2387e655f3915f45eca2e4de27b49c82d1bfb2ff93e59e4",
+        "height": 1626,
+        "key": "personal-site/media/8c79723ea354518ab2387e655f3915f45eca2e4de27b49c82d1bfb2ff93e59e4.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/8c79723ea354518ab2387e655f3915f45eca2e4de27b49c82d1bfb2ff93e59e4.jpg",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-03T00:25:00.000Z",
+        "key": "b93cbb790119428ca3279bb4dd502d6c",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 46260,
+          "hash": "c212f880573275d456ab64ed5696c408f760cf96c19ecc5a935661f84230571c",
+          "height": 813,
+          "key": "personal-site/media/c212f880573275d456ab64ed5696c408f760cf96c19ecc5a935661f84230571c.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/c212f880573275d456ab64ed5696c408f760cf96c19ecc5a935661f84230571c.webp",
+          "width": 960
+        },
+        {
+          "bytes": 187082,
+          "hash": "8779fbb2eda6bcecec8bb5668ca47609ccc39c3e1130df4d4bd735b6ce6091e7",
+          "height": 1626,
+          "key": "personal-site/media/8779fbb2eda6bcecec8bb5668ca47609ccc39c3e1130df4d4bd735b6ce6091e7.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/8779fbb2eda6bcecec8bb5668ca47609ccc39c3e1130df4d4bd735b6ce6091e7.webp",
+          "width": 1920
+        }
+      ]
+    },
     "b9af0702869d4f3392f3f7cae785c31c": {
       "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAACQAQCdASoEAAgAA4BaJaQAAudYugAA/veG91J5C9QAAA==",
       "original": {
@@ -86826,6 +87059,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/fd3713bb899ba1560f482a3a5162641627baf144e5830f51d9a355dff24fb241.webp",
           "width": 1280
+        }
+      ]
+    },
+    "d0dc5d9d856c48bbaeb5343ad7109fda": {
+      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoIAAYAA4BaJZwAA1Y2uTehkwAA/vL+3K3QiWd3VPtvzWiF8vu8cAAA",
+      "original": {
+        "bytes": 327250,
+        "hash": "9990820e79dfe5a6dbf42f74bce858413babf1efeecc162b35198150acc2ec1d",
+        "height": 1440,
+        "key": "personal-site/media/9990820e79dfe5a6dbf42f74bce858413babf1efeecc162b35198150acc2ec1d.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/9990820e79dfe5a6dbf42f74bce858413babf1efeecc162b35198150acc2ec1d.jpg",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-03T00:25:00.000Z",
+        "key": "d0dc5d9d856c48bbaeb5343ad7109fda",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 59414,
+          "hash": "448877aeddf0dc8fe4e7e5746f62ffced4c2b7dd8e5c25491ed1a33098da515f",
+          "height": 720,
+          "key": "personal-site/media/448877aeddf0dc8fe4e7e5746f62ffced4c2b7dd8e5c25491ed1a33098da515f.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/448877aeddf0dc8fe4e7e5746f62ffced4c2b7dd8e5c25491ed1a33098da515f.webp",
+          "width": 960
+        },
+        {
+          "bytes": 234144,
+          "hash": "481ad23a2c50f8cf51a921371828b0c2200facb2bbc4d76066197ff641390326",
+          "height": 1440,
+          "key": "personal-site/media/481ad23a2c50f8cf51a921371828b0c2200facb2bbc4d76066197ff641390326.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/481ad23a2c50f8cf51a921371828b0c2200facb2bbc4d76066197ff641390326.webp",
+          "width": 1920
         }
       ]
     },
@@ -87765,6 +88036,33 @@
         }
       ]
     },
+    "e47d548b83904f3aa3635c2bb93bb212": {
+      "original": {
+        "bytes": 10899333,
+        "hash": "ca00bd0b97bb3e36a3d9f530765b88e40b556912585e70ae8fd678dd726cb0b6",
+        "height": 1080,
+        "key": "personal-site/media/ca00bd0b97bb3e36a3d9f530765b88e40b556912585e70ae8fd678dd726cb0b6.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/ca00bd0b97bb3e36a3d9f530765b88e40b556912585e70ae8fd678dd726cb0b6.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 64832,
+        "hash": "a54122e69efd7ed6e16171d55add3b3223ea6e734aa7223fb83de4e9e8715643",
+        "height": 720,
+        "key": "personal-site/media/a54122e69efd7ed6e16171d55add3b3223ea6e734aa7223fb83de4e9e8715643.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/a54122e69efd7ed6e16171d55add3b3223ea6e734aa7223fb83de4e9e8715643.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-03T00:17:00.000Z",
+        "key": "e47d548b83904f3aa3635c2bb93bb212",
+        "kind": "file"
+      },
+      "variants": []
+    },
     "e6fb5dfa181f4c409626cccdf0ce8d96": {
       "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoIAAUAA4BaJQBOgCHXYJAAAP74oRvhV64P4wsNMLxIuptb18nxLyyxW5mknB0dVrAAAA==",
       "original": {
@@ -88645,6 +88943,11 @@
       "active": true,
       "aliases": [],
       "slug": "agent-skills"
+    },
+    "3eeedb27f12481a5b6c7f1d752e10389": {
+      "active": true,
+      "aliases": [],
+      "slug": "candy-paint-music-video"
     }
   },
   "projects": {
@@ -96483,6 +96786,1107 @@
       ],
       "title": "Agent Skills",
       "type": "OSS Project"
+    },
+    "3eeedb27f12481a5b6c7f1d752e10389": {
+      "authors": [
+        {
+          "id": "b036f7f695a94f97b3b5c46867d0d103",
+          "name": "Travis Fischer"
+        }
+      ],
+      "blocks": [
+        {
+          "caption": [],
+          "children": [],
+          "id": "3eeedb27f124802a9387d58b21f39faf",
+          "media": "3eeedb27f124802a9387d58b21f39faf",
+          "type": "video"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "cae263ac28d049fbbd308446c767da57",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Watching the music",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "94a9ae1524574ca697356694f6c36bad",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I came across a pair of animated scores on X by Classical Melodies: Handel and Vivaldi, with little glowing sprites hopping across the staff and landing on every note exactly as it sounds. You don’t just hear the counterpoint; you watch the voices take turns.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3eeedb27f124802995e0d6e546b4109e",
+          "tweetId": "2105432507386822925",
+          "type": "embed",
+          "url": "https://x.com/Old_But_Gold50s/status/2105432507386822925"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "08e1f8dcc7534191816f8625b4f175fd",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I wanted one for a song I love: Post Malone’s “Candy Paint,” in a solo piano cover by Molotov Cocktail Piano. The piano strips the song down to four voices: a rolling riff, a lead line above it, a high sparkle on top, and a bass that sits out the verses and comes back for the drops.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The original: Post Malone, “Candy Paint” (2017)",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "2299f383ef4a438dae41310342309006",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=mThqhAT2Irk"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d3010850663344099c54b47489a24155",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "My one rule: ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "no generative video or imagery.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " My last two music videos, ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.transitivebullsh.it/projects/slow-it-down-ai-music-video",
+              "italic": false,
+              "strike": false,
+              "text": "Slow It Down",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " and ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.transitivebullsh.it/projects/sometimes-i-think-slow-ai-music-video",
+              "italic": false,
+              "strike": false,
+              "text": "Sometimes I Think Slow",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", were built from image and video models. This one has none. A purpose-built engine renders every frame from a transcription of the song, so the sync isn’t approximated. It’s the whole point. The audio is the cover, untouched.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "edd4821e5e4c477fae7e1350879b9040",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Every note gets a performer",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "67a433cd10af4a73ac229edc158f2533",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Each voice gets its own performer, a hot pearl of light that travels the score and touches down on every note as it sounds. Notes start as dark smoked glass and flood with candy paint when a performer lands on them. Held notes fill like a gauge, and the performer rides the leading edge of the fill.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d149cd0779c64faea999c0ba697ec935",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The look is the title. Candy paint is a car finish, so the score is pinstriped in gold onto a black-cherry lacquer at night, with metal flake, clearcoat reflections, and shallow focus.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "156f9847127249339a795246d5e6ca14",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The camera follows a storyboard: close on the riff for the intro, wide on the hooks, hard cuts with a shockwave on the three drops, and a final rise that reveals the whole song at once, under the credits.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a1fbaa477cf7420ea5e59ad474c3678b",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "How it was made",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "e2376756203742c8901c02f7466cac12",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Claude Code with ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Opus 5.5",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " built all of it: the song analysis, the engine, the choreography, the camera, and the render pipeline. My job was taste and feedback. It took about a day of back-and-forth, and no generation credits at all.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "The transcription, bar by bar: right hand in pink, left hand in blue. The similarity map below it exposes the song’s sections.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "5d084be915c04b349af18148dcfe1ef8",
+              "media": "5d084be915c04b349af18148dcfe1ef8",
+              "type": "image",
+              "width": 576
+            }
+          ],
+          "color": "default",
+          "id": "33bd79df57964e20b181d83ed05ad78e",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Transcription.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Transkun turned the MP3 into 1,893 piano notes, and librosa found the grid: exactly 90 BPM in E major, with bar 0 at 0.702 seconds.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3818cf2f3aa14ce6b54fd96328d2e3f5",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Voices.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " The notes split by register into riff, lead, sparkle, and bass, and then each voice splits into single lines, one per finger.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "The three directions at the same moment of the first hook: A, Candy Lacquer (top); B, Long Exposure (bottom left); and C, Sleeve (bottom right).",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "b93cbb790119428ca3279bb4dd502d6c",
+              "media": "b93cbb790119428ca3279bb4dd502d6c",
+              "type": "image",
+              "width": 576
+            }
+          ],
+          "color": "default",
+          "id": "c034fba227944b2f8d1c1e3cf9e490c8",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Concept art from the real renderer.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Instead of mood boards from an image model, three early looks were rendered by the engine itself, so whatever I picked was what I’d get.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "b6d32497c503490d9ee048fdc87a56fa",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Choreography.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Every hop borrows from Disney’s twelve principles of animation: anticipation before takeoff, hang time at the top, squash and stretch on landing, and follow-through.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "The storyboard, from the intro to the final rise.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "d0dc5d9d856c48bbaeb5343ad7109fda",
+              "media": "d0dc5d9d856c48bbaeb5343ad7109fda",
+              "type": "image",
+              "width": 576
+            }
+          ],
+          "color": "default",
+          "id": "06406d32963c436b8df0c0f9047c9540",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Storyboard.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Twelve story beats and 31 camera framings, each anchored to a bar of the song.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "382cefa7d9bc4fbab2d7554090d3edff",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Rendering.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Headless Chrome renders each frame with three.js and pipes it to FFmpeg with the matching slice of audio. Every frame is a pure function of song time, so any frame can be rendered on its own.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a5c86c6fb9e94658bc422baabebcae0d",
+          "level": 3,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Directions we tried",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "4f1f1aa31ef0450f887122a1da6a0f75",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Three looks.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " B painted the melody in light trails like cars on a night freeway, and C printed the score as a risograph record sleeve. I didn’t feel the trails, and C was cute, but A was the only one that belonged to this song.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Single, twins, and budding over the same bars. Budding won.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "e47d548b83904f3aa3635c2bb93bb212",
+              "media": "e47d548b83904f3aa3635c2bb93bb212",
+              "type": "video"
+            }
+          ],
+          "color": "default",
+          "id": "8fc4e9fe40844b6c9eb8579598300cc8",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Chords.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " One performer per voice can only visit one note of a chord, and I kept asking why some dots got skipped. We tried one performer per voice, one per line (“twins”), and ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "budding",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ": extra performers split off the voice’s main performer for a chord and merge back after.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Before: the buds merge after every note. After: they keep their identity through short gaps.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "a2f428a6a724403caf1f178190669472",
+              "media": "a2f428a6a724403caf1f178190669472",
+              "type": "video"
+            }
+          ],
+          "color": "default",
+          "id": "9e56d0d100204e47b04c5e02dcdfe9f7",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Merging.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " The first buds merged back after every note, which looked twitchy. Now they keep their identity through short gaps and only merge after about a bar. The bass needed its own rule: its buds merge only once its main performer settles on a held note.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Four poster directions: flash-forward, frontispiece, the whole song, and macro.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "53fec491d2c842dea1b1feeb94ef9bf8",
+              "media": "53fec491d2c842dea1b1feeb94ef9bf8",
+              "type": "image"
+            },
+            {
+              "children": [],
+              "color": "default",
+              "id": "bdab5aabbd284c11bef1ffa6c8a2123d",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "So the poster became the first shot. The title lingers for a few seconds while the riff performers fly in to their first notes, and the camera follows them into the song without adding a second before the music starts.",
+                  "underline": false
+                }
+              ],
+              "type": "paragraph"
+            },
+            {
+              "caption": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Four ways to fly the riff performers in: wave, hover and dive, rise, and skip. Skip won.",
+                  "underline": false
+                }
+              ],
+              "children": [],
+              "id": "23b95655f9db4bacae04a8227871da41",
+              "media": "23b95655f9db4bacae04a8227871da41",
+              "type": "video"
+            }
+          ],
+          "color": "default",
+          "id": "f2bd38f0435f44feac5889d5eb631912",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The first frame.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " X shows a video’s first frame as its preview, and ours was black. Of four posters, I liked Macro best, but cutting from it into the song was jarring.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "12c35b175a5749668193db443d50d5ba",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "What I learned",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "31444b7321644613a2a12cbe75d3bd4c",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Make sync a test, not a vibe.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " The audio is the master, and a motion test checks that every performer lands on all 1,893 onsets and never jumps between frames. Choreography changes can’t quietly drift off the beat.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "4490faaf9ade42df800c424351a1ad59",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Render concept art with the real engine.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " There’s no gap between the pitch and the product.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "e1cebe4b17094adc98eea0d3a6271138",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Chords are where the metaphor breaks.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " One performer per voice reads beautifully on a single line and falls apart on a chord. Budding keeps one character per voice while still hitting every note.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ec28099853314ddb81ed0f6dec775177",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Iterate at low resolution.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " A 540p review of the whole song renders in about five minutes; the 4K60 master takes about 45. I stopped one 4K render halfway and stuck to previews until the final.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "fe10d9a658444c2d92ce5d9fdb34ffee",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The first frame is the thumbnail.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Make the poster part of the motion instead of a cut away from it.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "fb548360744c4c6cbf035ea650e9c212",
+          "level": 3,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Tools used",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "9fe6d44a4dad434aa182595e769be19c",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Claude Code (Opus 5.5):",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " all of the code, analysis, choreography, camera direction, and review renders.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "4e35308102884e06b1d42dfc6cc42424",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Transkun:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " piano transcription from the MP3.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "0d228823186641de8a39aa3e153aa972",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "librosa:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " the tempo grid, key, and sections.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "fa0e780c0d984f89bf15c5fef54b4c09",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "three.js:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " the renderer, with bloom, depth of field, and film grain.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d5539614c1d3493994f640e39b6178fc",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Playwright + headless Chrome, and FFmpeg:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " frame-exact rendering and encoding.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d51fd12023c94d1cbcac8cf9f0b6b9d2",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Blender:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " on the table from the start, and never needed.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "id": "8a880bda797b4ea285f05eb000917bcf",
+          "type": "divider"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ea5d046688c149fb8de8c2c30950e7ed",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "“Candy Paint” by Post Malone. Instrumental cover by Molotov Cocktail Piano. Not affiliated with either.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3eeedb27f12480138fe9da9ed97f62cd",
+          "richText": [],
+          "type": "paragraph"
+        }
+      ],
+      "cover": "3eeedb27f12481a5b6c7f1d752e10389:cover",
+      "description": "A piano cover of Post Malone’s Candy Paint, performed note by note by little sprites of light.",
+      "featured": false,
+      "icon": {
+        "type": "emoji",
+        "value": "🎬"
+      },
+      "id": "3eeedb27f12481a5b6c7f1d752e10389",
+      "modified": "2026-10-03T02:55:00.000Z",
+      "published": "2026-10-03",
+      "slug": "candy-paint-music-video",
+      "source": "https://github.com/transitive-bullshit/candy-paint",
+      "tags": [
+        "AI",
+        "Video",
+        "Projects"
+      ],
+      "title": "Candy Paint – Music Video",
+      "type": "Video",
+      "website": "https://youtu.be/e-R5cXF3bzE"
     }
   },
   "projectSource": {
@@ -101413,6 +102817,164 @@
           "profile_image_url_https": "https://pbs.twimg.com/profile_images/2097646716094984192/PRQWyl10_normal.jpg",
           "screen_name": "transitive_bs",
           "verified": false
+        }
+      },
+      "status": "available"
+    },
+    "2105432507386822925": {
+      "data": {
+        "__typename": "Tweet",
+        "conversation_count": 507,
+        "created_at": "2026-09-30T23:00:01.000Z",
+        "display_text_range": [
+          0,
+          153
+        ],
+        "edit_control": {
+          "edit_tweet_ids": [
+            "2105432507386822925"
+          ],
+          "editable_until_msecs": "1790812801000",
+          "edits_remaining": "5",
+          "is_edit_eligible": false
+        },
+        "entities": {
+          "media": [
+            {
+              "display_url": "pic.x.com/3HjlHw3PbM",
+              "expanded_url": "https://x.com/Old_But_Gold50s/status/2105432507386822925/video/1",
+              "indices": [
+                154,
+                177
+              ],
+              "url": "https://t.co/3HjlHw3PbM"
+            }
+          ]
+        },
+        "favorite_count": 51797,
+        "id_str": "2105432507386822925",
+        "isEdited": false,
+        "isStaleEdit": false,
+        "lang": "en",
+        "mediaDetails": [
+          {
+            "additional_media_info": {},
+            "display_url": "pic.x.com/3HjlHw3PbM",
+            "expanded_url": "https://x.com/Old_But_Gold50s/status/2105432507386822925/video/1",
+            "ext_media_availability": {
+              "status": "Available"
+            },
+            "indices": [
+              154,
+              177
+            ],
+            "media_url_https": "https://pbs.twimg.com/amplify_video_thumb/2105302446419632128/img/--EyGHNxRHqxLHH1.jpg",
+            "original_info": {
+              "focus_rects": [],
+              "height": 720,
+              "width": 1280
+            },
+            "sizes": {
+              "large": {
+                "h": 720,
+                "resize": "fit",
+                "w": 1280
+              },
+              "medium": {
+                "h": 675,
+                "resize": "fit",
+                "w": 1200
+              },
+              "small": {
+                "h": 383,
+                "resize": "fit",
+                "w": 680
+              },
+              "thumb": {
+                "h": 150,
+                "resize": "crop",
+                "w": 150
+              }
+            },
+            "type": "video",
+            "url": "https://t.co/3HjlHw3PbM",
+            "video_info": {
+              "aspect_ratio": [
+                16,
+                9
+              ],
+              "duration_millis": 218058,
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/amplify_video/2105302446419632128/pl/9nBPyL33UDUscJcv.m3u8"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2105302446419632128/vid/avc1/480x270/biCfHlclVn5ggbFA.mp4"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2105302446419632128/vid/avc1/640x360/JM0wkaP_POlDg_Wx.mp4"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/amplify_video/2105302446419632128/vid/avc1/1280x720/6JfrZdlbYd7E2iI0.mp4"
+                }
+              ]
+            }
+          }
+        ],
+        "news_action_type": "conversation",
+        "photos": [],
+        "possibly_sensitive": false,
+        "text": "Vivaldi's “Winter,” visualized in a fascinating way, so that the auditory experience is even more intense; one can literally “see” the music, so to speak https://t.co/3HjlHw3PbM",
+        "user": {
+          "id_str": "1808546376235765760",
+          "is_blue_verified": true,
+          "name": "𝗖𝗹𝗮𝘀𝘀𝗶𝗰𝗮𝗹 𝗠𝗲𝗹𝗼𝗱𝗶𝗲𝘀",
+          "profile_image_shape": "Circle",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1968969731559616512/5r0xrol8_normal.jpg",
+          "screen_name": "Old_But_Gold50s",
+          "verified": false
+        },
+        "video": {
+          "aspectRatio": [
+            16,
+            9
+          ],
+          "contentType": "media_entity",
+          "durationMs": 218058,
+          "mediaAvailability": {
+            "status": "available"
+          },
+          "poster": "https://pbs.twimg.com/amplify_video_thumb/2105302446419632128/img/--EyGHNxRHqxLHH1.jpg",
+          "variants": [
+            {
+              "src": "https://video.twimg.com/amplify_video/2105302446419632128/pl/9nBPyL33UDUscJcv.m3u8",
+              "type": "application/x-mpegURL"
+            },
+            {
+              "src": "https://video.twimg.com/amplify_video/2105302446419632128/vid/avc1/480x270/biCfHlclVn5ggbFA.mp4",
+              "type": "video/mp4"
+            },
+            {
+              "src": "https://video.twimg.com/amplify_video/2105302446419632128/vid/avc1/640x360/JM0wkaP_POlDg_Wx.mp4",
+              "type": "video/mp4"
+            },
+            {
+              "src": "https://video.twimg.com/amplify_video/2105302446419632128/vid/avc1/1280x720/6JfrZdlbYd7E2iI0.mp4",
+              "type": "video/mp4"
+            }
+          ],
+          "videoId": {
+            "id": "2105432507386822925",
+            "type": "tweet"
+          },
+          "viewCount": 0
         }
       },
       "status": "available"
