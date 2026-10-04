@@ -37,6 +37,14 @@ rg --files node_modules/next/dist/docs | rg 'css|use-client|server-and-client|im
 
 `pnpm test` covers format, lint, generated Next types plus TypeScript, and unit tests. `pnpm build` uses webpack and then checks the native social-image bundle. CI runs both on pushes. Script definitions in `package.json` are authoritative.
 
+## Automatic PR CI repairs
+
+`Codex CI autofix` follows failed `Test` push runs for open PRs in this repository. The PR author and CI actor must have repository write access. Forks, stale heads, rerun attempts, and `codex/auto-fix-*` branches are skipped.
+
+Codex receives failed logs and the same Node 24, pnpm, and FFmpeg setup as CI. It uses `OPENAI_API_KEY` through the official action's proxy with `drop-sudo` and workspace permissions; the generation job has read-only GitHub access. A separate job applies the patch and opens a repair PR targeting the original PR's branch, then explicitly dispatches `Test` for the repair branch. Review and merge the repair PR to update the original PR. Repairs never merge automatically, and patches changing workflows, agent configuration, or environment files are rejected.
+
+The repository secret `OPENAI_API_KEY` and GitHub's **Allow Actions to create and approve pull requests** setting must remain enabled. Workflow tokens default to read-only; only the publisher requests writes. Diagnosis and patch artifacts are retained for seven days. There is one bounded attempt per failed commit; transient or unfixable failures can produce only a diagnosis. See the [official autofix pattern](https://learn.chatgpt.com/docs/non-interactive-mode#example-autofix-ci-failures-in-github-actions).
+
 Run an individual test file with, for example:
 
 ```sh
