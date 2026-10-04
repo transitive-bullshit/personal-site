@@ -107,6 +107,10 @@ jobs:
             Reproduce the failure with pnpm test and pnpm build, identify its
             cause, and implement the smallest relevant fix. Run the affected
             checks while iterating, then pnpm test and pnpm build to verify.
+            The workspace sandbox can block loopback sockets and tsx IPC with
+            EPERM. Report those sandbox limitations rather than changing code
+            to bypass them; a separate job will run full tests and build on
+            the patch without the Codex sandbox before a repair PR is opened.
             Do not weaken checks, skip tests, refactor unrelated files, change
             GitHub workflows or agent configuration, or access credentials.
             Do not commit, push, open PRs, or import/sync content.
@@ -144,8 +148,47 @@ jobs:
           if-no-files-found: ignore
           retention-days: 7
 
+  verify_fix:
+    needs: generate_fix
+    if: needs.generate_fix.outputs.has_patch == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          persist-credentials: false
+
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: codex-fix-patch
+          path: ${{ runner.temp }}/codex-fix
+
+      - name: Apply and check the patch
+        env:
+          PATCH_FILE: ${{ runner.temp }}/codex-fix/codex.patch
+        run: |
+          git apply --index "$PATCH_FILE"
+          if git diff --cached --name-only | grep -Eq '(^|/)(\.github|\.codex|\.agents)(/|$)|(^|/)(AGENTS(\.override)?\.md|CLAUDE\.md|\.env[^/]*)$'; then
+            echo 'Refusing a patch that changes workflows, agent configuration, or environment files' >&2
+            exit 1
+          fi
+
+      - uses: pnpm/action-setup@ea17c68df8912ef543352723c149a84f56e3d413 # v6.1.0
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - run: pnpm install --frozen-lockfile --strict-peer-dependencies
+      - run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: pnpm test
+      - run: pnpm build
+
   open_pr:
-    needs: [eligibility, generate_fix]
+    needs: [eligibility, generate_fix, verify_fix]
     if: needs.generate_fix.outputs.has_patch == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 5
