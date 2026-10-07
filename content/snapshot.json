@@ -82143,7 +82143,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-07T00:26:00.000Z",
+        "edited": "2026-10-07T05:34:00.000Z",
         "key": "3eeedb27f12481a5b6c7f1d752e10389:cover",
         "kind": "file"
       },
@@ -97874,7 +97874,7 @@
         "value": "🎬"
       },
       "id": "3eeedb27f12481a5b6c7f1d752e10389",
-      "modified": "2026-10-07T00:26:00.000Z",
+      "modified": "2026-10-07T05:34:00.000Z",
       "published": "2026-10-03",
       "slug": "candy-paint-music-video",
       "source": "https://github.com/transitive-bullshit/candy-paint",
@@ -97886,7 +97886,7 @@
       "title": "Candy Paint – Music Video",
       "type": "Video",
       "website": "https://candy-paint.vercel.app",
-      "youtube": "https://youtu.be/e-R5cXF3bzE"
+      "youtube": "https://youtu.be/X806TXsSypQ"
     }
   },
   "projectSource": {
