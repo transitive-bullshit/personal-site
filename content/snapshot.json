@@ -82131,40 +82131,40 @@
       ]
     },
     "3eeedb27f12481a5b6c7f1d752e10389:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAQAA4BaJQAAXOn8RAAA/vGDSo8W5XDZMGa6zfqH9HyXk/R1fgAA",
+      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACQAQCdASoIAAQAA4BaJQAAU6jk64AA/vNc4NIfvd3OFPBUGTX5Jje6fdhmgUTnFrAAAA==",
       "original": {
-        "bytes": 135263,
-        "hash": "055521cc4db02087726492a639670d3f665d41a330939ad996c7de8362932bc7",
-        "height": 630,
-        "key": "personal-site/media/055521cc4db02087726492a639670d3f665d41a330939ad996c7de8362932bc7.jpg",
+        "bytes": 323331,
+        "hash": "a447352571f85afa1e0e07f689599763da0a14ed593124eeaae5531ef164c918",
+        "height": 1260,
+        "key": "personal-site/media/a447352571f85afa1e0e07f689599763da0a14ed593124eeaae5531ef164c918.jpg",
         "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/055521cc4db02087726492a639670d3f665d41a330939ad996c7de8362932bc7.jpg",
-        "width": 1200
+        "url": "https://assets.cultural-alignment.com/personal-site/media/a447352571f85afa1e0e07f689599763da0a14ed593124eeaae5531ef164c918.jpg",
+        "width": 2400
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-07T05:34:00.000Z",
+        "edited": "2026-10-07T06:12:00.000Z",
         "key": "3eeedb27f12481a5b6c7f1d752e10389:cover",
         "kind": "file"
       },
       "variants": [
         {
-          "bytes": 34500,
-          "hash": "cd39918b1571337fe8269852d6f7fe27bb45834ddeaf6294feecc6e1aedbab4d",
+          "bytes": 33414,
+          "hash": "db1d36e0ba0c7fb969166978ca7823f42d4c2e18a051e8becdc3f50262f39683",
           "height": 504,
-          "key": "personal-site/media/cd39918b1571337fe8269852d6f7fe27bb45834ddeaf6294feecc6e1aedbab4d.webp",
+          "key": "personal-site/media/db1d36e0ba0c7fb969166978ca7823f42d4c2e18a051e8becdc3f50262f39683.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/cd39918b1571337fe8269852d6f7fe27bb45834ddeaf6294feecc6e1aedbab4d.webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/db1d36e0ba0c7fb969166978ca7823f42d4c2e18a051e8becdc3f50262f39683.webp",
           "width": 960
         },
         {
-          "bytes": 71270,
-          "hash": "345d8a725369ca2cd2d1823040be24809144483a903f4dac959b8aaeac972813",
-          "height": 630,
-          "key": "personal-site/media/345d8a725369ca2cd2d1823040be24809144483a903f4dac959b8aaeac972813.webp",
+          "bytes": 127702,
+          "hash": "41ed09a8e302c68a84fe65ef3ec4569443453fb7b152a8c78b492bb041049b76",
+          "height": 1008,
+          "key": "personal-site/media/41ed09a8e302c68a84fe65ef3ec4569443453fb7b152a8c78b492bb041049b76.webp",
           "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/345d8a725369ca2cd2d1823040be24809144483a903f4dac959b8aaeac972813.webp",
-          "width": 1200
+          "url": "https://assets.cultural-alignment.com/personal-site/media/41ed09a8e302c68a84fe65ef3ec4569443453fb7b152a8c78b492bb041049b76.webp",
+          "width": 1920
         }
       ]
     },
@@ -97874,7 +97874,7 @@
         "value": "🎬"
       },
       "id": "3eeedb27f12481a5b6c7f1d752e10389",
-      "modified": "2026-10-07T05:34:00.000Z",
+      "modified": "2026-10-07T06:12:00.000Z",
       "published": "2026-10-03",
       "slug": "candy-paint-music-video",
       "source": "https://github.com/transitive-bullshit/candy-paint",
