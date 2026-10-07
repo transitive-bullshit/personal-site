@@ -82130,33 +82130,6 @@
         }
       ]
     },
-    "3eeedb27f124802a9387d58b21f39faf": {
-      "original": {
-        "bytes": 237593768,
-        "height": 1080,
-        "mime": "video/mp4",
-        "remote": true,
-        "url": "https://assets.cultural-alignment.com/media/videos/candy-paint-1080p60-e450a1e6c67a9345.mp4",
-        "width": 1920
-      },
-      "pipelineVersion": 2,
-      "poster": {
-        "bytes": 39518,
-        "hash": "3693263263195d3694bd7484698bdbfb97d9d4c8a5e10f2208a5e95cb7a6b125",
-        "height": 720,
-        "key": "personal-site/media/3693263263195d3694bd7484698bdbfb97d9d4c8a5e10f2208a5e95cb7a6b125.webp",
-        "mime": "image/webp",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/3693263263195d3694bd7484698bdbfb97d9d4c8a5e10f2208a5e95cb7a6b125.webp",
-        "width": 1280
-      },
-      "source": {
-        "edited": "2026-10-03T02:53:00.000Z",
-        "key": "3eeedb27f124802a9387d58b21f39faf",
-        "kind": "external",
-        "url": "https://assets.cultural-alignment.com/media/videos/candy-paint-1080p60-e450a1e6c67a9345.mp4"
-      },
-      "variants": []
-    },
     "3eeedb27f12481a5b6c7f1d752e10389:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAQAA4BaJQAAXOn8RAAA/vGDSo8W5XDZMGa6zfqH9HyXk/R1fgAA",
       "original": {
@@ -82170,7 +82143,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-03T06:15:00.000Z",
+        "edited": "2026-10-07T00:26:00.000Z",
         "key": "3eeedb27f12481a5b6c7f1d752e10389:cover",
         "kind": "file"
       },
@@ -84588,6 +84561,33 @@
         "edited": "2026-08-20T06:50:00.000Z",
         "key": "8d8a9a1594b347469f048aa58ebe43ba",
         "kind": "file"
+      },
+      "variants": []
+    },
+    "8ea155e5bef14c54a7f78312b418f446": {
+      "original": {
+        "bytes": 236543050,
+        "height": 1080,
+        "mime": "video/mp4",
+        "remote": true,
+        "url": "https://assets.cultural-alignment.com/media/videos/candy-paint-1080p60-3c3eeb29a38dd3b3.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 40066,
+        "hash": "37ebd648bc7e9c960a6f2a8a5bb78a17e0e5bad5afa6f6858f9186b29092a4dc",
+        "height": 720,
+        "key": "personal-site/media/37ebd648bc7e9c960a6f2a8a5bb78a17e0e5bad5afa6f6858f9186b29092a4dc.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/37ebd648bc7e9c960a6f2a8a5bb78a17e0e5bad5afa6f6858f9186b29092a4dc.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-07T00:26:00.000Z",
+        "key": "8ea155e5bef14c54a7f78312b418f446",
+        "kind": "external",
+        "url": "https://assets.cultural-alignment.com/media/videos/candy-paint-1080p60-3c3eeb29a38dd3b3.mp4"
       },
       "variants": []
     },
@@ -96797,8 +96797,8 @@
         {
           "caption": [],
           "children": [],
-          "id": "3eeedb27f124802a9387d58b21f39faf",
-          "media": "3eeedb27f124802a9387d58b21f39faf",
+          "id": "8ea155e5bef14c54a7f78312b418f446",
+          "media": "8ea155e5bef14c54a7f78312b418f446",
           "type": "video"
         },
         {
@@ -97874,7 +97874,7 @@
         "value": "🎬"
       },
       "id": "3eeedb27f12481a5b6c7f1d752e10389",
-      "modified": "2026-10-03T06:15:00.000Z",
+      "modified": "2026-10-07T00:26:00.000Z",
       "published": "2026-10-03",
       "slug": "candy-paint-music-video",
       "source": "https://github.com/transitive-bullshit/candy-paint",
