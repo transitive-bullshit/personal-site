@@ -80392,7 +80392,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T23:44:00.000Z",
+        "edited": "2026-10-07T23:30:00.000Z",
         "key": "3c5edb27f12480e39f5def11519f5553:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/media/GlhmeVQaQAEqYDL.jpg"
@@ -80431,10 +80431,10 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T23:44:00.000Z",
+        "edited": "2026-10-07T23:30:00.000Z",
         "key": "3c5edb27f12480e39f5def11519f5553:icon",
         "kind": "external",
-        "url": "https://severance.transitivebullsh.it/icon.svg?8b90c370817613cf"
+        "url": "https://assets.cultural-alignment.com/personal-site/media/00ee16940bf9e7e04f59d32967c2faf067044ff1b7577b989e86a3fe13f50142.svg"
       },
       "variants": []
     },
@@ -89628,7 +89628,7 @@
         "type": "image"
       },
       "id": "3c5edb27f12480e39f5def11519f5553",
-      "modified": "2026-09-28T23:44:00.000Z",
+      "modified": "2026-10-07T23:30:00.000Z",
       "published": "2025-03-08",
       "slug": "severance-wellness-memes",
       "source": "https://github.com/transitive-bullshit/severance-wellness-memes",
@@ -89639,8 +89639,7 @@
       ],
       "title": "Severance Wellness Memes",
       "tweet": "https://x.com/transitive_bs/status/1898379925155156203",
-      "type": "Webapp",
-      "website": "https://severance.transitivebullsh.it/"
+      "type": "Webapp"
     },
     "3ddedb27f124807bb39ecda2ff1548c6": {
       "authors": [

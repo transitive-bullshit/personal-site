@@ -110,3 +110,8 @@ The sitemap was submitted Oct 2. Of its 213 URLs, 65 are indexed. 146 are "Disco
   - Added `www.cultural-alignment.com` to `cultural-alignment` as a 308 redirect to the apex. Before this, the unattached host returned Vercel's default 307.
 - **Legacy URLs:** most legacy 404s were pages under the private "Misc / Notes" Notion page that the old site rendered publicly. `/3aab…` is a blank row in its "Image Charts → Competitor Pricing" table. These stay 404. Only paths with a current successor redirect; see `lib/content/legacy-redirects.ts`.
 - **Content:** "Mastering the Art of NPM" now links to `/javascript-modules-worth-using` instead of the dead blog subdomain.
+- **Retired side projects:** Vercel project routing rules now send every path with a 308:
+  - `severance.transitivebullsh.it` and `severance-wellness-session.com` go to `/projects/severance-wellness-memes`.
+  - `next-movie.transitivebullsh.it` and `twitter-search.transitivebullsh.it` go to their GitHub repositories.
+
+  The live-app links are removed from those repos' READMEs and website fields, and from the Notion project entries. The Severance project icon now points at its saved R2 copy.
