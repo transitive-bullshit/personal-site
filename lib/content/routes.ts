@@ -1,4 +1,5 @@
 import type { RouteRecord } from './schema'
+import { legacyRedirects } from './legacy-redirects'
 import { site } from '../site'
 
 export const reservedSlugs = new Set([
@@ -11,15 +12,15 @@ export const reservedSlugs = new Set([
   'search-index.json',
   '_next',
   'api',
-  'transitivebullshit',
+  'tags',
   'writing',
   'projects',
   'project',
-  'about',
   'feed',
   'top-tweet-interactions-english',
   'top-tweet-interactions-german',
-  'top-tweet-interactions-other-languages'
+  'top-tweet-interactions-other-languages',
+  ...Object.keys(legacyRedirects)
 ])
 
 export function compactId(id: string) {

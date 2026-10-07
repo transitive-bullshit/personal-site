@@ -65,7 +65,6 @@ export default async function Page({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  if (slug === 'transitivebullshit') permanentRedirect('/')
   const route = resolveRoute(slug, content.routes)
   if (!route) notFound()
   if (route.redirect) permanentRedirect('/' + route.slug)

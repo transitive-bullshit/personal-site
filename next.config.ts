@@ -1,6 +1,17 @@
 import type { NextConfig } from 'next'
+import { legacyRedirects } from './lib/content/legacy-redirects'
 
 const config: NextConfig = {
+  redirects() {
+    return [
+      ...Object.entries(legacyRedirects).map(([slug, destination]) => ({
+        source: '/' + slug,
+        destination,
+        permanent: true
+      })),
+      { source: '/tags/:tag*', destination: '/writing', permanent: true }
+    ]
+  },
   rewrites() {
     return [
       { source: '/projects/:slug.md', destination: '/markdown/projects/:slug' },

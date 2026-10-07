@@ -1,5 +1,7 @@
+import type { Metadata } from 'next'
 import { JsonLd } from '@/components/json-ld'
 import { pageJsonLd } from '@/lib/content/metadata'
+import { websiteMetadata } from '@/lib/metadata'
 import { site } from '@/lib/site'
 import Link from 'next/link'
 import { ArrowRightIcon } from 'lucide-react'
@@ -9,6 +11,14 @@ import { content, featuredProjects, featuredArticles } from '@/lib/content/load'
 
 export const dynamic = 'force-static'
 export const revalidate = 86400
+
+// Lead with the author's name: it is the site's main search query.
+const title = site.author + ' · ' + site.name
+
+export const metadata: Metadata = {
+  ...websiteMetadata(title, site.description, '/'),
+  title: { absolute: title }
+}
 
 export default function HomePage() {
   return (

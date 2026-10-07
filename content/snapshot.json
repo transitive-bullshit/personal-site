@@ -1650,7 +1650,7 @@
               "bold": false,
               "code": false,
               "color": "default",
-              "href": "https://blog.transitivebullsh.it/awesome-js-modules/",
+              "href": "/javascript-modules-worth-using",
               "italic": false,
               "strike": false,
               "text": "JavaScript Modules Worth Using",
@@ -1697,7 +1697,7 @@
       "description": "Tips for becoming more productive as a JavaScript developer by making efficient use of the NPM library.",
       "featured": false,
       "id": "0762f89cc0954569943c80307da553fb",
-      "modified": "2026-09-15T07:21:00.000Z",
+      "modified": "2026-10-07T22:47:00.000Z",
       "published": "2018-03-26",
       "slug": "mastering-the-art-of-npm",
       "tags": [
@@ -78258,7 +78258,7 @@
       ]
     },
     "0762f89cc0954569943c80307da553fb:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAQAA4BaJQBOgB6QNkwAAP6DxPETVbeWgIdjKSyydbiytEaKgAAA",
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoIAAQAA4BaJYwCdAE2V1xGMAD+QG1mauzV/pIFpk63FlaI0VAAAA==",
       "original": {
         "bytes": 389593,
         "hash": "7543709212789a152227b147de99739d8143aaf91f7761012f3ff266cf1de07c",
@@ -78268,9 +78268,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/7543709212789a152227b147de99739d8143aaf91f7761012f3ff266cf1de07c.jpg",
         "width": 1440
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-15T07:21:00.000Z",
+        "edited": "2026-10-07T22:47:00.000Z",
         "key": "0762f89cc0954569943c80307da553fb:cover",
         "kind": "file"
       },
@@ -80392,7 +80392,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T23:44:00.000Z",
+        "edited": "2026-10-07T23:30:00.000Z",
         "key": "3c5edb27f12480e39f5def11519f5553:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/media/GlhmeVQaQAEqYDL.jpg"
@@ -80431,10 +80431,10 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T23:44:00.000Z",
+        "edited": "2026-10-07T23:30:00.000Z",
         "key": "3c5edb27f12480e39f5def11519f5553:icon",
         "kind": "external",
-        "url": "https://severance.transitivebullsh.it/icon.svg?8b90c370817613cf"
+        "url": "https://assets.cultural-alignment.com/personal-site/media/00ee16940bf9e7e04f59d32967c2faf067044ff1b7577b989e86a3fe13f50142.svg"
       },
       "variants": []
     },
@@ -84668,7 +84668,7 @@
       ]
     },
     "8fa700fcf3be412fbd2f36e250bbe763": {
-      "blurDataURL": "data:image/webp;base64,UklGRowAAABXRUJQVlA4WAoAAAAQAAAABwAABQAAQUxQSDEAAAABN6CYkSQ4OdeKzHMZ1mEjIn457UFNJLmNAhb1iYP6YDPwiD8KY4jof9S98nbzrxEMAFZQOCA0AAAAsAEAnQEqCAAGAAOAWiWkAALni/luQAD+68AykWmKS7DKojvJssGOQNZYI9zK0VX8+2gAAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4WAoAAAAQAAAABwAABQAAQUxQSC4AAAABUBNJboNMXKRKrRklBqk3rnw0IiLCrGPUGTIXLiWx39ukyLp3kQoXLkVczdQFVlA4ICQAAACQAQCdASoIAAYAA4BaJaQAAuabMQAA/vZhldnGmv4Hg+S8AAA=",
       "original": {
         "bytes": 240288,
         "hash": "4f54571b9073d0e42670d3dac3d002954a98b019c5060c1e7368052a4f5549e2",
@@ -84678,7 +84678,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/4f54571b9073d0e42670d3dac3d002954a98b019c5060c1e7368052a4f5549e2.png",
         "width": 1600
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-15T06:55:00.000Z",
         "key": "8fa700fcf3be412fbd2f36e250bbe763",
@@ -86472,7 +86472,7 @@
       "variants": []
     },
     "bbed9bbb5e644ff1bd9931436dc5b848": {
-      "blurDataURL": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4WAoAAAAQAAAABwAAAwAAQUxQSCEAAAAAAAZHCQAAAAAAiP+ZNUYdAACL/5xiNhoAAAhODAoAAAAAVlA4IDYAAACwAQCdASoIAAQAA4BaJZACdAD0gbJgAP7syXzCd+CDe6H1cAteKhXF620x4+e1StFeKCUgAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRngAAABXRUJQVlA4WAoAAAAQAAAABwAAAwAAQUxQSCEAAAAAAAYtCQAAAAAAff+QKkofAACA/55NOh4AAAcxDAQAAAAAVlA4IDAAAADwAQCdASoIAAQAA4BaJagCdLoAAx4Q3wAA8DIXJhgIC1ye+KC4KS1L+tt383ziAAA=",
       "original": {
         "bytes": 87258,
         "hash": "110645ba3eae2c348f9bb2cb30612c9bf0964e54ffadf9bf14456cb0f588b3a3",
@@ -86482,7 +86482,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/110645ba3eae2c348f9bb2cb30612c9bf0964e54ffadf9bf14456cb0f588b3a3.png",
         "width": 1600
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-15T06:55:00.000Z",
         "key": "bbed9bbb5e644ff1bd9931436dc5b848",
@@ -88141,7 +88141,7 @@
       "variants": []
     },
     "eb06387e782748229ebd8acf8a4e7e1e": {
-      "blurDataURL": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4WAoAAAAQAAAABwAABQAAQUxQSC0AAAABYFDbtoyzfo+5yvy/WQxLJwpYmpDqd4iIpBcrrAKW/32+Hex1HrcDGYfkFT0AVlA4IDwAAABwAQCdASoIAAYAA4BaJYwCdAFAAAD+7yzmMi//Z3S6PbVMdvoVu08mVnLiTi/DN2X9TuOpQUSjYo4AAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4WAoAAAAQAAAABwAABQAAQUxQSDEAAAAAAAADAQEDAAAABDQGCDMEAABT5J6b5lQAACiwc260KgAAFCwyLSoTAAABAwECAQEAAFZQOCBIAAAAsAEAnQEqCAAGAAOAWiWwAnQBHyv7gAD3TtKFG6OG/tBR70+d/zzGuK7+DHvVgsqIEas/jjBdkOJJhp5FuUzzQdaVSzYNOAAA",
       "original": {
         "bytes": 14071,
         "hash": "e16db0edf858c79de3d658f76ba6c8218b50f811c8f162dcf74bfdf92e4b4fab",
@@ -88151,7 +88151,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/e16db0edf858c79de3d658f76ba6c8218b50f811c8f162dcf74bfdf92e4b4fab.png",
         "width": 1000
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-15T06:55:00.000Z",
         "key": "eb06387e782748229ebd8acf8a4e7e1e",
@@ -88370,7 +88370,7 @@
       ]
     },
     "f0b491ed791748ea943e90600ecf5c65": {
-      "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAYAA4BaJZwAAuTqwUAA/vYyWP5QtYZj4Z5W+HG1GNfBwY8lIAAA",
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACwAQCdASoIAAYAA4BaJZQCdAEOJKFgAP72MlenEl8lkQYYoW6p/rGlKCIAAA==",
       "original": {
         "bytes": 79268,
         "hash": "680c709509e4a5a6f424684ae3a62c4fe64ea398ee6ec9a105ec52f83b2a56d8",
@@ -88380,7 +88380,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/680c709509e4a5a6f424684ae3a62c4fe64ea398ee6ec9a105ec52f83b2a56d8.png",
         "width": 990
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-15T06:55:00.000Z",
         "key": "f0b491ed791748ea943e90600ecf5c65",
@@ -88418,7 +88418,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/51956f83bca5f078066728ce1757cb7e784aed2712f021783489a90a0a1b1d8c.gif",
         "width": 946
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-08-24T07:19:00.000Z",
         "key": "f2852042275b440a9458fde6eca28a21",
@@ -89628,7 +89628,7 @@
         "type": "image"
       },
       "id": "3c5edb27f12480e39f5def11519f5553",
-      "modified": "2026-09-28T23:44:00.000Z",
+      "modified": "2026-10-07T23:30:00.000Z",
       "published": "2025-03-08",
       "slug": "severance-wellness-memes",
       "source": "https://github.com/transitive-bullshit/severance-wellness-memes",
@@ -89639,8 +89639,7 @@
       ],
       "title": "Severance Wellness Memes",
       "tweet": "https://x.com/transitive_bs/status/1898379925155156203",
-      "type": "Webapp",
-      "website": "https://severance.transitivebullsh.it/"
+      "type": "Webapp"
     },
     "3ddedb27f124807bb39ecda2ff1548c6": {
       "authors": [

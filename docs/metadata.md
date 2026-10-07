@@ -4,7 +4,7 @@
 
 `lib/site.ts` owns `site.origin` (`https://www.transitivebullsh.it`). Canonical HTML URLs, structured-data page URLs, and sitemap entries use that origin even on previews. Internal content links recognize both historical hostnames.
 
-`lib/content/routes.ts` owns slug validation, reserved application paths, aliases, and Notion ID resolution. The article and project pages use separate registries; `dynamicParams = true` allows known aliases outside generated canonical params. Keep unknown/inactive routes as 404s and recognized aliases as direct permanent redirects. `/transitivebullshit` remains a homepage redirect.
+`lib/content/routes.ts` owns slug validation, reserved application paths, aliases, and Notion ID resolution. The article and project pages use separate registries; `dynamicParams = true` allows known aliases outside generated canonical params. Keep unknown/inactive routes as 404s and recognized aliases as direct permanent redirects. `lib/content/legacy-redirects.ts` maps legacy-site paths that still get search traffic, such as `/about` and the old dev-tool row pages, to their closest current page through `next.config.ts`. Its slugs are reserved. Legacy notes without a current equivalent stay 404s.
 
 HTML and Markdown are separate static representations. `next.config.ts` rewrites `.md` URLs to `app/markdown/[...path]/route.ts`; examples are `/index.md`, `/writing.md`, `/projects.md`, `/agentic-spectrum.md`, and `/projects/passage.md`. Markdown uses the same snapshot, returns `text/markdown` and canonical Link headers, redirects aliases, and returns useful 404s. Separate URLs avoid Accept negotiation and shared-cache representation ambiguity.
 
