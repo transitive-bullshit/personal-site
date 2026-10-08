@@ -146,7 +146,7 @@ a {
   text-underline-offset: 0.2em;
 }
 @media (hover: hover) and (pointer: fine) {
-  a:hover:not(:where(.article-tweet a)) {
+  a:hover:not(:where(.article-tweet a, .project-card)) {
     text-decoration: underline;
   }
 }
@@ -1291,6 +1291,7 @@ summary {
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.4;
+  text-wrap: pretty;
 }
 .project-card p {
   margin-block-start: 6px;
