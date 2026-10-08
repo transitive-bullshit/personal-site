@@ -176,8 +176,8 @@ function BlockView({ block, snapshot }: { block: Block; snapshot: Snapshot }) {
           style={
             block.width
               ? {
-                  width: block.width,
-                  maxWidth: '100%',
+                  inlineSize: block.width,
+                  maxInlineSize: '100%',
                   marginInline: 'auto'
                 }
               : undefined

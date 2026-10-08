@@ -131,7 +131,7 @@ export function TableOfContents({
                   else linkRefs.current.delete(heading.id)
                 }}
                 href={'#' + heading.id}
-                style={{ paddingLeft: 14 + heading.depth * 12 }}
+                style={{ paddingInlineStart: 14 + heading.depth * 12 }}
                 aria-current={active === heading.id ? 'location' : undefined}
               >
                 {heading.text}

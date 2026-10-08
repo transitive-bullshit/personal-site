@@ -5,7 +5,7 @@ import SiGithub from '@icons-pack/react-simple-icons/icons/SiGithub'
 import SiX from '@icons-pack/react-simple-icons/icons/SiX'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import Link from 'next/link'
 import { LinkPreviewProvider } from '@/components/link-preview-provider'
 import { SiteSearch } from '@/components/site-search'
@@ -17,6 +17,8 @@ import { internalLinkPreviews } from '@/lib/content/link-previews'
 import { site } from '@/lib/site'
 import { articles } from '@/lib/content/load'
 import './globals.css'
+
+export const viewport: Viewport = { colorScheme: 'light dark' }
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.origin),

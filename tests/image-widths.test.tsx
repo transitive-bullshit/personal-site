@@ -65,9 +65,13 @@ describe('Notion image display widths', () => {
       <Blocks blocks={parsed} snapshot={{ media: {} } as Snapshot} />
     )
     expect(html).toContain(`id="${ids[0]}"`)
-    expect(html).toContain('width:432px;max-width:100%;margin-inline:auto')
-    expect(html).toContain('width:480px;max-width:100%;margin-inline:auto')
-    expect(html).not.toContain('width:2266px')
+    expect(html).toContain(
+      'inline-size:432px;max-inline-size:100%;margin-inline:auto'
+    )
+    expect(html).toContain(
+      'inline-size:480px;max-inline-size:100%;margin-inline:auto'
+    )
+    expect(html).not.toContain('inline-size:2266px')
     expect(fetch).toHaveBeenCalledTimes(1)
     expect(fetch.mock.calls[0]![0].body.requests).toHaveLength(3)
   })
