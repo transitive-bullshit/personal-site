@@ -6,7 +6,7 @@ Project cards and detail heroes share a source, but their responsive `sizes` sel
 
 `ProjectCoverImage` records the actual `currentSrc` after Next Image completes loading/decoding. On client navigation, it uses that loaded rendition as an unblurred CSS background until the new image loads. This also supports navigation back to the grid. The in-memory map is limited to 64 sources, retains the largest observed rendition, stores no image bytes, and is never written during server rendering. Direct visits keep the original blur placeholder. Only project covers opt in; ordinary article images retain their existing behavior.
 
-Keep responsive `sizes` accurate and load the rendition needed for the current layout. `MediaImage`'s local `priority` prop sets eager loading and high fetch priority; it is not the deprecated Next Image prop. The homepage prioritizes its first project cover; other cards remain lazy. Read the installed Next Image guide before changing delivery behavior.
+Keep responsive `sizes` accurate and load the rendition needed for the current layout. Project cards use `sizes="auto, …"`: supported lazy images follow their actual intrinsic-grid slot, while eager images and older browsers use the conservative fluid-gutter fallback. Keep that fallback consistent with the 18rem card minimum, 1.5rem column gap, and 45rem index width. `MediaImage`'s local `priority` prop sets eager loading and high fetch priority; it is not the deprecated Next Image prop. The homepage prioritizes its first project cover; other cards remain lazy. Read the installed Next Image guide before changing delivery behavior.
 
 ## Transition identity
 
