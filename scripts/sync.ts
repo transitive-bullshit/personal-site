@@ -1,5 +1,7 @@
 import { createSyncProgress } from './sync-progress'
 import { parseArgs } from 'node:util'
+import { pathToFileURL } from 'node:url'
+import { resolve } from 'node:path'
 import { canonicalJson } from './io'
 import { z } from 'zod'
 import { sourceContract, projectSourceContract } from '../lib/site'
@@ -433,7 +435,12 @@ export async function main() {
   }
 }
 
-main().catch((err: unknown) => {
-  console.error(err instanceof Error ? err.message : String(err))
-  process.exitCode = 1
-})
+if (
+  process.argv[1] &&
+  import.meta.url === pathToFileURL(resolve(process.argv[1])).href
+) {
+  main().catch((err: unknown) => {
+    console.error(err instanceof Error ? err.message : String(err))
+    process.exitCode = 1
+  })
+}

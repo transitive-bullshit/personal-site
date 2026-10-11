@@ -2,11 +2,12 @@ import { expect, it, vi } from 'vitest'
 import { mkdtemp, readFile, rm } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
-import { importArticles } from '../scripts/notion/import-articles'
+import { importPages } from '../scripts/notion/import-pages'
 import { publishSnapshot } from '../scripts/io'
 import { sourceContract } from '../lib/site'
 import type { Article, Snapshot } from '../lib/content/schema'
 import type { NotionPage } from '../scripts/notion/source'
+import { project, projectId, contentFixture } from './fixtures/content'
 
 const a = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
 const b = 'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb'
@@ -47,7 +48,6 @@ const page = (id: string): NotionPage => ({
 it('publishes successful articles while retaining or skipping failed ones', async () => {
   const directory = await mkdtemp(join(tmpdir(), 'personal-site-import-'))
   const path = join(directory, 'snapshot.json')
-  const uploads: string[] = []
   const warnings: string[] = []
   try {
     await publishSnapshot(original, path)
@@ -57,7 +57,7 @@ it('publishes successful articles while retaining or skipping failed ones', asyn
         [b]: { slug: 'new-article', aliases: [], active: true },
         [c]: { slug: 'broken-article', aliases: [], active: true }
       }
-      const articles = await importArticles({
+      const articles = await importPages({
         pages: [page(a), page(b), page(c)],
         previous: original.articles,
         routes,
@@ -66,7 +66,6 @@ it('publishes successful articles while retaining or skipping failed ones', asyn
         read: async (value) => {
           if (value.id === a) throw new Error('Article unavailable')
           if (value.id === c) throw new Error('Required media failed')
-          uploads.push('immutable-object')
           return {
             ...article,
             id: b,
@@ -78,7 +77,6 @@ it('publishes successful articles while retaining or skipping failed ones', asyn
       await publishSnapshot({ ...original, articles, routes }, path)
     }
     await expect(run()).resolves.toBeUndefined()
-    expect(uploads).toEqual(['immutable-object'])
     const published = JSON.parse(await readFile(path, 'utf8')) as Snapshot
     expect(published.articles[a]).toEqual(article)
     expect(published.articles[b]?.title).toBe('New article')
@@ -100,7 +98,7 @@ it('reuses an unchanged article without reading its properties or blocks', async
     title: 'Refreshed article'
   }))
   const report = vi.fn<(message: string) => void>()
-  const cached = await importArticles({
+  const cached = await importPages({
     pages: [unchanged],
     previous: original.articles,
     routes: structuredClone(original.routes),
@@ -112,7 +110,7 @@ it('reuses an unchanged article without reading its properties or blocks', async
   expect(read).not.toHaveBeenCalled()
   expect(report).toHaveBeenCalledWith('[1/1] /saved-article (unchanged)')
 
-  const refreshed = await importArticles({
+  const refreshed = await importPages({
     pages: [unchanged],
     previous: original.articles,
     routes: structuredClone(original.routes),
@@ -130,7 +128,7 @@ it('revisits articles changed during a fast sync on the next normal sync', async
     ...article,
     modified: value.last_edited_time
   }))
-  const fast = await importArticles({
+  const fast = await importPages({
     pages: [changed],
     previous: original.articles,
     routes: structuredClone(original.routes),
@@ -141,7 +139,7 @@ it('revisits articles changed during a fast sync on the next normal sync', async
   expect(fast[a]?.needsImageSync).toBe(true)
 
   read.mockClear()
-  const completed = await importArticles({
+  const completed = await importPages({
     pages: [changed],
     previous: fast,
     routes: structuredClone(original.routes),
@@ -170,7 +168,7 @@ it('imports up to eight articles concurrently', async () => {
     releaseFirstBatch = resolve
   })
 
-  const result = importArticles({
+  const result = importPages({
     pages,
     previous: {},
     routes,
@@ -185,10 +183,55 @@ it('imports up to eight articles concurrently', async () => {
     }
   })
 
-  await vi.waitFor(() => expect(started).toBe(8))
-  expect(active).toBe(8)
-  releaseFirstBatch()
+  try {
+    await vi.waitFor(() => expect(started).toBe(8))
+    expect(active).toBe(8)
+  } finally {
+    releaseFirstBatch()
+    await result
+  }
 
   await expect(result).resolves.toHaveProperty(pages[15]!.id)
   expect(maximumActive).toBe(8)
+})
+
+it('removes inactive saved entries and reports project fallback paths', async () => {
+  const snapshot = contentFixture()
+  const read = vi
+    .fn<() => Promise<typeof project>>()
+    .mockRejectedValue(new Error('offline'))
+  const warn = vi.fn<(message: string) => void>()
+  const routes: Snapshot['routes'] = {
+    ...snapshot.projectRoutes!,
+    [c]: { slug: 'new-project', active: true, aliases: [] }
+  }
+  const result = await importPages({
+    kind: 'project',
+    pages: [page(projectId), page(c)],
+    previous: snapshot.projects!,
+    routes,
+    force: true,
+    read,
+    report: () => {},
+    warn
+  })
+  expect(result).toEqual({ [projectId]: project })
+  expect(routes[c]!.active).toBe(false)
+  expect(warn.mock.calls.flat()).toEqual([
+    '/projects/fixture-project: offline; keeping the previous version',
+    '/projects/new-project: offline; skipping the new project'
+  ])
+  routes[projectId]!.active = false
+  read.mockClear()
+  expect(
+    await importPages({
+      kind: 'project',
+      pages: [],
+      previous: result,
+      routes,
+      read,
+      report: () => {}
+    })
+  ).toEqual({})
+  expect(read).not.toHaveBeenCalled()
 })

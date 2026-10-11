@@ -106,7 +106,11 @@ function remote() {
     }
   }
 }
-const bytes = Buffer.alloc(2 * MULTIPART_PART_SIZE + 123, 42)
+const bytes = Buffer.concat([
+  Buffer.alloc(MULTIPART_PART_SIZE, 17),
+  Buffer.alloc(MULTIPART_PART_SIZE, 42),
+  Buffer.alloc(123, 83)
+])
 
 it('resumes completed parts across storage instances and only counts completed objects', async () => {
   const path = await directory()

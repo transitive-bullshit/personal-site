@@ -11,6 +11,7 @@ These documents preserve decisions, experiments, and verification at the time of
 | [Hero-image investigation](hero-image-investigation.md) | Follow-up to the second audit: avatar optimization shipped locally; removing hero blur was tested and reverted. No confirmed hero-LCP fix. |
 | [Accepted design review](design-review-2026-09-24.md) | Accepted UI changes and an explicitly rejected/reverted lightbox focus proposal. Check this before treating older focus-return claims as current requirements. |
 | [Search Console audit](search-console-audit-2026-10-07.md) | GSC findings across transitivebullsh.it, cultural-alignment.com, and doom-or-bloom.com three weeks after the apex→www switch. Index counts are a point-in-time snapshot. |
+| [Test audit repairs](test-audit-2026-10-11.md) | Contract transfers, repaired assertions, added boundary coverage, and targeted mutation evidence. Counts and timings describe this revision. |
 | [Cloudflare preview incident](link-preview-cloudflare-2026-09-29.md) | Production-only preview failure caused by an upstream bot challenge. Use [Metadata](../metadata.md#external-hover-previews) for the diagnostic path; the recorded security setting is historical. |
 
 Machine-local report/gallery paths in these records may be unavailable in another checkout. The conclusions and limits are retained here; use fresh evidence when validating new work. Keep new audit measurements in dated records and promote only durable conclusions into current guides.

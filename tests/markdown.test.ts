@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs'
-import { describe, expect, it, vi } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 import {
   entryMarkdown,
   markdownBlocks,
@@ -26,7 +26,7 @@ vi.mock('@/lib/content/load', async () => {
   }
 })
 
-import { GET, generateStaticParams } from '../app/markdown/[...path]/route'
+import { generateStaticParams } from '../app/markdown/[...path]/route'
 import { GET as legacyImage } from '../app/api/social-image/route'
 
 const snapshot = resolveContentLinks(
@@ -34,8 +34,7 @@ const snapshot = resolveContentLinks(
     JSON.parse(readFileSync('content/snapshot.json', 'utf8'))
   )
 )
-const request = (path: string[]) =>
-  GET(new Request(site.origin), { params: Promise.resolve({ path }) })
+afterEach(() => vi.unstubAllGlobals())
 
 describe('Markdown representations', () => {
   it('renders the complete published collection without runtime fetches', () => {
@@ -43,13 +42,26 @@ describe('Markdown representations', () => {
       ...Object.values(snapshot.articles),
       ...Object.values(snapshot.projects ?? {})
     ]
-    expect(generateStaticParams()).toHaveLength(entries.length + 3)
+    const fetcher = vi
+      .fn<typeof fetch>()
+      .mockRejectedValue(new Error('Unexpected runtime fetch'))
+    vi.stubGlobal('fetch', fetcher)
+    expect(generateStaticParams()).toEqual([
+      { path: ['index'] },
+      { path: ['projects'] },
+      { path: ['writing'] },
+      ...Object.values(snapshot.articles).map(({ slug }) => ({ path: [slug] })),
+      ...Object.values(snapshot.projects ?? {}).map(({ slug }) => ({
+        path: ['projects', slug]
+      }))
+    ])
     for (const entry of entries) {
       const body = entryMarkdown(entry, snapshot)
       expect(body.startsWith('# ')).toBe(true)
       expect(body).toContain('Canonical URL: ' + site.origin)
       expect(body).not.toMatch(/\[object Object\]/)
     }
+    expect(fetcher).not.toHaveBeenCalled()
   })
 
   it('preserves nested lists, code fences, table cells, and normalized heading anchors', () => {
@@ -125,43 +137,6 @@ describe('Markdown representations', () => {
         '/example'
       )
     ).toBe('Normal prose. A well-known project.')
-  })
-
-  it('serves article and project bodies with distinct canonical headers and tweet text', async () => {
-    for (const path of [['agentic-spectrum'], ['projects', 'passage']]) {
-      const response = await request(path)
-      expect(response.status).toBe(200)
-      expect(response.headers.get('content-type')).toBe(
-        'text/markdown; charset=utf-8'
-      )
-      expect(response.headers.get('link')).toBe(
-        `<${site.origin}/${path.join('/')}>; rel="canonical"`
-      )
-      expect((await response.text()).length).toBeGreaterThan(500)
-    }
-    const passage = await (await request(['projects', 'passage'])).text()
-    expect(passage).toContain('View original post')
-    expect(passage).toContain('@transitive')
-  })
-
-  it('redirects historical IDs and returns a real recoverable 404 for unknown paths', async () => {
-    const article = Object.values(snapshot.articles).find(
-      (entry) => entry.slug === 'agentic-spectrum'
-    )!
-    const redirect = await request([article.id])
-    expect(redirect.status).toBe(308)
-    expect(redirect.headers.get('location')).toBe('/agentic-spectrum.md')
-    for (const path of [
-      ['not-a-page'],
-      ['projects', 'not-a-page'],
-      ['projects', 'passage', 'extra']
-    ]) {
-      const response = await request(path)
-      expect(response.status).toBe(404)
-      expect(response.headers.get('cache-control')).toBe('no-store')
-      expect(response.headers.get('x-robots-tag')).toBe('noindex')
-      expect(await response.text()).toContain('/llms.txt')
-    }
   })
 
   it('restores the legacy image URL without redirecting unknown IDs', () => {

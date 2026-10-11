@@ -51,7 +51,11 @@ describe('immutable media publication', () => {
   it('uses HEAD before PUT and uploads identical bytes once', async () => {
     const mock = transport()
     const storage = new MediaStorage(config, mock.api)
-    const bytes = Buffer.from('an asset')
+    const bytes = Buffer.from('abc')
+    // Published SHA-256 test vector, independent of the storage implementation.
+    const digest =
+      'ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad'
+    expect(hashBytes(bytes)).toBe(digest)
     const first = await storage.publish(
       bytes,
       'application/octet-stream',
@@ -65,8 +69,20 @@ describe('immutable media publication', () => {
     )
     expect(first).toEqual(second)
     expect(mock.objects.size).toBe(1)
-    expect(first.key).toContain(hashBytes(bytes))
+    expect(first.key).toBe('personal-site/media/' + digest + '.bin')
     expect(storage.stats.uploaded).toBe(1)
+    const different = await storage.publish(
+      Buffer.from('different'),
+      'application/octet-stream',
+      'bin'
+    )
+    expect(different.key).not.toBe(first.key)
+    expect(mock.objects.size).toBe(2)
+    expect(Buffer.from(mock.objects.get(first.key)!)).toEqual(bytes)
+    expect(Buffer.from(mock.objects.get(different.key)!)).toEqual(
+      Buffer.from('different')
+    )
+    expect(mock.calls).toEqual(['HEAD', 'PUT', 'HEAD', 'PUT'])
   })
   it('does not mistake authorization or service errors for missing objects', async () => {
     for (const status of [403, 500]) {
@@ -204,9 +220,26 @@ describe('immutable media publication', () => {
       pipelineVersion: MEDIA_PIPELINE_VERSION
     } as Media
     expect(canReuseMedia(previous, { ...source }, false)).toBe(true)
-    expect(canReuseMedia(previous, { ...source, url: undefined }, false)).toBe(
-      true
+    expect(canReuseMedia(previous, { ...source, key: 'other' }, false)).toBe(
+      false
     )
+    expect(
+      canReuseMedia(previous, { ...source, kind: 'external' }, false)
+    ).toBe(false)
+    const external = {
+      ...source,
+      kind: 'external' as const,
+      url: 'https://example.com/one'
+    }
+    const savedExternal = { ...previous, source: external }
+    expect(canReuseMedia(savedExternal, { ...external }, false)).toBe(true)
+    expect(
+      canReuseMedia(
+        savedExternal,
+        { ...external, url: 'https://example.com/two' },
+        false
+      )
+    ).toBe(false)
     expect(
       canReuseMedia(previous, { ...source, edited: '2026-01-02' }, false)
     ).toBe(false)

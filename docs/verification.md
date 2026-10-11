@@ -45,10 +45,12 @@ pnpm exec vitest run tests/projects.test.ts
 
 | Behavior | Useful tests |
 | --- | --- |
-| Publication, aliases, references, project source contracts | `publication.test.ts`, `content.test.ts`, `projects.test.ts`, `import.test.ts`, `notion.test.ts` |
-| Media, retries, dry runs, widths, downloads | `media.test.ts`, `cache.test.ts`, `download.test.ts`, `placeholders.test.ts`, `image-widths.test.tsx`, `media-download.test.ts` |
-| Search, Markdown, embeds, previews, TOC | `search.test.ts`, `markdown.test.ts`, `tweets.test.ts`, `link-preview.test.ts`, `article-enhancements.test.ts` |
+| Publication, aliases, references, project source contracts | `publication.test.ts`, `references.test.ts`, `content.test.ts`, `projects.test.ts`, `import.test.ts`, `notion.test.ts`, `sync.test.ts` |
+| Media, retries, dry runs, widths, downloads | `media.test.ts`, `cache.test.ts`, `download.test.ts`, `placeholders.test.ts`, `image-widths.test.tsx`, `media-download.test.ts`, `remote-video.test.ts`, `remote-video-ranges.test.ts` |
+| Search, Markdown, embeds, previews, TOC | `search.test.ts`, `markdown.test.ts`, `markdown-routes.test.ts`, `tweets.test.ts`, `link-preview.test.ts`, `article-enhancements.test.ts`, `public-fetch.test.ts` |
 | Social rendering and metadata | `social-image.test.ts`, plus the mandatory build bundle check |
+
+Focused behavior tests use small explicit fixtures; committed-content checks intentionally detect corpus drift. Derive expected values independently, keep relevant failure paths real, and control incidental retry delays. Shared importer behavior belongs in `import.test.ts`; `sync.test.ts` exercises selection and publication through the real collaborators with isolated service and filesystem boundaries. The range protocol suite controls inspector seeks, while `remote-video.test.ts` retains real FFmpeg decoding.
 
 ## Browser and production-mode checks
 

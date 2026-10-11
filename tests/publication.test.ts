@@ -5,6 +5,7 @@ import { tmpdir } from 'node:os'
 import { canonicalJson, publishSnapshot } from '../scripts/io'
 import { sourceContract } from '../lib/site'
 import type { Snapshot } from '../lib/content/schema'
+import { contentFixture, articleId } from './fixtures/content'
 
 const directories: string[] = []
 afterEach(async () => {
@@ -44,6 +45,12 @@ describe('snapshot publication', () => {
         path
       )
     ).rejects.toThrow()
+    expect(await readFile(path, 'utf8')).toBe(before)
+    const missingMedia = contentFixture()
+    missingMedia.articles[articleId]!.cover = 'missing'
+    await expect(publishSnapshot(missingMedia, path)).rejects.toThrow(
+      'Missing media'
+    )
     expect(await readFile(path, 'utf8')).toBe(before)
   })
 })

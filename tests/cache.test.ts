@@ -5,13 +5,27 @@ import { join } from 'node:path'
 import { MediaCache } from '../scripts/media/cache'
 import { MediaImporter } from '../scripts/media/process'
 import { MediaStorage, type StorageTransport } from '../scripts/media/storage'
+import { HeadObjectCommand, PutObjectCommand } from '@aws-sdk/client-s3'
 
 afterEach(() => vi.unstubAllGlobals())
 
 it('resumes completed uploads after an unpublished run and keeps dry runs read-only', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'personal-site-cache-'))
   const path = join(dir, 'cache.json')
-  const send = vi.fn<StorageTransport['send']>().mockResolvedValue({})
+  const objects = new Map<string, Uint8Array>()
+  const send = vi.fn<StorageTransport['send']>(async (command) => {
+    if (command instanceof HeadObjectCommand) {
+      if (!objects.has(command.input.Key!))
+        throw Object.assign(new Error('Missing'), {
+          $metadata: { httpStatusCode: 404 }
+        })
+      return {}
+    }
+    if (!(command instanceof PutObjectCommand))
+      throw new Error('Unexpected command')
+    objects.set(command.input.Key!, command.input.Body as Uint8Array)
+    return {}
+  })
   const storage = new MediaStorage(
     {
       bucket: 'fixture',
@@ -27,14 +41,9 @@ it('resumes completed uploads after an unpublished run and keeps dry runs read-o
   )
   const source = { key: 'file', kind: 'file' as const, edited: '2026-09-15' }
   const fetchMock = vi.fn<typeof fetch>().mockResolvedValue(
-    new Response(
-      new Uint8Array(
-        await readFile(new URL('./fixtures/video.mp4', import.meta.url))
-      ),
-      {
-        headers: { 'content-type': 'video/mp4' }
-      }
-    )
+    new Response('cached attachment', {
+      headers: { 'content-type': 'text/plain' }
+    })
   )
   vi.stubGlobal('fetch', fetchMock)
   try {
@@ -45,6 +54,11 @@ it('resumes completed uploads after an unpublished run and keeps dry runs read-o
       await MediaCache.open(path)
     )
     await first.import(source, 'https://example.com/original')
+    expect(storage.stats.uploaded).toBe(1)
+    expect(objects.size).toBe(1)
+    expect(Buffer.from([...objects.values()][0]!)).toEqual(
+      Buffer.from('cached attachment')
+    )
     const before = await readFile(path, 'utf8')
     expect(before).not.toContain('https://example.com/original')
     fetchMock.mockClear()

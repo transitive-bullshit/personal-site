@@ -27,13 +27,21 @@ describe('legacy redirects', () => {
       expect(() => validateSlug(slug)).toThrow(slug)
   })
 
-  it('are permanent', async () => {
+  it('registers every legacy mapping as a permanent redirect', async () => {
     const redirects = await config.redirects!()
-    expect(redirects).toContainEqual({
-      source: '/about',
-      destination: '/',
-      permanent: true
-    })
-    expect(redirects.every((redirect) => redirect.permanent)).toBe(true)
+    expect(redirects).toEqual([
+      ...Object.entries(legacyRedirects).map(([slug, destination]) => ({
+        source: '/' + slug,
+        destination,
+        permanent: true
+      })),
+      { source: '/tags/:tag*', destination: '/writing', permanent: true }
+    ])
+    for (const [source, destination] of [
+      ['/about', '/'],
+      ['/vite', '/javascript-dev-tools-in-2022'],
+      ['/saasify-status', '/projects/saasify']
+    ])
+      expect(redirects).toContainEqual({ source, destination, permanent: true })
   })
 })
