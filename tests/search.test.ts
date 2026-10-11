@@ -131,10 +131,17 @@ describe('static search index', () => {
     expect(
       buildSearchIndex(content).documents.map((document) => document.href)
     ).toEqual(['/', '/projects', '/writing'])
-    delete content.articles[a]
-    expect(buildSearchIndex(content).documents).toHaveLength(3)
-    content.articles[a] = { ...snapshot().articles[a]!, id: b, slug: 'unsafe' }
-    expect(buildSearchIndex(content).documents).toHaveLength(3)
+    const removed = snapshot()
+    delete removed.articles[a]
+    expect(buildSearchIndex(removed).documents.map(({ href }) => href)).toEqual(
+      ['/', '/projects', '/writing']
+    )
+    const identity = snapshot()
+    identity.articles[a] = { ...identity.articles[a]!, id: b, slug: 'unsafe' }
+    identity.routes[b] = { slug: 'unsafe', aliases: [], active: false }
+    expect(
+      buildSearchIndex(identity).documents.map(({ href }) => href)
+    ).toEqual(['/', '/projects', '/writing'])
   })
 
   it('ignores prose and remote preview edits while keeping authored heading changes local', async () => {
@@ -219,9 +226,12 @@ describe('static search index', () => {
     expect(before).toContain('\n      "bodyTerms":')
     expect(await publishSearchIndex(content, path)).toBe(false)
     delete content.articles[a]
-    content.routes[a]!.active = false
     expect(await publishSearchIndex(content, path)).toBe(true)
-    expect(JSON.parse(await readFile(path, 'utf8')).documents).toHaveLength(3)
+    expect(
+      JSON.parse(await readFile(path, 'utf8')).documents.map(
+        (entry: SearchDocument) => entry.href
+      )
+    ).toEqual(['/', '/projects', '/writing'])
   })
 
   it('indexes projects independently of colliding article slugs, including their body and metadata', () => {
@@ -333,13 +343,19 @@ describe('keyword ranking', () => {
 
   it('preserves recent-article ordering for ties and empty queries without mutating the index', () => {
     const documents = [
-      document('/one', 'Search one'),
-      document('/two', 'Search two')
+      { ...document('/one', 'Search one'), published: '2025-01-01' },
+      { ...document('/two', 'Search two'), published: '2026-01-01' }
     ]
-    expect(searchDocuments(documents, 'search')).toEqual(documents)
-    expect(searchDocuments(documents, ' ')).toEqual(documents)
+    const original = structuredClone(documents)
+    expect(
+      searchDocuments(documents, 'search').map(({ href }) => href)
+    ).toEqual(['/two', '/one'])
+    expect(searchDocuments(documents, ' ').map(({ href }) => href)).toEqual([
+      '/two',
+      '/one'
+    ])
     expect(searchDocuments(documents, 'two')[0]!.href).toBe('/two')
-    expect(documents[0]!.href).toBe('/one')
+    expect(documents).toEqual(original)
   })
 })
 

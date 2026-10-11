@@ -98,7 +98,11 @@ describe('cached bookmark previews', () => {
     })
     expect(fetchPreview).toHaveBeenCalledTimes(1)
     expect(saveImage).toHaveBeenCalledTimes(1)
-    expect(result.bookmarks['https://example.com']?.image).toBe(image)
+    expect(result.bookmarks['https://example.com']).toEqual({
+      title: 'Page',
+      description: 'Details',
+      image
+    })
     fetchPreview.mockClear()
     saveImage.mockClear()
     const repeated = await syncBookmarks({
@@ -125,6 +129,7 @@ describe('cached bookmark previews', () => {
       .fn<typeof fetchBookmark>()
       .mockRejectedValue(new Error('Timeout'))
     const saveImage = vi.fn<(key: string, url: string) => Promise<Media>>()
+    const warn = vi.fn<(message: string) => void>()
     const options = {
       urls: ['https://example.com'],
       previous,
@@ -132,7 +137,7 @@ describe('cached bookmark previews', () => {
       dryRun: true,
       fetchPreview,
       saveImage,
-      warn: () => {}
+      warn
     }
     expect((await syncBookmarks(options)).bookmarks).toEqual(previous)
     expect(fetchPreview).not.toHaveBeenCalled()
@@ -140,6 +145,11 @@ describe('cached bookmark previews', () => {
     expect(
       (await syncBookmarks({ ...options, dryRun: false })).bookmarks
     ).toEqual(previous)
+    expect(fetchPreview).toHaveBeenCalledExactlyOnceWith('https://example.com')
+    expect(warn).toHaveBeenCalledExactlyOnceWith(
+      'Bookmark preview unavailable: https://example.com (Timeout)'
+    )
+    expect(saveImage).not.toHaveBeenCalled()
   })
   it('refreshes bookmark text without syncing images in fast mode', async () => {
     const image = { original: { mime: 'image/png' } } as Media

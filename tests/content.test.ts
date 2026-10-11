@@ -182,7 +182,11 @@ describe('headings and structured metadata', () => {
       heading('cccccccccccccccccccccccccccccccc', 2)
     ])
     expect(headings.map(({ depth }) => depth)).toEqual([0, 1, 1])
-    expect(new Set(headings.map(({ id }) => id)).size).toBe(3)
+    expect(headings.map(({ id, text }) => ({ id, text }))).toEqual([
+      { id: a, text: 'Same heading' },
+      { id: b, text: 'Same heading' },
+      { id: 'cccccccccccccccccccccccccccccccc', text: 'Same heading' }
+    ])
   })
   it('prevents script-tag termination inside JSON-LD', () => {
     const payload = serializeJsonLd({

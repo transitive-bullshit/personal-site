@@ -1,19 +1,17 @@
 import { afterEach, expect, it, vi } from 'vitest'
 import sharp from 'sharp'
-import { readFileSync } from 'node:fs'
 import { socialImageData, socialImageUrl } from '../lib/social-image'
 import {
   allowedSocialImageUrl,
   renderSocialImage
 } from '../lib/render-social-image'
 import { articleJsonLd } from '../lib/content/metadata'
-import { snapshotSchema } from '../lib/content/schema'
+import { contentFixture, articleId, storedMedia } from './fixtures/content'
 import { site } from '../lib/site'
 
-const snapshot = snapshotSchema.parse(
-  JSON.parse(readFileSync('content/snapshot.json', 'utf8'))
-)
-const article = Object.values(snapshot.articles)[0]!
+const snapshot = contentFixture()
+snapshot.media.cover = storedMedia()
+const article = { ...snapshot.articles[articleId]!, cover: 'cover' }
 afterEach(() => {
   vi.unstubAllEnvs()
   vi.unstubAllGlobals()
@@ -35,8 +33,15 @@ it('versions canonical social URLs when visible metadata or the cached cover cha
   expect(socialImageUrl({ ...article, cover: undefined }, snapshot)).not.toBe(
     url
   )
+  const replacement = {
+    ...snapshot,
+    media: { cover: storedMedia('cover', '2'.repeat(64), '4'.repeat(64)) }
+  }
+  expect(socialImageUrl(article, replacement)).not.toBe(url)
   expect(socialImageData(article, snapshot).cover).toBe(
-    snapshot.media[article.cover!]!.variants.at(-1)!.url
+    'https://assets.cultural-alignment.com/personal-site/media/' +
+      '3'.repeat(64) +
+      '.webp'
   )
   expect(articleJsonLd(article, snapshot).image[0]).toBe(url)
 })
@@ -104,7 +109,9 @@ it('renders without remote requests and keeps CDN caching when a cover fails', a
   vi.spyOn(console, 'warn').mockImplementation(() => {})
   const data = socialImageData(article, snapshot)
   const plain = await renderSocialImage({ ...data, cover: undefined })
-  expect((await plain.arrayBuffer()).byteLength).toBeGreaterThan(1000)
+  expect(
+    await sharp(Buffer.from(await plain.arrayBuffer())).metadata()
+  ).toMatchObject({ width: 1200, height: 630, format: 'webp' })
   expect(fetcher).not.toHaveBeenCalled()
   const fallback = await renderSocialImage(data)
   expect(fallback.headers.get('cache-control')).toBe(
@@ -116,7 +123,11 @@ it('renders without remote requests and keeps CDN caching when a cover fails', a
   expect(fallback.headers.get('vercel-cdn-cache-control')).toBe(
     'public, max-age=31536000, immutable'
   )
-  expect((await fallback.arrayBuffer()).byteLength).toBeGreaterThan(1000)
+  expect(fetcher).toHaveBeenCalledOnce()
+  expect(fetcher.mock.calls[0]![0]).toBe(data.cover)
+  expect(
+    await sharp(Buffer.from(await fallback.arrayBuffer())).metadata()
+  ).toMatchObject({ width: 1200, height: 630, format: 'webp' })
 })
 
 it('centers balanced short and long titles in the actual rendered pixels', async () => {

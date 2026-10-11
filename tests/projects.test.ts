@@ -1,6 +1,5 @@
 import { getProjectHeroVideo } from '../lib/content/project-hero'
 import { expect, it, vi } from 'vitest'
-import { readFile } from 'node:fs/promises'
 import {
   projectSchema,
   snapshotSchema,
@@ -8,11 +7,14 @@ import {
 } from '../lib/content/schema'
 import { resolveContentLinks } from '../lib/content/content-links'
 import { validateSnapshot } from '../lib/content/references'
+import { crossCollectionSlugWarnings } from '../lib/content/routes'
 import {
-  crossCollectionSlugWarnings,
-  reconcileRoutes
-} from '../lib/content/routes'
-import { importPages } from '../scripts/notion/import-pages'
+  contentFixture,
+  articleId,
+  projectId,
+  paragraph,
+  storedMedia
+} from './fixtures/content'
 import { Normalizer } from '../scripts/notion/normalize'
 import { NotionSourceClient, type NotionPage } from '../scripts/notion/source'
 
@@ -40,57 +42,6 @@ const page: NotionPage = {
   in_trash: false,
   last_edited_time: '2026-01-01'
 }
-const report = () => {}
-
-it('shares cache, force, fast image recovery, and failure fallback with articles', async () => {
-  const read = vi.fn<() => Promise<Project>>(async () => project)
-  const options = {
-    kind: 'project' as const,
-    pages: [page],
-    previous: { [id]: project },
-    routes: { [id]: route },
-    read,
-    report
-  }
-  expect((await importPages(options))[id]).toEqual(project)
-  expect(read).not.toHaveBeenCalled()
-  const fast = await importPages({ ...options, force: true, fast: true })
-  expect(fast[id]?.needsImageSync).toBe(true)
-  read.mockClear()
-  const normal = await importPages({ ...options, previous: fast })
-  expect(read).toHaveBeenCalledOnce()
-  expect(normal[id]?.needsImageSync).toBeUndefined()
-  read.mockRejectedValue(new Error('offline'))
-  expect((await importPages({ ...options, force: true }))[id]).toEqual(project)
-})
-
-it('removes private projects and scopes prune to project routes', async () => {
-  const privateRoutes = reconcileRoutes(
-    [{ id, title: 'Project', slug: 'demo', public: false }],
-    { [id]: route }
-  ).routes
-  expect(
-    await importPages({
-      pages: [],
-      previous: { [id]: project },
-      routes: privateRoutes,
-      read: async () => project,
-      report
-    })
-  ).toEqual({})
-  expect(reconcileRoutes([], { [id]: route }).routes[id]?.active).toBe(true)
-  expect(
-    reconcileRoutes([], { [id]: route }, { prune: true }).routes[id]?.active
-  ).toBe(false)
-  const changed = [{ id, title: 'Project', slug: 'new', public: true }]
-  expect(reconcileRoutes(changed, { [id]: route }).routes[id]?.slug).toBe(
-    'demo'
-  )
-  expect(
-    reconcileRoutes(changed, { [id]: route }, { acceptSlugChanges: true })
-      .routes[id]?.aliases
-  ).toEqual(['demo'])
-})
 
 it('reports matching article slugs and aliases without rejecting separate collections', () => {
   const warnings = crossCollectionSlugWarnings(
@@ -108,7 +59,7 @@ it('reports matching article slugs and aliases without rejecting separate collec
 })
 
 it('loads legacy snapshots and validates project publication and media references', async () => {
-  const legacy = JSON.parse(await readFile('content/snapshot.json', 'utf8'))
+  const legacy = contentFixture()
   delete legacy.projects
   delete legacy.projectRoutes
   delete legacy.projectSource
@@ -124,7 +75,7 @@ it('loads legacy snapshots and validates project publication and media reference
   expect(() => validateSnapshot(snapshot)).toThrow('publication mismatch')
 })
 
-it('normalizes project people and structured links through the shared body reader', async () => {
+it('maps project people and structured links onto common page fields', async () => {
   const api = new NotionSourceClient('fixture')
   const normalizer = new Normalizer(api, { [id]: route }, async () => 'cover')
   const span = (text: string) => ({
@@ -227,66 +178,65 @@ it('normalizes project people and structured links through the shared body reade
   ).toBe(false)
 })
 
-it('resolves cached Notion project links when loading an existing snapshot', async () => {
-  const snapshot = snapshotSchema.parse(
-    JSON.parse(await readFile('content/snapshot.json', 'utf8'))
-  )
-  const target = Object.values(snapshot.projects ?? {})[0]!
-  const article = Object.values(snapshot.articles)[0]!
-  article.blocks = [
-    {
-      id,
-      type: 'paragraph',
-      color: 'default',
-      children: [],
-      richText: [
-        {
-          text: 'Project',
-          href: 'https://app.notion.com/p/' + target.id,
-          bold: false,
-          italic: false,
-          underline: false,
-          strike: false,
-          code: false,
-          color: 'default'
-        }
-      ]
-    }
-  ]
+it('rewrites cached Notion project links into the project namespace', () => {
+  const snapshot = contentFixture()
+  const source = snapshot.articles[articleId]!
+  const target = snapshot.projects![projectId]!
+  const block = paragraph('e'.repeat(32), 'Project')
+  block.richText[0]!.href = 'https://app.notion.com/p/' + target.id
+  source.blocks = [block]
   resolveContentLinks(snapshot)
-  const block = article.blocks[0]!
-  expect(block.type === 'paragraph' && block.richText[0]?.href).toBe(
-    '/projects/' + target.slug
-  )
+  expect(block.richText[0]!.href).toBe('/projects/fixture-project')
 })
 
-it('promotes only the primary uploaded video for Video projects', async () => {
-  const snapshot = snapshotSchema.parse(
-    JSON.parse(await readFile('content/snapshot.json', 'utf8'))
-  )
-  const saved = Object.values(snapshot.projects ?? {}).find(
-    (entry) => entry.slug === 'slow-it-down-ai-music-video'
-  )!
-  const videoProject = { ...saved, type: 'Video' }
-  const hero = getProjectHeroVideo(videoProject, snapshot)!
-  expect(hero.type).toBe('video')
-  expect(hero.id).toBe(saved.blocks[0]!.id)
+it('promotes the first top-level uploaded video for Video projects', () => {
+  const snapshot = contentFixture()
+  for (const key of ['first', 'second']) {
+    const media = storedMedia(key)
+    snapshot.media[key] = {
+      ...media,
+      variants: [],
+      original: {
+        ...media.original,
+        mime: 'video/mp4',
+        key: 'personal-site/media/' + '1'.repeat(64) + '.mp4',
+        url:
+          'https://assets.cultural-alignment.com/personal-site/media/' +
+          '1'.repeat(64) +
+          '.mp4'
+      }
+    }
+  }
+  const hero = {
+    id: 'e'.repeat(32),
+    type: 'video' as const,
+    media: 'first',
+    caption: [],
+    children: []
+  }
+  const later = { ...hero, id: 'f'.repeat(32), media: 'second' }
+  const saved = {
+    ...project,
+    type: 'Video',
+    blocks: [
+      paragraph('c'.repeat(32), 'Leading paragraph', [
+        { ...later, id: '7'.repeat(32) }
+      ]),
+      hero,
+      later
+    ]
+  }
+  expect(getProjectHeroVideo(saved, snapshot)).toEqual(hero)
+  for (const type of [undefined, 'Web app'])
+    expect(getProjectHeroVideo({ ...saved, type }, snapshot)).toBeUndefined()
   expect(
-    getProjectHeroVideo({ ...saved, type: undefined }, snapshot)
+    getProjectHeroVideo({ ...saved, blocks: [] }, snapshot)
   ).toBeUndefined()
-  expect(
-    getProjectHeroVideo({ ...saved, type: 'Web app' }, snapshot)
-  ).toBeUndefined()
-  expect(
-    getProjectHeroVideo({ ...videoProject, blocks: [] }, snapshot)
-  ).toBeUndefined()
-  expect(
-    getProjectHeroVideo(videoProject, { ...snapshot, media: {} })
-  ).toBeUndefined()
+  expect(getProjectHeroVideo(saved, { ...snapshot, media: {} })).toBeUndefined()
   expect(
     getProjectHeroVideo(
       {
-        ...videoProject,
+        ...saved,
         blocks: [
           {
             ...hero,

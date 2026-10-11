@@ -120,11 +120,10 @@ it('rejects servers that ignore ranges without reading their full response', asy
   expect(cancel).toHaveBeenCalled()
 })
 
-it.each(['video-rotated.mp4', 'video-anamorphic.mp4'])(
-  'retains display dimensions for %s',
-  async (fixture) => {
-    const inspected = await inspectRemoteVideo(url, await rangeFetcher(fixture))
-    expect(inspected.width).toBeGreaterThan(0)
-    expect(inspected.height).toBeGreaterThan(0)
-  }
-)
+it.each([
+  ['video-rotated.mp4', 90, 160],
+  ['video-anamorphic.mp4', 320, 90]
+])('retains display dimensions for %s', async (fixture, width, height) => {
+  const inspected = await inspectRemoteVideo(url, await rangeFetcher(fixture))
+  expect(inspected).toMatchObject({ width, height })
+})

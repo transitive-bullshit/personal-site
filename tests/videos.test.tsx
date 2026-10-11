@@ -1,4 +1,5 @@
 import { describe, expect, it, vi } from 'vitest'
+import { load } from 'cheerio'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { Blocks } from '../components/article/blocks'
 import { mediaSchema, type Snapshot } from '../lib/content/schema'
@@ -84,15 +85,15 @@ describe('article videos', () => {
     expect(html).toContain(`poster="${poster.url}"`)
   })
   it('includes the native ratio and poster in initial server HTML', () => {
-    const html = render(media)
-    expect(html).toContain('width="900" height="1600"')
-    expect(html).toContain('aspect-ratio:900 / 1600')
-    expect(html).toContain(`poster="${poster.url}"`)
-    expect(html).toContain(`src="${original.url}"`)
-    expect(html).toContain('preload="metadata"')
-    expect(html).toContain(
-      '<figcaption><span class="rich-text">Outtake: the shadow grows bear ears.</span></figcaption>'
-    )
+    const $ = load(render(media))
+    const video = $('video')
+    expect(video.attr('width')).toBe('900')
+    expect(video.attr('height')).toBe('1600')
+    expect(video.attr('style')).toContain('aspect-ratio:900 / 1600')
+    expect(video.attr('poster')).toBe(poster.url)
+    expect(video.attr('src')).toBe(original.url)
+    expect(video.attr('preload')).toBe('metadata')
+    expect($('figcaption').text()).toBe('Outtake: the shadow grows bear ears.')
   })
   it('still renders older snapshots without video metadata', () => {
     const html = render({

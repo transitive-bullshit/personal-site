@@ -73,7 +73,15 @@ describe('Notion image display widths', () => {
     )
     expect(html).not.toContain('inline-size:2266px')
     expect(fetch).toHaveBeenCalledTimes(1)
-    expect(fetch.mock.calls[0]![0].body.requests).toHaveLength(3)
+    expect(fetch).toHaveBeenCalledWith({
+      endpoint: 'syncRecordValues',
+      body: {
+        requests: ids.map((id) => ({
+          pointer: { table: 'block', id: uuid(id) },
+          version: -1
+        }))
+      }
+    })
   })
 
   it('retains saved widths on failure or missing records and warns', async () => {
