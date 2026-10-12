@@ -11,7 +11,8 @@ import {
   finalForecastPremise,
   finalClosing,
   essayChrome,
-  furtherReading
+  furtherReading,
+  policyVideo
 } from '@/lib/content/essays/cyber-swarm/essay-content'
 import type { EssayPart } from '@/lib/content/essays/cyber-swarm/essay-content'
 import { expertQuotes } from '@/lib/content/essays/cyber-swarm/quotes'
@@ -136,6 +137,30 @@ function Chapter({ part }: { part: EssayPart }) {
                   <Paragraph text={releaseAside} id='coverage-replay' />
                   <PatchReleaseGap />
                 </>
+              )}
+              {part.id === 'coverage' && i === 5 && (
+                <figure id='policy-video' className='essay-policy-video'>
+                  <iframe
+                    src={`https://www.youtube-nocookie.com/embed/${policyVideo.id}`}
+                    title={policyVideo.title}
+                    loading='lazy'
+                    allow='encrypted-media; picture-in-picture; fullscreen'
+                    referrerPolicy='strict-origin-when-cross-origin'
+                    allowFullScreen
+                  />
+                  <figcaption>
+                    {policyVideo.caption}{' '}
+                    <a
+                      className='link'
+                      href={sourceUrl(policyVideo.sourceId)}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      {policyVideo.title} [{sourceNumber(policyVideo.sourceId)}]
+                      ↗
+                    </a>
+                  </figcaption>
+                </figure>
               )}
               {part.id === 'accident' && i === 3 && <DnsControlTimeline />}
             </div>
@@ -336,7 +361,13 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
             />
             <ol className='forecast-list'>
               {finalPredictions.map((p) => (
-                <li id={`prediction-${p.id}`} key={p.id}>
+                <li
+                  id={`prediction-${p.id}`}
+                  key={p.id}
+                  className={
+                    p.id === 'catastrophe' ? 'forecast-boldest' : undefined
+                  }
+                >
                   <div>
                     <EssayText
                       as='h3'

@@ -6,7 +6,8 @@ import {
   finalPredictions,
   finalForecastPremise,
   finalClosing,
-  essayChrome
+  essayChrome,
+  policyVideo
 } from './essay-content'
 
 const chunks = [
@@ -26,6 +27,9 @@ const chunks = [
       ...(part.id === 'defenders' && index === 4 ? ['[5]'] : []),
       ...(part.id === 'capability' && index === 1 ? ['[6]'] : []),
       ...(part.id === 'coverage' && index === 1 ? [releaseAside, '[8]'] : []),
+      ...(part.id === 'coverage' && index === 5
+        ? [`[${policyVideo.sourceId}]`]
+        : []),
       ...(part.id === 'accident' && index === 3 ? ['[32]'] : [])
     ]),
     ...(part.id === 'capability' ? [capabilityAside] : []),

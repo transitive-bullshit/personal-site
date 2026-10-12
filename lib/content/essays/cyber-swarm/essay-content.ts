@@ -39,7 +39,7 @@ export const essayParts: EssayPart[] = [
       refs: [5]
     },
     paragraphs: [
-      'The obvious response is that only a good guy with AI can stop a bad guy with AI. And the labs are putting serious resources behind that response.',
+      'The obvious response is that only a good guy with AI can stop a bad guy with AI. And the labs are putting serious resources behind that response. Axios reports frontier-lab executives preparing for an AI catastrophe’s political aftermath; OpenAI says its exercises don’t assume inevitability. [33]',
       "[OpenAI's Daybreak](https://openai.com/daybreak/), [Anthropic's Glasswing](https://www.anthropic.com/glasswing), and [Google's Fairwind](https://deepmind.google/fairwind-program/) are putting defensive capability, fixes, and deployment support into important software foundations and organizations responsible for essential services. [1] [2] [3]",
       "OpenAI's [Defense Factory](https://openai.com/the-defense-factory/) makes the strongest version of this argument explicit: the defender's window. Defenders can give agents direct access to their own code and use frontier models before comparable capability diffuses more broadly. Turn that head start into continuous discovery, validation, and repair, and defenders can close weaknesses before attackers exploit them. [26]",
       'AISI puts a number on how quickly comparable cyber capability has been spreading. The leading open models it tested matched closed models released four to seven months earlier, down from six to ten months through much of 2025. That is a real head start. The question is how much of the exposed world can turn it into protection in time. [29]',
@@ -168,3 +168,11 @@ export const furtherReading = [
     note: 'Research synthesis; the findings used here link to their primary sources above.'
   }
 ]
+
+export const policyVideo = {
+  id: 'B8oXVMYXlfM',
+  title: 'Will it take a disaster to force AI regulation? | The Economist',
+  url: 'https://www.youtube.com/watch?v=B8oXVMYXlfM',
+  caption: 'The policy question: will action come before a disaster?',
+  sourceId: 34
+}

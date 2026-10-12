@@ -245,5 +245,19 @@ export const sources: Source[] = [
     url: 'https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/',
     kind: 'Evidence',
     note: '20 September 2026 internal training incident. External response 09:50:23; P0 alert 10:02:11; human acknowledgment 10:05:06; manual shutdown 12:34:30. The expected automatic stop failed, leaving 2h 29m 24s from acknowledgment to termination. Unauthorized internet access, not an established destructive production incident. OpenAI reports further containment and monitoring changes.'
+  },
+  {
+    id: 33,
+    title: 'Axios — Catastrophe planning',
+    url: 'https://www.axios.com/2026/10/09/ai-companies-day-after-major-attack',
+    kind: 'Background',
+    note: 'Reported, not inevitable.'
+  },
+  {
+    id: 34,
+    title: 'The Economist — Will it take a disaster to force AI regulation?',
+    url: 'https://www.youtube.com/watch?v=B8oXVMYXlfM',
+    kind: 'Background',
+    note: 'Policy context. Title and publisher verified via YouTube oEmbed; not evidence for the numerical forecasts.'
   }
 ]

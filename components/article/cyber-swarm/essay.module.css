@@ -4,6 +4,8 @@
   --line: var(--border);
   --blue: var(--notion-blue);
   --red: var(--notion-red);
+  --forecast-surface: color-mix(in oklch, var(--red) 7%, var(--paper));
+  --forecast-line: color-mix(in oklch, var(--red) 35%, var(--paper));
   inline-size: 100%;
   min-inline-size: 0;
 }
@@ -189,6 +191,9 @@
 }
 .root :global(.forecast-list h3) {
   margin-block: 0 0.9rem;
+  color: var(--red);
+  font-weight: 750;
+  font-size: clamp(1.35rem, 2vw, 1.65rem);
 }
 .root :global(.forecast-list p) {
   margin-block: 0 0.9rem;
@@ -200,12 +205,40 @@
   color: var(--muted-foreground);
   font-size: 0.8125rem;
 }
-.root :global(.forecast-list > li:last-child) {
-  border-block-start-color: var(--foreground);
+.root :global(.essay-forecasts > header h2) {
+  color: var(--red);
+  font-weight: 750;
 }
-.root :global(.forecast-list > li:last-child h3) {
-  color: var(--notion-red);
+.root :global(.forecast-list > li) {
+  border-block-start-color: var(--forecast-line);
 }
+.root :global(.forecast-list > .forecast-boldest) {
+  margin-block-start: 1rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 2px solid var(--red);
+  background: var(--forecast-surface);
+  border-radius: 0.5rem;
+}
+.root :global(.forecast-boldest > div > p) {
+  color: var(--red);
+  font-weight: 650;
+  font-size: clamp(1.125rem, 1.6vw, 1.25rem);
+  line-height: 1.65;
+}
+.root :global(.essay-policy-video) {
+  margin-block: 2rem;
+}
+.root :global(.essay-policy-video iframe) {
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 0.5rem;
+}
+.root :global(.essay-policy-video figcaption) {
+  text-align: start;
+}
+
 .root :global(.essay-ending) {
   max-inline-size: var(--content-reading);
   margin-block: 3rem;

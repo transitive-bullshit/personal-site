@@ -9,7 +9,8 @@ import {
   finalPredictions,
   finalForecastPremise,
   finalClosing,
-  furtherReading
+  furtherReading,
+  policyVideo
 } from './essays/cyber-swarm/essay-content'
 import { sourceOrder, sourceNumber } from './essays/cyber-swarm/citation-labels'
 import { expertQuotes } from './essays/cyber-swarm/quotes'
@@ -127,6 +128,12 @@ function cyberSwarmMarkdown() {
           ),
           cite('Source: Anthropic [8]')
         )
+      if (part.id === 'coverage' && index === 5)
+        blocks.push(
+          cite(
+            `${policyVideo.caption} [${policyVideo.title}](${policyVideo.url}) [${policyVideo.sourceId}]`
+          )
+        )
       if (part.id === 'accident' && index === 3)
         blocks.push(
           '### ' + titles.dnsControlTimeline,
@@ -166,7 +173,11 @@ function cyberSwarmMarkdown() {
     blocks.push(
       anchor('prediction-' + prediction.id),
       cite(`### ${prediction.title}`),
-      cite(prediction.body),
+      cite(
+        prediction.id === 'catastrophe'
+          ? `**${prediction.body}**`
+          : prediction.body
+      ),
       details('How I would judge this prediction', [cite(prediction.test)])
     )
   )
@@ -226,6 +237,7 @@ const cyberSwarmOverride: BodyOverride = {
     'Sources',
     ...Object.values(titles),
     essayChrome.swarmCaption,
+    policyVideo.caption,
     'Anas Baba / AFP · 14 May 2021. Northern Gaza Strip. Rockets right; interceptors left. Foreground: Gaza.',
     expertQuotes[0].author,
     expertQuotes[1].author

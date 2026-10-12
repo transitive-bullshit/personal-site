@@ -137,6 +137,21 @@ describe('CMS article body overrides', () => {
     expect($('#sources li').length).toBe(
       sourceOrder.length + furtherReading.length
     )
+    expect($('#defenders-0 a[href="#source-33"]').length).toBe(1)
+    expect($('#source-33 a').attr('href')).toBe(
+      'https://www.axios.com/2026/10/09/ai-companies-day-after-major-attack'
+    )
+    const video = $('#policy-video iframe')
+    expect(video.attr('src')).toBe(
+      'https://www.youtube-nocookie.com/embed/B8oXVMYXlfM'
+    )
+    expect(video.attr('title')).toBe(
+      'Will it take a disaster to force AI regulation? | The Economist'
+    )
+    expect(video.attr('loading')).toBe('lazy')
+    expect(video.closest('section').attr('id')).toBe('coverage')
+    expect($('#coverage-5').next('#policy-video').length).toBe(1)
+    expect($('#prediction-catastrophe').hasClass('forecast-boldest')).toBe(true)
     expect($('.article-body').length).toBe(1)
     for (const heading of getBodyOverride(entry.id)!.headings)
       expect($('#' + heading.id).length).toBe(1)
@@ -268,6 +283,11 @@ describe('CMS article body overrides', () => {
     expect(body).toContain(defenderWindowDescription)
     expect(body).toContain('/essays/cyber-swarm/iron-dome-original.jpg')
     expect(body).toContain('/essays/cyber-swarm/swarm.webp')
+    expect(body).toContain('https://www.youtube.com/watch?v=B8oXVMYXlfM')
+    expect(body).toContain(
+      'https://www.axios.com/2026/10/09/ai-companies-day-after-major-attack'
+    )
+    expect(body).toContain(`**${finalPredictions[3]!.body}**`)
   })
 
   it('indexes rendered headings and authored captions without expanding the TOC or search scope', () => {
