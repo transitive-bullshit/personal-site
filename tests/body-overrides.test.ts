@@ -52,7 +52,7 @@ import { GET as markdownRoute } from '../app/markdown/[...path]/route'
 const article: Article = {
   id: cyberSwarmArticleId,
   title: 'AI is turning cybersecurity into drone swarm warfare',
-  slug: 'ai-cybersecurity-swarm-warfare',
+  slug: 'ai-cyberswarm-warfare',
   description: 'The description from Notion',
   author: 'Travis Fischer',
   published: '2026-10-12',

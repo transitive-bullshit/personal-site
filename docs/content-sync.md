@@ -51,6 +51,7 @@ Dry runs still perform Notion discovery, selected page reads, public image-layou
 - Unchanged entries reuse saved bodies when `last_edited_time <= modified`, unless forced or marked `needsImageSync` by an earlier fast import. Image-layout refresh still runs for cached entries.
 - Articles and projects share the importer but have independent route registries. `--only` skips discovery and body imports for the other collection. Shared assets can still change; search always includes both collections.
 - Proposed slug changes warn and retain the saved path until explicitly accepted. Accepted old paths and Notion ID forms redirect to the current path. Inactive route records retain pathname ownership as tombstones.
+- Before publication, draft path changes must not create redirects. Match the Notion slug in the draft snapshot's entry and route record, omit the old draft alias, and rebuild search. `--accept-slug-changes` retains the old slug; reserve it for published paths.
 - Missing or trashed entries remain published until `--prune`. An observed `Public=false` deactivates the entry immediately in the next published snapshot. Neither operation deletes content in Notion or objects in R2.
 - Cross-collection slug/alias matches warn and retain both records: articles use `/[slug]`, projects `/projects/[slug]`.
 
