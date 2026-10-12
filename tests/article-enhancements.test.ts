@@ -144,7 +144,12 @@ describe('cached bookmark previews', () => {
     expect(saveImage).not.toHaveBeenCalled()
     expect(
       (await syncBookmarks({ ...options, dryRun: false })).bookmarks
-    ).toEqual(previous)
+    ).toEqual({
+      'https://example.com': {
+        ...previous['https://example.com'],
+        failure: { stage: 'metadata', reason: 'Timeout' }
+      }
+    })
     expect(fetchPreview).toHaveBeenCalledExactlyOnceWith('https://example.com')
     expect(warn).toHaveBeenCalledExactlyOnceWith(
       'Bookmark preview unavailable: https://example.com (Timeout)'

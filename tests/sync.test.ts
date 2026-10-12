@@ -346,3 +346,34 @@ it('prunes articles while preserving projects when only articles are selected', 
   expect(rows).toHaveBeenCalledExactlyOnceWith(sourceContract.dataSourceId)
   expect(children).not.toHaveBeenCalled()
 })
+
+it('publishes acceptable bookmark failures without failing sync and does not fetch them again', async () => {
+  const url = 'https://93.184.216.34/deleted-bookmark'
+  rows.mockResolvedValue([row(projectId, 'fixture-project')])
+  children.mockResolvedValue([
+    {
+      id: 'f'.repeat(32),
+      type: 'bookmark',
+      has_children: false,
+      last_edited_time: '2026-10-01',
+      bookmark: { url, caption: [] }
+    }
+  ])
+  const fetcher = vi
+    .fn<typeof fetch>()
+    .mockResolvedValue(new Response('Gone', { status: 410 }))
+  vi.stubGlobal('fetch', fetcher)
+  process.exitCode = undefined
+  await main()
+  const saved = JSON.parse(await readFile(snapshotPath, 'utf8')) as Snapshot
+  expect(saved.bookmarks?.[url]?.failure).toEqual({
+    stage: 'metadata',
+    reason: 'HTTP 410'
+  })
+  expect(process.exitCode).toBeUndefined()
+  expect(fetcher).toHaveBeenCalledOnce()
+  process.argv = process.argv.filter((arg) => arg !== '--force')
+  await main()
+  expect(fetcher).toHaveBeenCalledOnce()
+  expect(process.exitCode).toBeUndefined()
+})

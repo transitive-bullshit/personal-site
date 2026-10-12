@@ -145,7 +145,13 @@ export const bookmarkPreviewSchema = z.object({
   description: z.string(),
   needsImageSync: z.literal(true).optional(),
   image: mediaSchema.optional(),
-  screenshot: bookmarkScreenshotSchema.optional()
+  screenshot: bookmarkScreenshotSchema.optional(),
+  failure: z
+    .object({
+      stage: z.enum(['metadata', 'image']),
+      reason: z.string().max(500)
+    })
+    .optional()
 })
 export type BookmarkPreview = z.infer<typeof bookmarkPreviewSchema>
 

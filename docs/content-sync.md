@@ -30,13 +30,13 @@ Every sync mode, including `--dry-run` and `--fast`, requires this configuration
 | `pnpm content:sync --only articles` | Select articles; retain saved projects and their referenced assets. |
 | `pnpm content:sync --only projects` | Select projects; retain saved articles and their referenced assets. |
 | `pnpm content:sync --dry-run` | Read and validate source data without local or R2 writes. |
-| `pnpm content:sync --force` | Re-read every selected page and refresh its media, bookmarks, and tweets. |
+| `pnpm content:sync --force` | Re-read every selected page and refresh its media, bookmarks, and tweets, including saved preview failures. |
 | `pnpm content:sync --fast` | Reuse saved media, omit new images/videos/audio/files, and defer all media processing to a normal sync. |
 | `pnpm content:sync --prune` | Deactivate missing entries in the selected collections. |
 | `pnpm content:sync --accept-slug-changes` | Accept proposed paths and retain old paths as redirects. |
 | `pnpm content:videos` | Backfill saved video dimensions and posters from verified R2 originals, without fetching Notion. Requires storage configuration and FFmpeg; resumes by skipping completed videos. |
 | `pnpm content:search` | Rebuild search from the committed snapshot without CMS credentials. |
-| `pnpm content:bookmark-images [--url URL ...]` | Backfill missing bookmark images from the saved snapshot without fetching Notion; reuse existing images and screenshots. |
+| `pnpm content:bookmark-images [--url URL ...] [--force]` | Backfill missing bookmark images without fetching Notion; reuse saved images and failures. `--force` retries failed captures. |
 
 Interactive terminals show a Tasuku task list with spinners, elapsed time, and completed/active counts for page imports, image-width batches, bookmarks, tweets, and placeholders. Finished children collapse into their phase counts so active work stays visible. Warnings mark the phase and print in full before the final JSON summary. Redirected output, CI, and dumb terminals use plain start/completion logs.
 
@@ -73,9 +73,9 @@ Projects import the optional `Type` select value and separate `Website` and `You
 
 ## Media and image widths
 
-Bookmark imports prefer advertised social images. When none can be saved and no existing image is available, Playwright captures the page's first 1280×960 viewport in an isolated, script-disabled Chromium context. Page and resource fetches use the public-only transport with redirect validation, a 30-second capture deadline, and request/byte limits. Failed captures retain text previews and warn; later normal syncs retry missing images, including on cached entries. Fast and dry-run imports skip captures.
+Bookmark imports prefer advertised social images. When none can be saved and no existing image is available, Playwright captures the page's first 1280×960 viewport in an isolated, script-disabled Chromium context. Page and resource fetches use the public-only transport with redirect validation, a 30-second capture deadline, and request/byte limits. Unavailable metadata or images retain text previews and record a `failure` with its stage and reason in the committed snapshot. These are acceptable preview fallbacks: the first failure warns without failing sync, and later normal syncs skip that URL without another fetch or warning. Use `content:sync --force` to retry; success clears the failure. A forced fast import can refresh metadata but retains known image failures until images are explicitly retried. Fast and dry-run imports skip captures.
 
-Install the import-time browser once with `pnpm exec playwright install chromium`. Captures are resized to at most 640×480 and saved as optimized, content-hashed WebP files under `public/bookmarks/`; the snapshot stores their local paths and dimensions. Commit these files with the snapshot. Existing captures are reused, including on forced imports, while newly available social images take priority. Screenshot capture is best effort: blocked pages or pages that require JavaScript may remain text-only.
+Install the import-time browser once with `pnpm exec playwright install chromium`. Captures are resized to at most 640×480 and saved as optimized, content-hashed WebP files under `public/bookmarks/`; the snapshot stores their local paths and dimensions. Commit these files with the snapshot. Existing captures are reused, including on forced imports, while newly available social images take priority. Screenshot capture is best effort: blocked pages or pages that require JavaScript may remain text-only. The bookmark-image backfill also persists unavailable captures and skips saved failures; use `--url URL --force` for a targeted retry. Snapshot write failures still fail the command.
 
 Each media download has a 30-minute timeout per attempt and is limited to 512 MiB, enforced against both the declared content length and the bytes received. Transient download failures retry up to three attempts.
 
@@ -97,7 +97,8 @@ Layout refresh runs for cached entries and in fast/dry-run modes. `format.block_
 | --- | --- |
 | Source authorization/discovery, route collision, or whole-snapshot validation | Stops publication. Fix the source or contract issue before retrying. |
 | One page cannot be imported, including an unsupported block | Keeps its previous version, or leaves a new entry inactive; successful entries can still publish. Add support or repair the source, then retry. |
-| Media, bookmark, tweet, storage-probe, layout, or placeholder failure | Keeps available saved data or a fallback, writes the valid snapshot, then exits `1`. Inspect warnings and the diff before retrying. |
+| Media, tweet, storage-probe, layout, or placeholder failure | Keeps available saved data or a fallback, writes the valid snapshot, then exits `1`. Inspect warnings and the diff before retrying. |
+| Bookmark metadata or preview image unavailable | Keeps text or saved assets, records the failure, and succeeds. Subsequent syncs skip it; `--force` retries it. |
 | Snapshot/search write failure | Stops at that write. Inspect both files; search failure can occur after the snapshot was published. `pnpm content:search` repairs the derived index. |
 
 Informational warnings, such as a retained proposed slug or cross-collection slug match, do not change the exit code. R2 uploads can precede a later failure; their immutable objects do not affect the published site until a deployed snapshot references them.

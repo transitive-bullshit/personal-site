@@ -5,7 +5,10 @@ import sharp from 'sharp'
 import { expect, it, vi } from 'vitest'
 import { syncBookmarks } from '../scripts/bookmarks'
 import { saveBookmarkScreenshot } from '../scripts/bookmark-screenshots'
-import { bookmarkScreenshotSchema } from '../lib/content/schema'
+import {
+  bookmarkScreenshotSchema,
+  bookmarkPreviewSchema
+} from '../lib/content/schema'
 import { load } from 'cheerio'
 import {
   rebaseScreenshotHtml,
@@ -159,7 +162,7 @@ it('skips capture in dry runs and defers missing images in fast imports', async 
   expect(input.saveScreenshot).not.toHaveBeenCalled()
 })
 
-it('keeps metadata and warns when capture fails, then retries on the next import', async () => {
+it('persists unavailable screenshots, skips subsequent imports, and retries only when forced', async () => {
   const input = options()
   input.saveScreenshot.mockRejectedValue(new Error('Blocked page'))
   const failed = await syncBookmarks(input)
@@ -168,12 +171,31 @@ it('keeps metadata and warns when capture fails, then retries on the next import
   expect(input.warn).toHaveBeenCalledWith(
     expect.stringContaining('Blocked page')
   )
+  const persisted = {
+    [url]: bookmarkPreviewSchema.parse(
+      JSON.parse(JSON.stringify(failed.bookmarks[url]))
+    )
+  }
+  expect(persisted[url].failure).toEqual({
+    stage: 'image',
+    reason: 'Blocked page'
+  })
+  input.fetchPreview.mockClear()
+  input.saveScreenshot.mockClear()
+  input.warn.mockClear()
+  const skipped = await syncBookmarks({ ...input, previous: persisted })
+  expect(skipped.bookmarks).toEqual(persisted)
+  expect(input.fetchPreview).not.toHaveBeenCalled()
+  expect(input.saveScreenshot).not.toHaveBeenCalled()
+  expect(input.warn).not.toHaveBeenCalled()
   input.saveScreenshot.mockResolvedValue(screenshot)
-  expect(
-    (await syncBookmarks({ ...input, previous: failed.bookmarks })).bookmarks[
-      url
-    ]?.screenshot
-  ).toEqual(screenshot)
+  const retried = await syncBookmarks({
+    ...input,
+    previous: persisted,
+    force: true
+  })
+  expect(retried.bookmarks[url]?.screenshot).toEqual(screenshot)
+  expect(retried.bookmarks[url]?.failure).toBeUndefined()
 })
 
 it('saves a bounded, content-addressed WebP with matching dimensions', async () => {
@@ -195,4 +217,69 @@ it('saves a bounded, content-addressed WebP with matching dimensions', async () 
   } finally {
     await rm(directory, { recursive: true, force: true })
   }
+})
+
+it('caches metadata failures without losing text, and leaves forced dry runs untouched', async () => {
+  const input = options()
+  input.fetchPreview.mockRejectedValue(new Error('HTTP 410'))
+  const failed = await syncBookmarks(input)
+  expect(failed.bookmarks[url]).toEqual({
+    ...previous[url],
+    failure: { stage: 'metadata', reason: 'HTTP 410' }
+  })
+  input.fetchPreview.mockClear()
+  await syncBookmarks({ ...input, previous: failed.bookmarks })
+  await syncBookmarks({
+    ...input,
+    previous: failed.bookmarks,
+    force: true,
+    dryRun: true
+  })
+  expect(input.fetchPreview).not.toHaveBeenCalled()
+  input.fetchPreview.mockResolvedValue({
+    title: 'Recovered',
+    description: 'Details',
+    images: []
+  })
+  const recovered = await syncBookmarks({
+    ...input,
+    previous: failed.bookmarks,
+    force: true
+  })
+  expect(recovered.bookmarks[url]?.title).toBe('Recovered')
+  expect(recovered.bookmarks[url]?.failure).toBeUndefined()
+})
+
+it('keeps image failures cached when a forced fast import cannot retry images', async () => {
+  const input = options()
+  const old = {
+    [url]: {
+      ...previous[url],
+      failure: { stage: 'image' as const, reason: 'HTTP 404' }
+    }
+  }
+  input.fetchPreview.mockRejectedValue(new Error('Metadata timeout'))
+  const failedFast = await syncBookmarks({
+    ...input,
+    previous: old,
+    force: true,
+    skipImages: true
+  })
+  expect(failedFast.bookmarks[url]?.failure).toEqual(old[url].failure)
+  input.fetchPreview.mockResolvedValue({
+    title: 'Page',
+    description: 'Details',
+    images: []
+  })
+  const fast = await syncBookmarks({
+    ...input,
+    previous: failedFast.bookmarks,
+    force: true,
+    skipImages: true
+  })
+  expect(fast.bookmarks[url]?.failure).toEqual(old[url].failure)
+  expect(fast.bookmarks[url]?.needsImageSync).toBeUndefined()
+  input.fetchPreview.mockClear()
+  await syncBookmarks({ ...input, previous: fast.bookmarks })
+  expect(input.fetchPreview).not.toHaveBeenCalled()
 })

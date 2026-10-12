@@ -16221,7 +16221,7 @@
       "description": "AI is turning cybersecurity into drone swarm warfare, and this will lead to increasingly consequential cyberattacks over the next 18 months.",
       "featured": true,
       "id": "3f7edb27f12481bcb191fcff5dcafd41",
-      "modified": "2026-10-12T13:00:00.000Z",
+      "modified": "2026-10-12T17:48:00.000Z",
       "published": "2026-10-12",
       "slug": "ai-cyberswarm-warfare",
       "tags": [
@@ -71126,6 +71126,10 @@
     },
     "https://a16z.com/2020/01/08/key-metrics-for-the-passion-economy/": {
       "description": "",
+      "failure": {
+        "reason": "HTTP 404",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://a16z.com/2021/01/24/investing-in-clubhouse/": {
@@ -71404,6 +71408,10 @@
     },
     "https://blog.gettamboo.com/the-epic-guide-to-bootstrapping-a-saas-startup-from-scratch-by-yourself-part-1-4d834e1df8c1": {
       "description": "",
+      "failure": {
+        "reason": "getaddrinfo ENOTFOUND blog.gettamboo.com",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://blog.hootsuite.com/twitter-algorithm/": {
@@ -71485,10 +71493,18 @@
     },
     "https://blog.twitter.com/engineering/en_us/topics/insights/2020/graph-ml-at-twitter": {
       "description": "",
+      "failure": {
+        "reason": "HTTP 403",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://cantino.substack.com/p/twitterspaces": {
       "description": "",
+      "failure": {
+        "reason": "HTTP 404",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://creatoreconomy.so/": {
@@ -71896,6 +71912,10 @@
     },
     "https://encharge.io/validating-saas-ideas/": {
       "description": "",
+      "failure": {
+        "reason": "HTTP 403",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://every.to/divinations/elon-is-right-twitter-should-open-up-the-algorithm": {
@@ -72556,6 +72576,10 @@
     },
     "https://medium.com/product-people/how-to-get-more-customers-54f64220e430": {
       "description": "",
+      "failure": {
+        "reason": "HTTP 403",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://open.spotify.com/playlist/01XOunPvowpP9ub6IHO89V?si=6b9215a84124485e": {
@@ -78680,14 +78704,26 @@
     },
     "https://openai.com/research/practices-for-governing-agentic-ai-systems": {
       "description": "",
+      "failure": {
+        "reason": "HTTP 403",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://pinver.medium.com/mapping-the-future-of-work-startup-investor-ecosystem-2db5049f2c86": {
       "description": "",
+      "failure": {
+        "reason": "HTTP 403",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://render.betaworks.com/announcing-the-next-betaworks-camp-program-ai-camp-agents-13e9a404ad47": {
       "description": "",
+      "failure": {
+        "reason": "fetch failed",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://review.firstround.com/Looking-for-Love-in-All-The-Wrong-Places-How-to-Find-a-Co-Founder": {
@@ -79552,14 +79588,26 @@
     },
     "https://www.nytimes.com/2021/02/10/technology/facebook-building-product-clubhouse.html": {
       "description": "",
+      "failure": {
+        "reason": "HTTP 403",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://www.readthegeneralist.com/": {
       "description": "",
+      "failure": {
+        "reason": "fetch failed",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://www.ryangum.com/": {
       "description": "",
+      "failure": {
+        "reason": "fetch failed",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://www.signalfire.com/blog/creator-economy/": {
@@ -79779,6 +79827,10 @@
     },
     "https://www.washingtonpost.com/technology/2022/04/16/elon-musk-twitter-algorithm/": {
       "description": "",
+      "failure": {
+        "reason": "The operation was aborted due to timeout",
+        "stage": "metadata"
+      },
       "title": ""
     },
     "https://www.ycombinator.com/library/8h-how-to-find-the-right-co-founder": {

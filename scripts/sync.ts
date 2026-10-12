@@ -271,7 +271,7 @@ export async function main() {
           previous: previous?.bookmarks ?? {},
           ...options,
           skipImages: values.fast,
-          warn: reportRecoverableError,
+          warn,
           saveScreenshot: captureBookmarkScreenshot,
           saveImage: async (key, url) => {
             await importer.import(
@@ -415,6 +415,9 @@ export async function main() {
           bookmarkPreviews: Object.keys(bookmarkResult.bookmarks).length,
           bookmarkImages: Object.values(bookmarkResult.bookmarks).filter(
             (preview) => preview.image
+          ).length,
+          unavailableBookmarks: Object.values(bookmarkResult.bookmarks).filter(
+            (preview) => preview.failure
           ).length,
           fetchedBookmarks: bookmarkResult.fetched,
           reusedBookmarks: bookmarkResult.reused,
