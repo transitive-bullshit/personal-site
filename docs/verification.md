@@ -11,7 +11,9 @@ pnpm install --frozen-lockfile --strict-peer-dependencies
 pnpm dev
 ```
 
-`pnpm dev` uses Portless. Open the URL it prints rather than assuming port 3000. The committed snapshot supports normal development without CMS/storage credentials; use [Content sync](content-sync.md) only when importing content. If the snapshot is missing from a checkout, restore the committed artifact first.
+`pnpm dev` uses Portless with `--force`: starting it stops any existing server registered to this checkout's hostname and takes over the route. Linked worktrees retain their own inferred hostnames. Open the URL it prints rather than assuming port 3000. The committed snapshot supports normal development without CMS/storage credentials; use [Content sync](content-sync.md) only when importing content. If the snapshot is missing from a checkout, restore the committed artifact first.
+
+[Agentation](https://www.agentation.com/install) is available across the site in development. Open the bottom-right toolbar, select an element or text, add feedback, then copy its Markdown into your agent. Annotations stay in browser local storage; no MCP endpoint is configured. `components/development-feedback.tsx` loads it only on the client in development, and production builds exclude its package code. For CyberSwarm, open `/ai-cyberswarm-warfare` on the dev URL.
 
 Use the installed Next.js guides for the APIs being changed. Locate the relevant topic first, then read the returned path; numbered directories and extensions can change:
 

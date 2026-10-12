@@ -5,7 +5,7 @@ import { getBodyOverride } from './content/body-overrides'
 
 export const socialImageSize = { width: 1200, height: 630 } as const
 // Bump when the template changes so social crawlers discover a fresh image URL.
-const templateVersion = 2
+export const socialImageTemplateVersion = 2
 
 export function socialImageData(article: Article, snapshot: Snapshot) {
   const media = article.cover ? snapshot.media[article.cover] : undefined
@@ -20,14 +20,22 @@ export function socialImageData(article: Article, snapshot: Snapshot) {
   }
 }
 
-export type SocialImageData = ReturnType<typeof socialImageData>
+export type SocialImageData = Omit<
+  ReturnType<typeof socialImageData>,
+  'siteName'
+> & {
+  siteName: string
+}
 
 export function socialImagePath(article: Article, snapshot: Snapshot) {
   const override = getBodyOverride(article.id)?.socialImagePath
   if (override) return override
   const version = createHash('sha256')
     .update(
-      JSON.stringify([templateVersion, socialImageData(article, snapshot)])
+      JSON.stringify([
+        socialImageTemplateVersion,
+        socialImageData(article, snapshot)
+      ])
     )
     .digest('hex')
     .slice(0, 16)

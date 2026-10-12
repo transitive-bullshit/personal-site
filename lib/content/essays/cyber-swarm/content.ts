@@ -14,6 +14,12 @@ export type Source = {
 
 export const title = 'AI is turning cybersecurity into drone swarm warfare'
 
+export function sourceUrl(id: number) {
+  const source = sources.find((source) => source.id === id)
+  if (!source) throw new Error('Unknown cybersecurity essay source: ' + id)
+  return source.url
+}
+
 export const sources: Source[] = [
   {
     id: 1,

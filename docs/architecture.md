@@ -22,11 +22,17 @@ search-index.json → lazy client search
 - **Network boundary:** Notion/storage clients and sync orchestration stay in `scripts/`. Runtime public fetches are intentional: image optimization, media downloads, social-card covers, and external hover previews. The preview API reuses credential-free `scripts/bookmarks.ts` and `scripts/public-fetch.ts`; preserve their destination, redirect, timeout, and size checks.
 - **Presentation:** article and project pages share `components/article/content-body.tsx` and the block renderer. Keep content rendering on the server and client behavior scoped to search, theme, previews, lightboxes, navigation, and scroll tracking. Global styling and motion rules live in `app/globals.css`. Paired `light-dark()` tokens follow the theme's `color-scheme`, with palette fallbacks for older browsers; shared fluid tokens use rem bounds. Project cards fit their container with an 18rem minimum and use subgrid for shared image/title/description rows, with a block-layout fallback. Hover styles require a fine pointer; movement is opt-in and controls retain press and keyboard-focus feedback.
 
+Bookmark previews use a 10rem card height, two-line title and description limits, bottom-aligned domains, and cropped images that fill the card.
+
 ### Code-owned essay bodies
 
 `lib/content/body-overrides.ts` selects exceptions by stable Notion page ID. Notion still owns collection membership, title, description, slug, author, tags, and publication date. The cyber swarm essay keeps prose and source data in `lib/content/essays/cyber-swarm/`, its React body and scoped styles in `components/article/cyber-swarm/`, and assets in `public/essays/cyber-swarm/`. HTML, Markdown, and search headings use the same body data; the normal article route and site shell remain in place.
 
 Code-owned essay images use the shared article lightbox. Their local originals download directly from the public asset path; the media download API remains restricted to stored snapshot originals. Search uses the full set of rendered headings and authored captions independently of the shorter table of contents.
+
+Named source links in margin notes, quote/photo attributions, and adapted graphic captions link directly to the published resource with the site's `.link` styling. Only numbered prose citations link to the source list. Caption spacing belongs to the graphic's scoped styles; general essay paragraph rules must not override it.
+
+CyberSwarm shows its first ten sources by default. The remaining references sit in a native disclosure that opens for footnote navigation and direct source fragments; Markdown retains the full source list.
 
 ## Domain objects
 

@@ -3,6 +3,7 @@ import {
   defenderWindowDescription
 } from '@/lib/content/essays/cyber-swarm/evidence'
 import { sourceNumber } from '@/lib/content/essays/cyber-swarm/citation-labels'
+import { sourceUrl } from '@/lib/content/essays/cyber-swarm/content'
 
 export function DefenderWindow() {
   const id = 'defenders-window-figure'
@@ -109,7 +110,7 @@ export function DefenderWindow() {
         Scroll horizontally to see the full diagram.
       </p>
       <p className='defender-window-source'>
-        <a href='#source-26'>
+        <a className='link' href={sourceUrl(26)}>
           OpenAI · The Defense Factory [{sourceNumber(26)}] ↗
         </a>
       </p>

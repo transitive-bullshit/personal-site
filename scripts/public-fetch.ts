@@ -30,7 +30,7 @@ export function isPublicAddress(address: string) {
   )
 }
 
-async function validateUrl(url: URL) {
+export async function validatePublicUrl(url: URL) {
   if (
     !['http:', 'https:'].includes(url.protocol) ||
     url.username ||
@@ -54,7 +54,7 @@ export const publicFetch: typeof fetch = async (input, init) => {
     ...(init?.signal ? [init.signal] : [])
   ])
   for (let hop = 0; hop < 6; hop++) {
-    await validateUrl(url)
+    await validatePublicUrl(url)
     const response = await fetch(url, {
       ...init,
       signal,

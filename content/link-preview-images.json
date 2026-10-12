@@ -1,0 +1,72 @@
+{
+  "daybreak": {
+    "image": "/link-previews/daybreak-f8c30a7b507e.webp",
+    "origin": "https://images.ctfassets.net/kftzwdyauwt9/RAoZVm0QSDA9IBOdqncy4/73926b872759234815531ddaf4a80792/daybreak.png?w=1600&h=900&fit=fill",
+    "fingerprint": "a077f73a2cfc19c440d5749a799b978aaf830919dd1ee8654e7cc647464cef3f"
+  },
+  "defense-factory": {
+    "image": "/link-previews/defense-factory-dd80f6c326f9.webp",
+    "origin": "https://cdn.openai.com/the-defense-factory/9ed8fb44-cc38-484b-bae9-5eab7c5ffb92/df-ogimage.png",
+    "fingerprint": "4c4b37baa64edda99df2dc6a9e62fe549ecf08409d852394ed7cd0ac457e0dec"
+  },
+  "collective-cyberdefense": {
+    "image": "/link-previews/collective-cyberdefense-365d64d25bb4.webp",
+    "origin": "https://images.ctfassets.net/kftzwdyauwt9/6imVXMcUcHNW3dFi3sWjCo/997611e54208bc274e1e1d6f0db21e31/collective-cyber-defense--seo-v001.png?w=1600&h=900&fit=fill",
+    "fingerprint": "bfd316fa24e6413891c795427c94bf0b975312bded1fc10c92d260b220999998"
+  },
+  "halo-mod": {
+    "image": "/link-previews/halo-mod-5cd20666af17.webp",
+    "origin": "https://opengraph.githubassets.com/56cbe74f1ebde647030b0369fce4923ee722ee1f998207b95737619231bf8b3c/rehan-remade/universal-modder",
+    "fingerprint": "1c935937ae0d5c0cd3e51d04447bd1522af6d8815eeeea68e2c8b790249c8afe"
+  },
+  "elden-ring-mod": {
+    "image": "/link-previews/halo-mod-5cd20666af17.webp",
+    "origin": "https://opengraph.githubassets.com/56cbe74f1ebde647030b0369fce4923ee722ee1f998207b95737619231bf8b3c/rehan-remade/universal-modder",
+    "fingerprint": "54ab14df375ed129d38e85c387c41acf5761c4bc3696dac1570e7f52b4b1e638"
+  },
+  "terraria-mod": {
+    "image": "/link-previews/halo-mod-5cd20666af17.webp",
+    "origin": "https://opengraph.githubassets.com/56cbe74f1ebde647030b0369fce4923ee722ee1f998207b95737619231bf8b3c/rehan-remade/universal-modder",
+    "fingerprint": "404d6a2dd0732c16986f92e9d801e33a383b1a26674de1801071cb67dbfb79f3"
+  },
+  "mandia-video": {
+    "image": "/link-previews/mandia-video-83ababd06c54.webp",
+    "origin": "https://i.ytimg.com/vi/cJsHel27Z6M/maxresdefault.jpg",
+    "fingerprint": "977ddaca7e781e6130c88dfe2f6935610c9ed96b2d64f0d9f42b017cced5f833"
+  },
+  "dlink-advisory": {
+    "image": "/link-previews/dlink-advisory-0f12d03f00c9.webp",
+    "origin": "authored-card",
+    "fingerprint": "ccbf2721507f9f6133e60ed8bfc5964c5cd2ccc6bdde4d8b5210f6f1d9490414"
+  },
+  "dns-incident": {
+    "image": "/link-previews/dns-incident-a35505032948.webp",
+    "origin": "authored-card",
+    "fingerprint": "ac2a76eb369a7b743a847ad72934fb52ade9e6898ac4364c8aa8cfea861ab189"
+  },
+  "scaling-agent-systems": {
+    "image": "/link-previews/scaling-agent-systems-7f11a8056995.webp",
+    "origin": "authored-card",
+    "fingerprint": "ce2f06829a5b1803f4c7c9e9a26a0641204f098ed0df2ccb0e8c0718f09dffb0"
+  },
+  "fbi-cyber-speech": {
+    "image": "/link-previews/fbi-cyber-speech-3a6595d3888d.webp",
+    "origin": "authored-card",
+    "fingerprint": "b9c3b04e006a3cf12c5739e7726eef473147114f1f1ffb19ff03698b07bddaf3"
+  },
+  "nist-iot-report": {
+    "image": "/link-previews/nist-iot-report-e58961c842fe.webp",
+    "origin": "authored-card",
+    "fingerprint": "6e200c6654939666e0e6fe3267c1055e2f2ab8fc5d1842b22e42b41091f79969"
+  },
+  "hugging-face-incident-report": {
+    "image": "/link-previews/hugging-face-incident-report-b66c0fa36315.webp",
+    "origin": "authored-card",
+    "fingerprint": "914560e10bb614a7ab2fd78e4ab10404e638a256066a213784fd533d55a54ee4"
+  },
+  "state-of-ai-2026": {
+    "image": "/link-previews/state-of-ai-2026-414cdc3806e2.webp",
+    "origin": "authored-card",
+    "fingerprint": "08aa5a4d63fbc5c4802251a298e4d099968330ad30a4f065c171dc3a8197c86d"
+  }
+}

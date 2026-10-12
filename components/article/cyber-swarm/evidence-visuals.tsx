@@ -1,4 +1,5 @@
 import { sourceNumber } from '@/lib/content/essays/cyber-swarm/citation-labels'
+import { sourceUrl } from '@/lib/content/essays/cyber-swarm/content'
 import {
   lagRows,
   dnsEvents,
@@ -15,7 +16,7 @@ function EvidenceSource({
 }) {
   return (
     <p className='state-ai-source'>
-      <a href={`#source-${sourceId}`}>
+      <a className='link' href={sourceUrl(sourceId)}>
         {label} [{sourceNumber(sourceId)}] ↗
       </a>
     </p>

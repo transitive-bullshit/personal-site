@@ -15,13 +15,11 @@
   padding-block: 1rem;
   border-block: 1px solid var(--border);
 }
-.contents > summary {
-  font-size: 0.875rem;
-  font-weight: 600;
-}
 .contents :global(.toc) {
+  position: static;
+  max-block-size: none;
+  overflow: visible;
   max-inline-size: 40rem;
-  margin-block-start: 1rem;
   font-size: 0.8125rem;
 }
 .root :global(.toc-list ol) {
@@ -80,7 +78,7 @@
 .root :global(.essay-copy) {
   min-inline-size: 0;
 }
-.root :global(.essay-copy p) {
+.root :global(.essay-copy :where(p)) {
   margin-block: 0 1.3em;
 }
 .root :global(.essay-copy .personal-turn),
@@ -157,8 +155,7 @@
   margin-block-start: 1rem;
   font-size: 0.75rem;
 }
-.root :global(.research-aside),
-.root :global(.protection-explorable) {
+.root :global(.research-aside) {
   border-block: 1px solid var(--border);
   margin-block: 1.75rem;
   font-size: 0.8125rem;
@@ -241,15 +238,15 @@
 .root :global(.essay-sources header h2) {
   margin-block: 0;
 }
-.root :global(.essay-sources > ol) {
+.root :global(.essay-sources ol) {
   padding-inline-start: 1.5rem;
 }
-.root :global(.essay-sources > ol > li) {
+.root :global(.essay-sources ol > li) {
   padding-block: 0.25rem;
   padding-inline-start: 0;
   margin-block: 0;
 }
-.root :global(.essay-sources > ol > li::marker) {
+.root :global(.essay-sources ol > li::marker) {
   font:
     0.6875rem ui-monospace,
     monospace;
@@ -267,8 +264,18 @@
   color: var(--notion-blue);
   text-decoration: none;
 }
-.root :global(.essay-sources > ol > li:target) {
+.root :global(.essay-sources ol > li:target) {
   background: color-mix(in oklch, var(--notion-blue) 7%, var(--background));
+}
+.root :global(.sources-disclosure) {
+  border-block-start: 1px solid var(--border);
+}
+.root :global(.sources-disclosure .sources-hide),
+.root :global(.sources-disclosure[open] .sources-show) {
+  display: none;
+}
+.root :global(.sources-disclosure[open] .sources-hide) {
+  display: inline;
 }
 
 /* Qualitative curves and source measurements share the site's palette. */
@@ -386,10 +393,14 @@
 }
 .root :global(.defender-window-source),
 .root :global(.state-ai-source) {
-  margin-block: 0.85rem 0;
+  margin-block: 1rem 0.85rem;
   color: var(--muted-foreground);
   font-size: 0.6875rem;
   line-height: 1.6;
+}
+.root :global(.defender-window-source:last-child),
+.root :global(.state-ai-source:last-child) {
+  margin-block-end: 0;
 }
 .root :global(.state-ai-label),
 .root :global(.state-ai-value) {
@@ -479,151 +490,6 @@
   margin-block: 1rem 0;
 }
 
-/* This small island makes containment and replacement constraints tangible. */
-.root :global(.protection-inner) {
-  padding-block: 1.25rem;
-}
-.root :global(.protection-inner h3) {
-  margin-block: 0 1.5rem;
-}
-.root :global(.estate-controls) {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-block: 1.5rem;
-  padding: 0;
-  border: 0;
-}
-.root :global(.estate-controls legend) {
-  font-size: 0.6875rem;
-  color: var(--muted-foreground);
-  margin-block-end: 0.75rem;
-}
-.root :global(.estate-controls label) {
-  position: relative;
-  display: flex;
-  align-items: center;
-  border: 1px solid var(--border);
-  padding-block: 0.65rem;
-  padding-inline: 0.75rem;
-  min-block-size: 44px;
-  cursor: pointer;
-  font-size: 0.75rem;
-}
-.root :global(.estate-controls input) {
-  position: absolute;
-  opacity: 0;
-  inline-size: 1px;
-  block-size: 1px;
-}
-.root :global(.estate-controls label:has(input:focus-visible)) {
-  outline: 2px solid var(--foreground);
-  outline-offset: 3px;
-}
-.root :global(.estate-controls label[data-active='true']) {
-  border-color: var(--notion-blue);
-  color: var(--notion-blue);
-  background: color-mix(in oklch, var(--notion-blue) 6%, var(--background));
-}
-.root :global(.estate-controls label:active) {
-  background: var(--muted);
-}
-.root :global(.containment-control) {
-  display: flex;
-  gap: 0.65rem;
-  align-items: center;
-  min-block-size: 44px;
-  margin-block: 1rem;
-  cursor: pointer;
-  font-size: 0.75rem;
-}
-.root :global(.containment-control input) {
-  inline-size: 1rem;
-  block-size: 1rem;
-  flex-shrink: 0;
-  accent-color: var(--notion-blue);
-}
-.root :global(.containment-path) {
-  display: flex;
-  gap: 0.75rem;
-  align-items: center;
-  padding: 0.8rem;
-  border: 1px solid var(--border);
-  margin-block: 1rem 1.5rem;
-  font-size: 0.75rem;
-  color: var(--muted-foreground);
-}
-.root :global(.containment-path[data-active='true']) {
-  border-color: var(--notion-blue);
-  color: var(--notion-blue);
-  background: color-mix(in oklch, var(--notion-blue) 6%, var(--background));
-}
-.root :global(.path-label) {
-  font-size: 0.625rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted-foreground);
-}
-.root :global(.repair-path) {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-block: 1.5rem;
-}
-.root :global(.repair-node) {
-  position: relative;
-  text-align: center;
-  padding-inline: 0.5rem;
-  font-size: 0.75rem;
-  line-height: 1.55;
-}
-.root :global(.path-dot) {
-  display: block;
-  position: relative;
-  z-index: 1;
-  inline-size: 1rem;
-  block-size: 1rem;
-  border: 1px solid var(--notion-blue);
-  border-radius: 50%;
-  background: var(--notion-blue);
-  margin-block-end: 0.85rem;
-  margin-inline: auto;
-  box-shadow: 0 0 0 5px var(--background);
-}
-.root :global(.repair-node[data-gap='true'] .path-dot) {
-  background: var(--background);
-  border: 2px dashed var(--notion-red);
-}
-.root :global(.path-connector) {
-  position: absolute;
-  inset-inline-start: 50%;
-  inset-block-start: 7px;
-  inline-size: 100%;
-  block-size: 1px;
-  background: var(--border);
-}
-.root :global(.protection-result) {
-  border-inline-start: 2px solid var(--notion-blue);
-  padding-inline-start: 1.25rem;
-  font-size: 0.8125rem;
-}
-.root :global(.protection-result p) {
-  color: var(--muted-foreground);
-  font-size: 0.8125rem;
-  margin-block: 0.65rem 0;
-}
-.root :global(.visual-source),
-.root :global(.visual-details) {
-  color: var(--muted-foreground);
-  font-size: 0.6875rem;
-  margin-block-start: 1rem;
-}
-.root :global(.visual-details ul) {
-  padding-inline-start: 1.5rem;
-}
-.root :global(.visual-details li) {
-  margin-block: 0.85rem;
-}
-
 @media (max-width: 960px) {
   .root :global(.essay-section-grid) {
     grid-template-columns: minmax(0, 1fr);
@@ -644,9 +510,7 @@
 }
 @media print {
   .contents,
-  .root :global(.content-back),
-  .root :global(.estate-controls),
-  .root :global(.containment-control) {
+  .root :global(.content-back) {
     display: none;
   }
   .root :global(.essay-section-grid) {

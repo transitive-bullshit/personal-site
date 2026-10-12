@@ -8,7 +8,7 @@
   "repository": "https://github.com/transitive-bullshit/personal-site",
   "type": "module",
   "scripts": {
-    "dev": "portless run next dev --hostname 127.0.0.1",
+    "dev": "portless run --force next dev --hostname 127.0.0.1",
     "build": "next build --webpack && tsx scripts/verify-social-image-bundle.ts",
     "start": "next start",
     "test": "run-s test:*",
@@ -23,6 +23,7 @@
     "content:sync": "tsx scripts/sync.ts",
     "content:videos": "tsx scripts/backfill-videos.ts",
     "content:search": "tsx scripts/build-search-index.ts",
+    "content:previews": "tsx scripts/build-link-previews.ts",
     "test:unit": "vitest run"
   },
   "dependencies": {
@@ -55,6 +56,7 @@
     "@types/node": "^26.6.1",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "agentation": "^3.1.2",
     "cheerio": "^1.2.0",
     "lint-staged": "^17.5.1",
     "notion-client": "^8.0.8",

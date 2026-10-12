@@ -1,5 +1,8 @@
 import { fetchBookmarkPage } from '@/scripts/bookmarks'
 import type { LinkPreviewData } from '@/lib/link-preview'
+import { getSavedLinkPreview } from '@/lib/saved-link-previews'
+import { fallbackLinkPreview } from '@/lib/link-preview'
+import { validatePublicUrl } from '@/scripts/public-fetch'
 
 export const runtime = 'nodejs'
 
@@ -13,6 +16,9 @@ export async function GET(request: Request) {
   if (!requested || requested.length > 2048)
     return Response.json({ error: 'Invalid URL' }, { status: 400 })
 
+  const saved = getSavedLinkPreview(requested)
+  if (saved) return Response.json(saved, { headers: cacheHeaders })
+
   try {
     const preview = await fetchBookmarkPage(requested)
     const imageUrl = preview.images.find(
@@ -24,10 +30,20 @@ export async function GET(request: Request) {
       description: preview.description.slice(0, 600) || undefined,
       image: imageUrl
         ? '/api/link-preview/image?url=' + encodeURIComponent(imageUrl)
-        : undefined
+        : fallbackLinkPreview(preview.url, preview)?.image
     }
     return Response.json(data, { headers: cacheHeaders })
   } catch {
+    try {
+      await validatePublicUrl(new URL(requested))
+      const fallback = fallbackLinkPreview(requested)
+      if (fallback)
+        return Response.json(fallback, {
+          headers: { 'Cache-Control': 'private, no-store' }
+        })
+    } catch {
+      // Keep private addresses and unsupported URLs outside the fetch boundary.
+    }
     return Response.json(
       { error: 'Preview unavailable' },
       { status: 422, headers: { 'Cache-Control': 'private, no-store' } }

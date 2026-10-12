@@ -16,7 +16,6 @@ import { expertQuotes } from './essays/cyber-swarm/quotes'
 import {
   lagRows,
   dnsEvents,
-  repairPaths,
   patchRelease,
   titles,
   defenderWindowDescription
@@ -127,21 +126,6 @@ function cyberSwarmMarkdown() {
             ]
           ),
           cite('Source: Anthropic [8]')
-        )
-      if (part.id === 'coverage' && index === 6)
-        blocks.push(
-          details(
-            'Explore why the same finding leads to different protection',
-            [
-              titles.protectionPaths,
-              ...Object.values(repairPaths).map(
-                (scenario) =>
-                  `- **${scenario.label}:** ${scenario.stages.join(' → ')}. ${scenario.note}`
-              ),
-              '**Containment can protect before repair.** Assume the control has reach and authority over this attack path. It buys time; it does not cover every weakness.',
-              cite('Containment buys time for permanent repair. [6] [13] [14]')
-            ]
-          )
         )
       if (part.id === 'accident' && index === 3)
         blocks.push(

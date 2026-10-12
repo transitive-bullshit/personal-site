@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ArrowLeftIcon } from 'lucide-react'
 import type { Heading } from '@/lib/content/headings'
-import { sources } from '@/lib/content/essays/cyber-swarm/content'
+import { sources, sourceUrl } from '@/lib/content/essays/cyber-swarm/content'
 import {
   essayOpening,
   essayParts,
@@ -20,7 +20,6 @@ import {
   sourceOrder
 } from '@/lib/content/essays/cyber-swarm/citation-labels'
 import { TableOfContents } from '../table-of-contents'
-import { ProtectionPaths } from './protection-paths'
 import {
   OpenModelLag,
   PatchReleaseGap,
@@ -29,6 +28,7 @@ import {
 import { DefenderWindow } from './defender-window'
 import { EssayText } from './cited-text'
 import { EssayImage } from './essay-images'
+import { SourceDisclosure } from './source-disclosure'
 import styles from './essay.module.css'
 
 const usedSources = sourceOrder.map((id) => sources.find((s) => s.id === id)!)
@@ -50,7 +50,7 @@ function Margin({ part }: { part: EssayPart }) {
       <EssayText text={part.margin.label} className='eyebrow' plain />
       <EssayText text={part.margin.body} />
       {part.margin.refs.map((id) => (
-        <a href={`#source-${id}`} key={id}>
+        <a className='link' href={sourceUrl(id)} key={id}>
           {sources.find((s) => s.id === id)?.title}{' '}
           <span>[{sourceNumber(id)}] ↗</span>
         </a>
@@ -59,7 +59,9 @@ function Margin({ part }: { part: EssayPart }) {
         <div id='defense-optimism' className='margin-quote'>
           <p>Amodei’s optimism is conditional:</p>
           <blockquote>“{expertQuotes[4].text}”</blockquote>
-          <a href='#source-22'>Dario Amodei [{sourceNumber(22)}] ↗</a>
+          <a className='link' href={sourceUrl(22)}>
+            Dario Amodei [{sourceNumber(22)}] ↗
+          </a>
         </div>
       )}
     </aside>
@@ -119,15 +121,6 @@ function Chapter({ part }: { part: EssayPart }) {
                   <PatchReleaseGap />
                 </>
               )}
-              {part.id === 'coverage' && i === 6 && (
-                <ProtectionPaths
-                  sourceLabels={{
-                    mandia: sourceNumber(6),
-                    nist: sourceNumber(13),
-                    dLink: sourceNumber(14)
-                  }}
-                />
-              )}
               {part.id === 'accident' && i === 3 && <DnsControlTimeline />}
             </div>
           ))}
@@ -147,6 +140,18 @@ function Chapter({ part }: { part: EssayPart }) {
   )
 }
 function SourceNotes() {
+  const sourceItems = usedSources.map((source) => (
+    <li
+      value={sourceNumber(source.id)}
+      id={`source-${source.id}`}
+      tabIndex={-1}
+      key={source.id}
+    >
+      <a className='link' href={source.url}>
+        {source.title} ↗
+      </a>
+    </li>
+  ))
   return (
     <section
       id='sources'
@@ -157,39 +162,30 @@ function SourceNotes() {
         <p className='eyebrow'>References</p>
         <h2 id='sources-heading'>Sources</h2>
       </header>
-      <ol>
-        {usedSources.map((source) => {
-          return (
-            <li
-              value={sourceNumber(source.id)}
-              id={`source-${source.id}`}
-              key={source.id}
-            >
+      <ol>{sourceItems.slice(0, 10)}</ol>
+      <SourceDisclosure count={usedSources.length - 10 + furtherReading.length}>
+        <ol start={11}>
+          {sourceItems.slice(10)}
+          {furtherReading.map((source) => (
+            <li key={source.url}>
               <a className='link' href={source.url}>
                 {source.title} ↗
               </a>
             </li>
-          )
-        })}
-        {furtherReading.map((source) => (
-          <li key={source.url}>
-            <a className='link' href={source.url}>
-              {source.title} ↗
-            </a>
-          </li>
-        ))}
-      </ol>
+          ))}
+        </ol>
+      </SourceDisclosure>
     </section>
   )
 }
-export function CyberSwarmTitle({ title }: { title: string }) {
-  const match = /\bdrone\b/.exec(title)
-  if (!match) return <>{title}</>
+export function CyberSwarmHeaderText({ text }: { text: string }) {
+  const match = /\bdrone\b/.exec(text)
+  if (!match) return <>{text}</>
   return (
     <>
-      {title.slice(0, match.index)}
+      {text.slice(0, match.index)}
       <s>{match[0]}</s>
-      {title.slice(match.index + match[0].length)}
+      {text.slice(match.index + match[0].length)}
     </>
   )
 }
@@ -200,10 +196,9 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
       className={`${styles.root} article-body`}
       data-link-preview-scope='article'
     >
-      <details className={styles.contents}>
-        <summary>On this page</summary>
-        <TableOfContents headings={headings} title={false} />
-      </details>
+      <div className={styles.contents}>
+        <TableOfContents headings={headings} />
+      </div>
       <section
         id='opening'
         className='essay-opening'
@@ -222,7 +217,7 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
             alt='Night sky over northern Gaza, May 2021. Hamas rocket trails fan from the right; Israeli Iron Dome interceptor trails curve on the left. Buildings in Gaza fill the foreground.'
           />
           <figcaption>
-            <a href='#source-20'>
+            <a className='link' href={sourceUrl(20)}>
               Anas Baba / AFP · 14 May 2021 [{sourceNumber(20)}]
             </a>
             <span>
@@ -252,7 +247,7 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
               plain
             />
             <EssayText text={essayChrome.openingMarginBody} />
-            <a href='#source-19'>
+            <a className='link' href={sourceUrl(19)}>
               RUSI: pressure and layered defense [{sourceNumber(19)}] ↗
             </a>
           </aside>
@@ -335,7 +330,7 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
               plain
             />
             <EssayText text={essayChrome.predictionsMarginBody} />
-            <a href='#source-24'>
+            <a className='link' href={sourceUrl(24)}>
               Historical damage benchmark [{sourceNumber(24)}] ↗
             </a>
           </aside>

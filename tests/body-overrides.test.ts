@@ -30,7 +30,6 @@ import {
 import { expertQuotes } from '../lib/content/essays/cyber-swarm/quotes'
 import {
   dnsEvents,
-  repairPaths,
   defenderWindowDescription
 } from '../lib/content/essays/cyber-swarm/evidence'
 
@@ -97,7 +96,8 @@ describe('CMS article body overrides', () => {
   it('selects the React essay by stable ID and retains CMS header metadata', () => {
     const entry = {
       ...article,
-      description: 'A CMS-controlled description',
+      description:
+        'AI is turning cybersecurity into drone swarm warfare, and this will lead to increasingly consequential cyberattacks over the next 18 months.',
       author: 'CMS author'
     }
     const $ = render(entry)
@@ -106,9 +106,37 @@ describe('CMS article body overrides', () => {
       'drone'
     )
     expect($('.article-description').text()).toBe(entry.description)
+    expect($('.article-description s').text()).toBe('drone')
+    expect($('.defender-window-source a').attr('href')).toBe(
+      'https://openai.com/the-defense-factory/'
+    )
+    for (const link of $(
+      '.defender-window-source a, .state-ai-source a, .essay-margin > a, .margin-quote a, .original-photo figcaption a'
+    ).toArray()) {
+      expect($(link).attr('href')).toMatch(/^https:\/\//)
+      expect($(link).hasClass('link')).toBe(true)
+    }
+    expect($('#capability-margin > a').attr('href')).toBe(
+      'https://www.anthropic.com/threat-intelligence-report-september-2026'
+    )
+    const footnotes = $('.article-body a[href^="#source-"]')
+    expect(footnotes.length).toBeGreaterThan(0)
+    for (const link of footnotes.toArray())
+      expect($(link).parent().is('sup')).toBe(true)
+    expect(
+      JSON.parse($('script[type="application/ld+json"]').text()).description
+    ).toBe(entry.description)
     expect($('.article-meta').text()).toContain(entry.author)
     expect($('.article-meta time').attr('datetime')).toBe(entry.published)
+    expect($('#protection-paths').length).toBe(0)
+    expect($('#accident-margin > a').length).toBe(0)
     expect($('#opening').length).toBe(1)
+    expect($('#sources > ol > li').length).toBe(10)
+    expect($('#sources details').attr('open')).toBeUndefined()
+    expect($('#sources details ol').attr('start')).toBe('11')
+    expect($('#sources li').length).toBe(
+      sourceOrder.length + furtherReading.length
+    )
     expect($('.article-body').length).toBe(1)
     for (const heading of getBodyOverride(entry.id)!.headings)
       expect($('#' + heading.id).length).toBe(1)
@@ -125,6 +153,10 @@ describe('CMS article body overrides', () => {
       title: 'A new CMS title'
     }
     expect(render(renamed)('.article-header h1').text()).toBe(renamed.title)
+    expect(render(renamed)('.article-description').text()).toBe(
+      renamed.description
+    )
+    expect(render(renamed)('.article-description s').length).toBe(0)
     expect(render(renamed)('#opening').length).toBe(1)
     expect(entryMarkdown(renamed, snapshot(renamed))).toContain(
       'https://www.transitivebullsh.it/renamed-in-notion'
@@ -136,6 +168,7 @@ describe('CMS article body overrides', () => {
     const ordinary: Article = {
       ...article,
       id: 'a'.repeat(32),
+      description: 'Ordinary drone swarm description',
       blocks: [
         {
           id: 'b'.repeat(32),
@@ -159,6 +192,10 @@ describe('CMS article body overrides', () => {
     expect(render(ordinary)('.article-body').text()).toContain(
       'Standard Notion body'
     )
+    expect(render(ordinary)('.article-description').text()).toBe(
+      ordinary.description
+    )
+    expect(render(ordinary)('.article-description s').length).toBe(0)
     expect(render(ordinary)('#opening').length).toBe(0)
     expect(entryMarkdown(ordinary, snapshot(ordinary))).toContain(
       'Standard Notion body'
@@ -225,10 +262,9 @@ describe('CMS article body overrides', () => {
     )
     for (const event of dnsEvents)
       expect(body).toContain(`| ${event.time} | ${event.label} |`)
-    for (const path of Object.values(repairPaths)) {
-      expect(body).toContain(path.stages.join(' → '))
-      expect(body).toContain(path.note)
-    }
+    expect(body).not.toContain(
+      'Explore why the same finding leads to different protection'
+    )
     expect(body).toContain(defenderWindowDescription)
     expect(body).toContain('/essays/cyber-swarm/iron-dome-original.jpg')
     expect(body).toContain('/essays/cyber-swarm/swarm.webp')

@@ -18,10 +18,10 @@ When adding a page, account for all applicable discovery surfaces:
 
 ## Social images
 
-Code-owned article bodies also supply Markdown and heading terms through `lib/content/body-overrides.ts`. Their Notion metadata and ordinary article route still control indexes, public access, canonical URLs, and social cards. The cyber swarm essay renders a struck-out “drone” in its heading while metadata uses the plain CMS title.
+Code-owned article bodies also supply Markdown and heading terms through `lib/content/body-overrides.ts`. Their Notion metadata and ordinary article route still control indexes, public access, canonical URLs, and social cards. The cyber swarm essay renders a struck-out “drone” in its title and description while metadata uses the plain CMS text.
 
 - Main pages use `public/social-image.jpg`; icons use Next's metadata file conventions in `app/`.
-- Articles use on-demand Takumi WebP cards through `app/api/social-image/[slug]/route.tsx`, `lib/render-social-image.tsx`, and `components/social-image.tsx`. Bump `templateVersion` in `lib/social-image.ts` when the template changes so crawlers receive a new versioned URL.
+- Articles use on-demand Takumi WebP cards through `app/api/social-image/[slug]/route.tsx`, `lib/render-social-image.tsx`, and `components/social-image.tsx`. Bump `socialImageTemplateVersion` in `lib/social-image.ts` when the template changes so crawlers receive a new versioned URL.
 - A code-owned body can set `socialImagePath` to a local social image. The cyber swarm essay uses a 1200×630 crop of its illustration with a content hash in the filename. Open Graph, Twitter, structured data, and internal previews use the same override.
 - Projects use their saved cover or the default social image; both use `summary_large_image`. They do not use the article card renderer.
 - `deploymentOrigin()` selects the public production hostname or preview branch alias, with the unique Vercel URL and then `site.origin` as fallbacks. This is separate from canonical page origin: a unique deployment URL previously sent social crawlers to a Vercel login page.
@@ -32,6 +32,12 @@ Code-owned article bodies also supply Markdown and heading terms through `lib/co
 Preview cards apply to other pages. Same-page links, including footnotes and canonical self-links on previews, do not activate cards or prefetch content.
 
 The preview API uses `scripts/bookmarks.ts` for fetching/parsing metadata and `scripts/public-fetch.ts` for destination and redirect validation. When local parsing succeeds but production previews fail, compare the deployed `/api/link-preview?url=…` response and upstream HTTP status, then inspect the target site's security events before changing the parser. A bot challenge can block the server fetch despite correct page metadata; the [Cloudflare incident](archive/link-preview-cloudflare-2026-09-29.md) records one confirmed case.
+
+`lib/saved-link-preview-sources.ts` owns explicit local previews: published metadata or concise source labels, publisher, document type, and optional source image. `lib/saved-link-previews.ts` resolves them for the client and API ahead of live discovery and cached failures. Timestamp variants of saved YouTube links share their video preview.
+
+Run `pnpm content:previews` after adding or editing a source. It reuses saved published images and regenerates authored cards when their text changes. Use `--refresh` to re-fetch published images. Commit `content/link-preview-images.json` and the referenced assets under `public/link-previews/` together. All saved images are 1200×630 WebP; the manifest records image provenance. Authored cards use the shared social renderer and label the publisher and document type. They are not screenshots or publisher-provided artwork. Notion sync does not update these previews.
+
+Unsaved text-only pages and unavailable public destinations receive a title/domain card through `/api/link-preview/fallback`; the client also uses this when a remote image fails. The renderer draws text only and never fetches the supplied URL. Metadata fetches still validate public addresses and every redirect. PDF cards infer a title from the URL when no authored metadata exists. Same-page links remain excluded.
 
 ## Deployment lessons
 

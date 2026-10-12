@@ -95,7 +95,7 @@ export const essayParts: EssayPart[] = [
     margin: {
       label: 'Human intent ≠ agent behavior',
       body: 'Good intentions need enforced boundaries. The unauthorized behavior and the defenses that held both matter.',
-      refs: [16, 17, 25]
+      refs: []
     },
     paragraphs: [
       'The [OpenAI–Hugging Face incident](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/) adds another asymmetry: an operator can be running a legitimate task while its agents knowingly act outside it. Benign intent at the top does not guarantee authorized behavior below. [16] [17]',
@@ -117,25 +117,25 @@ export const finalPredictions = [
     id: 'commodity',
     title: 'Sophisticated offense becomes a commodity',
     body: 'Small crews will routinely sustain persistent, adaptive campaigns across hundreds of targets with much less specialist intervention. The step change is how much expert work they can keep running, beyond cheap scanning or personalized phishing.',
-    test: "From 8 October 2026 through 30 April 2028, I expect at least three independently documented campaigns, attributed to distinct small teams or lone operators, each involving attempted exploitation across at least 200 real organizations. Credible reporting must establish the operator's limited personnel and adaptation to target-specific obstacles; mass scanning alone does not qualify. Human direction is compatible with this prediction. These cases would establish repeated accessibility, not population-wide prevalence. Calling it a commodity also requires evidence of a repeatable workflow used beyond a single bespoke operation."
+    test: 'From 8 October 2026 to 30 April 2028: three independently documented campaigns by distinct small teams or lone operators, each attempting adaptive exploitation of 200+ organizations using a repeatable workflow. Mass scanning alone doesn’t count.'
   },
   {
     id: 'damage',
     title: 'Damage rises sharply despite defensive progress',
     body: 'Maintained platforms and sophisticated defenders will improve. I expect a much larger rise in serious real-world harm as unsupported devices, brittle infrastructure, and weak shared dependencies face escalating pressure.',
-    test: "Judge this by confirmed operational harm: interrupted essential services, economic loss, and difficult recovery, with credible evidence of AI's contribution. CVE disclosures and blocked probes do not count as damage. Compare like-for-like incident evidence where available; a global percentage claim would require a stable dataset we do not yet have. I expect substantial worsening, but I am not assigning a precise worldwide growth rate. [18]"
+    test: 'Look for substantially more service disruption, economic loss, and difficult recovery where AI materially contributed. Compare similar incidents over time; vulnerability counts and blocked probes don’t count as damage. [18]'
   },
   {
     id: 'unauthorized',
     title: 'Unauthorized agent harm becomes a recurring incident category',
     body: 'Legitimate deployments or tests exceeding their authority will repeatedly cause consequential production effects. The distinction between malicious use and unintended harm will matter less to the people whose services stop working.',
-    test: 'At least three independently confirmed incidents, involving distinct organizations, with onset from 8 October 2026 through 30 April 2028. Agents in legitimate workflows must cause unauthorized production access, data loss, or service disruption. Attempts and evaluation failures without real production effects do not count. The July 2026 Hugging Face incident is an early example, not one of these future three.'
+    test: 'From 8 October 2026 to 30 April 2028: three independently confirmed incidents at distinct organizations where agents in legitimate workflows cause unauthorized production access, data loss, or service disruption. Only real production effects count.'
   },
   {
     id: 'catastrophe',
     title: 'An AI-enabled catastrophe sets a new damage benchmark',
     body: 'My boldest prediction: a single AI-enabled cyberattack causes cascading disruption across multiple critical sectors, impairs essential services for weeks, and produces greater economic damage than any previous single cyberattack. I expect this by the same deadline.',
-    test: "The attack must begin from 8 October 2026 through 30 April 2028 and substantially impair essential services in each of at least two critical sectors for fourteen days or more. Credible forensics must establish consequential AI exploitation, adaptation, or coordination. Compare non-overlapping direct, restoration, and interruption losses in 2026 US dollars against credible prior single-event estimates. Include NotPetya: the FBI's estimate exceeds US$10 billion, a lower bound for the 2017 attack, not proof of today's record. Adjust from each event's original loss year and respect estimate ranges. Loss estimates can mature after the deadline; an uncertain comparison remains unproven. AI-written phishing alone does not qualify. [24]"
+    test: 'An attack starting between 8 October 2026 and 30 April 2028 disrupts essential services in at least two critical sectors for 14+ days. Forensics must show material AI involvement beyond phishing. Inflation-adjusted losses must exceed credible prior records, including NotPetya’s $10B+ benchmark. Uncertain comparisons remain unproven. [24]'
   }
 ]
 

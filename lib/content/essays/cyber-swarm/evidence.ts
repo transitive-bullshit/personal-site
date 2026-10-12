@@ -10,35 +10,12 @@ export const dnsEvents = [
   { time: '12:34:30', label: 'Manual shutdown' }
 ]
 
-export type RepairEstate = 'managed' | 'legacy' | 'unsupported'
-export const repairPaths = {
-  managed: {
-    label: 'Managed software',
-    stages: ['Validate a fix', 'Shared release', 'Verify uptake'],
-    note: 'A common owner and release path can distribute one fix widely. Protection still requires actual uptake.',
-    outcome: 'A shared path to repair'
-  },
-  legacy: {
-    label: 'Legacy company',
-    stages: ['Validate a fix', 'Several release paths', 'Verify each rollout'],
-    note: 'Separate owners, dependencies, and operating constraints divide the rollout. One fixed system does not protect every connected system.',
-    outcome: 'Several paths to repair'
-  },
-  unsupported: {
-    label: 'Unsupported device',
-    stages: ['Identify the flaw', 'Support has ended', 'Replace the device'],
-    note: 'This device has no supported firmware fix. Permanent repair needs replacement or a new supported path; isolation can remove its exposure.',
-    outcome: 'The supported update path is missing'
-  }
-}
-
 export const patchRelease = { exploitHoursUpperBound: 1, releaseDays: 18 }
 
 export const titles = {
   openModelLag: 'Open models are closing the gap.',
   patchReleaseGap: 'Hours to exploit. Days to release.',
   dnsControlTimeline: 'Detected, but not stopped.',
-  protectionPaths: 'The finding is the same. The path changes.',
   defendersWindow: 'The defender’s window'
 }
 

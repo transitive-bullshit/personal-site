@@ -361,6 +361,9 @@ summary {
 .article-body > .mobile-toc:first-child + :is(h2, h3, h4) {
   margin-block-start: 0;
 }
+.article-grid > .article-body > :is(h2, h3, h4) ~ :is(h2, h3, h4) {
+  margin-block-start: 2.5em;
+}
 .article-body h2 {
   font-size: var(--text-section-title);
 }
@@ -982,7 +985,8 @@ summary {
 .bookmark-card {
   display: flex;
   align-items: stretch;
-  overflow: clip;
+  block-size: 10rem;
+  overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 9px;
   text-decoration: none !important;
@@ -1004,11 +1008,17 @@ summary {
   padding-inline: 18px;
 }
 .bookmark-title {
+  flex: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1.45;
 }
 .bookmark-description {
+  flex: none;
   font-size: 0.8125rem;
   line-height: 1.5;
   color: var(--muted-foreground);
@@ -1018,6 +1028,11 @@ summary {
   overflow: hidden;
 }
 .bookmark-host {
+  flex: none;
+  margin-block-start: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   color: var(--muted-foreground);
   font-size: 0.75rem;
   line-height: 1.4;
@@ -1026,8 +1041,7 @@ summary {
   inline-size: 180px;
   min-inline-size: 0;
   align-self: stretch;
-  block-size: auto;
-  max-block-size: 180px;
+  block-size: 100%;
   object-fit: cover;
   flex: none;
   border-inline-start: 1px solid var(--border);
@@ -1035,7 +1049,6 @@ summary {
 @media (max-width: 600px) {
   .bookmark-image {
     inline-size: 100px;
-    max-block-size: 180px;
   }
   .bookmark-copy {
     padding: 12px;

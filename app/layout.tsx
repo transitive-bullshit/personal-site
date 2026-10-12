@@ -8,6 +8,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata, Viewport } from 'next'
 import Link from 'next/link'
 import { LinkPreviewProvider } from '@/components/link-preview-provider'
+import { DevelopmentFeedback } from '@/components/development-feedback'
 import { SiteSearch } from '@/components/site-search'
 import { SiteNavigation } from '@/components/site-navigation'
 import { ThemeProvider } from '@/components/theme-provider'
@@ -96,6 +97,9 @@ export default function RootLayout({
             </footer>
           </div>
           <LinkPreviewProvider internalPreviews={internalLinkPreviews} />
+          {process.env.NODE_ENV === 'development' ? (
+            <DevelopmentFeedback />
+          ) : null}
         </ThemeProvider>
         <Analytics />
         <SpeedInsights />

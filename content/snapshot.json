@@ -14867,10 +14867,9 @@
           "id": "aaff85ecc5d742c89d5e09534bd2a976",
           "richText": [
             {
-              "bold": false,
+              "bold": true,
               "code": false,
               "color": "default",
-              "href": "https://swyx.io/learn-in-public",
               "italic": false,
               "strike": false,
               "text": "Learning in public",
@@ -14899,7 +14898,7 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "This is consistently ",
+              "text": "This is ",
               "underline": false
             },
             {
@@ -14917,7 +14916,7 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": " that I find myself giving to people because it compounds in value so much over time. It leads to increased optionality + freedom + more $$ + more rewarding work and collaborations in the long run. And this post is the canonical version of this advice that I wish I had when I was starting my career ~20 years ago.",
+              "text": " that I consistently find myself giving to people because it compounds in value so much over time. It leads to increased optionality + freedom + more $$ + more rewarding work and collaborations in the long run. And this post is the canonical version of this advice that I wish I had when I was starting my career ~20 years ago.",
               "underline": false
             }
           ],
@@ -15100,44 +15099,6 @@
           "type": "bulleted_list_item"
         },
         {
-          "caption": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://x.com/david_perell/status/1411871612702543872",
-              "italic": false,
-              "strike": false,
-              "text": "“Read to collect the dots, write to connect them” by David Perell",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": "; see also his ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://perell.com/essay/the-ultimate-guide-to-writing-online/",
-              "italic": false,
-              "strike": false,
-              "text": "advice on writing online",
-              "underline": false
-            }
-          ],
-          "children": [],
-          "id": "fc98c808ab3143be82ecb6e275df8d01",
-          "media": "fc98c808ab3143be82ecb6e275df8d01",
-          "type": "image",
-          "width": 624
-        },
-        {
           "children": [],
           "color": "default",
           "id": "78015e64196442459eab1e8ebc6ac915",
@@ -15162,6 +15123,25 @@
             }
           ],
           "type": "bulleted_list_item"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/david_perell/status/1411871612702543872",
+              "italic": false,
+              "strike": false,
+              "text": "“Read to collect the dots, write to connect them” by David Perell",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "fc98c808ab3143be82ecb6e275df8d01",
+          "media": "fc98c808ab3143be82ecb6e275df8d01",
+          "type": "image",
+          "width": 624
         },
         {
           "children": [],
@@ -15288,19 +15268,8 @@
         {
           "children": [],
           "color": "default",
-          "id": "3f7edb27f124801995eac23d5fa692f0",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://github.com/readme/guides/publishing-your-work",
-              "italic": false,
-              "strike": false,
-              "text": "Aaron Francis · Publishing your work increases your luck",
-              "underline": false
-            }
-          ],
+          "id": "3f7edb27f12480f5b9a6cb01533b8c2e",
+          "richText": [],
           "type": "paragraph"
         },
         {
@@ -15458,24 +15427,6 @@
             }
           ],
           "type": "bulleted_list_item"
-        },
-        {
-          "children": [],
-          "color": "default",
-          "id": "0f634177f1c74cbaac4a6c29146022ca",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://swyx.io/big-l-notation",
-              "italic": false,
-              "strike": false,
-              "text": "swyx · Learning with peers and communities",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
         },
         {
           "caption": [],
@@ -15671,41 +15622,18 @@
           "type": "paragraph"
         },
         {
+          "caption": [],
           "children": [],
-          "color": "default",
-          "id": "8470d154fae940bbb36b84a69dc39dbd",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://www.navalmanack.com/almanack-of-naval-ravikant/how-to-get-lucky",
-              "italic": false,
-              "strike": false,
-              "text": "Naval · Reputation and luck",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://www.notboring.co/p/the-great-online-game",
-              "italic": false,
-              "strike": false,
-              "text": "Packy McCormick · The Great Online Game",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
+          "id": "3f7edb27f12480ffba26efa909e74e78",
+          "type": "bookmark",
+          "url": "https://www.navalmanack.com/almanack-of-naval-ravikant/how-to-get-lucky"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f1248017bee1fe48999227dd",
+          "type": "bookmark",
+          "url": "https://www.notboring.co/p/the-great-online-game"
         },
         {
           "children": [],
@@ -15856,49 +15784,26 @@
           "type": "paragraph"
         },
         {
-          "children": [],
-          "color": "default",
-          "id": "582dc2eaa27e4564801c2c95b16e2e98",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://swyx.io/learn-in-public",
-              "italic": false,
-              "strike": false,
-              "text": "swyx · Learn in Public",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/",
-              "italic": false,
-              "strike": false,
-              "text": "Julia Evans · Write about what you’ve struggled with",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "b040cbf505564d2982e706cfc3b739c5",
           "media": "b040cbf505564d2982e706cfc3b739c5",
           "type": "image",
           "width": 624
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f1248082b11af4ebc6bf20b4",
+          "type": "bookmark",
+          "url": "https://swyx.io/learn-in-public"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f1248063a345c7eb24131402",
+          "type": "bookmark",
+          "url": "https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/"
         },
         {
           "children": [],
@@ -15970,30 +15875,19 @@
           "type": "bulleted_list_item"
         },
         {
-          "children": [],
-          "color": "default",
-          "id": "742308444fd44111a084d4ce7096f154",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://swyx.io/puwtpd",
-              "italic": false,
-              "strike": false,
-              "text": "swyx · Pick Up What They Put Down",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "b85adb5d878c4611836163b40a4a7287",
           "media": "b85adb5d878c4611836163b40a4a7287",
           "type": "image",
           "width": 576
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f12480adb463d706f50a05ec",
+          "type": "bookmark",
+          "url": "https://swyx.io/puwtpd"
         },
         {
           "children": [],
@@ -16197,49 +16091,26 @@
           "type": "bulleted_list_item"
         },
         {
-          "children": [],
-          "color": "default",
-          "id": "f6ff3a2f36e74504a0e4cfc52b97f7ec",
-          "richText": [
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/",
-              "italic": false,
-              "strike": false,
-              "text": "Simon Willison · Code is cheap",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " · ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "href": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/",
-              "italic": false,
-              "strike": false,
-              "text": "Reusable working examples",
-              "underline": false
-            }
-          ],
-          "type": "paragraph"
-        },
-        {
           "caption": [],
           "children": [],
           "id": "94d52bea576f424fa4eb47d0e4f897f4",
           "media": "94d52bea576f424fa4eb47d0e4f897f4",
           "type": "image",
           "width": 576
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f124805e8e8af11140c483e2",
+          "type": "bookmark",
+          "url": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f12480cdbe17d21b08a4a621",
+          "type": "bookmark",
+          "url": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/"
         },
         {
           "children": [],
@@ -16303,10 +16174,12 @@
           "type": "paragraph"
         }
       ],
+      "cover": "3f7edb27f12481ad887ee8617d554ab2:cover",
       "description": "On the importance of sharing what you learn publicly as you go along.",
       "featured": true,
       "id": "3f7edb27f12481ad887ee8617d554ab2",
-      "modified": "2026-10-12T06:46:00.000Z",
+      "modified": "2026-10-12T12:39:00.000Z",
+      "needsImageSync": true,
       "published": "2026-10-12",
       "slug": "learn-in-public",
       "tags": [
@@ -72410,6 +72283,10 @@
       },
       "title": "Bootstrapping reality"
     },
+    "https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/": {
+      "description": "Blog about what you've struggled with",
+      "title": "Blog about what you've struggled with"
+    },
     "https://latecheckout.substack.com/": {
       "description": "High quality insights on internet communities, building products communities love and startups. This weekly email will get your creative juices flowing. Click to read Greg's Letter, by Greg Isenberg, a Substack publication with tens of thousands of subscribers.",
       "image": {
@@ -78764,6 +78641,14 @@
       },
       "title": "50 Questions to Find a Co-Founder and a Startup Idea"
     },
+    "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/": {
+      "description": "Writing code is cheap now - Agentic Engineering Patterns",
+      "title": "Writing code is cheap now - Agentic Engineering Patterns"
+    },
+    "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/": {
+      "description": "Hoard things you know how to do - Agentic Engineering Patterns",
+      "title": "Hoard things you know how to do - Agentic Engineering Patterns"
+    },
     "https://stratechery.com/2021/clubhouses-inevitability/": {
       "description": "Clubhouse will do for audio what Twitter, Instagram Stories, and TikTok did for text, images, and video.",
       "image": {
@@ -78840,6 +78725,92 @@
         ]
       },
       "title": "Back to the Future of Twitter"
+    },
+    "https://swyx.io/learn-in-public": {
+      "description": "The fastest way to build your expertise, network, and second brain.",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRigAAABXRUJQVlA4IBwAAAAwAQCdASoIAAQAA4BaJaQAA3AA/vOLJGv9zAAA",
+        "original": {
+          "bytes": 45205,
+          "hash": "8ead44aca449018d5a77182a4d34cebc4b9fbe0f791c08b66c705daef2d47d97",
+          "height": 630,
+          "key": "personal-site/media/8ead44aca449018d5a77182a4d34cebc4b9fbe0f791c08b66c705daef2d47d97.png",
+          "mime": "image/png",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/8ead44aca449018d5a77182a4d34cebc4b9fbe0f791c08b66c705daef2d47d97.png",
+          "width": 1200
+        },
+        "pipelineVersion": 2,
+        "source": {
+          "edited": "https://swyx.io/og/article/learn-in-public.png?v=2026-04-29T17%3A52%3A51.000Z-1",
+          "key": "bookmark:2949912b44e65846059b8acc50a3cf0b211f105f3cf5adb4ba232ae99ee7dc43",
+          "kind": "external",
+          "url": "https://swyx.io/og/article/learn-in-public.png?v=2026-04-29T17%3A52%3A51.000Z-1"
+        },
+        "variants": [
+          {
+            "bytes": 13036,
+            "hash": "0b9478e58120b0bd4cbe38f38f16fbdd6ffba73fa4beaea536e02276a4afe2c8",
+            "height": 504,
+            "key": "personal-site/media/0b9478e58120b0bd4cbe38f38f16fbdd6ffba73fa4beaea536e02276a4afe2c8.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/0b9478e58120b0bd4cbe38f38f16fbdd6ffba73fa4beaea536e02276a4afe2c8.webp",
+            "width": 960
+          },
+          {
+            "bytes": 22870,
+            "hash": "cdf1129748b58d4e16f376ac2b41c6cddd58a7f7d5ac84c20325e5adf016ff85",
+            "height": 630,
+            "key": "personal-site/media/cdf1129748b58d4e16f376ac2b41c6cddd58a7f7d5ac84c20325e5adf016ff85.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/cdf1129748b58d4e16f376ac2b41c6cddd58a7f7d5ac84c20325e5adf016ff85.webp",
+            "width": 1200
+          }
+        ]
+      },
+      "title": "Learn In Public"
+    },
+    "https://swyx.io/puwtpd": {
+      "description": "Translations welcome! (Português)",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAAAwAQCdASoIAAQAA4BaJaQAA3AA/vOMWf6Xf8N08AAAAA==",
+        "original": {
+          "bytes": 48869,
+          "hash": "4f1c17043f6a7a648596a457df6deefbdfcc6b3ed6fb974ba85bc11d6ef91501",
+          "height": 630,
+          "key": "personal-site/media/4f1c17043f6a7a648596a457df6deefbdfcc6b3ed6fb974ba85bc11d6ef91501.png",
+          "mime": "image/png",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/4f1c17043f6a7a648596a457df6deefbdfcc6b3ed6fb974ba85bc11d6ef91501.png",
+          "width": 1200
+        },
+        "pipelineVersion": 2,
+        "source": {
+          "edited": "https://swyx.io/og/article/puwtpd.png?v=2025-01-09T19%3A15%3A48.000Z-1",
+          "key": "bookmark:1096b08635dae9f0144bcdd81cfe8c6b2c8ee65c2ccd1a5de34e841ac947e233",
+          "kind": "external",
+          "url": "https://swyx.io/og/article/puwtpd.png?v=2025-01-09T19%3A15%3A48.000Z-1"
+        },
+        "variants": [
+          {
+            "bytes": 14568,
+            "hash": "0846e7ca35acdb86bd0f6cdc07970fed61c006e641bfd2e156d901b61266a352",
+            "height": 504,
+            "key": "personal-site/media/0846e7ca35acdb86bd0f6cdc07970fed61c006e641bfd2e156d901b61266a352.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/0846e7ca35acdb86bd0f6cdc07970fed61c006e641bfd2e156d901b61266a352.webp",
+            "width": 960
+          },
+          {
+            "bytes": 24620,
+            "hash": "ccb9f7d842a758553c98310a61a9abdc8037b1f9c4a78341030edf7aeb20d910",
+            "height": 630,
+            "key": "personal-site/media/ccb9f7d842a758553c98310a61a9abdc8037b1f9c4a78341030edf7aeb20d910.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/ccb9f7d842a758553c98310a61a9abdc8037b1f9c4a78341030edf7aeb20d910.webp",
+            "width": 1200
+          }
+        ]
+      },
+      "title": "Pick Up What They Put Down"
     },
     "https://techcrunch.com/2021/02/06/4-creator-economy-vcs-see-startup-opportunities-in-monetization-discovery-and-much-more/": {
       "description": "Everyone knows YouTubers and other creators are popular with internet users of all ages. But today, these influencers also have real businesses powered by",
@@ -79309,6 +79280,49 @@
       },
       "title": "The Complete Beginners Guide To AI Agents (Autonomous Agents)"
     },
+    "https://www.navalmanack.com/almanack-of-naval-ravikant/how-to-get-lucky": {
+      "description": "Why do you say, “Get rich without getting lucky”?   In 1,000 parallel universes, you want to be wealthy in 999 of them. You don’t want to be wealthy in the fifty of them where you got lucky, so we want to factor luck out of it.    But getting lucky would help, right?    Just recently, Babak Nivi, my",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoHAAgAA4BaJaQAA3AA/vUIAAA=",
+        "original": {
+          "bytes": 16596,
+          "hash": "2368941c5e7c9ca20e967cb4bc605c847410c628d32c32cc11ecf4bb5840545a",
+          "height": 1660,
+          "key": "personal-site/media/2368941c5e7c9ca20e967cb4bc605c847410c628d32c32cc11ecf4bb5840545a.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/2368941c5e7c9ca20e967cb4bc605c847410c628d32c32cc11ecf4bb5840545a.webp",
+          "width": 1356
+        },
+        "pipelineVersion": 2,
+        "source": {
+          "edited": "http://static1.squarespace.com/static/5d23ae6c3b89290001fe3cdb/t/5f55494a416c7273cd4d021c/1599424851099/Archimedes%401x.jpg?format=1500w",
+          "key": "bookmark:2ddd9893b4513dbe4228f5ac050c8fb2334bba2c9ea25abcd21235c97b6af357",
+          "kind": "external",
+          "url": "http://static1.squarespace.com/static/5d23ae6c3b89290001fe3cdb/t/5f55494a416c7273cd4d021c/1599424851099/Archimedes%401x.jpg?format=1500w"
+        },
+        "variants": [
+          {
+            "bytes": 9172,
+            "hash": "cb96dcb00b707c7844007bc566a8289407fcbcd18f3245ff87fb9e262b86d124",
+            "height": 1175,
+            "key": "personal-site/media/cb96dcb00b707c7844007bc566a8289407fcbcd18f3245ff87fb9e262b86d124.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/cb96dcb00b707c7844007bc566a8289407fcbcd18f3245ff87fb9e262b86d124.webp",
+            "width": 960
+          },
+          {
+            "bytes": 16984,
+            "hash": "81d5c73b251ad2b1874dca2a35710766f49cca3738dac283c3dffee23d112bc9",
+            "height": 1660,
+            "key": "personal-site/media/81d5c73b251ad2b1874dca2a35710766f49cca3738dac283c3dffee23d112bc9.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/81d5c73b251ad2b1874dca2a35710766f49cca3738dac283c3dffee23d112bc9.webp",
+            "width": 1356
+          }
+        ]
+      },
+      "title": "HOW TO GET LUCKY — Almanack of Naval Ravikant"
+    },
     "https://www.notboring.co/p/power-to-the-person": {
       "description": "The Creator Economy, NFTs, and the Rise of the Solo Corporation",
       "image": {
@@ -79342,6 +79356,49 @@
         ]
       },
       "title": "Power to the Person"
+    },
+    "https://www.notboring.co/p/the-great-online-game": {
+      "description": "How to Win the Internet",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAQAA4BaJQAAU6jkagAA/u/4Ou3AZCcfZ51Q8NNDJnMQ0yAAAA==",
+        "original": {
+          "bytes": 79573,
+          "hash": "81376e6391b620dd4b517f99aa9768f81799528091c8679f28767b85f6ced8f8",
+          "height": 600,
+          "key": "personal-site/media/81376e6391b620dd4b517f99aa9768f81799528091c8679f28767b85f6ced8f8.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/81376e6391b620dd4b517f99aa9768f81799528091c8679f28767b85f6ced8f8.jpg",
+          "width": 1200
+        },
+        "pipelineVersion": 2,
+        "source": {
+          "edited": "https://substackcdn.com/image/fetch/$s_!LMU2!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9c8a884-c333-4d7a-86f1-76ae50f77954_1200x600.png",
+          "key": "bookmark:89c469fd4b8c90648a1a07111917477af3ec91e0b827e0b4048e68f9db61f569",
+          "kind": "external",
+          "url": "https://substackcdn.com/image/fetch/$s_!LMU2!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fa9c8a884-c333-4d7a-86f1-76ae50f77954_1200x600.png"
+        },
+        "variants": [
+          {
+            "bytes": 39888,
+            "hash": "0b6491d74fb764c7415e748312c29cca40a1aebb616db64cdb0e9ca21e00e967",
+            "height": 480,
+            "key": "personal-site/media/0b6491d74fb764c7415e748312c29cca40a1aebb616db64cdb0e9ca21e00e967.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/0b6491d74fb764c7415e748312c29cca40a1aebb616db64cdb0e9ca21e00e967.webp",
+            "width": 960
+          },
+          {
+            "bytes": 72700,
+            "hash": "96743bd267b0b41a4d86b8c4509b3513bccffcc85a90b0505d93c448b0e9ea37",
+            "height": 600,
+            "key": "personal-site/media/96743bd267b0b41a4d86b8c4509b3513bccffcc85a90b0505d93c448b0e9ea37.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/96743bd267b0b41a4d86b8c4509b3513bccffcc85a90b0505d93c448b0e9ea37.webp",
+            "width": 1200
+          }
+        ]
+      },
+      "title": "The Great Online Game"
     },
     "https://www.nytimes.com/2021/02/10/technology/facebook-building-product-clubhouse.html": {
       "description": "",
@@ -83932,6 +83989,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/178bafa3c50bc276cf28b2c2e119de86cde09ebe4fc2418945f36a398f3d2ae0.webp",
           "width": 1462
+        }
+      ]
+    },
+    "3f7edb27f12481ad887ee8617d554ab2:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAQAA4BaJZwAAveGL/UQAP71BIWIVmqd/fG589AAAA==",
+      "original": {
+        "bytes": 647960,
+        "hash": "1a2678daacaee727f6bd71e4fad5fe5b81baeec4ba25b9bc91cdfc1abd553fa5",
+        "height": 908,
+        "key": "personal-site/media/1a2678daacaee727f6bd71e4fad5fe5b81baeec4ba25b9bc91cdfc1abd553fa5.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/1a2678daacaee727f6bd71e4fad5fe5b81baeec4ba25b9bc91cdfc1abd553fa5.webp",
+        "width": 1733
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-12T12:06:00.000Z",
+        "key": "3f7edb27f12481ad887ee8617d554ab2:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 24772,
+          "hash": "a8ce5dab8f076487a2ae0f77eae925621d138f50f97b30d600b906eee2a4b9b1",
+          "height": 503,
+          "key": "personal-site/media/a8ce5dab8f076487a2ae0f77eae925621d138f50f97b30d600b906eee2a4b9b1.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/a8ce5dab8f076487a2ae0f77eae925621d138f50f97b30d600b906eee2a4b9b1.webp",
+          "width": 960
+        },
+        {
+          "bytes": 71420,
+          "hash": "70bdcd10d6e82fdba88ed8f6486e1046fdfc3e26a520ccfd2fe33f002362a49b",
+          "height": 908,
+          "key": "personal-site/media/70bdcd10d6e82fdba88ed8f6486e1046fdfc3e26a520ccfd2fe33f002362a49b.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/70bdcd10d6e82fdba88ed8f6486e1046fdfc3e26a520ccfd2fe33f002362a49b.webp",
+          "width": 1733
         }
       ]
     },
@@ -90663,7 +90758,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-12T04:32:00.000Z",
+        "edited": "2026-10-12T11:10:00.000Z",
         "key": "fc98c808ab3143be82ecb6e275df8d01",
         "kind": "file"
       },

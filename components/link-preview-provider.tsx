@@ -14,7 +14,11 @@ import type {
   LinkPreviewScope,
   LinkPreviewTarget
 } from '@/lib/link-preview'
-import { resolveLinkPreviewTarget } from '@/lib/link-preview'
+import {
+  fallbackLinkPreview,
+  resolveLinkPreviewTarget
+} from '@/lib/link-preview'
+import { getSavedLinkPreview } from '@/lib/saved-link-previews'
 
 const externalCacheKey = 'personal-site:link-previews:v1'
 const externalCacheAge = 24 * 60 * 60_000
@@ -78,6 +82,8 @@ function storeCache() {
 }
 
 function cachedExternal(url: string) {
+  const saved = getSavedLinkPreview(url)
+  if (saved) return { data: saved, expires: Infinity }
   loadStoredCache()
   const entry = externalCache.get(url)
   if (!entry) return undefined
@@ -85,6 +91,12 @@ function cachedExternal(url: string) {
     externalCache.delete(url)
     return undefined
   }
+  const data = entry.data ?? fallbackLinkPreview(url)
+  entry.data = data?.image
+    ? data
+    : data
+      ? { ...data, image: fallbackLinkPreview(url, data)?.image }
+      : undefined
   externalCache.delete(url)
   externalCache.set(url, entry)
   return entry
@@ -100,14 +112,19 @@ function resolveExternalPreview(url: string) {
     headers: { Accept: 'application/json' }
   })
     .then(async (response) => {
-      if (!response.ok) return undefined
-      return (await response.json()) as LinkPreviewData
+      if (!response.ok) return fallbackLinkPreview(url)
+      const data = (await response.json()) as LinkPreviewData
+      return data.image
+        ? data
+        : { ...data, image: fallbackLinkPreview(url, data)?.image }
     })
-    .catch(() => undefined)
+    .catch(() => fallbackLinkPreview(url))
     .then((data) => {
       externalCache.set(url, {
         data,
-        expires: Date.now() + (data ? externalCacheAge : failureCacheAge)
+        expires:
+          Date.now() +
+          (data && !data.fallback ? externalCacheAge : failureCacheAge)
       })
       trimCache(externalCache)
       storeCache()
@@ -187,7 +204,10 @@ function PreviewCard({ preview }: { preview: ActivePreview }) {
   const title =
     preview.data?.title || preview.fallbackTitle || host(preview.url)
   const description = preview.data?.description
-  const showImage = Boolean(image && !imageFailed)
+  const showImage = Boolean(image)
+  const imageSrc = imageFailed
+    ? fallbackLinkPreview(preview.url, { title })?.image
+    : image
   return (
     <aside
       ref={ref}
@@ -204,10 +224,10 @@ function PreviewCard({ preview }: { preview: ActivePreview }) {
       {showImage ? (
         <div className='link-preview-media' data-ready={imageReady}>
           <div className='link-preview-image-skeleton' />
-          {/* The endpoint validates and caches remote image bytes server-side. */}
+          {/* Images are saved local assets or validated server-side proxies. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={image}
+            src={imageSrc}
             alt={preview.data?.imageAlt ?? ''}
             decoding='async'
             referrerPolicy='no-referrer'
