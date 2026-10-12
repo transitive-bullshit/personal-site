@@ -30,6 +30,7 @@ export type BodyOverride = {
   searchText: string[]
   markdown: string
   socialImagePath?: string
+  readingTime?: string
 }
 
 const sourceMap = new Map(sources.map((source) => [source.id, source]))
@@ -209,6 +210,7 @@ function cyberSwarmMarkdown() {
 }
 
 const cyberSwarmOverride: BodyOverride = {
+  readingTime: 'About 10 minutes',
   socialImagePath: '/essays/cyber-swarm/swarm-social-5c2ee4062b1c9e0e.webp',
   headings: [
     { id: 'opening', text: 'The asymmetry', level: 2, depth: 0 },

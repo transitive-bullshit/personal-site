@@ -263,7 +263,7 @@ export function LinkPreviewProvider({
       if (!scope) return undefined
       const target = resolveLinkPreviewTarget(
         anchor.href,
-        window.location.origin,
+        window.location.href,
         scope,
         internalPaths
       )

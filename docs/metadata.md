@@ -29,6 +29,8 @@ Code-owned article bodies also supply Markdown and heading terms through `lib/co
 
 ## External hover previews
 
+Preview cards apply to other pages. Same-page links, including footnotes and canonical self-links on previews, do not activate cards or prefetch content.
+
 The preview API uses `scripts/bookmarks.ts` for fetching/parsing metadata and `scripts/public-fetch.ts` for destination and redirect validation. When local parsing succeeds but production previews fail, compare the deployed `/api/link-preview?url=…` response and upstream HTTP status, then inspect the target site's security events before changing the parser. A bot challenge can block the server fetch despite correct page metadata; the [Cloudflare incident](archive/link-preview-cloudflare-2026-09-29.md) records one confirmed case.
 
 ## Deployment lessons
