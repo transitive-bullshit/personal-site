@@ -154,7 +154,7 @@ function SourceNotes() {
     >
       <header>
         <p className='eyebrow'>References</p>
-        <h2 id='sources-heading'>Source notes</h2>
+        <h2 id='sources-heading'>Sources</h2>
       </header>
       <ol>
         {usedSources.map((source) => {
@@ -164,23 +164,16 @@ function SourceNotes() {
               id={`source-${source.id}`}
               key={source.id}
             >
-              <div className='source-top'>
-                <a href={source.url}>{source.title} ↗</a>
-                <span>{source.kind}</span>
-              </div>
-              <p>{source.note}</p>
+              <a href={source.url}>{source.title} ↗</a>
             </li>
           )
         })}
-      </ol>
-      <details className='further-reading'>
-        <summary>Further reading and research materials</summary>
         {furtherReading.map((source) => (
-          <p key={source.url}>
-            <a href={source.url}>{source.title} ↗</a> · {source.note}
-          </p>
+          <li key={source.url}>
+            <a href={source.url}>{source.title} ↗</a>
+          </li>
         ))}
-      </details>
+      </ol>
     </section>
   )
 }

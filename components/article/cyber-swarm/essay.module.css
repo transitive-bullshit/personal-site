@@ -180,8 +180,7 @@
   font-size: 0.75rem;
 }
 .root :global(.research-aside),
-.root :global(.protection-explorable),
-.root :global(.further-reading) {
+.root :global(.protection-explorable) {
   border-block: 1px solid var(--border);
   margin-block: 1.75rem;
   font-size: 0.8125rem;
@@ -193,8 +192,7 @@
   color: var(--muted-foreground);
   line-height: 1.6;
 }
-.root :global(.research-aside p),
-.root :global(.further-reading p) {
+.root :global(.research-aside p) {
   margin-block: 0.75rem 1.25rem;
   font-size: 0.875rem;
 }
@@ -294,23 +292,8 @@
     monospace;
   color: var(--muted-foreground);
 }
-.root :global(.source-top) {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  align-items: baseline;
-}
-.root :global(.source-top a) {
+.root :global(.essay-sources li > a) {
   font-weight: 550;
-}
-.root :global(.source-top span) {
-  color: var(--muted-foreground);
-  font-size: 0.6875rem;
-  white-space: nowrap;
-}
-.root :global(.essay-sources li > p) {
-  color: var(--muted-foreground);
-  font-size: 0.75rem;
 }
 .root sup {
   font-size: 0.65em;
@@ -705,13 +688,6 @@
     font-size: 0.6875rem;
     color: var(--muted-foreground);
     margin-block: 0.75rem 0;
-  }
-  .root :global(.source-top) {
-    display: block;
-  }
-  .root :global(.source-top span) {
-    display: block;
-    margin-block-start: 0.25rem;
   }
 }
 @media print {

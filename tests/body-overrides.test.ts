@@ -191,13 +191,13 @@ describe('CMS article body overrides', () => {
     for (const id of sourceOrder) {
       const source = sources.find((candidate) => candidate.id === id)!
       expect(body).toContain(
-        `[^${sourceNumber(id)}]: [${source.title}](${source.url}).`
+        `[^${sourceNumber(id)}]: [${source.title}](${source.url})`
       )
-      expect(body).toContain(source.note)
+      expect(body).not.toContain(source.note)
     }
     for (const source of furtherReading) {
       expect(body).toContain(source.url)
-      expect(body).toContain(source.note)
+      expect(body).not.toContain(source.note)
     }
     const definitions = [...body.matchAll(/^\[\^(\d+)\]:/gm)].map(
       (match) => match[1]
