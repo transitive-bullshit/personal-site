@@ -193,17 +193,15 @@ function cyberSwarmMarkdown() {
     cite('## ' + essayChrome.mentalModelTitle),
     ...finalClosing.map(cite),
     anchor('sources'),
-    '## Source notes',
+    '## Sources',
     ...sourceOrder.map((id) => {
       const source = sourceMap.get(id)
       if (!source) throw new Error('Missing cybersecurity essay source: ' + id)
-      return `[^${sourceNumber(id)}]: [${source.title}](${source.url}). **${source.kind}.** ${source.note}`
+      return `[^${sourceNumber(id)}]: [${source.title}](${source.url})`
     }),
-    details(
-      'Further reading and research materials',
-      furtherReading.map(
-        (source) => `[${source.title}](${source.url}) · ${source.note}`
-      )
+    ...furtherReading.map(
+      (source, index) =>
+        `${sourceOrder.length + index + 1}. [${source.title}](${source.url})`
     )
   )
   return blocks.join('\n\n') + '\n'
@@ -230,7 +228,7 @@ const cyberSwarmOverride: BodyOverride = {
       level: 2,
       depth: 0
     },
-    { id: 'sources', text: 'Source notes', level: 2, depth: 0 }
+    { id: 'sources', text: 'Sources', level: 2, depth: 0 }
   ],
   searchText: [
     'A new weapon changes the balance',
@@ -238,7 +236,7 @@ const cyberSwarmOverride: BodyOverride = {
     essayChrome.predictionsTitle,
     ...finalPredictions.map((prediction) => prediction.title),
     essayChrome.mentalModelTitle,
-    'Source notes',
+    'Sources',
     ...Object.values(titles),
     essayChrome.swarmCaption,
     'Anas Baba / AFP · 14 May 2021. Northern Gaza Strip. Rockets right; interceptors left. Foreground: Gaza.',
