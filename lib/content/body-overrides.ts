@@ -29,6 +29,7 @@ export type BodyOverride = {
   // Public headings and authored captions, independent of the abbreviated TOC.
   searchText: string[]
   markdown: string
+  socialImagePath?: string
 }
 
 const sourceMap = new Map(sources.map((source) => [source.id, source]))
@@ -177,10 +178,10 @@ function cyberSwarmMarkdown() {
     cite(finalForecastPremise),
     cite(essayChrome.predictionsIntro)
   )
-  finalPredictions.forEach((prediction, index) =>
+  finalPredictions.forEach((prediction) =>
     blocks.push(
       anchor('prediction-' + prediction.id),
-      cite(`### ${index + 1}. ${prediction.title}`),
+      cite(`### ${prediction.title}`),
       cite(prediction.body),
       details('How I would judge this prediction', [cite(prediction.test)])
     )
@@ -208,6 +209,7 @@ function cyberSwarmMarkdown() {
 }
 
 const cyberSwarmOverride: BodyOverride = {
+  socialImagePath: '/essays/cyber-swarm/swarm-social-5c2ee4062b1c9e0e.webp',
   headings: [
     { id: 'opening', text: 'The asymmetry', level: 2, depth: 0 },
     ...essayParts.map((part) => ({

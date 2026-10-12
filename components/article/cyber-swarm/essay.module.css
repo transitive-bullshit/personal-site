@@ -1,9 +1,4 @@
 .root {
-  --essay-number-width: 1rem;
-  --essay-number-gap: 0.75rem;
-  --essay-number-gutter: calc(
-    var(--essay-number-width) + var(--essay-number-gap)
-  );
   --ink: var(--foreground);
   --paper: var(--background);
   --line: var(--border);
@@ -142,23 +137,11 @@
 }
 .root :global(.essay-chapter > header),
 .root :global(.essay-forecasts > header) {
-  position: relative;
   margin-block-end: 1.5rem;
 }
 .root :global(.essay-chapter > header h2),
 .root :global(.essay-forecasts > header h2) {
   margin: 0;
-}
-.root :global(.chapter-number) {
-  position: absolute;
-  inset-inline-start: calc(-1 * var(--essay-number-gutter));
-  inset-block-start: 0.35rem;
-  inline-size: var(--essay-number-width);
-  text-align: end;
-  font:
-    0.6875rem/1.6 ui-monospace,
-    monospace;
-  color: var(--muted-foreground);
 }
 .root :global(.essay-pullquote) {
   border-inline-start: 2px solid var(--notion-blue);
@@ -201,9 +184,6 @@
   padding-block-start: 2rem;
   border-block-start: 1px solid var(--foreground);
 }
-.root :global(.essay-forecasts > header .chapter-number) {
-  inset-block-start: 2.2rem;
-}
 .root :global(.forecast-dates) {
   margin-block: 0.75rem 0;
   font-size: 0.8125rem;
@@ -215,22 +195,10 @@
   padding: 0;
 }
 .root :global(.forecast-list > li) {
-  position: relative;
   padding-block: 1.5rem;
   padding-inline-start: 0;
   margin: 0;
   border-block-start: 1px solid var(--border);
-}
-.root :global(.forecast-index) {
-  position: absolute;
-  inset-inline-start: calc(-1 * var(--essay-number-gutter));
-  inset-block-start: 1.8rem;
-  inline-size: var(--essay-number-width);
-  text-align: end;
-  font:
-    0.6875rem/1.6 ui-monospace,
-    monospace;
-  color: var(--muted-foreground);
 }
 .root :global(.forecast-list h3) {
   margin-block: 0 0.9rem;
@@ -662,9 +630,6 @@
 }
 
 @media (max-width: 960px) {
-  .root {
-    --essay-number-gap: 0.4rem;
-  }
   .root :global(.essay-section-grid) {
     grid-template-columns: minmax(0, 1fr);
     gap: 1rem;
@@ -675,14 +640,6 @@
   }
 }
 @media (max-width: 704px) {
-  .root {
-    --essay-number-width: 0.65rem;
-    --essay-number-gap: 0.2rem;
-  }
-  .root :global(.chapter-number),
-  .root :global(.forecast-index) {
-    font-size: 0.625rem;
-  }
   .root :global(.defender-window-scroll-hint) {
     display: block;
     font-size: 0.6875rem;

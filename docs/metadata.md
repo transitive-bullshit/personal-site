@@ -22,6 +22,7 @@ Code-owned article bodies also supply Markdown and heading terms through `lib/co
 
 - Main pages use `public/social-image.jpg`; icons use Next's metadata file conventions in `app/`.
 - Articles use on-demand Takumi WebP cards through `app/api/social-image/[slug]/route.tsx`, `lib/render-social-image.tsx`, and `components/social-image.tsx`. Bump `templateVersion` in `lib/social-image.ts` when the template changes so crawlers receive a new versioned URL.
+- A code-owned body can set `socialImagePath` to a local social image. The cyber swarm essay uses a 1200×630 crop of its illustration with a content hash in the filename. Open Graph, Twitter, structured data, and internal previews use the same override.
 - Projects use their saved cover or the default social image; both use `summary_large_image`. They do not use the article card renderer.
 - `deploymentOrigin()` selects the public production hostname or preview branch alias, with the unique Vercel URL and then `site.origin` as fallbacks. This is separate from canonical page origin: a unique deployment URL previously sent social crawlers to a Vercel login page.
 - Historical `/api/social-image?id=…` URLs permanently redirect recognized active article IDs to current cards; unknown IDs return 404.

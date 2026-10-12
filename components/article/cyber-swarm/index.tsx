@@ -78,7 +78,7 @@ function PullQuote({ index }: { index: 0 | 1 | 4 }) {
     </figure>
   )
 }
-function Chapter({ part, index }: { part: EssayPart; index: number }) {
+function Chapter({ part }: { part: EssayPart }) {
   return (
     <section
       id={part.id}
@@ -86,7 +86,6 @@ function Chapter({ part, index }: { part: EssayPart; index: number }) {
       aria-labelledby={`${part.id}-heading`}
     >
       <header>
-        <span className='chapter-number'>0{index + 2}</span>
         <EssayText
           as='h2'
           id={`${part.id}-heading`}
@@ -201,10 +200,7 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
       className={`${styles.root} article-body`}
       data-link-preview-scope='article'
     >
-      <p className='essay-meta'>
-        First in a two-part series <span aria-hidden='true'>·</span> About 10
-        minutes
-      </p>
+      <p className='essay-meta'>About 10 minutes</p>
       <details className={styles.contents}>
         <summary>On this page</summary>
         <TableOfContents headings={headings} title={false} />
@@ -279,8 +275,8 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
           </figcaption>
         </figure>
       </section>
-      {essayParts.map((p, i) => (
-        <Chapter part={p} index={i} key={p.id} />
+      {essayParts.map((p) => (
+        <Chapter part={p} key={p.id} />
       ))}
       <section
         id='predictions'
@@ -288,7 +284,6 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
         aria-labelledby='predictions-heading'
       >
         <header>
-          <span className='chapter-number'>06</span>
           <EssayText
             text={essayChrome.predictionsEyebrow}
             className='eyebrow'
@@ -315,9 +310,8 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
               id='predictions-intro'
             />
             <ol className='forecast-list'>
-              {finalPredictions.map((p, i) => (
+              {finalPredictions.map((p) => (
                 <li id={`prediction-${p.id}`} key={p.id}>
-                  <span className='forecast-index'>0{i + 1}</span>
                   <div>
                     <EssayText
                       as='h3'
