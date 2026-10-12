@@ -10,11 +10,6 @@
 .root [id] {
   scroll-margin-block-start: 2rem;
 }
-.root :global(.essay-meta) {
-  margin-block: 0 1.5rem;
-  font-size: 0.8125rem;
-  color: var(--muted-foreground);
-}
 .contents {
   margin-block: 0 2rem;
   padding-block: 1rem;
@@ -250,9 +245,9 @@
   padding-inline-start: 1.5rem;
 }
 .root :global(.essay-sources > ol > li) {
-  padding-block: 1rem;
+  padding-block: 0.25rem;
   padding-inline-start: 0;
-  border-block-start: 1px solid var(--border);
+  margin-block: 0;
 }
 .root :global(.essay-sources > ol > li::marker) {
   font:

@@ -200,7 +200,6 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
       className={`${styles.root} article-body`}
       data-link-preview-scope='article'
     >
-      <p className='essay-meta'>About 10 minutes</p>
       <details className={styles.contents}>
         <summary>On this page</summary>
         <TableOfContents headings={headings} title={false} />

@@ -36,6 +36,9 @@ export function ArticlePage({
                 timeZone: 'UTC'
               })}
             </time>
+            {bodyOverride?.readingTime ? (
+              <span>{bodyOverride.readingTime}</span>
+            ) : null}
           </div>
         </header>
         {bodyOverride ? (

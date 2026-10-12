@@ -1,3 +1,5 @@
+import { site } from './site'
+
 export type LinkPreviewScope = 'article' | 'internal'
 
 export type LinkPreviewData = {
@@ -17,13 +19,15 @@ export type LinkPreviewTarget = {
 
 export function resolveLinkPreviewTarget(
   href: string,
-  pageOrigin: string,
+  pageUrl: string,
   scope: LinkPreviewScope,
   internalPaths: ReadonlySet<string>
 ): LinkPreviewTarget | undefined {
   let url: URL
+  let page: URL
   try {
-    url = new URL(href, pageOrigin)
+    page = new URL(pageUrl)
+    url = new URL(href, page)
   } catch {
     return undefined
   }
@@ -34,11 +38,19 @@ export function resolveLinkPreviewTarget(
   )
     return undefined
 
+  const siteOrigins = new Set([
+    page.origin,
+    site.origin,
+    site.origin.replace('://www.', '://')
+  ])
+  const sameSite = siteOrigins.has(url.origin)
+  const pathname = (value: URL) => value.pathname.replace(/\/+$/, '') || '/'
+  if (sameSite && pathname(url) === pathname(page)) return undefined
+
   url.hash = ''
-  const internal = url.origin === pageOrigin && internalPaths.has(url.pathname)
+  const internal = sameSite && internalPaths.has(url.pathname)
   if (scope === 'internal' && !internal) return undefined
-  if (!internal && (scope !== 'article' || url.origin === pageOrigin))
-    return undefined
+  if (!internal && (scope !== 'article' || sameSite)) return undefined
 
   return {
     cacheKey: internal ? url.pathname : url.href,
