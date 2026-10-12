@@ -17,6 +17,7 @@ import {
   DialogTitle,
   DialogTrigger
 } from '@/components/ui/dialog'
+import { imageDownloadSource } from './image-download'
 
 const motion = { duration: 240, easing: 'cubic-bezier(0.23, 1, 0.32, 1)' }
 const reducedMotion = () =>
@@ -160,8 +161,8 @@ export function ImageLightbox({
     const version = downloadVersion.current
     setDownload('loading')
     try {
-      const filename = new URL(original).pathname.split('/').at(-1)!
-      const response = await fetch(`/api/media-download/${filename}`, {
+      const { filename, src: downloadSrc } = imageDownloadSource(original)
+      const response = await fetch(downloadSrc, {
         signal: AbortSignal.timeout(60_000)
       })
       if (!response.ok) throw new Error('Download failed')
@@ -206,6 +207,7 @@ export function ImageLightbox({
       <DialogContent
         className='image-lightbox'
         overlayClassName='image-lightbox-overlay'
+        style={{ translate: 'none' }}
         onKeyDown={(event) => {
           if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
             event.preventDefault()

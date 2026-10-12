@@ -26,6 +26,8 @@ export const cyberSwarmArticleId = '3f7edb27f12481bcb191fcff5dcafd41'
 
 export type BodyOverride = {
   headings: Heading[]
+  // Public headings and authored captions, independent of the abbreviated TOC.
+  searchText: string[]
   markdown: string
 }
 
@@ -229,6 +231,19 @@ const cyberSwarmOverride: BodyOverride = {
       depth: 0
     },
     { id: 'sources', text: 'Source notes', level: 2, depth: 0 }
+  ],
+  searchText: [
+    'A new weapon changes the balance',
+    ...essayParts.map((part) => part.title),
+    essayChrome.predictionsTitle,
+    ...finalPredictions.map((prediction) => prediction.title),
+    essayChrome.mentalModelTitle,
+    'Source notes',
+    ...Object.values(titles),
+    essayChrome.swarmCaption,
+    'Anas Baba / AFP · 14 May 2021. Northern Gaza Strip. Rockets right; interceptors left. Foreground: Gaza.',
+    expertQuotes[0].author,
+    expertQuotes[1].author
   ],
   markdown: cyberSwarmMarkdown()
 }

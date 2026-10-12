@@ -312,12 +312,6 @@
   color: var(--muted-foreground);
   font-size: 0.75rem;
 }
-.root :global(.return-link) {
-  display: inline-flex;
-  min-block-size: 2rem;
-  align-items: center;
-  font-size: 0.6875rem;
-}
 .root sup {
   font-size: 0.65em;
   margin-inline-start: 0.2em;
