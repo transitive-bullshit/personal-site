@@ -14840,6 +14840,22 @@
       ],
       "title": "An Army of Agents"
     },
+    "3f7edb27f12481bcb191fcff5dcafd41": {
+      "author": "Travis Fischer",
+      "blocks": [],
+      "description": "Cheap, adaptive offense meets a world that has to keep operating while it changes.",
+      "featured": false,
+      "id": "3f7edb27f12481bcb191fcff5dcafd41",
+      "modified": "2026-10-12T03:56:00.000Z",
+      "published": "2026-10-12",
+      "slug": "ai-cybersecurity-swarm-warfare",
+      "tags": [
+        "AI",
+        "Research",
+        "Tech"
+      ],
+      "title": "AI is turning cybersecurity into drone swarm warfare"
+    },
     "515a83c036b94939b44348beb67ed373": {
       "author": "Travis Fischer",
       "blocks": [
@@ -97953,6 +97969,11 @@
       "active": true,
       "aliases": [],
       "slug": "ai-agents"
+    },
+    "3f7edb27f12481bcb191fcff5dcafd41": {
+      "active": true,
+      "aliases": [],
+      "slug": "ai-cybersecurity-swarm-warfare"
     },
     "515a83c036b94939b44348beb67ed373": {
       "active": true,

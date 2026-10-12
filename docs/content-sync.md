@@ -4,6 +4,10 @@ Notion owns article and project content. `pnpm content:sync` imports selected pu
 
 ## Setup
 
+The cyber swarm essay is a metadata-only Notion record with a code-owned body, selected in `lib/content/body-overrides.ts`. Sync its metadata normally; edit its prose, visuals, and source notes in the repository. Run `pnpm content:search` after changing its headings. To return to ordinary Notion authoring, populate its Notion body, sync, then remove the override; its record and URL stay intact.
+
+The CMS last-edited timestamp also supplies article modification metadata. After a later code-owned body revision, update the corresponding Notion metadata and sync so that date reflects the revision.
+
 Use the Node and pnpm versions in `package.json`. Supply these variables in the shell or ignored `.env.local` (`scripts/io.ts` also supports `.env`; existing shell values win):
 
 - `NOTION_TOKEN`

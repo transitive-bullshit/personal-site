@@ -1,0 +1,749 @@
+.root {
+  --essay-number-width: 1rem;
+  --essay-number-gap: 0.75rem;
+  --essay-number-gutter: calc(
+    var(--essay-number-width) + var(--essay-number-gap)
+  );
+  --ink: var(--foreground);
+  --paper: var(--background);
+  --line: var(--border);
+  --blue: var(--notion-blue);
+  --red: var(--notion-red);
+  inline-size: 100%;
+  min-inline-size: 0;
+}
+.root [id] {
+  scroll-margin-block-start: 2rem;
+}
+.root :global(.essay-meta) {
+  margin-block: 0 1.5rem;
+  font-size: 0.8125rem;
+  color: var(--muted-foreground);
+}
+.contents {
+  margin-block: 0 2rem;
+  padding-block: 1rem;
+  border-block: 1px solid var(--border);
+}
+.contents > summary {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.contents :global(.toc) {
+  max-inline-size: 40rem;
+  margin-block-start: 1rem;
+  font-size: 0.8125rem;
+}
+.root :global(.toc-list ol) {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.root :global(.toc-list li) {
+  padding: 0;
+  margin: 0;
+}
+.root :global(.toc a) {
+  text-decoration: none;
+}
+.root :global(.sr-only) {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.root :global(.original-photo),
+.root :global(.swarm-illustration) {
+  margin-block: 0 2.5rem;
+}
+.root :global(.swarm-illustration) {
+  margin-block: 2.5rem 0;
+}
+.root :global(.original-photo img),
+.root :global(.swarm-illustration img) {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  border-radius: 7px;
+}
+.root :global(.original-photo figcaption),
+.root :global(.swarm-illustration figcaption) {
+  text-align: start;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+.root :global(.original-photo figcaption span) {
+  display: block;
+  margin-block-start: 0.2rem;
+}
+.root :global(.essay-section-grid) {
+  display: grid;
+  grid-template-columns: minmax(0, var(--content-reading)) minmax(10rem, 1fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: start;
+}
+.root :global(.essay-copy) {
+  min-inline-size: 0;
+}
+.root :global(.essay-copy p) {
+  margin-block: 0 1.3em;
+}
+.root :global(.essay-copy .personal-turn),
+.root :global(.opening-thesis) {
+  font-weight: 550;
+}
+.root :global(.eyebrow) {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  margin-block: 0 0.75rem;
+}
+.root :global(.essay-margin) {
+  padding-block-start: 0.85rem;
+  border-block-start: 1px solid var(--border);
+  color: var(--muted-foreground);
+  font-size: 0.8125rem;
+  line-height: 1.7;
+}
+.root :global(.essay-margin p) {
+  margin-block: 0 1rem;
+}
+.root :global(.essay-margin a) {
+  display: block;
+  margin-block: 0.65rem;
+  font-size: 0.75rem;
+}
+.root :global(.essay-margin a span) {
+  white-space: nowrap;
+}
+.root :global(.margin-quote) {
+  border-block-start: 1px solid var(--border);
+  padding-block-start: 1.2rem;
+  margin-block-start: 1.5rem;
+}
+.root :global(.margin-quote blockquote) {
+  border: 0;
+  padding: 0;
+  margin-block: 0.9rem;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--foreground);
+}
+.root :global(.essay-chapter) {
+  margin-block-start: clamp(3rem, 5vw, 4.5rem);
+}
+.root :global(.essay-chapter > header),
+.root :global(.essay-forecasts > header) {
+  position: relative;
+  margin-block-end: 1.5rem;
+}
+.root :global(.essay-chapter > header h2),
+.root :global(.essay-forecasts > header h2) {
+  margin: 0;
+}
+.root :global(.chapter-number) {
+  position: absolute;
+  inset-inline-start: calc(-1 * var(--essay-number-gutter));
+  inset-block-start: 0.35rem;
+  inline-size: var(--essay-number-width);
+  text-align: end;
+  font:
+    0.6875rem/1.6 ui-monospace,
+    monospace;
+  color: var(--muted-foreground);
+}
+.root :global(.essay-pullquote) {
+  border-inline-start: 2px solid var(--notion-blue);
+  padding-inline-start: 1.5rem;
+  margin-block: 2rem;
+}
+.root :global(.essay-pullquote blockquote) {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: var(--foreground);
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-style: italic;
+  line-height: 1.5;
+}
+.root :global(.essay-pullquote figcaption) {
+  text-align: start;
+  margin-block-start: 1rem;
+  font-size: 0.75rem;
+}
+.root :global(.research-aside),
+.root :global(.protection-explorable),
+.root :global(.further-reading) {
+  border-block: 1px solid var(--border);
+  margin-block: 1.75rem;
+  font-size: 0.8125rem;
+}
+.root details > summary {
+  cursor: pointer;
+  padding-block: 0.85rem;
+  min-block-size: 44px;
+  color: var(--muted-foreground);
+  line-height: 1.6;
+}
+.root :global(.research-aside p),
+.root :global(.further-reading p) {
+  margin-block: 0.75rem 1.25rem;
+  font-size: 0.875rem;
+}
+.root :global(.essay-forecasts) {
+  margin-block-start: 4rem;
+  padding-block-start: 2rem;
+  border-block-start: 1px solid var(--foreground);
+}
+.root :global(.essay-forecasts > header .chapter-number) {
+  inset-block-start: 2.2rem;
+}
+.root :global(.forecast-dates) {
+  margin-block: 0.75rem 0;
+  font-size: 0.8125rem;
+  color: var(--muted-foreground);
+}
+.root :global(.forecast-list) {
+  list-style: none;
+  margin-block: 1.75rem 0;
+  padding: 0;
+}
+.root :global(.forecast-list > li) {
+  position: relative;
+  padding-block: 1.5rem;
+  padding-inline-start: 0;
+  margin: 0;
+  border-block-start: 1px solid var(--border);
+}
+.root :global(.forecast-index) {
+  position: absolute;
+  inset-inline-start: calc(-1 * var(--essay-number-gutter));
+  inset-block-start: 1.8rem;
+  inline-size: var(--essay-number-width);
+  text-align: end;
+  font:
+    0.6875rem/1.6 ui-monospace,
+    monospace;
+  color: var(--muted-foreground);
+}
+.root :global(.forecast-list h3) {
+  margin-block: 0 0.9rem;
+}
+.root :global(.forecast-list p) {
+  margin-block: 0 0.9rem;
+}
+.root :global(.forecast-list details) {
+  font-size: 0.75rem;
+}
+.root :global(.forecast-list details p) {
+  color: var(--muted-foreground);
+  font-size: 0.8125rem;
+}
+.root :global(.forecast-list > li:last-child) {
+  border-block-start-color: var(--foreground);
+}
+.root :global(.forecast-list > li:last-child h3) {
+  color: var(--notion-red);
+}
+.root :global(.essay-ending) {
+  max-inline-size: var(--content-reading);
+  margin-block: 3rem;
+}
+.root :global(.ending-thesis) {
+  font-size: var(--text-description);
+  font-weight: 550;
+}
+.root :global(.essay-ending p:last-child) {
+  margin-block-start: 1.5rem;
+  padding-block-start: 1.5rem;
+  border-block-start: 1px solid var(--border);
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+}
+.root :global(.essay-sources) {
+  max-inline-size: var(--content-reading);
+  border-block-start: 1px solid var(--border);
+  padding-block-start: 1.5rem;
+  font-size: 0.8125rem;
+}
+.root :global(.essay-sources header) {
+  margin-block-end: 1.5rem;
+}
+.root :global(.essay-sources header h2) {
+  margin-block: 0;
+}
+.root :global(.essay-sources > ol) {
+  padding-inline-start: 1.5rem;
+}
+.root :global(.essay-sources > ol > li) {
+  padding-block: 1rem;
+  padding-inline-start: 0;
+  border-block-start: 1px solid var(--border);
+}
+.root :global(.essay-sources > ol > li::marker) {
+  font:
+    0.6875rem ui-monospace,
+    monospace;
+  color: var(--muted-foreground);
+}
+.root :global(.source-top) {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+.root :global(.source-top a) {
+  font-weight: 550;
+}
+.root :global(.source-top span) {
+  color: var(--muted-foreground);
+  font-size: 0.6875rem;
+  white-space: nowrap;
+}
+.root :global(.essay-sources li > p) {
+  color: var(--muted-foreground);
+  font-size: 0.75rem;
+}
+.root :global(.return-link) {
+  display: inline-flex;
+  min-block-size: 2rem;
+  align-items: center;
+  font-size: 0.6875rem;
+}
+.root sup {
+  font-size: 0.65em;
+  margin-inline-start: 0.2em;
+  vertical-align: super;
+}
+.root sup a {
+  color: var(--notion-blue);
+  text-decoration: none;
+}
+.root :global(.essay-sources > ol > li:target) {
+  background: color-mix(in oklch, var(--notion-blue) 7%, var(--background));
+}
+
+/* Qualitative curves and source measurements share the site's palette. */
+.root :global(.defender-window),
+.root :global(.state-ai-evidence) {
+  min-inline-size: 0;
+  inline-size: 100%;
+  padding: clamp(1rem, 2vw, 1.5rem);
+  margin-block: 2rem;
+  margin-inline: 0;
+  background: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+}
+.root :global(.defender-window figcaption),
+.root :global(.state-ai-evidence figcaption) {
+  margin: 0;
+  text-align: start;
+}
+.root :global(.defender-window-heading h3),
+.root :global(.state-ai-evidence h3) {
+  margin-block: 0 1.1rem;
+  font-size: 1.375rem;
+}
+.root :global(.defender-window-eyebrow),
+.root :global(.state-ai-kicker) {
+  margin-block: 0 0.65rem;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.root :global(.defender-window-scroll),
+.root :global(.state-ai-svg-scroll) {
+  min-inline-size: 0;
+  max-inline-size: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+.root :global(.defender-window-svg),
+.root :global(.state-ai-svg) {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+}
+.root :global(.defender-window-svg) {
+  min-inline-size: 640px;
+}
+.root :global(.state-ai-svg) {
+  min-inline-size: 320px;
+}
+.root :global(.defender-window-svg text),
+.root :global(.state-ai-svg text) {
+  fill: var(--foreground);
+  font-family: inherit;
+}
+.root :global(.defender-window-svg path) {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.root :global(.defender-window-axis) {
+  fill: var(--muted-foreground);
+  font-size: 16px;
+}
+.root :global(.defender-window-axes) {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.root :global(.defender-window-svg .defender-window-area) {
+  fill: var(--notion-orange);
+  fill-opacity: 0.1;
+  stroke: none;
+}
+.root :global(.defender-window-frontier) {
+  stroke: var(--notion-green);
+  stroke-width: 2;
+}
+.root :global(.defender-window-diffused) {
+  stroke: var(--notion-blue);
+  stroke-width: 2;
+}
+.root :global(.defender-window-operational) {
+  stroke: var(--notion-orange);
+  stroke-width: 3;
+}
+.root :global(.defender-window-adoption) {
+  font-size: 16px;
+  font-weight: 600;
+}
+.root :global(.defender-window-adoption-line) {
+  stroke: var(--muted-foreground);
+  stroke-width: 1;
+}
+.root :global(.defender-window-adoption-dot) {
+  fill: var(--notion-orange);
+  stroke: var(--foreground);
+  stroke-width: 1;
+}
+.root :global(.defender-window-callout) {
+  font-size: 20px;
+  font-style: italic;
+}
+.root :global(.defender-window-legend-rule) {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.root :global(.defender-window-legend) {
+  font-size: 16px;
+  font-weight: 600;
+}
+.root :global(.defender-window-scroll-hint) {
+  display: none;
+}
+.root :global(.defender-window-source),
+.root :global(.state-ai-source) {
+  margin-block: 0.85rem 0;
+  color: var(--muted-foreground);
+  font-size: 0.6875rem;
+  line-height: 1.6;
+}
+.root :global(.state-ai-label),
+.root :global(.state-ai-value) {
+  font-size: 12px;
+  font-weight: 600;
+}
+.root :global(.state-ai-value) {
+  font-variant-numeric: tabular-nums;
+}
+.root :global(.state-ai-svg .state-ai-axis) {
+  fill: var(--muted-foreground);
+  font:
+    9px ui-monospace,
+    monospace;
+}
+.root :global(.state-ai-track) {
+  stroke: var(--border);
+  stroke-width: 1;
+}
+.root :global(.state-ai-tick) {
+  stroke: var(--muted-foreground);
+  stroke-width: 1;
+}
+.root :global(.state-ai-range) {
+  fill: var(--background);
+  stroke: var(--muted-foreground);
+  stroke-width: 1;
+}
+.root :global(.state-ai-range-focal) {
+  fill: var(--notion-orange);
+  stroke: var(--foreground);
+}
+.root :global(.state-ai-duration) {
+  fill: var(--foreground);
+}
+.root :global(.state-ai-delay) {
+  display: grid;
+  gap: 0.25rem;
+  margin-block: 1rem;
+}
+.root :global(.state-ai-delay strong) {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+.root :global(.state-ai-delay span) {
+  color: var(--muted-foreground);
+  font-size: 0.75rem;
+}
+.root :global(.state-ai-chronology) {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.root :global(.state-ai-chronology li) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1rem;
+  padding-block: 0.75rem;
+  padding-inline: 0;
+  margin: 0;
+  border-block-start: 1px solid var(--border);
+  font-size: 0.8125rem;
+}
+.root :global(.state-ai-chronology time) {
+  flex: 0 0 8ch;
+  color: var(--muted-foreground);
+  font:
+    0.6875rem/1.5 ui-monospace,
+    monospace;
+  font-variant-numeric: tabular-nums;
+}
+.root :global(.state-ai-chronology span) {
+  flex: 1 1 16ch;
+  min-inline-size: 0;
+}
+.root :global(.state-ai-chronology .state-ai-chronology-focal) {
+  border-block-start-color: var(--notion-orange);
+  font-weight: 600;
+}
+.root :global(.state-ai-control-note) {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-block: 1rem 0;
+}
+
+/* This small island makes containment and replacement constraints tangible. */
+.root :global(.protection-inner) {
+  padding-block: 1.25rem;
+}
+.root :global(.protection-inner h3) {
+  margin-block: 0 1.5rem;
+}
+.root :global(.estate-controls) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-block: 1.5rem;
+  padding: 0;
+  border: 0;
+}
+.root :global(.estate-controls legend) {
+  font-size: 0.6875rem;
+  color: var(--muted-foreground);
+  margin-block-end: 0.75rem;
+}
+.root :global(.estate-controls label) {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border);
+  padding-block: 0.65rem;
+  padding-inline: 0.75rem;
+  min-block-size: 44px;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+.root :global(.estate-controls input) {
+  position: absolute;
+  opacity: 0;
+  inline-size: 1px;
+  block-size: 1px;
+}
+.root :global(.estate-controls label:has(input:focus-visible)) {
+  outline: 2px solid var(--foreground);
+  outline-offset: 3px;
+}
+.root :global(.estate-controls label[data-active='true']) {
+  border-color: var(--notion-blue);
+  color: var(--notion-blue);
+  background: color-mix(in oklch, var(--notion-blue) 6%, var(--background));
+}
+.root :global(.estate-controls label:active) {
+  background: var(--muted);
+}
+.root :global(.containment-control) {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  min-block-size: 44px;
+  margin-block: 1rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+.root :global(.containment-control input) {
+  inline-size: 1rem;
+  block-size: 1rem;
+  flex-shrink: 0;
+  accent-color: var(--notion-blue);
+}
+.root :global(.containment-path) {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.8rem;
+  border: 1px solid var(--border);
+  margin-block: 1rem 1.5rem;
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+}
+.root :global(.containment-path[data-active='true']) {
+  border-color: var(--notion-blue);
+  color: var(--notion-blue);
+  background: color-mix(in oklch, var(--notion-blue) 6%, var(--background));
+}
+.root :global(.path-label) {
+  font-size: 0.625rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.root :global(.repair-path) {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-block: 1.5rem;
+}
+.root :global(.repair-node) {
+  position: relative;
+  text-align: center;
+  padding-inline: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.55;
+}
+.root :global(.path-dot) {
+  display: block;
+  position: relative;
+  z-index: 1;
+  inline-size: 1rem;
+  block-size: 1rem;
+  border: 1px solid var(--notion-blue);
+  border-radius: 50%;
+  background: var(--notion-blue);
+  margin-block-end: 0.85rem;
+  margin-inline: auto;
+  box-shadow: 0 0 0 5px var(--background);
+}
+.root :global(.repair-node[data-gap='true'] .path-dot) {
+  background: var(--background);
+  border: 2px dashed var(--notion-red);
+}
+.root :global(.path-connector) {
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 7px;
+  inline-size: 100%;
+  block-size: 1px;
+  background: var(--border);
+}
+.root :global(.protection-result) {
+  border-inline-start: 2px solid var(--notion-blue);
+  padding-inline-start: 1.25rem;
+  font-size: 0.8125rem;
+}
+.root :global(.protection-result p) {
+  color: var(--muted-foreground);
+  font-size: 0.8125rem;
+  margin-block: 0.65rem 0;
+}
+.root :global(.visual-source),
+.root :global(.visual-details) {
+  color: var(--muted-foreground);
+  font-size: 0.6875rem;
+  margin-block-start: 1rem;
+}
+.root :global(.visual-details ul) {
+  padding-inline-start: 1.5rem;
+}
+.root :global(.visual-details li) {
+  margin-block: 0.85rem;
+}
+
+@media (max-width: 960px) {
+  .root {
+    --essay-number-gap: 0.4rem;
+  }
+  .root :global(.essay-section-grid) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+  .root :global(.essay-margin) {
+    max-inline-size: 35rem;
+    margin-block-end: 0.5rem;
+  }
+}
+@media (max-width: 704px) {
+  .root {
+    --essay-number-width: 0.65rem;
+    --essay-number-gap: 0.2rem;
+  }
+  .root :global(.chapter-number),
+  .root :global(.forecast-index) {
+    font-size: 0.625rem;
+  }
+  .root :global(.defender-window-scroll-hint) {
+    display: block;
+    font-size: 0.6875rem;
+    color: var(--muted-foreground);
+    margin-block: 0.75rem 0;
+  }
+  .root :global(.source-top) {
+    display: block;
+  }
+  .root :global(.source-top span) {
+    display: block;
+    margin-block-start: 0.25rem;
+  }
+}
+@media print {
+  .contents,
+  .root :global(.content-back),
+  .root :global(.estate-controls),
+  .root :global(.containment-control) {
+    display: none;
+  }
+  .root :global(.essay-section-grid) {
+    display: block;
+  }
+  .root :global(.essay-margin) {
+    margin-block: 1rem;
+  }
+  .root :global(.defender-window-scroll),
+  .root :global(.state-ai-svg-scroll) {
+    overflow-x: visible;
+  }
+  .root :global(.defender-window-svg),
+  .root :global(.state-ai-svg) {
+    min-inline-size: 0;
+  }
+  .root :global(.defender-window),
+  .root :global(.state-ai-evidence),
+  .root :global(.essay-pullquote) {
+    break-inside: avoid;
+  }
+}

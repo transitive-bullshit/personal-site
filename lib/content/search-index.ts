@@ -3,15 +3,20 @@ import { site } from '../site'
 import { walkBlocks } from './references'
 import { validateSlug } from './routes'
 import type { Article, Project, Snapshot } from './schema'
+import { getBodyOverride } from './body-overrides'
 
 function articleBodyTerms(article: Article | Project, metadata: string) {
-  const text: string[] = []
-  walkBlocks(article.blocks, (block) => {
-    if (block.type === 'heading')
-      text.push(block.richText.map((part) => part.text).join(''))
-    if ('caption' in block)
-      text.push(block.caption.map((part) => part.text).join(''))
-  })
+  const bodyOverride =
+    'authors' in article ? undefined : getBodyOverride(article.id)
+  const text: string[] =
+    bodyOverride?.headings.map((heading) => heading.text) ?? []
+  if (!bodyOverride)
+    walkBlocks(article.blocks, (block) => {
+      if (block.type === 'heading')
+        text.push(block.richText.map((part) => part.text).join(''))
+      if ('caption' in block)
+        text.push(block.caption.map((part) => part.text).join(''))
+    })
   const metadataTerms = new Set(metadata.split(' '))
   // Headings and authored captions provide a small, predictable fallback.
   return [...new Set(normalizeSearchText(text.join(' ')).split(' '))]

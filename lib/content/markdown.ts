@@ -2,6 +2,7 @@ import type { Article, Block, Project, RichText, Snapshot } from './schema'
 import { normalizeHeadingLevels } from './headings'
 import { markdownPath } from './markdown-path'
 import { site } from '../site'
+import { getBodyOverride } from './body-overrides'
 
 function escapeText(text: string) {
   return text
@@ -258,6 +259,7 @@ export function markdownBlocks(
 
 export function entryMarkdown(entry: Article | Project, snapshot: Snapshot) {
   const project = 'authors' in entry
+  const bodyOverride = project ? undefined : getBodyOverride(entry.id)
   const path = (project ? '/projects/' : '/') + entry.slug
   const author = project
     ? entry.authors
@@ -283,11 +285,13 @@ export function entryMarkdown(entry: Article | Project, snapshot: Snapshot) {
       if (href) lines.push(`[${label}](<${href}>)`)
     }
   }
-  if (entry.cover && snapshot.media[entry.cover])
+  if (!bodyOverride && entry.cover && snapshot.media[entry.cover])
     lines.push(
       `![${escapeText(entry.title)}](<${snapshot.media[entry.cover]!.original.url}>)`
     )
-  lines.push(markdownBlocks(entry.blocks, snapshot, path))
+  lines.push(
+    bodyOverride?.markdown ?? markdownBlocks(entry.blocks, snapshot, path)
+  )
   return lines.filter(Boolean).join('\n\n') + '\n'
 }
 
