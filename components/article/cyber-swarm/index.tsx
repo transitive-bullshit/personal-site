@@ -326,11 +326,6 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
             id='predictions-heading'
             plain
           />
-          <EssayText
-            text={essayChrome.predictionsDates}
-            className='forecast-dates'
-            plain
-          />
         </header>
         <div className='essay-section-grid'>
           <div className='essay-copy'>

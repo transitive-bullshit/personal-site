@@ -13,7 +13,6 @@ export const essayChrome = {
   swarmCaption: 'Same composition. A different battlefield.',
   predictionsTitle: 'Concrete predictions',
   predictionsEyebrow: 'Personal predictions / 12–18 months',
-  predictionsDates: 'October 2027 checkpoint · April 2028 deadline',
   predictionsIntro:
     'These are my predictions for the next twelve to eighteen months.',
   predictionsMarginLabel: 'Evidence → judgment',
@@ -27,7 +26,7 @@ export const essayOpening = [
   "Drones take this change in the economics of warfare further. We've seen this pattern before: a new weapon fundamentally changes the economics and balance of power. Think about gunpowder, or more recently, drones that can be mass-produced cheaply and efficiently compared with very large, slow-moving military infrastructure like aircraft carriers. Repeated drone waves put sustained pressure on distributed infrastructure, even as cheap, layered defenses improve. [19]",
   "We're already seeing a similar pattern in cybersecurity: cheap agents probing, adapting, trying again, and working across many targets at once. Even if you're sufficiently AGI-pilled, I think it's easy to underestimate how much of today's security depends on expert attack effort staying expensive.",
   "The frontier labs are already mobilizing defenses. But I don't believe that will be enough. My core view is that AI makes sustained expert attack effort cheap faster than reliable protection reaches much of the world it attacks.",
-  'Attackers can choose where to apply that effort. Defenders have to keep the systems they already run working. That is the asymmetry I want people to have in mind—and why I expect the transition to favor offense across the exposed world.'
+  'Attackers can choose where to apply that effort. Defenders have to keep the systems they already run working. That is the asymmetry I want people to have in mind—and why I expect the transition to favor offense across much of the exposed world.'
 ]
 
 export const essayParts: EssayPart[] = [

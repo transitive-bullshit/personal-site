@@ -423,7 +423,7 @@ summary {
   border-radius: 4px;
   overflow-wrap: anywhere;
 }
-.article-body figure {
+.article-body figure:where(:not(.article-cover)) {
   margin-block: 32px;
 }
 .article-body figcaption,

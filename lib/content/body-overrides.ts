@@ -159,7 +159,6 @@ function cyberSwarmMarkdown() {
   blocks.push(
     anchor('predictions'),
     cite('## ' + essayChrome.predictionsTitle),
-    '*' + cite(essayChrome.predictionsDates) + '*',
     cite(finalForecastPremise),
     cite(essayChrome.predictionsIntro)
   )

@@ -15268,13 +15268,6 @@
         {
           "children": [],
           "color": "default",
-          "id": "3f7edb27f12480f5b9a6cb01533b8c2e",
-          "richText": [],
-          "type": "paragraph"
-        },
-        {
-          "children": [],
-          "color": "default",
           "id": "716e39de278141f6991abaf3c751f01c",
           "level": 3,
           "richText": [
@@ -15634,6 +15627,13 @@
           "id": "3f7edb27f1248017bee1fe48999227dd",
           "type": "bookmark",
           "url": "https://www.notboring.co/p/the-great-online-game"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f12480d6a8f1c0e14ecbc0fd",
+          "type": "bookmark",
+          "url": "https://www.transitivebullsh.it/finding-your-passion-as-a-developer"
         },
         {
           "children": [],
@@ -16160,7 +16160,25 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "and my personal motto that my heart is open source 💕",
+              "text": "and my personal motto: ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "my heart is open source",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " 💕",
               "underline": false
             }
           ],
@@ -16178,8 +16196,7 @@
       "description": "On the importance of sharing what you learn publicly as you go along.",
       "featured": true,
       "id": "3f7edb27f12481ad887ee8617d554ab2",
-      "modified": "2026-10-12T12:39:00.000Z",
-      "needsImageSync": true,
+      "modified": "2026-10-12T13:02:00.000Z",
       "published": "2026-10-12",
       "slug": "learn-in-public",
       "tags": [
@@ -16202,9 +16219,9 @@
         }
       ],
       "description": "AI is turning cybersecurity into drone swarm warfare, and this will lead to increasingly consequential cyberattacks over the next 18 months.",
-      "featured": false,
+      "featured": true,
       "id": "3f7edb27f12481bcb191fcff5dcafd41",
-      "modified": "2026-10-12T11:02:00.000Z",
+      "modified": "2026-10-12T13:00:00.000Z",
       "published": "2026-10-12",
       "slug": "ai-cyberswarm-warfare",
       "tags": [
@@ -40960,8 +40977,8 @@
             {
               "bold": false,
               "code": false,
-              "color": "yellow_background",
-              "italic": false,
+              "color": "default_background",
+              "italic": true,
               "strike": false,
               "text": "When was the last time you worked on a project where you truly cared about the problem you were trying to solve?",
               "underline": false
@@ -41550,8 +41567,8 @@
             {
               "bold": false,
               "code": false,
-              "color": "yellow_background",
-              "italic": false,
+              "color": "default_background",
+              "italic": true,
               "strike": false,
               "text": "Developer liberty is anything that gives developers the flexibility and financial freedom to focus on their passion projects.",
               "underline": false
@@ -42637,7 +42654,7 @@
       "description": "When was the last time you worked on a project where you truly believed in and cared about the problem you were trying to solve?",
       "featured": true,
       "id": "a635f51c08004cd78fc6b648a0fe50e6",
-      "modified": "2026-08-20T16:37:00.000Z",
+      "modified": "2026-10-12T13:03:00.000Z",
       "published": "2020-02-21",
       "slug": "finding-your-passion-as-a-developer",
       "tags": [
@@ -71100,6 +71117,11 @@
   "bookmarks": {
     "https://2021.stateofjs.com/en-US/libraries/": {
       "description": "The 2021 edition of the annual survey about the latest trends in the JavaScript ecosystem.",
+      "screenshot": {
+        "height": 480,
+        "url": "/bookmarks/4b5222d91b7a43332ff3c722dedb6c2d19c560f260a99fe422d10dbe95f4eba3.webp",
+        "width": 640
+      },
       "title": "The State of JS 2021: Libraries"
     },
     "https://a16z.com/2020/01/08/key-metrics-for-the-passion-economy/": {
@@ -71877,20 +71899,74 @@
       "title": ""
     },
     "https://every.to/divinations/elon-is-right-twitter-should-open-up-the-algorithm": {
-      "description": "",
-      "title": ""
+      "description": "Commoditizing tweets’ complement (the algorithm) will increase usage and rebuild trust",
+      "screenshot": {
+        "height": 480,
+        "url": "/bookmarks/8c0afbcfc73b01b4efc8e98ba80f063b67c5c60362d8375640c40b1a7434bd69.webp",
+        "width": 640
+      },
+      "title": "Elon is Right: Twitter Should Open Up the Algorithm"
     },
     "https://every.to/means-of-creation": {
       "description": "",
+      "screenshot": {
+        "height": 480,
+        "url": "/bookmarks/ffb7000fe9127a9decaf8348f9767b47315c488635aca16b75b8e2d757f83ee7.webp",
+        "width": 640
+      },
       "title": ""
     },
     "https://every.to/means-of-creation/the-art-of-unbundling-with-greg-isenberg-904156": {
-      "description": "",
-      "title": ""
+      "description": "The Consumer Social innovator on how audiences become communities — and how you should monetize them",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoIAAYAA4BaJaQAApxXVWgAAPhiWNzXN2IOZq4nFwSDS8CKae7Bzn3JxMkxb/bTpcJwAAAA",
+        "original": {
+          "bytes": 283905,
+          "hash": "46d44a7426f3998772f848a07b074c39adcf4f15ee8d1ca3cd8a1347c0ccec25",
+          "height": 1069,
+          "key": "personal-site/media/46d44a7426f3998772f848a07b074c39adcf4f15ee8d1ca3cd8a1347c0ccec25.jpg",
+          "mime": "image/jpeg",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/46d44a7426f3998772f848a07b074c39adcf4f15ee8d1ca3cd8a1347c0ccec25.jpg",
+          "width": 1399
+        },
+        "pipelineVersion": 2,
+        "source": {
+          "edited": "https://d24ovhgu8s7341.cloudfront.net/uploads/post/cover/1193/newsprint_Greg-Isenberg-of-5by_0.jpg",
+          "key": "bookmark:6b7f17efb875f05d9eb77f709e713b85180f7d14c1821cfa4c4283092c1ad6cc",
+          "kind": "external",
+          "url": "https://d24ovhgu8s7341.cloudfront.net/uploads/post/cover/1193/newsprint_Greg-Isenberg-of-5by_0.jpg"
+        },
+        "variants": [
+          {
+            "bytes": 58900,
+            "hash": "25126126f6b583b72e8adf0a1007b62ea5f5a7d587ab4260218aba29dc6db7c5",
+            "height": 734,
+            "key": "personal-site/media/25126126f6b583b72e8adf0a1007b62ea5f5a7d587ab4260218aba29dc6db7c5.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/25126126f6b583b72e8adf0a1007b62ea5f5a7d587ab4260218aba29dc6db7c5.webp",
+            "width": 960
+          },
+          {
+            "bytes": 183996,
+            "hash": "cb50cdaaac17c53cb3329701f3e2fb40bc4f5523571402d5363b9a1d06022062",
+            "height": 1069,
+            "key": "personal-site/media/cb50cdaaac17c53cb3329701f3e2fb40bc4f5523571402d5363b9a1d06022062.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/cb50cdaaac17c53cb3329701f3e2fb40bc4f5523571402d5363b9a1d06022062.webp",
+            "width": 1399
+          }
+        ]
+      },
+      "title": "The Art of Unbundling, with Greg Isenberg"
     },
     "https://every.to/napkin-math/what-are-ai-agents-and-who-profits-from-them": {
-      "description": "",
-      "title": ""
+      "description": "The newest wave of AI research is changing everything",
+      "screenshot": {
+        "height": 480,
+        "url": "/bookmarks/b3c9bb2ec799202b816d5d707ed439b7ec4c837cc87260247bd278b62866cc01.webp",
+        "width": 640
+      },
+      "title": "What Are AI Agents—And Who Profits From Them?"
     },
     "https://github.com/transitive-bullshit/chatgpt-api": {
       "description": "Your API ⇒ Paid MCP. Instantly. Contribute to transitive-bullshit/agentic development by creating an account on GitHub.",
@@ -71980,6 +72056,45 @@
     },
     "https://github.com/transitive-bullshit/create-react-library": {
       "description": "CLI for creating reusable react libraries. Contribute to transitive-bullshit/create-react-library development by creating an account on GitHub.",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAQAA4BaJZwAAudZuFQA/vcRkdp6iVVQj9v75/gAAA==",
+        "original": {
+          "bytes": 90037,
+          "hash": "4f7abd531122ee71b948749291bce9a5ac132d18ce95e08edd90ee20e5f4d7ad",
+          "height": 600,
+          "key": "personal-site/media/4f7abd531122ee71b948749291bce9a5ac132d18ce95e08edd90ee20e5f4d7ad.png",
+          "mime": "image/png",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/4f7abd531122ee71b948749291bce9a5ac132d18ce95e08edd90ee20e5f4d7ad.png",
+          "width": 1200
+        },
+        "pipelineVersion": 2,
+        "source": {
+          "edited": "https://opengraph.githubassets.com/6ac826d3541a2f76c33eebffe6a3bb78e34613a959e6ff1e79006292caea9ac2/transitive-bullshit/create-react-library",
+          "key": "bookmark:67f1023b936673eea4cc521d300ebf1e71f3a90a3add7a41f23b481bfd5677af",
+          "kind": "external",
+          "url": "https://opengraph.githubassets.com/6ac826d3541a2f76c33eebffe6a3bb78e34613a959e6ff1e79006292caea9ac2/transitive-bullshit/create-react-library"
+        },
+        "variants": [
+          {
+            "bytes": 18140,
+            "hash": "87a1f6103ffc106b30e3c13f0d940b2529e206e3e58503a1b3f2abfc4c1775a4",
+            "height": 480,
+            "key": "personal-site/media/87a1f6103ffc106b30e3c13f0d940b2529e206e3e58503a1b3f2abfc4c1775a4.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/87a1f6103ffc106b30e3c13f0d940b2529e206e3e58503a1b3f2abfc4c1775a4.webp",
+            "width": 960
+          },
+          {
+            "bytes": 30522,
+            "hash": "373f9e61123adf9e99ef544634aafad664c1b79a656e3cda0d5236f962754bba",
+            "height": 600,
+            "key": "personal-site/media/373f9e61123adf9e99ef544634aafad664c1b79a656e3cda0d5236f962754bba.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/373f9e61123adf9e99ef544634aafad664c1b79a656e3cda0d5236f962754bba.webp",
+            "width": 1200
+          }
+        ]
+      },
       "title": "GitHub - transitive-bullshit/create-react-library: CLI for creating reusable react libraries."
     },
     "https://github.com/transitive-bullshit/react-fluid-gallery": {
@@ -72328,10 +72443,20 @@
     },
     "https://li-jin.co/2019/10/22/the-passion-economy-and-the-future-of-work/": {
       "description": "Find information, resources and relevant links for li-jin.co. This domain may be for sale.",
+      "screenshot": {
+        "height": 480,
+        "url": "/bookmarks/c6890fbfaf774bf852e4184d3786c259eefff09b9dcc988bfc0027414d895738.webp",
+        "width": 640
+      },
       "title": "li-jin.co"
     },
     "https://li-jin.co/2020/02/19/100-true-fans/": {
       "description": "Find information, resources and relevant links for li-jin.co. This domain may be for sale.",
+      "screenshot": {
+        "height": 480,
+        "url": "/bookmarks/c6890fbfaf774bf852e4184d3786c259eefff09b9dcc988bfc0027414d895738.webp",
+        "width": 640
+      },
       "title": "li-jin.co"
     },
     "https://li.substack.com/p/unbundling-work-from-employment": {
@@ -72379,6 +72504,11 @@
     },
     "https://lilianweng.github.io/posts/2023-06-23-agent/": {
       "description": "Building agents with LLM (large language model) as its core controller is a cool concept. Several proof-of-concepts demos, such as AutoGPT, GPT-Engineer and BabyAGI, serve as inspiring examples. The potentiality of LLM extends beyond generating well-written copies, stories, essays and programs; it can be framed as a powerful general problem solver.\nAgent System Overview\nIn a LLM-powered autonomous agent system, LLM functions as the agent’s brain, complemented by several key components:\n\nPlanning\n\nSubgoal and decomposition: The agent breaks down large tasks into smaller, manageable subgoals, enabling efficient handling of complex tasks.\nReflection and refinement: The agent can do self-criticism and self-reflection over past actions, learn from mistakes and refine them for future steps, thereby improving the quality of final results.\n\n\nMemory\n\nShort-term memory: I would consider all the in-context learning (See Prompt Engineering) as utilizing short-term memory of the model to learn.\nLong-term memory: This provides the agent with the capability to retain and recall (infinite) information over extended periods, often by leveraging an external vector store and fast retrieval.\n\n\nTool use\n\nThe agent learns to call external APIs for extra information that is missing from the model weights (often hard to change after pre-training), including current information, code execution capability, access to proprietary information sources and more.\n\n\n\n\n\t\n\tOverview of a LLM-powered autonomous agent system.\n\nComponent One: Planning\nA complicated task usually involves many steps. An agent needs to know what they are and plan ahead.",
+      "screenshot": {
+        "height": 480,
+        "url": "/bookmarks/ccf55fffd26677df45be85f913a8b56db851ab9ad87617854c5b2e3a1178eb67.webp",
+        "width": 640
+      },
       "title": "LLM Powered Autonomous Agents"
     },
     "https://marketingexamples.com/": {
@@ -78657,6 +78787,11 @@
     },
     "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/": {
       "description": "Hoard things you know how to do - Agentic Engineering Patterns",
+      "screenshot": {
+        "height": 480,
+        "url": "/bookmarks/86e8afab39c7b04c0578143d122a3d9cccc5397091857ae62f36584c38e68686.webp",
+        "width": 640
+      },
       "title": "Hoard things you know how to do - Agentic Engineering Patterns"
     },
     "https://stratechery.com/2021/clubhouses-inevitability/": {
@@ -78824,6 +78959,11 @@
     },
     "https://techcrunch.com/2021/02/06/4-creator-economy-vcs-see-startup-opportunities-in-monetization-discovery-and-much-more/": {
       "description": "Everyone knows YouTubers and other creators are popular with internet users of all ages. But today, these influencers also have real businesses powered by",
+      "screenshot": {
+        "height": 480,
+        "url": "/bookmarks/f3ae5cf969adf09c0a2b747a4b357649a71d4aeacdadff9766bcf27fe810657b.webp",
+        "width": 640
+      },
       "title": "5 creator economy VCs see startup opportunities in monetization, discovery and much more | TechCrunch"
     },
     "https://thegeneralist.substack.com/p/audience-and-wealth-part-i": {
@@ -79551,6 +79691,49 @@
       },
       "title": "Mark Cuban is co-founding a podcast app where hosts can talk to fans live and monetize their conversations"
     },
+    "https://www.transitivebullsh.it/finding-your-passion-as-a-developer": {
+      "description": "When was the last time you worked on a project where you truly believed in and cared about the problem you were trying to solve?",
+      "image": {
+        "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoIAAQAA4BaJYgCdAEO+mGsAAD+uBdeI4zhLs4NJDzMg95tAM9xWPj42y3w8N03yVq2u6gAAAA=",
+        "original": {
+          "bytes": 43330,
+          "hash": "fd02b38872c23ff4d20edaf715d18d3db7d8512862423961fd4dc0db14e9238a",
+          "height": 630,
+          "key": "personal-site/media/fd02b38872c23ff4d20edaf715d18d3db7d8512862423961fd4dc0db14e9238a.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/fd02b38872c23ff4d20edaf715d18d3db7d8512862423961fd4dc0db14e9238a.webp",
+          "width": 1200
+        },
+        "pipelineVersion": 2,
+        "source": {
+          "edited": "https://www.transitivebullsh.it/api/social-image/finding-your-passion-as-a-developer?v=fecab5f0a33a9c32",
+          "key": "bookmark:31d89f2826a64d6bea872a2ffceaf2a3bdf6297924f1db00e324c8e32ce07be4",
+          "kind": "external",
+          "url": "https://www.transitivebullsh.it/api/social-image/finding-your-passion-as-a-developer?v=fecab5f0a33a9c32"
+        },
+        "variants": [
+          {
+            "bytes": 16464,
+            "hash": "e966f6b524e4a17cfe3a5de63d9d7124ac1123e54bc1f8c057f0ea1401de9fb3",
+            "height": 504,
+            "key": "personal-site/media/e966f6b524e4a17cfe3a5de63d9d7124ac1123e54bc1f8c057f0ea1401de9fb3.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/e966f6b524e4a17cfe3a5de63d9d7124ac1123e54bc1f8c057f0ea1401de9fb3.webp",
+            "width": 960
+          },
+          {
+            "bytes": 30430,
+            "hash": "5e109ca3a84a37d8ebc4983bd3e367b54666e194c317556cf963c2b12b515515",
+            "height": 630,
+            "key": "personal-site/media/5e109ca3a84a37d8ebc4983bd3e367b54666e194c317556cf963c2b12b515515.webp",
+            "mime": "image/webp",
+            "url": "https://assets.cultural-alignment.com/personal-site/media/5e109ca3a84a37d8ebc4983bd3e367b54666e194c317556cf963c2b12b515515.webp",
+            "width": 1200
+          }
+        ]
+      },
+      "title": "Finding Your Passion as a Developer"
+    },
     "https://www.verblio.com/video": {
       "description": "Our team can create eye catching videos that can be added to your posts for use on social media and embedding on your site. Check them out here.",
       "image": {
@@ -79759,7 +79942,7 @@
       ]
     },
     "05f7918a490b44aa86448ad5381255f5": {
-      "blurDataURL": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoIAAYAA4BaJbACdH8AGBdo/2AA/sqzsyul88QpV9vkJwcryuQSg5NjD41i0zLlCnTLHZ2irCd38vsGk+i0rrv8m1WwiKV8XM4CszOAAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoIAAYAA4BaJbACdH8AExt0LgAA/sqzsyul8+L1C2aMdznLNKSZ9wmP/i25Q/Eem5ARnwu3M6mnHdv/l9g0n0Wldd/qbVbCIpXxcz4YdePYAAAA",
       "original": {
         "bytes": 108285,
         "hash": "bc726ae2877bad90d0b4b76c0021e51105bc5ab3807c9d45348d7743f44a6ec9",
@@ -79769,7 +79952,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/bc726ae2877bad90d0b4b76c0021e51105bc5ab3807c9d45348d7743f44a6ec9.png",
         "width": 1024
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2021-06-02T05:06:00.000Z",
         "key": "05f7918a490b44aa86448ad5381255f5",
@@ -84015,7 +84198,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-12T12:06:00.000Z",
+        "edited": "2026-10-12T13:02:00.000Z",
         "key": "3f7edb27f12481ad887ee8617d554ab2:cover",
         "kind": "file"
       },
@@ -84730,7 +84913,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/d8be86106cd52ebf2a5e5abebca62f02b21c21392fb6ba5e528e7e992090be97.gif",
         "width": 420
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2022-03-31T18:27:00.000Z",
         "key": "54236f2425eb414c9a02000dfe5c78d6",
@@ -85560,7 +85743,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/74776fa536a7637f9bb92a76939fb264f74540f85efc157a4626b0c27675bb0a.gif",
         "width": 500
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-08-20T16:37:00.000Z",
         "key": "73949840d1dc4093a8c559abd7faf2cb",
@@ -87431,7 +87614,7 @@
       ]
     },
     "a635f51c08004cd78fc6b648a0fe50e6:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAwAgCdASoIAAUAA4BaJbACdLoAyv8DzsoXHADOGkzReqBKHWZBfra3oNy3fVk8Fg/sRpfX6M8rNVHphngAAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAAAwAgCdASoIAAUAA4BaJbACdLoAyv8D0ARRoADOGkzRfIYHg4/7af3c1IKPHhV2mexdVv9g3He/LU1mqj0w59AA",
       "original": {
         "bytes": 147158,
         "hash": "87a469039e4b448b70bd5f374832632470d260fbc819bb1851ba1199482c39cd",
@@ -87441,9 +87624,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/87a469039e4b448b70bd5f374832632470d260fbc819bb1851ba1199482c39cd.jpg",
         "width": 2000
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-08-20T16:37:00.000Z",
+        "edited": "2026-10-12T13:03:00.000Z",
         "key": "a635f51c08004cd78fc6b648a0fe50e6:cover",
         "kind": "file"
       },
