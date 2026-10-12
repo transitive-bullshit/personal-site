@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto'
 import type { Article, Snapshot } from './content/schema'
 import { deploymentOrigin, site } from './site'
+import { getBodyOverride } from './content/body-overrides'
 
 export const socialImageSize = { width: 1200, height: 630 } as const
 // Bump when the template changes so social crawlers discover a fresh image URL.
@@ -22,6 +23,8 @@ export function socialImageData(article: Article, snapshot: Snapshot) {
 export type SocialImageData = ReturnType<typeof socialImageData>
 
 export function socialImagePath(article: Article, snapshot: Snapshot) {
+  const override = getBodyOverride(article.id)?.socialImagePath
+  if (override) return override
   const version = createHash('sha256')
     .update(
       JSON.stringify([templateVersion, socialImageData(article, snapshot)])
