@@ -71,7 +71,9 @@ function PullQuote({ index }: { index: 0 | 1 | 4 }) {
     <figure className='essay-pullquote'>
       <blockquote>“{q.text}”</blockquote>
       <figcaption>
-        <a href={q.url}>{q.author} ↗</a>
+        <a className='link' href={q.url}>
+          {q.author} ↗
+        </a>
       </figcaption>
     </figure>
   )
@@ -164,13 +166,17 @@ function SourceNotes() {
               id={`source-${source.id}`}
               key={source.id}
             >
-              <a href={source.url}>{source.title} ↗</a>
+              <a className='link' href={source.url}>
+                {source.title} ↗
+              </a>
             </li>
           )
         })}
         {furtherReading.map((source) => (
           <li key={source.url}>
-            <a href={source.url}>{source.title} ↗</a>
+            <a className='link' href={source.url}>
+              {source.title} ↗
+            </a>
           </li>
         ))}
       </ol>

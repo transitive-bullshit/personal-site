@@ -14,6 +14,7 @@ This is Travis Fischer's personal portfolio and writing site. Next.js serves com
 - Use `pnpm` and modern TypeScript without semicolons.
 - Format with `pnpm fix:format` (oxfmt); lint with `pnpm fix:lint` (oxlint).
 - Keep current guidance concise under `docs/` and update the relevant guide when behavior changes. Put dated audits and experiments in `docs/archive/`; carry forward durable decisions into the current guide. The top-level `readme.md` is human-facing.
+- Do not create redirects for unpublished draft URLs. Preserve redirects only for paths that have been published.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

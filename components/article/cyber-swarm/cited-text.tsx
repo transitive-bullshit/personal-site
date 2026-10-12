@@ -27,7 +27,7 @@ export function CitedText({ text, anchor }: { text: string; anchor?: string }) {
       )
     } else {
       nodes.push(
-        <a key={match.index} href={match[3]}>
+        <a key={match.index} className='link' href={match[3]}>
           {match[2]}
         </a>
       )
