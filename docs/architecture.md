@@ -26,6 +26,8 @@ search-index.json → lazy client search
 
 `lib/content/body-overrides.ts` selects exceptions by stable Notion page ID. Notion still owns collection membership, title, description, slug, author, tags, and publication date. The cyber swarm essay keeps prose and source data in `lib/content/essays/cyber-swarm/`, its React body and scoped styles in `components/article/cyber-swarm/`, and assets in `public/essays/cyber-swarm/`. HTML, Markdown, and search headings use the same body data; the normal article route and site shell remain in place.
 
+Code-owned essay images use the shared article lightbox. Their local originals download directly from the public asset path; the media download API remains restricted to stored snapshot originals. Search uses the full set of rendered headings and authored captions independently of the shorter table of contents.
+
 ## Domain objects
 
 The executable contract is `lib/content/schema.ts`; these distinctions explain how to use it.

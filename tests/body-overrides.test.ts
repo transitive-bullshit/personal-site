@@ -9,6 +9,7 @@ import {
 } from '../lib/content/body-overrides'
 import { entryMarkdown } from '../lib/content/markdown'
 import { buildSearchIndex } from '../lib/content/search-index'
+import { searchDocuments } from '../lib/search'
 import { resolveRoute } from '../lib/content/routes'
 import { sourceContract } from '../lib/site'
 import { sources } from '../lib/content/essays/cyber-swarm/content'
@@ -233,17 +234,33 @@ describe('CMS article body overrides', () => {
     expect(body).toContain('/essays/cyber-swarm/swarm.webp')
   })
 
-  it('indexes CMS metadata and custom headings without expanding search into full prose', () => {
-    const document = buildSearchIndex(snapshot()).documents.find(
-      (entry) => entry.kind === 'article'
-    )!
+  it('indexes rendered headings and authored captions without expanding the TOC or search scope', () => {
+    const index = buildSearchIndex(snapshot())
+    const document = index.documents.find((entry) => entry.kind === 'article')!
     expect(document.href).toBe('/' + article.slug)
     expect(document.title).toBe(article.title)
     expect(document.bodyTerms).toContain('coverage')
     expect(document.bodyTerms).toContain('mobilizing')
+    for (const query of [
+      'catastrophe',
+      'commodity',
+      'unauthorized',
+      'detected stopped',
+      'hours release',
+      'battlefield'
+    ])
+      expect(
+        searchDocuments(index.documents, query).map((entry) => entry.href)
+      ).toContain('/' + article.slug)
+    expect(
+      getBodyOverride(article.id)!.headings.map((heading) => heading.id)
+    ).not.toContain('prediction-catastrophe')
     expect(document.bodyTerms).not.toContain('agi')
     expect(document.bodyTerms).not.toContain('spidermonkey')
+    expect(document.bodyTerms).not.toContain('forensics')
     expect(JSON.stringify(document)).not.toContain(finalForecastPremise)
+    expect(searchDocuments(index.documents, 'agi')).toEqual([])
+    expect(searchDocuments(index.documents, 'spidermonkey')).toEqual([])
   })
 
   it('keeps publication gates and aliases ahead of both custom representations', async () => {

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeftIcon } from 'lucide-react'
 import type { Heading } from '@/lib/content/headings'
@@ -29,97 +28,9 @@ import {
 } from './evidence-visuals'
 import { DefenderWindow } from './defender-window'
 import { EssayText } from './cited-text'
+import { EssayImage } from './essay-images'
 import styles from './essay.module.css'
 
-const citationLocations = [
-  ...essayOpening.map((text, i) => ({
-    text,
-    id: `opening-${i}`,
-    label: 'The opening'
-  })),
-  ...essayParts.flatMap((p) =>
-    p.paragraphs.map((text, i) => ({
-      text,
-      id: `${p.id}-${i}`,
-      label: p.title
-    }))
-  ),
-  {
-    text: capabilityAside,
-    id: 'capability-aside',
-    label: 'Software understanding'
-  },
-  {
-    text: releaseAside,
-    id: 'coverage-replay',
-    label: 'The controlled exploit experiment'
-  },
-  ...finalPredictions.flatMap((p) => [
-    { text: p.body, id: `body-${p.id}`, label: p.title },
-    { text: p.test, id: `test-${p.id}`, label: p.title }
-  ]),
-  ...finalClosing.map((text, i) => ({
-    text,
-    id: `closing-${i}`,
-    label: essayChrome.mentalModelTitle
-  })),
-  {
-    text: finalForecastPremise,
-    id: 'forecast-premise',
-    label: 'Prediction assumptions'
-  },
-  {
-    text: essayChrome.predictionsIntro,
-    id: 'predictions-intro',
-    label: 'Concrete predictions'
-  },
-  { text: essayChrome.deck, id: 'main', label: 'The opening' },
-  {
-    text: essayChrome.swarmCaption,
-    id: 'swarm-illustration',
-    label: 'The illustration'
-  },
-  {
-    text: essayChrome.openingMarginBody,
-    id: 'opening-margin',
-    label: essayChrome.openingMarginLabel
-  },
-  {
-    text: essayChrome.predictionsMarginBody,
-    id: 'predictions-margin',
-    label: essayChrome.predictionsMarginLabel
-  },
-  {
-    text: '[22]',
-    id: 'defense-optimism',
-    label: 'Conditional defense optimism'
-  },
-  ...essayParts.map((p) => ({
-    text: `${p.margin.body} ${p.margin.refs.map((id) => `[${id}]`).join(' ')}`,
-    id: `${p.id}-margin`,
-    label: p.margin.label
-  })),
-  { text: '[20]', id: 'original-photo', label: 'The original photograph' },
-  { text: '[19]', id: 'opening-margin', label: 'The analogy' },
-  {
-    text: '[6] [13] [14]',
-    id: 'protection-paths',
-    label: 'Protection and repair paths'
-  },
-  { text: '[32]', id: 'dns-control-timeline', label: 'The shutdown gap' },
-  { text: '[26]', id: 'defenders-window', label: 'The defender’s window' },
-  {
-    text: '[29]',
-    id: 'open-model-lag',
-    label: 'Open-model capability diffusion'
-  },
-  { text: '[8]', id: 'patch-release-gap', label: 'The patch release gap' },
-  {
-    text: '[24]',
-    id: 'predictions-margin',
-    label: 'The forecast evidence note'
-  }
-]
 const usedSources = sourceOrder.map((id) => sources.find((s) => s.id === id)!)
 
 function Paragraph({
@@ -247,9 +158,6 @@ function SourceNotes() {
       </header>
       <ol>
         {usedSources.map((source) => {
-          const location = citationLocations.find((item) =>
-            item.text.includes(`[${source.id}]`)
-          ) ?? { id: 'opening', label: 'The essay' }
           return (
             <li
               value={sourceNumber(source.id)}
@@ -261,9 +169,6 @@ function SourceNotes() {
                 <span>{source.kind}</span>
               </div>
               <p>{source.note}</p>
-              <a className='return-link' href={`#${location.id}`}>
-                ↑ {location.label}
-              </a>
             </li>
           )
         })}
@@ -314,7 +219,7 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
           A new weapon changes the balance
         </h2>
         <figure id='original-photo' className='original-photo'>
-          <Image
+          <EssayImage
             src='/essays/cyber-swarm/iron-dome-original.jpg'
             width={1024}
             height={576}
@@ -359,7 +264,7 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
           </aside>
         </div>
         <figure id='swarm-illustration' className='swarm-illustration'>
-          <Image
+          <EssayImage
             src='/essays/cyber-swarm/swarm.webp'
             width={1672}
             height={941}

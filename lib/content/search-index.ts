@@ -8,8 +8,7 @@ import { getBodyOverride } from './body-overrides'
 function articleBodyTerms(article: Article | Project, metadata: string) {
   const bodyOverride =
     'authors' in article ? undefined : getBodyOverride(article.id)
-  const text: string[] =
-    bodyOverride?.headings.map((heading) => heading.text) ?? []
+  const text: string[] = bodyOverride ? [...bodyOverride.searchText] : []
   if (!bodyOverride)
     walkBlocks(article.blocks, (block) => {
       if (block.type === 'heading')
