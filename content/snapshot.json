@@ -14840,13 +14840,1498 @@
       ],
       "title": "An Army of Agents"
     },
+    "3f7edb27f12481ad887ee8617d554ab2": {
+      "author": "Travis Fischer",
+      "blocks": [
+        {
+          "children": [],
+          "color": "default",
+          "id": "535e3a3004704bdeab33e2bd833dbec1",
+          "level": 1,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The practice",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "aaff85ecc5d742c89d5e09534bd2a976",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://swyx.io/learn-in-public",
+              "italic": false,
+              "strike": false,
+              "text": "Learning in public",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " is the process of sharing what you learn publicly as you go along.",
+              "underline": false
+            }
+          ],
+          "type": "quote"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3f7edb27f12480a491b8dce810506b18",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "This is consistently ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "the single highest leverage advice",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " that I find myself giving to people because it compounds in value so much over time. It leads to increased optionality + freedom + more $$ + more rewarding work and collaborations in the long run. And this post is the canonical version of this advice that I wish I had when I was starting my career ~20 years ago.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3f7edb27f1248042a41ffff8b21b3f1d",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Learning in public is a habit built over time, and doing it well involves the following:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "12881e205a624450a79d75ae891a264f",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Adopt a creator mindset.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Make, explain, and contribute as you learn. Useful contributions can grow out of work you’re already doing.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "39b2302bc88745fe877a2259dedab474",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Embrace being a noob.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Share small, honest lessons. They don’t need to be perfect. Progress comes through attempts, corrections, and revision.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "98dc5268dce54a29aa37e6b14ddb698c",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Keep curiosity at the center.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Follow questions you genuinely care about, and make selected discoveries useful to someone else.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/visualizevalue/status/2077000167488995740",
+              "italic": false,
+              "strike": false,
+              "text": "Visualize Value · Iterate",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "257e0153e76f42b68b87fa1767752ccf",
+          "media": "257e0153e76f42b68b87fa1767752ccf",
+          "type": "image",
+          "width": 576
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d3c03d38204d46e88c75acce5e80862b",
+          "level": 1,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Why it matters",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "85ec20562e2f4cd082faec3eadb45e42",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Understand what you’re learning",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "cc467efd6e0f4d9f8d96a2b452a10403",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Explaining sharpens understanding.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Turning fragments into a clear explanation forces you to connect ideas and notice what you cannot yet explain.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/david_perell/status/1411871612702543872",
+              "italic": false,
+              "strike": false,
+              "text": "“Read to collect the dots, write to connect them” by David Perell",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "; see also his ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://perell.com/essay/the-ultimate-guide-to-writing-online/",
+              "italic": false,
+              "strike": false,
+              "text": "advice on writing online",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "fc98c808ab3143be82ecb6e275df8d01",
+          "media": "fc98c808ab3143be82ecb6e275df8d01",
+          "type": "image",
+          "width": 624
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "78015e64196442459eab1e8ebc6ac915",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Other people expand the picture.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Questions, corrections, and different perspectives can reveal gaps and introduce better problems to work on.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "67dc5f9dd0bb4fcf94781c199dac159a",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "An open door brings interruptions, but also clues you would miss alone.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ecda7cd159dd49559039557de66586ac",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "“He who works with the door open … occasionally gets clues as to what the world is and what might be important.”\n\n",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html",
+              "italic": false,
+              "strike": false,
+              "text": "Richard Hamming · You and Your Research",
+              "underline": false
+            }
+          ],
+          "type": "quote"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "8088e3728a7d4a80b7dc77eaa0127f40",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Be found through your work",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "6aabc06be6ef4b25b76828ef766cc6e9",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Your work can travel farther than you.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " A public explanation, contribution, or project can reach people beyond your existing circle and remain discoverable while you’re elsewhere.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "2f3b8bde80d946ac9fed062eb07f7535",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Create proof of work.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Give people something they can inspect: how you think, what you can do, and which problems interest you.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "290bfb6d3cd4448cb02d027585ab503e",
+          "media": "290bfb6d3cd4448cb02d027585ab503e",
+          "type": "image",
+          "width": 624
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3f7edb27f124801995eac23d5fa692f0",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://github.com/readme/guides/publishing-your-work",
+              "italic": false,
+              "strike": false,
+              "text": "Aaron Francis · Publishing your work increases your luck",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "716e39de278141f6991abaf3c751f01c",
+          "level": 3,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Increase your surface area for luck",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d4a7e43f7b334f8d8f81eba6c6b7e416",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Each useful thing you share creates another way for the right person to find you.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "8a310c4fbc914fd2aa2640e68d23d6a6",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Putting it where interested people gather creates more chances for an unexpected connection, collaboration, or opportunity.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3ebc95c946fa4ecaaf01be2e0b6e6afe",
+          "media": "3ebc95c946fa4ecaaf01be2e0b6e6afe",
+          "type": "image",
+          "width": 624
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "582e64f57fca49239c809e78f524168f",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Find your people",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "cd8af86c12d54349900165221d29f909",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Give shared interests a signal.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Let people recognize something they care about in your work and respond.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "b2863612bb4949cb9d8c9eba5399f74f",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Turn responses into relationships.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Ongoing conversations can become peers, collaborators, friendships, and a community where you belong.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "0f6ba1a720234286b0365b2a6bd14451",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Participate in return.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Help with other people’s questions, notice their work, and keep the conversation going.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "0f634177f1c74cbaac4a6c29146022ca",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://swyx.io/big-l-notation",
+              "italic": false,
+              "strike": false,
+              "text": "swyx · Learning with peers and communities",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "c312985634794b6a9d87107c2b19fa51",
+          "media": "c312985634794b6a9d87107c2b19fa51",
+          "type": "image",
+          "width": 576
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "848363de327c47b7baaf390cc379df60",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Build freedom over time",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "1c7d08bfac924a8f955ad34f74471b11",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Lessons, useful artifacts, and relationships can reinforce each other. Looking back, the whole body of work can be worth more than the sum of its parts: earlier work helps you make, understand, and connect the next thing.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "b2e5b68223a14a2cb4dd20ded555863b",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Over time, your skills, interests, and perspective can combine into a ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://perell.com/note/build-a-personal-monopoly/",
+              "italic": false,
+              "strike": false,
+              "text": "personal monopoly",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "—a category of one that people learn to seek out.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://visualizevalue.com/blog/the-almanack-of-naval-ravikant",
+              "italic": false,
+              "strike": false,
+              "text": "Visualize Value · Keep redefining what you do",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "2090008f3d6645bc912570ff77870a2e",
+          "media": "2090008f3d6645bc912570ff77870a2e",
+          "type": "image",
+          "width": 624
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "07ebe944024148dcb78c84b5dc7e3748",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Establish a personal brand.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " A consistent body of work gives people a sense of your interests, strengths, and judgment—what they can come to you for.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "db184747928949ad8ea2c1b05b0e66c1",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Build an audience.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " People who find your work useful gain a reason to return, trust you, and share it with others.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "07a80c457e4d4fd8b3c63c154db72cb1",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Increase your optionality.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " More opportunities can begin with someone seeking you out. Your work can open paths to jobs, clients, collaborators, investors, teaching, and products.",
+              "underline": false
+            }
+          ],
+          "type": "numbered_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "f78afe60cc0042d3a0a6009522321bc0",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The payoff is greater choice: financial room to follow your curiosity, more say over your collaborators and projects, and a lifestyle that fits the life you want.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "8470d154fae940bbb36b84a69dc39dbd",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.navalmanack.com/almanack-of-naval-ravikant/how-to-get-lucky",
+              "italic": false,
+              "strike": false,
+              "text": "Naval · Reputation and luck",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " · ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.notboring.co/p/the-great-online-game",
+              "italic": false,
+              "strike": false,
+              "text": "Packy McCormick · The Great Online Game",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "5a4f7af6ea2a46d3a253c96449b3500d",
+          "level": 1,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "How to start",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ee3110129969492d9a45eb02a681fadd",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Make one lesson useful",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "63cfdf72429e4bc28d5d482ba94245b2",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Help an earlier version of yourself.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Explain something you recently struggled with, the experiment that clarified it, or the resource you wish you’d found.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "color": "default",
+              "id": "3f2a1a39b57e40cba9bd6085e2413e2d",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "A blog post, short note, or illustrated explanation",
+                  "underline": false
+                }
+              ],
+              "type": "bulleted_list_item"
+            },
+            {
+              "children": [],
+              "color": "default",
+              "id": "94ca7ea32ad646578860bcddd4a0b4aa",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "A YouTube walkthrough, short video, or demo",
+                  "underline": false
+                }
+              ],
+              "type": "bulleted_list_item"
+            },
+            {
+              "children": [],
+              "color": "default",
+              "id": "a216785d7e24453c8987ff2bd95d48b2",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "An open-source tool, example, documentation fix, or contribution",
+                  "underline": false
+                }
+              ],
+              "type": "bulleted_list_item"
+            }
+          ],
+          "color": "default",
+          "id": "406c1c0645c44d5a9fb31377ce06143a",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Choose a format that fits the lesson.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "1605f634b29346d3b6542b61008302d9",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "These are versions of the same creator habit: learn something, make it useful, and put it within someone else’s reach.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "582dc2eaa27e4564801c2c95b16e2e98",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://swyx.io/learn-in-public",
+              "italic": false,
+              "strike": false,
+              "text": "swyx · Learn in Public",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " · ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/",
+              "italic": false,
+              "strike": false,
+              "text": "Julia Evans · Write about what you’ve struggled with",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "b040cbf505564d2982e706cfc3b739c5",
+          "media": "b040cbf505564d2982e706cfc3b739c5",
+          "type": "image",
+          "width": 624
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "2357ffff0cba41c2b797395e95884e42",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Pick up what they put down",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "423d8e2bf99448a288db8563bc04fa21",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Find something new from a person or project you’re sincerely interested in. Use it, study it, or try to reproduce it.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "0d9f8d0089fa4874b8db65be8d3efedf",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Improve or extend it: clarify an explanation, make an example, test an idea, or fix a problem.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "4bf32f36a40545718c1d433e26932861",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Share the useful result with the creator and their community. You have a concrete contribution and someone it can help.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "742308444fd44111a084d4ce7096f154",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://swyx.io/puwtpd",
+              "italic": false,
+              "strike": false,
+              "text": "swyx · Pick Up What They Put Down",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "b85adb5d878c4611836163b40a4a7287",
+          "media": "b85adb5d878c4611836163b40a4a7287",
+          "type": "image",
+          "width": 576
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d105c6da989e41bfb71a730130599310",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Repeat without getting stuck",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "8adc5aed27f24db780cd3caacf99c34b",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Share, listen, revise.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Put the work where interested people can find it. Answer questions, incorporate corrections, and carry the lesson forward.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d5131db19f0f42a59dc0bef51addc4c5",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Timebox the work.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Decide what “useful enough” means and how much time you and your agents can spend before shipping, reassessing, or stopping.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "9d10fcfb65f4495294bec19917d2e4d2",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "href": "https://theoatmeal.com/comics/creativity_darlings",
+              "italic": false,
+              "strike": false,
+              "text": "Kill your darlings.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Let go of projects that no longer deserve your attention. Keep the useful lessons and artifacts; move on when your curiosity or priorities change.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "116a839acf424a298b0cfbe9651762d9",
+          "media": "116a839acf424a298b0cfbe9651762d9",
+          "type": "image",
+          "width": 576
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "98bb4eb5387744b7975311f8c486fca4",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Use AI with judgment",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "cad8b17179574097808c9f1b26e2c10e",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Own what you share.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " When AI makes production easier, show what you tested, understood, and changed your mind about. Explain the decisions you can stand behind.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "9e1ef4c294e543b69b7e3480dc005a03",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Keep reusable working examples.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Your future projects—and your agents—can build on things you already know how to do.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "58b44adba8274af1aab218c4f7da88b1",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Let learning continue across projects.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Building in public and learning in public overlap. A particular project can end while its lessons, relationships, and contributions keep helping you.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "f6ff3a2f36e74504a0e4cfc52b97f7ec",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/",
+              "italic": false,
+              "strike": false,
+              "text": "Simon Willison · Code is cheap",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " · ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/",
+              "italic": false,
+              "strike": false,
+              "text": "Reusable working examples",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "94d52bea576f424fa4eb47d0e4f897f4",
+          "media": "94d52bea576f424fa4eb47d0e4f897f4",
+          "type": "image",
+          "width": 576
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3f7edb27f1248088bd35d82627ddd0cd",
+          "level": 1,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Closing",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3f7edb27f124807cb4f5f3c60497e5d8",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I hope you found something in this resource useful. My own version of this process has largely been shaped by ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://github.com/transitive-bullshit",
+              "italic": false,
+              "strike": false,
+              "text": "my open source work ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "and my personal motto that my heart is open source 💕",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3f7edb27f124803b95adf1b378211106",
+          "richText": [],
+          "type": "paragraph"
+        }
+      ],
+      "description": "On the importance of sharing what you learn publicly as you go along.",
+      "featured": true,
+      "id": "3f7edb27f12481ad887ee8617d554ab2",
+      "modified": "2026-10-12T06:46:00.000Z",
+      "published": "2026-10-12",
+      "slug": "learn-in-public",
+      "tags": [
+        "Career",
+        "OSS",
+        "Creator Economy",
+        "AI"
+      ],
+      "title": "Learn in public"
+    },
     "3f7edb27f12481bcb191fcff5dcafd41": {
       "author": "Travis Fischer",
-      "blocks": [],
-      "description": "Cheap, adaptive offense meets a world that has to keep operating while it changes.",
+      "blocks": [
+        {
+          "children": [],
+          "color": "default",
+          "id": "3f7edb27f12480779d79e3be1398d66f",
+          "richText": [],
+          "type": "paragraph"
+        }
+      ],
+      "description": "AI is turning cybersecurity into drone swarm warfare, and this will lead to increasingly consequential cyberattacks over the next 18 months.",
       "featured": false,
       "id": "3f7edb27f12481bcb191fcff5dcafd41",
-      "modified": "2026-10-12T03:56:00.000Z",
+      "modified": "2026-10-12T11:02:00.000Z",
       "published": "2026-10-12",
       "slug": "ai-cyberswarm-warfare",
       "tags": [
@@ -14854,7 +16339,7 @@
         "Research",
         "Tech"
       ],
-      "title": "AI is turning cybersecurity into drone swarm warfare"
+      "title": "AI Cyberswarm Warfare"
     },
     "515a83c036b94939b44348beb67ed373": {
       "author": "Travis Fischer",
@@ -78539,6 +80024,44 @@
         }
       ]
     },
+    "116a839acf424a298b0cfbe9651762d9": {
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAUAA4BaJZwAApexCwAA/vPI8PsDNdwIDUNzdW1Yd02ZEigAAA==",
+      "original": {
+        "bytes": 826384,
+        "hash": "bdd8523f654790eccc998d14aec40d405a51f9276a773f71417b241bc99b90a5",
+        "height": 1024,
+        "key": "personal-site/media/bdd8523f654790eccc998d14aec40d405a51f9276a773f71417b241bc99b90a5.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/bdd8523f654790eccc998d14aec40d405a51f9276a773f71417b241bc99b90a5.webp",
+        "width": 1536
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-12T06:46:00.000Z",
+        "key": "116a839acf424a298b0cfbe9651762d9",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 29632,
+          "hash": "a5cb09a01cfa4373b64f625b7e34251386ebdb8c14735434c603f804d47408c1",
+          "height": 640,
+          "key": "personal-site/media/a5cb09a01cfa4373b64f625b7e34251386ebdb8c14735434c603f804d47408c1.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/a5cb09a01cfa4373b64f625b7e34251386ebdb8c14735434c603f804d47408c1.webp",
+          "width": 960
+        },
+        {
+          "bytes": 72750,
+          "hash": "3a1d6a85f6de84846aa5dd137655fe02069ede31f19ae153031981cea7ae7b1e",
+          "height": 1024,
+          "key": "personal-site/media/3a1d6a85f6de84846aa5dd137655fe02069ede31f19ae153031981cea7ae7b1e.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/3a1d6a85f6de84846aa5dd137655fe02069ede31f19ae153031981cea7ae7b1e.webp",
+          "width": 1536
+        }
+      ]
+    },
     "120c2ab8e89d40d480e8098e0029327e": {
       "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAMAA4BaJZwAAtz5KQQA/vXu24vkBED0slS64E9QdMOrCzQoAA==",
       "original": {
@@ -78997,6 +80520,44 @@
         }
       ]
     },
+    "2090008f3d6645bc912570ff77870a2e": {
+      "blurDataURL": "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoIAAUAA4BaJaQAA3AA/vUaOAA=",
+      "original": {
+        "bytes": 40233,
+        "hash": "84a89bfe6c5f3db59c615a544395c93537ab5bc082b8575324038dc321a52289",
+        "height": 1526,
+        "key": "personal-site/media/84a89bfe6c5f3db59c615a544395c93537ab5bc082b8575324038dc321a52289.png",
+        "mime": "image/png",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/84a89bfe6c5f3db59c615a544395c93537ab5bc082b8575324038dc321a52289.png",
+        "width": 2712
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-12T06:44:00.000Z",
+        "key": "2090008f3d6645bc912570ff77870a2e",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 10874,
+          "hash": "01a06cf0c4e0ea899b758c693a6729b2a53e90ce689ac41db42f720c4f07507e",
+          "height": 540,
+          "key": "personal-site/media/01a06cf0c4e0ea899b758c693a6729b2a53e90ce689ac41db42f720c4f07507e.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/01a06cf0c4e0ea899b758c693a6729b2a53e90ce689ac41db42f720c4f07507e.webp",
+          "width": 960
+        },
+        {
+          "bytes": 26804,
+          "hash": "2d8fbfa32b0d2ae6136d03fa0a1f2fb13c13f1ba25ea0d27515e3b3708201d6f",
+          "height": 1080,
+          "key": "personal-site/media/2d8fbfa32b0d2ae6136d03fa0a1f2fb13c13f1ba25ea0d27515e3b3708201d6f.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/2d8fbfa32b0d2ae6136d03fa0a1f2fb13c13f1ba25ea0d27515e3b3708201d6f.webp",
+          "width": 1920
+        }
+      ]
+    },
     "20a79550a2724791b647ca2b259f3af8": {
       "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoIAAMAA4BaJYgCdAD0gbVuAP6KGSYO/9ajKS1fInfugT44lYTgaEQMo811q+Ayj7wAAA==",
       "original": {
@@ -79272,6 +80833,44 @@
       },
       "variants": []
     },
+    "257e0153e76f42b68b87fa1767752ccf": {
+      "blurDataURL": "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoIAAUAA4BaJaQAA3AA/vXgwAA=",
+      "original": {
+        "bytes": 21461,
+        "hash": "6a817dc85e5bffda255549cabaefa2bbd075f5dbae50c4f4123bf9980329429d",
+        "height": 1080,
+        "key": "personal-site/media/6a817dc85e5bffda255549cabaefa2bbd075f5dbae50c4f4123bf9980329429d.png",
+        "mime": "image/png",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/6a817dc85e5bffda255549cabaefa2bbd075f5dbae50c4f4123bf9980329429d.png",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-12T04:12:00.000Z",
+        "key": "257e0153e76f42b68b87fa1767752ccf",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 5490,
+          "hash": "168a41a711b851cef19fc5dc64a42364127fdd41db2c5fb66c93bc0f5f501e9f",
+          "height": 540,
+          "key": "personal-site/media/168a41a711b851cef19fc5dc64a42364127fdd41db2c5fb66c93bc0f5f501e9f.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/168a41a711b851cef19fc5dc64a42364127fdd41db2c5fb66c93bc0f5f501e9f.webp",
+          "width": 960
+        },
+        {
+          "bytes": 15182,
+          "hash": "b5df03f46bfd03a26ac551d9ef30bb920d05880444d9587ae9b67440aeedf7ed",
+          "height": 1080,
+          "key": "personal-site/media/b5df03f46bfd03a26ac551d9ef30bb920d05880444d9587ae9b67440aeedf7ed.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/b5df03f46bfd03a26ac551d9ef30bb920d05880444d9587ae9b67440aeedf7ed.webp",
+          "width": 1920
+        }
+      ]
+    },
     "266ce1a8316f44ecbd36e3908ebdba78:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoIAAUAA4BaJQBOgCPg+vRRIAD+2FLJMwAO+TUuzZSnd3Elfn3/6/28SQ8uoRx0Xbzu6FYo+mUvAH8AAAA=",
       "original": {
@@ -79375,6 +80974,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/1f575720599bf07810ce87904312513053e9f8716499d045f6bcd67db12747c1.webp",
           "width": 1920
+        }
+      ]
+    },
+    "290bfb6d3cd4448cb02d027585ab503e": {
+      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAAAwAQCdASoIAAUAA4BaJaQAA3AA/vNcUJZXxR7Pz9ul+lVgAAA=",
+      "original": {
+        "bytes": 732852,
+        "hash": "bab7f5419f2d5a511537d5a308471746ce700c156adbf89f7a7176bc2866e3fb",
+        "height": 1024,
+        "key": "personal-site/media/bab7f5419f2d5a511537d5a308471746ce700c156adbf89f7a7176bc2866e3fb.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/bab7f5419f2d5a511537d5a308471746ce700c156adbf89f7a7176bc2866e3fb.webp",
+        "width": 1536
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-12T04:12:00.000Z",
+        "key": "290bfb6d3cd4448cb02d027585ab503e",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 18804,
+          "hash": "c89ab82a1eb7c5883c56cdbcc99b3c20a5bbab823fbcb84e8d231ed532f85a16",
+          "height": 640,
+          "key": "personal-site/media/c89ab82a1eb7c5883c56cdbcc99b3c20a5bbab823fbcb84e8d231ed532f85a16.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/c89ab82a1eb7c5883c56cdbcc99b3c20a5bbab823fbcb84e8d231ed532f85a16.webp",
+          "width": 960
+        },
+        {
+          "bytes": 45684,
+          "hash": "15b2750a860f9b00a8dad991402dc2599bba2b6b26a10c171a748884bd46d066",
+          "height": 1024,
+          "key": "personal-site/media/15b2750a860f9b00a8dad991402dc2599bba2b6b26a10c171a748884bd46d066.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/15b2750a860f9b00a8dad991402dc2599bba2b6b26a10c171a748884bd46d066.webp",
+          "width": 1536
         }
       ]
     },
@@ -82143,6 +83780,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/7b7184c0a484c0b8f755c611cec3e134bc8a0b04846949676cc769fa496fac52.webp",
           "width": 1920
+        }
+      ]
+    },
+    "3ebc95c946fa4ecaaf01be2e0b6e6afe": {
+      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAUAA4BaJZwC7ADcyyoAAP72JVhJ/5Cxf9Ez67zO92m67qiro1wcjrgAAA==",
+      "original": {
+        "bytes": 794320,
+        "hash": "88387b238c9a48f1faeee6b756c6202df7ff11ff46e1b17c6d355a0c479a1cd4",
+        "height": 1024,
+        "key": "personal-site/media/88387b238c9a48f1faeee6b756c6202df7ff11ff46e1b17c6d355a0c479a1cd4.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/88387b238c9a48f1faeee6b756c6202df7ff11ff46e1b17c6d355a0c479a1cd4.webp",
+        "width": 1536
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-12T06:46:00.000Z",
+        "key": "3ebc95c946fa4ecaaf01be2e0b6e6afe",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 28366,
+          "hash": "c697a8f19834dc517f276318313e32e1176ec5bd8bb5c655f0a6067e735607b2",
+          "height": 640,
+          "key": "personal-site/media/c697a8f19834dc517f276318313e32e1176ec5bd8bb5c655f0a6067e735607b2.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/c697a8f19834dc517f276318313e32e1176ec5bd8bb5c655f0a6067e735607b2.webp",
+          "width": 960
+        },
+        {
+          "bytes": 70890,
+          "hash": "b0032e2b2b8ff85ce746d4c34e79b448d18fafd861637f63d7be5d4e011bbd3b",
+          "height": 1024,
+          "key": "personal-site/media/b0032e2b2b8ff85ce746d4c34e79b448d18fafd861637f63d7be5d4e011bbd3b.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/b0032e2b2b8ff85ce746d4c34e79b448d18fafd861637f63d7be5d4e011bbd3b.webp",
+          "width": 1536
         }
       ]
     },
@@ -84946,6 +86621,44 @@
         }
       ]
     },
+    "94d52bea576f424fa4eb47d0e4f897f4": {
+      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAUAA4BaJZQC7AEOO/CwAP7ts7LrWmH//vDe35RglrbybNXqQ2IJ7gAAAA==",
+      "original": {
+        "bytes": 746660,
+        "hash": "c18e60b3cdcde92a7f7a82edb6659afacec56a5b4b778b2aebdd4f150e7a3b30",
+        "height": 1024,
+        "key": "personal-site/media/c18e60b3cdcde92a7f7a82edb6659afacec56a5b4b778b2aebdd4f150e7a3b30.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/c18e60b3cdcde92a7f7a82edb6659afacec56a5b4b778b2aebdd4f150e7a3b30.webp",
+        "width": 1536
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-12T04:13:00.000Z",
+        "key": "94d52bea576f424fa4eb47d0e4f897f4",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 22798,
+          "hash": "e1266d2a7d372fa3eee0e286278871b91d6bf609525def568cc11e0d62d39024",
+          "height": 640,
+          "key": "personal-site/media/e1266d2a7d372fa3eee0e286278871b91d6bf609525def568cc11e0d62d39024.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/e1266d2a7d372fa3eee0e286278871b91d6bf609525def568cc11e0d62d39024.webp",
+          "width": 960
+        },
+        {
+          "bytes": 56396,
+          "hash": "ef9d61946800a0df270e7e69d8a5f94b5883d57bc840ad53f9c9494138bf0093",
+          "height": 1024,
+          "key": "personal-site/media/ef9d61946800a0df270e7e69d8a5f94b5883d57bc840ad53f9c9494138bf0093.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/ef9d61946800a0df270e7e69d8a5f94b5883d57bc840ad53f9c9494138bf0093.webp",
+          "width": 1536
+        }
+      ]
+    },
     "956ba3e64ee5498290af58857af45c75:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoIAAUAA4BaJZwCdAEfA0CGIQAA/fByBNP4QO3v3Qm8anjqSHZFazLhJQ+AAA==",
       "original": {
@@ -85955,6 +87668,44 @@
         }
       ]
     },
+    "b040cbf505564d2982e706cfc3b739c5": {
+      "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAwAgCdASoIAAUAA4BaJYwCdH8GJ/gbQIPWAAD+4aezkePbv+8dUma2YHDHhjzlxHtQ7SbTt9DVjD0/FT8AAA==",
+      "original": {
+        "bytes": 760592,
+        "hash": "22b0b7ccc855fcce858a5a7d6c15e2cf7872f5a0a847cf5ef731acad066f975a",
+        "height": 1024,
+        "key": "personal-site/media/22b0b7ccc855fcce858a5a7d6c15e2cf7872f5a0a847cf5ef731acad066f975a.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/22b0b7ccc855fcce858a5a7d6c15e2cf7872f5a0a847cf5ef731acad066f975a.webp",
+        "width": 1536
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-12T06:46:00.000Z",
+        "key": "b040cbf505564d2982e706cfc3b739c5",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 22678,
+          "hash": "24a3ca15ac3c2bf60aa4fd08cc44f0ecbffee2866e1be40b9fb3c46bcbfe1cb9",
+          "height": 640,
+          "key": "personal-site/media/24a3ca15ac3c2bf60aa4fd08cc44f0ecbffee2866e1be40b9fb3c46bcbfe1cb9.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/24a3ca15ac3c2bf60aa4fd08cc44f0ecbffee2866e1be40b9fb3c46bcbfe1cb9.webp",
+          "width": 960
+        },
+        {
+          "bytes": 59234,
+          "hash": "bcfe7ec3f21f41b720313baeec503a8dc05404cf6f85003a6dfb7eaf34f2e541",
+          "height": 1024,
+          "key": "personal-site/media/bcfe7ec3f21f41b720313baeec503a8dc05404cf6f85003a6dfb7eaf34f2e541.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/bcfe7ec3f21f41b720313baeec503a8dc05404cf6f85003a6dfb7eaf34f2e541.webp",
+          "width": 1536
+        }
+      ]
+    },
     "b24073e849714172aba8d636448a69c3:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoIAAUAA4BaJaACdADZkPFAAP5NlMO+e/gfbVuwOUqHnDkdm+OykwNF0wd2CVKCigdvAnSXCkAAAA==",
       "original": {
@@ -86256,6 +88007,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/00a002565a1e97c0c85cccca7febb4f3e22697736d958de23eeac4034d36a82f.webp",
           "width": 1836
+        }
+      ]
+    },
+    "b85adb5d878c4611836163b40a4a7287": {
+      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoIAAUAA4BaJZQCdEf/gbah96AA/vZeeqaaOrdJqedjzncJWaCNtx2DPFYp0/AQNTq+ZQAA",
+      "original": {
+        "bytes": 770038,
+        "hash": "6b027bf2ace773a1b06ef8bfeee021622e9b5a5ee8abc4323b3b2a4e267d3552",
+        "height": 1024,
+        "key": "personal-site/media/6b027bf2ace773a1b06ef8bfeee021622e9b5a5ee8abc4323b3b2a4e267d3552.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/6b027bf2ace773a1b06ef8bfeee021622e9b5a5ee8abc4323b3b2a4e267d3552.webp",
+        "width": 1536
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-12T06:46:00.000Z",
+        "key": "b85adb5d878c4611836163b40a4a7287",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 22046,
+          "hash": "97bc45f1adbc7d6f17c690316b19de73a0e76e3f6aac50fd2f69ea7b6b64c48a",
+          "height": 640,
+          "key": "personal-site/media/97bc45f1adbc7d6f17c690316b19de73a0e76e3f6aac50fd2f69ea7b6b64c48a.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/97bc45f1adbc7d6f17c690316b19de73a0e76e3f6aac50fd2f69ea7b6b64c48a.webp",
+          "width": 960
+        },
+        {
+          "bytes": 54684,
+          "hash": "44e1e101f5cd6f7ef0e39aba88d358085a1da3da17511b9b8be2a470f20e77ab",
+          "height": 1024,
+          "key": "personal-site/media/44e1e101f5cd6f7ef0e39aba88d358085a1da3da17511b9b8be2a470f20e77ab.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/44e1e101f5cd6f7ef0e39aba88d358085a1da3da17511b9b8be2a470f20e77ab.webp",
+          "width": 1536
         }
       ]
     },
@@ -86760,6 +88549,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/89c28981d3ee047a3bbe65d5f99b205b8161af946812286517bb6703b8447d4d.webp",
           "width": 1920
+        }
+      ]
+    },
+    "c312985634794b6a9d87107c2b19fa51": {
+      "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACQAQCdASoIAAUAA4BaJZwAAp0LKOAA/vdQIdzog5+H5yDjr4dVKcmS2AJaaABZAAA=",
+      "original": {
+        "bytes": 770874,
+        "hash": "b645af016318406fa063de578c1a80993214e2cf8d88c4ec51c597b1ded0804f",
+        "height": 1024,
+        "key": "personal-site/media/b645af016318406fa063de578c1a80993214e2cf8d88c4ec51c597b1ded0804f.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/b645af016318406fa063de578c1a80993214e2cf8d88c4ec51c597b1ded0804f.webp",
+        "width": 1536
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-12T06:46:00.000Z",
+        "key": "c312985634794b6a9d87107c2b19fa51",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 18702,
+          "hash": "59cbac197cf5409bab89324583a8f398bd8dbadfe2507bbc6b2f0e0abf43123e",
+          "height": 640,
+          "key": "personal-site/media/59cbac197cf5409bab89324583a8f398bd8dbadfe2507bbc6b2f0e0abf43123e.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/59cbac197cf5409bab89324583a8f398bd8dbadfe2507bbc6b2f0e0abf43123e.webp",
+          "width": 960
+        },
+        {
+          "bytes": 47788,
+          "hash": "e03dceab0f1ce22f40d44b660414c2db82cc585270e66396e258e6453c12e34a",
+          "height": 1024,
+          "key": "personal-site/media/e03dceab0f1ce22f40d44b660414c2db82cc585270e66396e258e6453c12e34a.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/e03dceab0f1ce22f40d44b660414c2db82cc585270e66396e258e6453c12e34a.webp",
+          "width": 1536
         }
       ]
     },
@@ -88822,6 +90649,44 @@
         "kind": "file"
       },
       "variants": []
+    },
+    "fc98c808ab3143be82ecb6e275df8d01": {
+      "blurDataURL": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoIAAUAA4BaJaQAA3AA/vJGpXQAAA==",
+      "original": {
+        "bytes": 74427,
+        "hash": "01b4a907f46b24cd9c1c76a74286f18ae5b6f58c14bb9f04eb93d828cd85c03a",
+        "height": 735,
+        "key": "personal-site/media/01b4a907f46b24cd9c1c76a74286f18ae5b6f58c14bb9f04eb93d828cd85c03a.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/01b4a907f46b24cd9c1c76a74286f18ae5b6f58c14bb9f04eb93d828cd85c03a.jpg",
+        "width": 1200
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-12T04:32:00.000Z",
+        "key": "fc98c808ab3143be82ecb6e275df8d01",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 22662,
+          "hash": "c88feacc2c8dd305138c38992ed5294d7b8947285caa2d866eea4a710164e0a8",
+          "height": 588,
+          "key": "personal-site/media/c88feacc2c8dd305138c38992ed5294d7b8947285caa2d866eea4a710164e0a8.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/c88feacc2c8dd305138c38992ed5294d7b8947285caa2d866eea4a710164e0a8.webp",
+          "width": 960
+        },
+        {
+          "bytes": 52390,
+          "hash": "64bc9e6a4b2877152cd4ea52a538f8eae016d22c6f4bd8316a836ce4c7cb46e5",
+          "height": 735,
+          "key": "personal-site/media/64bc9e6a4b2877152cd4ea52a538f8eae016d22c6f4bd8316a836ce4c7cb46e5.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/64bc9e6a4b2877152cd4ea52a538f8eae016d22c6f4bd8316a836ce4c7cb46e5.webp",
+          "width": 1200
+        }
+      ]
     }
   },
   "projectRoutes": {
@@ -97969,6 +99834,11 @@
       "active": true,
       "aliases": [],
       "slug": "ai-agents"
+    },
+    "3f7edb27f12481ad887ee8617d554ab2": {
+      "active": true,
+      "aliases": [],
+      "slug": "learn-in-public"
     },
     "3f7edb27f12481bcb191fcff5dcafd41": {
       "active": true,
