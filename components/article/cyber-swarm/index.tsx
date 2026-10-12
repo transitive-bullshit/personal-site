@@ -50,7 +50,13 @@ function Margin({ part }: { part: EssayPart }) {
       <EssayText text={part.margin.label} className='eyebrow' plain />
       <EssayText text={part.margin.body} />
       {part.margin.refs.map((id) => (
-        <a className='link' href={sourceUrl(id)} key={id}>
+        <a
+          className='link'
+          href={sourceUrl(id)}
+          key={id}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           {sources.find((s) => s.id === id)?.title}{' '}
           <span>[{sourceNumber(id)}] ↗</span>
         </a>
@@ -59,7 +65,12 @@ function Margin({ part }: { part: EssayPart }) {
         <div id='defense-optimism' className='margin-quote'>
           <p>Amodei’s optimism is conditional:</p>
           <blockquote>“{expertQuotes[4].text}”</blockquote>
-          <a className='link' href={sourceUrl(22)}>
+          <a
+            className='link'
+            href={sourceUrl(22)}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             Dario Amodei [{sourceNumber(22)}] ↗
           </a>
         </div>
@@ -73,7 +84,12 @@ function PullQuote({ index }: { index: 0 | 1 | 4 }) {
     <figure className='essay-pullquote'>
       <blockquote>“{q.text}”</blockquote>
       <figcaption>
-        <a className='link' href={q.url}>
+        <a
+          className='link'
+          href={q.url}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           {q.author} ↗
         </a>
       </figcaption>
@@ -147,7 +163,12 @@ function SourceNotes() {
       tabIndex={-1}
       key={source.id}
     >
-      <a className='link' href={source.url}>
+      <a
+        className='link'
+        href={source.url}
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         {source.title} ↗
       </a>
     </li>
@@ -168,7 +189,12 @@ function SourceNotes() {
           {sourceItems.slice(10)}
           {furtherReading.map((source) => (
             <li key={source.url}>
-              <a className='link' href={source.url}>
+              <a
+                className='link'
+                href={source.url}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 {source.title} ↗
               </a>
             </li>
@@ -217,7 +243,12 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
             alt='Night sky over northern Gaza, May 2021. Hamas rocket trails fan from the right; Israeli Iron Dome interceptor trails curve on the left. Buildings in Gaza fill the foreground.'
           />
           <figcaption>
-            <a className='link' href={sourceUrl(20)}>
+            <a
+              className='link'
+              href={sourceUrl(20)}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Anas Baba / AFP · 14 May 2021 [{sourceNumber(20)}]
             </a>
             <span>
@@ -247,7 +278,12 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
               plain
             />
             <EssayText text={essayChrome.openingMarginBody} />
-            <a className='link' href={sourceUrl(19)}>
+            <a
+              className='link'
+              href={sourceUrl(19)}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               RUSI: pressure and layered defense [{sourceNumber(19)}] ↗
             </a>
           </aside>
@@ -330,7 +366,12 @@ export function CyberSwarmEssay({ headings }: { headings: Heading[] }) {
               plain
             />
             <EssayText text={essayChrome.predictionsMarginBody} />
-            <a className='link' href={sourceUrl(24)}>
+            <a
+              className='link'
+              href={sourceUrl(24)}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Historical damage benchmark [{sourceNumber(24)}] ↗
             </a>
           </aside>

@@ -110,7 +110,12 @@ export function DefenderWindow() {
         Scroll horizontally to see the full diagram.
       </p>
       <p className='defender-window-source'>
-        <a className='link' href={sourceUrl(26)}>
+        <a
+          className='link'
+          href={sourceUrl(26)}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           OpenAI · The Defense Factory [{sourceNumber(26)}] ↗
         </a>
       </p>

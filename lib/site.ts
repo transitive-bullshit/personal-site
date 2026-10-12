@@ -6,6 +6,15 @@ export const site = {
   twitter: 'transitive_bs'
 } as const
 
+export function isExternalSiteLink(href: string) {
+  const url = new URL(href, site.origin)
+  return (
+    ['http:', 'https:'].includes(url.protocol) &&
+    url.hostname.replace(/^www\./, '') !==
+      new URL(site.origin).hostname.replace(/^www\./, '')
+  )
+}
+
 // Match Next.js's social-image deployment selection: public production domain
 // or preview branch alias, with the unique deployment URL as a fallback.
 // Canonical article URLs continue to use site.origin.

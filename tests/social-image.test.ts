@@ -1,6 +1,10 @@
 import { afterEach, expect, it, vi } from 'vitest'
 import sharp from 'sharp'
-import { socialImageData, socialImageUrl } from '../lib/social-image'
+import {
+  articleSocialImage,
+  socialImageData,
+  socialImageUrl
+} from '../lib/social-image'
 import {
   allowedSocialImageUrl,
   renderSocialImage
@@ -21,6 +25,33 @@ afterEach(() => {
   vi.unstubAllEnvs()
   vi.unstubAllGlobals()
   vi.restoreAllMocks()
+})
+
+it('uses the current Learn in Public hero directly, including after slug or cover changes', () => {
+  const essay = {
+    ...article,
+    id: '3f7edb27f12481ad887ee8617d554ab2',
+    slug: 'renamed-learn-in-public'
+  }
+  const cover = snapshot.media.cover!.variants.at(-1)!
+  expect(articleSocialImage(essay, snapshot)).toEqual({
+    url: cover.url,
+    width: cover.width,
+    height: cover.height,
+    alt: essay.title,
+    type: cover.mime
+  })
+  expect(articleJsonLd(essay, snapshot).image[0]).toBe(cover.url)
+  const replacement = {
+    ...snapshot,
+    media: { cover: storedMedia('cover', '2'.repeat(64), '4'.repeat(64)) }
+  }
+  expect(socialImageUrl(essay, replacement)).toBe(
+    replacement.media.cover.variants.at(-1)!.url
+  )
+  expect(socialImageUrl({ ...essay, cover: undefined }, snapshot)).toContain(
+    '/api/social-image/renamed-learn-in-public?v='
+  )
 })
 
 it('uses the essay illustration for sharing even after its CMS slug changes', async () => {

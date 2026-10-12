@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import type { ReactNode } from 'react'
 import type { RichText as Span } from '@/lib/content/schema'
+import { isExternalSiteLink } from '@/lib/site'
 
 export function safeHref(href: string): string | undefined {
   if (/^(?:\/(?!\/)|#)/.test(href)) return href
@@ -28,7 +29,12 @@ export function RichText({ spans }: { spans: Span[] }) {
           {node}
         </Link>
       ) : (
-        <a className='link' href={href}>
+        <a
+          className='link'
+          href={href}
+          target={isExternalSiteLink(href) ? '_blank' : undefined}
+          rel={isExternalSiteLink(href) ? 'noopener noreferrer' : undefined}
+        >
           {node}
         </a>
       )

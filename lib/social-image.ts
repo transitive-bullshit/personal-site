@@ -7,6 +7,16 @@ export const socialImageSize = { width: 1200, height: 630 } as const
 // Bump when the template changes so social crawlers discover a fresh image URL.
 export const socialImageTemplateVersion = 2
 
+// Key exceptions by Notion ID so title or slug changes retain the choice.
+const coverSocialImageArticleIds = new Set(['3f7edb27f12481ad887ee8617d554ab2'])
+
+function socialImageCoverOverride(article: Article, snapshot: Snapshot) {
+  if (!coverSocialImageArticleIds.has(article.id)) return undefined
+  const media = article.cover ? snapshot.media[article.cover] : undefined
+  const image = media?.variants.at(-1) ?? media?.original
+  return image?.mime.startsWith('image/') ? image : undefined
+}
+
 export function socialImageData(article: Article, snapshot: Snapshot) {
   const media = article.cover ? snapshot.media[article.cover] : undefined
   return {
@@ -45,5 +55,19 @@ export function socialImagePath(article: Article, snapshot: Snapshot) {
 }
 
 export function socialImageUrl(article: Article, snapshot: Snapshot) {
-  return deploymentOrigin() + socialImagePath(article, snapshot)
+  return (
+    socialImageCoverOverride(article, snapshot)?.url ??
+    deploymentOrigin() + socialImagePath(article, snapshot)
+  )
+}
+
+export function articleSocialImage(article: Article, snapshot: Snapshot) {
+  const cover = socialImageCoverOverride(article, snapshot)
+  return {
+    url: socialImageUrl(article, snapshot),
+    width: cover ? cover.width : socialImageSize.width,
+    height: cover ? cover.height : socialImageSize.height,
+    alt: article.title,
+    type: cover?.mime ?? 'image/webp'
+  }
 }

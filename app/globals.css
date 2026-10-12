@@ -985,7 +985,7 @@ summary {
 .bookmark-card {
   display: flex;
   align-items: stretch;
-  block-size: 10rem;
+  block-size: 9rem;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 9px;
@@ -1004,7 +1004,7 @@ summary {
   min-inline-size: 0;
   flex-direction: column;
   gap: 7px;
-  padding-block: 16px;
+  padding-block: 14px;
   padding-inline: 18px;
 }
 .bookmark-title {

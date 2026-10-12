@@ -36,6 +36,7 @@ Every sync mode, including `--dry-run` and `--fast`, requires this configuration
 | `pnpm content:sync --accept-slug-changes` | Accept proposed paths and retain old paths as redirects. |
 | `pnpm content:videos` | Backfill saved video dimensions and posters from verified R2 originals, without fetching Notion. Requires storage configuration and FFmpeg; resumes by skipping completed videos. |
 | `pnpm content:search` | Rebuild search from the committed snapshot without CMS credentials. |
+| `pnpm content:bookmark-images [--url URL ...]` | Backfill missing bookmark images from the saved snapshot without fetching Notion; reuse existing images and screenshots. |
 
 Interactive terminals show a Tasuku task list with spinners, elapsed time, and completed/active counts for page imports, image-width batches, bookmarks, tweets, and placeholders. Finished children collapse into their phase counts so active work stays visible. Warnings mark the phase and print in full before the final JSON summary. Redirected output, CI, and dumb terminals use plain start/completion logs.
 
@@ -71,6 +72,10 @@ Projects import the optional `Type` select value and separate `Website` and `You
 | Page reuse and fast-mode decisions | [`scripts/notion/import-pages.ts`](../scripts/notion/import-pages.ts), [`scripts/notion/normalize.ts`](../scripts/notion/normalize.ts), [`scripts/sync.ts`](../scripts/sync.ts) |
 
 ## Media and image widths
+
+Bookmark imports prefer advertised social images. When none can be saved and no existing image is available, Playwright captures the page's first 1280×960 viewport in an isolated, script-disabled Chromium context. Page and resource fetches use the public-only transport with redirect validation, a 30-second capture deadline, and request/byte limits. Failed captures retain text previews and warn; later normal syncs retry missing images, including on cached entries. Fast and dry-run imports skip captures.
+
+Install the import-time browser once with `pnpm exec playwright install chromium`. Captures are resized to at most 640×480 and saved as optimized, content-hashed WebP files under `public/bookmarks/`; the snapshot stores their local paths and dimensions. Commit these files with the snapshot. Existing captures are reused, including on forced imports, while newly available social images take priority. Screenshot capture is best effort: blocked pages or pages that require JavaScript may remain text-only.
 
 Each media download has a 30-minute timeout per attempt and is limited to 512 MiB, enforced against both the declared content length and the bytes received. Transient download failures retry up to three attempts.
 

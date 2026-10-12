@@ -19,7 +19,7 @@ export const essayChrome = {
   predictionsMarginLabel: 'Evidence → judgment',
   predictionsMarginBody:
     'Judge these forecasts by operational harm and recovery.',
-  mentalModelTitle: 'The mental model'
+  mentalModelTitle: 'My mental model'
 }
 
 export const essayOpening = [

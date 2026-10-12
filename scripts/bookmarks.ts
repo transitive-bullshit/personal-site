@@ -1,7 +1,11 @@
 import { taskBatch, silentProgress, type TaskProgress } from './task-progress'
 import { load } from 'cheerio'
 import { createHash } from 'node:crypto'
-import type { BookmarkPreview, Media } from '../lib/content/schema'
+import type {
+  BookmarkPreview,
+  BookmarkScreenshot,
+  Media
+} from '../lib/content/schema'
 import { publicFetch } from './public-fetch'
 
 export function parseBookmark(html: string, pageUrl: string) {
@@ -94,6 +98,7 @@ export async function syncBookmarks(options: {
   dryRun: boolean
   skipImages?: boolean
   saveImage: (key: string, imageUrl: string) => Promise<Media>
+  saveScreenshot?: (url: string) => Promise<BookmarkScreenshot>
   warn: (message: string) => void
   fetchPreview?: typeof fetchBookmark
 }) {
@@ -108,7 +113,16 @@ export async function syncBookmarks(options: {
       const url = urls[cursor++]!
       await run(url, async (task) => {
         const old = options.previous[url]
-        if ((old && !old.needsImageSync && !options.force) || options.dryRun) {
+        if (
+          (old &&
+            !old.needsImageSync &&
+            !options.force &&
+            (old.image ||
+              old.screenshot ||
+              !options.saveScreenshot ||
+              options.skipImages)) ||
+          options.dryRun
+        ) {
           if (old) bookmarks[url] = old
           reused += Number(Boolean(old))
           task.status(options.dryRun ? 'dry run' : 'cached')
@@ -119,6 +133,7 @@ export async function syncBookmarks(options: {
         try {
           const preview = await (options.fetchPreview ?? fetchBookmark)(url)
           let image = options.skipImages ? old?.image : undefined
+          let screenshot = old?.screenshot
           if (!options.skipImages) {
             for (const candidate of preview.images.slice(0, 3)) {
               try {
@@ -129,18 +144,37 @@ export async function syncBookmarks(options: {
                 /* Try the next advertised social image. */
               }
             }
-            if (preview.images.length && !image) {
-              options.warn('Bookmark image unavailable: ' + url)
+            if (!image) {
               // Keep an existing good image when a refresh encounters a transient failure.
               image = old?.image
             }
+            if (!image && !screenshot && options.saveScreenshot) {
+              try {
+                task.status('capturing screenshot')
+                screenshot = await options.saveScreenshot(url)
+              } catch (err) {
+                options.warn(
+                  'Bookmark screenshot unavailable: ' +
+                    url +
+                    ' (' +
+                    (err instanceof Error ? err.message : String(err)) +
+                    ')'
+                )
+              }
+            }
+            if (preview.images.length && !image && !screenshot)
+              options.warn('Bookmark image unavailable: ' + url)
           }
           bookmarks[url] = {
             title: preview.title,
             description: preview.description,
             needsImageSync:
-              options.skipImages && preview.images.length ? true : undefined,
-            image
+              options.skipImages &&
+              (preview.images.length || (!image && !screenshot))
+                ? true
+                : undefined,
+            image,
+            screenshot
           }
         } catch (err) {
           bookmarks[url] = old ?? { title: '', description: '' }

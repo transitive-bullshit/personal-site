@@ -5,7 +5,7 @@ import { ArticlePage } from '@/components/article/article'
 import { content } from '@/lib/content/load'
 import { resolveRoute } from '@/lib/content/routes'
 import { site } from '@/lib/site'
-import { socialImageSize, socialImageUrl } from '@/lib/social-image'
+import { articleSocialImage } from '@/lib/social-image'
 
 export const dynamic = 'force-static'
 export const dynamicParams = true
@@ -24,14 +24,7 @@ export async function generateMetadata({
   const route = resolveRoute(slug, content.routes)
   if (!route) return {}
   const article = content.articles[route.id]!
-  const images = [
-    {
-      url: socialImageUrl(article, content),
-      ...socialImageSize,
-      alt: article.title,
-      type: 'image/webp'
-    }
-  ]
+  const images = [articleSocialImage(article, content)]
   return {
     title: article.title,
     description: article.description,

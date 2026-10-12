@@ -133,11 +133,19 @@ export const mediaSchema = z.object({
     .regex(/^data:image\/webp;base64,[A-Za-z0-9+/]+={0,2}$/)
     .optional()
 })
+export const bookmarkScreenshotSchema = z.object({
+  url: z.string().regex(/^\/bookmarks\/[a-f0-9]{64}\.webp$/),
+  width: z.number().int().positive(),
+  height: z.number().int().positive()
+})
+export type BookmarkScreenshot = z.infer<typeof bookmarkScreenshotSchema>
+
 export const bookmarkPreviewSchema = z.object({
   title: z.string(),
   description: z.string(),
   needsImageSync: z.literal(true).optional(),
-  image: mediaSchema.optional()
+  image: mediaSchema.optional(),
+  screenshot: bookmarkScreenshotSchema.optional()
 })
 export type BookmarkPreview = z.infer<typeof bookmarkPreviewSchema>
 

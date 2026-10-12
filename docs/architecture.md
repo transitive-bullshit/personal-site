@@ -22,7 +22,9 @@ search-index.json → lazy client search
 - **Network boundary:** Notion/storage clients and sync orchestration stay in `scripts/`. Runtime public fetches are intentional: image optimization, media downloads, social-card covers, and external hover previews. The preview API reuses credential-free `scripts/bookmarks.ts` and `scripts/public-fetch.ts`; preserve their destination, redirect, timeout, and size checks.
 - **Presentation:** article and project pages share `components/article/content-body.tsx` and the block renderer. Keep content rendering on the server and client behavior scoped to search, theme, previews, lightboxes, navigation, and scroll tracking. Global styling and motion rules live in `app/globals.css`. Paired `light-dark()` tokens follow the theme's `color-scheme`, with palette fallbacks for older browsers; shared fluid tokens use rem bounds. Project cards fit their container with an 18rem minimum and use subgrid for shared image/title/description rows, with a block-layout fallback. Hover styles require a fine pointer; movement is opt-in and controls retain press and keyboard-focus feedback.
 
-Bookmark previews use a 10rem card height, two-line title and description limits, bottom-aligned domains, and cropped images that fill the card.
+Bookmark previews use a 9rem card height, two-line title and description limits, bottom-aligned domains, and cropped images that fill the card.
+
+Article bookmarks and inline links open external HTTP(S) destinations in a new tab. Relative links, fragments, and links to either `www.transitivebullsh.it` or `transitivebullsh.it` stay in the same tab.
 
 ### Code-owned essay bodies
 
@@ -30,7 +32,7 @@ Bookmark previews use a 10rem card height, two-line title and description limits
 
 Code-owned essay images use the shared article lightbox. Their local originals download directly from the public asset path; the media download API remains restricted to stored snapshot originals. Search uses the full set of rendered headings and authored captions independently of the shorter table of contents.
 
-Named source links in margin notes, quote/photo attributions, and adapted graphic captions link directly to the published resource with the site's `.link` styling. Only numbered prose citations link to the source list. Caption spacing belongs to the graphic's scoped styles; general essay paragraph rules must not override it.
+Named source links in margin notes, quote/photo attributions, and adapted graphic captions link directly to the published resource with the site's `.link` styling. External essay links open in a new tab. Only numbered prose citations link to the source list in the same tab. Caption spacing belongs to the graphic's scoped styles; general essay paragraph rules must not override it.
 
 CyberSwarm shows its first ten sources by default. The remaining references sit in a native disclosure that opens for footnote navigation and direct source fragments; Markdown retains the full source list.
 

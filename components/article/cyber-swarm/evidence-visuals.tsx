@@ -16,7 +16,12 @@ function EvidenceSource({
 }) {
   return (
     <p className='state-ai-source'>
-      <a className='link' href={sourceUrl(sourceId)}>
+      <a
+        className='link'
+        href={sourceUrl(sourceId)}
+        target='_blank'
+        rel='noopener noreferrer'
+      >
         {label} [{sourceNumber(sourceId)}] ↗
       </a>
     </p>

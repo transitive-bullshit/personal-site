@@ -31,6 +31,7 @@ import { MediaCache } from './media/cache'
 import { MediaImporter } from './media/process'
 import { backfillPlaceholders } from './media/placeholders'
 import { syncBookmarks } from './bookmarks'
+import { captureBookmarkScreenshot } from './bookmark-screenshots'
 import { publicFetch } from './public-fetch'
 import { walkBlocks } from '../lib/content/references'
 import { syncTweets } from './tweets'
@@ -271,6 +272,7 @@ export async function main() {
           ...options,
           skipImages: values.fast,
           warn: reportRecoverableError,
+          saveScreenshot: captureBookmarkScreenshot,
           saveImage: async (key, url) => {
             await importer.import(
               { key, kind: 'external', url, edited: url },
