@@ -15615,27 +15615,6 @@
           "type": "paragraph"
         },
         {
-          "caption": [],
-          "children": [],
-          "id": "3f7edb27f12480ffba26efa909e74e78",
-          "type": "bookmark",
-          "url": "https://www.navalmanack.com/almanack-of-naval-ravikant/how-to-get-lucky"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3f7edb27f1248017bee1fe48999227dd",
-          "type": "bookmark",
-          "url": "https://www.notboring.co/p/the-great-online-game"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3f7edb27f12480d6a8f1c0e14ecbc0fd",
-          "type": "bookmark",
-          "url": "https://www.transitivebullsh.it/finding-your-passion-as-a-developer"
-        },
-        {
           "children": [],
           "color": "default",
           "id": "5a4f7af6ea2a46d3a253c96449b3500d",
@@ -15792,20 +15771,6 @@
           "width": 624
         },
         {
-          "caption": [],
-          "children": [],
-          "id": "3f7edb27f1248082b11af4ebc6bf20b4",
-          "type": "bookmark",
-          "url": "https://swyx.io/learn-in-public"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3f7edb27f1248063a345c7eb24131402",
-          "type": "bookmark",
-          "url": "https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/"
-        },
-        {
           "children": [],
           "color": "default",
           "id": "2357ffff0cba41c2b797395e95884e42",
@@ -15881,13 +15846,6 @@
           "media": "b85adb5d878c4611836163b40a4a7287",
           "type": "image",
           "width": 576
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3f7edb27f12480adb463d706f50a05ec",
-          "type": "bookmark",
-          "url": "https://swyx.io/puwtpd"
         },
         {
           "children": [],
@@ -16099,20 +16057,6 @@
           "width": 576
         },
         {
-          "caption": [],
-          "children": [],
-          "id": "3f7edb27f124805e8e8af11140c483e2",
-          "type": "bookmark",
-          "url": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3f7edb27f12480cdbe17d21b08a4a621",
-          "type": "bookmark",
-          "url": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/"
-        },
-        {
           "children": [],
           "color": "default",
           "id": "3f7edb27f1248088bd35d82627ddd0cd",
@@ -16187,7 +16131,88 @@
         {
           "children": [],
           "color": "default",
+          "id": "3f8edb27f12480bcab8bfa4fcf03ec31",
+          "richText": [],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
           "id": "3f7edb27f124803b95adf1b378211106",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Related sources",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f1248082b11af4ebc6bf20b4",
+          "type": "bookmark",
+          "url": "https://swyx.io/learn-in-public"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f1248063a345c7eb24131402",
+          "type": "bookmark",
+          "url": "https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f12480ffba26efa909e74e78",
+          "type": "bookmark",
+          "url": "https://www.navalmanack.com/almanack-of-naval-ravikant/how-to-get-lucky"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f1248017bee1fe48999227dd",
+          "type": "bookmark",
+          "url": "https://www.notboring.co/p/the-great-online-game"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f12480d6a8f1c0e14ecbc0fd",
+          "type": "bookmark",
+          "url": "https://www.transitivebullsh.it/finding-your-passion-as-a-developer"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f12480adb463d706f50a05ec",
+          "type": "bookmark",
+          "url": "https://swyx.io/puwtpd"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f124805e8e8af11140c483e2",
+          "type": "bookmark",
+          "url": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "3f7edb27f12480cdbe17d21b08a4a621",
+          "type": "bookmark",
+          "url": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3f8edb27f1248013a08fe9e86a28cd37",
           "richText": [],
           "type": "paragraph"
         }
@@ -16196,7 +16221,8 @@
       "description": "On the importance of sharing what you learn publicly as you go along.",
       "featured": true,
       "id": "3f7edb27f12481ad887ee8617d554ab2",
-      "modified": "2026-10-12T13:02:00.000Z",
+      "modified": "2026-10-13T03:25:00.000Z",
+      "needsImageSync": true,
       "published": "2026-10-12",
       "slug": "learn-in-public",
       "tags": [
