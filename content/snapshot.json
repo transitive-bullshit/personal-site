@@ -15794,12 +15794,21 @@
           "id": "423d8e2bf99448a288db8563bc04fa21",
           "richText": [
             {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Find something new",
+              "underline": false
+            },
+            {
               "bold": false,
               "code": false,
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "Find something new from a person or project you’re sincerely interested in. Use it, study it, or try to reproduce it.",
+              "text": " from a person or project you’re sincerely interested in. Use it, study it, or try to reproduce it.",
               "underline": false
             }
           ],
@@ -15811,12 +15820,21 @@
           "id": "0d9f8d0089fa4874b8db65be8d3efedf",
           "richText": [
             {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Improve or extend it",
+              "underline": false
+            },
+            {
               "bold": false,
               "code": false,
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "Improve or extend it: clarify an explanation, make an example, test an idea, or fix a problem.",
+              "text": ": clarify an explanation, make an example, test an idea, or fix a problem.",
               "underline": false
             }
           ],
@@ -15828,12 +15846,21 @@
           "id": "4bf32f36a40545718c1d433e26932861",
           "richText": [
             {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Share the useful result",
+              "underline": false
+            },
+            {
               "bold": false,
               "code": false,
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "Share the useful result with the creator and their community. You have a concrete contribution and someone it can help.",
+              "text": " with the creator and their community. You have a concrete contribution and someone it can help.",
               "underline": false
             }
           ],
@@ -16196,23 +16223,9 @@
           "url": "https://swyx.io/puwtpd"
         },
         {
-          "caption": [],
-          "children": [],
-          "id": "3f7edb27f124805e8e8af11140c483e2",
-          "type": "bookmark",
-          "url": "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3f7edb27f12480cdbe17d21b08a4a621",
-          "type": "bookmark",
-          "url": "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/"
-        },
-        {
           "children": [],
           "color": "default",
-          "id": "3f8edb27f1248013a08fe9e86a28cd37",
+          "id": "3f8edb27f124802c8b4ad0dc4b42a442",
           "richText": [],
           "type": "paragraph"
         }
@@ -16221,7 +16234,7 @@
       "description": "On the importance of sharing what you learn publicly as you go along.",
       "featured": true,
       "id": "3f7edb27f12481ad887ee8617d554ab2",
-      "modified": "2026-10-13T03:25:00.000Z",
+      "modified": "2026-10-13T03:30:00.000Z",
       "needsImageSync": true,
       "published": "2026-10-12",
       "slug": "learn-in-public",
@@ -78837,24 +78850,6 @@
         ]
       },
       "title": "50 Questions to Find a Co-Founder and a Startup Idea"
-    },
-    "https://simonwillison.net/guides/agentic-engineering-patterns/code-is-cheap/": {
-      "description": "Writing code is cheap now - Agentic Engineering Patterns",
-      "screenshot": {
-        "height": 480,
-        "url": "/bookmarks/f2a830154136098ef0513c680d57e3cef1037ef90608722096d391b013b6fe4d.webp",
-        "width": 640
-      },
-      "title": "Writing code is cheap now - Agentic Engineering Patterns"
-    },
-    "https://simonwillison.net/guides/agentic-engineering-patterns/hoard-things-you-know-how-to-do/": {
-      "description": "Hoard things you know how to do - Agentic Engineering Patterns",
-      "screenshot": {
-        "height": 480,
-        "url": "/bookmarks/86e8afab39c7b04c0578143d122a3d9cccc5397091857ae62f36584c38e68686.webp",
-        "width": 640
-      },
-      "title": "Hoard things you know how to do - Agentic Engineering Patterns"
     },
     "https://stratechery.com/2021/clubhouses-inevitability/": {
       "description": "Clubhouse will do for audio what Twitter, Instagram Stories, and TikTok did for text, images, and video.",
