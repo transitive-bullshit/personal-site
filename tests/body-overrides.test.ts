@@ -125,7 +125,9 @@ describe('CMS article body overrides', () => {
       expect($(link).parent().is('sup')).toBe(true)
     expect(
       JSON.parse($('script[type="application/ld+json"]').text()).description
-    ).toBe(entry.description)
+    ).toBe(
+      'AI is turning cybersecurity into swarm warfare, and this will lead to increasingly consequential cyberattacks over the next 18 months.'
+    )
     expect($('.article-meta').text()).toContain(entry.author)
     expect($('.article-meta time').attr('datetime')).toBe(entry.published)
     expect($('#protection-paths').length).toBe(0)

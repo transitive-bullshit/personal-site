@@ -1,4 +1,5 @@
 import type { Heading } from './headings'
+import type { Article } from './schema'
 import { sources } from './essays/cyber-swarm/content'
 import {
   essayChrome,
@@ -23,6 +24,15 @@ import {
 } from './essays/cyber-swarm/evidence'
 
 export const cyberSwarmArticleId = '3f7edb27f12481bcb191fcff5dcafd41'
+
+// The essay header strikes out “drone”; plain-text descriptions omit it.
+export function plainTextDescription(
+  entry: Pick<Article, 'id' | 'description'>
+) {
+  return entry.id === cyberSwarmArticleId
+    ? entry.description.replace(/\bdrone\s+/g, '')
+    : entry.description
+}
 
 export type BodyOverride = {
   headings: Heading[]

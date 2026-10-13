@@ -6,6 +6,7 @@ import { content } from '@/lib/content/load'
 import { resolveRoute } from '@/lib/content/routes'
 import { site } from '@/lib/site'
 import { articleSocialImage } from '@/lib/social-image'
+import { plainTextDescription } from '@/lib/content/body-overrides'
 
 export const dynamic = 'force-static'
 export const dynamicParams = true
@@ -25,15 +26,16 @@ export async function generateMetadata({
   if (!route) return {}
   const article = content.articles[route.id]!
   const images = [articleSocialImage(article, content)]
+  const description = plainTextDescription(article)
   return {
     title: article.title,
-    description: article.description,
+    description,
     alternates: pageAlternates('/' + article.slug),
     authors: [{ name: article.author }],
     openGraph: {
       type: 'article',
       title: article.title,
-      description: article.description,
+      description,
       url: site.origin + '/' + article.slug,
       siteName: site.name,
       publishedTime: article.published,
@@ -45,7 +47,7 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
       title: article.title,
-      description: article.description,
+      description,
       images,
       creator: '@' + site.twitter
     }

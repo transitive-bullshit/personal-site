@@ -2,7 +2,7 @@ import type { Article, Block, Project, RichText, Snapshot } from './schema'
 import { normalizeHeadingLevels } from './headings'
 import { markdownPath } from './markdown-path'
 import { site } from '../site'
-import { getBodyOverride } from './body-overrides'
+import { getBodyOverride, plainTextDescription } from './body-overrides'
 
 function escapeText(text: string) {
   return text
@@ -268,7 +268,7 @@ export function entryMarkdown(entry: Article | Project, snapshot: Snapshot) {
     : entry.author
   const lines = [
     '# ' + escapeText(entry.title),
-    entry.description ? escapeText(entry.description) : '',
+    entry.description ? escapeText(plainTextDescription(entry)) : '',
     'Canonical URL: ' + site.origin + path,
     author ? 'Author: ' + escapeText(author) : '',
     entry.published ? 'Published: ' + entry.published : '',
@@ -324,7 +324,7 @@ export function indexMarkdown(
     lines.push('', '## Writing', '')
     for (const entry of articles)
       lines.push(
-        `- [${escapeText(entry.title)}](${site.origin}${markdownPath('/' + entry.slug)}): ${escapeText(entry.description).replaceAll('\n', ' ')}`
+        `- [${escapeText(entry.title)}](${site.origin}${markdownPath('/' + entry.slug)}): ${escapeText(plainTextDescription(entry)).replaceAll('\n', ' ')}`
       )
   }
   return lines.join('\n') + '\n'

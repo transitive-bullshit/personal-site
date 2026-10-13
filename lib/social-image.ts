@@ -1,7 +1,7 @@
 import { createHash } from 'node:crypto'
 import type { Article, Snapshot } from './content/schema'
 import { deploymentOrigin, site } from './site'
-import { getBodyOverride } from './content/body-overrides'
+import { getBodyOverride, plainTextDescription } from './content/body-overrides'
 
 export const socialImageSize = { width: 1200, height: 630 } as const
 // Bump when the template changes so social crawlers discover a fresh image URL.
@@ -21,7 +21,7 @@ export function socialImageData(article: Article, snapshot: Snapshot) {
   const media = article.cover ? snapshot.media[article.cover] : undefined
   return {
     title: article.title,
-    description: article.description,
+    description: plainTextDescription(article),
     author: article.author,
     published: article.published,
     siteName: site.name,

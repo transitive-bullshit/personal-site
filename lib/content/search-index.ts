@@ -3,7 +3,7 @@ import { site } from '../site'
 import { walkBlocks } from './references'
 import { validateSlug } from './routes'
 import type { Article, Project, Snapshot } from './schema'
-import { getBodyOverride } from './body-overrides'
+import { getBodyOverride, plainTextDescription } from './body-overrides'
 
 function articleBodyTerms(article: Article | Project, metadata: string) {
   const bodyOverride =
@@ -60,7 +60,7 @@ export function buildSearchIndex(snapshot: Snapshot): SearchIndex {
         const titleText = normalizeSearchText(entry.title)
         const summaryText = normalizeSearchText(
           [
-            entry.description,
+            plainTextDescription(entry),
             ...entry.tags,
             kind,
             'type' in entry ? entry.type : ''

@@ -2,7 +2,7 @@ import 'server-only'
 import type { LinkPreviewData } from '@/lib/link-preview'
 import { site } from '@/lib/site'
 import { socialImagePath } from '@/lib/social-image'
-import { getBodyOverride } from './body-overrides'
+import { getBodyOverride, plainTextDescription } from './body-overrides'
 import { content } from './load'
 
 const articlePreviews: LinkPreviewData[] = Object.values(content.articles).map(
@@ -11,7 +11,7 @@ const articlePreviews: LinkPreviewData[] = Object.values(content.articles).map(
     return {
       url: '/' + article.slug,
       title: article.title,
-      description: article.description,
+      description: plainTextDescription(article),
       image:
         getBodyOverride(article.id)?.socialImagePath ??
         (media?.variants.at(-1) ?? media?.original)?.url ??

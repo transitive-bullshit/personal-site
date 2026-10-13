@@ -18,7 +18,7 @@ When adding a page, account for all applicable discovery surfaces:
 
 ## Social images
 
-Code-owned article bodies also supply Markdown and heading terms through `lib/content/body-overrides.ts`. Their Notion metadata and ordinary article route still control indexes, public access, canonical URLs, and social cards. The cyber swarm essay renders a struck-out “drone” in its title and description while metadata uses the plain CMS text.
+Code-owned article bodies also supply Markdown and heading terms through `lib/content/body-overrides.ts`. Their Notion metadata and ordinary article route still control indexes, public access, canonical URLs, and social cards. The cyber swarm essay renders a struck-out “drone” in its header. Its plain-text descriptions omit that word through `plainTextDescription`, including HTML/social metadata, structured data, previews, search, Markdown, and llms.txt. The CMS snapshot retains the original wording.
 
 - Main pages use `public/social-image.jpg`; icons use Next's metadata file conventions in `app/`.
 - Articles use on-demand Takumi WebP cards through `app/api/social-image/[slug]/route.tsx`, `lib/render-social-image.tsx`, and `components/social-image.tsx`. Bump `socialImageTemplateVersion` in `lib/social-image.ts` when the template changes so crawlers receive a new versioned URL.
