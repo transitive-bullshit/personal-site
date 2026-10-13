@@ -16190,13 +16190,6 @@
         {
           "caption": [],
           "children": [],
-          "id": "3f7edb27f1248063a345c7eb24131402",
-          "type": "bookmark",
-          "url": "https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/"
-        },
-        {
-          "caption": [],
-          "children": [],
           "id": "3f7edb27f12480ffba26efa909e74e78",
           "type": "bookmark",
           "url": "https://www.navalmanack.com/almanack-of-naval-ravikant/how-to-get-lucky"
@@ -16214,13 +16207,6 @@
           "id": "3f7edb27f12480d6a8f1c0e14ecbc0fd",
           "type": "bookmark",
           "url": "https://www.transitivebullsh.it/finding-your-passion-as-a-developer"
-        },
-        {
-          "caption": [],
-          "children": [],
-          "id": "3f7edb27f12480adb463d706f50a05ec",
-          "type": "bookmark",
-          "url": "https://swyx.io/puwtpd"
         },
         {
           "children": [],
@@ -72457,15 +72443,6 @@
       },
       "title": "Bootstrapping reality"
     },
-    "https://jvns.ca/blog/2021/05/24/blog-about-what-you-ve-struggled-with/": {
-      "description": "Blog about what you've struggled with",
-      "screenshot": {
-        "height": 480,
-        "url": "/bookmarks/0fd4e2897f4d04c26bd629e005d5b4eb8827350b3ada5a4efa347d589b02d669.webp",
-        "width": 640
-      },
-      "title": "Blog about what you've struggled with"
-    },
     "https://latecheckout.substack.com/": {
       "description": "High quality insights on internet communities, building products communities love and startups. This weekly email will get your creative juices flowing. Click to read Greg's Letter, by Greg Isenberg, a Substack publication with tens of thousands of subscribers.",
       "image": {
@@ -78970,49 +78947,6 @@
         ]
       },
       "title": "Learn In Public"
-    },
-    "https://swyx.io/puwtpd": {
-      "description": "Translations welcome! (Português)",
-      "image": {
-        "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAAAwAQCdASoIAAQAA4BaJaQAA3AA/vOMWf6Xf8N08AAAAA==",
-        "original": {
-          "bytes": 48869,
-          "hash": "4f1c17043f6a7a648596a457df6deefbdfcc6b3ed6fb974ba85bc11d6ef91501",
-          "height": 630,
-          "key": "personal-site/media/4f1c17043f6a7a648596a457df6deefbdfcc6b3ed6fb974ba85bc11d6ef91501.png",
-          "mime": "image/png",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/4f1c17043f6a7a648596a457df6deefbdfcc6b3ed6fb974ba85bc11d6ef91501.png",
-          "width": 1200
-        },
-        "pipelineVersion": 2,
-        "source": {
-          "edited": "https://swyx.io/og/article/puwtpd.png?v=2025-01-09T19%3A15%3A48.000Z-1",
-          "key": "bookmark:1096b08635dae9f0144bcdd81cfe8c6b2c8ee65c2ccd1a5de34e841ac947e233",
-          "kind": "external",
-          "url": "https://swyx.io/og/article/puwtpd.png?v=2025-01-09T19%3A15%3A48.000Z-1"
-        },
-        "variants": [
-          {
-            "bytes": 14568,
-            "hash": "0846e7ca35acdb86bd0f6cdc07970fed61c006e641bfd2e156d901b61266a352",
-            "height": 504,
-            "key": "personal-site/media/0846e7ca35acdb86bd0f6cdc07970fed61c006e641bfd2e156d901b61266a352.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/0846e7ca35acdb86bd0f6cdc07970fed61c006e641bfd2e156d901b61266a352.webp",
-            "width": 960
-          },
-          {
-            "bytes": 24620,
-            "hash": "ccb9f7d842a758553c98310a61a9abdc8037b1f9c4a78341030edf7aeb20d910",
-            "height": 630,
-            "key": "personal-site/media/ccb9f7d842a758553c98310a61a9abdc8037b1f9c4a78341030edf7aeb20d910.webp",
-            "mime": "image/webp",
-            "url": "https://assets.cultural-alignment.com/personal-site/media/ccb9f7d842a758553c98310a61a9abdc8037b1f9c4a78341030edf7aeb20d910.webp",
-            "width": 1200
-          }
-        ]
-      },
-      "title": "Pick Up What They Put Down"
     },
     "https://techcrunch.com/2021/02/06/4-creator-economy-vcs-see-startup-opportunities-in-monetization-discovery-and-much-more/": {
       "description": "Everyone knows YouTubers and other creators are popular with internet users of all ages. But today, these influencers also have real businesses powered by",
