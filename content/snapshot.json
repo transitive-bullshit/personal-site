@@ -16221,7 +16221,6 @@
       "featured": true,
       "id": "3f7edb27f12481ad887ee8617d554ab2",
       "modified": "2026-10-13T03:30:00.000Z",
-      "needsImageSync": true,
       "published": "2026-10-12",
       "slug": "learn-in-public",
       "tags": [
@@ -20232,13 +20231,13 @@
       ],
       "cover": "689a8abc1afa4699905aa2f2e585e208:cover",
       "description": "Everything I wish I'd known before starting Saasify 2 years ago.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "type": "emoji",
         "value": "🤔"
       },
       "id": "689a8abc1afa4699905aa2f2e585e208",
-      "modified": "2026-09-16T15:07:00.000Z",
+      "modified": "2026-10-17T09:44:00.000Z",
       "published": "2021-01-25",
       "slug": "saasify-key-takeaways",
       "tags": [
@@ -26767,13 +26766,13 @@
       ],
       "cover": "79f0cb8e859d43b1865a9fe18de950df:cover",
       "description": "A breakdown of everything I’ve learned running the ChatGPT twitter bot over the past two months.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "media": "79f0cb8e859d43b1865a9fe18de950df:icon",
         "type": "image"
       },
       "id": "79f0cb8e859d43b1865a9fe18de950df",
-      "modified": "2026-09-16T12:32:00.000Z",
+      "modified": "2026-10-17T09:46:00.000Z",
       "published": "2023-02-04",
       "slug": "chatgpt-twitter-bot-lessons",
       "tags": [
@@ -50556,9 +50555,9 @@
       ],
       "cover": "b4d9b266324846449aa10a1d952daa5c:cover",
       "description": "I'm embarking on a new journey, and this is my mission statement.",
-      "featured": true,
+      "featured": false,
       "id": "b4d9b266324846449aa10a1d952daa5c",
-      "modified": "2026-09-16T08:20:00.000Z",
+      "modified": "2026-10-17T09:44:00.000Z",
       "published": "2021-02-06",
       "slug": "why-im-so-hyped-about-the-passion-economy",
       "tags": [
@@ -56316,13 +56315,13 @@
       ],
       "cover": "d1b5dcf8b9ff425b8aef5ce6f0730202:cover",
       "description": "Deploy your own Notion-powered website in minutes with Next.js and Vercel.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "media": "d1b5dcf8b9ff425b8aef5ce6f0730202:icon",
         "type": "image"
       },
       "id": "d1b5dcf8b9ff425b8aef5ce6f0730202",
-      "modified": "2026-09-16T11:19:00.000Z",
+      "modified": "2026-10-17T09:44:00.000Z",
       "published": "2021-01-20",
       "slug": "nextjs-notion-starter-kit",
       "tags": [
@@ -79835,7 +79834,7 @@
   "importerVersion": 1,
   "media": {
     "018dfa4a372c4ed3ae12c290a295993a": {
-      "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAAAQAgCdASoIAAYAA4BaJZQC7AEUpVdQ/CyAAP72JLWCj9duXRIf3LlA8AA=",
+      "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAYAA4BaJZQAAvdYHeUAAP72I4tcW+VH5C2j69kgirwIAAA=",
       "original": {
         "bytes": 123874,
         "hash": "a107554a4c36ff2a4552eab9a8a3b4cf74e578b8f539738721cc27c1222fb509",
@@ -79845,7 +79844,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/a107554a4c36ff2a4552eab9a8a3b4cf74e578b8f539738721cc27c1222fb509.jpg",
         "width": 1196
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-01-31T08:48:00.000Z",
         "key": "018dfa4a372c4ed3ae12c290a295993a",
@@ -79883,7 +79882,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/f030f9dcef2df62970db6255413af72518c893048dd2ab71493a2d9bfe729045.jpg",
         "width": 1342
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-16T12:32:00.000Z",
         "key": "02ce4f71ad394e9c8a0386be9794eb6a",
@@ -80244,7 +80243,7 @@
       ]
     },
     "11065535a3974c3da3786bad0f82938d": {
-      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAgAA4BaJagAAxajX4CLwAD+z2GMUfLf5GM/6zDCQ8tdhqps4CpqYrIPhfu4AAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACQAQCdASoIAAgAA4BaJagAApmUxQAA/s9hi4kcJwxnxIwkZT8Sdshn9xmB/+MnM4CpqYrIPx0cWAAA",
       "original": {
         "bytes": 138537,
         "hash": "3271043945cdc58d1f6959a68b0740dff39e91c1bffec3268bf5b28c376a9bbc",
@@ -80254,7 +80253,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/3271043945cdc58d1f6959a68b0740dff39e91c1bffec3268bf5b28c376a9bbc.jpg",
         "width": 1360
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-01-31T08:45:00.000Z",
         "key": "11065535a3974c3da3786bad0f82938d",
@@ -80588,7 +80587,7 @@
       ]
     },
     "1cfcd87cf01f4227a0c7725af1ae7c9c": {
-      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAUAA4BaJZgCdAERHt2tgAD+7koVmL2wdA5vM6RQDX0myb6wIsCFM/kJPdgAAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAUAA4BaJYgCdAD0gbJgAP7uT5dI1lGiuOhtCqPoX9W5eRBN2HFbnivAAA==",
       "original": {
         "bytes": 550430,
         "hash": "9723f2682e126b45f83db5474f51c394be777f3152cfbfe2a6504eca2cc1e6c0",
@@ -80598,7 +80597,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/9723f2682e126b45f83db5474f51c394be777f3152cfbfe2a6504eca2cc1e6c0.jpg",
         "width": 2578
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-02-04T07:02:00.000Z",
         "key": "1cfcd87cf01f4227a0c7725af1ae7c9c",
@@ -80845,7 +80844,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/7f292543765af010a401f5793786ba28825514d30a267d3f5c18e9120f88924b.png",
         "width": 2016
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-16T12:30:00.000Z",
         "key": "20b56d67d66a49e0bffaa9d879decf33",
@@ -81026,7 +81025,7 @@
       "variants": []
     },
     "23b11fe5d6df422d967439cf7f547523": {
-      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoIAAYAA4BaJZwAAud7HUgAAPwi215oi1xJHSkM7vG7FyQmseWpeh7KVnAgAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACQAQCdASoIAAYAA4BaJZwAAuTwegAA/CLbdV1HPDI2O4ljscxWTj4Lk2BYgfjehAAAAA==",
       "original": {
         "bytes": 401781,
         "hash": "c4d3a885ab7fd20dba3e43a1deec3d7a2348b24ff255c49982b4f013fa8ef6b7",
@@ -81036,7 +81035,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/c4d3a885ab7fd20dba3e43a1deec3d7a2348b24ff255c49982b4f013fa8ef6b7.jpg",
         "width": 2612
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2021-01-29T03:45:00.000Z",
         "key": "23b11fe5d6df422d967439cf7f547523",
@@ -81395,6 +81394,33 @@
           "width": 1220
         }
       ]
+    },
+    "2fd86ae60aec43d698e449d16b97d57d": {
+      "original": {
+        "bytes": 19835013,
+        "height": 1080,
+        "mime": "video/mp4",
+        "remote": true,
+        "url": "https://assets.cultural-alignment.com/mcgurk-effect/7aa6d93c904320716d4a1af2e3137ac53b38af8d4a86254001447eb8ae701f9f.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 50774,
+        "hash": "719dae89c0bd5705ec547be3f79cc9854f03cb595b30882049312bf5bb72f4d3",
+        "height": 720,
+        "key": "personal-site/media/719dae89c0bd5705ec547be3f79cc9854f03cb595b30882049312bf5bb72f4d3.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/719dae89c0bd5705ec547be3f79cc9854f03cb595b30882049312bf5bb72f4d3.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-17T14:03:00.000Z",
+        "key": "2fd86ae60aec43d698e449d16b97d57d",
+        "kind": "external",
+        "url": "https://assets.cultural-alignment.com/mcgurk-effect/7aa6d93c904320716d4a1af2e3137ac53b38af8d4a86254001447eb8ae701f9f.mp4"
+      },
+      "variants": []
     },
     "30776d0414b74d98894206b67145044f": {
       "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAACwAQCdASoIAAQAA4BaJaQAAudhIwcAAP73N3HWKgwAAA==",
@@ -81762,7 +81788,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:01:00.000Z",
+        "edited": "2026-10-17T09:44:00.000Z",
         "key": "3c5edb27f124802aab9dc3396f5cfcbf:cover",
         "kind": "file"
       },
@@ -81935,7 +81961,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:00:00.000Z",
+        "edited": "2026-10-17T09:45:00.000Z",
         "key": "3c5edb27f124809db2a5fc2da1aff6ab:cover",
         "kind": "file"
       },
@@ -81973,7 +81999,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:00:00.000Z",
+        "edited": "2026-10-17T09:45:00.000Z",
         "key": "3c5edb27f124809db2a5fc2da1aff6ab:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/9da65059-c6ac-4368-9a4f-ae547ef8962c/agentic-icon-circle-light.svg"
@@ -82399,7 +82425,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:01:00.000Z",
+        "edited": "2026-10-17T09:45:00.000Z",
         "key": "3ddedb27f124807bb39ecda2ff1548c6:cover",
         "kind": "file"
       },
@@ -82437,7 +82463,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:01:00.000Z",
+        "edited": "2026-10-17T09:45:00.000Z",
         "key": "3ddedb27f124807bb39ecda2ff1548c6:icon",
         "kind": "file"
       },
@@ -82632,7 +82658,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:01:00.000Z",
+        "edited": "2026-10-17T09:45:00.000Z",
         "key": "3ddedb27f12481499a89eee57fda3967:cover",
         "kind": "file"
       },
@@ -82670,7 +82696,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:01:00.000Z",
+        "edited": "2026-10-17T09:45:00.000Z",
         "key": "3ddedb27f12481499a89eee57fda3967:icon",
         "kind": "file"
       },
@@ -82758,7 +82784,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:01:00.000Z",
+        "edited": "2026-10-17T09:45:00.000Z",
         "key": "3ddedb27f12481629063e24b51da6fe6:cover",
         "kind": "file"
       },
@@ -82796,7 +82822,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:01:00.000Z",
+        "edited": "2026-10-17T09:45:00.000Z",
         "key": "3ddedb27f12481629063e24b51da6fe6:icon",
         "kind": "file"
       },
@@ -82834,7 +82860,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-03T06:14:00.000Z",
+        "edited": "2026-10-17T09:44:00.000Z",
         "key": "3ddedb27f1248186b064c993b8e155c6:cover",
         "kind": "external",
         "url": "https://pbs.twimg.com/amplify_video_thumb/2096133721955209216/img/b0n8ufOa4sWSMbrt.jpg"
@@ -82873,7 +82899,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T15:59:00.000Z",
+        "edited": "2026-10-17T09:45:00.000Z",
         "key": "3ddedb27f12481b7bdc4d0325b2f6171:cover",
         "kind": "file"
       },
@@ -82911,7 +82937,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T15:59:00.000Z",
+        "edited": "2026-10-17T09:45:00.000Z",
         "key": "3ddedb27f12481b7bdc4d0325b2f6171:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/b5a901a9-0530-4441-89f7-28b07e41a03a/icon.svg"
@@ -82931,7 +82957,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-03T06:13:00.000Z",
+        "edited": "2026-10-17T09:46:00.000Z",
         "key": "3ddedb27f12481c1a145c3d546904768:cover",
         "kind": "file"
       },
@@ -84117,7 +84143,7 @@
       ]
     },
     "3ef4a57ca2944e5087ff9e54829c977f": {
-      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAYAA4BaJQBdgCHiBWfKUAD+8lcq0VZb9ONqyoIE1Yvaot2z5xEc5U2ywXIAAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoIAAYAA4BaJZACdAEU+VkyewAA/vJXiQoHbfYwfI0U1Bap2hxYA08cI3+GOcWok+UAAA==",
       "original": {
         "bytes": 1192349,
         "hash": "1c8ee24dd19538e38e5a706e1822c85ae5228c4a2ade87f900520d67ad36c818",
@@ -84127,7 +84153,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/1c8ee24dd19538e38e5a706e1822c85ae5228c4a2ade87f900520d67ad36c818.png",
         "width": 2524
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-02-04T07:02:00.000Z",
         "key": "3ef4a57ca2944e5087ff9e54829c977f",
@@ -84205,7 +84231,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-12T13:02:00.000Z",
+        "edited": "2026-10-13T03:30:00.000Z",
         "key": "3f7edb27f12481ad887ee8617d554ab2:cover",
         "kind": "file"
       },
@@ -84227,6 +84253,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/70bdcd10d6e82fdba88ed8f6486e1046fdfc3e26a520ccfd2fe33f002362a49b.webp",
           "width": 1733
+        }
+      ]
+    },
+    "3fcedb27f12481b48653c0deaaaf9f30:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJZQAAvdYBDQAAP69zfdof0UxEss7Mk026eXwQrn8ALTXAY/xiOwA",
+      "original": {
+        "bytes": 139594,
+        "hash": "95bb7e99b134de1eb004aa5f1f95363fea6c7ea6c33b27bce68f275b1d1c7f81",
+        "height": 720,
+        "key": "personal-site/media/95bb7e99b134de1eb004aa5f1f95363fea6c7ea6c33b27bce68f275b1d1c7f81.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/95bb7e99b134de1eb004aa5f1f95363fea6c7ea6c33b27bce68f275b1d1c7f81.jpg",
+        "width": 1280
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-17T14:12:00.000Z",
+        "key": "3fcedb27f12481b48653c0deaaaf9f30:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 33750,
+          "hash": "104975ffc7f084b341f626bd8dfc1f3c894ca51b1460dcb32738253f0735c549",
+          "height": 540,
+          "key": "personal-site/media/104975ffc7f084b341f626bd8dfc1f3c894ca51b1460dcb32738253f0735c549.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/104975ffc7f084b341f626bd8dfc1f3c894ca51b1460dcb32738253f0735c549.webp",
+          "width": 960
+        },
+        {
+          "bytes": 87050,
+          "hash": "bbd735898b782f243d0770f9f68a92016ab5ca0b9a3c1516468b0b14cd947a33",
+          "height": 720,
+          "key": "personal-site/media/bbd735898b782f243d0770f9f68a92016ab5ca0b9a3c1516468b0b14cd947a33.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/bbd735898b782f243d0770f9f68a92016ab5ca0b9a3c1516468b0b14cd947a33.webp",
+          "width": 1280
         }
       ]
     },
@@ -84528,7 +84592,7 @@
       ]
     },
     "4cd88887d79f4b4b95e924e4077b1b5e": {
-      "blurDataURL": "data:image/webp;base64,UklGRioAAABXRUJQVlA4IB4AAAAwAQCdASoIAAUAA4BaJaQAA3AA/vS0bTMgXEoAAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRigAAABXRUJQVlA4IBwAAAAwAQCdASoIAAUAA4BaJaQAA3AA/vS13aEY6QAA",
       "original": {
         "bytes": 44259,
         "hash": "39b61e1c091836c2eaa1a6fb8a27e00367c848a4c8af2682d563b5dd682eb2a2",
@@ -84538,7 +84602,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/39b61e1c091836c2eaa1a6fb8a27e00367c848a4c8af2682d563b5dd682eb2a2.png",
         "width": 2048
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-02-05T07:11:00.000Z",
         "key": "4cd88887d79f4b4b95e924e4077b1b5e",
@@ -84566,7 +84630,7 @@
       ]
     },
     "4d0a1c60687244deaffabffb73dad629": {
-      "blurDataURL": "data:image/webp;base64,UklGRigAAABXRUJQVlA4IBwAAAAwAQCdASoIAAUAA4BaJaQAA3AA/vRJtj5KBsAA",
+      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAAAwAQCdASoIAAUAA4BaJaQAA3AA/vRJuAb//iHg3EAAAA==",
       "original": {
         "bytes": 53245,
         "hash": "4aad2c602fb7c0c6b1ab94974205bd3ecee4cc682c816ccd609b4082c486b373",
@@ -84576,7 +84640,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/4aad2c602fb7c0c6b1ab94974205bd3ecee4cc682c816ccd609b4082c486b373.png",
         "width": 1818
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-02-05T07:32:00.000Z",
         "key": "4d0a1c60687244deaffabffb73dad629",
@@ -84967,7 +85031,7 @@
       ]
     },
     "54422e219014454b96f1d31e1627c8f3": {
-      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAACQAQCdASoIAAUAA4BaJaQAAud7WCAA/vYVzeVpwAAAAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAAAwAQCdASoIAAUAA4BaJaQAA3AA/vSAEmnHrdTPLKRcAA==",
       "original": {
         "bytes": 341270,
         "hash": "9ca54a5bcae737b5ad10ff89e2575c70f9ed7383e533aa4ca3e3fa52e6f64b0b",
@@ -84977,7 +85041,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/9ca54a5bcae737b5ad10ff89e2575c70f9ed7383e533aa4ca3e3fa52e6f64b0b.jpg",
         "width": 2140
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-02-04T23:18:00.000Z",
         "key": "54422e219014454b96f1d31e1627c8f3",
@@ -85021,6 +85085,33 @@
         "key": "5467e9570b01436288960336592d64bc",
         "kind": "external",
         "url": "https://media.giphy.com/media/ofqccIX7HcjPG/giphy.gif"
+      },
+      "variants": []
+    },
+    "549a7670aefe46c096b9d7759d31c4e3": {
+      "original": {
+        "bytes": 2921665,
+        "hash": "9327110965a0d9a3b874f55408092aa062d430e98efdbfd6c8a410dbe1e6f391",
+        "height": 1080,
+        "key": "personal-site/media/9327110965a0d9a3b874f55408092aa062d430e98efdbfd6c8a410dbe1e6f391.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/9327110965a0d9a3b874f55408092aa062d430e98efdbfd6c8a410dbe1e6f391.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 51902,
+        "hash": "5862b8f68ad855a22b2d2d31941491fa4c038eb8939ede81db2b7a2a94ce0097",
+        "height": 720,
+        "key": "personal-site/media/5862b8f68ad855a22b2d2d31941491fa4c038eb8939ede81db2b7a2a94ce0097.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/5862b8f68ad855a22b2d2d31941491fa4c038eb8939ede81db2b7a2a94ce0097.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-17T14:03:00.000Z",
+        "key": "549a7670aefe46c096b9d7759d31c4e3",
+        "kind": "file"
       },
       "variants": []
     },
@@ -85139,7 +85230,7 @@
       ]
     },
     "5b87b717ca5b49dab17c12c3eab1644a": {
-      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoIAAYAA4BaJYwCdH8AGBjfoAAA/u4+8DOrLGZAgn83CI61mLDXOoP8C+QsI76Gd8xswAAA",
+      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoIAAYAA4BaJYwCdAEPDyUTUAD+7e8oTwwPDBNmjRx/iEVP4gxukCb8hGsiGCoAAAA=",
       "original": {
         "bytes": 230680,
         "hash": "f1aa14c275111c6abc2dea2d95780c7cbd4ce4c9141564316921cb5c65f75d29",
@@ -85149,7 +85240,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/f1aa14c275111c6abc2dea2d95780c7cbd4ce4c9141564316921cb5c65f75d29.jpg",
         "width": 2612
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2021-01-29T03:42:00.000Z",
         "key": "5b87b717ca5b49dab17c12c3eab1644a",
@@ -85357,6 +85448,33 @@
         }
       ]
     },
+    "6312164b195c4bd7a296305d22c9a72f": {
+      "original": {
+        "bytes": 3298451,
+        "hash": "31263b68aa3e3ee10ae4a918063f73909368b631f10039acac225f0659910b88",
+        "height": 1080,
+        "key": "personal-site/media/31263b68aa3e3ee10ae4a918063f73909368b631f10039acac225f0659910b88.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/31263b68aa3e3ee10ae4a918063f73909368b631f10039acac225f0659910b88.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 53598,
+        "hash": "eb10749f51e5baa9d2feb4b472a6145ddb5a1762a8dfb0a9123dac4dbb86c544",
+        "height": 720,
+        "key": "personal-site/media/eb10749f51e5baa9d2feb4b472a6145ddb5a1762a8dfb0a9123dac4dbb86c544.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/eb10749f51e5baa9d2feb4b472a6145ddb5a1762a8dfb0a9123dac4dbb86c544.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-17T14:02:00.000Z",
+        "key": "6312164b195c4bd7a296305d22c9a72f",
+        "kind": "file"
+      },
+      "variants": []
+    },
     "672cef4d86f845da961725917438dca8": {
       "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoGAAgAA4BaJaACdAEOeH83VAD+5pPQ1mn/ejV9kn8qr8IUbusky4vBu7B0Mnbv0smFgpBxNgAAAA==",
       "original": {
@@ -85425,7 +85543,7 @@
       ]
     },
     "67cabc9b4e6a48af8cba7c8fc09eee44": {
-      "blurDataURL": "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoIAAUAA4BaJaQAA3AA/vSwuAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoIAAUAA4BaJaQAA3AA/vTmUAA=",
       "original": {
         "bytes": 39185,
         "hash": "64dda1533c870f62025ffe761d1a9fd2f2b7aa8790b4852bff424391c258d3a4",
@@ -85435,7 +85553,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/64dda1533c870f62025ffe761d1a9fd2f2b7aa8790b4852bff424391c258d3a4.png",
         "width": 2048
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-02-05T07:11:00.000Z",
         "key": "67cabc9b4e6a48af8cba7c8fc09eee44",
@@ -85473,9 +85591,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/7dfeecbab7ba3361ef836a3756a6e1c3895a326dbbb15f56d324db1a72fc352c.jpg",
         "width": 1836
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T15:07:00.000Z",
+        "edited": "2026-10-17T09:44:00.000Z",
         "key": "689a8abc1afa4699905aa2f2e585e208:cover",
         "kind": "file"
       },
@@ -85903,9 +86021,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/b5ad5c395b2b77791cd9d094087f1f1c82fcd0a4c1bc274614bd6b88b10792b7.jpg",
         "width": 1836
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T12:32:00.000Z",
+        "edited": "2026-10-17T09:46:00.000Z",
         "key": "79f0cb8e859d43b1865a9fe18de950df:cover",
         "kind": "file"
       },
@@ -85941,9 +86059,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/483ea4556636d48862fbe1219b134febcc60a90f59be07ce1b156aded76e327f.png",
         "width": 512
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T12:32:00.000Z",
+        "edited": "2026-10-17T09:46:00.000Z",
         "key": "79f0cb8e859d43b1865a9fe18de950df:icon",
         "kind": "file"
       },
@@ -86113,7 +86231,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/eb1d3f2315f4b91c955d353d40178f689c69c1fa25a1e4948de3dff38cb7a3be.gif",
         "width": 458
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-08-20T16:37:00.000Z",
         "key": "7f4d75374ea74d2db1a7a7d21672c0db",
@@ -86199,7 +86317,7 @@
       ]
     },
     "8246ffaee3b0428bb0a1499df029b24a": {
-      "blurDataURL": "data:image/webp;base64,UklGRigAAABXRUJQVlA4IBwAAAAwAQCdASoIAAYAA4BaJaQAA3AA/vPUQHPCcAAA",
+      "blurDataURL": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoIAAYABIBaJaQAA3AA/vQFPYXAAA==",
       "original": {
         "bytes": 291870,
         "hash": "4dad01c64815c7f074eb1a1f27b26fc92a64233987502797ffef3bb8c0ac189c",
@@ -86209,7 +86327,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/4dad01c64815c7f074eb1a1f27b26fc92a64233987502797ffef3bb8c0ac189c.jpg",
         "width": 3664
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-01-31T00:54:00.000Z",
         "key": "8246ffaee3b0428bb0a1499df029b24a",
@@ -86428,7 +86546,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/5b79a45004452cad7794f24edcdb132f84dfada492d0c323a749461839766b6c.jpg",
         "width": 1200
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2026-09-16T11:19:00.000Z",
         "key": "8b4d8f7b37154d2399a889d2b8f5022f",
@@ -87031,7 +87149,7 @@
       ]
     },
     "95d34e257272433e8960b302309e5a07": {
-      "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoIAAgAA4BaJQBOgCIj7NOswAD+9mfMUAMcmvYEINzlIJFCXkCGwnu2a86YIugyYi6IQl9kAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoIAAgAA4BaJQBYdiIj34rvAAD+9mfMUAMdk+v/Vql6hfKgtIMiKJRTKL1CMZl2yeFSDxRjEGAAAA==",
       "original": {
         "bytes": 659954,
         "hash": "f0225f362cb942911e79ec17562fbb9957d32b2b017dfa13d46384012af6d136",
@@ -87041,7 +87159,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/f0225f362cb942911e79ec17562fbb9957d32b2b017dfa13d46384012af6d136.png",
         "width": 1124
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2021-02-07T21:08:00.000Z",
         "key": "95d34e257272433e8960b302309e5a07",
@@ -87241,7 +87359,7 @@
       ]
     },
     "99092810c7764080947e5cf2a025e202": {
-      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoIAAYAA4BaJaQAAuTsOIAA/vAbr144bFbNO9AAAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoIAAYAA4BaJaQAAuTsOIAA/vIWcD+rNrOC61joAAA=",
       "original": {
         "bytes": 186376,
         "hash": "b6d95d1c09411b78298eb2fc31a277514094b3810192c7b40ba16f89ea222d89",
@@ -87251,7 +87369,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/b6d95d1c09411b78298eb2fc31a277514094b3810192c7b40ba16f89ea222d89.jpg",
         "width": 1702
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-01-31T00:54:00.000Z",
         "key": "99092810c7764080947e5cf2a025e202",
@@ -87525,7 +87643,7 @@
       "variants": []
     },
     "a3b0a61d438c46a595c55d021f601a8f": {
-      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAgAA4BaJQBOgBmS0J4gAPfOq3tHQqudwbToN45Rsfdrf6BIIDkCtQc1CgAA",
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAgAA4BaJQBOgBZNGhwAAPfOq3tHRMfa54esmMQZwCgFcfjXGVQoqIXRJAAA",
       "original": {
         "bytes": 299138,
         "hash": "7a75560131a77ee669f136dd09ca85c7c8180d4a9bf8de199b4b22ae3c819a1a",
@@ -87535,7 +87653,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/7a75560131a77ee669f136dd09ca85c7c8180d4a9bf8de199b4b22ae3c819a1a.jpg",
         "width": 1600
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-02-04T07:33:00.000Z",
         "key": "a3b0a61d438c46a595c55d021f601a8f",
@@ -87792,7 +87910,7 @@
       ]
     },
     "aa4be961cd4740e09f15c12ab8628ead": {
-      "blurDataURL": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACQAQCdASoFAAgAA4BaJQBOgCHDJFgA/slnD9M+gWkogkntZw0i3xnippqvaX1lxExE2vMNawdQAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoFAAgAA4BaJQBOgCHExEOAAP7JZyna8eH6+QC2D+7Map1ly5fs43ZRkGEVE2vMNawdQAAA",
       "original": {
         "bytes": 72416,
         "hash": "e545f853b73f40e4ba2625c291b8fbb51715a55ba149961fe1df1b207dfdea8d",
@@ -87802,7 +87920,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/e545f853b73f40e4ba2625c291b8fbb51715a55ba149961fe1df1b207dfdea8d.jpg",
         "width": 750
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2021-01-29T03:44:00.000Z",
         "key": "aa4be961cd4740e09f15c12ab8628ead",
@@ -87859,7 +87977,7 @@
       ]
     },
     "adf6ffb4396a4a1aa155bd36364ddc3c": {
-      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoHAAgAA4BaJYwAAudZtgAA/vYUsLk9BMY6xhocAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoHAAgAA4BaJQAAXOs2wAAA/vYUsMK74dvrfwDFdX2AAAAA",
       "original": {
         "bytes": 429715,
         "hash": "6792d0d4cb3cb8ce487c57c26772db08e84fb2a872064367ef261d706a180722",
@@ -87869,7 +87987,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/6792d0d4cb3cb8ce487c57c26772db08e84fb2a872064367ef261d706a180722.jpg",
         "width": 1768
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2024-11-10T09:14:00.000Z",
         "key": "adf6ffb4396a4a1aa155bd36364ddc3c",
@@ -88192,7 +88310,7 @@
       ]
     },
     "b416bfc7808b478691f0fdcfb7d4306c": {
-      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoIAAUAA4BaJYgCdDBAAUWoG5AA/vKM2s4sy7EuJ9wedJ+XY7B5zdeHYxELiY+q3C6I3ocPrbdr8+N0tCXk3gAA",
+      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoIAAUAA4BaJYgCdDBAAakpua0iAAD+8ozayrKhVxFbU2+Bcq3ZlrnknI/ZSp1W4XRG9Dh9bbtfnxuloS8m8AAA",
       "original": {
         "bytes": 30648,
         "hash": "398ddaaa223cf8ea79e8d879bc8867a52cca3b4b78561d78041d53e8687cb685",
@@ -88202,7 +88320,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/398ddaaa223cf8ea79e8d879bc8867a52cca3b4b78561d78041d53e8687cb685.png",
         "width": 2048
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-02-04T23:26:00.000Z",
         "key": "b416bfc7808b478691f0fdcfb7d4306c",
@@ -88240,9 +88358,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/55129fa4b2720d0886aedb29589c4bf4ac04975a43dfdd1c71335eb56562ba1b.jpg",
         "width": 1440
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T08:20:00.000Z",
+        "edited": "2026-10-17T09:44:00.000Z",
         "key": "b4d9b266324846449aa10a1d952daa5c:cover",
         "kind": "file"
       },
@@ -89125,7 +89243,7 @@
       ]
     },
     "d06943a5434241b681985f468218509f": {
-      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoIAAUAA4BaJZACdDBAAZ1MERcAAP7z+gSzlpV5vZN7vrv6wX2GFcIoLeDAV8UrOLTmL4oDUr3t8N0tAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoIAAUAA4BaJZACdDBAAWZOvAAA/vP6BLOWlWczNsqwmlhb3oiYb+ZudqKZX9w/u56HxQGpXvb20i0AAAA=",
       "original": {
         "bytes": 38449,
         "hash": "be1067c42a7f05697490027e61cd2226f27d7650b31faec1197e126cc5196265",
@@ -89135,7 +89253,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/be1067c42a7f05697490027e61cd2226f27d7650b31faec1197e126cc5196265.png",
         "width": 2048
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-02-04T23:26:00.000Z",
         "key": "d06943a5434241b681985f468218509f",
@@ -89249,9 +89367,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/59802081b7983fc8504da6736d69082a42dd6693ab85e4003902803c2ccfb240.jpg",
         "width": 1920
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T11:19:00.000Z",
+        "edited": "2026-10-17T09:44:00.000Z",
         "key": "d1b5dcf8b9ff425b8aef5ce6f0730202:cover",
         "kind": "file"
       },
@@ -89287,9 +89405,9 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/18fd082f97295d0e6e76ee2b317c379be0f8bf3329adfd69a886bd80746b43bb.png",
         "width": 192
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-16T11:19:00.000Z",
+        "edited": "2026-10-17T09:44:00.000Z",
         "key": "d1b5dcf8b9ff425b8aef5ce6f0730202:icon",
         "kind": "file"
       },
@@ -89488,7 +89606,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/6ae0026d8321a61a9afce96b2c3f338816a516d180c1b4412d29667a20138f79.gif",
         "width": 470
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2022-03-25T14:32:00.000Z",
         "key": "d7e9951b289c4ff28b82b0a61fe260b1",
@@ -89602,7 +89720,7 @@
       ]
     },
     "d8e8166deb9d45418a4c494a68e1d235": {
-      "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoIAAUAA4BaJQBOhgiwMWAP5oAA/vKMZhrrpNVnQILzZNodhWjjn+ba4Y80TxFwj2nHYJYY3opn1PnJ0MJqqvgA",
+      "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAAAQAgCdASoIAAUAA4BaJQBOhgiwNT/RncGAAP7yjGYUmv49NaBWOvJ7qJ2fwkaBi4R7TjsEsMb0Uz6nzk6F9bVfAAA=",
       "original": {
         "bytes": 30833,
         "hash": "160f82869340abc4d65760060f78f1bd3dc0c4078e466532f1fb8ccfa8f84a09",
@@ -89612,7 +89730,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/160f82869340abc4d65760060f78f1bd3dc0c4078e466532f1fb8ccfa8f84a09.png",
         "width": 2048
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-02-04T23:26:00.000Z",
         "key": "d8e8166deb9d45418a4c494a68e1d235",
@@ -90099,7 +90217,7 @@
       ]
     },
     "e38eddc85c3a4c54ae0383b346447124": {
-      "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACwAQCdASoIAAUAA4BaJYgAAudglZ4AAP701RBF4i3R4z+2ywb8AAAA",
+      "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoIAAUAA4BaJQAAW59X/wAA/vTVEEcH3WlvvpngxDYcAAAA",
       "original": {
         "bytes": 511025,
         "hash": "be355a00ca46943e3ba130b9cd22a784336d01b88c6b8563c1f7a2a34acccb16",
@@ -90109,7 +90227,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/be355a00ca46943e3ba130b9cd22a784336d01b88c6b8563c1f7a2a34acccb16.png",
         "width": 1894
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-02-02T02:11:00.000Z",
         "key": "e38eddc85c3a4c54ae0383b346447124",
@@ -90394,7 +90512,7 @@
       ]
     },
     "ed7e8f60c6d1449e840b5c7762505c44": {
-      "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoIAAYAA4BaJZwAAl1kdmwAAP7wEfj+p/ltnNCp2P4c11Q04J3OyAAUsQH/yl4AAAA=",
+      "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoIAAYAA4BaJZwAD4hQke4943gA/u/jodvJiYru4gwy9E0SsadZoE/Gfxq5gAAA",
       "original": {
         "bytes": 419150,
         "hash": "6ca6701a34b89360f8e9cd651af78d700707efe661c09b2cc23ee064b6b052be",
@@ -90404,7 +90522,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/6ca6701a34b89360f8e9cd651af78d700707efe661c09b2cc23ee064b6b052be.jpg",
         "width": 2612
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2021-01-29T03:45:00.000Z",
         "key": "ed7e8f60c6d1449e840b5c7762505c44",
@@ -90565,7 +90683,7 @@
       "variants": []
     },
     "f2c4fcff2c424dfdadc3b7601622ed8b": {
-      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAUAA4BaJaQAAuUve0AA/vcRp6ucxwS0Qf+WGAAAAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoIAAUAA4BaJaQAAvd5KtzAAP73Edp8akRE4aAAAAA=",
       "original": {
         "bytes": 55916,
         "hash": "440675bb375aca81b0c15d87580828f73dda27df15defab62a46b1ced5f4be58",
@@ -90575,7 +90693,7 @@
         "url": "https://assets.cultural-alignment.com/personal-site/media/440675bb375aca81b0c15d87580828f73dda27df15defab62a46b1ced5f4be58.jpg",
         "width": 1092
       },
-      "pipelineVersion": 1,
+      "pipelineVersion": 2,
       "source": {
         "edited": "2023-02-04T08:50:00.000Z",
         "key": "f2c4fcff2c424dfdadc3b7601622ed8b",
@@ -91124,6 +91242,11 @@
       "active": true,
       "aliases": [],
       "slug": "candy-paint-music-video"
+    },
+    "3fcedb27f12481b48653c0deaaaf9f30": {
+      "active": true,
+      "aliases": [],
+      "slug": "the-mcgurk-effect"
     }
   },
   "projects": {
@@ -91250,9 +91373,9 @@
       ],
       "cover": "3c5edb27f124802aab9dc3396f5cfcbf:cover",
       "description": "Export any Kindle book you own as text, PDF, EPUB, or as a custom, AI-narrated audiobook. ",
-      "featured": true,
+      "featured": false,
       "id": "3c5edb27f124802aab9dc3396f5cfcbf",
-      "modified": "2026-09-28T16:01:00.000Z",
+      "modified": "2026-10-17T09:44:00.000Z",
       "published": "2024-10-08",
       "slug": "kindle-ai-export",
       "source": "https://github.com/transitive-bullshit/kindle-ai-export",
@@ -91400,13 +91523,13 @@
       ],
       "cover": "3c5edb27f124809db2a5fc2da1aff6ab:cover",
       "description": "Agentic is an app store for LLM tools.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "media": "3c5edb27f124809db2a5fc2da1aff6ab:icon",
         "type": "image"
       },
       "id": "3c5edb27f124809db2a5fc2da1aff6ab",
-      "modified": "2026-09-28T16:00:00.000Z",
+      "modified": "2026-10-17T09:45:00.000Z",
       "published": "2025-07-03",
       "slug": "agentic",
       "source": "https://github.com/transitive-bullshit/agentic",
@@ -91854,13 +91977,13 @@
       ],
       "cover": "3ddedb27f124807bb39ecda2ff1548c6:cover",
       "description": "Saasify was an open source startup aiming to become Shopify for API-first SaaS.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "media": "3ddedb27f124807bb39ecda2ff1548c6:icon",
         "type": "image"
       },
       "id": "3ddedb27f124807bb39ecda2ff1548c6",
-      "modified": "2026-09-28T16:01:00.000Z",
+      "modified": "2026-10-17T09:45:00.000Z",
       "published": "2019-09-01",
       "slug": "saasify",
       "source": "https://github.com/saasify-sh/saasify",
@@ -92023,13 +92146,13 @@
       ],
       "cover": "3ddedb27f12481499a89eee57fda3967:cover",
       "description": "Share recommendations for your favorite things. Acquired by Yahoo.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "media": "3ddedb27f12481499a89eee57fda3967:icon",
         "type": "image"
       },
       "id": "3ddedb27f12481499a89eee57fda3967",
-      "modified": "2026-09-28T16:01:00.000Z",
+      "modified": "2026-10-17T09:45:00.000Z",
       "published": "2011-11-21",
       "slug": "stamped",
       "tags": [
@@ -92161,13 +92284,13 @@
       ],
       "cover": "3ddedb27f12481629063e24b51da6fe6:cover",
       "description": "Turn blog posts into marketing videos with AI. Acquired by Verblio.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "media": "3ddedb27f12481629063e24b51da6fe6:icon",
         "type": "image"
       },
       "id": "3ddedb27f12481629063e24b51da6fe6",
-      "modified": "2026-09-28T16:01:00.000Z",
+      "modified": "2026-10-17T09:45:00.000Z",
       "published": "2017-09-06",
       "slug": "automagical",
       "tags": [
@@ -92215,13 +92338,13 @@
       ],
       "cover": "3ddedb27f1248186b064c993b8e155c6:cover",
       "description": "The Pluribus hive explains OpenAI’s swarm problem in this AI parody.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "type": "emoji",
         "value": "🎬"
       },
       "id": "3ddedb27f1248186b064c993b8e155c6",
-      "modified": "2026-10-03T06:14:00.000Z",
+      "modified": "2026-10-17T09:44:00.000Z",
       "published": "2026-09-05",
       "slug": "pluribus-openai-parody",
       "tags": [
@@ -92252,13 +92375,13 @@
       ],
       "cover": "3ddedb27f12481b7bdc4d0325b2f6171:cover",
       "description": "Turn your AI chats into links you’ll be proud to share.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "media": "3ddedb27f12481b7bdc4d0325b2f6171:icon",
         "type": "image"
       },
       "id": "3ddedb27f12481b7bdc4d0325b2f6171",
-      "modified": "2026-09-28T15:59:00.000Z",
+      "modified": "2026-10-17T09:45:00.000Z",
       "published": "2026-09-14",
       "slug": "passage",
       "source": "https://github.com/transitive-bullshit/share-ai-passage",
@@ -92297,13 +92420,13 @@
       ],
       "cover": "3ddedb27f12481c1a145c3d546904768:cover",
       "description": "OpenAI’s board finally realizes what Ilya saw in this AI-made Margin Call parody.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "type": "emoji",
         "value": "🎬"
       },
       "id": "3ddedb27f12481c1a145c3d546904768",
-      "modified": "2026-10-03T06:13:00.000Z",
+      "modified": "2026-10-17T09:46:00.000Z",
       "published": "2026-09-13",
       "slug": "margin-call-ai-safety-parody",
       "source": "https://www.share-ai-passage.com/chatgpt/8cb96104-b9a5-4791-8c64-481517b28f0c",
@@ -100062,6 +100185,394 @@
       "type": "Video",
       "website": "https://candy-paint.vercel.app",
       "youtube": "https://youtu.be/X806TXsSypQ"
+    },
+    "3fcedb27f12481b48653c0deaaaf9f30": {
+      "authors": [
+        {
+          "id": "b036f7f695a94f97b3b5c46867d0d103",
+          "name": "Travis Fischer"
+        }
+      ],
+      "blocks": [
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Video created with Opus 5.5, H3 Max, and Fish Audio.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "2fd86ae60aec43d698e449d16b97d57d",
+          "media": "2fd86ae60aec43d698e449d16b97d57d",
+          "type": "video"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f1248004b52bcfebe64c650d",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Today, as I was working on a random parody video with Opus 5.5, I ran into something really strange.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f1248054b4adef49c0d1a754",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "There was a generated scene with Jensen Huang as a drill instructor saying the word “PROMPT!”, but no matter what I did, the video clip for that scene kept sounding… off. I could swear he was saying “PRONT!” even though the approved audio clip for that scene was clearly saying “PROMPT!”.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Poor lip sync: the mouth never closes ⇒ it ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "sounds",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " like he’s saying “Pront”",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "6312164b195c4bd7a296305d22c9a72f",
+          "media": "6312164b195c4bd7a296305d22c9a72f",
+          "type": "video"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f1248058a205c6963d4eaccf",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I asked Claude to fix this because obviously the audio was broken, but after multiple back and forths, Claude eventually pushed back and told me I was wrong: the raw audio clip I had approved and the video’s audio track were identical… to which I promptly said fuck you Claude you’re just a dumb AI model, wtf are you smoking over there at Anthropic?!!!",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f1248082928ccc93f904b030",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "That’s when Claude figured out what was really going on was something called the ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "href": "https://en.wikipedia.org/wiki/McGurk_effect",
+              "italic": false,
+              "strike": false,
+              "text": "McGurck effect",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ": ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "an audiovisual illusion where what you see changes what you hear…",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f124803c953be4e3648a7d9e",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Fixed Version",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f1248033b1b8f5c93f160bbd",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "So I had Claude redo the lip sync for this scene ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "without changing the audio",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ":",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Fixed lip sync: same exact audio, but this time the lips close on the M and P so we hear “Prompt”",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "549a7670aefe46c096b9d7759d31c4e3",
+          "media": "549a7670aefe46c096b9d7759d31c4e3",
+          "type": "video"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "5a573781991d43a49e68c6257db451f5",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "And it worked!",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f12480e9b2a5fb67530a558b",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Needless to say, I was dumbfounded. The audio track for both of these video clips is exactly the same, but they ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "sound",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " completely different. 🤯",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f12480fe9b94d3e01109f8e4",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Not only was Claude right (the video’s AAC audio track was byte identical to the raw audio track), but I also learned about a ridiculously cool audiovisual illusion.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f1248008b5c6f74e262a7460",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I still doubted Claude so I (gasp) opened up Google search and found this clip and lo & behold, this is a real effect, I just hadn’t encountered it before. TIL FTW!",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "398da7c919504d838704bb806c518760",
+          "type": "video",
+          "url": "https://youtu.be/2k8fHR9jKVM?t=2"
+        },
+        {
+          "children": [],
+          "id": "3fcedb27f1248017b2fbc68774b77347",
+          "type": "divider"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f12480f28c08c7ad64c10a5a",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "So if you’re doing any AI video or lip syncing work, def keep this in mind.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f12480208708d23e30e2cbb3",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Cause it turns out our multimodal meat bodies are super easy to trick!",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f12480bc9bf1d4767941ee6e",
+          "richText": [],
+          "type": "paragraph"
+        }
+      ],
+      "cover": "3fcedb27f12481b48653c0deaaaf9f30:cover",
+      "description": "The McGurk effect: what you hear depends on what you see.",
+      "featured": false,
+      "icon": {
+        "type": "emoji",
+        "value": "🎬"
+      },
+      "id": "3fcedb27f12481b48653c0deaaaf9f30",
+      "modified": "2026-10-17T14:26:00.000Z",
+      "needsImageSync": true,
+      "published": "2026-10-17",
+      "slug": "the-mcgurk-effect",
+      "source": "https://github.com/transitive-bullshit/my-software-factory",
+      "tags": [
+        "AI",
+        "Video",
+        "Projects"
+      ],
+      "title": "The McGurk Effect",
+      "type": "Video",
+      "youtube": "https://www.youtube.com/watch?v=-VAw_z6oKpQ"
     }
   },
   "projectSource": {
