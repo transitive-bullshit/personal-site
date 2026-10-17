@@ -84307,7 +84307,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-17T15:35:00.000Z",
+        "edited": "2026-10-17T15:39:00.000Z",
         "key": "3fcedb27f124817c99a9c35e286ddd7e:cover",
         "kind": "file"
       },
@@ -90645,7 +90645,7 @@
         "width": 1280
       },
       "source": {
-        "edited": "2026-10-17T14:37:00.000Z",
+        "edited": "2026-10-17T15:39:00.000Z",
         "key": "ed5a2e64d0604675b5bdbfcdf8bb94d5",
         "kind": "external",
         "url": "https://assets.cultural-alignment.com/ai-engineers-creed/6ff14cd31eb6ce12b78239eec3347ce08cc04ba6ddf0c80655b42377bb2e8ff7.mp4"
@@ -100348,7 +100348,7 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "Video created with Opus 5.5, Nano Banana Pro, H3 Max, Fal Sync-3, ElevenLabs, and Fish Audio.",
+              "text": "The AI Engineer’s Creed: A parody of the famous scene from Full Metal Jacket (1987).",
               "underline": false
             }
           ],
@@ -101518,7 +101518,7 @@
         "value": "🎬"
       },
       "id": "3fcedb27f124817c99a9c35e286ddd7e",
-      "modified": "2026-10-17T15:35:00.000Z",
+      "modified": "2026-10-17T15:39:00.000Z",
       "published": "2026-10-17",
       "slug": "the-ai-engineers-creed-full-metal-jacket-parody",
       "source": "https://github.com/transitive-bullshit/my-software-factory",
