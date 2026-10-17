@@ -100507,11 +100507,6 @@
         },
         {
           "children": [],
-          "id": "3fcedb27f1248017b2fbc68774b77347",
-          "type": "divider"
-        },
-        {
-          "children": [],
           "color": "default",
           "id": "3fcedb27f12480f28c08c7ad64c10a5a",
           "richText": [
@@ -100560,7 +100555,7 @@
         "value": "🎬"
       },
       "id": "3fcedb27f12481b48653c0deaaaf9f30",
-      "modified": "2026-10-17T14:26:00.000Z",
+      "modified": "2026-10-17T14:46:00.000Z",
       "needsImageSync": true,
       "published": "2026-10-17",
       "slug": "the-mcgurk-effect",
