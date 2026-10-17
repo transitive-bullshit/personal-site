@@ -550,9 +550,9 @@ summary {
   border-radius: 10px;
   background: var(--muted);
 }
-.article-video {
-  display: block;
-  block-size: auto;
+.project-hero-video.article-video {
+  border: 1px solid var(--border);
+  border-radius: 10px;
 }
 .video-embed {
   aspect-ratio: 16 / 9;
@@ -1495,6 +1495,18 @@ summary {
   inline-size: 64px;
   block-size: 64px;
   border-radius: 50%;
+  color: oklch(1 0 none);
+  background: color-mix(in oklch, var(--color-scrim) 65%, transparent);
+}
+.video-duration {
+  position: absolute;
+  inset-block-end: 12px;
+  inset-inline-start: 12px;
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-size: 0.8125rem;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
   color: oklch(1 0 none);
   background: color-mix(in oklch, var(--color-scrim) 65%, transparent);
 }

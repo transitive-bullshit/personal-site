@@ -16,7 +16,8 @@ import { ContentCover } from './article/content-cover'
 import { Button } from './ui/button'
 
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
-  month: 'short',
+  month: 'long',
+  day: 'numeric',
   year: 'numeric',
   timeZone: 'UTC'
 })

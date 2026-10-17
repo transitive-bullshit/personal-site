@@ -15,6 +15,7 @@ import { Bookmark } from './bookmark'
 import { ZoomableImage, NotionIcon } from './media'
 import { RichText } from './rich-text'
 import { ArticleTweet } from './tweet'
+import { ProjectHeroVideo } from '../project-hero-video'
 
 export function Blocks({
   blocks,
@@ -206,26 +207,12 @@ function BlockView({ block, snapshot }: { block: Block; snapshot: Snapshot }) {
       const media = block.media ? snapshot.media[block.media] : undefined
       return (
         <figure id={block.id}>
-          {block.media ? (
-            <video
-              controls
-              preload='metadata'
-              className='embed-frame article-video'
-              width={media?.original.width}
-              height={media?.original.height}
-              style={{
-                aspectRatio:
-                  media?.original.width && media.original.height
-                    ? `${media.original.width} / ${media.original.height}`
-                    : undefined
-              }}
-              poster={media?.poster?.url}
-              src={media!.original.url}
-            >
-              <a href={snapshot.media[block.media]!.original.url}>
-                Download video
-              </a>
-            </video>
+          {media ? (
+            <ProjectHeroVideo
+              media={media}
+              title='video'
+              className='project-hero-video article-video'
+            />
           ) : url ? (
             <iframe
               title='Embedded video'
