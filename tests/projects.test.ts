@@ -5,7 +5,10 @@ import {
   snapshotSchema,
   type Project
 } from '../lib/content/schema'
-import { resolveContentLinks } from '../lib/content/content-links'
+import {
+  resolveContentLinks,
+  unlinkUnpublishedPages
+} from '../lib/content/content-links'
 import { validateSnapshot } from '../lib/content/references'
 import { crossCollectionSlugWarnings } from '../lib/content/routes'
 import {
@@ -187,6 +190,23 @@ it('rewrites cached Notion project links into the project namespace', () => {
   source.blocks = [block]
   resolveContentLinks(snapshot)
   expect(block.richText[0]!.href).toBe('/projects/fixture-project')
+})
+
+it('resolves imported page links before validating a synced snapshot', () => {
+  const snapshot = contentFixture()
+  const published = paragraph('e'.repeat(32), 'Project')
+  published.richText[0]!.href = '/p/' + projectId
+  const unpublished = paragraph('f'.repeat(32), 'Draft')
+  unpublished.richText[0]!.href = '/p/' + '9'.repeat(32)
+  snapshot.articles[articleId]!.blocks = [published, unpublished]
+  const warnings: string[] = []
+  unlinkUnpublishedPages(resolveContentLinks(snapshot), (message) =>
+    warnings.push(message)
+  )
+  expect(published.richText[0]!.href).toBe('/projects/fixture-project')
+  expect(unpublished.richText[0]).not.toHaveProperty('href')
+  expect(warnings).toHaveLength(1)
+  expect(() => validateSnapshot(snapshot)).not.toThrow()
 })
 
 it('promotes the first top-level uploaded video for Video projects', () => {

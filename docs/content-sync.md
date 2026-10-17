@@ -55,6 +55,7 @@ Dry runs still perform Notion discovery, selected page reads, public image-layou
 - Before publication, draft path changes must not create redirects. Match the Notion slug in the draft snapshot's entry and route record, omit the old draft alias, and rebuild search. `--accept-slug-changes` retains the old slug; reserve it for published paths.
 - Missing or trashed entries remain published until `--prune`. An observed `Public=false` deactivates the entry immediately in the next published snapshot. Neither operation deletes content in Notion or objects in R2.
 - Cross-collection slug/alias matches warn and retain both records: articles use `/[slug]`, projects `/projects/[slug]`.
+- Before validation, links to Notion pages and site URLs resolve against both route tables to canonical `/[slug]` or `/projects/[slug]` paths. Links to unpublished pages become plain text with a warning, because ID-shaped links would expose Notion IDs.
 
 Publication validates the complete snapshot and writes deterministic JSON through an atomic rename. Unchanged bytes are not rewritten. Search is published afterward in a separate atomic write; the two files are not one transaction.
 

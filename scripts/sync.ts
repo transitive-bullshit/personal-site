@@ -34,6 +34,10 @@ import { syncBookmarks } from './bookmarks'
 import { captureBookmarkScreenshot } from './bookmark-screenshots'
 import { publicFetch } from './public-fetch'
 import { walkBlocks } from '../lib/content/references'
+import {
+  resolveContentLinks,
+  unlinkUnpublishedPages
+} from '../lib/content/content-links'
 import { syncTweets } from './tweets'
 
 export async function main() {
@@ -356,9 +360,12 @@ export async function main() {
             }
           )
         )
-    await progress.run('Validate snapshot', async () =>
+    await progress.run('Validate snapshot', async () => {
+      // Page imports only know their own collection's routes, and cached pages
+      // may link to targets that were published or renamed in this run.
+      unlinkUnpublishedPages(resolveContentLinks(snapshot), warn)
       validateSnapshot(snapshot)
-    )
+    })
     const changed = options.dryRun
       ? false
       : await progress.run('Publish snapshot', () => publishSnapshot(snapshot))
