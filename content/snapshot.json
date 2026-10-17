@@ -80128,6 +80128,44 @@
         }
       ]
     },
+    "0c517e4e8a0b4c7586601aee4e718074": {
+      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACQAQCdASoIAAUAA4BaJQAAYneJoYAA/k6BCZJCUyJ77IzuhB6DModOO9MsfHdyrVgAAA==",
+      "original": {
+        "bytes": 144256,
+        "hash": "91eb52a7b5802fcdb0c79f785eb245f04f7bf7c0aa509931943fe44bbebfef92",
+        "height": 1080,
+        "key": "personal-site/media/91eb52a7b5802fcdb0c79f785eb245f04f7bf7c0aa509931943fe44bbebfef92.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/91eb52a7b5802fcdb0c79f785eb245f04f7bf7c0aa509931943fe44bbebfef92.jpg",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-17T15:34:00.000Z",
+        "key": "0c517e4e8a0b4c7586601aee4e718074",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 37858,
+          "hash": "567230212bef96612399e7e222cf9cac11396c673d6b65ed61a295c347991917",
+          "height": 540,
+          "key": "personal-site/media/567230212bef96612399e7e222cf9cac11396c673d6b65ed61a295c347991917.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/567230212bef96612399e7e222cf9cac11396c673d6b65ed61a295c347991917.webp",
+          "width": 960
+        },
+        {
+          "bytes": 130224,
+          "hash": "983a7538c62db1d94ee839bde03f915dd16a64571190dc38a53d8641220abbdc",
+          "height": 1080,
+          "key": "personal-site/media/983a7538c62db1d94ee839bde03f915dd16a64571190dc38a53d8641220abbdc.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/983a7538c62db1d94ee839bde03f915dd16a64571190dc38a53d8641220abbdc.webp",
+          "width": 1920
+        }
+      ]
+    },
     "0d9b18e0d49e42e491e845101696b053": {
       "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACQAQCdASoIAAUAA4BaJZwAAli6IIAAzj8xDGHXEZhFdAlXKApK97PsGdd6onZgQO8qwIAA",
       "original": {
@@ -84256,6 +84294,44 @@
         }
       ]
     },
+    "3fcedb27f124817c99a9c35e286ddd7e:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAUAA4BaJYwC7AEf2r104AD+vltdlAzAvkiJ8NMoqLzs6wesltu8qgAAAA==",
+      "original": {
+        "bytes": 169792,
+        "hash": "eb1004e73d20e17cff85dceb100956995172f3505bfb257bee18530dc320a28b",
+        "height": 720,
+        "key": "personal-site/media/eb1004e73d20e17cff85dceb100956995172f3505bfb257bee18530dc320a28b.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/eb1004e73d20e17cff85dceb100956995172f3505bfb257bee18530dc320a28b.jpg",
+        "width": 1280
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-17T15:35:00.000Z",
+        "key": "3fcedb27f124817c99a9c35e286ddd7e:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 39490,
+          "hash": "3aff4416f6cc953a83e78f846d6232c0a406f091a546d6e747b62281d469bd13",
+          "height": 540,
+          "key": "personal-site/media/3aff4416f6cc953a83e78f846d6232c0a406f091a546d6e747b62281d469bd13.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/3aff4416f6cc953a83e78f846d6232c0a406f091a546d6e747b62281d469bd13.webp",
+          "width": 960
+        },
+        {
+          "bytes": 98884,
+          "hash": "eda197b77f0455392556a46e269ee696c69080122dde1ac74f0df8425d2b6da6",
+          "height": 720,
+          "key": "personal-site/media/eda197b77f0455392556a46e269ee696c69080122dde1ac74f0df8425d2b6da6.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/eda197b77f0455392556a46e269ee696c69080122dde1ac74f0df8425d2b6da6.webp",
+          "width": 1280
+        }
+      ]
+    },
     "3fcedb27f12481b48653c0deaaaf9f30:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAUAA4BaJZQAAvdYBDQAAP69zfdof0UxEss7Mk026eXwQrn8ALTXAY/xiOwA",
       "original": {
@@ -84269,7 +84345,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-17T14:12:00.000Z",
+        "edited": "2026-10-17T14:56:00.000Z",
         "key": "3fcedb27f12481b48653c0deaaaf9f30:cover",
         "kind": "file"
       },
@@ -85109,7 +85185,7 @@
         "width": 1280
       },
       "source": {
-        "edited": "2026-10-17T14:03:00.000Z",
+        "edited": "2026-10-17T14:56:00.000Z",
         "key": "549a7670aefe46c096b9d7759d31c4e3",
         "kind": "file"
       },
@@ -85469,7 +85545,7 @@
         "width": 1280
       },
       "source": {
-        "edited": "2026-10-17T14:02:00.000Z",
+        "edited": "2026-10-17T14:56:00.000Z",
         "key": "6312164b195c4bd7a296305d22c9a72f",
         "kind": "file"
       },
@@ -90434,6 +90510,44 @@
         }
       ]
     },
+    "eb322c2f859146ffada50cbd3ea8e40b": {
+      "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAADQAQCdASoIAAQAA4BaJYwCdAEU95pXAAD+3wIZfZznHNmgofNy/wJVgAA=",
+      "original": {
+        "bytes": 124537,
+        "hash": "2dcf5a6100967fc52060d947432dcc372670f195db3d3431ee748786617f7938",
+        "height": 894,
+        "key": "personal-site/media/2dcf5a6100967fc52060d947432dcc372670f195db3d3431ee748786617f7938.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/2dcf5a6100967fc52060d947432dcc372670f195db3d3431ee748786617f7938.jpg",
+        "width": 1600
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-17T15:34:00.000Z",
+        "key": "eb322c2f859146ffada50cbd3ea8e40b",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 28220,
+          "hash": "bedf314cd43438361de7118f5b71f617310bb312492d08aae36adf171b1c4e19",
+          "height": 536,
+          "key": "personal-site/media/bedf314cd43438361de7118f5b71f617310bb312492d08aae36adf171b1c4e19.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/bedf314cd43438361de7118f5b71f617310bb312492d08aae36adf171b1c4e19.webp",
+          "width": 960
+        },
+        {
+          "bytes": 98658,
+          "hash": "79d55259e213b233cf5074aed4ade0d4d63a492197dab5e66ce4deab28ba1132",
+          "height": 894,
+          "key": "personal-site/media/79d55259e213b233cf5074aed4ade0d4d63a492197dab5e66ce4deab28ba1132.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/79d55259e213b233cf5074aed4ade0d4d63a492197dab5e66ce4deab28ba1132.webp",
+          "width": 1600
+        }
+      ]
+    },
     "ebe7b3239b3f43818f87d3608cd53581:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACwAQCdASoIAAQAA4BaJYwCdADcy0NAAP7cwDXA5SlViXa3Nujt9+itsilyaAAA",
       "original": {
@@ -90510,6 +90624,33 @@
           "width": 1220
         }
       ]
+    },
+    "ed5a2e64d0604675b5bdbfcdf8bb94d5": {
+      "original": {
+        "bytes": 47946116,
+        "height": 1080,
+        "mime": "video/mp4",
+        "remote": true,
+        "url": "https://assets.cultural-alignment.com/ai-engineers-creed/6ff14cd31eb6ce12b78239eec3347ce08cc04ba6ddf0c80655b42377bb2e8ff7.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 57810,
+        "hash": "2c2596dec538bc270aab4ef42307cfce0464222420b85d771244051134efe8b7",
+        "height": 720,
+        "key": "personal-site/media/2c2596dec538bc270aab4ef42307cfce0464222420b85d771244051134efe8b7.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/2c2596dec538bc270aab4ef42307cfce0464222420b85d771244051134efe8b7.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-17T14:37:00.000Z",
+        "key": "ed5a2e64d0604675b5bdbfcdf8bb94d5",
+        "kind": "external",
+        "url": "https://assets.cultural-alignment.com/ai-engineers-creed/6ff14cd31eb6ce12b78239eec3347ce08cc04ba6ddf0c80655b42377bb2e8ff7.mp4"
+      },
+      "variants": []
     },
     "ed7e8f60c6d1449e840b5c7762505c44": {
       "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoIAAYAA4BaJZwAD4hQke4943gA/u/jodvJiYru4gwy9E0SsadZoE/Gfxq5gAAA",
@@ -91242,6 +91383,11 @@
       "active": true,
       "aliases": [],
       "slug": "candy-paint-music-video"
+    },
+    "3fcedb27f124817c99a9c35e286ddd7e": {
+      "active": true,
+      "aliases": [],
+      "slug": "the-ai-engineers-creed-full-metal-jacket-parody"
     },
     "3fcedb27f12481b48653c0deaaaf9f30": {
       "active": true,
@@ -100186,6 +100332,1205 @@
       "website": "https://candy-paint.vercel.app",
       "youtube": "https://youtu.be/X806TXsSypQ"
     },
+    "3fcedb27f124817c99a9c35e286ddd7e": {
+      "authors": [
+        {
+          "id": "b036f7f695a94f97b3b5c46867d0d103",
+          "name": "Travis Fischer"
+        }
+      ],
+      "blocks": [
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Video created with Opus 5.5, Nano Banana Pro, H3 Max, Fal Sync-3, ElevenLabs, and Fish Audio.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "ed5a2e64d0604675b5bdbfcdf8bb94d5",
+          "media": "ed5a2e64d0604675b5bdbfcdf8bb94d5",
+          "type": "video"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "1741fefdca6144d89a2ad7c3175f51c0",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Motivation",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "dcbea1db6dbf4d9fb59aa6b5c6c34015",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Every AI engineer I know is building some version of the same thing right now: a personal software factory, where agents write more code than any human could possibly review. At some point it stopped feeling like a workflow and started feeling like a creed.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f124800db9d6d5756cb08165",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "And no, I don’t want to see your software factory. 😂",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "8ec9557041c745449a4be3f6c8f57bd9",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "So I recast the most famous creed in film: the barracks scene from ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://en.wikipedia.org/wiki/Full_Metal_Jacket",
+              "italic": true,
+              "strike": false,
+              "text": "Full Metal Jacket",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": " (1987)",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", where the recruits recite their creed to their rifles before lights out. In my version the rifle is your agent, the recruits are the AI engineers I interact with the most on X, and the drill instructor is ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/JensenHuang",
+              "italic": false,
+              "strike": false,
+              "text": "Jensen Huang",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", the man who coined “AI factories”, in a leather jacket instead of a uniform.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The original: the barracks creed scene from Full Metal Jacket (PG version).",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "c4b6dd9478184f2f8a1e40d6d7d26f85",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=nkGIxGdZoYY"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "4a915e7e992c4bbc8502270f46d0a1ac",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/mattpocockuk",
+              "italic": false,
+              "strike": false,
+              "text": "Matt Pocock",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " delivers the hook, ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/steipete",
+              "italic": false,
+              "strike": false,
+              "text": "Peter Steinberger",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " holds the line in the wides, ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/swyx",
+              "italic": false,
+              "strike": false,
+              "text": "swyx",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " (who coined “AI engineer”) gets to chant it in his own close-up, ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/simonw",
+              "italic": false,
+              "strike": false,
+              "text": "Simon Willison",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " stands fire watch and gets the last word, and ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/poteto",
+              "italic": false,
+              "strike": false,
+              "text": "poteto",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "’s avatar hangs on the office wall as the “PRs” poster.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "b8a5a05b079842a5a36366a42a63f90e",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "How it was made",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "bc49e8af3c3f4a49a5515c6297b4ebe0",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The whole thing came out of one long collaboration with Claude Code (Opus 5.5): it wrote the scripts and review pages, and I reviewed every round on them and sent back notes.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "f5f15f774a2d4a5e85ee16692ac78a68",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Script:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " every parody line is locked to the original line’s start and end, within two syllables, so the new words land on the same beats as the film.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "e32b57477f064dadbbf740718d9feb2b",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Voices:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " the recruits’ creed is a single sung take from Eleven Music, cut at its pauses, so the crowd sounds like one platoon. Jensen’s orders are a Fish Audio clone of his voice, built from ten minutes of clean interview audio. The fire watch is an ElevenLabs designed voice.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "aa583299d67f44868a467df118b5caac",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Shots:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " every shot is regenerated: Nano Banana Pro keyframes built from character sheets of real headshots, animated with H3 Max with each line’s audio pinned, then lip-synced again wherever the mouth didn’t sell it.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "4b7d51c6fc244001b2001160e7e88bc0",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Title, captions, and credits:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " rendered locally in HyperFrames, with every caption word force-aligned to the vocals and lit as it’s sung.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "38392a5ca6734a02a5178258d8d53ca8",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I also tried a second direction, lip-syncing the cast onto the original footage, and dropped it: the fully generative cut is the project.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Matt’s character sheet: real headshots in, consistent likeness out.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "eb322c2f859146ffada50cbd3ea8e40b",
+          "media": "eb322c2f859146ffada50cbd3ea8e40b",
+          "type": "image",
+          "width": 576
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3cc30e65d92c46f0b3dca6e150753b37",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Key decisions and lessons",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "e99afe82ae434108ba9d5f499a68d2e9",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The McGurk effect:",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " or what you see changes what you hear",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Jensen’s opening “PROMPT!” kept sounding like “PRONT!” even though the isolated audio was perfect. It turns out this was because the generated mouth never closed for the M and P. This was so surprising to me that ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.transitivebullsh.it/projects/the-mcgurk-effect",
+              "italic": false,
+              "strike": false,
+              "text": "I created a write and explainer video here",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". The fix was a new lip sync over the exact same audio.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "75853620698f446097f4eb71de5a3418",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Pin both ends of a shot.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Every H3 prompt pushed the camera in until I anchored each shot’s last frame to its keyframe too. H3 also renders its frames about 2.5% wider than the keyframe it starts on, which snapped visibly in the first few frames; exact 16:9 keyframes and holding the first and last frames fixed it.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a38388435859499db330375663804c9d",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Small faces need help.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " The fire watch’s face is about 100 pixels tall under a helmet, and two lip sync models passed it through untouched. Lip-syncing an upscaled crop of the shot, then blending back only the mouth and jaw, finally got him to say his line.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "b60c1e63aabe4236a921b240c2f1f2cd",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Never re-time generated audio.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Stretching a read to fit always sounds worse than regenerating it, so every take is placed whole.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "bbc06a9551214ad7816218ed9fd0c595",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Measure the captions, don’t eyeball them.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Whisper’s word times run early after pauses, so the captions are force-aligned against the separated vocals and checked against the finished mix: line starts land within 25 ms of the voice.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Captions in the video’s own style: each word lights up gold as it’s sung.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "0c517e4e8a0b4c7586601aee4e718074",
+          "media": "0c517e4e8a0b4c7586601aee4e718074",
+          "type": "image",
+          "width": 576
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "492ba56b527446358621cc317ff98066",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Cost",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "058996850f664e66942465bdce4a6eaf",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "A 76-second, fully AI-made parody with a title card, word-timed captions, and end credits for the cast. It took 117 fal generations (",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "about $97",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ") and a lot of review rounds.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "2f40c67b6d95490fba3e0206013b72ce",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Tools",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "e6826cefffa149aa848fa0bd2e1bf946",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://claude.com/product/claude-code",
+              "italic": false,
+              "strike": false,
+              "text": "Claude Code",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " with ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.anthropic.com/claude/opus",
+              "italic": false,
+              "strike": false,
+              "text": "Claude Opus 5.5",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ": planning, scripts, review pages, and every render",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "34c74ea876574668b269714a230403e6",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://fal.ai/models/fal-ai/nano-banana-pro/edit",
+              "italic": false,
+              "strike": false,
+              "text": "Nano Banana Pro",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ": character sheets and keyframes",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "c01868173d7c46a6afd7510296361698",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://fal.ai/models/minimax/h3-max/image-to-video",
+              "italic": false,
+              "strike": false,
+              "text": "H3 Max",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ": animation, with each line’s audio pinned",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3ce38487dc1e419ba09b72d75436e363",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://fal.ai/models/minimax/h3-max/lip-sync/video-to-video",
+              "italic": false,
+              "strike": false,
+              "text": "H3 Max Lip Sync",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " and ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://fal.ai/models/fal-ai/sync-lipsync/v3",
+              "italic": false,
+              "strike": false,
+              "text": "Sync-3",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ": lip sync passes",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "f690a0b1190140768b39a78751c3cbf9",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://elevenlabs.io/music",
+              "italic": false,
+              "strike": false,
+              "text": "Eleven Music",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ": the recruits’ chorus creed",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3282afd8a7fe432ebadb19815bb4a009",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://elevenlabs.io/voice-design",
+              "italic": false,
+              "strike": false,
+              "text": "ElevenLabs Voice Design",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ": the fire watch guard’s voice",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a46a07cfd96c476aa6ec097c36f30e30",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://fish.audio/",
+              "italic": false,
+              "strike": false,
+              "text": "Fish Audio",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ": Jensen’s voice clone",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "bd7bbc1b6ada43bc8c22b1e1216c3969",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://hyperframes.heygen.com/",
+              "italic": false,
+              "strike": false,
+              "text": "HyperFrames",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ": title card, captions, and end credits",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "e27b42dc512947b79e86f3444e40c475",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://fal.ai/",
+              "italic": false,
+              "strike": false,
+              "text": "fal",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ": hosts the image and video models",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "330f93f8472c435cad65b148da82994a",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Credits",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "16a7de0f28f44056a28ac662a67c5d07",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/JensenHuang",
+              "italic": false,
+              "strike": false,
+              "text": "Jensen Huang",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " as the drill instructor",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "84a461c81069473cbb4d748d43eaaef3",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/mattpocockuk",
+              "italic": false,
+              "strike": false,
+              "text": "Matt Pocock",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " as the recruit with the hook and the first close-up",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "7a7e88ff59d1465ebcc59555d1c76b01",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/steipete",
+              "italic": false,
+              "strike": false,
+              "text": "Peter Steinberger",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " as the second recruit",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "0c712d1b6626493b9cee2011417bddb4",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/swyx",
+              "italic": false,
+              "strike": false,
+              "text": "Shawn Wang (swyx)",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " as the third recruit",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "e138d5bf9f89463dbf2357c7911583b2",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/simonw",
+              "italic": false,
+              "strike": false,
+              "text": "Simon Willison",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " as the fire watch guard",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "b2a633fb5d474420917e914bb1ea4296",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/poteto",
+              "italic": false,
+              "strike": false,
+              "text": "Lauren Tan (poteto)",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " on the “PRs” poster",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3fcedb27f12480b9b2fbfb9c71636a17",
+          "richText": [],
+          "type": "paragraph"
+        }
+      ],
+      "cover": "3fcedb27f124817c99a9c35e286ddd7e:cover",
+      "description": "AI engineers swear allegiance to their software factories in this Full Metal Jacket AI parody video.",
+      "featured": true,
+      "icon": {
+        "type": "emoji",
+        "value": "🎬"
+      },
+      "id": "3fcedb27f124817c99a9c35e286ddd7e",
+      "modified": "2026-10-17T15:35:00.000Z",
+      "published": "2026-10-17",
+      "slug": "the-ai-engineers-creed-full-metal-jacket-parody",
+      "source": "https://github.com/transitive-bullshit/my-software-factory",
+      "tags": [
+        "AI",
+        "Video",
+        "Projects"
+      ],
+      "title": "The AI Engineer’s Creed — Full Metal Jacket Parody",
+      "type": "Video",
+      "youtube": "https://www.youtube.com/watch?v=GT9zYmPhSys"
+    },
     "3fcedb27f12481b48653c0deaaaf9f30": {
       "authors": [
         {
@@ -100239,7 +101584,7 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "There was a generated scene with Jensen Huang as a drill instructor saying the word “PROMPT!”, but no matter what I did, the video clip for that scene kept sounding… off. I could swear he was saying “PRONT!” even though the approved audio clip for that scene was clearly saying “PROMPT!”.",
+              "text": "There was a generated scene with Jensen Huang as a drill instructor saying the word “PROMPT!”, but no matter what I did, the video clip for this scene kept sounding… off. I could swear he was saying “PRONT!” even though the approved audio clip for the scene was clearly saying “PROMPT!”.",
               "underline": false
             }
           ],
@@ -100253,25 +101598,7 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "Poor lip sync: the mouth never closes ⇒ it ",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": true,
-              "strike": false,
-              "text": "sounds",
-              "underline": false
-            },
-            {
-              "bold": false,
-              "code": false,
-              "color": "default",
-              "italic": false,
-              "strike": false,
-              "text": " like he’s saying “Pront”",
+              "text": "Original clip where it sounds like he’s saying “Pront”",
               "underline": false
             }
           ],
@@ -100403,7 +101730,7 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "Fixed lip sync: same exact audio, but this time the lips close on the M and P so we hear “Prompt”",
+              "text": "Fixed version: same exact audio, but this time the lips close on the M and P so we hear “Prompt”",
               "underline": false
             }
           ],
@@ -100555,8 +101882,7 @@
         "value": "🎬"
       },
       "id": "3fcedb27f12481b48653c0deaaaf9f30",
-      "modified": "2026-10-17T14:46:00.000Z",
-      "needsImageSync": true,
+      "modified": "2026-10-17T14:56:00.000Z",
       "published": "2026-10-17",
       "slug": "the-mcgurk-effect",
       "source": "https://github.com/transitive-bullshit/my-software-factory",
