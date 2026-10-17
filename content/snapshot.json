@@ -84307,7 +84307,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-17T15:48:00.000Z",
+        "edited": "2026-10-17T15:51:00.000Z",
         "key": "3fcedb27f124817c99a9c35e286ddd7e:cover",
         "kind": "file"
       },
@@ -100486,9 +100486,9 @@
             }
           ],
           "children": [],
-          "id": "c4b6dd9478184f2f8a1e40d6d7d26f85",
+          "id": "3fcedb27f12480449757f8118987ab7d",
           "type": "video",
-          "url": "https://www.youtube.com/watch?v=nkGIxGdZoYY"
+          "url": "https://youtu.be/nkGIxGdZoYY?t=34"
         },
         {
           "children": [],
@@ -101537,7 +101537,7 @@
         "value": "🎬"
       },
       "id": "3fcedb27f124817c99a9c35e286ddd7e",
-      "modified": "2026-10-17T15:48:00.000Z",
+      "modified": "2026-10-17T15:51:00.000Z",
       "published": "2026-10-17",
       "slug": "the-ai-engineers-creed-full-metal-jacket-parody",
       "source": "https://github.com/transitive-bullshit/my-software-factory",
