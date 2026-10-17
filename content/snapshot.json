@@ -80141,7 +80141,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-17T15:34:00.000Z",
+        "edited": "2026-10-17T15:46:00.000Z",
         "key": "0c517e4e8a0b4c7586601aee4e718074",
         "kind": "file"
       },
@@ -84307,7 +84307,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-17T15:39:00.000Z",
+        "edited": "2026-10-17T15:48:00.000Z",
         "key": "3fcedb27f124817c99a9c35e286ddd7e:cover",
         "kind": "file"
       },
@@ -84345,7 +84345,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-17T14:56:00.000Z",
+        "edited": "2026-10-17T15:45:00.000Z",
         "key": "3fcedb27f12481b48653c0deaaaf9f30:cover",
         "kind": "file"
       },
@@ -85185,7 +85185,7 @@
         "width": 1280
       },
       "source": {
-        "edited": "2026-10-17T14:56:00.000Z",
+        "edited": "2026-10-17T15:45:00.000Z",
         "key": "549a7670aefe46c096b9d7759d31c4e3",
         "kind": "file"
       },
@@ -85545,7 +85545,7 @@
         "width": 1280
       },
       "source": {
-        "edited": "2026-10-17T14:56:00.000Z",
+        "edited": "2026-10-17T15:45:00.000Z",
         "key": "6312164b195c4bd7a296305d22c9a72f",
         "kind": "file"
       },
@@ -94802,7 +94802,7 @@
               "bold": false,
               "code": false,
               "color": "default",
-              "href": "https://www.transitivebullsh.it/projects/slow-it-down-ai-music-video",
+              "href": "/projects/slow-it-down-ai-music-video",
               "italic": false,
               "strike": false,
               "text": "Slow It Down",
@@ -96339,7 +96339,7 @@
               "bold": false,
               "code": false,
               "color": "default",
-              "href": "https://app.notion.com/p/3e5edb27f124800884cddefb16b57151",
+              "href": "/projects/doom-or-bloom",
               "italic": false,
               "strike": false,
               "text": "Doom or Bloom",
@@ -96358,7 +96358,7 @@
               "bold": false,
               "code": false,
               "color": "default",
-              "href": "https://app.notion.com/p/3ddedb27f12481059885e955643ddaf0",
+              "href": "/projects/cultural-alignment",
               "italic": false,
               "strike": false,
               "text": "Cultural Alignment",
@@ -96377,7 +96377,7 @@
               "bold": false,
               "code": false,
               "color": "default",
-              "href": "https://app.notion.com/p/3ddedb27f1248114a98ed3835e961d1e",
+              "href": "/projects/p-doom",
               "italic": false,
               "strike": false,
               "text": "P(DOOM)",
@@ -96396,7 +96396,7 @@
               "bold": false,
               "code": false,
               "color": "default",
-              "href": "https://app.notion.com/p/3ddedb27f12481c1a145c3d546904768",
+              "href": "/projects/margin-call-ai-safety-parody",
               "italic": false,
               "strike": false,
               "text": "Margin Call — AI Safety Parody",
@@ -96415,7 +96415,7 @@
               "bold": false,
               "code": false,
               "color": "default",
-              "href": "https://app.notion.com/p/3ddedb27f1248186b064c993b8e155c6",
+              "href": "/projects/pluribus-openai-parody",
               "italic": false,
               "strike": false,
               "text": "Pluribus — OpenAI Parody",
@@ -99358,7 +99358,7 @@
               "bold": false,
               "code": false,
               "color": "default",
-              "href": "https://www.transitivebullsh.it/projects/slow-it-down-ai-music-video",
+              "href": "/projects/slow-it-down-ai-music-video",
               "italic": false,
               "strike": false,
               "text": "Slow It Down",
@@ -99377,7 +99377,7 @@
               "bold": false,
               "code": false,
               "color": "default",
-              "href": "https://www.transitivebullsh.it/projects/sometimes-i-think-slow-ai-music-video",
+              "href": "/projects/sometimes-i-think-slow-ai-music-video",
               "italic": false,
               "strike": false,
               "text": "Sometimes I Think Slow",
@@ -100830,7 +100830,7 @@
               "bold": false,
               "code": false,
               "color": "default",
-              "href": "https://www.transitivebullsh.it/projects/the-mcgurk-effect",
+              "href": "/projects/the-mcgurk-effect",
               "italic": false,
               "strike": false,
               "text": "I created a write and explainer video here",
@@ -100960,7 +100960,26 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "Captions in the video’s own style: each word lights up gold as it’s sung.",
+              "text": "Captions in the video’s own style: each word lights up gold as it’s sung. Scene featuring ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/swyx",
+              "italic": false,
+              "strike": false,
+              "text": "swyx",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
               "underline": false
             }
           ],
@@ -101518,7 +101537,7 @@
         "value": "🎬"
       },
       "id": "3fcedb27f124817c99a9c35e286ddd7e",
-      "modified": "2026-10-17T15:39:00.000Z",
+      "modified": "2026-10-17T15:48:00.000Z",
       "published": "2026-10-17",
       "slug": "the-ai-engineers-creed-full-metal-jacket-parody",
       "source": "https://github.com/transitive-bullshit/my-software-factory",
@@ -101567,7 +101586,26 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "Today, as I was working on a random parody video with Opus 5.5, I ran into something really strange.",
+              "text": "Today, as I was working on a ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "/projects/the-ai-engineers-creed-full-metal-jacket-parody",
+              "italic": false,
+              "strike": false,
+              "text": "random parody video",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " with Opus 5.5, I ran into something really strange.",
               "underline": false
             }
           ],
@@ -101882,7 +101920,7 @@
         "value": "🎬"
       },
       "id": "3fcedb27f12481b48653c0deaaaf9f30",
-      "modified": "2026-10-17T14:56:00.000Z",
+      "modified": "2026-10-17T15:45:00.000Z",
       "published": "2026-10-17",
       "slug": "the-mcgurk-effect",
       "source": "https://github.com/transitive-bullshit/my-software-factory",
