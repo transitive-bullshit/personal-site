@@ -33,20 +33,20 @@ export default function HomePage() {
         Travis Fischer. Software, open source, and the occasional detour.
       </p>
       <section className='home-section' aria-labelledby='featured-projects'>
-        <h2 id='featured-projects'>Featured projects</h2>
+        <h2 id='featured-projects'>Selected projects</h2>
         <ProjectIndex
           prioritizeFirstImage
           headingLevel={3}
           projects={featuredProjects}
           snapshot={content}
-          label='Featured projects'
+          label='Selected projects'
         />
         <Link className='all-writing-link' href='/projects'>
           View all projects <ArrowRightIcon aria-hidden='true' />
         </Link>
       </section>
       <section className='home-section' aria-labelledby='featured-writing'>
-        <h2 id='featured-writing'>Featured writing</h2>
+        <h2 id='featured-writing'>Selected writing</h2>
         <ArticleIndex articles={featuredArticles} label='Featured articles' />
         <Link className='all-writing-link' href='/writing'>
           View all writing <ArrowRightIcon aria-hidden='true' />
