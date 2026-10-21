@@ -79833,6 +79833,44 @@
   },
   "importerVersion": 1,
   "media": {
+    "00050bc8e13e4475a69ce8c011fbb874": {
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAUAA4BaJaQAAvrQ+FgA/veDGireRhEy+K5SAAAAAA==",
+      "original": {
+        "bytes": 283320,
+        "hash": "b0a23295a27d81f956ebf0085fe0bab4688b831eac2fce5afe546d9407979c87",
+        "height": 1800,
+        "key": "personal-site/media/b0a23295a27d81f956ebf0085fe0bab4688b831eac2fce5afe546d9407979c87.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/b0a23295a27d81f956ebf0085fe0bab4688b831eac2fce5afe546d9407979c87.webp",
+        "width": 2880
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-21T19:40:00.000Z",
+        "key": "00050bc8e13e4475a69ce8c011fbb874",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 54196,
+          "hash": "f2cfbeff61ab2e410a358898957d05282eaf93399edf590784eff59fa4198c16",
+          "height": 600,
+          "key": "personal-site/media/f2cfbeff61ab2e410a358898957d05282eaf93399edf590784eff59fa4198c16.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/f2cfbeff61ab2e410a358898957d05282eaf93399edf590784eff59fa4198c16.webp",
+          "width": 960
+        },
+        {
+          "bytes": 207754,
+          "hash": "d66769bd14b8810c1dd93531816f698b56bf96910ce616e84ee6b4c87990f8dd",
+          "height": 1200,
+          "key": "personal-site/media/d66769bd14b8810c1dd93531816f698b56bf96910ce616e84ee6b4c87990f8dd.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/d66769bd14b8810c1dd93531816f698b56bf96910ce616e84ee6b4c87990f8dd.webp",
+          "width": 1920
+        }
+      ]
+    },
     "018dfa4a372c4ed3ae12c290a295993a": {
       "blurDataURL": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACwAQCdASoIAAYAA4BaJZQAAvdYHeUAAP72I4tcW+VH5C2j69kgirwIAAA=",
       "original": {
@@ -80586,6 +80624,44 @@
         }
       ]
     },
+    "1b6c870fd18b4e6c94f492d2b349fb41": {
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAABQAQCdASoIAAUAA4BaJZwABAAAAP700E82DGlqGE1unZmRs0AAAA==",
+      "original": {
+        "bytes": 217938,
+        "hash": "788985b9eec900609a16e967caf42eba4848975939e37244fa71970f2d283270",
+        "height": 1800,
+        "key": "personal-site/media/788985b9eec900609a16e967caf42eba4848975939e37244fa71970f2d283270.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/788985b9eec900609a16e967caf42eba4848975939e37244fa71970f2d283270.webp",
+        "width": 2880
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-21T19:40:00.000Z",
+        "key": "1b6c870fd18b4e6c94f492d2b349fb41",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 47840,
+          "hash": "b77279f70de84f581a70e6739b9cea57e39d8e9ae363547242a139e79d840d72",
+          "height": 600,
+          "key": "personal-site/media/b77279f70de84f581a70e6739b9cea57e39d8e9ae363547242a139e79d840d72.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/b77279f70de84f581a70e6739b9cea57e39d8e9ae363547242a139e79d840d72.webp",
+          "width": 960
+        },
+        {
+          "bytes": 174116,
+          "hash": "46a74f0b2b500854c294b8df8b69343735379e875daec0dfc1d419241bf3458d",
+          "height": 1200,
+          "key": "personal-site/media/46a74f0b2b500854c294b8df8b69343735379e875daec0dfc1d419241bf3458d.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/46a74f0b2b500854c294b8df8b69343735379e875daec0dfc1d419241bf3458d.webp",
+          "width": 1920
+        }
+      ]
+    },
     "1b9afed4d4814bb5b6f66bc7d09be4e4": {
       "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoIAAUAA4BaJaQAAudGFIAA/vPQm834x9rGNUAAAAA=",
       "original": {
@@ -80734,6 +80810,44 @@
           "key": "personal-site/media/8d46caf9c334ace382fc6ae751cfea54864afa62ec2fe2428b7ef73205f711ef.webp",
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/8d46caf9c334ace382fc6ae751cfea54864afa62ec2fe2428b7ef73205f711ef.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "1f2310442c2440748d571b9b73bef5e6": {
+      "blurDataURL": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoIAAUAA4BaJaQAA3AA/vWYJdMAAA==",
+      "original": {
+        "bytes": 130140,
+        "hash": "23e1e0ad9aaf68f9e2d11d5ea00c9ecbc95929187629304ddf3b5e816804fc16",
+        "height": 1800,
+        "key": "personal-site/media/23e1e0ad9aaf68f9e2d11d5ea00c9ecbc95929187629304ddf3b5e816804fc16.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/23e1e0ad9aaf68f9e2d11d5ea00c9ecbc95929187629304ddf3b5e816804fc16.webp",
+        "width": 2880
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-21T19:40:00.000Z",
+        "key": "1f2310442c2440748d571b9b73bef5e6",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 30156,
+          "hash": "fc9429eced8698aa864c1d20079b6fc3192b8af92d91df2cd64569264b46d05a",
+          "height": 600,
+          "key": "personal-site/media/fc9429eced8698aa864c1d20079b6fc3192b8af92d91df2cd64569264b46d05a.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/fc9429eced8698aa864c1d20079b6fc3192b8af92d91df2cd64569264b46d05a.webp",
+          "width": 960
+        },
+        {
+          "bytes": 99662,
+          "hash": "fcf7a695bea7288d3a25d925b441c1ad232c5153595ce261a9ee45f5b54be014",
+          "height": 1200,
+          "key": "personal-site/media/fcf7a695bea7288d3a25d925b441c1ad232c5153595ce261a9ee45f5b54be014.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/fcf7a695bea7288d3a25d925b441c1ad232c5153595ce261a9ee45f5b54be014.webp",
           "width": 1920
         }
       ]
@@ -81524,6 +81638,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/7a548691561e95425048f7561f541910a322c12d8e166caae0b49b94cd95c018.webp",
           "width": 888
+        }
+      ]
+    },
+    "337d8114f0ce47329295e4ccfeba0f53": {
+      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoIAAUAA4BaJaQAAudVCzAA/veFQTRwY05KPhQAAAA=",
+      "original": {
+        "bytes": 279362,
+        "hash": "4d4beb89e84511e4854ef00cfb74587f583f087b74175d9f22c19da84f549d0a",
+        "height": 1800,
+        "key": "personal-site/media/4d4beb89e84511e4854ef00cfb74587f583f087b74175d9f22c19da84f549d0a.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/4d4beb89e84511e4854ef00cfb74587f583f087b74175d9f22c19da84f549d0a.webp",
+        "width": 2880
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-21T19:40:00.000Z",
+        "key": "337d8114f0ce47329295e4ccfeba0f53",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 47090,
+          "hash": "6d75b1043ab94e8cfccd2a156e0bd2a227170a68c9689efb52937043ae5b253e",
+          "height": 600,
+          "key": "personal-site/media/6d75b1043ab94e8cfccd2a156e0bd2a227170a68c9689efb52937043ae5b253e.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/6d75b1043ab94e8cfccd2a156e0bd2a227170a68c9689efb52937043ae5b253e.webp",
+          "width": 960
+        },
+        {
+          "bytes": 197848,
+          "hash": "b55f3fe5a5c71b4912645e04eae8cffae707b8d4c6ab90d03a39d33a6c76f25e",
+          "height": 1200,
+          "key": "personal-site/media/b55f3fe5a5c71b4912645e04eae8cffae707b8d4c6ab90d03a39d33a6c76f25e.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/b55f3fe5a5c71b4912645e04eae8cffae707b8d4c6ab90d03a39d33a6c76f25e.webp",
+          "width": 1920
         }
       ]
     },
@@ -84370,6 +84522,44 @@
         }
       ]
     },
+    "400edb27f1248192af08c32cc99fd81d:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAADQAQCdASoIAAQAA4BaJaQAAu19mSodAAD+94hEeHWElc8VD6AAAA==",
+      "original": {
+        "bytes": 63948,
+        "hash": "488d0e3939370fb065debc928574ba5b2d19b536a69930793a923a06e661e8d4",
+        "height": 630,
+        "key": "personal-site/media/488d0e3939370fb065debc928574ba5b2d19b536a69930793a923a06e661e8d4.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/488d0e3939370fb065debc928574ba5b2d19b536a69930793a923a06e661e8d4.jpg",
+        "width": 1200
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-21T19:53:00.000Z",
+        "key": "400edb27f1248192af08c32cc99fd81d:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 31006,
+          "hash": "266413b563a7f41f22b3bffc638203ad42f4d9639a8fba544c8242af6edf0ae7",
+          "height": 504,
+          "key": "personal-site/media/266413b563a7f41f22b3bffc638203ad42f4d9639a8fba544c8242af6edf0ae7.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/266413b563a7f41f22b3bffc638203ad42f4d9639a8fba544c8242af6edf0ae7.webp",
+          "width": 960
+        },
+        {
+          "bytes": 59570,
+          "hash": "0460ca56bfe7ea83428bb8b5974f144077ea8852a99f61d2b3c6625e0cf3c5ac",
+          "height": 630,
+          "key": "personal-site/media/0460ca56bfe7ea83428bb8b5974f144077ea8852a99f61d2b3c6625e0cf3c5ac.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/0460ca56bfe7ea83428bb8b5974f144077ea8852a99f61d2b3c6625e0cf3c5ac.webp",
+          "width": 1200
+        }
+      ]
+    },
     "42ebc678efa747a28ba2c5f2af199c47": {
       "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAQAA4BaJQBOgB4/DiAA/Zvzz3pLucb1S+miS3N4OViiifgAAA==",
       "original": {
@@ -86468,6 +86658,33 @@
         }
       ]
     },
+    "83a5abc52db645fb8295eb9ca4ff13a8": {
+      "original": {
+        "bytes": 24154321,
+        "hash": "510986c9f3dda8e4c2dea2744a93cd2007f5fe30acdae74d81123be983943c55",
+        "height": 1080,
+        "key": "personal-site/media/510986c9f3dda8e4c2dea2744a93cd2007f5fe30acdae74d81123be983943c55.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/510986c9f3dda8e4c2dea2744a93cd2007f5fe30acdae74d81123be983943c55.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 28712,
+        "hash": "a23c20c833dc274722d36e68ddb4a091e106b43a1b82e2be12d3fb65d453f01b",
+        "height": 720,
+        "key": "personal-site/media/a23c20c833dc274722d36e68ddb4a091e106b43a1b82e2be12d3fb65d453f01b.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/a23c20c833dc274722d36e68ddb4a091e106b43a1b82e2be12d3fb65d453f01b.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-21T19:40:00.000Z",
+        "key": "83a5abc52db645fb8295eb9ca4ff13a8",
+        "kind": "file"
+      },
+      "variants": []
+    },
     "867f310a097f4e418c66cde5f21426dc": {
       "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAQAA4BaJbACdAD0cgOAAP7tZq0RjnFRYsxG7ovZ4evHfVpeN0gAAAA=",
       "original": {
@@ -86570,6 +86787,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/8bf908ee26000c670050f95140920110de5049d9a257aeacb0d4b719afed96ef.webp",
           "width": 1550
+        }
+      ]
+    },
+    "888acdfe39714a64b0c18f5e1567c3a6": {
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAUAA4BaJaQAAuTsOIAA/vauBLCBjv6a7Yytsp4AAA==",
+      "original": {
+        "bytes": 227304,
+        "hash": "a27681652f33f3298125018a71eacfe9a671f3b4583e67cb3dc1cc11d88008f0",
+        "height": 1800,
+        "key": "personal-site/media/a27681652f33f3298125018a71eacfe9a671f3b4583e67cb3dc1cc11d88008f0.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/a27681652f33f3298125018a71eacfe9a671f3b4583e67cb3dc1cc11d88008f0.webp",
+        "width": 2880
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-21T19:40:00.000Z",
+        "key": "888acdfe39714a64b0c18f5e1567c3a6",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 54148,
+          "hash": "2358e0a253e192d15b1ad8d4ba73910dd189a35b24180270048f89648f0b1607",
+          "height": 600,
+          "key": "personal-site/media/2358e0a253e192d15b1ad8d4ba73910dd189a35b24180270048f89648f0b1607.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/2358e0a253e192d15b1ad8d4ba73910dd189a35b24180270048f89648f0b1607.webp",
+          "width": 960
+        },
+        {
+          "bytes": 191822,
+          "hash": "9433a044a9f4f8827fa74c9abe523371d2d151dbaf87d786988ee7989314c21e",
+          "height": 1200,
+          "key": "personal-site/media/9433a044a9f4f8827fa74c9abe523371d2d151dbaf87d786988ee7989314c21e.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/9433a044a9f4f8827fa74c9abe523371d2d151dbaf87d786988ee7989314c21e.webp",
+          "width": 1920
         }
       ]
     },
@@ -91393,6 +91648,11 @@
       "active": true,
       "aliases": [],
       "slug": "the-mcgurk-effect"
+    },
+    "400edb27f1248192af08c32cc99fd81d": {
+      "active": true,
+      "aliases": [],
+      "slug": "murmuration"
     }
   },
   "projects": {
@@ -101932,6 +102192,877 @@
       "title": "The McGurk Effect",
       "type": "Video",
       "youtube": "https://www.youtube.com/watch?v=-VAw_z6oKpQ"
+    },
+    "400edb27f1248192af08c32cc99fd81d": {
+      "authors": [
+        {
+          "id": "b036f7f695a94f97b3b5c46867d0d103",
+          "name": "Travis Fischer"
+        }
+      ],
+      "blocks": [
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The launch demo: a quick tour through all six views on the live site.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "83a5abc52db645fb8295eb9ca4ff13a8",
+          "media": "83a5abc52db645fb8295eb9ca4ff13a8",
+          "type": "video"
+        },
+        {
+          "children": [],
+          "id": "ec4f1475d9bd48b9aea26a116c1d22d6",
+          "type": "divider"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a4e15817f8f04c61ba7a8bd5caec0467",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Why I built this",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a50489e4bc5b4401a92b6d55a94f3647",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I've been posting on X / Twitter since 2011: 11.6k tweets, 36.7k likes, and an audience that slowly grew to about 21k followers. That history is a surprisingly honest record of what I was obsessed with, what actually landed, and who I was really talking to. But X gives you no good way to look at any of it. Your archive is a zip file full of JSON.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "8bf2c9b9ce464ed5924040aec51f04ba",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Then I saw ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://x.com/azlenelza/status/2112305483692532123",
+              "italic": false,
+              "strike": false,
+              "text": "@azlenelza searching through their Twitter likes",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " under the caption ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "\"Data just feels malleable lately\"",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", and it clicked. My whole archive already lived in a local SQLite database thanks to ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://github.com/steipete/birdclaw",
+              "italic": false,
+              "strike": false,
+              "text": "Birdclaw",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". So what would it feel like to actually ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "explore",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " fifteen years of posting?",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "62ab37348605416eb85977c36dbe1037",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I had a few questions that no amount of scrolling could answer:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "f3c889ad670d4879b2a3b09b109cf171",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "What do I actually talk about, and how has that drifted over the years?",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d20b270ea6554a5b93da280b23f79dc0",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Which kinds of tweets land, and has that changed?",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "5c77c4a1ca4e4ea489cc4089ec157842",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Why did my follower count jump when it did?",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "08114370605047a38e587ad65c17a96d",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Who am I actually close to, as opposed to who I just follow?",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "28857a88825b416e890a631b539a54b5",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Six views, one flock",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Constellation: every tweet and like placed by meaning, with labeled topics.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "888acdfe39714a64b0c18f5e1567c3a6",
+          "media": "888acdfe39714a64b0c18f5e1567c3a6",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3c3e2b55eb2a4fecbf7077a6e94fe4be",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Murmuration turns the archive into about 48k particles, one per tweet or like, which flock between six views as you switch tabs. (Hence the name: a murmuration is a flock of starlings moving as one.)",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "5a3d5532fc3c4124844f2c4fb7d64f9f",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Constellation",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " places every tweet and like by meaning, so topics show up as labeled nebulae, and it tells you which topics your tweets land best in.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "fcfc4a36ee5545b899e2a0df533dbfcd",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Growth",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " plots your follower curve above the engagement of every tweet. Click an inflection point to see the tweets most likely to have caused it.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "313f1b131e9947fb8583da91b837be31",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Bangers",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " lines up your biggest hits and outliers on a timeline, each one a click away.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "5bf4e186bec9429fbf7f00f21170b156",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Strata",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " stacks your timeline month by month, colored by topic, so you can see what you were thinking about each year.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a9b18d6e4e164bccac1695d58a1d7c37",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Anatomy",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " breaks down which kinds of tweets perform best by format, topic, day, hour and length, and how that changed year by year.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "444bf05c7230456ea05763da2149007a",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Orbit",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " arranges your followers and the people you follow around you, with the people you actually talk with closest in. Press play to watch your audience accrete over time.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Growth: the January 2023 surge, traced back to the tweets most likely to have caused it.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "1b6c870fd18b4e6c94f492d2b349fb41",
+          "media": "1b6c870fd18b4e6c94f492d2b349fb41",
+          "type": "image"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "caption": [
+                    {
+                      "bold": false,
+                      "code": false,
+                      "color": "default",
+                      "italic": false,
+                      "strike": false,
+                      "text": "Strata: tweets and likes stacked month by month, colored by topic.",
+                      "underline": false
+                    }
+                  ],
+                  "children": [],
+                  "id": "337d8114f0ce47329295e4ccfeba0f53",
+                  "media": "337d8114f0ce47329295e4ccfeba0f53",
+                  "type": "image"
+                }
+              ],
+              "id": "1eebd886d15946648c83b3c171abefaa",
+              "type": "column"
+            },
+            {
+              "children": [
+                {
+                  "caption": [
+                    {
+                      "bold": false,
+                      "code": false,
+                      "color": "default",
+                      "italic": false,
+                      "strike": false,
+                      "text": "Anatomy: which kinds of tweets perform best.",
+                      "underline": false
+                    }
+                  ],
+                  "children": [],
+                  "id": "1f2310442c2440748d571b9b73bef5e6",
+                  "media": "1f2310442c2440748d571b9b73bef5e6",
+                  "type": "image"
+                }
+              ],
+              "id": "fd932772f36547e5ab941a8a69844a8d",
+              "type": "column"
+            }
+          ],
+          "id": "4417820d424f47f0aa824ddc4e0f16dc",
+          "type": "column_list"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Orbit: followers and following, with my closest relationships nearest the center.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "00050bc8e13e4475a69ce8c011fbb874",
+          "media": "00050bc8e13e4475a69ce8c011fbb874",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "5aeb1bd384ec4c6e88a87a818a80b4f5",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "How I built it",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "0a37ede9d9ec45e6b40b5984dccfca59",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I built Murmuration with Claude Code + Opus 5.5 over two days.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "9105d01f65ec45a6b563443a9042287d",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "A few decisions shaped how it works.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ae092451f9d04f69a95d6b1530358c0e",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Topics needed real embeddings.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " The first version clustered tweets with classic word statistics (TF-IDF and LSA). Switching to OpenAI embeddings imroved things, and captioning every image with a vision model means screenshots and memes cluster by what's actually in them. Both are cached per tweet, so it's a one-time cost and later builds only pay for what's new. Without an API key, it falls back to a small local model and then to word statistics.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "11829f9ec1184972ad644f1f45d60c3e",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Your archive doesn't know when anyone followed you.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " X's export lists your followers, but not when they followed. It turns out the list is roughly newest-first, in blocks, and X's account IDs encode when each account was created. An account can't follow you before it exists, so the newest account seen so far bounds when each follow happened, and interpolating between those gives a believable follower curve. Growth and Orbit are built on it.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "76f820952b5744cc97d109d755e303d5",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "A growth spike isn’t always attributable to X activity directly.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Growth attributes each inflection point to the tweets most likely to have caused it, based on timing and engagement. When nothing I posted can explain a jump, it says so and flags the boost as coming from somewhere else.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "524765ef0fec4a03a43237b86710edfa",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Close means mutual.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Orbit ranks people by two-way engagement. Mutual replies and likes count far more than one-sided attention, and recent interactions count more than old ones.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "61c726388c7d4023abb0970519491d96",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Local first, then a static snapshot.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Everything runs on your machine and reads the Birdclaw database strictly read-only. To share it, one command exports a static snapshot with every DM's text stripped out (only counts survive) and uploads it. There's no server or database in production, and the dataset never touches git.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3f162e89c7954c2d8511b3d823ee2792",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Try it on your own archive",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "3420b532ab4e48849ae04f6dc8b4181e",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Like ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "/projects/reading-room",
+              "italic": false,
+              "strike": false,
+              "text": "Reading Room",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " did for my Goodreads shelf, Murmuration turns a personal data export into a place you can actually wander around.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "6034c591c0844b2ba90dbe43e731fcd6",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "It's free and ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://github.com/transitive-bullshit/murmuration",
+              "italic": false,
+              "strike": false,
+              "text": "open source",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". Import your X archive with Birdclaw, run ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": true,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "pnpm install && pnpm dev",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", and it opens on your own history. Or ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://murmuration.transitivebullsh.it/",
+              "italic": false,
+              "strike": false,
+              "text": "explore mine first",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " && I'd love to hear what you find in yours!",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "400edb27f124808794cdf36f566319f4",
+          "richText": [],
+          "type": "paragraph"
+        }
+      ],
+      "cover": "400edb27f1248192af08c32cc99fd81d:cover",
+      "description": "Sleek WebGL explorer for visualizing your X activity over time.",
+      "featured": false,
+      "id": "400edb27f1248192af08c32cc99fd81d",
+      "modified": "2026-10-21T19:53:00.000Z",
+      "published": "2026-10-22",
+      "slug": "murmuration",
+      "source": "https://github.com/transitive-bullshit/murmuration",
+      "tags": [
+        "OSS",
+        "Projects",
+        "Twitter",
+        "React.js"
+      ],
+      "title": "Murmuration",
+      "tweet": "https://x.com/transitive_bs/status/2112985285499944963",
+      "type": "Webapp",
+      "website": "https://murmuration.transitivebullsh.it"
     }
   },
   "projectSource": {
