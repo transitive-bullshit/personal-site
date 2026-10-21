@@ -84535,7 +84535,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-21T19:53:00.000Z",
+        "edited": "2026-10-21T20:32:00.000Z",
         "key": "400edb27f1248192af08c32cc99fd81d:cover",
         "kind": "file"
       },
@@ -86657,33 +86657,6 @@
           "width": 1286
         }
       ]
-    },
-    "83a5abc52db645fb8295eb9ca4ff13a8": {
-      "original": {
-        "bytes": 24154321,
-        "hash": "510986c9f3dda8e4c2dea2744a93cd2007f5fe30acdae74d81123be983943c55",
-        "height": 1080,
-        "key": "personal-site/media/510986c9f3dda8e4c2dea2744a93cd2007f5fe30acdae74d81123be983943c55.mp4",
-        "mime": "video/mp4",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/510986c9f3dda8e4c2dea2744a93cd2007f5fe30acdae74d81123be983943c55.mp4",
-        "width": 1920
-      },
-      "pipelineVersion": 2,
-      "poster": {
-        "bytes": 28712,
-        "hash": "a23c20c833dc274722d36e68ddb4a091e106b43a1b82e2be12d3fb65d453f01b",
-        "height": 720,
-        "key": "personal-site/media/a23c20c833dc274722d36e68ddb4a091e106b43a1b82e2be12d3fb65d453f01b.webp",
-        "mime": "image/webp",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/a23c20c833dc274722d36e68ddb4a091e106b43a1b82e2be12d3fb65d453f01b.webp",
-        "width": 1280
-      },
-      "source": {
-        "edited": "2026-10-21T19:40:00.000Z",
-        "key": "83a5abc52db645fb8295eb9ca4ff13a8",
-        "kind": "file"
-      },
-      "variants": []
     },
     "867f310a097f4e418c66cde5f21426dc": {
       "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAQAA4BaJbACdAD0cgOAAP7tZq0RjnFRYsxG7ovZ4evHfVpeN0gAAAA=",
@@ -102209,18 +102182,18 @@
               "color": "default",
               "italic": false,
               "strike": false,
-              "text": "The launch demo: a quick tour through all six views on the live site.",
+              "text": "Demo video: a quick tour through all six views on the live site.",
               "underline": false
             }
           ],
           "children": [],
-          "id": "83a5abc52db645fb8295eb9ca4ff13a8",
-          "media": "83a5abc52db645fb8295eb9ca4ff13a8",
-          "type": "video"
+          "id": "bfb40d2f61ee4ebfaa888051f8360c38",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=s_BR5InETV8"
         },
         {
           "children": [],
-          "id": "ec4f1475d9bd48b9aea26a116c1d22d6",
+          "id": "3945c4232dae4f668fc65e1a0b297f1e",
           "type": "divider"
         },
         {
@@ -103049,7 +103022,7 @@
       "description": "Sleek WebGL explorer for visualizing your X activity over time.",
       "featured": false,
       "id": "400edb27f1248192af08c32cc99fd81d",
-      "modified": "2026-10-21T19:53:00.000Z",
+      "modified": "2026-10-21T20:32:00.000Z",
       "published": "2026-10-22",
       "slug": "murmuration",
       "source": "https://github.com/transitive-bullshit/murmuration",
