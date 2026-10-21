@@ -16,6 +16,8 @@ When adding a page, account for all applicable discovery surfaces:
 - `lib/content/markdown.ts`, `lib/content/markdown-path.ts`, and the Markdown route: content and index representations.
 - `lib/content/search-index.ts`, navigation, and `lib/content/link-previews.ts`: search and browsing entry points where applicable.
 
+`app/.well-known/funding-manifest-urls/route.ts` lists the `funding.json` manifests that name this site as their webpage. FLOSS/fund checks this list to verify the site, so add a manifest's URL there before submitting it.
+
 ## Social images
 
 Code-owned article bodies also supply Markdown and heading terms through `lib/content/body-overrides.ts`. Their Notion metadata and ordinary article route still control indexes, public access, canonical URLs, and social cards. The cyber swarm essay renders a struck-out “drone” in its header. Its plain-text descriptions omit that word through `plainTextDescription`, including HTML/social metadata, structured data, previews, search, Markdown, and llms.txt. The CMS snapshot retains the original wording.
