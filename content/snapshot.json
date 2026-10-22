@@ -80394,6 +80394,44 @@
         }
       ]
     },
+    "1172ba8ac46c4620aa9eacd1d11e328c": {
+      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACQAQCdASoIAAYAA4BaJaQAAudFxpAA/vXXJi+t8DFXRtIbIAA=",
+      "original": {
+        "bytes": 90048,
+        "hash": "57c28d2eacf7da7a04c9c20095d2a115154f5b4229bdda6259c9117f3074275d",
+        "height": 960,
+        "key": "personal-site/media/57c28d2eacf7da7a04c9c20095d2a115154f5b4229bdda6259c9117f3074275d.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/57c28d2eacf7da7a04c9c20095d2a115154f5b4229bdda6259c9117f3074275d.webp",
+        "width": 1248
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-22T22:15:00.000Z",
+        "key": "1172ba8ac46c4620aa9eacd1d11e328c",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 52998,
+          "hash": "6c214fd7a21151bc2e11bb79e6d45aba4d2b0b214a51580cb44650ab6d00b8eb",
+          "height": 738,
+          "key": "personal-site/media/6c214fd7a21151bc2e11bb79e6d45aba4d2b0b214a51580cb44650ab6d00b8eb.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/6c214fd7a21151bc2e11bb79e6d45aba4d2b0b214a51580cb44650ab6d00b8eb.webp",
+          "width": 960
+        },
+        {
+          "bytes": 99980,
+          "hash": "a45d4d506d73e416050fc8ab8bde63d9580dee2c0d1b433dd16178d214a15af6",
+          "height": 960,
+          "key": "personal-site/media/a45d4d506d73e416050fc8ab8bde63d9580dee2c0d1b433dd16178d214a15af6.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/a45d4d506d73e416050fc8ab8bde63d9580dee2c0d1b433dd16178d214a15af6.webp",
+          "width": 1248
+        }
+      ]
+    },
     "120c2ab8e89d40d480e8098e0029327e": {
       "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAMAA4BaJZwAAtz5KQQA/vXu24vkBED0slS64E9QdMOrCzQoAA==",
       "original": {
@@ -81278,6 +81316,33 @@
           "width": 1920
         }
       ]
+    },
+    "25918422ab734c6bad28363c8ae87de7": {
+      "original": {
+        "bytes": 169962255,
+        "height": 1080,
+        "mime": "video/mp4",
+        "remote": true,
+        "url": "https://assets.cultural-alignment.com/cultural-alignment/a69178af30f28db90579b2ce2971015db27d3d1399ea37ab495bcf6054898207.mp4",
+        "width": 1734
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 65262,
+        "hash": "f8fc2ef170feb46d9189b563d3049d14c1c5bbb8ba46cef7995c09473f5ecd46",
+        "height": 797,
+        "key": "personal-site/media/f8fc2ef170feb46d9189b563d3049d14c1c5bbb8ba46cef7995c09473f5ecd46.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/f8fc2ef170feb46d9189b563d3049d14c1c5bbb8ba46cef7995c09473f5ecd46.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-21T20:44:00.000Z",
+        "key": "25918422ab734c6bad28363c8ae87de7",
+        "kind": "external",
+        "url": "https://assets.cultural-alignment.com/cultural-alignment/a69178af30f28db90579b2ce2971015db27d3d1399ea37ab495bcf6054898207.mp4"
+      },
+      "variants": []
     },
     "266ce1a8316f44ecbd36e3908ebdba78:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoIAAUAA4BaJQBOgCPg+vRRIAD+2FLJMwAO+TUuzZSnd3Elfn3/6/28SQ8uoRx0Xbzu6FYo+mUvAH8AAAA=",
@@ -82672,7 +82737,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:00:00.000Z",
+        "edited": "2026-10-21T20:44:00.000Z",
         "key": "3ddedb27f12481059885e955643ddaf0:cover",
         "kind": "file"
       },
@@ -82710,7 +82775,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:00:00.000Z",
+        "edited": "2026-10-21T20:44:00.000Z",
         "key": "3ddedb27f12481059885e955643ddaf0:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/55eddaa1-688e-4a5b-9e3c-011b316d61ce/icon.svg"
@@ -82789,7 +82854,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:00:00.000Z",
+        "edited": "2026-10-21T20:44:00.000Z",
         "key": "3ddedb27f12481258859d0cefc5f2da4:cover",
         "kind": "external",
         "url": "https://raw.githubusercontent.com/transitive-bullshit/reading-room/main/docs/assets/desktop-pile-0.jpg"
@@ -82828,7 +82893,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-28T16:00:00.000Z",
+        "edited": "2026-10-21T20:44:00.000Z",
         "key": "3ddedb27f12481258859d0cefc5f2da4:icon",
         "kind": "external",
         "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/6c312b90-282f-4af1-ba4e-5de74782b3f6/icon.svg"
@@ -84560,6 +84625,44 @@
         }
       ]
     },
+    "401edb27f12481f78df3d284488f3f3f:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAABQAQCdASoIAAQAA4BaJaQABAAAAP71mN9Ut6mF+L/NKk9Nr9XM0sleo4AAAA==",
+      "original": {
+        "bytes": 101580,
+        "hash": "153eb4caa4bec220c660dd2c299c3ffe22bb1ec554ade6c9a53b12c121b5bd63",
+        "height": 630,
+        "key": "personal-site/media/153eb4caa4bec220c660dd2c299c3ffe22bb1ec554ade6c9a53b12c121b5bd63.png",
+        "mime": "image/png",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/153eb4caa4bec220c660dd2c299c3ffe22bb1ec554ade6c9a53b12c121b5bd63.png",
+        "width": 1200
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-22T22:15:00.000Z",
+        "key": "401edb27f12481f78df3d284488f3f3f:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 7634,
+          "hash": "145ddaea2ffcb058c150dcb172104144362b9706653cf7e1670872693bf45f08",
+          "height": 504,
+          "key": "personal-site/media/145ddaea2ffcb058c150dcb172104144362b9706653cf7e1670872693bf45f08.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/145ddaea2ffcb058c150dcb172104144362b9706653cf7e1670872693bf45f08.webp",
+          "width": 960
+        },
+        {
+          "bytes": 13394,
+          "hash": "23f0e1714242c5675250faad76cb74ecdd8f4f436cc28c025bb0fed88bba773a",
+          "height": 630,
+          "key": "personal-site/media/23f0e1714242c5675250faad76cb74ecdd8f4f436cc28c025bb0fed88bba773a.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/23f0e1714242c5675250faad76cb74ecdd8f4f436cc28c025bb0fed88bba773a.webp",
+          "width": 1200
+        }
+      ]
+    },
     "42ebc678efa747a28ba2c5f2af199c47": {
       "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAACQAQCdASoIAAQAA4BaJQBOgB4/DiAA/Zvzz3pLucb1S+miS3N4OViiifgAAA==",
       "original": {
@@ -85197,6 +85300,44 @@
           "key": "personal-site/media/8a7ac861d11aaa521fe096660b417051ac158152a89c34c77b07d572756e71f5.webp",
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/8a7ac861d11aaa521fe096660b417051ac158152a89c34c77b07d572756e71f5.webp",
+          "width": 1920
+        }
+      ]
+    },
+    "5256c24fcbdc4216b862f5a6320a3307": {
+      "blurDataURL": "data:image/webp;base64,UklGRioAAABXRUJQVlA4IB4AAAAwAQCdASoIAAUAA4BaJaQAA3AA/vViIhN4QghAAAA=",
+      "original": {
+        "bytes": 35002,
+        "hash": "4f44a01af279e40eb652de55ee0438ca049d23c971f2a6934ad5818846572cda",
+        "height": 1800,
+        "key": "personal-site/media/4f44a01af279e40eb652de55ee0438ca049d23c971f2a6934ad5818846572cda.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/4f44a01af279e40eb652de55ee0438ca049d23c971f2a6934ad5818846572cda.webp",
+        "width": 2880
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-22T21:53:00.000Z",
+        "key": "5256c24fcbdc4216b862f5a6320a3307",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 6994,
+          "hash": "45ec3ac8c4949f6851268adacf2d0d49900161fb7023f9c531fd8d617e0e4b25",
+          "height": 600,
+          "key": "personal-site/media/45ec3ac8c4949f6851268adacf2d0d49900161fb7023f9c531fd8d617e0e4b25.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/45ec3ac8c4949f6851268adacf2d0d49900161fb7023f9c531fd8d617e0e4b25.webp",
+          "width": 960
+        },
+        {
+          "bytes": 19802,
+          "hash": "1ff04d5e38909845a562a016290f9beb015bc67cd9d7ce8e005df7c054be385c",
+          "height": 1200,
+          "key": "personal-site/media/1ff04d5e38909845a562a016290f9beb015bc67cd9d7ce8e005df7c054be385c.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/1ff04d5e38909845a562a016290f9beb015bc67cd9d7ce8e005df7c054be385c.webp",
           "width": 1920
         }
       ]
@@ -86177,6 +86318,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/36fbff95a80c17566e1cec984d305353e013655685d662134d01f9fccaaf4bee.webp",
           "width": 1224
+        }
+      ]
+    },
+    "750c6cdc5323456aaf40817ae0399d75": {
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAABwAQCdASoIAAgAA4BaJZw2wAAXQAD+9NH25boGQ9Rn3h/UaO8XDYEZtbigAA==",
+      "original": {
+        "bytes": 95248,
+        "hash": "36044cde827afacc142e34813fe4b915cfce1baed40b31dbe5cd446060a0c5d8",
+        "height": 1510,
+        "key": "personal-site/media/36044cde827afacc142e34813fe4b915cfce1baed40b31dbe5cd446060a0c5d8.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/36044cde827afacc142e34813fe4b915cfce1baed40b31dbe5cd446060a0c5d8.webp",
+        "width": 1552
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-22T22:14:00.000Z",
+        "key": "750c6cdc5323456aaf40817ae0399d75",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 39060,
+          "hash": "f101d755c87f15a8073a942b187b0c5639aa4f52566fcab206409f6aa15b16d8",
+          "height": 934,
+          "key": "personal-site/media/f101d755c87f15a8073a942b187b0c5639aa4f52566fcab206409f6aa15b16d8.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/f101d755c87f15a8073a942b187b0c5639aa4f52566fcab206409f6aa15b16d8.webp",
+          "width": 960
+        },
+        {
+          "bytes": 92982,
+          "hash": "7dc1e0824c1866e201953beb64937530aa7021c6456913bd862ee546e44b3334",
+          "height": 1510,
+          "key": "personal-site/media/7dc1e0824c1866e201953beb64937530aa7021c6456913bd862ee546e44b3334.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/7dc1e0824c1866e201953beb64937530aa7021c6456913bd862ee546e44b3334.webp",
+          "width": 1552
         }
       ]
     },
@@ -87757,6 +87936,44 @@
         }
       ]
     },
+    "9c5f1699817e429886f32856e7a6fe07": {
+      "blurDataURL": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoFAAgAA4BaJaQAA3AA/vR8KBgAAA==",
+      "original": {
+        "bytes": 72010,
+        "hash": "989ad583145993202d01c2154ada7ddec873cafaec9f09469b6777e38e92900b",
+        "height": 1455,
+        "key": "personal-site/media/989ad583145993202d01c2154ada7ddec873cafaec9f09469b6777e38e92900b.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/989ad583145993202d01c2154ada7ddec873cafaec9f09469b6777e38e92900b.webp",
+        "width": 1000
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-22T22:15:00.000Z",
+        "key": "9c5f1699817e429886f32856e7a6fe07",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 52660,
+          "hash": "64825e45d4bc0889bb9f85c0025241faa42b78364bd385648efbc51f4aacf317",
+          "height": 1397,
+          "key": "personal-site/media/64825e45d4bc0889bb9f85c0025241faa42b78364bd385648efbc51f4aacf317.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/64825e45d4bc0889bb9f85c0025241faa42b78364bd385648efbc51f4aacf317.webp",
+          "width": 960
+        },
+        {
+          "bytes": 73220,
+          "hash": "a4a7e2682575259c67e013287df9f80e7f0b7b53c88eb674cd6e7de984ceb02b",
+          "height": 1455,
+          "key": "personal-site/media/a4a7e2682575259c67e013287df9f80e7f0b7b53c88eb674cd6e7de984ceb02b.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/a4a7e2682575259c67e013287df9f80e7f0b7b53c88eb674cd6e7de984ceb02b.webp",
+          "width": 1000
+        }
+      ]
+    },
     "9e8b394c266a43dda3658a94c4edf35d:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoIAAUAA4BaJQBOgCHbUnGgAM4mKoJy0NCSYhfZt/ymnLclKRno7toAkAA=",
       "original": {
@@ -88280,6 +88497,44 @@
         }
       ]
     },
+    "ad15d409468e4308a96185ed7bcc71f5": {
+      "blurDataURL": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAACwAQCdASoIAAMAA4BaJZwAAudppsjAAP7pRgzVuM+maUIA",
+      "original": {
+        "bytes": 120226,
+        "hash": "a5da5f4d620a95c4f2817cecffc0f4a2a17118f38d2b78765ad6c6e5d40f7bea",
+        "height": 724,
+        "key": "personal-site/media/a5da5f4d620a95c4f2817cecffc0f4a2a17118f38d2b78765ad6c6e5d40f7bea.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/a5da5f4d620a95c4f2817cecffc0f4a2a17118f38d2b78765ad6c6e5d40f7bea.webp",
+        "width": 2184
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-22T22:14:00.000Z",
+        "key": "ad15d409468e4308a96185ed7bcc71f5",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 33136,
+          "hash": "dbdfae6956fb2f86ac9935d49fea5b472dfee20b08142817adc800e84c6b295d",
+          "height": 318,
+          "key": "personal-site/media/dbdfae6956fb2f86ac9935d49fea5b472dfee20b08142817adc800e84c6b295d.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/dbdfae6956fb2f86ac9935d49fea5b472dfee20b08142817adc800e84c6b295d.webp",
+          "width": 960
+        },
+        {
+          "bytes": 103944,
+          "hash": "3fc4ca27d5eca816abd68ef36f7c61c7fe2fa17e83d705a24f84f1228d1e43ba",
+          "height": 636,
+          "key": "personal-site/media/3fc4ca27d5eca816abd68ef36f7c61c7fe2fa17e83d705a24f84f1228d1e43ba.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/3fc4ca27d5eca816abd68ef36f7c61c7fe2fa17e83d705a24f84f1228d1e43ba.webp",
+          "width": 1920
+        }
+      ]
+    },
     "adf6ffb4396a4a1aa155bd36364ddc3c": {
       "blurDataURL": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoHAAgAA4BaJQAAXOs2wAAA/vYUsMK74dvrfwDFdX2AAAAA",
       "original": {
@@ -88536,6 +88791,33 @@
           "width": 1920
         }
       ]
+    },
+    "b2e81fbe39574d1ea72ac7f2746d8caa": {
+      "original": {
+        "bytes": 128676128,
+        "height": 1080,
+        "mime": "video/mp4",
+        "remote": true,
+        "url": "https://assets.cultural-alignment.com/reading-room/16564f5f037eebafa88a883ca7e565de2f00496abbde4f0982529ab1fd1eaef7.mp4",
+        "width": 1694
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 68648,
+        "hash": "bbef4a65d7e9a8f69825a988bad8c8c3630360bf663b98fd7c9fa7b380aa8e88",
+        "height": 816,
+        "key": "personal-site/media/bbef4a65d7e9a8f69825a988bad8c8c3630360bf663b98fd7c9fa7b380aa8e88.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/bbef4a65d7e9a8f69825a988bad8c8c3630360bf663b98fd7c9fa7b380aa8e88.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-21T20:44:00.000Z",
+        "key": "b2e81fbe39574d1ea72ac7f2746d8caa",
+        "kind": "external",
+        "url": "https://assets.cultural-alignment.com/reading-room/16564f5f037eebafa88a883ca7e565de2f00496abbde4f0982529ab1fd1eaef7.mp4"
+      },
+      "variants": []
     },
     "b32e3408466b4754b0335674c4969834:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoIAAYAA4BaJYgCdAEOurkAAP6JRUk9HA0xWhVC14mwAsopFwyGIzsda28YAAAA",
@@ -90090,6 +90372,33 @@
         }
       ]
     },
+    "d9be823277444160841e6553c75f66fa": {
+      "original": {
+        "bytes": 810518,
+        "hash": "0f908ab8efbbaebcd765a92b4e9b634470c740b90b0721c768582e3df849390e",
+        "height": 1080,
+        "key": "personal-site/media/0f908ab8efbbaebcd765a92b4e9b634470c740b90b0721c768582e3df849390e.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/0f908ab8efbbaebcd765a92b4e9b634470c740b90b0721c768582e3df849390e.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 1700,
+        "hash": "93df28e250c6dd2b9e2519bef491bfc48860438df2f00cde8df5bfda6479dbf4",
+        "height": 720,
+        "key": "personal-site/media/93df28e250c6dd2b9e2519bef491bfc48860438df2f00cde8df5bfda6479dbf4.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/93df28e250c6dd2b9e2519bef491bfc48860438df2f00cde8df5bfda6479dbf4.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-22T22:14:00.000Z",
+        "key": "d9be823277444160841e6553c75f66fa",
+        "kind": "file"
+      },
+      "variants": []
+    },
     "dae4cf46177249c3abc8100db595cac7:icon": {
       "blurDataURL": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSDQAAAABL0AmbVNZlTi9+8dsRETwzkBBJKmtojQDxwwC0hwgIEUBRPQ/zo5m8BVcoAt0BTf4Z0cDVlA4IEQAAAAQAgCdASoIAAgAA4BaJZwC7AaQA2lf5S6AAP7KsapBERHB/f3zlMK9TU6SpxMgJhVjiGyOty84DBG7A4qqEXR0hgAAAA==",
       "original": {
@@ -90357,6 +90666,33 @@
           "width": 1836
         }
       ]
+    },
+    "e0c4c77181d24cdbab3885f381299a79": {
+      "original": {
+        "bytes": 822925,
+        "hash": "be811d9cec0afd0faa4f6b206c49ac260030087a6536faf04226466c4e15857f",
+        "height": 1080,
+        "key": "personal-site/media/be811d9cec0afd0faa4f6b206c49ac260030087a6536faf04226466c4e15857f.mp4",
+        "mime": "video/mp4",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/be811d9cec0afd0faa4f6b206c49ac260030087a6536faf04226466c4e15857f.mp4",
+        "width": 1920
+      },
+      "pipelineVersion": 2,
+      "poster": {
+        "bytes": 1700,
+        "hash": "93df28e250c6dd2b9e2519bef491bfc48860438df2f00cde8df5bfda6479dbf4",
+        "height": 720,
+        "key": "personal-site/media/93df28e250c6dd2b9e2519bef491bfc48860438df2f00cde8df5bfda6479dbf4.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/93df28e250c6dd2b9e2519bef491bfc48860438df2f00cde8df5bfda6479dbf4.webp",
+        "width": 1280
+      },
+      "source": {
+        "edited": "2026-10-22T21:53:00.000Z",
+        "key": "e0c4c77181d24cdbab3885f381299a79",
+        "kind": "file"
+      },
+      "variants": []
     },
     "e12fed81271942d58b726595e7a64666:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoIAAYAA4BaJQBdgB6OQ28AAP7d/696m7tdxvr0IaVc/VhTxOszj10hwzVmY3oAAAA=",
@@ -91032,6 +91368,44 @@
         }
       ]
     },
+    "f196e20dc0cc410ba4e8a289b800e0ea": {
+      "blurDataURL": "data:image/webp;base64,UklGRigAAABXRUJQVlA4IBwAAABQAQCdASoIAAIAA4BaJZwABdUAAP7xTZw8gAAA",
+      "original": {
+        "bytes": 18886,
+        "hash": "189297dbd33e98af63c50739252be9ffad90f0a658d539df5673db3e2f187974",
+        "height": 563,
+        "key": "personal-site/media/189297dbd33e98af63c50739252be9ffad90f0a658d539df5673db3e2f187974.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/189297dbd33e98af63c50739252be9ffad90f0a658d539df5673db3e2f187974.webp",
+        "width": 2000
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-10-22T22:14:00.000Z",
+        "key": "f196e20dc0cc410ba4e8a289b800e0ea",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 5864,
+          "hash": "dc5e166c2c82778a85944be560cab556e56c7c88996ae5a01d127b64dc54e3b3",
+          "height": 270,
+          "key": "personal-site/media/dc5e166c2c82778a85944be560cab556e56c7c88996ae5a01d127b64dc54e3b3.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/dc5e166c2c82778a85944be560cab556e56c7c88996ae5a01d127b64dc54e3b3.webp",
+          "width": 960
+        },
+        {
+          "bytes": 19128,
+          "hash": "bf48c523a51446c1abacc2928e5bd6e3e4ed33643061ad0ee879630dbdeed25d",
+          "height": 540,
+          "key": "personal-site/media/bf48c523a51446c1abacc2928e5bd6e3e4ed33643061ad0ee879630dbdeed25d.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/bf48c523a51446c1abacc2928e5bd6e3e4ed33643061ad0ee879630dbdeed25d.webp",
+          "width": 1920
+        }
+      ]
+    },
     "f2852042275b440a9458fde6eca28a21": {
       "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACQAQCdASoHAAgAA4BaJQBOgCHHbQAA/uevwIWx+iiTjdjL8niEGhoXM4hJcd4RcAA=",
       "original": {
@@ -91626,6 +92000,11 @@
       "active": true,
       "aliases": [],
       "slug": "murmuration"
+    },
+    "401edb27f12481f78df3d284488f3f3f": {
+      "active": true,
+      "aliases": [],
+      "slug": "apple-music-made-by-code"
     }
   },
   "projects": {
@@ -92384,6 +92763,23 @@
       ],
       "blocks": [
         {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Demo: browsing the gallery's scenes, like Rick and Morty's butter-passing robot.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "25918422ab734c6bad28363c8ae87de7",
+          "media": "25918422ab734c6bad28363c8ae87de7",
+          "type": "video"
+        },
+        {
           "caption": [],
           "children": [],
           "id": "68a6e0c6ebe14d3fbee4cd5a5a3eb743",
@@ -92400,7 +92796,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481059885e955643ddaf0",
-      "modified": "2026-09-28T16:00:00.000Z",
+      "modified": "2026-10-21T20:44:00.000Z",
       "published": "2026-09-01",
       "slug": "cultural-alignment",
       "source": "https://github.com/transitive-bullshit/cultural-alignment",
@@ -92462,6 +92858,23 @@
       ],
       "blocks": [
         {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Demo: a pile of Goodreads favorites on a desk in a cozy room, grouped by genre.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "b2e81fbe39574d1ea72ac7f2746d8caa",
+          "media": "b2e81fbe39574d1ea72ac7f2746d8caa",
+          "type": "video"
+        },
+        {
           "caption": [],
           "children": [],
           "id": "a013caf003484479b8e2f51b1bcfbf66",
@@ -92478,7 +92891,7 @@
         "type": "image"
       },
       "id": "3ddedb27f12481258859d0cefc5f2da4",
-      "modified": "2026-09-28T16:00:00.000Z",
+      "modified": "2026-10-21T20:44:00.000Z",
       "published": "2026-09-08",
       "slug": "reading-room",
       "source": "https://github.com/transitive-bullshit/reading-room",
@@ -103036,6 +103449,715 @@
       "tweet": "https://x.com/transitive_bs/status/2112985285499944963",
       "type": "Webapp",
       "website": "https://murmuration.transitivebullsh.it"
+    },
+    "401edb27f12481f78df3d284488f3f3f": {
+      "authors": [
+        {
+          "id": "b036f7f695a94f97b3b5c46867d0d103",
+          "name": "Travis Fischer"
+        }
+      ],
+      "blocks": [
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Recreates the new Apple Music liquid brand identity with webgl + opus 5.5.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "d9be823277444160841e6553c75f66fa",
+          "media": "d9be823277444160841e6553c75f66fa",
+          "type": "video"
+        },
+        {
+          "children": [],
+          "id": "df45a071e7d14fe2bfc1c2ff84420224",
+          "type": "divider"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "861bc27d78d145fa975d8d8a20cec436",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Why I built this",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "92a6cb0e2aed4cd0878de5041b646ed8",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Apple Music's ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.youtube.com/watch?v=1XxNXkOHKZw",
+              "italic": false,
+              "strike": false,
+              "text": "new identity",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " wasn't made in After Effects. Apple and TBWA\\Media Arts Lab filmed the logo through a shallow bath of mineral oil, rippled by a rig that played a short sting from Fred again.. and NEST Acoustics as vibration. The oil bends the logo like a lens, smears its edges, and splits the light into rainbow fringes. It's gorgeous, and it looks expensive.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "ce521f0ac50948a7b2e65d2572976851",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "So I wondered how much of that premium, physical look you could get back in code, for any logo, without a tank of oil and Apple's budget. Not \"inspired by\", but matched to Apple's film, frame by frame and curve by curve.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "dd38d5fda35f4cf6b77e4f4acbf4c471",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I wanted three things out of it:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "a01137d2be4f479b97b2b710646d78bf",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "A player where anyone can drop in their own icon and wordmark.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "048bc28e873e44a0b793b8268220ffb3",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "High-quality videos, of Apple's logo and of my own.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "2ceab9d3c8a84cecb4762653af736933",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "An explainer of how the effect actually works, and how to make your own, in code or in a dish of oil.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d3230a35bf68441aac2d0029cd8e800d",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Play with it",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The player: the effect runs live at your screen's full resolution, with the sting.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "5256c24fcbdc4216b862f5a6320a3307",
+          "media": "5256c24fcbdc4216b862f5a6320a3307",
+          "type": "image"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "f154112f04b94cf2a2e67cc5ae764752",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://apple-music-effect.transitivebullsh.it/",
+              "italic": false,
+              "strike": false,
+              "text": "The player",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " plays the 4-second sting live. Drop an icon on the first shot and a wordmark on the second, tune the oil and the light, and export a 1080p or 4K MP4 with the sound, all in your browser. The demo uses the X logo and my handle, set in SF Pro stretched wide and heavy to match Apple's \"music\" (88% overlap with Apple's letterforms, up from 46% with Helvetica).",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The same effect on my own brand: the X logo, then @transitive_bs.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "e0c4c77181d24cdbab3885f381299a79",
+          "media": "e0c4c77181d24cdbab3885f381299a79",
+          "type": "video"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "aabdcebfcc2c492a8fbac3f7e1115645",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://apple-music-effect.transitivebullsh.it/explainer",
+              "italic": false,
+              "strike": false,
+              "text": "The explainer",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " takes the effect apart. Every figure is the live simulation, paused, with a switch that turns off one ingredient at a time: the dome of oil, the dispersion, the rim light.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "\"Take it apart\" in the explainer: switch off the dome or the dispersion and see what each one does.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "750c6cdc5323456aaf40817ae0399d75",
+          "media": "750c6cdc5323456aaf40817ae0399d75",
+          "type": "image",
+          "width": 576
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "4e5f5e3c12954048b3a38406bea4525f",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "How I built it",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "8b334f1607c8495f9b790a519f049ada",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I built it with Claude Code + Opus 5.5 in a single overnight session, starting from Apple's film. Claude downloaded it, transcribed it with word-level timings, and traced the new note and wordmark from its frames, since Apple's public icon pack still has the old ones. Analyzing the sting confirmed a hunch: the two shots are driven by two different chords, a low F♯ under the icon and an A under the wordmark.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The first engine's renders: a simulated tray of oil over the note and the wordmark. Plausible, and nothing like the film yet.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "f196e20dc0cc410ba4e8a289b800e0ea",
+          "media": "f196e20dc0cc410ba4e8a289b800e0ea",
+          "type": "image",
+          "width": 576
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "4fd976239d084252af979efcf847ecc2",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The first engine was a custom WebGL2 renderer that simulated the oil (nonlinear shallow water on a grid, over a glass tile rising through it) and traced light through the surface. To match the film, it fit the oil's shape to each frame. Fitting it to pixel error failed outright: the optimizer just flattened the oil, because an undistorted logo scores well. What worked was measuring the film directly. A registration step warps the clean logo onto each of Apple's frames, and that warp is the film's refraction field: where every pixel looks through the oil.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Apple's film (top) against an early version driven by the surface captured from each frame (bottom). Close on a single frame, but it moved in steps.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "ad15d409468e4308a96185ed7bcc71f5",
+          "media": "ad15d409468e4308a96185ed7bcc71f5",
+          "type": "image",
+          "width": 576
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "5c145449ea014b42bf6f18c34393c308",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Frame by frame, it got closer. In motion, it was wrong. The simulation stepped, the per-frame fits traded one value against another, and the whole thing jittered. As I put it at the time, it looked closer, \"but the animation itself isn't actually smooth, which wrecks the whole thing.\"",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "53bc9d2878474e74af151d6d1092aca9",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The fix was to throw most of it away. The film's look is really one thing: a dome of oil over the logo, acting as a lens. So the final engine has no simulation at all. Each shot is one closed-form dome, animated by four smooth curves (its radius, height, shape and settle) with a few keys each. Every pixel is ray traced through it at a dozen wavelengths for real spectral color. The icon's whole animation now comes down to 9 fitted numbers instead of about 170 per-frame values, with the same error against the film, and about 1,700 lines of code went away. A frame is a pure function of time, so the live player, stills and 4K exports all agree.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "29c894e36868474e8a15e1bf6f9c581b",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "What I learned",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "c7b63afebf7a4e0193c853c77b1f7a96",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Smooth beats close.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Your eye forgives a frame that's slightly off. It doesn't forgive a sequence that jitters. A few continuous curves beat any amount of per-frame fitting, and a test now fails if any animated value jumps or kinks, so the complexity can't creep back.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "8cd65233ff2347b4892ca18996557bc1",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Fit the physics, not the pixels.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Pixel error rewards soft, dark frames, so it only ever got to bracket choices. Fitting to the measured refraction field gave the oil's real shape.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "6f219ab2ed294f38abc4015622fe54f1",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Measure the look as curves over time.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " For the final round, I had Claude build a scorecard: how lit, how colorful, how warm, how sharp, and how much each frame changes, each smoothed and compared against the film shot by shot. Claude formed hypotheses and tested them one at a time, and a change stayed only if the scorecard and my eyes both agreed. That took it from 14.9 to 9.35 (lower is closer).",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "cb4169cff34e475dbb89d45bb6e83b92",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "It's not perfect.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Apple's fringes run red on the outside and blue on the inside, and ours are mostly blue. The film's first bubble is a glassy ball lens that ours doesn't reproduce. The repo lists the known gaps.",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Apple's film, the previous version and this one, at 12 moments of the sting.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "1172ba8ac46c4620aa9eacd1d11e328c",
+          "media": "1172ba8ac46c4620aa9eacd1d11e328c",
+          "type": "image",
+          "width": 576
+        },
+        {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The scorecard: lit area, color, warm and cool, black level, sharpness and motion over time, with Apple's film in black.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "9c5f1699817e429886f32856e7a6fe07",
+          "media": "9c5f1699817e429886f32856e7a6fe07",
+          "type": "image",
+          "width": 576
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "d90220ffe35d4019b0a056a8507994fc",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Make your own",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "5f75cab3ded64a36bd30d7551cd1550b",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "It's free and ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://github.com/transitive-bullshit/apple-music-effect",
+              "italic": false,
+              "strike": false,
+              "text": "open source",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://apple-music-effect.transitivebullsh.it/",
+              "italic": false,
+              "strike": false,
+              "text": "Open the player",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ", drop in your logo, and export a video. Or ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://apple-music-effect.transitivebullsh.it/explainer",
+              "italic": false,
+              "strike": false,
+              "text": "read the explainer",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " and try it for real with a tray of oil and a bass shaker.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "401edb27f1248064aea1dec13aac5f28",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I'd love to see what you make!",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "7ba63a430487404ca37354844a2793bf",
+          "richText": [],
+          "type": "paragraph"
+        }
+      ],
+      "cover": "401edb27f12481f78df3d284488f3f3f:cover",
+      "description": "Apple Music's liquid logo effect, rebuilt in WebGL as a lens of oil that works with any logo.",
+      "featured": false,
+      "id": "401edb27f12481f78df3d284488f3f3f",
+      "modified": "2026-10-22T22:15:00.000Z",
+      "published": "2026-10-23",
+      "slug": "apple-music-made-by-code",
+      "source": "https://github.com/transitive-bullshit/apple-music-effect",
+      "tags": [
+        "AI",
+        "OSS",
+        "Projects",
+        "Video"
+      ],
+      "title": "Apple Music, Made by Code",
+      "tweet": "https://x.com/transitive_bs/status/2113385509888372945",
+      "type": "Webapp",
+      "website": "https://apple-music-effect.transitivebullsh.it"
     }
   },
   "projectSource": {
