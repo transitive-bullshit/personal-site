@@ -205,6 +205,11 @@ function BlockView({ block, snapshot }: { block: Block; snapshot: Snapshot }) {
     case 'video': {
       const url = block.url ? embedUrl(block.url) : undefined
       const media = block.media ? snapshot.media[block.media] : undefined
+      // The YouTube player already links to the original video.
+      const sourceUrl =
+        url?.startsWith('https://www.youtube-nocookie.com/') && !media
+          ? undefined
+          : block.url
       return (
         <figure id={block.id}>
           {media ? (
@@ -223,12 +228,12 @@ function BlockView({ block, snapshot }: { block: Block; snapshot: Snapshot }) {
               allowFullScreen
             />
           ) : null}
-          {block.url || block.caption.length ? (
+          {sourceUrl || block.caption.length ? (
             <figcaption>
-              {block.url ? <a href={block.url}>Watch original video</a> : null}
+              {sourceUrl ? <a href={sourceUrl}>Watch original video</a> : null}
               {block.caption.length ? (
                 <>
-                  {block.url ? <br /> : null}
+                  {sourceUrl ? <br /> : null}
                   <RichText spans={block.caption} />
                 </>
               ) : null}
