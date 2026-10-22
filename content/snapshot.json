@@ -104144,7 +104144,8 @@
       "description": "Apple Music's liquid logo effect, rebuilt in WebGL as a lens of oil that works with any logo.",
       "featured": false,
       "id": "401edb27f12481f78df3d284488f3f3f",
-      "modified": "2026-10-22T22:15:00.000Z",
+      "modified": "2026-10-22T22:19:00.000Z",
+      "needsImageSync": true,
       "published": "2026-10-23",
       "slug": "apple-music-made-by-code",
       "source": "https://github.com/transitive-bullshit/apple-music-effect",
@@ -104155,7 +104156,6 @@
         "Video"
       ],
       "title": "Apple Music, Made by Code",
-      "tweet": "https://x.com/transitive_bs/status/2113385509888372945",
       "type": "Webapp",
       "website": "https://apple-music-effect.transitivebullsh.it"
     }
