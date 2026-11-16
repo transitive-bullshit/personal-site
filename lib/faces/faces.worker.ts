@@ -10,24 +10,32 @@ import {
   type PortraitFeatures
 } from './portrait'
 
+/** `portrait` is the portrait's index in the page's list. */
 export type FacesWorkerRequest =
-  | { type: 'load'; directory: string; count: number }
-  | { type: 'assign'; id: number; positions: Float32Array }
+  | { type: 'load'; portrait: number; directory: string; count: number }
+  | { type: 'assign'; id: number; portrait: number; positions: Float32Array }
 
 export type FacesWorkerResponse =
   | {
       type: 'loaded'
+      portrait: number
       eyeFocus: [number, number, number]
       bottom: number
     }
   | {
       type: 'assigned'
       id: number
+      portrait: number
       targets: Float32Array
       arrivals: Float32Array
       gather: Float32Array
     }
-  | { type: 'error'; message: string }
+  | {
+      type: 'error'
+      request: FacesWorkerRequest['type']
+      portrait: number
+      message: string
+    }
 
 type DepthMetadata = {
   width: number
@@ -46,7 +54,7 @@ const scope = globalThis as unknown as {
   ): void
 }
 
-let portrait: PortraitCloud | undefined
+const portraits = new Map<number, PortraitCloud>()
 
 async function fetchOk(url: string) {
   const response = await fetch(url)
@@ -118,27 +126,38 @@ function post(message: FacesWorkerResponse, transfer: Transferable[] = []) {
 scope.addEventListener('message', async ({ data }) => {
   try {
     if (data.type === 'load') {
-      portrait = await loadPortrait(data.directory, data.count)
+      const portrait = await loadPortrait(data.directory, data.count)
+      portraits.set(data.portrait, portrait)
       post({
         type: 'loaded',
+        portrait: data.portrait,
         eyeFocus: portrait.eyeFocus,
         bottom: portrait.bottom
       })
       return
     }
+    const portrait = portraits.get(data.portrait)
     if (!portrait) throw new Error('The portrait has not loaded yet.')
     const { targets, arrivals, gather } = assignPortrait(
       data.positions,
       portrait
     )
-    post({ type: 'assigned', id: data.id, targets, arrivals, gather }, [
-      targets.buffer,
-      arrivals.buffer,
-      gather.buffer
-    ])
+    post(
+      {
+        type: 'assigned',
+        id: data.id,
+        portrait: data.portrait,
+        targets,
+        arrivals,
+        gather
+      },
+      [targets.buffer, arrivals.buffer, gather.buffer]
+    )
   } catch (err) {
     post({
       type: 'error',
+      request: data.type,
+      portrait: data.portrait,
       message:
         err instanceof Error ? err.message : 'Could not prepare the portrait.'
     })

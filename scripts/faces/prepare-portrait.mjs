@@ -133,9 +133,12 @@ console.log(`photo   ${photoPath}`)
 console.log(`config  ${configPath}`)
 console.log(`output  ${outDir}`)
 
-// 1. Load the photo and matte it.
+// 1. Load the photo and matte it. Cutouts with transparency are flattened onto
+// black first so hidden background colour can't leak in; opaque photos are
+// unaffected.
 const src = await sharp(photoPath)
   .rotate()
+  .flatten({ background: '#000000' })
   .toColourspace('srgb')
   .removeAlpha()
   .raw()
@@ -181,6 +184,10 @@ const portraitSha = crypto.createHash('sha256').update(webp).digest('hex')
 const visible = new Uint8Array(W * H)
 for (let i = 0; i < W * H; i++) visible[i] = grey[i] >= THRESHOLD ? 1 : 0
 const depthFinal = stretchDepth(rawDepth, visible)
+// 5b. Optional head curvature: ease depth back toward the silhouette so a face
+// the depth model saw as flat reads as a rounded head. The centre of the face
+// and the anchored features are untouched.
+if (config.curvature) applyCurvature(depthFinal, visible, config.curvature)
 const maxAdjust = 0.04
 const adjustment = featureAdjustment(config, maxAdjust)
 const refined = new Float32Array(W * H)
@@ -207,6 +214,14 @@ const features = {
   }))
 }
 await writeJson(path.join(outDir, 'features.json'), features)
+const refinement = {
+  method: 'Bounded, manually anchored local facial relief',
+  sourceImageSha256: portraitSha,
+  features: 'features.json',
+  maximumDepthAdjustment: maxAdjust,
+  regions: features.features.map((f) => f.name)
+}
+if (config.curvature) refinement.curvature = config.curvature
 await writeJson(path.join(outDir, 'depth.json'), {
   width: W,
   height: H,
@@ -215,13 +230,7 @@ await writeJson(path.join(outDir, 'depth.json'), {
   encoding: 'uint16-le',
   nearIsWhite: true,
   description: 'Estimated relative inverse depth, not metric geometry.',
-  refinement: {
-    method: 'Bounded, manually anchored local facial relief',
-    sourceImageSha256: portraitSha,
-    features: 'features.json',
-    maximumDepthAdjustment: maxAdjust,
-    regions: features.features.map((f) => f.name)
-  }
+  refinement
 })
 
 let maxAbs = 0
@@ -744,6 +753,54 @@ function resizeLanczos(src, sw, sh, dw, dh) {
   }
   const h = pass(src, sw, sh, dw, sh, true)
   return pass(h, dw, sh, dw, dh, false)
+}
+
+// Pushes visible depth back near the silhouette with a quarter-circle profile:
+// `amount` at the edge, nothing beyond `radius` (a fraction of the width)
+// inside it. The silhouette is smoothed first so ragged hair doesn't ripple.
+function applyCurvature(depth, visible, { amount, radius }) {
+  const soft = gaussianBlur(Float32Array.from(visible), W, H, 4)
+  const inside = new Float32Array(W * H)
+  for (let i = 0; i < W * H; i++) inside[i] = soft[i] >= 0.5 ? Infinity : 0
+  // Two-pass chamfer distance to the nearest outside pixel.
+  const pass = (x, y, dx, dy, cost) => {
+    const nx = x + dx
+    const ny = y + dy
+    if (nx < 0 || ny < 0 || nx >= W || ny >= H) return
+    const i = y * W + x
+    inside[i] = Math.min(inside[i], inside[ny * W + nx] + cost)
+  }
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      if (x === 0 || y === 0 || x === W - 1)
+        inside[y * W + x] = Math.min(inside[y * W + x], 1)
+      pass(x, y, -1, 0, 1)
+      pass(x, y, 0, -1, 1)
+      pass(x, y, -1, -1, Math.SQRT2)
+      pass(x, y, 1, -1, Math.SQRT2)
+    }
+  }
+  for (let y = H - 1; y >= 0; y--) {
+    for (let x = W - 1; x >= 0; x--) {
+      if (y === H - 1 || x === W - 1)
+        inside[y * W + x] = Math.min(inside[y * W + x], 1)
+      pass(x, y, 1, 0, 1)
+      pass(x, y, 0, 1, 1)
+      pass(x, y, 1, 1, Math.SQRT2)
+      pass(x, y, -1, 1, Math.SQRT2)
+    }
+  }
+  // Blur the push-back so the faceted chamfer distance can't streak the relief.
+  const reach = radius * W
+  const pushBack = new Float32Array(W * H)
+  for (let i = 0; i < W * H; i++) {
+    const t = Math.min(1, inside[i] / reach)
+    pushBack[i] = amount * (1 - Math.sqrt(1 - (1 - t) * (1 - t)))
+  }
+  const smooth = gaussianBlur(pushBack, W, H, reach * 0.18)
+  for (let i = 0; i < W * H; i++) {
+    if (visible[i]) depth[i] = clamp01(depth[i] - smooth[i])
+  }
 }
 
 function stretchDepth(src, visible) {

@@ -1,10 +1,44 @@
 {
-  "sourceImageSha256": "02a6b6638abf8149c38718b8efe4dffa6d54d6c0dcaec1209c3194c437b705d0",
-  "description": "Manually placed anchors for this portrait, normalized from its top-left corner. These refine inferred depth; they are not measured geometry.",
-  "noseGuard": {
-    "center": [0.615, 0.515],
-    "radius": [0.05, 0.042]
+  "photo": "avatar-hires.webp (1024×1024 transparent cutout of the GitHub avatar shot, smiling three-quarter view facing image-right)",
+  "crop": { "left": 187, "top": -47, "width": 681 },
+  "grade": {
+    "clarity": { "sigma": 30, "amount": 0.25 },
+    "sharpen": { "amount": 0.1 },
+    "light": { "center": [0.53, 0.4], "radius": [0.42, 0.4], "amount": 0.7 },
+    "depthShade": { "from": 0.5, "to": 0.9, "amount": 0.3 },
+    "fade": { "start": 0.66, "end": 0.84 },
+    "gamma": 1.43,
+    "white": 0.84,
+    "rim": { "sigma": 10, "amount": 0.35 },
+    "body": {
+      "polygon": [
+        [0, 0.735],
+        [0.082, 0.71],
+        [0.188, 0.677],
+        [0.25, 0.655],
+        [0.3, 0.664],
+        [0.335, 0.7],
+        [0.366, 0.745],
+        [0.419, 0.775],
+        [0.482, 0.79],
+        [0.545, 0.792],
+        [0.598, 0.781],
+        [0.645, 0.757],
+        [0.682, 0.722],
+        [0.719, 0.675],
+        [0.751, 0.625],
+        [0.82, 0.594],
+        [0.92, 0.622],
+        [1, 0.645],
+        [1, 1],
+        [0, 1]
+      ],
+      "feather": 12,
+      "dim": 1,
+      "openRadius": 3
+    }
   },
+  "noseGuard": { "center": [0.615, 0.515], "radius": [0.05, 0.042] },
   "features": [
     {
       "name": "left eye socket",
@@ -44,7 +78,7 @@
     },
     {
       "name": "left cheek contour",
-      "center": [0.456, 0.496],
+      "center": [0.47, 0.494],
       "radius": [0.0789, 0.0526],
       "amount": 0.0192
     },

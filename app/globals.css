@@ -1704,6 +1704,30 @@ html:has(.faces-experience) {
   letter-spacing: 0.14em;
 }
 
+.faces-debug {
+  position: absolute;
+  inset-block-start: 16px;
+  inset-inline-start: 16px;
+  margin: 0;
+  padding: 4px 8px;
+  border: 1px solid #2a2a2a;
+  border-radius: 4px;
+  color: #a8a7a2;
+  background: rgb(9 9 9 / 0.7);
+  font:
+    11px/16px ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
+
+.faces-debug-hint {
+  display: block;
+  color: #6c6b67;
+}
+
 .faces-sr-only {
   position: absolute;
   inline-size: 1px;

@@ -11,21 +11,36 @@ type GpuNavigator = Navigator & {
   gpu?: { requestAdapter(): Promise<unknown> }
 }
 
-/** `?portrait=slug` swaps in another prepared portrait from `/faces/slug`. */
-function portraitOverride(portrait: FacesPortrait): FacesPortrait {
+/** `?portrait=slug` shows only the prepared portrait in `/faces/slug`. */
+function portraitOverride(
+  portraits: readonly FacesPortrait[]
+): readonly FacesPortrait[] {
   const slug = new URLSearchParams(window.location.search).get('portrait')
-  return slug && /^[a-z0-9-]+$/.test(slug)
-    ? { ...portrait, directory: `/faces/${slug}` }
-    : portrait
+  const [first] = portraits
+  return first && slug && /^[a-z0-9-]+$/.test(slug)
+    ? [{ ...first, id: slug, directory: `/faces/${slug}` }]
+    : portraits
 }
 
-export function FacesExperience({ portrait }: { portrait: FacesPortrait }) {
+export function FacesExperience({
+  portraits,
+  showDebug = false
+}: {
+  portraits: readonly FacesPortrait[]
+  /** Label the face on screen, for reviewing portraits. */
+  showDebug?: boolean
+}) {
   const captionRef = useRef<HTMLParagraphElement>(null)
   const [support, setSupport] = useState<
     'checking' | 'supported' | 'unsupported'
   >('checking')
-  const [activePortrait, setActivePortrait] = useState(portrait)
+  const [activePortraits, setActivePortraits] = useState(portraits)
   const [error, setError] = useState('')
+  const [shown, setShown] = useState<{
+    id: string
+    index: number
+    pinned: boolean
+  }>()
 
   useEffect(() => {
     let cancelled = false
@@ -33,7 +48,7 @@ export function FacesExperience({ portrait }: { portrait: FacesPortrait }) {
     Promise.resolve(gpu ? gpu.requestAdapter() : null)
       .then((adapter) => {
         if (cancelled) return
-        setActivePortrait(portraitOverride(portrait))
+        setActivePortraits(portraitOverride(portraits))
         setSupport(adapter ? 'supported' : 'unsupported')
       })
       .catch(() => {
@@ -42,17 +57,24 @@ export function FacesExperience({ portrait }: { portrait: FacesPortrait }) {
     return () => {
       cancelled = true
     }
-  }, [portrait])
+  }, [portraits])
 
   const onError = useCallback((message: string) => setError(message), [])
+  const onPortraitShown = useCallback(
+    (portrait: FacesPortrait, index: number, pinned: boolean) =>
+      setShown({ id: portrait.id, index, pinned }),
+    []
+  )
 
   return (
     <main id='main' className='faces-experience'>
       {support === 'supported' && !error ? (
         <FacesCanvas
-          portrait={activePortrait}
+          portraits={activePortraits}
           captionRef={captionRef}
           onError={onError}
+          onPortraitShown={showDebug ? onPortraitShown : undefined}
+          shortcuts={showDebug}
         />
       ) : null}
       <p
@@ -62,6 +84,13 @@ export function FacesExperience({ portrait }: { portrait: FacesPortrait }) {
         aria-live='polite'
         aria-atomic='true'
       />
+      {showDebug && shown ? (
+        <p className='faces-debug' aria-hidden='true'>
+          {shown.id} · {shown.index + 1}/{activePortraits.length}
+          {shown.pinned ? ' · pinned' : ''}
+          <span className='faces-debug-hint'>← → switch · esc resume</span>
+        </p>
+      ) : null}
       {support === 'unsupported' ? (
         <p className='faces-status' role='status'>
           This prototype needs a browser with WebGPU.

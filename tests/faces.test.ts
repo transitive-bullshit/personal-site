@@ -6,6 +6,7 @@ import {
   type PortraitFeatures,
   type PortraitSource
 } from '../lib/faces/portrait'
+import { createPortraitShuffle } from '../lib/faces/portrait-shuffle'
 import { createTimeline } from '../lib/faces/timeline'
 import { validateSlug } from '../lib/content/routes'
 
@@ -117,6 +118,87 @@ describe('faces timeline', () => {
       phase: 'release',
       influence: 0.25
     })
+  })
+})
+
+describe('faces timeline jumps', () => {
+  const durations = { swarm: 1, assemble: 1, hold: 1, release: 1 }
+  const quick = { swarm: 0.2, assemble: 0.4, hold: 1, release: 0.2 }
+
+  it('releases a held face quickly and assembles the next one quickly', () => {
+    const timeline = createTimeline(durations, quick)
+    timeline.advance(2.5, true)
+    expect(timeline.advance(0, true)).toMatchObject({ phase: 'hold' })
+    timeline.jump()
+    expect(timeline.advance(0.1, false)).toMatchObject({
+      phase: 'release',
+      influence: 0.5,
+      quick: true
+    })
+    // The quick swarm ends as soon as the next assignment is ready.
+    expect(timeline.advance(0.2, false)).toMatchObject({ phase: 'swarm' })
+    expect(timeline.advance(0.2, true)).toMatchObject({
+      phase: 'assemble',
+      assign: true
+    })
+    expect(timeline.advance(0.4, true)).toMatchObject({
+      phase: 'hold',
+      quick: false,
+      pinned: true
+    })
+  })
+
+  it('releases from the current influence when interrupted mid-assembly', () => {
+    const timeline = createTimeline(durations, quick)
+    timeline.advance(1.5, true)
+    timeline.jump()
+    expect(timeline.advance(0.1, false).influence).toBeCloseTo(0.25)
+  })
+
+  it('holds a pinned face until resumed', () => {
+    const timeline = createTimeline(durations, quick)
+    timeline.advance(2.5, true)
+    timeline.jump()
+    timeline.advance(0.2, true)
+    timeline.advance(0.2, true)
+    timeline.advance(0.4, true)
+    expect(timeline.advance(30, true)).toMatchObject({
+      phase: 'hold',
+      pinned: true
+    })
+    timeline.resume()
+    expect(timeline.advance(0.5, true)).toMatchObject({
+      phase: 'release',
+      pinned: false
+    })
+  })
+})
+
+describe('faces portrait shuffle', () => {
+  it('shows every portrait once per round without repeating a face', () => {
+    const shuffle = createPortraitShuffle(4, seeded(13))
+    const picks = Array.from({ length: 40 }, () => shuffle.next())
+    for (let round = 0; round < 10; round++) {
+      expect(new Set(picks.slice(round * 4, round * 4 + 4)).size).toBe(4)
+    }
+    for (let index = 1; index < picks.length; index++) {
+      expect(picks[index]).not.toBe(picks[index - 1])
+    }
+  })
+
+  it('only picks portraits that are available', () => {
+    const shuffle = createPortraitShuffle(4, seeded(17))
+    expect(shuffle.next(() => false)).toBe(-1)
+    const first = shuffle.next((index) => index === 2)
+    expect(first).toBe(2)
+    // With only one face loaded it repeats rather than stalling.
+    expect(shuffle.next((index) => index === 2)).toBe(2)
+    expect(shuffle.next((index) => index === 2 || index === 3)).toBe(3)
+  })
+
+  it('handles a single portrait', () => {
+    const shuffle = createPortraitShuffle(1)
+    expect([shuffle.next(), shuffle.next(), shuffle.next()]).toEqual([0, 0, 0])
   })
 })
 

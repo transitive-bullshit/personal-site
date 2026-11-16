@@ -51,6 +51,7 @@ import {
   type WebGPURenderer
 } from 'three/webgpu'
 import { createPortraitCaption } from './portrait-caption'
+import { createPortraitShuffle } from './portrait-shuffle'
 import type { PortraitAssignment } from './assignment'
 import type { FacesWorkerRequest, FacesWorkerResponse } from './faces.worker'
 import {
@@ -61,6 +62,8 @@ import {
 import { createTimeline } from './timeline'
 
 export type FacesPortrait = {
+  /** Stable slug, shown in the debug label. */
+  id: string
   name: string
   subtitle: string
   /** Public directory with portrait.webp, depth.bin, depth.json and features.json. */
@@ -374,16 +377,30 @@ export function createFacesStage({
   renderer,
   scene,
   camera,
-  portrait,
+  portraits,
   captionElement,
-  onError
+  onError,
+  onPortraitShown,
+  shortcuts = false
 }: {
   renderer: WebGPURenderer
   scene: Scene
   camera: PerspectiveCamera
-  portrait: FacesPortrait
+  /** Faces to cycle through in random order. */
+  portraits: readonly FacesPortrait[]
   captionElement: HTMLElement | null
   onError: (message: string) => void
+  /** Called as each portrait starts assembling. */
+  onPortraitShown?: (
+    portrait: FacesPortrait,
+    index: number,
+    pinned: boolean
+  ) => void
+  /**
+   * Debug keys: ←/→ jump to the previous/next face with a shortened
+   * transition and hold it there; Esc resumes the random loop.
+   */
+  shortcuts?: boolean
 }) {
   renderer.toneMappingExposure = 0.95
   scene.background = new Color(background)
@@ -440,32 +457,70 @@ export function createFacesStage({
   element.addEventListener('pointercancel', resetPointer)
   window.addEventListener('blur', resetPointer)
 
-  // Portrait sampling and matching run in a worker. Each swarm phase asks for
-  // a fresh assignment from the particles' current positions.
+  // Portrait sampling and matching run in a worker. Portraits load one at a
+  // time in random order; each swarm phase asks for a fresh assignment of the
+  // particles' current positions to the next face in the shuffle.
   const timeline = createTimeline()
-  let loaded = false
+  const shuffle = createPortraitShuffle(portraits.length)
+  const loaded = new Map<
+    number,
+    { eyeFocus: Vector3; captionAnchor: Vector3 }
+  >()
+  const failed = new Set<number>()
+  const loadOrder = createPortraitShuffle(portraits.length)
   let requested = false
   let request = 0
-  let prepared: PortraitAssignment | undefined
+  let prepared: { portrait: number; assignment: PortraitAssignment } | undefined
+  let shown: FacesPortrait | undefined
+  let shownIndex = -1
+  // A face picked with the arrow keys, assembled next instead of the shuffle.
+  let forced: number | undefined
   const eyeFocus = new Vector3()
   const captionAnchor = new Vector3()
   const worker = new Worker(new URL('./faces.worker.ts', import.meta.url), {
     type: 'module'
   })
+
+  const loadNext = () => {
+    const next = loadOrder.next(
+      (index) => !loaded.has(index) && !failed.has(index)
+    )
+    if (next < 0) return
+    const message: FacesWorkerRequest = {
+      type: 'load',
+      portrait: next,
+      directory: new URL(portraits[next]!.directory, window.location.href).href,
+      count: particleCount
+    }
+    worker.postMessage(message)
+  }
+
   worker.addEventListener(
     'message',
     ({ data }: MessageEvent<FacesWorkerResponse>) => {
       if (data.type === 'error') {
-        onError(data.message)
+        if (data.request === 'assign') {
+          requested = false
+          return
+        }
+        // Skip a broken portrait; give up only when none can load.
+        failed.add(data.portrait)
+        if (failed.size === portraits.length) onError(data.message)
+        else loadNext()
       } else if (data.type === 'loaded') {
-        eyeFocus.fromArray(data.eyeFocus)
-        captionAnchor.set(0, data.bottom - 0.13, 0)
-        loaded = true
+        loaded.set(data.portrait, {
+          eyeFocus: new Vector3().fromArray(data.eyeFocus),
+          captionAnchor: new Vector3(0, data.bottom - 0.13, 0)
+        })
+        loadNext()
       } else if (data.id === request) {
         prepared = {
-          targets: data.targets,
-          arrivals: data.arrivals,
-          gather: data.gather
+          portrait: data.portrait,
+          assignment: {
+            targets: data.targets,
+            arrivals: data.arrivals,
+            gather: data.gather
+          }
         }
       }
     }
@@ -473,12 +528,7 @@ export function createFacesStage({
   worker.addEventListener('error', () =>
     onError('Could not prepare the portrait.')
   )
-  const load: FacesWorkerRequest = {
-    type: 'load',
-    directory: new URL(portrait.directory, window.location.href).href,
-    count: particleCount
-  }
-  worker.postMessage(load)
+  loadNext()
 
   let accumulator = 0
   let previousInfluence = 0
@@ -492,18 +542,64 @@ export function createFacesStage({
   const projected = new Vector3()
 
   const requestAssignment = () => {
+    const portrait = forced ?? shuffle.next((index) => loaded.has(index))
+    if (portrait < 0 || !loaded.has(portrait)) return
     requested = true
     const id = ++request
     simulation
       .snapshot()
       .then((positions) => {
-        const message: FacesWorkerRequest = { type: 'assign', id, positions }
+        const message: FacesWorkerRequest = {
+          type: 'assign',
+          id,
+          portrait,
+          positions
+        }
         worker.postMessage(message, [positions.buffer])
       })
       .catch(() => {
         requested = false
       })
   }
+
+  /** Step to the previous or next loaded face, cutting the cycle short. */
+  const jump = (direction: 1 | -1) => {
+    const count = portraits.length
+    const base = forced ?? Math.max(0, shownIndex)
+    for (let offset = 1; offset <= count; offset++) {
+      const next = (((base + direction * offset) % count) + count) % count
+      if (!loaded.has(next)) continue
+      forced = next
+      // Drop any assignment made for the face that was coming up.
+      request++
+      prepared = undefined
+      requested = false
+      timeline.jump()
+      return
+    }
+  }
+
+  const onKeyDown = (event: KeyboardEvent) => {
+    if (
+      event.defaultPrevented ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      (event.target instanceof Element &&
+        event.target.closest('input, textarea, select, [contenteditable]'))
+    ) {
+      return
+    }
+    if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
+      event.preventDefault()
+      jump(event.key === 'ArrowRight' ? 1 : -1)
+    } else if (event.key === 'Escape') {
+      timeline.resume()
+      if (shown) onPortraitShown?.(shown, shownIndex, false)
+    }
+  }
+  if (shortcuts) window.addEventListener('keydown', onKeyDown)
 
   return {
     resize(nextWidth: number, nextHeight: number) {
@@ -537,7 +633,14 @@ export function createFacesStage({
       while (accumulator >= stepInterval) {
         const step = timeline.advance(stepInterval, prepared !== undefined)
         if (step.assign && prepared) {
-          simulation.setPortrait(prepared)
+          simulation.setPortrait(prepared.assignment)
+          const anchors = loaded.get(prepared.portrait)!
+          eyeFocus.copy(anchors.eyeFocus)
+          captionAnchor.copy(anchors.captionAnchor)
+          shown = portraits[prepared.portrait]
+          shownIndex = prepared.portrait
+          if (forced === shownIndex) forced = undefined
+          if (shown) onPortraitShown?.(shown, shownIndex, step.pinned)
           prepared = undefined
           requested = false
         }
@@ -552,10 +655,10 @@ export function createFacesStage({
         // particles will be when assembly starts.
         if (
           step.phase === 'swarm' &&
-          loaded &&
+          loaded.size > 0 &&
           !requested &&
           !prepared &&
-          step.elapsed >= 0.9
+          step.elapsed >= (step.quick ? 0 : 0.9)
         ) {
           requestAssignment()
         }
@@ -596,7 +699,12 @@ export function createFacesStage({
       )
 
       if (caption) {
-        caption.update(portrait.name, portrait.subtitle, captionVisible, delta)
+        caption.update(
+          shown?.name ?? '',
+          shown?.subtitle ?? '',
+          captionVisible && shown !== undefined,
+          delta
+        )
         if (captionVisible) {
           projected.copy(captionAnchor).project(baseCamera)
           caption.position(
@@ -624,6 +732,7 @@ export function createFacesStage({
       element.removeEventListener('pointerleave', resetPointer)
       element.removeEventListener('pointercancel', resetPointer)
       window.removeEventListener('blur', resetPointer)
+      window.removeEventListener('keydown', onKeyDown)
       caption?.dispose()
       scene.remove(
         particles.mesh,

@@ -7,19 +7,27 @@ import type { FacesPortrait } from '@/lib/faces/faces-stage'
 import { SwarmScene } from './swarm-scene'
 
 export default function FacesCanvas({
-  portrait,
+  portraits,
   captionRef,
-  onError
+  onError,
+  onPortraitShown,
+  shortcuts = false
 }: {
-  portrait: FacesPortrait
+  portraits: readonly FacesPortrait[]
   captionRef: RefObject<HTMLParagraphElement | null>
   onError: (message: string) => void
+  onPortraitShown?: (
+    portrait: FacesPortrait,
+    index: number,
+    pinned: boolean
+  ) => void
+  shortcuts?: boolean
 }) {
   return (
     <Canvas
       className='faces-canvas'
       role='img'
-      aria-label={`A swarm of small reflective spheres that assembles into a portrait of ${portrait.name}`}
+      aria-label={`A swarm of small reflective spheres that assembles into a portrait of ${portraits[0]?.name ?? 'a person'}`}
       dpr={[1, 1.5]}
       shadows='percentage'
       camera={{ fov: 38, near: 0.1, far: 40, position: [0, 0.1, 5.8] }}
@@ -40,9 +48,11 @@ export default function FacesCanvas({
       }}
     >
       <SwarmScene
-        portrait={portrait}
+        portraits={portraits}
         captionRef={captionRef}
         onError={onError}
+        onPortraitShown={onPortraitShown}
+        shortcuts={shortcuts}
       />
     </Canvas>
   )

@@ -8,7 +8,7 @@
   "description": "Estimated relative inverse depth, not metric geometry.",
   "refinement": {
     "method": "Bounded, manually anchored local facial relief",
-    "sourceImageSha256": "02a6b6638abf8149c38718b8efe4dffa6d54d6c0dcaec1209c3194c437b705d0",
+    "sourceImageSha256": "ae78a2557aedb8f5f3a8cfac5c262cf16e8df43157434c2caf09995521db54d9",
     "features": "features.json",
     "maximumDepthAdjustment": 0.04,
     "regions": [
@@ -32,6 +32,10 @@
       "under lower lip",
       "left upper lip ridge",
       "right upper lip ridge"
-    ]
+    ],
+    "curvature": {
+      "amount": 0.42,
+      "radius": 0.2
+    }
   }
 }

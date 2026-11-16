@@ -10,13 +10,21 @@ import {
 } from '@/lib/faces/faces-stage'
 
 export function SwarmScene({
-  portrait,
+  portraits,
   captionRef,
-  onError
+  onError,
+  onPortraitShown,
+  shortcuts = false
 }: {
-  portrait: FacesPortrait
+  portraits: readonly FacesPortrait[]
   captionRef: RefObject<HTMLParagraphElement | null>
   onError: (message: string) => void
+  onPortraitShown?: (
+    portrait: FacesPortrait,
+    index: number,
+    pinned: boolean
+  ) => void
+  shortcuts?: boolean
 }) {
   const gl = useThree((state) => state.gl)
   const scene = useThree((state) => state.scene)
@@ -31,9 +39,11 @@ export function SwarmScene({
       renderer: gl as unknown as WebGPURenderer,
       scene: scene as unknown as Scene,
       camera: camera as PerspectiveCamera,
-      portrait,
+      portraits,
       captionElement: captionRef.current,
-      onError
+      onError,
+      onPortraitShown,
+      shortcuts
     })
     const { size } = getState()
     instance.resize(size.width, size.height)
@@ -42,7 +52,17 @@ export function SwarmScene({
       instance.dispose()
       stage.current = null
     }
-  }, [gl, scene, camera, getState, portrait, captionRef, onError])
+  }, [
+    gl,
+    scene,
+    camera,
+    getState,
+    portraits,
+    captionRef,
+    onError,
+    onPortraitShown,
+    shortcuts
+  ])
 
   useEffect(() => {
     stage.current?.resize(width, height)

@@ -1,0 +1,41 @@
+{
+  "width": 512,
+  "height": 768,
+  "model": "onnx-community/depth-anything-v2-small",
+  "revision": "4472b7362082ad9968fee890ca0f1e5aca36b93d",
+  "encoding": "uint16-le",
+  "nearIsWhite": true,
+  "description": "Estimated relative inverse depth, not metric geometry.",
+  "refinement": {
+    "method": "Bounded, manually anchored local facial relief",
+    "sourceImageSha256": "fd3a38daf0d1fba7ac23be82b2e21da7b9651760fb9a0a7a0509c3baf90060d4",
+    "features": "features.json",
+    "maximumDepthAdjustment": 0.04,
+    "regions": [
+      "left eye socket",
+      "right eye socket",
+      "left eye curvature",
+      "right eye curvature",
+      "left upper eyelid",
+      "right upper eyelid",
+      "left cheek contour",
+      "right cheek contour",
+      "upper lip",
+      "lip separation",
+      "lower lip",
+      "left mouth corner",
+      "right mouth corner",
+      "left lower eyelid",
+      "left orbital rim",
+      "right lower eyelid",
+      "right orbital rim",
+      "under lower lip",
+      "left upper lip ridge",
+      "right upper lip ridge"
+    ],
+    "curvature": {
+      "amount": 0.55,
+      "radius": 0.2
+    }
+  }
+}
