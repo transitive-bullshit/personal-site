@@ -8,6 +8,7 @@ This is Travis Fischer's personal portfolio and writing site. Next.js serves com
 - Use [Verification](docs/verification.md) for setup, development, and checks appropriate to the change.
 - For content imports, publication, or media processing, read [Content sync](docs/content-sync.md).
 - For routes, discovery, or social cards, read [Metadata](docs/metadata.md). For project image loading or transitions, read [Project images](docs/project-image-loading.md).
+- For the `/faces` WebGPU particle-portrait prototype, read [Faces](docs/faces.md).
 
 ## Conventions
 

@@ -1,0 +1,164 @@
+{
+  "photo": "github-avatar.png (460×460, three-quarter view facing image-right)",
+  "crop": { "left": 84, "top": -21, "width": 306 },
+  "grade": {
+    "clarity": { "sigma": 30, "amount": 0.25 },
+    "sharpen": { "amount": 0.25 },
+    "light": { "center": [0.53, 0.4], "radius": [0.42, 0.4], "amount": 0.7 },
+    "depthShade": { "from": 0.5, "to": 0.9, "amount": 0.3 },
+    "fade": { "start": 0.66, "end": 0.84 },
+    "gamma": 1.4,
+    "white": 0.84,
+    "rim": { "sigma": 10, "amount": 0.35 },
+    "body": {
+      "polygon": [
+        [0, 0.735],
+        [0.082, 0.71],
+        [0.188, 0.677],
+        [0.25, 0.655],
+        [0.3, 0.664],
+        [0.335, 0.7],
+        [0.366, 0.745],
+        [0.419, 0.775],
+        [0.482, 0.79],
+        [0.545, 0.792],
+        [0.598, 0.781],
+        [0.645, 0.757],
+        [0.682, 0.722],
+        [0.719, 0.675],
+        [0.751, 0.625],
+        [0.82, 0.594],
+        [0.92, 0.622],
+        [1, 0.645],
+        [1, 1],
+        [0, 1]
+      ],
+      "feather": 12,
+      "dim": 1,
+      "openRadius": 3
+    }
+  },
+  "noseGuard": { "center": [0.615, 0.515], "radius": [0.05, 0.042] },
+  "features": [
+    {
+      "name": "left eye socket",
+      "center": [0.493, 0.429],
+      "radius": [0.0737, 0.0316],
+      "amount": -0.0256
+    },
+    {
+      "name": "right eye socket",
+      "center": [0.702, 0.412],
+      "radius": [0.0568, 0.0295],
+      "amount": -0.0256
+    },
+    {
+      "name": "left eye curvature",
+      "center": [0.498, 0.431],
+      "radius": [0.0442, 0.0126],
+      "amount": 0.032
+    },
+    {
+      "name": "right eye curvature",
+      "center": [0.703, 0.413],
+      "radius": [0.0337, 0.0126],
+      "amount": 0.032
+    },
+    {
+      "name": "left upper eyelid",
+      "center": [0.496, 0.418],
+      "radius": [0.0526, 0.0053],
+      "amount": 0.0208
+    },
+    {
+      "name": "right upper eyelid",
+      "center": [0.702, 0.4],
+      "radius": [0.0421, 0.0053],
+      "amount": 0.0208
+    },
+    {
+      "name": "left cheek contour",
+      "center": [0.456, 0.496],
+      "radius": [0.0789, 0.0526],
+      "amount": 0.0192
+    },
+    {
+      "name": "right cheek contour",
+      "center": [0.73, 0.475],
+      "radius": [0.0474, 0.0526],
+      "amount": 0.0192
+    },
+    {
+      "name": "upper lip",
+      "center": [0.577, 0.573],
+      "radius": [0.0673, 0.0068],
+      "amount": 0.024
+    },
+    {
+      "name": "lip separation",
+      "center": [0.574, 0.592],
+      "radius": [0.084, 0.008],
+      "amount": -0.036
+    },
+    {
+      "name": "lower lip",
+      "center": [0.577, 0.614],
+      "radius": [0.065, 0.011],
+      "amount": 0.0288
+    },
+    {
+      "name": "left mouth corner",
+      "center": [0.48, 0.586],
+      "radius": [0.0158, 0.0116],
+      "amount": -0.0128
+    },
+    {
+      "name": "right mouth corner",
+      "center": [0.674, 0.578],
+      "radius": [0.0116, 0.0105],
+      "amount": -0.0128
+    },
+    {
+      "name": "left lower eyelid",
+      "center": [0.491, 0.442],
+      "radius": [0.0505, 0.0058],
+      "amount": 0.0152
+    },
+    {
+      "name": "left orbital rim",
+      "center": [0.493, 0.399],
+      "radius": [0.0652, 0.0116],
+      "amount": 0.012
+    },
+    {
+      "name": "right lower eyelid",
+      "center": [0.701, 0.426],
+      "radius": [0.04, 0.0058],
+      "amount": 0.0152
+    },
+    {
+      "name": "right orbital rim",
+      "center": [0.701, 0.383],
+      "radius": [0.0505, 0.0116],
+      "amount": 0.012
+    },
+    {
+      "name": "under lower lip",
+      "center": [0.578, 0.638],
+      "radius": [0.0547, 0.0095],
+      "amount": -0.0144
+    },
+    {
+      "name": "left upper lip ridge",
+      "center": [0.583, 0.561],
+      "radius": [0.0179, 0.0063],
+      "amount": 0.008
+    },
+    {
+      "name": "right upper lip ridge",
+      "center": [0.622, 0.561],
+      "radius": [0.0158, 0.0063],
+      "amount": 0.008
+    }
+  ]
+}

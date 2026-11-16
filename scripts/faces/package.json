@@ -1,0 +1,14 @@
+{
+  "name": "faces-portrait-prep",
+  "private": true,
+  "description": "Offline tooling for /faces portrait assets; kept out of the site's dependencies.",
+  "type": "module",
+  "scripts": {
+    "prepare-portrait": "node prepare-portrait.mjs",
+    "check-portrait": "node check-portrait.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.2",
+    "sharp": "0.35.5"
+  }
+}

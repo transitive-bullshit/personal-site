@@ -51,3 +51,8 @@ yarn-error.log*
 
 # Generated from pinned local font packages before dev/build.
 /assets/fonts/
+
+# Offline faces portrait tooling
+/scripts/faces/node_modules
+/scripts/faces/.cache
+/scripts/faces/package-lock.json

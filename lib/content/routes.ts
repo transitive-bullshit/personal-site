@@ -17,6 +17,7 @@ export const reservedSlugs = new Set([
   'projects',
   'project',
   'feed',
+  'faces',
   'top-tweet-interactions-english',
   'top-tweet-interactions-german',
   'top-tweet-interactions-other-languages',

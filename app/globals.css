@@ -1631,3 +1631,93 @@ summary:active {
     min-block-size: 44px;
   }
 }
+
+/* Faces prototype: a full-screen black stage over the site chrome. */
+html:has(.faces-experience) {
+  overflow: hidden;
+}
+
+.faces-experience {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  overflow: hidden;
+  color: #d9d8d4;
+  background: #090909;
+}
+
+.faces-experience .faces-canvas,
+.faces-experience canvas {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.faces-status {
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  margin: 0;
+  color: #888;
+  font:
+    12px ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.faces-caption {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 50%;
+  max-inline-size: calc(100% - 40px);
+  margin: 0;
+  color: #c8c7c2;
+  font:
+    400 12px/20px SFMono-Regular,
+    'Cascadia Code',
+    'Liberation Mono',
+    Menlo,
+    monospace;
+  letter-spacing: 0.2em;
+  text-align: center;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 0.18s ease-out;
+}
+
+.faces-caption[data-visible='true'] {
+  opacity: 1;
+}
+
+.faces-caption-subtitle {
+  display: block;
+  margin-block-start: 4px;
+  color: #858580;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.14em;
+}
+
+.faces-sr-only {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip-path: inset(50%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faces-caption {
+    transition: none;
+  }
+}
