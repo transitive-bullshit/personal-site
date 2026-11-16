@@ -1,129 +1,149 @@
 {
-  "sourceImageSha256": "74df3d16b27f3b658f0c7d4c5f25a7d2ddc2d68d4db49690e03a8c57c4cff825",
-  "description": "Manually placed anchors for this portrait, normalized from its top-left corner. These refine inferred depth; they are not measured geometry.",
+  "sourceImageSha256": "6b980a08663eaa5ee78342d37192f01b3f69c9bb164dc7c42cb3dc6ba0fac9e3",
+  "description": "Anchors derived from MediaPipe face landmarks, normalized from the top-left corner; angle (radians, clockwise on screen) rotates each ellipse in normalized coordinates. These refine depth; they are not measured geometry.",
   "noseGuard": {
-    "center": [0.615, 0.515],
-    "radius": [0.05, 0.042]
+    "center": [0.67, 0.499],
+    "radius": [0.048, 0.036]
   },
   "features": [
     {
       "name": "left eye socket",
-      "center": [0.493, 0.429],
-      "radius": [0.0737, 0.0316],
+      "center": [0.492, 0.433],
+      "radius": [0.0632, 0.0285],
+      "angle": -0.0941,
       "amount": -0.0256
     },
     {
       "name": "right eye socket",
-      "center": [0.702, 0.412],
-      "radius": [0.0568, 0.0295],
+      "center": [0.7, 0.414],
+      "radius": [0.0505, 0.0228],
+      "angle": -0.0941,
       "amount": -0.0256
     },
     {
       "name": "left eye curvature",
-      "center": [0.498, 0.431],
-      "radius": [0.0442, 0.0126],
+      "center": [0.507, 0.429],
+      "radius": [0.0397, 0.0115],
+      "angle": -0.0941,
       "amount": 0.032
     },
     {
       "name": "right eye curvature",
-      "center": [0.703, 0.413],
-      "radius": [0.0337, 0.0126],
+      "center": [0.717, 0.411],
+      "radius": [0.0318, 0.0092],
+      "angle": -0.0941,
       "amount": 0.032
     },
     {
       "name": "left upper eyelid",
-      "center": [0.496, 0.418],
-      "radius": [0.0526, 0.0053],
+      "center": [0.489, 0.42],
+      "radius": [0.0469, 0.0048],
+      "angle": -0.0941,
       "amount": 0.0208
     },
     {
       "name": "right upper eyelid",
-      "center": [0.702, 0.4],
-      "radius": [0.0421, 0.0053],
+      "center": [0.697, 0.401],
+      "radius": [0.0375, 0.0038],
+      "angle": -0.0941,
       "amount": 0.0208
     },
     {
       "name": "left cheek contour",
-      "center": [0.47, 0.494],
-      "radius": [0.0789, 0.0526],
+      "center": [0.485, 0.494],
+      "radius": [0.0598, 0.0413],
+      "angle": -0.0941,
       "amount": 0.0192
     },
     {
       "name": "right cheek contour",
-      "center": [0.73, 0.475],
-      "radius": [0.0474, 0.0526],
+      "center": [0.733, 0.469],
+      "radius": [0.0598, 0.0413],
+      "angle": -0.0941,
       "amount": 0.0192
     },
     {
       "name": "upper lip",
-      "center": [0.577, 0.573],
-      "radius": [0.0673, 0.0068],
+      "center": [0.596, 0.577],
+      "radius": [0.0884, 0.0054],
+      "angle": -0.1042,
       "amount": 0.024
     },
     {
       "name": "lip separation",
-      "center": [0.574, 0.592],
-      "radius": [0.084, 0.008],
+      "center": [0.601, 0.596],
+      "radius": [0.1078, 0.0072],
+      "angle": -0.1042,
       "amount": -0.036
     },
     {
       "name": "lower lip",
-      "center": [0.577, 0.614],
-      "radius": [0.065, 0.011],
+      "center": [0.606, 0.619],
+      "radius": [0.0794, 0.0088],
+      "angle": -0.1042,
       "amount": 0.0288
     },
     {
       "name": "left mouth corner",
-      "center": [0.48, 0.586],
-      "radius": [0.0158, 0.0116],
+      "center": [0.475, 0.582],
+      "radius": [0.0128, 0.0096],
+      "angle": -0.1042,
       "amount": -0.0128
     },
     {
       "name": "right mouth corner",
-      "center": [0.674, 0.578],
-      "radius": [0.0116, 0.0105],
+      "center": [0.714, 0.557],
+      "radius": [0.0128, 0.0096],
+      "angle": -0.1042,
       "amount": -0.0128
     },
     {
       "name": "left lower eyelid",
-      "center": [0.491, 0.442],
-      "radius": [0.0505, 0.0058],
+      "center": [0.494, 0.443],
+      "radius": [0.0448, 0.0052],
+      "angle": -0.0941,
       "amount": 0.0152
     },
     {
       "name": "left orbital rim",
-      "center": [0.493, 0.399],
-      "radius": [0.0652, 0.0116],
+      "center": [0.487, 0.41],
+      "radius": [0.0581, 0.0102],
+      "angle": -0.0941,
       "amount": 0.012
     },
     {
       "name": "right lower eyelid",
-      "center": [0.701, 0.426],
-      "radius": [0.04, 0.0058],
+      "center": [0.702, 0.423],
+      "radius": [0.0359, 0.0041],
+      "angle": -0.0941,
       "amount": 0.0152
     },
     {
       "name": "right orbital rim",
-      "center": [0.701, 0.383],
-      "radius": [0.0505, 0.0116],
+      "center": [0.694, 0.386],
+      "radius": [0.0465, 0.0082],
+      "angle": -0.0941,
       "amount": 0.012
     },
     {
       "name": "under lower lip",
-      "center": [0.578, 0.638],
-      "radius": [0.0547, 0.0095],
+      "center": [0.609, 0.632],
+      "radius": [0.0662, 0.0076],
+      "angle": -0.1042,
       "amount": -0.0144
     },
     {
       "name": "left upper lip ridge",
-      "center": [0.583, 0.561],
-      "radius": [0.0179, 0.0063],
+      "center": [0.632, 0.557],
+      "radius": [0.0143, 0.005],
+      "angle": -0.1042,
       "amount": 0.008
     },
     {
       "name": "right upper lip ridge",
-      "center": [0.622, 0.561],
-      "radius": [0.0158, 0.0063],
+      "center": [0.655, 0.554],
+      "radius": [0.0143, 0.005],
+      "angle": -0.1042,
       "amount": 0.008
     }
   ]

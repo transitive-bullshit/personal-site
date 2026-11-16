@@ -11,15 +11,29 @@ type GpuNavigator = Navigator & {
   gpu?: { requestAdapter(): Promise<unknown> }
 }
 
-/** `?portrait=slug` shows only the prepared portrait in `/faces/slug`. */
+/**
+ * `?portrait=slug` shows only the prepared portrait in `/faces/slug`; a comma
+ * list (`?portrait=a,b`) cycles just those, handy for A/B comparisons.
+ */
 function portraitOverride(
   portraits: readonly FacesPortrait[]
 ): readonly FacesPortrait[] {
-  const slug = new URLSearchParams(window.location.search).get('portrait')
+  const slugs = (
+    new URLSearchParams(window.location.search).get('portrait') ?? ''
+  )
+    .split(',')
+    .map((slug) => slug.trim())
+    .filter((slug) => /^[a-z0-9-]+$/.test(slug))
   const [first] = portraits
-  return first && slug && /^[a-z0-9-]+$/.test(slug)
-    ? [{ ...first, id: slug, directory: `/faces/${slug}` }]
-    : portraits
+  if (!first || !slugs.length) return portraits
+  return slugs.map(
+    (slug) =>
+      portraits.find((portrait) => portrait.id === slug) ?? {
+        ...first,
+        id: slug,
+        directory: `/faces/${slug}`
+      }
+  )
 }
 
 export function FacesExperience({

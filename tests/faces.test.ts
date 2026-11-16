@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { assignPortrait, matchClouds } from '../lib/faces/assignment'
 import {
   buildPortraitCloud,
+  ellipseDistance,
   samplePortrait,
   type PortraitFeatures,
   type PortraitSource
@@ -171,6 +172,27 @@ describe('faces timeline jumps', () => {
       phase: 'release',
       pinned: false
     })
+  })
+})
+
+describe('faces rotated anchors', () => {
+  it('measures distance in the ellipse frame', () => {
+    const center: [number, number] = [0.5, 0.5]
+    const radius: [number, number] = [0.2, 0.05]
+    expect(ellipseDistance(0.7, 0.5, center, radius)).toBeCloseTo(1)
+    expect(ellipseDistance(0.5, 0.55, center, radius)).toBeCloseTo(1)
+    // A quarter turn swaps the long axis onto the vertical.
+    expect(ellipseDistance(0.5, 0.7, center, radius, Math.PI / 2)).toBeCloseTo(
+      1
+    )
+    // Positive angles tilt the long axis clockwise on screen (y down).
+    const along = 0.2 * Math.SQRT1_2
+    expect(
+      ellipseDistance(0.5 + along, 0.5 + along, center, radius, Math.PI / 4)
+    ).toBeCloseTo(1)
+    expect(
+      ellipseDistance(0.5 + along, 0.5 - along, center, radius, Math.PI / 4)
+    ).toBeGreaterThan(10)
   })
 })
 

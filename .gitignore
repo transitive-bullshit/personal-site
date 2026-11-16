@@ -56,3 +56,5 @@ yarn-error.log*
 /scripts/faces/node_modules
 /scripts/faces/.cache
 /scripts/faces/package-lock.json
+/scripts/faces/.venv
+/scripts/faces/models

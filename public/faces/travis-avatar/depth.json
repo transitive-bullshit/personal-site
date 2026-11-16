@@ -7,8 +7,8 @@
   "nearIsWhite": true,
   "description": "Estimated relative inverse depth, not metric geometry.",
   "refinement": {
-    "method": "Bounded, manually anchored local facial relief",
-    "sourceImageSha256": "74df3d16b27f3b658f0c7d4c5f25a7d2ddc2d68d4db49690e03a8c57c4cff825",
+    "method": "Face-mesh depth prior fused with the depth model, plus bounded landmark-anchored local facial relief",
+    "sourceImageSha256": "6b980a08663eaa5ee78342d37192f01b3f69c9bb164dc7c42cb3dc6ba0fac9e3",
     "features": "features.json",
     "maximumDepthAdjustment": 0.04,
     "regions": [
@@ -32,6 +32,22 @@
       "under lower lip",
       "left upper lip ridge",
       "right upper lip ridge"
-    ]
+    ],
+    "mesh": {
+      "source": "MediaPipe face landmarker (478 landmarks, 852-triangle tessellation); coarser than `detail` px from the mesh, finer from the model",
+      "calibration": "anatomical",
+      "scale": 1,
+      "visibleSpan": 0.66,
+      "detail": 5,
+      "rim": 16,
+      "extend": 12,
+      "rolloff": 24,
+      "leastSquaresSlope": 0.002953,
+      "slope": 0.005863
+    },
+    "curvature": {
+      "amount": 0.4,
+      "radius": 0.2
+    }
   }
 }

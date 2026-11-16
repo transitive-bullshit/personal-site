@@ -8,10 +8,15 @@
 // Usage:
 //   node prepare-portrait.mjs <photo> <outDir> [--config portraits/<name>.json]
 //                             [--review <dir>] [--reference <portrait.png>]
+//                             [--landmarks <dir>]
 //
 // The face config holds everything photo-specific: the crop rectangle in source
 // pixels, grade/fade overrides and the hand-placed feature anchors in normalised
 // portrait coordinates. Swap in a better photo by writing a new config.
+//
+// A config that sets `landmarks` opts into landmark mode (landmark-mode.mjs):
+// anchors, a face-mesh depth prior, the body mask and region-aware tone come
+// from the MediaPipe output of landmarks.py instead of hand-placed values.
 
 import crypto from 'node:crypto'
 import fs from 'node:fs/promises'
@@ -26,6 +31,26 @@ import {
   env
 } from '@huggingface/transformers'
 import sharp from 'sharp'
+
+import {
+  clamp01,
+  dilate,
+  erode,
+  gaussianBlur,
+  resizeBilinear,
+  smoothstep
+} from './image-ops.mjs'
+import {
+  autoFeatures,
+  ellipseQ,
+  fuseMeshDepth,
+  landmarksDir,
+  loadLandmarks,
+  percentilesOver,
+  rasteriseMesh,
+  regionMasks,
+  toneCurve
+} from './landmark-mode.mjs'
 
 const here = path.dirname(fileURLToPath(import.meta.url))
 env.cacheDir = path.join(here, '.cache')
@@ -110,6 +135,7 @@ const { values: opts, positionals } = parseArgs({
     config: { type: 'string' },
     review: { type: 'string' },
     reference: { type: 'string' },
+    landmarks: { type: 'string' },
     quality: { type: 'string', default: '92' }
   }
 })
@@ -127,7 +153,8 @@ const configPath = path.resolve(
 )
 const config = JSON.parse(await fs.readFile(configPath, 'utf8'))
 const grade = mergeDeep(structuredClone(DEFAULT_GRADE), config.grade ?? {})
-validateFeatures(config)
+const landmarkMode = Boolean(config.landmarks || opts.landmarks)
+if (!landmarkMode) validateFeatures(config)
 
 console.log(`photo   ${photoPath}`)
 console.log(`config  ${configPath}`)
@@ -163,10 +190,75 @@ for (let i = 0; i < W * H; i++) {
     colourOnBlack[i * 3 + c] = Math.round(colour[i * 3 + c] * alpha[i] * 255)
 }
 const rawDepth = await estimateDepth(colourOnBlack)
-const depth = normalise(rawDepth)
+let depth = normalise(rawDepth)
+
+// 3b. Landmark mode: anchors, the fused mesh depth and region masks.
+let anchors = config
+let lm
+let mesh
+let fusion
+let regions
+if (landmarkMode) {
+  const setting = typeof config.landmarks === 'object' ? config.landmarks : {}
+  const dir = landmarksDir(config.landmarks, photoPath, opts.landmarks)
+  lm = await loadLandmarks(dir, config.crop, W, H)
+  console.log(`marks   ${dir}`)
+  // Rounded as written to features.json, so the file describes the relief.
+  const auto = autoFeatures(lm.points, W, H, setting.features)
+  anchors = {
+    noseGuard: {
+      center: round3(auto.noseGuard.center),
+      radius: round3(auto.noseGuard.radius)
+    },
+    features: auto.features.map((f) => ({
+      name: f.name,
+      center: round3(f.center),
+      radius: f.radius.map((v) => Number(v.toFixed(4))),
+      angle: Number(f.angle.toFixed(4)),
+      amount: Number(f.amount.toFixed(4))
+    }))
+  }
+  validateFeatures(anchors)
+  mesh = rasteriseMesh(lm.points, lm.triangles, W, H)
+  regions = regionMasks(lm, mesh, anchors, setting.mask ?? {}, W, H)
+  const calibration = new Uint8Array(W * H)
+  for (let i = 0; i < W * H; i++)
+    calibration[i] = regions.face[i] > 0.5 && alpha[i] > 0.9 ? 1 : 0
+  // The person, slightly grown, so the extended correction ends past the edge.
+  const subject = gaussianBlur(
+    dilate(
+      alpha.map((a) => (a > 0.05 ? 1 : 0)),
+      W,
+      H,
+      10
+    ),
+    W,
+    H,
+    3
+  )
+  // Roughly what will be visible: inside the matte, off the body, above the fade.
+  const visibleEstimate = new Uint8Array(W * H)
+  for (let i = 0; i < W * H; i++) {
+    const y = (Math.floor(i / W) + 0.5) / H
+    visibleEstimate[i] =
+      alpha[i] > 0.5 && regions.remove[i] < 0.5 && y < grade.fade.end ? 1 : 0
+  }
+  fusion = fuseMeshDepth(
+    depth,
+    mesh,
+    { calibration, subject, visible: visibleEstimate },
+    setting.mesh,
+    W,
+    H
+  )
+  console.log(
+    `mesh    ${mesh.holes} openings closed; least squares depth ≈ ${fusion.fitted.toFixed(5)}·z over ${fusion.samples} px; ${fusion.options.calibration} slope ${fusion.a.toFixed(5)} (${(fusion.a / fusion.fitted).toFixed(2)}×)`
+  )
+  depth = normalise(fusion.depth)
+}
 
 // 4. Grade.
-const portrait = gradePortrait(colour, alpha, depth, grade)
+const portrait = gradePortrait(colour, alpha, depth, grade, regions)
 const grey = quantisePortrait(portrait)
 const portraitU8 = new Uint8Array(W * H * 3)
 for (let i = 0; i < W * H; i++)
@@ -183,16 +275,24 @@ const portraitSha = crypto.createHash('sha256').update(webp).digest('hex')
 // faded-out shirt) clip to 1. Then add the bounded feature refinement.
 const visible = new Uint8Array(W * H)
 for (let i = 0; i < W * H; i++) visible[i] = grey[i] >= THRESHOLD ? 1 : 0
-const depthFinal = stretchDepth(rawDepth, visible)
+const depthFinal = stretchDepth(fusion ? fusion.depth : rawDepth, visible)
 // 5b. Optional head curvature: ease depth back toward the silhouette so a face
 // the depth model saw as flat reads as a rounded head. The centre of the face
 // and the anchored features are untouched.
 if (config.curvature) applyCurvature(depthFinal, visible, config.curvature)
 const maxAdjust = 0.04
-const adjustment = featureAdjustment(config, maxAdjust)
+const adjustment = featureAdjustment(anchors, maxAdjust)
 const refined = new Float32Array(W * H)
 for (let i = 0; i < W * H; i++)
   refined[i] = clamp01(depthFinal[i] + adjustment[i])
+// Landmark mode: the anchors can move the nearest visible pixel off 1 (the
+// fused depth peaks at the nose tip, which the nose guard only partly covers),
+// so stretch once more to keep the full range.
+if (landmarkMode) {
+  let hi = 0
+  for (let i = 0; i < W * H; i++) if (visible[i]) hi = Math.max(hi, refined[i])
+  for (let i = 0; i < W * H; i++) refined[i] = clamp01(refined[i] / hi)
+}
 const depthBin = Buffer.alloc(W * H * 2)
 for (let i = 0; i < W * H; i++)
   depthBin.writeUInt16LE(Math.round(refined[i] * 65535), i * 2)
@@ -200,26 +300,42 @@ await fs.writeFile(path.join(outDir, 'depth.bin'), depthBin)
 
 const features = {
   sourceImageSha256: portraitSha,
-  description:
-    'Manually placed anchors for this portrait, normalized from its top-left corner. These refine inferred depth; they are not measured geometry.',
+  description: landmarkMode
+    ? 'Anchors derived from MediaPipe face landmarks, normalized from the top-left corner; angle (radians, clockwise on screen) rotates each ellipse in normalized coordinates. These refine depth; they are not measured geometry.'
+    : 'Manually placed anchors for this portrait, normalized from its top-left corner. These refine inferred depth; they are not measured geometry.',
   noseGuard: {
-    center: round3(config.noseGuard.center),
-    radius: round3(config.noseGuard.radius)
+    center: round3(anchors.noseGuard.center),
+    radius: round3(anchors.noseGuard.radius)
   },
-  features: config.features.map((f) => ({
-    name: f.name,
-    center: round3(f.center),
-    radius: f.radius.map((v) => Number(v.toFixed(4))),
-    amount: Number(f.amount.toFixed(4))
-  }))
+  features: anchors.features.map((f) => {
+    const out = {
+      name: f.name,
+      center: round3(f.center),
+      radius: f.radius.map((v) => Number(v.toFixed(4)))
+    }
+    if (f.angle !== undefined) out.angle = Number(f.angle.toFixed(4))
+    out.amount = Number(f.amount.toFixed(4))
+    return out
+  })
 }
 await writeJson(path.join(outDir, 'features.json'), features)
 const refinement = {
-  method: 'Bounded, manually anchored local facial relief',
+  method: landmarkMode
+    ? 'Face-mesh depth prior fused with the depth model, plus bounded landmark-anchored local facial relief'
+    : 'Bounded, manually anchored local facial relief',
   sourceImageSha256: portraitSha,
   features: 'features.json',
   maximumDepthAdjustment: maxAdjust,
   regions: features.features.map((f) => f.name)
+}
+if (fusion) {
+  refinement.mesh = {
+    source:
+      'MediaPipe face landmarker (478 landmarks, 852-triangle tessellation); coarser than `detail` px from the mesh, finer from the model',
+    ...fusion.options,
+    leastSquaresSlope: Number(fusion.fitted.toFixed(6)),
+    slope: Number(fusion.a.toFixed(6))
+  }
 }
 if (config.curvature) refinement.curvature = config.curvature
 await writeJson(path.join(outDir, 'depth.json'), {
@@ -269,6 +385,9 @@ if (opts.review) {
     features,
     path.join(reviewDir, 'features-overlay.png')
   )
+  if (landmarkMode) {
+    await renderLandmarkReview(reviewDir, colourOnBlack, visible)
+  }
   if (opts.reference) {
     await renderSideBySide(
       opts.reference,
@@ -472,7 +591,10 @@ async function estimateDepth(rgb) {
   return resizeBilinear(Float32Array.from(predicted_depth.data), dw, dh, W, H)
 }
 
-function gradePortrait(colour, alpha, depth, g) {
+// `regions` (landmark mode only) supplies segmentation masks: levels come from
+// the face, the body mask from the segmentation when no polygon is given, and
+// the face-skin tone is matched to target percentiles with a separate hair gain.
+function gradePortrait(colour, alpha, depth, g, regions) {
   const n = W * H
   let L = new Float32Array(n)
   for (let i = 0; i < n; i++) {
@@ -484,8 +606,13 @@ function gradePortrait(colour, alpha, depth, g) {
 
   // Levels from the well-matted face area.
   const samples = []
-  for (let i = 0; i < n; i++)
-    if (alpha[i] > 0.95 && lightMask(i, g.light) > 0.7) samples.push(L[i])
+  if (regions) {
+    for (let i = 0; i < n; i++)
+      if (alpha[i] > 0.95 && regions.face[i] > 0.9) samples.push(L[i])
+  } else {
+    for (let i = 0; i < n; i++)
+      if (alpha[i] > 0.95 && lightMask(i, g.light) > 0.7) samples.push(L[i])
+  }
   samples.sort((a, b) => a - b)
   const lo =
     samples[Math.floor((samples.length - 1) * (g.blackPercentile / 100))]
@@ -527,16 +654,17 @@ function gradePortrait(colour, alpha, depth, g) {
   }
 
   // Body: remove thin bright lines (necklace) and dim the shirt.
-  if (g.body.polygon.length >= 3) {
+  const hasPolygon = g.body.polygon.length >= 3
+  if (hasPolygon || regions) {
     // Feathered, with the transition biased just outside the polygon so the
-    // shirt right next to the beard is fully dimmed.
+    // shirt right next to the beard is fully dimmed. Without a polygon, landmark
+    // mode uses the segmentation's body mask.
     const [e0, e1] = g.body.edge
-    const mask = gaussianBlur(
-      rasterPolygon(g.body.polygon),
-      W,
-      H,
-      g.body.feather
-    ).map((v) => smoothstep(e0, e1, v))
+    const mask = hasPolygon
+      ? gaussianBlur(rasterPolygon(g.body.polygon), W, H, g.body.feather).map(
+          (v) => smoothstep(e0, e1, v)
+        )
+      : regions.remove
     const opened = dilate(
       erode(L, W, H, g.body.openRadius),
       W,
@@ -560,7 +688,49 @@ function gradePortrait(colour, alpha, depth, g) {
   for (let i = 0; i < n; i++) {
     out[i] = clamp01(L[i]) * g.white * alpha[i]
   }
+  if (regions) matchTone(out, regions, g)
   return out
+}
+
+// Landmark mode: map the face-skin distribution onto target percentiles (output
+// grey levels, measured on an approved portrait) with one monotone curve for
+// the whole subject, then apply the hair's own gain.
+function matchTone(out, regions, g) {
+  if (g.tone) {
+    const sources = percentilesOver(out, regions.skin, g.tone.percentiles)
+    const targets = g.tone.targets.map((v) => v / 255)
+    const curve = toneCurve(sources, targets, g.white)
+    for (let i = 0; i < out.length; i++) out[i] = curve(out[i])
+    console.log(
+      `tone    skin p${g.tone.percentiles.join('/')} ${sources.map((v) => Math.round(v * 255)).join('/')} → ${g.tone.targets.join('/')}, slopes ${curve.slopes.map((v) => v.toFixed(2)).join('/')}`
+    )
+  }
+  // Hair: a fixed `gain`, or the gain that brings the mean of the hair to
+  // `ratio` × the skin median (as measured on the approved portrait), kept
+  // within `range` so sunlit or backlit hair can't swing too far.
+  if (g.hair) {
+    let gain = g.hair.gain ?? 1
+    const [minGain, maxGain] = g.hair.range ?? [0.6, 1.3]
+    if (g.hair.ratio !== undefined) {
+      const [median] = percentilesOver(out, regions.skin, [50])
+      let sum = 0
+      let count = 0
+      for (let i = 0; i < out.length; i++) {
+        if (regions.hair[i] > 0.9 && out[i] * 255 >= THRESHOLD) {
+          sum += out[i]
+          count++
+        }
+      }
+      if (count)
+        gain = Math.min(
+          maxGain,
+          Math.max(minGain, (g.hair.ratio * median * count) / sum)
+        )
+    }
+    for (let i = 0; i < out.length; i++)
+      out[i] = Math.min(g.white, out[i] * (1 + (gain - 1) * regions.hair[i]))
+    console.log(`hair    gain ${gain.toFixed(3)}`)
+  }
 }
 
 function lightMask(i, light) {
@@ -582,9 +752,12 @@ function featureAdjustment(cfg, limit) {
       const nx = (x + 0.5) / W
       let sum = 0
       for (const f of cfg.features) {
-        const q =
-          ((nx - f.center[0]) / f.radius[0]) ** 2 +
-          ((ny - f.center[1]) / f.radius[1]) ** 2
+        // Tilted anchors (landmark mode) rotate in normalised coordinates,
+        // matching lib/faces/portrait.ts.
+        const q = f.angle
+          ? ellipseQ(f, nx, ny)
+          : ((nx - f.center[0]) / f.radius[0]) ** 2 +
+            ((ny - f.center[1]) / f.radius[1]) ** 2
         if (q < 16) sum += f.amount * Math.exp(-0.5 * q)
       }
       const gq =
@@ -612,63 +785,6 @@ function validateFeatures(cfg) {
 
 // --- image helpers ----------------------------------------------------------
 
-function gaussianBlur(src, width, height, sigma) {
-  if (sigma <= 0) return Float32Array.from(src)
-  const r = Math.ceil(sigma * 3)
-  const k = new Float32Array(r * 2 + 1)
-  let sum = 0
-  for (let i = -r; i <= r; i++)
-    sum += k[i + r] = Math.exp((-i * i) / (2 * sigma * sigma))
-  for (let i = 0; i < k.length; i++) k[i] /= sum
-  const tmp = new Float32Array(width * height)
-  const out = new Float32Array(width * height)
-  for (let y = 0; y < height; y++) {
-    for (let x = 0; x < width; x++) {
-      let acc = 0
-      for (let i = -r; i <= r; i++)
-        acc +=
-          k[i + r] * src[y * width + Math.min(width - 1, Math.max(0, x + i))]
-      tmp[y * width + x] = acc
-    }
-  }
-  for (let y = 0; y < height; y++) {
-    for (let x = 0; x < width; x++) {
-      let acc = 0
-      for (let i = -r; i <= r; i++)
-        acc +=
-          k[i + r] * tmp[Math.min(height - 1, Math.max(0, y + i)) * width + x]
-      out[y * width + x] = acc
-    }
-  }
-  return out
-}
-
-function morph(src, width, height, radius, pick) {
-  const out = new Float32Array(width * height)
-  for (let y = 0; y < height; y++) {
-    for (let x = 0; x < width; x++) {
-      let v = src[y * width + x]
-      for (let dy = -radius; dy <= radius; dy++) {
-        const yy = Math.min(height - 1, Math.max(0, y + dy))
-        for (let dx = -radius; dx <= radius; dx++) {
-          if (dx * dx + dy * dy > radius * radius + radius) continue
-          const xx = Math.min(width - 1, Math.max(0, x + dx))
-          v = pick(v, src[yy * width + xx])
-        }
-      }
-      out[y * width + x] = v
-    }
-  }
-  return out
-}
-function erode(src, width, height, radius) {
-  return morph(src, width, height, radius, Math.min)
-}
-
-function dilate(src, width, height, radius) {
-  return morph(src, width, height, radius, Math.max)
-}
-
 function rasterPolygon(points) {
   const out = new Float32Array(W * H)
   const pts = points.map(([x, y]) => [x * W, y * H])
@@ -687,26 +803,6 @@ function rasterPolygon(points) {
           inside = !inside
       }
       out[y * W + x] = inside ? 1 : 0
-    }
-  }
-  return out
-}
-
-function resizeBilinear(src, sw, sh, dw, dh) {
-  const out = new Float32Array(dw * dh)
-  for (let y = 0; y < dh; y++) {
-    const fy = Math.min(sh - 1, Math.max(0, ((y + 0.5) * sh) / dh - 0.5))
-    const y0 = Math.floor(fy)
-    const y1 = Math.min(sh - 1, y0 + 1)
-    const ty = fy - y0
-    for (let x = 0; x < dw; x++) {
-      const fx = Math.min(sw - 1, Math.max(0, ((x + 0.5) * sw) / dw - 0.5))
-      const x0 = Math.floor(fx)
-      const x1 = Math.min(sw - 1, x0 + 1)
-      const tx = fx - x0
-      const a = src[y0 * sw + x0] * (1 - tx) + src[y0 * sw + x1] * tx
-      const b = src[y1 * sw + x0] * (1 - tx) + src[y1 * sw + x1] * tx
-      out[y * dw + x] = a * (1 - ty) + b * ty
     }
   }
   return out
@@ -875,7 +971,21 @@ async function renderFeatureOverlay(rgb, feats, file) {
     const rx = f.radius[0] * PW
     const ry = f.radius[1] * PH
     const dash = f.id === 'N' ? ' stroke-dasharray="6 4"' : ''
-    svg += `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="${colour}" stroke-width="1.5" stroke-opacity="0.9"${dash}/>`
+    if (f.angle) {
+      // Rotated in normalised coordinates, as the sampler applies it.
+      const pts = []
+      for (let k = 0; k < 64; k++) {
+        const t = (k / 64) * 2 * Math.PI
+        const a = Math.cos(t) * f.radius[0]
+        const b = Math.sin(t) * f.radius[1]
+        const u = f.center[0] + a * Math.cos(f.angle) - b * Math.sin(f.angle)
+        const v = f.center[1] + a * Math.sin(f.angle) + b * Math.cos(f.angle)
+        pts.push(`${(u * PW).toFixed(1)},${(v * PH).toFixed(1)}`)
+      }
+      svg += `<polygon points="${pts.join(' ')}" fill="none" stroke="${colour}" stroke-width="1.5" stroke-opacity="0.9"${dash}/>`
+    } else {
+      svg += `<ellipse cx="${cx}" cy="${cy}" rx="${rx}" ry="${ry}" fill="none" stroke="${colour}" stroke-width="1.5" stroke-opacity="0.9"${dash}/>`
+    }
     svg += `<circle cx="${cx}" cy="${cy}" r="2" fill="${colour}"/>`
   }
   // Labels: greedy placement around each anchor, avoiding earlier labels and
@@ -926,7 +1036,8 @@ async function renderFeatureOverlay(rgb, feats, file) {
       f.id === 'N' ? '' : (f.amount > 0 ? '+' : '') + f.amount.toFixed(4)
     svg += `<text x="${PW + 12}" y="${y}" font-size="12" fill="${colour}">${f.id.padStart(2)} ${f.name}</text>`
     svg += `<text x="${PW + LEG - 12}" y="${y}" font-size="12" fill="#bbb" text-anchor="end">${amt}</text>`
-    svg += `<text x="${PW + 12}" y="${y + 11}" font-size="9" fill="#777">c ${f.center.map((v) => v.toFixed(3)).join(', ')}  r ${f.radius.map((v) => v.toFixed(3)).join(', ')}</text>`
+    const tilt = f.angle ? `  a ${((f.angle * 180) / Math.PI).toFixed(1)}°` : ''
+    svg += `<text x="${PW + 12}" y="${y + 11}" font-size="9" fill="#777">c ${f.center.map((v) => v.toFixed(3)).join(', ')}  r ${f.radius.map((v) => v.toFixed(3)).join(', ')}${tilt}</text>`
   })
   svg += '</svg>'
   const base = await sharp(Buffer.from(rgb), {
@@ -940,6 +1051,98 @@ async function renderFeatureOverlay(rgb, feats, file) {
     .composite([{ input: Buffer.from(svg) }])
     .png()
     .toFile(file)
+}
+
+// Landmark-mode review: landmarks and mesh over the crop, the segmentation,
+// the calibrated mesh prior and the model depth it was fused with.
+async function renderLandmarkReview(dir, cropRgb, visible) {
+  const S = 2
+  const base = await sharp(Buffer.from(cropRgb), {
+    raw: { width: W, height: H, channels: 3 }
+  })
+    .resize(W * S, H * S, { kernel: 'lanczos3' })
+    .png()
+    .toBuffer()
+  const used = new Set(
+    [33, 133, 159, 145, 468, 52, 27, 263, 362, 386, 374, 473, 282, 257].concat([
+      61, 291, 0, 13, 14, 17, 18, 37, 267, 164, 101, 330, 5, 4, 1
+    ])
+  )
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W * S}" height="${H * S}">`
+  for (const [a, b, c] of lm.triangles) {
+    const pts = [a, b, c]
+      .map((i) => `${lm.points[i].x * S},${lm.points[i].y * S}`)
+      .join(' ')
+    svg += `<polygon points="${pts}" fill="none" stroke="#3cf" stroke-width="0.5" stroke-opacity="0.45"/>`
+  }
+  lm.points.forEach((q, i) => {
+    const hot = used.has(i)
+    svg += `<circle cx="${q.x * S}" cy="${q.y * S}" r="${hot ? 3 : 1.4}" fill="${hot ? '#ff4d4d' : '#fff'}"/>`
+    if (hot)
+      svg += `<text x="${q.x * S + 4}" y="${q.y * S - 4}" font-size="11" font-family="Menlo" fill="#ff4d4d" stroke="#000" stroke-width="2.5" paint-order="stroke">${i}</text>`
+  })
+  svg += '</svg>'
+  await sharp(base)
+    .composite([{ input: Buffer.from(svg) }])
+    .png()
+    .toFile(path.join(dir, 'landmarks.png'))
+
+  // Segmentation: class colours over the crop, the body mask's edge in red.
+  const colours = [
+    [0, 0, 0],
+    [255, 200, 0],
+    [255, 0, 255],
+    [0, 220, 90],
+    [40, 120, 255],
+    [255, 40, 40]
+  ]
+  const seg = new Uint8Array(W * H * 3)
+  for (let i = 0; i < W * H; i++) {
+    for (let c = 0; c < 3; c++) {
+      let tint = 0
+      for (let k = 0; k < colours.length; k++)
+        tint += lm.planes[k][i] * colours[k][c]
+      const edge = regions.remove[i] > 0.35 && regions.remove[i] < 0.65 ? 1 : 0
+      seg[i * 3 + c] = edge
+        ? [255, 0, 0][c]
+        : Math.round(cropRgb[i * 3 + c] * 0.45 + tint * 0.55)
+    }
+  }
+  await sharp(Buffer.from(seg), { raw: { width: W, height: H, channels: 3 } })
+    .png()
+    .toFile(path.join(dir, 'segments-overlay.png'))
+  await saveGrey(
+    regions.skin.map((v, i) => (v ? 1 : 0.25 * regions.face[i])),
+    path.join(dir, 'tone-skin.png')
+  )
+
+  // Mesh prior (calibrated to the model's units) and the two depth sources.
+  let lo = Infinity
+  let hi = -Infinity
+  for (let i = 0; i < W * H; i++) {
+    if (!mesh.cover[i]) continue
+    lo = Math.min(lo, fusion.prior[i])
+    hi = Math.max(hi, fusion.prior[i])
+  }
+  await saveGrey(
+    fusion.prior.map((v, i) =>
+      mesh.cover[i] ? 0.1 + (0.9 * (v - lo)) / (hi - lo) : 0
+    ),
+    path.join(dir, 'mesh-depth.png')
+  )
+  const priorFilled = fusion.prior.map((v, i) => (mesh.cover[i] ? v : lo))
+  await saveGrey(
+    hillshade(priorFilled, mesh.cover),
+    path.join(dir, 'mesh-relief.png')
+  )
+  await saveGrey(
+    hillshade(stretchDepth(rawDepth, visible), visible),
+    path.join(dir, 'model-relief.png')
+  )
+  await saveGrey(
+    fusion.correction.map((v) => 0.5 + v * 2),
+    path.join(dir, 'mesh-correction.png')
+  )
 }
 
 async function renderSideBySide(referencePath, rgb, file) {
@@ -979,15 +1182,6 @@ async function renderSideBySide(referencePath, rgb, file) {
 }
 
 // --- small utilities --------------------------------------------------------
-
-function smoothstep(a, b, x) {
-  const t = Math.min(1, Math.max(0, (x - a) / (b - a)))
-  return t * t * (3 - 2 * t)
-}
-
-function clamp01(v) {
-  return v < 0 ? 0 : v > 1 ? 1 : v
-}
 
 function round3(arr) {
   return arr.map((v) => Number(v.toFixed(3)))

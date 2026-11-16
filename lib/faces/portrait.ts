@@ -7,6 +7,29 @@ export type FeatureAnchor = {
   center: [number, number]
   radius: [number, number]
   amount: number
+  /** Optional tilt in radians, clockwise on screen (image y points down). */
+  angle?: number
+}
+
+/**
+ * Squared normalized distance from an ellipse's center, so 1 is its edge.
+ * `u`, `v`, `center` and `radius` share portrait-normalized coordinates.
+ */
+export function ellipseDistance(
+  u: number,
+  v: number,
+  center: readonly [number, number],
+  radius: readonly [number, number],
+  angle = 0
+) {
+  const dx = u - center[0]
+  const dy = v - center[1]
+  const cos = Math.cos(angle)
+  const sin = Math.sin(angle)
+  return (
+    ((dx * cos + dy * sin) / radius[0]) ** 2 +
+    ((-dx * sin + dy * cos) / radius[1]) ** 2
+  )
 }
 
 export type PortraitFeatures = {
@@ -103,6 +126,7 @@ export type DetailRegion = {
   center: [number, number]
   radius: [number, number]
   strength: number
+  angle?: number
 }
 
 /**
@@ -156,9 +180,13 @@ export function detailDensity(
 
       let boost = 0
       for (const region of regions) {
-        const distance =
-          (((x + 0.5) / width - region.center[0]) / region.radius[0]) ** 2 +
-          (((y + 0.5) / height - region.center[1]) / region.radius[1]) ** 2
+        const distance = ellipseDistance(
+          (x + 0.5) / width,
+          (y + 0.5) / height,
+          region.center,
+          region.radius,
+          region.angle
+        )
         if (distance < 9) {
           const falloff = Math.min(1, (9 - distance) / 5)
           boost = Math.max(
@@ -467,7 +495,8 @@ export function featureDetailRegions(
     .map((feature) => ({
       center: feature.center,
       radius: [feature.radius[0], feature.radius[1] * 0.85],
-      strength: 2.8
+      strength: 2.8,
+      angle: feature.angle
     }))
   const lips = features.features.find(
     (feature) => feature.name === 'lip separation'
@@ -476,7 +505,8 @@ export function featureDetailRegions(
     regions.push({
       center: lips.center,
       radius: [lips.radius[0], 0.025],
-      strength: 2.4
+      strength: 2.4,
+      angle: lips.angle
     })
   }
   for (const side of [-1, 1]) {
@@ -498,12 +528,18 @@ function assemblyBias(u: number, v: number, features: PortraitFeatures) {
   const gaussian = (
     center: readonly [number, number],
     radius: readonly [number, number],
-    spread: number
+    spread: number,
+    angle = 0
   ) =>
     Math.exp(
       -0.5 *
-        (((u - center[0]) / (radius[0] * spread)) ** 2 +
-          ((v - center[1]) / (radius[1] * spread)) ** 2)
+        ellipseDistance(
+          u,
+          v,
+          center,
+          [radius[0] * spread, radius[1] * spread],
+          angle
+        )
     )
 
   let early = gaussian(
@@ -515,11 +551,22 @@ function assemblyBias(u: number, v: number, features: PortraitFeatures) {
   let mouth = 0
   for (const feature of features.features) {
     if (feature.name.endsWith('eye socket')) {
-      early = Math.max(early, gaussian(feature.center, feature.radius, 1.25))
+      early = Math.max(
+        early,
+        gaussian(feature.center, feature.radius, 1.25, feature.angle)
+      )
     } else if (feature.name.endsWith('cheek contour')) {
-      cheeks = Math.max(cheeks, gaussian(feature.center, feature.radius, 1))
+      cheeks = Math.max(
+        cheeks,
+        gaussian(feature.center, feature.radius, 1, feature.angle)
+      )
     } else if (feature.name === 'lip separation') {
-      mouth = gaussian(feature.center, [feature.radius[0], 0.028], 1.2)
+      mouth = gaussian(
+        feature.center,
+        [feature.radius[0], 0.028],
+        1.2,
+        feature.angle
+      )
     }
   }
   return -0.17 * early + 0.025 * cheeks + 0.09 * mouth
@@ -663,8 +710,7 @@ export function buildPortraitCloud(
     if (
       sockets.some(
         (socket) =>
-          ((u - socket.center[0]) / socket.radius[0]) ** 2 +
-            ((v - socket.center[1]) / socket.radius[1]) ** 2 <
+          ellipseDistance(u, v, socket.center, socket.radius, socket.angle) <
           0.5
       )
     ) {

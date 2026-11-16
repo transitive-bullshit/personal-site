@@ -1,0 +1,2 @@
+# Landmark mode (landmarks.py). MediaPipe brings NumPy and OpenCV.
+mediapipe==1.2.0
