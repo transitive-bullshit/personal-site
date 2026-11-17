@@ -26,16 +26,6 @@ Bookmark previews use a 9rem card height, two-line title and description limits,
 
 Article bookmarks and inline links open external HTTP(S) destinations in a new tab. Relative links, fragments, and links to either `www.transitivebullsh.it` or `transitivebullsh.it` stay in the same tab.
 
-### Code-owned essay bodies
-
-`lib/content/body-overrides.ts` selects exceptions by stable Notion page ID. Notion still owns collection membership, title, description, slug, author, tags, and publication date. The cyber swarm essay keeps prose and source data in `lib/content/essays/cyber-swarm/`, its React body and scoped styles in `components/article/cyber-swarm/`, and assets in `public/essays/cyber-swarm/`. HTML, Markdown, and search headings use the same body data; the normal article route and site shell remain in place.
-
-Code-owned essay images use the shared article lightbox. Their local originals download directly from the public asset path; the media download API remains restricted to stored snapshot originals. Search uses the full set of rendered headings and authored captions independently of the shorter table of contents.
-
-Named source links in margin notes, quote/photo attributions, and adapted graphic captions link directly to the published resource with the site's `.link` styling. External essay links open in a new tab. Only numbered prose citations link to the source list in the same tab. Caption spacing belongs to the graphic's scoped styles; general essay paragraph rules must not override it.
-
-CyberSwarm shows its first ten sources by default. The remaining references sit in a native disclosure that opens for footnote navigation and direct source fragments; Markdown retains the full source list.
-
 ## Domain objects
 
 The executable contract is `lib/content/schema.ts`; these distinctions explain how to use it.

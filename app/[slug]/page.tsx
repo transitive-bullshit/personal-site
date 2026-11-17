@@ -6,7 +6,6 @@ import { content } from '@/lib/content/load'
 import { resolveRoute } from '@/lib/content/routes'
 import { site } from '@/lib/site'
 import { articleSocialImage } from '@/lib/social-image'
-import { plainTextDescription } from '@/lib/content/body-overrides'
 
 export const dynamic = 'force-static'
 export const dynamicParams = true
@@ -26,7 +25,7 @@ export async function generateMetadata({
   if (!route) return {}
   const article = content.articles[route.id]!
   const images = [articleSocialImage(article, content)]
-  const description = plainTextDescription(article)
+  const description = article.description
   return {
     title: article.title,
     description,

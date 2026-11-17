@@ -2,7 +2,6 @@ import type { Article, Project, Snapshot } from './schema'
 import { defaultSocialImages } from '../metadata'
 import { site } from '../site'
 import { socialImageUrl } from '../social-image'
-import { plainTextDescription } from './body-overrides'
 
 export function articleJsonLd(article: Article, snapshot: Snapshot) {
   const image = article.cover
@@ -12,7 +11,7 @@ export function articleJsonLd(article: Article, snapshot: Snapshot) {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: article.title,
-    description: plainTextDescription(article),
+    description: article.description,
     author: { '@type': 'Person', name: article.author, url: site.origin },
     datePublished: article.published,
     dateModified: article.modified,

@@ -12,11 +12,6 @@ import {
 import { articleJsonLd } from '../lib/content/metadata'
 import { contentFixture, articleId, storedMedia } from './fixtures/content'
 import { site } from '../lib/site'
-import {
-  cyberSwarmArticleId,
-  getBodyOverride
-} from '../lib/content/body-overrides'
-import { readFile } from 'node:fs/promises'
 
 const snapshot = contentFixture()
 snapshot.media.cover = storedMedia()
@@ -52,20 +47,6 @@ it('uses the current Learn in Public hero directly, including after slug or cove
   expect(socialImageUrl({ ...essay, cover: undefined }, snapshot)).toContain(
     '/api/social-image/renamed-learn-in-public?v='
   )
-})
-
-it('uses the essay illustration for sharing even after its CMS slug changes', async () => {
-  const essay = { ...article, id: cyberSwarmArticleId, slug: 'renamed-draft' }
-  const path = getBodyOverride(essay.id)!.socialImagePath!
-  const url = socialImageUrl(essay, snapshot)
-  expect(new URL(url).pathname).toBe(path)
-  expect(articleJsonLd(essay, snapshot).image[0]).toBe(url)
-  const bytes = await readFile('public' + path)
-  expect(await sharp(bytes).metadata()).toMatchObject({
-    width: 1200,
-    height: 630,
-    format: 'webp'
-  })
 })
 
 it('versions canonical social URLs when visible metadata or the cached cover changes', () => {

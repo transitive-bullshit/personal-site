@@ -1,5 +1,4 @@
 import { articles, projects } from '@/lib/content/load'
-import { plainTextDescription } from '@/lib/content/body-overrides'
 import { site } from '@/lib/site'
 
 export const dynamic = 'force-static'
@@ -62,7 +61,7 @@ export function GET() {
           '/' +
           article.slug +
           '): ' +
-          plainTextDescription(article).replaceAll('\n', ' ') +
+          article.description.replaceAll('\n', ' ') +
           ' [Markdown](' +
           site.origin +
           '/' +
