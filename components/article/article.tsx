@@ -1,8 +1,6 @@
 import type { Article, Snapshot } from '@/lib/content/schema'
 import { articleJsonLd, serializeJsonLd } from '@/lib/content/metadata'
 import { ContentBody } from './content-body'
-import { getBodyOverride } from '@/lib/content/body-overrides'
-import { CyberSwarmEssay, CyberSwarmHeaderText } from './cyber-swarm'
 
 export function ArticlePage({
   article,
@@ -11,26 +9,13 @@ export function ArticlePage({
   article: Article
   snapshot: Snapshot
 }) {
-  const bodyOverride = getBodyOverride(article.id)
   return (
     <main id='main'>
       <article>
         <header className='article-header'>
-          <h1>
-            {bodyOverride ? (
-              <CyberSwarmHeaderText text={article.title} />
-            ) : (
-              article.title
-            )}
-          </h1>
+          <h1>{article.title}</h1>
           {article.description ? (
-            <p className='article-description'>
-              {bodyOverride ? (
-                <CyberSwarmHeaderText text={article.description} />
-              ) : (
-                article.description
-              )}
-            </p>
+            <p className='article-description'>{article.description}</p>
           ) : null}
           <div className='article-meta'>
             <span>{article.author}</span>
@@ -42,16 +27,9 @@ export function ArticlePage({
                 timeZone: 'UTC'
               })}
             </time>
-            {bodyOverride?.readingTime ? (
-              <span>{bodyOverride.readingTime}</span>
-            ) : null}
           </div>
         </header>
-        {bodyOverride ? (
-          <CyberSwarmEssay headings={bodyOverride.headings} />
-        ) : (
-          <ContentBody entry={article} snapshot={snapshot} />
-        )}
+        <ContentBody entry={article} snapshot={snapshot} />
       </article>
       <script
         type='application/ld+json'

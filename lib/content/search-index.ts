@@ -3,19 +3,15 @@ import { site } from '../site'
 import { walkBlocks } from './references'
 import { validateSlug } from './routes'
 import type { Article, Project, Snapshot } from './schema'
-import { getBodyOverride, plainTextDescription } from './body-overrides'
 
 function articleBodyTerms(article: Article | Project, metadata: string) {
-  const bodyOverride =
-    'authors' in article ? undefined : getBodyOverride(article.id)
-  const text: string[] = bodyOverride ? [...bodyOverride.searchText] : []
-  if (!bodyOverride)
-    walkBlocks(article.blocks, (block) => {
-      if (block.type === 'heading')
-        text.push(block.richText.map((part) => part.text).join(''))
-      if ('caption' in block)
-        text.push(block.caption.map((part) => part.text).join(''))
-    })
+  const text: string[] = []
+  walkBlocks(article.blocks, (block) => {
+    if (block.type === 'heading')
+      text.push(block.richText.map((part) => part.text).join(''))
+    if ('caption' in block)
+      text.push(block.caption.map((part) => part.text).join(''))
+  })
   const metadataTerms = new Set(metadata.split(' '))
   // Headings and authored captions provide a small, predictable fallback.
   return [...new Set(normalizeSearchText(text.join(' ')).split(' '))]
@@ -60,7 +56,7 @@ export function buildSearchIndex(snapshot: Snapshot): SearchIndex {
         const titleText = normalizeSearchText(entry.title)
         const summaryText = normalizeSearchText(
           [
-            plainTextDescription(entry),
+            entry.description,
             ...entry.tags,
             kind,
             'type' in entry ? entry.type : ''

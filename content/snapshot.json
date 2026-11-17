@@ -16235,17 +16235,957 @@
       "author": "Travis Fischer",
       "blocks": [
         {
+          "caption": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Credit: ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "href": "https://www.afpbb.com/articles/-/3346472?cx_part=related_yahoo",
+              "italic": false,
+              "strike": false,
+              "text": "Anas Baba / AFP",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". Northern Gaza Strip, May 14, 2021.",
+              "underline": false
+            }
+          ],
+          "children": [],
+          "id": "41bedb27f124816088fafbba4814194c",
+          "media": "41bedb27f124816088fafbba4814194c",
+          "type": "image"
+        },
+        {
           "children": [],
           "color": "default",
-          "id": "3f7edb27f12480779d79e3be1398d66f",
-          "richText": [],
+          "id": "41bedb27f1248164bf2bcfb05a321e3f",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "AI is turning cybersecurity into swarm warfare, and I believe it’ll lead to increasingly consequential cyberattacks over the next 18 months.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481b39d60d1f3fc1e0ae0",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Take a second to really look at this photo.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481cfa2b1c1cd12f7b905",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "On the right, you've got Hamas rockets fanning out toward southern Israel. On the left, Iron Dome interceptors are curving up to meet them. It's a single frame from a single night in May 2021, and imho it says more about asymmetric warfare than most books on the subject.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481c18a83c06c8bacc846",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "What gets me is the math of it. The rockets are cheap & plentiful. The interceptors are precise and expensive, and they have to show up ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "every single time",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ". One side gets to choose when, where, and how much. The other side has to cover the whole sky.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481c6ac19eca04f127d4d",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Now swap the rockets for AI agents and the sky for every piece of software you depend on.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f1248195a07ce68a1dc29044",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "This is the mental model I can't get out of my head.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f1248117b553c59907055af4",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Expertise used to be the bottleneck",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f1248180b864f7a0af8b6864",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Here's something that I think even the most AGI-pilled folks tend to underestimate: ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "a lot of today's security quietly depends on expert attack effort being scarce and expensive",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481b5a84df52ed1b603da",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Really good attackers exist, but there aren't that many of them, and their time costs a lot. So they have to be picky. They go after the targets that are worth weeks or months of a skilled human's attention, and the rest of us mostly get the lazy stuff (spam, mass phishing attempts, the same recycled tricks) that basic hygiene handles reasonably well.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f1248131905dd6d6351d8718",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Most of the world isn't actually very secure. Most of the world just hasn't been worth the effort.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481578ce0d5c59e5be360",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "AI changes that math. When sustained, expert-level attack effort gets cheap and abundant, way more targets become worth persistent attention — the regional hospital, the mid-sized manufacturer, the school district, the random company whose software happens to sit underneath a bunch of other companies.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f124818cb1befa506c547bc3",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "And this isn't just more of the same noise. A million dumb probes don't worry me all that much. What worries me is an agent that tries something, fails, learns from it, tries something different, and keeps doing that for as long as someone's willing to pay for the inference... which keeps getting cheaper.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f1248121b79fc0d0e603e14b",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "That combination of cheap, adaptive & persistent is what I mean by a swarm.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481839ebac2195e2a5cad",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The good guys have AI too",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481aabac2dd418dc86192",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The obvious pushback here is that defenders get the same tools, and honestly, that's true.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481d3b2b3f1a626e22648",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The frontier AI labs are putting serious resources into defensive AI, and it works. I fully expect the best defenders in the world to get much, much better over the next couple of years.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481e9a920d42e023693f4",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "There's also a real limit to my swarm analogy that I want to be upfront about. Iron Dome needs a fresh interceptor for every rocket it goes after. Software doesn't work that way. One deployed patch or one enforced policy can shut down an entire family of attacks, and a million copies of an exploit that doesn't work aren't a million chances to get through. They're zero chances (which is legitimately great news for defense).",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f1248158a134c1a4e58b9c15",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "So defensive AI isn't the problem.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f1248175812feb2c5f7e91b1",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Coverage is the problem.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481d2841dd5d9e537d9ce",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "A fix only protects you once it's actually running on the system that needs it, and the real world is slow af at that part. Think about what's actually out there:",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f1248186b3f5d1e3ec360ff2",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Legacy companies running custom software that nobody fully understands anymore",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481ed8529e82b4e26c661",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Systems that can't just be turned off for an upgrade because people depend on them every day",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "color": "default",
+              "id": "41bedb27f1248192a6e8c4bd50aad73d",
+              "richText": [
+                {
+                  "bold": false,
+                  "code": false,
+                  "color": "default",
+                  "italic": false,
+                  "strike": false,
+                  "text": "Fwiw, a better model can't patch a device whose vendor has stopped shipping updates",
+                  "underline": false
+                }
+              ],
+              "type": "bulleted_list_item"
+            }
+          ],
+          "color": "default",
+          "id": "41bedb27f12481488bffe6074b9747ed",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Unsupported IoT devices with no update path at all",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f124816c9365dc99f6bab443",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Suppliers and shared dependencies that are much weaker than the companies relying on them",
+              "underline": false
+            }
+          ],
+          "type": "bulleted_list_item"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f124811b8bb4cbff9880edf6",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "That last one matters even if your own house is in order. You can do everything right and still get taken down by something you depend on but don't control.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481dc9c9bd34d7c39a279",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "This is where the asymmetry really bites. Attackers get to choose where to apply their effort. Defenders have to keep every system they already run working ",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": true,
+              "strike": false,
+              "text": "while",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " they fix it.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481248329c635b68fe6af",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "So I end up believing two things at once: ",
+              "underline": false
+            },
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "the best defenders get much better and real-world cyber damage gets much worse",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": ".",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "41bedb27f124808ba47ccba1dff4b28f",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=LSYujxh3wYU"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481df9c2cd358479a3532",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "It doesn't take a bad guy",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481b08d28df2445b584f3",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Malice is only one route to harm here.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f1248174b5d3ca1837b3c443",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "The other one is a lot more awkward to talk about (sigh). Agents run by well-meaning people, on totally legitimate tasks, can also act outside their authority and cause real damage. Nobody at the top wanted it to happen. It happens anyway.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481f883efcd7736a113aa",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "As agents get more capable and more connected, \"we had good intentions\" becomes a weaker and weaker reason to trust the systems we're plugging them into. Good intentions at the top need enforced containment below.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f1248128b1caf9880a21b1fd",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "And if you're the person whose service just went down, I doubt you'll care much which of the two routes it took.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481468bd9d07f2a4a8b3c",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "My predictions",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f124818da8f0f96ac14ecfcb",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "A few assumptions up front. I'm assuming AI capabilities keep progressing roughly exponentially, with AGI and then ASI within five to ten years. I'm also assuming inference stays affordable, offensive access keeps spreading, and a large exposed installed base sticks around.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f124819ca7aaeb29e53e3d37",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "With that being said, none of this requires AGI. The models we already have are plenty capable of contributing to serious damage.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481a1a80ac64d8eccc49a",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Here's what I expect between 8 October 2026 and 30 April 2028, so roughly the next twelve to eighteen months.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f124816391fde0575ce1f8f0",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I believe that sophisticated offense is already becoming a commodity.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Small crews will routinely sustain persistent, adaptive campaigns across hundreds of targets, with much less specialist intervention than that takes today. I'd count this as right if we see three independently documented campaigns by distinct small teams or lone operators, each attempting adaptive exploitation of 200+ organizations with a repeatable workflow. Mass scanning alone doesn't count.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481cf85c1e6f6163df630",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I believe that damage will rise sharply despite real defensive progress.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Maintained platforms and sophisticated defenders will improve, but serious real-world harm will rise a lot more as unsupported devices, brittle infrastructure & weak shared dependencies face escalating pressure. The thing to watch for is substantially more service disruption, economic loss, and difficult recovery where AI materially contributed. Vulnerability counts and blocked probes aren't damage, so they don't count.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481e8b48ec26f87a179fa",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I believe that unauthorized agent harm becomes its own recurring category of incident.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " Legitimate deployments or tests will exceed their authority and repeatedly cause consequential effects in production. I'd count this as right with three independently confirmed incidents at distinct organizations where agents in legitimate workflows cause unauthorized production access, data loss, or service disruption. Only real production effects count.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481e9b9bbc14caaa4fc3f",
+          "richText": [
+            {
+              "bold": true,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "And my boldest one: I believe that a single AI-enabled cyberattack will cause cascading disruption across multiple critical sectors, impair essential services for weeks, and do more economic damage than any previous single cyberattack.",
+              "underline": false
+            },
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": " To count, the attack has to start in that window and disrupt essential services in at least two critical sectors for 14+ days. Forensics have to show material AI involvement beyond phishing. And inflation-adjusted losses have to exceed credible prior records, including NotPetya's $10B+ benchmark.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481e19f59c93f690cc994",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I really, really hope I'm wrong about that last one. 🙏",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "caption": [],
+          "children": [],
+          "id": "41bedb27f12480a9a17ae023db668815",
+          "type": "video",
+          "url": "https://www.youtube.com/watch?v=B8oXVMYXlfM"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481ab9020dcb98c0367a8",
+          "level": 2,
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "What would change my mind",
+              "underline": false
+            }
+          ],
+          "type": "heading"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f12481e590e5f670def7d1ce",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I'm not trying to be a doomer about this, and I'd love to be proven wrong.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f124818dbae5ff160e531393",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "I'd change my mind if automatic containment, shared fixes, and device replacement reach exposed systems faster than offensive access spreads, and damaging incidents actually fall as a result. More findings and more tools adopted won't do it for me. Fewer bad days in the real world will.",
+              "underline": false
+            }
+          ],
+          "type": "paragraph"
+        },
+        {
+          "children": [],
+          "color": "default",
+          "id": "41bedb27f124810ca445e5a4d06fd4cb",
+          "richText": [
+            {
+              "bold": false,
+              "code": false,
+              "color": "default",
+              "italic": false,
+              "strike": false,
+              "text": "Until then, I keep coming back to this mental model. AI-enabled cyber defense works, and it will continue to improve. The question I'd ask is how much of the legacy world it can realistically cover.",
+              "underline": false
+            }
+          ],
           "type": "paragraph"
         }
       ],
-      "description": "AI is turning cybersecurity into drone swarm warfare, and this will lead to increasingly consequential cyberattacks over the next 18 months.",
+      "cover": "3f7edb27f12481bcb191fcff5dcafd41:cover",
+      "description": "AI is turning cybersecurity into swarm warfare, and this will lead to increasingly consequential cyberattacks over the next 18 months.",
       "featured": true,
       "id": "3f7edb27f12481bcb191fcff5dcafd41",
-      "modified": "2026-10-12T17:48:00.000Z",
+      "modified": "2026-11-17T15:05:00.000Z",
       "published": "2026-10-12",
       "slug": "ai-cyberswarm-warfare",
       "tags": [
@@ -83141,64 +84081,6 @@
         }
       ]
     },
-    "3ddedb27f12481b7bdc4d0325b2f6171:cover": {
-      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAQAA4BaJZwAAp02MSAA/vU6VVEOORijhsH56AAAAA==",
-      "original": {
-        "bytes": 74527,
-        "hash": "12d373dd1bee91734dbbce5574a746bd7784aeb0f04eee31c19cda9c8cfc60e3",
-        "height": 630,
-        "key": "personal-site/media/12d373dd1bee91734dbbce5574a746bd7784aeb0f04eee31c19cda9c8cfc60e3.jpg",
-        "mime": "image/jpeg",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/12d373dd1bee91734dbbce5574a746bd7784aeb0f04eee31c19cda9c8cfc60e3.jpg",
-        "width": 1200
-      },
-      "pipelineVersion": 2,
-      "source": {
-        "edited": "2026-10-17T09:45:00.000Z",
-        "key": "3ddedb27f12481b7bdc4d0325b2f6171:cover",
-        "kind": "file"
-      },
-      "variants": [
-        {
-          "bytes": 30604,
-          "hash": "42e90a3a86ccb2d69c67364a0e643de3f636f9e9af7c8009e8b5e0d9681fac1e",
-          "height": 504,
-          "key": "personal-site/media/42e90a3a86ccb2d69c67364a0e643de3f636f9e9af7c8009e8b5e0d9681fac1e.webp",
-          "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/42e90a3a86ccb2d69c67364a0e643de3f636f9e9af7c8009e8b5e0d9681fac1e.webp",
-          "width": 960
-        },
-        {
-          "bytes": 63982,
-          "hash": "50e67e28ef97775f4a6ff266dd103e50a1ab81f79065c5bc3e1f7f04e70a03d4",
-          "height": 630,
-          "key": "personal-site/media/50e67e28ef97775f4a6ff266dd103e50a1ab81f79065c5bc3e1f7f04e70a03d4.webp",
-          "mime": "image/webp",
-          "url": "https://assets.cultural-alignment.com/personal-site/media/50e67e28ef97775f4a6ff266dd103e50a1ab81f79065c5bc3e1f7f04e70a03d4.webp",
-          "width": 1200
-        }
-      ]
-    },
-    "3ddedb27f12481b7bdc4d0325b2f6171:icon": {
-      "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSCgAAAABN0AgacMf9s2fwxoREc5SmIZkZedBZNB/Dhnk75NCRP+zuDDeMM0CVlA4IEQAAADQAQCdASoIAAgAA4BaJaQAD4ANYt+ZAAD9ti3L/4//vKLnwKJDLwD+R9yHXjQx+EGPPVLggzhqv9ArU1UNL41SaAAAAA==",
-      "original": {
-        "bytes": 344,
-        "hash": "538e30e5893725e845ef2fbd5cd114a1127a1db93fc75b033d672c0d3b02a6b0",
-        "height": 32,
-        "key": "personal-site/media/538e30e5893725e845ef2fbd5cd114a1127a1db93fc75b033d672c0d3b02a6b0.svg",
-        "mime": "image/svg+xml",
-        "url": "https://assets.cultural-alignment.com/personal-site/media/538e30e5893725e845ef2fbd5cd114a1127a1db93fc75b033d672c0d3b02a6b0.svg",
-        "width": 32
-      },
-      "pipelineVersion": 2,
-      "source": {
-        "edited": "2026-10-17T09:45:00.000Z",
-        "key": "3ddedb27f12481b7bdc4d0325b2f6171:icon",
-        "kind": "external",
-        "url": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/b5a901a9-0530-4441-89f7-28b07e41a03a/icon.svg"
-      },
-      "variants": []
-    },
     "3ddedb27f12481c1a145c3d546904768:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACQAQCdASoIAAUAA4BaJZQAAp0LKOAA/u9m7BGGzhq8NwJX91wVIYYm88htXdAA",
       "original": {
@@ -83841,7 +84723,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-09-29T12:36:00.000Z",
+        "edited": "2026-11-11T08:52:00.000Z",
         "key": "3e9edb27f124818b9248c844fa4296d6:cover",
         "kind": "file"
       },
@@ -84511,6 +85393,44 @@
         }
       ]
     },
+    "3f7edb27f12481bcb191fcff5dcafd41:cover": {
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoIAAUAA4BaJZQCdAEO9f6kPAD+7bJGm2tpUke9h4xnp4RZpAAAAA==",
+      "original": {
+        "bytes": 1574238,
+        "hash": "6fd52dd6f8e6dbe5bdca8421eedf3a2bec0f04905baf6123981bab2aecb74275",
+        "height": 941,
+        "key": "personal-site/media/6fd52dd6f8e6dbe5bdca8421eedf3a2bec0f04905baf6123981bab2aecb74275.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/6fd52dd6f8e6dbe5bdca8421eedf3a2bec0f04905baf6123981bab2aecb74275.webp",
+        "width": 1672
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-11-17T15:05:00.000Z",
+        "key": "3f7edb27f12481bcb191fcff5dcafd41:cover",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 60218,
+          "hash": "c310c28dc8b9eeb5718627f7364812a8213e872cd8dc5a3a861341b881087b4b",
+          "height": 540,
+          "key": "personal-site/media/c310c28dc8b9eeb5718627f7364812a8213e872cd8dc5a3a861341b881087b4b.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/c310c28dc8b9eeb5718627f7364812a8213e872cd8dc5a3a861341b881087b4b.webp",
+          "width": 960
+        },
+        {
+          "bytes": 233944,
+          "hash": "71cce93e9ac3134ed317084d1510f72c927cafc1372c96149734236f038ab838",
+          "height": 941,
+          "key": "personal-site/media/71cce93e9ac3134ed317084d1510f72c927cafc1372c96149734236f038ab838.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/71cce93e9ac3134ed317084d1510f72c927cafc1372c96149734236f038ab838.webp",
+          "width": 1672
+        }
+      ]
+    },
     "3fcedb27f124817c99a9c35e286ddd7e:cover": {
       "blurDataURL": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoIAAUAA4BaJYwC7AEf2r104AD+vltdlAzAvkiJ8NMoqLzs6wesltu8qgAAAA==",
       "original": {
@@ -84524,7 +85444,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-17T15:51:00.000Z",
+        "edited": "2026-11-11T08:52:00.000Z",
         "key": "3fcedb27f124817c99a9c35e286ddd7e:cover",
         "kind": "file"
       },
@@ -84638,7 +85558,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-10-22T22:15:00.000Z",
+        "edited": "2026-10-22T22:45:00.000Z",
         "key": "401edb27f12481f78df3d284488f3f3f:cover",
         "kind": "file"
       },
@@ -84660,6 +85580,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/23f0e1714242c5675250faad76cb74ecdd8f4f436cc28c025bb0fed88bba773a.webp",
           "width": 1200
+        }
+      ]
+    },
+    "41bedb27f124816088fafbba4814194c": {
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACQAQCdASoIAAUAA4BaJZwAAuWsygAA/umpRzQsVGQHT9IhgIAAAA==",
+      "original": {
+        "bytes": 66859,
+        "hash": "6a3b5961569190e21c8b9e3a2b66b43efd46923a719ebaa12be21f84d3263322",
+        "height": 576,
+        "key": "personal-site/media/6a3b5961569190e21c8b9e3a2b66b43efd46923a719ebaa12be21f84d3263322.jpg",
+        "mime": "image/jpeg",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/6a3b5961569190e21c8b9e3a2b66b43efd46923a719ebaa12be21f84d3263322.jpg",
+        "width": 1024
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-11-17T13:44:00.000Z",
+        "key": "41bedb27f124816088fafbba4814194c",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 36126,
+          "hash": "3e485e1efefba5c906bf924fb7be60297e1034ccc35be637be1b24a69bcb798f",
+          "height": 540,
+          "key": "personal-site/media/3e485e1efefba5c906bf924fb7be60297e1034ccc35be637be1b24a69bcb798f.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/3e485e1efefba5c906bf924fb7be60297e1034ccc35be637be1b24a69bcb798f.webp",
+          "width": 960
+        },
+        {
+          "bytes": 62262,
+          "hash": "540acaf28713b261da6fd62e900110414eafb1b8134e8fa53dd8daa1b68071a7",
+          "height": 576,
+          "key": "personal-site/media/540acaf28713b261da6fd62e900110414eafb1b8134e8fa53dd8daa1b68071a7.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/540acaf28713b261da6fd62e900110414eafb1b8134e8fa53dd8daa1b68071a7.webp",
+          "width": 1024
         }
       ]
     },
@@ -91947,7 +92905,7 @@
       "slug": "pluribus-openai-parody"
     },
     "3ddedb27f12481b7bdc4d0325b2f6171": {
-      "active": true,
+      "active": false,
       "aliases": [],
       "slug": "passage"
     },
@@ -93147,45 +94105,6 @@
       "title": "Pluribus — OpenAI Parody",
       "tweet": "https://x.com/transitive_bs/status/2096134662246855089",
       "type": "Video"
-    },
-    "3ddedb27f12481b7bdc4d0325b2f6171": {
-      "authors": [
-        {
-          "id": "b036f7f695a94f97b3b5c46867d0d103",
-          "name": "Travis Fischer"
-        }
-      ],
-      "blocks": [
-        {
-          "caption": [],
-          "children": [],
-          "id": "c295d1be6374443ca5fda46850ae16fa",
-          "tweetId": "2099405937480290574",
-          "type": "embed",
-          "url": "https://x.com/transitive_bs/status/2099405937480290574"
-        }
-      ],
-      "cover": "3ddedb27f12481b7bdc4d0325b2f6171:cover",
-      "description": "Turn your AI chats into links you’ll be proud to share.",
-      "featured": false,
-      "icon": {
-        "media": "3ddedb27f12481b7bdc4d0325b2f6171:icon",
-        "type": "image"
-      },
-      "id": "3ddedb27f12481b7bdc4d0325b2f6171",
-      "modified": "2026-10-17T09:45:00.000Z",
-      "published": "2026-09-14",
-      "slug": "passage",
-      "source": "https://github.com/transitive-bullshit/share-ai-passage",
-      "tags": [
-        "AI",
-        "OSS",
-        "Projects"
-      ],
-      "title": "Passage",
-      "tweet": "https://x.com/transitive_bs/status/2099405937480290574",
-      "type": "Webapp",
-      "website": "https://www.share-ai-passage.com"
     },
     "3ddedb27f12481c1a145c3d546904768": {
       "authors": [
@@ -95262,13 +96181,13 @@
       ],
       "cover": "3e9edb27f124818b9248c844fa4296d6:cover",
       "description": "Burning Man for agents! Send your agent, follow its wanderings, and see what it brings back.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "type": "emoji",
         "value": "🔥"
       },
       "id": "3e9edb27f124818b9248c844fa4296d6",
-      "modified": "2026-09-29T12:36:00.000Z",
+      "modified": "2026-11-11T08:52:00.000Z",
       "published": "2026-09-26",
       "slug": "burning-tokens",
       "source": "https://github.com/transitive-bullshit/burning-tokens",
@@ -102177,13 +103096,13 @@
       ],
       "cover": "3fcedb27f124817c99a9c35e286ddd7e:cover",
       "description": "AI engineers swear allegiance to their software factories in this Full Metal Jacket AI parody video.",
-      "featured": true,
+      "featured": false,
       "icon": {
         "type": "emoji",
         "value": "🎬"
       },
       "id": "3fcedb27f124817c99a9c35e286ddd7e",
-      "modified": "2026-10-17T15:51:00.000Z",
+      "modified": "2026-11-11T08:52:00.000Z",
       "published": "2026-10-17",
       "slug": "the-ai-engineers-creed-full-metal-jacket-parody",
       "source": "https://github.com/transitive-bullshit/my-software-factory",
@@ -104144,8 +105063,7 @@
       "description": "Apple Music's liquid logo effect, rebuilt in WebGL as a lens of oil that works with any logo.",
       "featured": false,
       "id": "401edb27f12481f78df3d284488f3f3f",
-      "modified": "2026-10-22T22:38:00.000Z",
-      "needsImageSync": true,
+      "modified": "2026-10-22T22:45:00.000Z",
       "published": "2026-10-23",
       "slug": "apple-music-made-by-code",
       "source": "https://github.com/transitive-bullshit/apple-music-effect",
@@ -108920,186 +109838,6 @@
             "type": "tweet"
           },
           "viewCount": 0
-        }
-      },
-      "status": "available"
-    },
-    "2099405937480290574": {
-      "data": {
-        "__typename": "Tweet",
-        "conversation_count": 4,
-        "created_at": "2026-09-14T07:52:35.000Z",
-        "display_text_range": [
-          0,
-          225
-        ],
-        "edit_control": {
-          "edit_tweet_ids": [
-            "2099405937480290574"
-          ],
-          "editable_until_msecs": "1789375955000",
-          "edits_remaining": "5",
-          "is_edit_eligible": false
-        },
-        "entities": {
-          "media": [
-            {
-              "display_url": "pic.x.com/BL9bGPa99O",
-              "expanded_url": "https://x.com/transitive_bs/status/2099405937480290574/photo/1",
-              "indices": [
-                226,
-                249
-              ],
-              "url": "https://t.co/BL9bGPa99O"
-            }
-          ],
-          "urls": [
-            {
-              "display_url": "share-ai-passage.com",
-              "expanded_url": "https://share-ai-passage.com",
-              "indices": [
-                181,
-                204
-              ],
-              "url": "https://t.co/u9YsnlLEPV"
-            }
-          ]
-        },
-        "favorite_count": 13,
-        "id_str": "2099405937480290574",
-        "isEdited": false,
-        "isStaleEdit": false,
-        "lang": "en",
-        "mediaDetails": [
-          {
-            "display_url": "pic.x.com/BL9bGPa99O",
-            "expanded_url": "https://x.com/transitive_bs/status/2099405937480290574/photo/1",
-            "ext_media_availability": {
-              "status": "Available"
-            },
-            "indices": [
-              226,
-              249
-            ],
-            "media_url_https": "https://pbs.twimg.com/media/HSKWkwEbYAAAyiV.jpg",
-            "original_info": {
-              "focus_rects": [
-                {
-                  "h": 1248,
-                  "w": 2229,
-                  "x": 11,
-                  "y": 0
-                },
-                {
-                  "h": 1248,
-                  "w": 1248,
-                  "x": 664,
-                  "y": 0
-                },
-                {
-                  "h": 1248,
-                  "w": 1095,
-                  "x": 741,
-                  "y": 0
-                },
-                {
-                  "h": 1248,
-                  "w": 624,
-                  "x": 976,
-                  "y": 0
-                },
-                {
-                  "h": 1248,
-                  "w": 2240,
-                  "x": 0,
-                  "y": 0
-                }
-              ],
-              "height": 1248,
-              "width": 2240
-            },
-            "sizes": {
-              "large": {
-                "h": 1141,
-                "resize": "fit",
-                "w": 2048
-              },
-              "medium": {
-                "h": 669,
-                "resize": "fit",
-                "w": 1200
-              },
-              "small": {
-                "h": 379,
-                "resize": "fit",
-                "w": 680
-              },
-              "thumb": {
-                "h": 150,
-                "resize": "crop",
-                "w": 150
-              }
-            },
-            "type": "photo",
-            "url": "https://t.co/BL9bGPa99O"
-          }
-        ],
-        "news_action_type": "conversation",
-        "photos": [
-          {
-            "backgroundColor": {
-              "blue": 221,
-              "green": 214,
-              "red": 204
-            },
-            "cropCandidates": [
-              {
-                "h": 1248,
-                "w": 2229,
-                "x": 11,
-                "y": 0
-              },
-              {
-                "h": 1248,
-                "w": 1248,
-                "x": 664,
-                "y": 0
-              },
-              {
-                "h": 1248,
-                "w": 1095,
-                "x": 741,
-                "y": 0
-              },
-              {
-                "h": 1248,
-                "w": 624,
-                "x": 976,
-                "y": 0
-              },
-              {
-                "h": 1248,
-                "w": 2240,
-                "x": 0,
-                "y": 0
-              }
-            ],
-            "expandedUrl": "https://x.com/transitive_bs/status/2099405937480290574/photo/1",
-            "height": 1248,
-            "url": "https://pbs.twimg.com/media/HSKWkwEbYAAAyiV.jpg",
-            "width": 2240
-          }
-        ],
-        "possibly_sensitive": false,
-        "text": "Small ship: turn your AI chats into links you’ll be proud to share\n\n• free\n• webapp + agent skill\n• supports chatgpt, codex, and claude\n• no account needed\n• open source as always\n\nhttps://t.co/u9YsnlLEPV\n\nbefore &amp; after: https://t.co/BL9bGPa99O",
-        "user": {
-          "id_str": "327034465",
-          "is_blue_verified": true,
-          "name": "Travis Fischer",
-          "profile_image_shape": "Circle",
-          "profile_image_url_https": "https://pbs.twimg.com/profile_images/2097646716094984192/PRQWyl10_normal.jpg",
-          "screen_name": "transitive_bs",
-          "verified": false
         }
       },
       "status": "available"

@@ -20,12 +20,9 @@ When adding a page, account for all applicable discovery surfaces:
 
 ## Social images
 
-Code-owned article bodies also supply Markdown and heading terms through `lib/content/body-overrides.ts`. Their Notion metadata and ordinary article route still control indexes, public access, canonical URLs, and social cards. The cyber swarm essay renders a struck-out “drone” in its header. Its plain-text descriptions omit that word through `plainTextDescription`, including HTML/social metadata, structured data, previews, search, Markdown, and llms.txt. The CMS snapshot retains the original wording.
-
 - Main pages use `public/social-image.jpg`; icons use Next's metadata file conventions in `app/`.
 - Articles use on-demand Takumi WebP cards through `app/api/social-image/[slug]/route.tsx`, `lib/render-social-image.tsx`, and `components/social-image.tsx`. Bump `socialImageTemplateVersion` in `lib/social-image.ts` when the template changes so crawlers receive a new versioned URL.
-- A code-owned body can set `socialImagePath` to a local social image. The cyber swarm essay uses a 1200×630 crop of its illustration with a content hash in the filename. Open Graph, Twitter, structured data, and internal previews use the same override.
-- Learn in Public uses its saved hero image directly for Open Graph, Twitter, and structured data, with the image's actual dimensions. The exception in `lib/social-image.ts` uses its stable Notion ID and follows future cover changes; a missing cover falls back to the generated card.
+- Learn in Public and AI Cyberswarm Warfare use their saved cover directly for Open Graph, Twitter, and structured data, with the image's actual dimensions. The exceptions in `lib/social-image.ts` use stable Notion IDs and follow future cover changes; a missing cover falls back to the generated card.
 - Projects use their saved cover or the default social image; both use `summary_large_image`. They do not use the article card renderer.
 - `deploymentOrigin()` selects the public production hostname or preview branch alias, with the unique Vercel URL and then `site.origin` as fallbacks. This is separate from canonical page origin: a unique deployment URL previously sent social crawlers to a Vercel login page.
 - Historical `/api/social-image?id=…` URLs permanently redirect recognized active article IDs to current cards; unknown IDs return 404.
