@@ -7,7 +7,10 @@ export const socialImageSize = { width: 1200, height: 630 } as const
 export const socialImageTemplateVersion = 2
 
 // Key exceptions by Notion ID so title or slug changes retain the choice.
-const coverSocialImageArticleIds = new Set(['3f7edb27f12481ad887ee8617d554ab2'])
+const coverSocialImageArticleIds = new Set([
+  '3f7edb27f12481ad887ee8617d554ab2', // Learn in Public
+  '3f7edb27f12481bcb191fcff5dcafd41' // AI Cyberswarm Warfare
+])
 
 function socialImageCoverOverride(article: Article, snapshot: Snapshot) {
   if (!coverSocialImageArticleIds.has(article.id)) return undefined

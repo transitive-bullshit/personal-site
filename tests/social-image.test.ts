@@ -49,6 +49,13 @@ it('uses the current Learn in Public hero directly, including after slug or cove
   )
 })
 
+it('uses the AI Cyberswarm Warfare cover directly as its social image', () => {
+  const essay = { ...article, id: '3f7edb27f12481bcb191fcff5dcafd41' }
+  expect(socialImageUrl(essay, snapshot)).toBe(
+    snapshot.media.cover!.variants.at(-1)!.url
+  )
+})
+
 it('versions canonical social URLs when visible metadata or the cached cover changes', () => {
   const url = socialImageUrl(article, snapshot)
   expect(url).toMatch(
