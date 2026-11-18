@@ -16391,6 +16391,13 @@
           "type": "paragraph"
         },
         {
+          "caption": [],
+          "children": [],
+          "id": "41cedb27f12481a8afe4f64b4c577d91",
+          "media": "41cedb27f12481a8afe4f64b4c577d91",
+          "type": "image"
+        },
+        {
           "children": [],
           "color": "default",
           "id": "41bedb27f1248117b553c59907055af4",
@@ -17185,7 +17192,7 @@
       "description": "AI is turning cybersecurity into swarm warfare, and this will lead to increasingly consequential cyberattacks over the next 18 months.",
       "featured": true,
       "id": "3f7edb27f12481bcb191fcff5dcafd41",
-      "modified": "2026-11-17T15:05:00.000Z",
+      "modified": "2026-11-18T03:29:00.000Z",
       "published": "2026-10-12",
       "slug": "ai-cyberswarm-warfare",
       "tags": [
@@ -85406,7 +85413,7 @@
       },
       "pipelineVersion": 2,
       "source": {
-        "edited": "2026-11-17T15:05:00.000Z",
+        "edited": "2026-11-18T03:29:00.000Z",
         "key": "3f7edb27f12481bcb191fcff5dcafd41:cover",
         "kind": "file"
       },
@@ -85618,6 +85625,44 @@
           "mime": "image/webp",
           "url": "https://assets.cultural-alignment.com/personal-site/media/540acaf28713b261da6fd62e900110414eafb1b8134e8fa53dd8daa1b68071a7.webp",
           "width": 1024
+        }
+      ]
+    },
+    "41cedb27f12481a8afe4f64b4c577d91": {
+      "blurDataURL": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADQAQCdASoIAAUAA4BaJZQCdAEO9f6kPAD+7bJGm2tpUke9h4xnp4RZpAAAAA==",
+      "original": {
+        "bytes": 1574238,
+        "hash": "6fd52dd6f8e6dbe5bdca8421eedf3a2bec0f04905baf6123981bab2aecb74275",
+        "height": 941,
+        "key": "personal-site/media/6fd52dd6f8e6dbe5bdca8421eedf3a2bec0f04905baf6123981bab2aecb74275.webp",
+        "mime": "image/webp",
+        "url": "https://assets.cultural-alignment.com/personal-site/media/6fd52dd6f8e6dbe5bdca8421eedf3a2bec0f04905baf6123981bab2aecb74275.webp",
+        "width": 1672
+      },
+      "pipelineVersion": 2,
+      "source": {
+        "edited": "2026-11-18T03:29:00.000Z",
+        "key": "41cedb27f12481a8afe4f64b4c577d91",
+        "kind": "file"
+      },
+      "variants": [
+        {
+          "bytes": 60218,
+          "hash": "c310c28dc8b9eeb5718627f7364812a8213e872cd8dc5a3a861341b881087b4b",
+          "height": 540,
+          "key": "personal-site/media/c310c28dc8b9eeb5718627f7364812a8213e872cd8dc5a3a861341b881087b4b.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/c310c28dc8b9eeb5718627f7364812a8213e872cd8dc5a3a861341b881087b4b.webp",
+          "width": 960
+        },
+        {
+          "bytes": 233944,
+          "hash": "71cce93e9ac3134ed317084d1510f72c927cafc1372c96149734236f038ab838",
+          "height": 941,
+          "key": "personal-site/media/71cce93e9ac3134ed317084d1510f72c927cafc1372c96149734236f038ab838.webp",
+          "mime": "image/webp",
+          "url": "https://assets.cultural-alignment.com/personal-site/media/71cce93e9ac3134ed317084d1510f72c927cafc1372c96149734236f038ab838.webp",
+          "width": 1672
         }
       ]
     },

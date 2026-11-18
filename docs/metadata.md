@@ -23,6 +23,7 @@ When adding a page, account for all applicable discovery surfaces:
 - Main pages use `public/social-image.jpg`; icons use Next's metadata file conventions in `app/`.
 - Articles use on-demand Takumi WebP cards through `app/api/social-image/[slug]/route.tsx`, `lib/render-social-image.tsx`, and `components/social-image.tsx`. Bump `socialImageTemplateVersion` in `lib/social-image.ts` when the template changes so crawlers receive a new versioned URL.
 - Learn in Public and AI Cyberswarm Warfare use their saved cover directly for Open Graph, Twitter, and structured data, with the image's actual dimensions. The exceptions in `lib/social-image.ts` use stable Notion IDs and follow future cover changes; a missing cover falls back to the generated card.
+- AI Cyberswarm Warfare keeps its cover for cards and social images but places the same image itself in the body, so its page does not repeat the cover above the first block. `lib/content/cover.ts` lists such entries by Notion ID.
 - Projects use their saved cover or the default social image; both use `summary_large_image`. They do not use the article card renderer.
 - `deploymentOrigin()` selects the public production hostname or preview branch alias, with the unique Vercel URL and then `site.origin` as fallbacks. This is separate from canonical page origin: a unique deployment URL previously sent social crawlers to a Vercel login page.
 - Historical `/api/social-image?id=…` URLs permanently redirect recognized active article IDs to current cards; unknown IDs return 404.

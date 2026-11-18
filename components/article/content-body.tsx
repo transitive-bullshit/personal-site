@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { ArrowLeftIcon } from 'lucide-react'
 import type { Article, Project, Snapshot } from '@/lib/content/schema'
+import { showsCoverAboveBody } from '@/lib/content/cover'
 import { getHeadings, normalizeHeadingLevels } from '@/lib/content/headings'
 import { Blocks } from './blocks'
 import { ContentCover } from './content-cover'
@@ -20,7 +21,9 @@ export function ContentBody({
   return (
     <div className='article-grid'>
       <div className='article-body' data-link-preview-scope='article'>
-        {showCover ? <ContentCover entry={entry} snapshot={snapshot} /> : null}
+        {showCover && showsCoverAboveBody(entry) ? (
+          <ContentCover entry={entry} snapshot={snapshot} />
+        ) : null}
         {headings.length ? (
           <details className='mobile-toc'>
             <summary>On this page</summary>
